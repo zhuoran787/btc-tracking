@@ -1,0 +1,347 @@
+{
+  "sop_sha256": "e27f4586232cac9e7e8498b3be2b28da28b863c4674a83cbf2308aba031c2bf2",
+  "queries": [
+    {
+      "id": 1,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "Strategy MSTR bitcoin buy announcement",
+      "days": 30
+    },
+    {
+      "id": 2,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "Metaplanet bitcoin purchase announcement",
+      "days": 30
+    },
+    {
+      "id": 3,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "MARA Holdings bitcoin holdings update",
+      "days": 30
+    },
+    {
+      "id": 4,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "Riot Platforms bitcoin holdings",
+      "days": 30
+    },
+    {
+      "id": 5,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "Block Inc bitcoin treasury",
+      "days": 30
+    },
+    {
+      "id": 6,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "Tesla bitcoin holdings",
+      "days": 30
+    },
+    {
+      "id": 7,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "Tether bitcoin gold reserve",
+      "days": 30
+    },
+    {
+      "id": 8,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "famous bitcoin whale buy sell large transaction",
+      "days": 14
+    },
+    {
+      "id": 9,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "famous ethereum whale buy sell large transaction",
+      "days": 14
+    },
+    {
+      "id": 10,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "named bitcoin whale accumulation news",
+      "days": 14
+    },
+    {
+      "id": 11,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "named ethereum whale dump exchange",
+      "days": 14
+    },
+    {
+      "id": 12,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "CoinShares weekly digital asset fund flows",
+      "days": 14
+    },
+    {
+      "id": 13,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "US bitcoin strategic reserve executive order",
+      "days": 30
+    },
+    {
+      "id": 14,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "new bitcoin ETF approval institutional launch",
+      "days": 30
+    },
+    {
+      "id": 15,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "major bank crypto custody bitcoin",
+      "days": 30
+    },
+    {
+      "id": 16,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "Clarity Act stablecoin legislation progress",
+      "days": 30
+    },
+    {
+      "id": 17,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "Clarity Act Senate Banking markup",
+      "days": 30
+    },
+    {
+      "id": 18,
+      "section": "## 2.1 PPT 指令 → query 模板 → 入字段（完整对照表）",
+      "query": "Clarity Act midterm election risk",
+      "days": 30
+    },
+    {
+      "id": 19,
+      "section": "## 2.2 因素 7 — 5 个验证问题 → 互联网搜索 query 对照（2026-05-21 原\"因素 8\"改名）",
+      "query": "Clarity Act passage expectations crypto industry",
+      "days": 30
+    },
+    {
+      "id": 20,
+      "section": "## 2.2 因素 7 — 5 个验证问题 → 互联网搜索 query 对照（2026-05-21 原\"因素 8\"改名）",
+      "query": "US strategic bitcoin reserve policy change",
+      "days": 30
+    },
+    {
+      "id": 21,
+      "section": "## 2.2 因素 7 — 5 个验证问题 → 互联网搜索 query 对照（2026-05-21 原\"因素 8\"改名）",
+      "query": "large institution digital asset bitcoin announcement",
+      "days": 30
+    },
+    {
+      "id": 22,
+      "section": "## 2.2 因素 7 — 5 个验证问题 → 互联网搜索 query 对照（2026-05-21 原\"因素 8\"改名）",
+      "query": "large bitcoin sell-off institutional distribution",
+      "days": 30
+    },
+    {
+      "id": 23,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "CZ Binance blockchain BTC ETH strategy ecosystem",
+      "days": 14
+    },
+    {
+      "id": 24,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Star Xu OKX blockchain BTC ETH market view",
+      "days": 14
+    },
+    {
+      "id": 25,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Vitalik Buterin Ethereum BTC market commentary",
+      "days": 14
+    },
+    {
+      "id": 26,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Brad Garlinghouse Ripple BTC ETH market strategy",
+      "days": 14
+    },
+    {
+      "id": 27,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Garrett Jin BTC ETH trade strategy market view",
+      "days": 14
+    },
+    {
+      "id": 28,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Tom Lee Fundstrat BMNR BTC ETH bull market",
+      "days": 14
+    },
+    {
+      "id": 29,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Joseph Chalom SharpLink BTC ETH ecosystem",
+      "days": 14
+    },
+    {
+      "id": 30,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Peter Thiel Founders Fund crypto BTC ETH market",
+      "days": 14
+    },
+    {
+      "id": 31,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Trendresearch Medium crypto BTC ETH analysis",
+      "days": 14
+    },
+    {
+      "id": 32,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Matt Hougan Bitwise BTC ETH market strategy",
+      "days": 14
+    },
+    {
+      "id": 33,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "VanEck Matthew Sigel Bitcoin ChainCheck BTC ETH research",
+      "days": 14
+    },
+    {
+      "id": 34,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "David Sacks White House Crypto Czar BTC strategy",
+      "days": 14
+    },
+    {
+      "id": 35,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Patrick Witt White House digital assets Bitcoin reserve",
+      "days": 14
+    },
+    {
+      "id": 36,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Brett Knoblauch Cantor Fitzgerald crypto bitcoin",
+      "days": 14
+    },
+    {
+      "id": 37,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Aaron Day Daylight Freedom bitcoin commentary",
+      "days": 14
+    },
+    {
+      "id": 38,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Jemima Kelly FT bitcoin ethereum critique",
+      "days": 14
+    },
+    {
+      "id": 39,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Peter Schiff bitcoin ethereum gold market view",
+      "days": 14
+    },
+    {
+      "id": 40,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Nassim Taleb bitcoin ethereum critique",
+      "days": 14
+    },
+    {
+      "id": 41,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Brevan Howard BH Digital crypto BTC ETH",
+      "days": 14
+    },
+    {
+      "id": 42,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Galaxy Digital Alex Thorn BTC ETH research",
+      "days": 14
+    },
+    {
+      "id": 43,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Mike Novogratz Galaxy bitcoin ethereum market view",
+      "days": 14
+    },
+    {
+      "id": 44,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "DRW Cumberland Don Wilson BTC ETH trading",
+      "days": 14
+    },
+    {
+      "id": 45,
+      "section": "### 2.3.A 观点跟踪 KOL 网格（名单见 `FULL_KOL_ROSTER` / 3 组） — 互联网搜索 维度 = 区块链生态 + BTC/ETH 交易策略 + 近期 BTC/ETH 市场观察",
+      "query": "Jason Huang NextGen NDV BTC ETH ecosystem",
+      "days": 14
+    },
+    {
+      "id": 46,
+      "section": "### 2.3.B 策略组（6 人）→ 渲染位置 = 因素 4 whales section · 「链上分析师本期观点」卡片",
+      "query": "Franklin Bi Pantera bitcoin whales onchain flows",
+      "days": 14
+    },
+    {
+      "id": 47,
+      "section": "### 2.3.B 策略组（6 人）→ 渲染位置 = 因素 4 whales section · 「链上分析师本期观点」卡片",
+      "query": "Franklin Bi Pantera blockchain BTC ETH ecosystem strategy",
+      "days": 14
+    },
+    {
+      "id": 48,
+      "section": "### 2.3.B 策略组（6 人）→ 渲染位置 = 因素 4 whales section · 「链上分析师本期观点」卡片",
+      "query": "Parker Lewis Unchained bitcoin whales analysis",
+      "days": 14
+    },
+    {
+      "id": 49,
+      "section": "### 2.3.B 策略组（6 人）→ 渲染位置 = 因素 4 whales section · 「链上分析师本期观点」卡片",
+      "query": "Parker Lewis Unchained bitcoin ethereum strategy market view",
+      "days": 14
+    },
+    {
+      "id": 50,
+      "section": "### 2.3.B 策略组（6 人）→ 渲染位置 = 因素 4 whales section · 「链上分析师本期观点」卡片",
+      "query": "James Check Checkmate bitcoin whales onchain LTH STH",
+      "days": 14
+    },
+    {
+      "id": 51,
+      "section": "### 2.3.B 策略组（6 人）→ 渲染位置 = 因素 4 whales section · 「链上分析师本期观点」卡片",
+      "query": "James Check Checkmate bitcoin ethereum market analysis",
+      "days": 14
+    },
+    {
+      "id": 52,
+      "section": "### 2.3.B 策略组（6 人）→ 渲染位置 = 因素 4 whales section · 「链上分析师本期观点」卡片",
+      "query": "Arkham Intelligence bitcoin whale movements",
+      "days": 14
+    },
+    {
+      "id": 53,
+      "section": "### 2.3.B 策略组（6 人）→ 渲染位置 = 因素 4 whales section · 「链上分析师本期观点」卡片",
+      "query": "Arkham Intelligence platform features ecosystem",
+      "days": 14
+    },
+    {
+      "id": 54,
+      "section": "### 2.3.B 策略组（6 人）→ 渲染位置 = 因素 4 whales section · 「链上分析师本期观点」卡片",
+      "query": "Lookonchain bitcoin BTC whale activity",
+      "days": 14
+    },
+    {
+      "id": 55,
+      "section": "### 2.3.B 策略组（6 人）→ 渲染位置 = 因素 4 whales section · 「链上分析师本期观点」卡片",
+      "query": "Lookonchain ethereum BTC tracking commentary",
+      "days": 14
+    },
+    {
+      "id": 56,
+      "section": "### 2.3.B 策略组（6 人）→ 渲染位置 = 因素 4 whales section · 「链上分析师本期观点」卡片",
+      "query": "Whale Alert bitcoin dormant whale transfer",
+      "days": 14
+    },
+    {
+      "id": 57,
+      "section": "### 2.3.B 策略组（6 人）→ 渲染位置 = 因素 4 whales section · 「链上分析师本期观点」卡片",
+      "query": "Whale Alert ethereum stablecoin transfers",
+      "days": 14
+    }
+  ]
+}

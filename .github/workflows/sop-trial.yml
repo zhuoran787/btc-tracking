@@ -1,0 +1,60 @@
+name: Isolated full-SOP feasibility trial
+on:
+  push:
+    branches: [codex/cloud-sop-trial-20260925]
+    paths: ['.trial/**', '.github/workflows/sop-trial.yml']
+permissions:
+  contents: read
+jobs:
+  research-collection:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python .trial/probe.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: research-collection
+          path: .trial-results/
+          include-hidden-files: true
+          retention-days: 7
+  market-and-render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r .runtime/requirements.txt
+      - run: python -m playwright install --with-deps chromium
+      - name: Refresh and render only within disposable runner
+        env:
+          COINALYZE_API_KEY: ${{ secrets.COINALYZE_API_KEY }}
+        run: python .runtime/scripts/cloud_refresh.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: market-and-render
+          path: |
+            .receipts/
+            .site/
+          include-hidden-files: true
+          retention-days: 7
+  ai-auth-readiness:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check required AI credential without exposing its value
+        env:
+          AI_KEY_PRESENT: ${{ secrets.OPENAI_API_KEY != '' }}
+        run: |
+          if [ "$AI_KEY_PRESENT" != true ]; then
+            echo '::error::AI research blocked: OPENAI_API_KEY is not configured. No model call made.'
+            exit 1
+          fi
+          echo 'Credential exists; model execution still needs a separately validated research step.'
