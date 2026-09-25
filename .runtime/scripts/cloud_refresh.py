@@ -1,5 +1,6 @@
 """Daily data-only refresh. Runs in an allowlisted, standalone Pages repository."""
 import concurrent.futures
+import copy
 import contextlib
 import hashlib
 import io
@@ -34,7 +35,7 @@ def nested(d, path):
 
 
 def validate(name, d, rules):
-    if d.get('error') or d.get('errors') or d.get('fallback_needed'):
+    if d.get('error') or d.get('errors') or d.get('fallback_needed') or d.get('stale'):
         raise ValueError('Source reported an error or fallback')
     for path, minimum in rules.get('lengths', {}).items():
         if len(nested(d, path)) < minimum:
@@ -53,7 +54,10 @@ def validate(name, d, rules):
         block = nested(d, path)
         if block.get('error') or block.get('skipped') or block.get('stale'):
             raise ValueError(f'Unavailable subsource: {path}')
-    for path, days in rules.get('max_age_days', {}).items():
+    ages = dict(rules.get('max_age_days', {}))
+    if d.get('delayed') is True:
+        ages.update(rules.get('delayed_max_age_days', {}))
+    for path, days in ages.items():
         value = nested(d, path)
         if isinstance(value, (int, float)):
             date = datetime.fromtimestamp(value / (1000 if value > 1e11 else 1), timezone.utc)
@@ -67,6 +71,8 @@ def validate(name, d, rules):
 
 
 def source_date(d):
+    if d.get('sec_reconciliation', {}).get('latest_as_of'):
+        return d['sec_reconciliation']['latest_as_of']
     if d.get('btc_price', {}).get('history'):
         ts = d['btc_price']['history'][-1]['ts']
         return datetime.fromtimestamp(ts / (1000 if ts > 1e11 else 1), timezone.utc).isoformat()
@@ -83,6 +89,32 @@ def source_date(d):
         except (KeyError, TypeError):
             pass
     return '未披露'
+
+
+def accept_components(spec, candidate, previous):
+    """Validate independent series separately; a stale peer cannot discard good data."""
+    merged = copy.deepcopy(candidate)
+    receipts = []
+    for key, component in spec['components'].items():
+        block = candidate.get(key) or {}
+        try:
+            validate(key, block, component['validation'])
+            old_date = (previous.get(key) or {}).get('current_date')
+            if old_date and block['current_date'] < old_date:
+                raise ValueError('Observation date regressed')
+            status = 'delayed' if block.get('delayed') else 'updated'
+            reason = block.get('delay_message', '')
+        except Exception as exc:
+            merged[key] = copy.deepcopy(previous.get(key) or {})
+            merged[key]['stale'] = True
+            status = 'retained' if merged[key].get('dates') else 'unavailable'
+            reason = str(exc)
+        receipts.append({'label': component['label'], 'status': status,
+                         'source_date': source_date(merged[key]), 'reason': reason,
+                         'delay_days': merged[key].get('delay_days')})
+    from fetch_bgeometrics import summarize
+    summarize(merged)
+    return merged, receipts
 
 
 def fetch_one(spec, config):
@@ -106,18 +138,26 @@ def fetch_one(spec, config):
                 log = log.replace(key, '[REDACTED]')
             (REPO / '.receipts' / (spec['script'] + '.log')).write_text(log)
             output = candidate / 'data' / spec['output']
-            if p.returncode:
+            if p.returncode and not spec.get('components'):
                 raise ValueError(f'Fetcher exit {p.returncode}')
             if not output.exists():
                 raise ValueError('No output')
             d = read(output)
-            validate(spec['output'], d, spec['validation'])
             if output.stat().st_mtime_ns <= previous_mtime:
                 raise ValueError('Fetcher left output unchanged; not verified this run')
+            components = None
+            status = 'updated'
+            if spec.get('components'):
+                d, components = accept_components(spec, d, read(ROOT/'data'/spec['output']))
+                status = 'partial' if any(x['status'] in ('retained', 'unavailable') for x in components) else (
+                    'delayed' if any(x['status']=='delayed' for x in components) else 'updated')
+                output.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+            else:
+                validate(spec['output'], d, spec['validation'])
             for name in [spec['output']] + spec.get('sidecars', []):
                 shutil.copy2(candidate / 'data' / name, ROOT / 'data' / name)
-            return {'source': spec['output'], 'status': 'updated', 'source_date': source_date(d),
-                    'sha256': digest(ROOT / 'data' / spec['output'])}
+            return {'source': spec['output'], 'status': status, 'source_date': source_date(d),
+                    'components': components, 'sha256': digest(ROOT / 'data' / spec['output'])}
         except Exception as exc:
             previous = read(ROOT / 'data' / spec['output'])
             return {'source': spec['output'], 'status': 'unavailable' if previous.get('error') else 'retained',
@@ -167,9 +207,13 @@ def make_page(config, results, bootstrap=False):
     html = g.render(ctx)
     soup = BeautifulSoup(html, 'html.parser')
     labels = {s['output']: s['label'] for s in config['fetchers']}
-    table = ''.join('<tr><td>'+escape(labels[x['source']])+'</td><td>'+
-                    ('本次抓取通过' if x['status']=='updated' else '沿用旧数据 / 本次未更新')+
-                    '</td><td>'+escape(x['source_date'])+'</td></tr>' for x in results)
+    statuses = {'updated': '本次抓取通过', 'delayed': '本次已核验 · 免费源延迟（非实时）',
+                'retained': '沿用旧数据 / 本次未更新', 'unavailable': '暂无有效数据'}
+    rows = [part for result in results for part in (result.get('components') or
+            [dict(result, label=labels[result['source']])])]
+    table = ''.join('<tr><td>'+escape(x['label'])+'</td><td>'+
+                    statuses[x['status']]+ ((' · '+str(x['delay_days'])+' 天') if x.get('delay_days') and x['status']=='delayed' else '')+
+                    '</td><td>'+escape(x['source_date'])+'</td></tr>' for x in rows)
     banner = '<div style="padding:18px;margin:16px;border:2px solid #b58a36;background:#fff7dc;color:#342e21">'
     banner += '<strong>每日云端数据更新 · '+escape(config['schedule']['label'])+'</strong><br>'
     display_time = datetime.now(ZoneInfo('Asia/Shanghai')).strftime('%Y-%m-%d %H:%M 北京时间')
@@ -218,6 +262,8 @@ def main():
     result = make_page(config, results, bootstrap)
     (audit_dir/'verification.json').write_text(json.dumps(result, ensure_ascii=False, indent=2))
     print(json.dumps({'updated':sum(x['status']=='updated' for x in results),
+                      'delayed':sum(x['status']=='delayed' for x in results),
+                      'partial':sum(x['status']=='partial' for x in results),
                       'retained':sum(x['status']=='retained' for x in results),
                       'bootstrap':bootstrap, 'url':config['url']}))
 

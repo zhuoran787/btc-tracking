@@ -805,6 +805,8 @@ def _build_cvdd_chart(data):
 
     return {
         "cvdd_current": cur,
+        "cvdd_as_of": cvdd.get('current_date'),
+        "cvdd_stale": cvdd.get('stale', False),
         "cvdd_current_price": state.get("price_cur") if state else None,
         "cvdd_price_ratio": ratio,  # price/CVDD（≤1.05 = 逼近底部）
         "cvdd_color": _cvdd_color(state.get("price_cur") if state else None, cur),
@@ -821,6 +823,10 @@ def _build_mvrv_z_chart(data):
     cur = mz.get("current")
     return {
         "mvrv_z_current": cur,
+        "mvrv_z_as_of": mz.get('current_date'),
+        "mvrv_z_delayed": mz.get('delayed', False),
+        "mvrv_z_delay_days": mz.get('delay_days'),
+        "mvrv_z_stale": mz.get('stale', False),
         "mvrv_z_color": _mvrv_z_color(cur),
         "mvrv_z_chart_labels": json.dumps(mz.get("dates", [])),
         "mvrv_z_chart_values": json.dumps(mz.get("values", [])),

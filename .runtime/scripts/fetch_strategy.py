@@ -312,23 +312,28 @@ def parse_sec_btc_events(complete_submission: str, filing_date: str, accession: 
     return events
 
 
-def fetch_sec_updates(since: str) -> tuple[list[dict], dict]:
+def fetch_sec_updates(since: str, previous: dict | None = None) -> tuple[list[dict], dict]:
     """Fetch and parse Strategy 8-K BTC updates filed on or after ``since``."""
     response = requests.get(SEC_SUBMISSIONS_URL, headers=SEC_HEADERS, timeout=30)
     response.raise_for_status()
     recent = response.json()["filings"]["recent"]
     filings = []
+    verified = set((previous or {}).get('checked_accessions', []))
+    if previous and previous.get('latest_accession'):
+        verified.add(previous['latest_accession'])
     for index, form in enumerate(recent["form"]):
         filing_date = recent["filingDate"][index]
         items = recent["items"][index]
         if form != "8-K" or filing_date < since or "7.01" not in items:
+            continue
+        if recent['accessionNumber'][index] in verified:
             continue
         filings.append({
             "filing_date": filing_date,
             "accession": recent["accessionNumber"][index],
         })
     filings.sort(key=lambda filing: filing["filing_date"])
-    if not filings:
+    if not filings and not previous:
         raise ValueError(f"no Strategy 8-K filings found since {since}")
 
     events = []
@@ -350,6 +355,12 @@ def fetch_sec_updates(since: str) -> tuple[list[dict], dict]:
         ))
         time.sleep(0.12)  # stay below SEC's published 10 requests/second guideline
 
+    if not events and previous:
+        metadata = dict(previous)
+        metadata.update(filings_checked=checked, btc_updates_found=0,
+                        checked_accessions=sorted(verified | {f['accession'] for f in filings}),
+                        verified_at=datetime.now().isoformat())
+        return [], metadata
     if not events:
         raise ValueError(f"no BTC Update tables found in {checked} Strategy 8-K filings")
     events.sort(key=lambda event: (event["date"], event["as_of"]))
@@ -363,6 +374,8 @@ def fetch_sec_updates(since: str) -> tuple[list[dict], dict]:
         "latest_as_of": latest["as_of"],
         "latest_holdings": latest["btc_holdings"],
         "latest_accession": latest["sec_accession"],
+        "checked_accessions": sorted(verified | {f['accession'] for f in filings}),
+        "verified_at": datetime.now().isoformat(),
     }
     return events, metadata
 
@@ -449,8 +462,15 @@ def main() -> int:
 
     sec_metadata = None
     since = (date.fromisoformat(purchases[-1]["date"]) - timedelta(days=14)).isoformat()
+    previous_sec = (last_good or {}).get('sec_reconciliation')
+    # Resume only from a validated baseline. Re-reading older, already checked
+    # filings made one historical 403 block every subsequent BTC update.
+    if previous_sec and purchases[-1]['btc_holdings'] == previous_sec.get('latest_holdings'):
+        since = max(since, previous_sec['latest_filing_date'])
+    else:
+        previous_sec = None
     try:
-        sec_events, sec_metadata = fetch_sec_updates(since)
+        sec_events, sec_metadata = fetch_sec_updates(since, previous_sec)
         purchases = reconcile_sec_events(purchases, sec_events)
         if purchases[-1]["btc_holdings"] != sec_metadata["latest_holdings"]:
             raise ValueError(

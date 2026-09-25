@@ -805,7 +805,7 @@ a:hover { text-decoration: underline; }
         </div>
       </div>
       <div class="chart-container" style="height:240px;"><canvas id="chartCvdd"></canvas></div>
-      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：<a href="https://api.bgeometrics.com/v1/cvdd" target="_blank">BGeometrics 免费 API</a>（每日序列，日期范围见横轴）。BTC 价格序列对齐自 ahr999.json。<a href="https://www.bitcoinmagazinepro.com/charts/cvdd/" target="_blank">参照 Bitcoin Magazine Pro ↗</a></div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：<a href="https://woocharts.com/bitcoin-price-models/" target="_blank">Willy Woo 官方 CVDD</a> · 数据截至 {{ cvdd_as_of or '未披露' }}{% if cvdd_stale %} · 本次未更新，沿用旧值{% endif %}。BTC 价格序列对齐自 ahr999.json。<a href="https://www.bitcoinmagazinepro.com/charts/cvdd/" target="_blank">参照 Bitcoin Magazine Pro ↗</a></div>
     </div>
     {% endif %}
     <!-- 图 5：MVRV Z-Score -->
@@ -823,7 +823,7 @@ a:hover { text-decoration: underline; }
         </div>
       </div>
       <div class="chart-container" style="height:240px;"><canvas id="chartMvrvZ"></canvas></div>
-      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：<a href="https://api.bgeometrics.com/v1/mvrv-zscore" target="_blank">BGeometrics 免费 API</a>（每日序列，日期范围见横轴）。<a href="https://www.bitcoinmagazinepro.com/charts/mvrv-zscore/" target="_blank">参照 Bitcoin Magazine Pro ↗</a></div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：<a href="https://api.bgeometrics.com/v1/mvrv-zscore" target="_blank">BGeometrics 免费 API</a> · 数据截至 {{ mvrv_z_as_of or '未披露' }}{% if mvrv_z_delayed %} · 免费源延迟{% if mvrv_z_delay_days %} {{ mvrv_z_delay_days }} 天{% endif %}（非实时）{% endif %}{% if mvrv_z_stale %} · 本次未更新，沿用旧值{% endif %}。<a href="https://www.bitcoinmagazinepro.com/charts/mvrv-zscore/" target="_blank">参照 Bitcoin Magazine Pro ↗</a></div>
     </div>
     {% endif %}
 

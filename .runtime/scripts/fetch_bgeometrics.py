@@ -23,6 +23,7 @@
 Output: data/bgeometrics_data.json
 """
 import json
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -120,11 +121,23 @@ def fetch_mvrv_zscore() -> dict:
     if len(out) < 100:
         raise ValueError(f"too short ({len(out)} rows)")
     latest = out[-1]
+    # The free tier explicitly withholds the latest seven days. Confirm this
+    # with the provider's /last metadata instead of treating the lag as downtime.
+    last_response = requests.get(MVRV_Z_URL + '/last', timeout=30)
+    last_response.raise_for_status()
+    metadata = last_response.json()
+    if metadata.get('d') != latest['date'] or abs(float(metadata['mvrvZscore']) - latest['value']) > 1e-8:
+        raise ValueError('MVRV history and /last disagree')
+    delay_match = re.search(r'last (\d+) days', metadata.get('message', ''), re.I)
     return {
         "dates": [r["date"] for r in out],
         "values": [round(r["value"], 4) for r in out],
         "current": latest["value"],
         "current_date": latest["date"],
+        "delayed": metadata.get('delayed') is True,
+        "delay_days": int(delay_match.group(1)) if delay_match else None,
+        "delay_message": metadata.get('message', ''),
+        "source_url": MVRV_Z_URL,
     }
 
 
@@ -144,6 +157,17 @@ def _load_previous(key: str) -> dict | None:
     block["stale"] = True
     block["stale_from"] = prev.get("fetched_at")
     return block
+
+
+def summarize(result):
+    """Recompute derived fields after independent component acceptance."""
+    cvdd_cur = (result.get('cvdd') or {}).get('current')
+    mz = (result.get('mvrv_zscore') or {}).get('current')
+    thresholds = result['thresholds']
+    result['summary'] = {'cvdd_current': cvdd_cur, 'mvrv_z_current': mz}
+    result['signals'] = {'cvdd_signal': None, 'mvrv_z_signal':
+                         None if mz is None else 'bottom' if mz < thresholds['mvrv_z_bottom']
+                         else 'top' if mz >= thresholds['mvrv_z_top'] else 'neutral'}
 
 
 def main() -> int:
@@ -202,24 +226,12 @@ def main() -> int:
     cvdd_cur = (result.get("cvdd") or {}).get("current")
     mvrv_z_cur = (result.get("mvrv_zscore") or {}).get("current")
 
-    signals = {"cvdd_signal": None, "mvrv_z_signal": None}
-    if mvrv_z_cur is not None:
-        if mvrv_z_cur < MVRV_Z_BOTTOM:
-            signals["mvrv_z_signal"] = "bottom"
-        elif mvrv_z_cur >= MVRV_Z_TOP:
-            signals["mvrv_z_signal"] = "top"
-        else:
-            signals["mvrv_z_signal"] = "neutral"
-    result["signals"] = signals
-    result["summary"] = {
-        "cvdd_current": cvdd_cur,
-        "mvrv_z_current": mvrv_z_cur,
-    }
+    summarize(result)
 
     OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2))
     err_n = len(result["errors"])
     print(
-        f"OK fetch_bgeometrics done: CVDD=${cvdd_cur:,.0f} · MVRV-Z={mvrv_z_cur} · errors={err_n} -> {OUT}",
+        f"OK fetch_bgeometrics done: CVDD={cvdd_cur} · MVRV-Z={mvrv_z_cur} · errors={err_n} -> {OUT}",
         file=sys.stderr,
     )
     return 0 if err_n == 0 else 1

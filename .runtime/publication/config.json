@@ -230,25 +230,48 @@
     {
       "script": "fetch_bgeometrics.py",
       "output": "bgeometrics_data.json",
-      "validation": {
-        "lengths": {
-          "cvdd.dates": 2000,
-          "mvrv_zscore.dates": 1000
-        },
-        "positive": [
-          "cvdd.current"
-        ],
-        "required": [
-          "mvrv_zscore.current"
-        ],
-        "max_age_days": {
-          "cvdd.current_date": 4,
-          "mvrv_zscore.current_date": 4
-        }
-      },
       "sidecars": [],
       "required_for_publish": false,
-      "label": "CVDD 与 MVRV Z"
+      "label": "CVDD 与 MVRV Z",
+      "components": {
+        "cvdd": {
+          "label": "CVDD（Willy Woo 官方）",
+          "validation": {
+            "lengths": {
+              "dates": 2000,
+              "values": 2000
+            },
+            "positive": [
+              "current"
+            ],
+            "required": [
+              "current_date"
+            ],
+            "max_age_days": {
+              "current_date": 4
+            }
+          }
+        },
+        "mvrv_zscore": {
+          "label": "MVRV Z（BGeometrics 免费源）",
+          "validation": {
+            "lengths": {
+              "dates": 1000,
+              "values": 1000
+            },
+            "required": [
+              "current",
+              "current_date"
+            ],
+            "max_age_days": {
+              "current_date": 4
+            },
+            "delayed_max_age_days": {
+              "current_date": 9
+            }
+          }
+        }
+      }
     },
     {
       "script": "fetch_strategy.py",
