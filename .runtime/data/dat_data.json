@@ -9,7 +9,7 @@
     "MARA Holdings"
   ],
   "total_holdings": 1296098.6692943657,
-  "total_value_usd": 109593784319.24774,
+  "total_value_usd": 109797418587.3462,
   "market_cap_dominance_pct": 6.17,
   "company_count": 180,
   "cost_basis_summary": [
@@ -26,8 +26,8 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 75413.71158392435,
       "total_cost_basis_native": 63800000000.0,
-      "avg_current_price_usd": 84556.66757139239,
-      "pnl_pct": 12.123731607206834
+      "avg_current_price_usd": 84713.7808166435,
+      "pnl_pct": 12.332066725517876
     },
     {
       "name": "Twenty One Capital",
@@ -42,8 +42,8 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 84864.98738337087,
       "total_cost_basis_native": 3692815061.0,
-      "avg_current_price_usd": 84556.66757139239,
-      "pnl_pct": -0.36330626031401136
+      "avg_current_price_usd": 84713.7808166435,
+      "pnl_pct": -0.17817308573241375
     },
     {
       "name": "Metaplanet",
@@ -60,7 +60,7 @@
       "cost_currency": "JPY",
       "cost_as_of": "June 30, 2026",
       "disclosure_date": "2026-07-02",
-      "avg_current_price_usd": 84556.66757139239,
+      "avg_current_price_usd": 84713.7808166435,
       "pnl_pct": null
     },
     {
@@ -76,8 +76,8 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 54662.19748714057,
       "total_cost_basis_native": 1944717000.0,
-      "avg_current_price_usd": 84556.66757139239,
-      "pnl_pct": 54.689477296050114
+      "avg_current_price_usd": 84713.7808166435,
+      "pnl_pct": 54.97690307194958
     }
   ],
   "total_cost_summary": {
