@@ -1,6 +1,6 @@
 {
   "mode": "data_only",
-  "built_at": "2026-09-25T09:43:00+00:00",
+  "built_at": "2026-09-25T09:45:36+00:00",
   "bootstrap": false,
   "config_hash": "b7c970120348f704be1cdd1633a4053d95890d3e4289ef2df10bd2167fc17c5d",
   "editorial_as_of": "2026-09-17",
@@ -13,23 +13,23 @@
     {
       "source": "api_data.json",
       "status": "updated",
-      "source_date": "2026-09-25T09:40:50+00:00",
+      "source_date": "2026-09-25T09:43:10+00:00",
       "components": null,
-      "sha256": "260140c76ab340f91738f3a4ddc02124f5925d94cc3a307bf78ce5bf2620a8dc"
+      "sha256": "c21dea01375576085d8cf03bb9061383f8fb44910383d112835a7a5e01b6ce7c"
     },
     {
       "source": "etf_flows.json",
       "status": "updated",
       "source_date": "2026-09-24",
       "components": null,
-      "sha256": "c5bb14899ef03858875907ae4032742fc256f7a52154fc9830e01e73d93b1ed0"
+      "sha256": "bb69430e548e337230380a4ac00603694fcbd89fa5000d581503b3cfdc4a6be5"
     },
     {
       "source": "treasuries.json",
       "status": "updated",
-      "source_date": "2026-09-25T09:42:26.272423",
+      "source_date": "2026-09-25T09:45:03.783894",
       "components": null,
-      "sha256": "4915e08d56c8e52db9b239fea5637e59915e5048e5de25bb6ef6dc42610db47b"
+      "sha256": "804d67090058c2a34791264cfb498b27c120cc5e1de32e798da41ca5034ce73e"
     },
     {
       "source": "brk_data.json",
@@ -43,7 +43,7 @@
       "status": "updated",
       "source_date": "2026-09-25",
       "components": null,
-      "sha256": "5f70d583557ae59cb4a1a5f5d1547f3fefe8deedf1052283c282c0651425caf5"
+      "sha256": "8852d9ccfb47868bdc1cb1ee5078c39fc71a559cf2ccfc42526cf2119cbcdb1a"
     },
     {
       "source": "mnav_data.json",
@@ -57,40 +57,40 @@
       "status": "updated",
       "source_date": "2026-09-25",
       "components": null,
-      "sha256": "94d9d05cb7e6b492db56f0be370dbd37dbadd7bb95fe92426cff2c67d05b5371"
+      "sha256": "834187f04767b361bb13e622bfb987e5ef9ccb09960b04b73143a12034f3f3b4"
     },
     {
       "source": "tether_data.json",
       "status": "updated",
       "source_date": "2026-06-30",
       "components": null,
-      "sha256": "c9a85fe8a39155227475c00677e3ea81147e6ca1c1250d053b544a43bc4e0362"
+      "sha256": "2fab415c5808d3fca0f1d52cfca7182682fc5f8eb2232152d91c77199eb9250a"
     },
     {
       "source": "fear_greed.json",
       "status": "updated",
       "source_date": "2026-09-25",
       "components": null,
-      "sha256": "2c4703a4b0a37fadb250c9705d25bf1b56fc2e3c581419dddba2e81bacf06c10"
+      "sha256": "59a53398d544a742894913a46b7d66f817c6aa84e1997b4fccfdf142dcfe3600"
     },
     {
       "source": "ahr999.json",
       "status": "updated",
       "source_date": "2026-09-25",
       "components": null,
-      "sha256": "501dd4d01b98769bbb63779d0363f4b4432618184f79b6fe1be10f2a41953c4a"
+      "sha256": "a1782d79edbb38a7e7c54854f3da842c3641db6378d1e1e8b06bb5ef6c7b5172"
     },
     {
       "source": "coinmetrics_data.json",
       "status": "updated",
       "source_date": "2026-09-24",
       "components": null,
-      "sha256": "f49c2ba69a7d68b01c9a9932eeacff1ac2c20f0ca38bf50f6cc856dd55c48e44"
+      "sha256": "bf77c6f80a11ecc76f5ba67c965ba5fa156d8802151a1517ebf106eb79835c6d"
     },
     {
       "source": "bgeometrics_data.json",
       "status": "delayed",
-      "source_date": "2026-09-25T09:42:39.707516",
+      "source_date": "2026-09-25T09:45:15.486375",
       "components": [
         {
           "label": "CVDD（Willy Woo 官方）",
@@ -107,14 +107,14 @@
           "delay_days": 7
         }
       ],
-      "sha256": "54ff484a97f3b9fea25f5392b6698167da0808988782c26dbc96e0b916968121"
+      "sha256": "ec3f65806c6bd31295043e733a65ca79d7b100777b3eb5bf273280d91576d07d"
     },
     {
       "source": "strategy_data.json",
-      "status": "retained",
-      "source_date": "2026-09-13",
-      "reason": "Fetcher exit 1",
-      "sha256": "2c73e36c01c58bb60feb4b1a980d75e5a0e3c6e0478605d7342a16f694af313d"
+      "status": "updated",
+      "source_date": "2026-09-20",
+      "components": null,
+      "sha256": "e685d93f89dff3e14ea0ae0361e522ab6f977d09fdcf63cdd6ae89a9b51cee0b"
     }
   ],
   "preserved_inputs": {
