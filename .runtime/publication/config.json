@@ -33,7 +33,8 @@
         }
       },
       "sidecars": [],
-      "required_for_publish": true
+      "required_for_publish": true,
+      "label": "价格、相关性、资金费率与稳定币"
     },
     {
       "script": "fetch_etf_flows.py",
@@ -50,7 +51,8 @@
         }
       },
       "sidecars": [],
-      "required_for_publish": false
+      "required_for_publish": false,
+      "label": "现货 ETF 资金流"
     },
     {
       "script": "fetch_treasuries.py",
@@ -64,7 +66,8 @@
         ]
       },
       "sidecars": [],
-      "required_for_publish": false
+      "required_for_publish": false,
+      "label": "公司 BTC 持仓总览"
     },
     {
       "script": "fetch_brk.py",
@@ -83,7 +86,8 @@
         }
       },
       "sidecars": [],
-      "required_for_publish": false
+      "required_for_publish": false,
+      "label": "鲸鱼与链上指标"
     },
     {
       "script": "fetch_derivatives.py",
@@ -110,7 +114,8 @@
       "sidecars": [
         "derivatives_history.sqlite"
       ],
-      "required_for_publish": false
+      "required_for_publish": false,
+      "label": "衍生品持仓与资金费率"
     },
     {
       "script": "fetch_mnav.py",
@@ -127,7 +132,8 @@
         "mnav_history.json",
         "mnav_history.sqlite"
       ],
-      "required_for_publish": false
+      "required_for_publish": false,
+      "label": "DAT 公司 EV mNAV"
     },
     {
       "script": "fetch_dat_history.py",
@@ -144,7 +150,8 @@
         "dat_history.json",
         "dat_history.sqlite"
       ],
-      "required_for_publish": false
+      "required_for_publish": false,
+      "label": "DAT 持仓与成本"
     },
     {
       "script": "fetch_tether.py",
@@ -163,7 +170,8 @@
       "sidecars": [
         "tether_history.sqlite"
       ],
-      "required_for_publish": false
+      "required_for_publish": false,
+      "label": "Tether 官方季度储备"
     },
     {
       "script": "fetch_fear_greed.py",
@@ -180,7 +188,8 @@
         }
       },
       "sidecars": [],
-      "required_for_publish": false
+      "required_for_publish": false,
+      "label": "恐惧贪婪指数"
     },
     {
       "script": "fetch_ahr999.py",
@@ -197,7 +206,8 @@
         }
       },
       "sidecars": [],
-      "required_for_publish": false
+      "required_for_publish": false,
+      "label": "ahr999 估值"
     },
     {
       "script": "fetch_coinmetrics.py",
@@ -214,7 +224,8 @@
         }
       },
       "sidecars": [],
-      "required_for_publish": false
+      "required_for_publish": false,
+      "label": "交易所 BTC 储备"
     },
     {
       "script": "fetch_bgeometrics.py",
@@ -236,7 +247,8 @@
         }
       },
       "sidecars": [],
-      "required_for_publish": false
+      "required_for_publish": false,
+      "label": "CVDD 与 MVRV Z"
     },
     {
       "script": "fetch_strategy.py",
@@ -251,7 +263,8 @@
         ]
       },
       "sidecars": [],
-      "required_for_publish": false
+      "required_for_publish": false,
+      "label": "Strategy 官方购买记录"
     }
   ],
   "data_files": [

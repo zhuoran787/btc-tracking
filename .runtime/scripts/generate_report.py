@@ -2469,6 +2469,19 @@ def main():
     ctx = build_context(data, extra)
     html = render(ctx)
 
+    # A manual full run refreshes the dated editorial snapshot for cloud reuse.
+    # cloud_refresh imports build_context directly and never enters this path.
+    publication_config = PROJECT_DIR / "publication" / "config.json"
+    if publication_config.exists():
+        config = json.loads(publication_config.read_text())
+        snapshot = {
+            "as_of": datetime.now().strftime("%Y-%m-%d"),
+            "context": {key: ctx.get(key) for key in config["editorial_keys"]},
+        }
+        (PROJECT_DIR / "publication" / "editorial.json").write_text(
+            json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n"
+        )
+
     today = datetime.now().strftime("%Y-%m-%d")
     out_dir = OUTPUT_BASE / today
     out_dir.mkdir(parents=True, exist_ok=True)

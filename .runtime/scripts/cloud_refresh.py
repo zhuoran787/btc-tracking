@@ -12,6 +12,7 @@ import sys
 import tempfile
 from datetime import datetime, timezone
 from html import escape
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 REPO = ROOT.parent
@@ -66,6 +67,13 @@ def validate(name, d, rules):
 
 
 def source_date(d):
+    if d.get('btc_price', {}).get('history'):
+        ts = d['btc_price']['history'][-1]['ts']
+        return datetime.fromtimestamp(ts / (1000 if ts > 1e11 else 1), timezone.utc).isoformat()
+    if d.get('timestamp'):
+        return datetime.fromtimestamp(d['timestamp'], timezone.utc).date().isoformat()
+    if d.get('dates'):
+        return str(d['dates'][-1])
     for path in ['current_date', 'summary.latest_date', 'latest.date', 'last_updated',
                  'quarterly_reserves.as_of', 'fetched_at', 'generated_at']:
         try:
@@ -92,6 +100,10 @@ def fetch_one(spec, config):
             p = subprocess.run([sys.executable, str(candidate / 'scripts' / spec['script'])],
                                cwd=candidate, capture_output=True, text=True,
                                timeout=config['fetch_timeout_seconds'])
+            log = p.stdout + '\n' + p.stderr
+            if key:
+                log = log.replace(key, '[REDACTED]')
+            (REPO / '.receipts' / (spec['script'] + '.log')).write_text(log)
             output = candidate / 'data' / spec['output']
             if p.returncode:
                 raise ValueError(f'Fetcher exit {p.returncode}')
@@ -136,6 +148,10 @@ def make_page(config, results, bootstrap=False):
     # These are dated source/news snapshots, not the manually rewritten September
     # report summaries. Data-derived summaries continue through the usual helpers.
     ctx.update(editorial['context'])
+    for field in ['websearch_freshness', 'user_inputs_freshness']:
+        for value in (ctx.get(field) or {}).values():
+            if isinstance(value, dict):
+                value['status'] = 'cached'
     now = datetime.now(timezone.utc).isoformat(timespec='seconds')
     ctx['report_date'] = now
     frozen = ['opinions_input.json', 'websearch_cache.json', 'user_inputs_cache.json']
@@ -145,12 +161,14 @@ def make_page(config, results, bootstrap=False):
               'preserved_inputs': {p: digest(ROOT / 'data' / p) for p in frozen}}
     html = g.render(ctx)
     soup = BeautifulSoup(html, 'html.parser')
-    table = ''.join('<tr><td>'+escape(x['source'])+'</td><td>'+
+    labels = {s['output']: s['label'] for s in config['fetchers']}
+    table = ''.join('<tr><td>'+escape(labels[x['source']])+'</td><td>'+
                     ('本次抓取通过' if x['status']=='updated' else '沿用旧数据 / 本次未更新')+
                     '</td><td>'+escape(x['source_date'])+'</td></tr>' for x in results)
     banner = '<div style="padding:18px;margin:16px;border:2px solid #b58a36;background:#fff7dc;color:#342e21">'
     banner += '<strong>每日云端数据更新 · '+escape(config['schedule']['label'])+'</strong><br>'
-    banner += ('初始化展示；尚未完成一次云端数据刷新。' if bootstrap else '本次数据检查：'+escape(now)+'。')
+    display_time = datetime.now(ZoneInfo('Asia/Shanghai')).strftime('%Y-%m-%d %H:%M 北京时间')
+    banner += ('初始化展示；尚未完成一次云端数据刷新。' if bootstrap else '本次数据检查：'+display_time+'。')
     banner += ' 新闻和多空观点沿用 '+escape(editorial['as_of'])+' 的已核材料，各条保留原日期；五项个人判断沿用原文及确认日期。'
     banner += ' 数据相关总结按本次可用数据计算；旧观点不代表当前判断。<br>各源状态和原始截止日期如下。'
     banner += '<details><summary>查看数据源更新状态</summary><table><tr><th>数据源</th><th>状态</th><th>原始日期</th></tr>'+table+'</table></details></div>'
@@ -158,6 +176,7 @@ def make_page(config, results, bootstrap=False):
     # Historical screenshots must never inherit the page generation timestamp.
     html = str(soup).replace('抓取于 '+now, '历史截图沿用，非本次抓取')
     html = html.replace('人本周有更新', '人在上次完整采集中有更新')
+    html = html.replace('>具体观点跟踪<', '>具体观点跟踪（沿用 '+escape(editorial['as_of'])+' 已核观点）<')
     if '/Users/' in html or 'file:///' in html:
         raise ValueError('Local path found in public HTML')
     if 'VanEck' not in html:
