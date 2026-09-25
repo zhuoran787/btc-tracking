@@ -1,4 +1,105 @@
 {
-  "error": "HTTPSConnectionPool(host='bitcointreasuries.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))",
-  "fetched_at": "2026-09-24"
+  "fetched_at": "2026-09-25",
+  "source": "https://bitcointreasuries.net/",
+  "count": 10,
+  "snapshot": [
+    {
+      "rank": 1,
+      "name": "Strategy",
+      "country": "ðºð¸",
+      "ticker": "MSTR",
+      "btc_holdings": 846000.0,
+      "mnav": 1.13,
+      "mnav_method": "enterprise_value"
+    },
+    {
+      "rank": 2,
+      "name": "Twenty One Capital",
+      "country": "ðºð¸",
+      "ticker": "XXI",
+      "btc_holdings": 43514.0,
+      "mnav": 0.75,
+      "mnav_method": "enterprise_value"
+    },
+    {
+      "rank": 3,
+      "name": "Metaplanet Inc.",
+      "country": "ð¯ðµ",
+      "ticker": "MPJPY",
+      "btc_holdings": 43000.0,
+      "mnav": 0.78,
+      "mnav_method": "enterprise_value"
+    },
+    {
+      "rank": 5,
+      "name": "Strive",
+      "country": "ðºð¸",
+      "ticker": "ASST",
+      "btc_holdings": 26355.0,
+      "mnav": 1.43,
+      "mnav_method": "enterprise_value"
+    },
+    {
+      "rank": 22,
+      "name": "Nakamoto Inc",
+      "country": "ðºð¸",
+      "ticker": "NAKA",
+      "btc_holdings": 4467.0,
+      "mnav": 0.92,
+      "mnav_method": "enterprise_value"
+    },
+    {
+      "rank": 23,
+      "name": "OranjeBTC",
+      "country": "ð§ð·",
+      "ticker": "OBTC3.SA",
+      "btc_holdings": 3950.0,
+      "mnav": 0.73,
+      "mnav_method": "enterprise_value"
+    },
+    {
+      "rank": 25,
+      "name": "Capital B",
+      "country": "ð«ð·",
+      "ticker": "ALCPB.PA",
+      "btc_holdings": 3525.0,
+      "mnav": 1.17,
+      "mnav_method": "enterprise_value"
+    },
+    {
+      "rank": 27,
+      "name": "DDC Enterprise Limited",
+      "country": "ðºð¸",
+      "ticker": "DDC",
+      "btc_holdings": 2899.0,
+      "mnav": 0.31,
+      "mnav_method": "enterprise_value"
+    },
+    {
+      "rank": 43,
+      "name": "ZOOZ Power",
+      "country": "ð®ð±",
+      "ticker": "ZOOZ",
+      "btc_holdings": 1046.0,
+      "mnav": 0.99,
+      "mnav_method": "enterprise_value"
+    },
+    {
+      "rank": 46,
+      "name": "USBC, Inc.",
+      "country": "ðºð¸",
+      "ticker": "USBC",
+      "btc_holdings": 1000.0,
+      "mnav": 0.08,
+      "mnav_method": "enterprise_value"
+    }
+  ],
+  "methodology": {
+    "name": "enterprise_value",
+    "version": "bitcointreasuries-ev-2026-06-26",
+    "effective_date": "2026-06-26",
+    "formula": "(market_cap + total_debt + preferred_stock - cash) / (btc_holdings * btc_price)",
+    "source": "https://bitcointreasuries.net/news/how-bitcointreasuriesnet-calculates-mnav",
+    "scope_note": "Bitcoin miners without explicit Bitcoin KPIs are excluded by the source."
+  }
 }

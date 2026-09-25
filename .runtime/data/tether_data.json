@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-09-24",
+  "fetched_at": "2026-09-25",
   "current_holdings": {
     "name": "Tether Holdings Limited",
     "country": "🇻🇬",
     "btc_holdings": 100000.0,
-    "usd_value_m": 8415.0,
+    "usd_value_m": 8461.0,
     "pct_of_supply": "0.476%",
     "source": "https://bitcointreasuries.net/private-companies"
   },
@@ -30,8 +30,9 @@
     "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/2kYf7r64h3tzwiu6F0CbUB/2997abd2f11ecea74a21528048b50707/Opinion___Report_-_Tether_International_Financial_Figure_30-06-2026.pdf"
   },
   "transparency_page": {
-    "error": "HTTPSConnectionPool(host='tether.to', port=443): Max retries exceeded with url: /en/transparency/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))",
-    "url": "https://tether.to/en/transparency/"
+    "url": "https://tether.to/en/transparency/",
+    "latest_attestation_links": [],
+    "note": "Tether transparency page links; quarterly figures are parsed from the latest official news-linked BDO PDF."
   },
   "quarterly_history": [
     {

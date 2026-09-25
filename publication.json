@@ -1,7 +1,7 @@
 {
   "mode": "data_only",
-  "built_at": "2026-09-25T09:14:37+00:00",
-  "bootstrap": true,
+  "built_at": "2026-09-25T09:16:38+00:00",
+  "bootstrap": false,
   "config_hash": "22020f39822b3267672010d4245a514a66306aad54f21b463bbf575beb15ce82",
   "editorial_as_of": "2026-09-17",
   "schedule": {
@@ -12,68 +12,83 @@
   "sources": [
     {
       "source": "api_data.json",
-      "status": "retained",
-      "source_date": "2026-09-17T05:08:17.142376"
+      "status": "updated",
+      "source_date": "2026-09-25T09:16:37.957850",
+      "sha256": "f2fe369857ff2c8d04c01086dd6ce63e92f172558d304ef74b75917111a6344c"
     },
     {
       "source": "etf_flows.json",
-      "status": "retained",
-      "source_date": "2026-09-16"
+      "status": "updated",
+      "source_date": "2026-09-24",
+      "sha256": "21751dde23fbcb5a94035a2a25d77d15511e5856c09a5776a412008e8ea5de93"
     },
     {
       "source": "treasuries.json",
-      "status": "retained",
-      "source_date": "2026-09-17T05:07:00.878020"
+      "status": "updated",
+      "source_date": "2026-09-25T09:16:01.368396",
+      "sha256": "974f3a7bae3ad0c380abd8f7dbf6f73401c0b62f3282cefb88df7911e20d2795"
     },
     {
       "source": "brk_data.json",
-      "status": "retained",
-      "source_date": "2026-09-24"
+      "status": "updated",
+      "source_date": "2026-09-25",
+      "sha256": "b24bfb57ae1fe924b9396ae713d6dbd307aefaa446687938de1487d76b4066fe"
     },
     {
       "source": "derivatives_data.json",
-      "status": "retained",
-      "source_date": "2026-09-24"
+      "status": "updated",
+      "source_date": "2026-09-25",
+      "sha256": "b0eb97d1183a7928422223ed117d1ced2e9173e7162386b60b6ba777da7b134f"
     },
     {
       "source": "mnav_data.json",
-      "status": "retained",
-      "source_date": "2026-09-24"
+      "status": "updated",
+      "source_date": "2026-09-25",
+      "sha256": "41b717a60b96e6946bf1efb3f5d2b05ccba61229fe8a3ac12b7c0dd46883dccf"
     },
     {
       "source": "dat_data.json",
-      "status": "retained",
-      "source_date": "2026-09-24"
+      "status": "updated",
+      "source_date": "2026-09-25",
+      "sha256": "772aba16bf414128b8efa290510280a74a3fe0cd18fad9bd74cafcd79414b461"
     },
     {
       "source": "tether_data.json",
-      "status": "retained",
-      "source_date": "2026-06-30"
+      "status": "updated",
+      "source_date": "2026-06-30",
+      "sha256": "2ff7cbb5d109bebb83a3cfd007dc7fa4391d2cd9b1d0d5576de05a936e8b4750"
     },
     {
       "source": "fear_greed.json",
-      "status": "retained",
-      "source_date": "2026-09-24T21:11:12.902966Z"
+      "status": "updated",
+      "source_date": "2026-09-25T09:16:10.425532Z",
+      "sha256": "25ebc7e187bfec042a7d0ddbfff1b26eeec10b3d0b3a7ecf40b77ef7d5aa7f14"
     },
     {
       "source": "ahr999.json",
-      "status": "retained",
-      "source_date": "2026-09-23"
+      "status": "updated",
+      "source_date": "2026-09-25",
+      "sha256": "e87c83ddff2bd7085380344a8ae6f3a8be721e1a706002c8e77e27dd89409bf4"
     },
     {
       "source": "coinmetrics_data.json",
-      "status": "retained",
-      "source_date": "2026-09-16"
+      "status": "updated",
+      "source_date": "2026-09-24",
+      "sha256": "8be7a0f30820f8f86ab6752d2a3df2578cb3036c132d2568b3ddd2850a4b6a7d"
     },
     {
       "source": "bgeometrics_data.json",
       "status": "retained",
-      "source_date": "2026-09-17T05:07:00.863845"
+      "source_date": "2026-09-17T05:07:00.863845",
+      "reason": "Stale or future observation: mvrv_zscore.current_date",
+      "sha256": "1dae0e4e2b843b056a0b111e150176682b77b7af85e6629748cf0d0c803c2d57"
     },
     {
       "source": "strategy_data.json",
       "status": "retained",
-      "source_date": "2026-09-17T05:09:53.759942"
+      "source_date": "2026-09-17T05:09:53.759942",
+      "reason": "Fetcher exit 1",
+      "sha256": "2c73e36c01c58bb60feb4b1a980d75e5a0e3c6e0478605d7342a16f694af313d"
     }
   ],
   "preserved_inputs": {

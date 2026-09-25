@@ -1,7 +1,7 @@
 {
   "source": "farside",
   "url": "https://farside.co.uk/btc/",
-  "fetched_at": "2026-09-17T05:07:00.878013",
+  "fetched_at": "2026-09-25T09:16:01.416002",
   "daily_flows": [
     {
       "date": "2024-01-11",
@@ -12098,6 +12098,114 @@
         "GBTC": -18.2,
         "BTC": 0.0
       }
+    },
+    {
+      "date": "2026-09-17",
+      "total_flow_m": 159.5,
+      "etf_flows": {
+        "IBIT": 183.7,
+        "FBTC": -16.6,
+        "BITB": 0.0,
+        "ARKB": 0.0,
+        "BTCO": 0.0,
+        "EZBC": 0.0,
+        "BRRR": 0.0,
+        "HODL": -7.6,
+        "BTCW": 0.0,
+        "MSBT": 0.0,
+        "GBTC": 0.0,
+        "BTC": 0.0
+      }
+    },
+    {
+      "date": "2026-09-18",
+      "total_flow_m": 433.0,
+      "etf_flows": {
+        "IBIT": 108.4,
+        "FBTC": 310.7,
+        "BITB": 9.7,
+        "ARKB": 1.9,
+        "BTCO": 0.0,
+        "EZBC": 0.0,
+        "BRRR": 0.0,
+        "HODL": 2.3,
+        "BTCW": 0.0,
+        "MSBT": 0.0,
+        "GBTC": 0.0,
+        "BTC": 0.0
+      }
+    },
+    {
+      "date": "2026-09-21",
+      "total_flow_m": 999.0,
+      "etf_flows": {
+        "IBIT": 381.4,
+        "FBTC": 238.8,
+        "BITB": 21.6,
+        "ARKB": 289.1,
+        "BTCO": 0.0,
+        "EZBC": 0.0,
+        "BRRR": 0.0,
+        "HODL": 0.0,
+        "BTCW": 0.0,
+        "MSBT": 61.7,
+        "GBTC": 3.3,
+        "BTC": 3.1
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "total_flow_m": 714.7,
+      "etf_flows": {
+        "IBIT": 350.3,
+        "FBTC": 257.4,
+        "BITB": 0.0,
+        "ARKB": 0.6,
+        "BTCO": 0.0,
+        "EZBC": 0.0,
+        "BRRR": 0.0,
+        "HODL": 2.4,
+        "BTCW": 0.0,
+        "MSBT": 99.0,
+        "GBTC": 0.0,
+        "BTC": 5.0
+      }
+    },
+    {
+      "date": "2026-09-23",
+      "total_flow_m": 346.9,
+      "etf_flows": {
+        "IBIT": 166.3,
+        "FBTC": 143.2,
+        "BITB": 0.0,
+        "ARKB": 5.0,
+        "BTCO": 0.0,
+        "EZBC": 0.0,
+        "BRRR": 0.0,
+        "HODL": 0.0,
+        "BTCW": 0.0,
+        "MSBT": 32.4,
+        "GBTC": 0.0,
+        "BTC": 0.0
+      }
+    },
+    {
+      "date": "2026-09-24",
+      "total_flow_m": 190.7,
+      "etf_flows": {
+        "IBIT": 162.6,
+        "FBTC": 12.9,
+        "BITB": 4.1,
+        "ARKB": 0.0,
+        "BTCO": 0.0,
+        "EZBC": 4.9,
+        "BRRR": 0.0,
+        "HODL": 0.0,
+        "BTCW": -4.0,
+        "MSBT": 10.2,
+        "GBTC": 0.0,
+        "BTC": 0.0
+      }
     }
   ],
   "etf_names": [
@@ -12117,13 +12225,12 @@
     "Total"
   ],
   "summary": {
-    "total_days": 672,
-    "latest_date": "2026-09-16",
-    "latest_flow_m": -295.9,
-    "sum_7d_m": -1049.1,
-    "sum_30d_m": 2878.4,
-    "positive_days_30d": 18,
-    "negative_days_30d": 12
-  },
-  "summary_window": "latest 7/30 reported trading sessions; unreported placeholder rows excluded"
+    "total_days": 678,
+    "latest_date": "2026-09-24",
+    "latest_flow_m": 190.7,
+    "sum_7d_m": 2547.9,
+    "sum_30d_m": 5436.4,
+    "positive_days_30d": 20,
+    "negative_days_30d": 10
+  }
 }
