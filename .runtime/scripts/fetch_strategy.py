@@ -331,6 +331,7 @@ def fetch_sec_updates(since: str, previous: dict | None = None) -> tuple[list[di
         filings.append({
             "filing_date": filing_date,
             "accession": recent["accessionNumber"][index],
+            "primary_document": recent['primaryDocument'][index],
         })
     filings.sort(key=lambda filing: filing["filing_date"])
     if not filings and not previous:
@@ -341,18 +342,27 @@ def fetch_sec_updates(since: str, previous: dict | None = None) -> tuple[list[di
     for filing in filings:
         accession = filing["accession"]
         accession_path = accession.replace("-", "")
-        url = (
+        base = (
             f"https://www.sec.gov/Archives/edgar/data/{SEC_CIK_PATH}/"
-            f"{accession_path}/{accession}.txt"
+            f"{accession_path}/"
         )
-        response = requests.get(url, headers=SEC_HEADERS, timeout=30)
-        response.raise_for_status()
+        failures = []
+        for filename in (accession + '.txt', filing['primary_document']):
+            try:
+                response = requests.get(base + filename, headers=SEC_HEADERS, timeout=30)
+                response.raise_for_status()
+                submission = response.text
+                if not filename.endswith('.txt'):
+                    submission = '<DOCUMENT><TYPE>8-K\n<TEXT>' + submission + '</TEXT></DOCUMENT>'
+                parsed = parse_sec_btc_events(submission, filing['filing_date'], accession)
+                break
+            except Exception as exc:
+                failures.append(str(exc))
+                time.sleep(0.12)
+        else:
+            raise ValueError('; '.join(failures))
         checked += 1
-        events.extend(parse_sec_btc_events(
-            response.text,
-            filing["filing_date"],
-            accession,
-        ))
+        events.extend(parsed)
         time.sleep(0.12)  # stay below SEC's published 10 requests/second guideline
 
     if not events and previous:
