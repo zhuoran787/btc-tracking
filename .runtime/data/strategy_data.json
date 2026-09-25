@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-17T05:09:53.759942",
+  "fetched_at": "2026-09-25T02:36:55.079471",
   "source": "preserved Strategy official ledger baseline + SEC EDGAR 8-K reconciliation",
   "errors": [],
   "warnings": [
@@ -1077,6 +1077,16 @@
       "shares_basic": null,
       "shares_diluted": null,
       "sec_accession": "0001193125-26-375463"
+    },
+    {
+      "date": "2026-09-21",
+      "btc_delta": 950,
+      "btc_holdings": 846000,
+      "avg_price": 75416,
+      "total_cost": 63800.0,
+      "shares_basic": null,
+      "shares_diluted": null,
+      "sec_accession": "0001193125-26-396093"
     }
   ],
   "weekly_net_buys": {
@@ -1166,7 +1176,8 @@
       "2026-07-06",
       "2026-08-03",
       "2026-08-10",
-      "2026-08-31"
+      "2026-08-31",
+      "2026-09-21"
     ],
     "net_btc": [
       850.0,
@@ -1254,7 +1265,8 @@
       -2225.0,
       -1638.0,
       -1690.0,
-      4603.0
+      4603.0,
+      950.0
     ]
   },
   "mnav": {
@@ -1264,11 +1276,16 @@
   "sec_reconciliation": {
     "source": "SEC EDGAR submissions API + official complete-submission text",
     "cik": "0001050446",
-    "filings_checked": 6,
-    "btc_updates_found": 5,
-    "latest_filing_date": "2026-09-14",
-    "latest_as_of": "2026-09-13",
-    "latest_holdings": 845050,
-    "latest_accession": "0001193125-26-389858"
+    "filings_checked": 1,
+    "btc_updates_found": 1,
+    "latest_filing_date": "2026-09-21",
+    "latest_as_of": "2026-09-20",
+    "latest_holdings": 846000,
+    "latest_accession": "0001193125-26-396093",
+    "checked_accessions": [
+      "0001193125-26-389858",
+      "0001193125-26-396093"
+    ],
+    "verified_at": "2026-09-25T02:36:55.078706"
   }
 }
