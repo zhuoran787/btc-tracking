@@ -2294,6 +2294,14 @@ def build_context(data, extra):
         "ev_mnav_current": _mnav_current,
         "ev_mnav_methodology": _mnav_methodology,
         "strat_holdings_latest": ((_strat.get("purchases") or [{}])[-1].get("btc_holdings")),
+        "strat_as_of": (_strat.get("sec_reconciliation") or {}).get("latest_as_of", "未核实"),
+        "strat_source_url": (
+            "https://www.sec.gov/Archives/edgar/data/1050446/" +
+            _strat["sec_reconciliation"]["latest_accession"].replace("-", "") + "/" +
+            _strat["sec_reconciliation"]["latest_accession"] + "-index.html"
+            if (_strat.get("sec_reconciliation") or {}).get("latest_accession")
+            else "https://www.strategy.com/ledger"),
+        "strat_source_label": "SEC 官方最新持仓披露" if _strat.get("sec_reconciliation") else "Strategy 官方账本",
         "chart_tether_quarterly_labels": json.dumps([row["quarter"] for row in _tether_quarterly_history]),
         "chart_tether_quarterly_btc": json.dumps([round(row["btc_count"], 2) for row in _tether_quarterly_history]),
         "chart_whales_pct_labels": json.dumps(whales_pct_weekly_labels),

@@ -1,14 +1,13 @@
 """Fetch Strategy (MSTR) official BTC transaction history.
 
-Primary source:
-- Strategy ledger ``__NEXT_DATA__`` for the complete history since 2020.
-
-Automatic fallback / reconciliation:
+Normal incremental refresh:
+- Preserve the verified official historical ledger; do not refetch it each run.
 - SEC EDGAR submissions API to locate Strategy's recent 8-K filings.
-- SEC complete-submission text to parse the official ``BTC Update`` table.
+- SEC complete-submission text / primary HTML for BTC disclosures.
+- Strategy ledger ``__NEXT_DATA__`` is used only to bootstrap missing history.
 
-If the Strategy ledger is blocked and SEC reconciliation also fails, the last
-valid output file is left byte-for-byte unchanged.  A transient network failure
+If bootstrap or SEC reconciliation fails, the last valid output file is left
+byte-for-byte unchanged. A transient network failure
 must never erase the historical purchase ledger.
 
 The former self-computed equity-market-cap / gross-BTC-NAV series remains
@@ -16,12 +15,13 @@ deprecated.  Comparable mNAV comes only from ``fetch_mnav.py``.
 
 Output: data/strategy_data.json
 """
+import hashlib
 import json
 import os
 import re
 import sys
 import time
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
@@ -29,6 +29,68 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).parent.parent
 OUT = ROOT / "data" / "strategy_data.json"
+MIN_HISTORY = 80
+
+
+def utc_now() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+def write_receipt(status: str, reason: str = "") -> None:
+    """Record this attempt separately so a failure cannot refresh old data dates."""
+    receipt = {"status": status, "checked_at": utc_now(), "reason": reason,
+               "environment": "github_actions" if os.getenv("GITHUB_ACTIONS") else "local",
+               "sha256": hashlib.sha256(OUT.read_bytes()).hexdigest() if OUT.exists() else None}
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    path = OUT.with_name("strategy_refresh.json")
+    temporary = path.with_suffix(".json.tmp")
+    temporary.write_text(json.dumps(receipt, ensure_ascii=False, indent=2))
+    temporary.replace(path)
+
+
+def validate_snapshot(data: dict) -> None:
+    rows = data.get("purchases") or []
+    if len(rows) < MIN_HISTORY:
+        raise ValueError("Strategy history incomplete")
+    dates = [date.fromisoformat(row["date"]) for row in rows]
+    if dates != sorted(set(dates)):
+        raise ValueError("Strategy transaction dates duplicated or unordered")
+    for row in rows:
+        if not float(row["btc_holdings"]) > 0:
+            raise ValueError("Strategy holdings must be positive")
+    # Require a bridge for SEC-appended rows; historical ledger contains rounding
+    # and corporate adjustments and is preserved rather than silently rewritten.
+    for previous, row in zip(rows, rows[1:]):
+        if row.get("sec_accession") and abs(float(previous["btc_holdings"]) +
+                float(row["btc_delta"]) - float(row["btc_holdings"])) > 2:
+            raise ValueError("Strategy SEC holdings bridge failed")
+    sec = data.get("sec_reconciliation") or {}
+    if sec.get("latest_holdings") != rows[-1]["btc_holdings"]:
+        raise ValueError("Strategy ledger and SEC latest holdings disagree")
+    for key in ("latest_as_of", "latest_filing_date"):
+        date.fromisoformat(sec[key])
+    if not re.fullmatch(r"\d{10}-\d{2}-\d{6}", sec.get("latest_accession", "")):
+        raise ValueError("Strategy SEC accession missing or malformed")
+    if data.get("weekly_net_buys") != weekly_net_buys(rows):
+        raise ValueError("Strategy weekly aggregate does not match transactions")
+
+
+def check_current_attempt() -> dict:
+    data = json.loads(OUT.read_text())
+    validate_snapshot(data)
+    receipt = json.loads(OUT.with_name("strategy_refresh.json").read_text())
+    if receipt["status"] not in ("updated", "checked_no_new"):
+        raise ValueError("Latest Strategy attempt failed: " + receipt.get("reason", ""))
+    age = (datetime.now(timezone.utc) - datetime.fromisoformat(receipt["checked_at"])).total_seconds()
+    config = json.loads((ROOT / 'publication/config.json').read_text())
+    rules = next(spec['validation'] for spec in config['fetchers']
+                 if spec['output'] == 'strategy_data.json')
+    max_age = rules['max_age_days']['sec_reconciliation.verified_at'] * 86400
+    if not 0 <= age <= max_age:
+        raise ValueError("Strategy attempt receipt is not current")
+    if receipt["sha256"] != hashlib.sha256(OUT.read_bytes()).hexdigest():
+        raise ValueError("Strategy data changed after verification")
+    return receipt
 
 STRATEGY_URLS = (
     "https://www.strategy.com/ledger",
@@ -58,13 +120,13 @@ def _find_bitcoin_data(obj) -> list[dict] | None:
     """Find the ledger array even if Strategy moves it inside NEXT_DATA."""
     if isinstance(obj, dict):
         direct = obj.get("bitcoinData")
-        if isinstance(direct, list) and len(direct) >= 80:
+        if isinstance(direct, list) and len(direct) >= MIN_HISTORY:
             return direct
         for value in obj.values():
             found = _find_bitcoin_data(value)
             if found is not None:
                 return found
-    elif isinstance(obj, list) and len(obj) >= 80:
+    elif isinstance(obj, list) and len(obj) >= MIN_HISTORY:
         sample = [x for x in obj[:10] if isinstance(x, dict)]
         if sample and any(
             {"date_of_purchase", "count", "btc_holdings"}.issubset(x)
@@ -107,7 +169,7 @@ def fetch_purchases() -> tuple[list[dict], str]:
                     "shares_diluted": item.get("assumed_diluted_shares_outstanding"),
                 })
             rows.sort(key=lambda row: row["date"])
-            if len(rows) < 80 or not rows[-1].get("btc_holdings"):
+            if len(rows) < MIN_HISTORY or not rows[-1].get("btc_holdings"):
                 raise ValueError(f"transformed ledger invalid ({len(rows)} rows)")
             return rows, url
         except Exception as exc:
@@ -136,7 +198,7 @@ def _load_last_good() -> dict | None:
     try:
         old = json.loads(OUT.read_text())
         purchases = old.get("purchases") or []
-        if len(purchases) < 80 or not purchases[-1].get("btc_holdings"):
+        if len(purchases) < MIN_HISTORY or not purchases[-1].get("btc_holdings"):
             return None
         return old
     except Exception:
@@ -369,7 +431,7 @@ def fetch_sec_updates(since: str, previous: dict | None = None) -> tuple[list[di
         metadata = dict(previous)
         metadata.update(filings_checked=checked, btc_updates_found=0,
                         checked_accessions=sorted(verified | {f['accession'] for f in filings}),
-                        verified_at=datetime.now().isoformat())
+                        verified_at=utc_now())
         return [], metadata
     if not events:
         raise ValueError(f"no BTC Update tables found in {checked} Strategy 8-K filings")
@@ -385,7 +447,7 @@ def fetch_sec_updates(since: str, previous: dict | None = None) -> tuple[list[di
         "latest_holdings": latest["btc_holdings"],
         "latest_accession": latest["sec_accession"],
         "checked_accessions": sorted(verified | {f['accession'] for f in filings}),
-        "verified_at": datetime.now().isoformat(),
+        "verified_at": utc_now(),
     }
     return events, metadata
 
@@ -445,92 +507,59 @@ def _atomic_write(result: dict) -> None:
 
 
 def main() -> int:
+    # Failure/pending receipt invalidates any previous same-day successful check.
+    write_receipt("pending", "refresh started")
     last_good = _load_last_good()
-    warnings = []
-    ledger_url = None
-
     try:
-        purchases, ledger_url = fetch_purchases()
-        print(
-            f"OK Strategy ledger: {len(purchases)} rows "
-            f"({purchases[0]['date']} -> {purchases[-1]['date']})",
-            file=sys.stderr,
-        )
+        if last_good and last_good.get("sec_reconciliation"):
+            validate_snapshot(last_good)
+            purchases = [dict(row) for row in last_good["purchases"]]
+            previous_sec = last_good["sec_reconciliation"]
+            print(f"OK verified baseline: {len(purchases)} rows; checking SEC incrementally", file=sys.stderr)
+        else:
+            # Existing unverified historical ledger can still be reconciled; only
+            # fetch the blocked full ledger when no usable history exists.
+            if last_good:
+                purchases = [dict(row) for row in last_good["purchases"]]
+            else:
+                purchases, _ = fetch_purchases()
+            previous_sec = None
+        since = (date.fromisoformat(purchases[-1]["date"]) - timedelta(days=14)).isoformat()
+        if previous_sec:
+            since = max(since, previous_sec["latest_filing_date"])
+        events, metadata = fetch_sec_updates(since, previous_sec)
+        purchases = reconcile_sec_events(purchases, events)
+        status = "updated" if events or not previous_sec else "checked_no_new"
+        result = {
+            "fetched_at": utc_now(),
+            "source": "verified Strategy official ledger baseline + SEC EDGAR 8-K reconciliation",
+            "errors": [], "warnings": [], "purchases": purchases,
+            "weekly_net_buys": weekly_net_buys(purchases),
+            "sec_reconciliation": metadata,
+            "refresh_status": status,
+            "mnav": {"deprecated": True,
+                     "reason": "Use fetch_mnav.py EV mNAV; legacy equity/gross-BTC method is not comparable."},
+        }
+        validate_snapshot(result)
+        _atomic_write(result)
+        write_receipt(status)
+        print(f"OK Strategy {status}: {metadata['btc_updates_found']} BTC updates; "
+              f"as_of={metadata['latest_as_of']} holdings={metadata['latest_holdings']:,.0f}; "
+              f"verified_at={metadata['verified_at']}", file=sys.stderr)
+        return 0
     except Exception as exc:
-        warnings.append(f"Strategy ledger unavailable: {exc}")
-        if last_good is None:
-            print(
-                "FAIL fetch_strategy: Strategy ledger unavailable and no valid prior file to preserve",
-                file=sys.stderr,
-            )
-            return 1
-        purchases = [dict(row) for row in last_good["purchases"]]
-        print(
-            f"WARN Strategy ledger unavailable; preserving {len(purchases)} prior rows",
-            file=sys.stderr,
-        )
-
-    sec_metadata = None
-    since = (date.fromisoformat(purchases[-1]["date"]) - timedelta(days=14)).isoformat()
-    previous_sec = (last_good or {}).get('sec_reconciliation')
-    # Resume only from a validated baseline. Re-reading older, already checked
-    # filings made one historical 403 block every subsequent BTC update.
-    if previous_sec and purchases[-1]['btc_holdings'] == previous_sec.get('latest_holdings'):
-        since = max(since, previous_sec['latest_filing_date'])
-    else:
-        previous_sec = None
-    try:
-        sec_events, sec_metadata = fetch_sec_updates(since, previous_sec)
-        purchases = reconcile_sec_events(purchases, sec_events)
-        if purchases[-1]["btc_holdings"] != sec_metadata["latest_holdings"]:
-            raise ValueError(
-                f"latest holdings mismatch: ledger={purchases[-1]['btc_holdings']}, "
-                f"SEC={sec_metadata['latest_holdings']}"
-            )
-        print(
-            f"OK SEC reconciliation: {sec_metadata['btc_updates_found']} BTC updates, "
-            f"latest {sec_metadata['latest_as_of']} holdings={sec_metadata['latest_holdings']:,.0f}",
-            file=sys.stderr,
-        )
-    except Exception as exc:
-        if ledger_url is None:
-            print(
-                f"FAIL fetch_strategy SEC fallback: {exc}; last good file left unchanged",
-                file=sys.stderr,
-            )
-            return 1
-        warnings.append(f"SEC reconciliation unavailable: {exc}")
-        print(f"WARN SEC reconciliation unavailable: {exc}", file=sys.stderr)
-
-    if ledger_url:
-        source = f"{ledger_url} (__NEXT_DATA__, official)"
-        if sec_metadata:
-            source += " + SEC EDGAR 8-K reconciliation"
-    else:
-        source = "preserved Strategy official ledger baseline + SEC EDGAR 8-K reconciliation"
-
-    result = {
-        "fetched_at": datetime.now().isoformat(),
-        "source": source,
-        "errors": [],
-        "warnings": warnings,
-        "purchases": purchases,
-        "weekly_net_buys": weekly_net_buys(purchases),
-        "mnav": {
-            "deprecated": True,
-            "reason": "Use fetch_mnav.py EV mNAV; legacy equity/gross-BTC method is not comparable.",
-        },
-    }
-    if sec_metadata:
-        result["sec_reconciliation"] = sec_metadata
-
-    _atomic_write(result)
-    print(
-        f"OK fetch_strategy done: {len(purchases)} rows, warnings={len(warnings)} -> {OUT}",
-        file=sys.stderr,
-    )
-    return 0
+        reason = f"{type(exc).__name__}: {exc}"
+        write_receipt("retained" if OUT.exists() else "unavailable", reason)
+        print(f"FAIL Strategy: {reason}; last good data file left unchanged", file=sys.stderr)
+        return 1
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    if "--check" in sys.argv:
+        try:
+            print(json.dumps(check_current_attempt(), ensure_ascii=False))
+        except Exception as exc:
+            print(f"FAIL Strategy check: {exc}", file=sys.stderr)
+            sys.exit(1)
+    else:
+        sys.exit(main())

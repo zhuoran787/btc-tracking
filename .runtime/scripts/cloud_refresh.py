@@ -35,6 +35,11 @@ def nested(d, path):
 
 
 def validate(name, d, rules):
+    if name == 'strategy_data.json':
+        from fetch_strategy import validate_snapshot
+        validate_snapshot(d)
+        if d.get('refresh_status') not in ('updated', 'checked_no_new'):
+            raise ValueError('Strategy refresh outcome missing')
     if d.get('error') or d.get('errors') or d.get('fallback_needed') or d.get('stale'):
         raise ValueError('Source reported an error or fallback')
     for path, minimum in rules.get('lengths', {}).items():
@@ -137,6 +142,10 @@ def fetch_one(spec, config):
             if key:
                 log = log.replace(key, '[REDACTED]')
             (REPO / '.receipts' / (spec['script'] + '.log')).write_text(log)
+            if spec['script'] == 'fetch_strategy.py':
+                receipt = candidate / 'data/strategy_refresh.json'
+                if receipt.exists():
+                    shutil.copy2(receipt, REPO / '.receipts' / receipt.name)
             output = candidate / 'data' / spec['output']
             if p.returncode and not spec.get('components'):
                 raise ValueError(f'Fetcher exit {p.returncode}')
@@ -154,6 +163,8 @@ def fetch_one(spec, config):
                 output.write_text(json.dumps(d, ensure_ascii=False, indent=2))
             else:
                 validate(spec['output'], d, spec['validation'])
+                if spec['output'] == 'strategy_data.json':
+                    status = d['refresh_status']
             for name in [spec['output']] + spec.get('sidecars', []):
                 shutil.copy2(candidate / 'data' / name, ROOT / 'data' / name)
             return {'source': spec['output'], 'status': status, 'source_date': source_date(d),
@@ -207,7 +218,8 @@ def make_page(config, results, bootstrap=False):
     html = g.render(ctx)
     soup = BeautifulSoup(html, 'html.parser')
     labels = {s['output']: s['label'] for s in config['fetchers']}
-    statuses = {'updated': '本次抓取通过', 'delayed': '本次已核验 · 免费源延迟（非实时）',
+    statuses = {'updated': '本次抓取通过', 'checked_no_new': '本次已检查 · 无新的 BTC 披露',
+                'delayed': '本次已核验 · 免费源延迟（非实时）',
                 'retained': '沿用旧数据 / 本次未更新', 'unavailable': '暂无有效数据'}
     rows = [part for result in results for part in (result.get('components') or
             [dict(result, label=labels[result['source']])])]
@@ -262,6 +274,7 @@ def main():
     result = make_page(config, results, bootstrap)
     (audit_dir/'verification.json').write_text(json.dumps(result, ensure_ascii=False, indent=2))
     print(json.dumps({'updated':sum(x['status']=='updated' for x in results),
+                      'checked_no_new':sum(x['status']=='checked_no_new' for x in results),
                       'delayed':sum(x['status']=='delayed' for x in results),
                       'partial':sum(x['status']=='partial' for x in results),
                       'retained':sum(x['status']=='retained' for x in results),

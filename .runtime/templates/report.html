@@ -406,7 +406,7 @@ a:hover { text-decoration: underline; }
       {% if chart_strat_weekly_values and chart_strat_weekly_values != '[]' %}
       <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 2：Strategy 周度 BTC 净买入（官方购买记录 · 2024-01 起）</div>
       <div class="chart-container" style="height:240px;"><canvas id="chartStratWeekly"></canvas></div>
-      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：<a href="https://www.strategy.com/purchases" target="_blank">strategy.com/purchases</a> 官方披露（一手数据，每笔 8-K 购买/出售记录周度聚合；负值 = 净卖出）。当前累计持仓 {{ '{:,.0f}'.format(strat_holdings_latest) if strat_holdings_latest else '—' }} BTC。Metaplanet / MARA 右轴待 dat_history.sqlite 累积（2026-05-11 起）后加入。</div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：<a href="{{ strat_source_url }}" target="_blank">{{ strat_source_label }}</a>；历史基线为 Strategy 官方账本，后续以 SEC 披露核对增量。按记录日期周度聚合（通常为公告日，不代表逐日成交；负值 = 净卖出）。截至 {{ strat_as_of }} 累计持仓 {{ '{:,.0f}'.format(strat_holdings_latest) if strat_holdings_latest else '—' }} BTC。Metaplanet / MARA 右轴待 dat_history.sqlite 累积（2026-05-11 起）后加入。</div>
       {% elif ppt_img_dat_per_company %}
       <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 2：公开 DAT 公司 BTC 累计持仓时序（MacroMicro 142919 · 2024-07 起）</div>
       <div style="padding:8px;background:var(--bg2);border-radius:6px;border:1px solid var(--border);max-width:900px;">

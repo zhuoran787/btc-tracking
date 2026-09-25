@@ -277,13 +277,14 @@
       "script": "fetch_strategy.py",
       "output": "strategy_data.json",
       "validation": {
-        "lengths": {
-          "purchases": 80
-        },
         "required": [
           "weekly_net_buys",
-          "sec_reconciliation"
-        ]
+          "sec_reconciliation",
+          "refresh_status"
+        ],
+        "max_age_days": {
+          "sec_reconciliation.verified_at": 1
+        }
       },
       "sidecars": [],
       "required_for_publish": false,
