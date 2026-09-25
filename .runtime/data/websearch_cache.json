@@ -6,108 +6,101 @@
     "seed_date": "2026-05-18"
   },
   "dat_announcements": {
-    "_last_search_date": "2026-09-17",
+    "_last_search_date": "2026-09-25",
     "_status": "fresh",
     "items": [
       {
+        "date": "2026-09-21",
+        "company": "Strategy",
+        "text": "披露上周买入950 BTC，截至9/20累计持有846,000枚；本次查无更新披露",
+        "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526396093/0001193125-26-396093.txt",
+        "action": "buy"
+      },
+      {
         "date": "2026-09-14",
         "company": "Strategy",
-        "text": "SEC 周报确认未买卖 BTC，截至 9/13 持仓仍为 845,050 枚",
+        "text": "确认截至9/13的一周未买卖 BTC，当时持仓为845,050枚",
         "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526389858/0001193125-26-389858.txt",
         "action": "none"
       },
       {
         "date": "2026-09-11",
         "company": "Metaplanet",
-        "text": "削减高管期权对应潜在股数约 41.1%，行权期后移；此项不是新增买币公告",
-        "url": "https://www.theblock.co/news/business/2026-09-11-metaplanet-reverses-course-executive-options-41-cut-potential-shares-scraps-employee-warrant-plan-414265",
+        "text": "再次调整高管股票期权条款；属于股权稀释安排，不是新增买币公告",
+        "url": "https://metaplanet.jp/en/disclosures",
         "action": "equity_compensation"
       },
       {
         "date": "2026-08-31",
         "company": "Strategy",
-        "text": "披露买入 4,603 BTC，持币总量增至 845,050 枚",
-        "url": "https://www.strategy.com/purchases",
+        "text": "披露买入4,603 BTC，持币总量增至845,050枚",
+        "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526375463/0001193125-26-375463.txt",
         "action": "buy"
       }
     ]
   },
   "whale_buysell_news": {
-    "_last_search_date": "2026-09-04",
+    "_last_search_date": "2026-09-25",
     "_status": "fresh",
     "items": [
       {
-        "date": "2026-09-03",
-        "side": "买",
-        "asset": "BTC",
-        "text": "BTC 自 8/28 局部高点回撤 5.82% 期间，Lookonchain 聚合页称鲸鱼群体增持约 6,765 BTC（约 $521M）",
-        "url": "https://lookonchain.com/token/bitcoin"
-      },
-      {
-        "date": "2026-09-02",
+        "date": "2026-09-18",
         "side": "卖",
-        "asset": "BTC",
-        "text": "一名鲸鱼向 Galaxy Digital 转入 95 BTC（约 $7.32M），可能用于 OTC；转账不等于已成交卖出",
-        "url": "https://lookonchain.com/token/bitcoin"
-      },
-      {
-        "date": "2026-09-01",
-        "side": "买",
-        "asset": "BTC",
-        "text": "Whale Alert 记录 2,202 BTC（约 $172.5M）从 Coinbase 转至未知钱包；偏离开交易所，但地址用途未确认",
-        "url": "https://whale-alert.io/transaction/bitcoin/753e7ffd3f91d2097948f014a429c96c95cc30fd324d34b424355569b45e6bff"
+        "asset": "ETH",
+        "text": "Lookonchain 将相关地址归为 Garrett Jin：出售35,001 ETH、约8,750万美元，并另开 BTC 杠杆多仓；仅描述当日事件，不代表当前仓位",
+        "url": "https://t.me/lookonchainchannel/10280"
       }
     ]
   },
   "coinshares_weekly": {
-    "_last_search_date": "2026-09-04",
+    "_last_search_date": "2026-09-25",
     "_status": "fresh",
     "paragraphs": [
-      "全球数字资产投资产品上周流入 US$2.05bn，连续第二周强劲流入；此前一周创下 US$2.94bn 的纪录。",
-      "总管理规模升至约 US$152bn，年初至今累计流入约 US$3.8bn。",
-      "Bitcoin 流入 US$939m；Ethereum 流入 US$754m，为年内最强一周，接近 BTC 的流入规模。",
-      "Solana、XRP、Hyperliquid 分别流入 US$131m、US$124m 和 US$67.9m；多资产产品是唯一流出类别，净流出 US$7.2m。",
-      "资金面显示机构需求首次在本季度明显扩散到 BTC 以外，但 Jackson Hole 的偏鹰表态令 BTC 从约 US$81K 高位回落，短线仍受利率预期约束。"
+      "本次检查最新资金流报告仍为9月15日双周刊，资金流数据截至9月11日：全球数字资产投资产品最近一周净流出9,270万美元，前一周净流入13.5亿美元。",
+      "产品管理规模约1,560亿美元，年初至今仍累计净流入50亿美元；总量平稳掩盖了币种之间的资金轮动。",
+      "比特币产品净流出4.36亿美元，以太坊产品净流入2.20亿美元。CoinShares 将比特币走弱归因于利率前景，这是其研究判断。",
+      "Zcash 流入1.02亿美元，XRP 流入2,770万美元，Hyperliquid 流出2,530万美元。上述为全球投资产品口径，不能与美国现货 BTC ETF 日流量直接混算。"
     ],
-    "source_url": "https://coinshares.com/insights/research-data/digital-asset-bi-weekly-digest-02-09-2026/"
+    "source_url": "https://coinshares.com/insights/research-data/digital-asset-bi-weekly-digest-15-09-2026/",
+    "report_date": "2026-09-15"
   },
   "verify_1_strategic_reserve": {
-    "text": "9/16 众议院金融服务委员会审议 H.R.8957《American Reserve Modernization Act》，旨在推动战略比特币储备制度化；委员会阶段的推进不等于全院通过、总统签署或政府已经买币。来源：https://docs.house.gov/Committee/Calendar/ByEvent.aspx?EventID=119565",
-    "tldr": "9/16 众议院金融服务委员会审议储备法案 H.R.8957，战略储备制度化仍在立法阶段，不能据此认定政府已经新增买币",
-    "_last_search_date": "2026-09-17",
+    "text": "9/16 众议院金融服务委员会以28–21通过 H.R.8957《American Reserve Modernization Act》，推动战略比特币储备制度化。此为委员会阶段，不代表众议院全院或参议院通过，更不能据此推断政府已在市场买币。来源：https://financialservices.house.gov/calendar/eventsingle.aspx?EventID=411219",
+    "tldr": "储备法案 H.R.8957 于9/16以28–21通过众议院金融服务委员会，尚未完成国会立法；未核实政府据此新增买币",
+    "_last_search_date": "2026-09-25",
     "_status": "fresh"
   },
   "verify_2_trump_clearance": {
-    "text": "本期未核实 Trump 家族或相关交易者已经完成数字资产清仓。9/14 Clarity 谈判涉及更严伦理限制，但接受限制条款与实际完成减持是不同事实。来源：https://coingape.com/galaxy-ceo-warns-if-clarity-doesnt-advance-u-s-crypto-rules-may-never-arrive/",
-    "tldr": "未核实 Trump 家族或相关交易者已实际清仓；谈判涉及更严伦理约束，但接受条款不能作为已经减持的证据",
-    "_last_search_date": "2026-09-17",
+    "text": "本期未找到足以确认 Trump 家族或相关交易者已完成 BTC 大举减持或清仓的原始证据。9/15 Warren 再次要求调查 World Liberty Financial 的国家安全风险，这是议员指控和调查请求，不是已认定的违法结论，也不是持仓出清证据。来源：https://www.banking.senate.gov/newsroom/minority/after-latest-round-of-reports-warren-reiterates-call-on-bessent-blanche-to-investigate-national-security-risks-posed-by-world-liberty-financial",
+    "tldr": "未核实 Trump 家族已实际清仓；Warren 的调查请求不构成违法认定或减持证据",
+    "_last_search_date": "2026-09-25",
     "_status": "fresh"
   },
   "verify_3_institutional_entry": {
-    "text": "Deutsche Bank 9/16 宣布计划于 2026 年为欧洲机构和企业客户推出数字资产托管，覆盖 BTC、ETH 与部分稳定币，仍需满足监管条件；Block 9/8 向 OCC 申请设立 Builders Bank 国家信托银行，提供 BTC/稳定币托管，并非已获批。来源：https://www.db.com/news/detail/20260916-deutsche-bank-to-launch-digital-asset-custody-solution-for-institutional-and-corporate-clients?language_id=1；https://investors.block.xyz/investor-news/news-details/2026/Block-Applies-to-Establish-Builders-Bank-a-National-Trust-Bank/default.aspx",
-    "tldr": "德银计划年内推出 BTC/ETH 等机构托管，仍受监管条件约束；Block 已申请国家信托银行牌照，尚不等于获批或正式运营",
-    "_last_search_date": "2026-09-17",
+    "text": "Deutsche Bank 9/16宣布计划于2026年为欧洲机构和企业客户推出 BTC、ETH及部分稳定币托管，仍需满足监管条件，不能写作已经上线。SEC 9/17给予符合条件的代币化美股交易五年创新豁免；属于资本市场基础设施放宽，不是 BTC ETF 新批或 Clarity Act 已成法。来源：https://www.db.com/news/detail/20260916-deutsche-bank-to-launch-digital-asset-custody-solution-for-institutional-and-corporate-clients?language_id=1；https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment",
+    "tldr": "德银计划年内推出机构数字资产托管，尚有监管条件；SEC对符合条件的代币化美股交易给予五年豁免，属于业务基础设施推进",
+    "_last_search_date": "2026-09-25",
     "_status": "fresh"
   },
   "verify_4_clarity_passage_probability": {
-    "text": "9/15 参议院就推进 H.R.3633 审议的 cloture 程序投票以 49–50 失败，未达到 60 票门槛；因此当前无法按原计划推进，立法预期显著转弱。这不是最终法案表决，后续能否重启及具体时间仍不确定。来源：https://www.senate.gov/legislative/cloture/119.htm",
-    "tldr": "Clarity Act 立法预期显著转弱：9/15 推进审议的程序投票 49–50 失败，未达 60 票；后续时间表不明，不能把行政规则推进当成立法已完成",
-    "_last_search_date": "2026-09-17",
+    "text": "9/15推进 H.R.3633 审议的 cloture 程序投票以49–50失败，未达到60票门槛；不是最终法案表决。Scott 当日承认推进受阻并转向支持监管机构现有权限内的规则工作。9/17 SEC/CFTC措施及9/24联储稳定币提案不能替代国会市场结构立法；本次未取得可核实的最新通过概率，不提供百分比。来源：https://www.senate.gov/legislative/cloture/119.htm；https://www.banking.senate.gov/newsroom/majority/scott-statement-on-clarity-act-vote；https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
+    "tldr": "Clarity 于9/15推进审议的程序投票49–50失败，未达60票；重启时间不明。行政规则有所推进，但不等于法案通过，无可靠最新概率",
+    "_last_search_date": "2026-09-25",
     "_status": "fresh"
   },
   "factor_9_reserve": {
-    "_last_search_date": "2026-09-04",
+    "_last_search_date": "2026-09-25",
     "_status": "fresh",
-    "text": "No budget-neutral open-market Bitcoin purchase or new appropriation was announced in the last 30 days. The 2025 executive order still centers on retaining forfeited BTC; the promised follow-up update has not landed."
+    "text": "9/16储备法案 H.R.8957以28–21通过众议院金融服务委员会；尚非全院通过或政府已经买币。"
   },
   "factor_10_institution": {
-    "_last_search_date": "2026-09-04",
+    "_last_search_date": "2026-09-25",
     "_status": "fresh",
-    "text": "Standard Chartered launched deliverable BTC and ETH spot trading for eligible institutional clients through its DIFC branch on September 3, extending its regulated execution and custody stack in the UAE."
+    "text": "德银9/16宣布拟于年内推出欧洲机构数字资产托管，仍需满足监管条件；9/17 SEC推进符合条件的代币化美股交易。"
   },
   "factor_11_clarity": {
-    "_last_search_date": "2026-09-04",
+    "_last_search_date": "2026-09-25",
     "_status": "fresh",
-    "text": "The Senate has scheduled a September 15 cloture vote on the motion to proceed with CLARITY; 60 votes are required and this is not final passage. SEC Chair Paul Atkins publicly supports advancing the bill, while prediction markets imply only about 15%-18% odds of enactment in 2026."
+    "text": "Clarity 9/15推进审议的程序投票49–50失败；SEC/CFTC及联储随后推进现有权限内的规则，不能替代国会立法。"
   }
 }

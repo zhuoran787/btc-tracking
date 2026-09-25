@@ -103,6 +103,7 @@ a:hover { text-decoration: underline; }
 /* ── Cards ──────────────────────────────────────────────────── */
 .card {
   background: var(--card); border-radius: var(--radius);
+  overflow-wrap: anywhere;
   padding: 20px; margin-bottom: 16px;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
@@ -125,6 +126,7 @@ a:hover { text-decoration: underline; }
 @media (max-width: 1000px) { .grid-3 { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 768px) {
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .dashboard { min-width: 960px; }
   .header { flex-direction: column; gap: 16px; text-align: center; }
   .header .price-meta { text-align: center; }
   body { padding: 12px; }
@@ -167,7 +169,7 @@ a:hover { text-decoration: underline; }
 .countdown-detail { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
 
 /* ── Timeline (Clarity Act) ─────────────────────────────────── */
-.timeline { display: flex; align-items: flex-start; gap: 0; margin: 16px 0; position: relative; }
+.timeline { display: flex; align-items: flex-start; gap: 0; margin: 16px 0; position: relative; overflow-x: auto; padding-bottom: 8px; }
 .timeline::before {
   content: ''; position: absolute; top: 14px; left: 0; right: 0;
   height: 2px; background: var(--border);

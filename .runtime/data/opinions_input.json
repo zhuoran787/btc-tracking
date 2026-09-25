@@ -1,6 +1,6 @@
 {
-  "report_date": "2026-09-17",
-  "one_liner": "本期氛围从普遍期待立法转为分歧：Matt Hougan 9/16 明确修正年初判断，认为 Clarity 失败也不会阻断牛市；James Check 从 9/4 强调牛市早期，转为 9/14 公开导语关注 50 周均线下震荡与宏观压力（仅核公开部分）。Novogratz 9/15 警告立法失败会延长政策不确定性；Tom Lee 仍看好年末机构配置，Peter Schiff 继续看空 BTC",
+  "report_date": "2026-09-25",
+  "one_liner": "本期观点呈现长期采用偏积极、政策与交易工具分化：Tom Lee 9/21从等待见底转为判断牛市已于6月底启动；James Check 9/18–21对市场走出熊市更积极并质疑四年周期，Matt Hougan 9/23新增机构访谈证据。VanEck 9/18首次跟踪，偏好具有电力资源的矿企、警惕财库稀释；Parker Lewis 9/15–18看多 BTC 却批评财库优先股，Peter Schiff 9/16延续看空",
   "categories": [
     {
       "name": "币圈老鸟，一般倾向看多",
@@ -9,21 +9,69 @@
           "name": "CZ",
           "org": "Binance",
           "handle": "@cz_binance",
-          "has_update": false,
-          "date": null,
-          "source_url": null,
-          "stance": "看多",
-          "summary": "近 14 天未找到符合口径且可核实的新观点；命中报道回溯 8/27 演讲，超出窗口",
+          "has_update": true,
+          "stance": "中性",
           "raw_search_results": [
             {
-              "url": "https://news.google.com/rss/search?q=CZ+Binance+blockchain+BTC+ETH+strategy+ecosystem+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "CZ Binance blockchain BTC ETH strategy ecosystem [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 11 条；零命中已另跑互联网搜索"
+              "date": "2026-09-24",
+              "url": "https://x.com/cz_binance/status/2103059724006498416",
+              "title": "CZ 本期已核来源",
+              "snippet": "会见塞拉利昂总统后称加密采用仍在推进；本期可核内容是采用进展，没有给出 BTC/ETH 目标价或新增仓位。与上期无可核观点记录相比，本期补入这项生态动态"
             },
             {
-              "url": "https://news.google.com/rss/search?q=David+Sacks+White+House+Crypto+Czar+BTC+strategy+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "David Sacks White House Crypto Czar BTC strategy [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 8 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=CZ+Binance+blockchain+BTC+ETH+strategy+ecosystem+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中4条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/cz_binance",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-18",
+              "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1wQkpSRHAyOVJJTzg0RlpCTnA1dURXd0RzR2xKOTF1bS1hYmNRaFo5YlNHVDJmcllfTHhXOEJ6ZUk0aE0wUlkyanZqMTR0R094UUE?oc=5",
+              "title": "BNB Price, BNB Price, Live Charts, and Marketcap: bnb price - Coinbase Italy - Coinbase",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Coinbase",
+              "query": "CZ Binance blockchain BTC ETH strategy ecosystem"
+            },
+            {
+              "date": "2026-09-18",
+              "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBKX2g0d1NhXzNCd2I0T2hqY1EybkJKbG9tOTZDTWRrcnZBakZTQ3BCeGJsWFVIbTREUF96VTZidl9ITTBKTWx6dGpoQTR2M3hDcEE?oc=5",
+              "title": "Bnb (BNB) Price CAD Today, News, Charts, Market Cap - Coinbase",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Coinbase",
+              "query": "CZ Binance blockchain BTC ETH strategy ecosystem"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5fYlI1a3dMZ2U5Vm5xR1BISm5yRnFWRUgtTkJwNkhGaEVfYS02TTZUOEQwSkprWU5CZVBTSk1XcmlBM1NpX21tSVN1VlhvQ2RWbzVUamlqM2RoNmdFcl9QX3JvRFVCcTA?oc=5",
+              "title": "Next 1000x Crypto in 2026: Top 9 High-Utility Gems & Presales - 99Bitcoins",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "99Bitcoins",
+              "query": "CZ Binance blockchain BTC ETH strategy ecosystem"
+            },
+            {
+              "date": "2026-09-18",
+              "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1GaC01N1RHdHpEdmtLWVg1M04xQnVNYlBjMERKMlJ4QUxxRERZOWpMYWFKem1RMFhtenplUjliaUIwNWxuR21XUEpkQ0U5RUNVY1E?oc=5",
+              "title": "BNB Price, BNB Price, Live Charts, and Marketcap - Coinbase France - Coinbase",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Coinbase",
+              "query": "CZ Binance blockchain BTC ETH strategy ecosystem"
+            }
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-24",
+          "source_url": "https://x.com/cz_binance/status/2103059724006498416",
+          "summary": "会见塞拉利昂总统后称加密采用仍在推进；本期可核内容是采用进展，没有给出 BTC/ETH 目标价或新增仓位。与上期无可核观点记录相比，本期补入这项生态动态",
+          "sources": [
+            {
+              "date": "2026-09-24",
+              "title": "CZ 本期已核来源",
+              "url": "https://x.com/cz_binance/status/2103059724006498416"
             }
           ]
         },
@@ -31,16 +79,69 @@
           "name": "Star Xu",
           "org": "OKX",
           "handle": "@star_okx",
-          "has_update": false,
-          "date": null,
-          "source_url": null,
-          "stance": "看多",
-          "summary": "近 14 天未找到符合口径且可核实的新观点；命中 ICE 合作旧闻，原事件超出窗口",
+          "has_update": true,
+          "stance": "中性",
           "raw_search_results": [
             {
-              "url": "https://news.google.com/rss/search?q=Star+Xu+OKX+blockchain+BTC+ETH+market+view+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Star Xu OKX blockchain BTC ETH market view [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 1 条；零命中已另跑互联网搜索"
+              "date": "2026-09-22",
+              "url": "https://x.com/star_okx/status/2102348637221077043",
+              "title": "Star Xu 本期已核来源",
+              "snippet": "主张把安全保护内置于产品，宣布欧洲 OKX Shield 增加用户保障；这是交易平台基础设施观点，不等于 BTC/ETH 看涨预测。上期无可核新观点，本期补入生态安全更新"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Star+Xu+OKX+blockchain+BTC+ETH+market+view+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中4条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/star_okx",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1VR2hTY3g4SFFSYkVwY0VkVUkybHJUVG9wajVCUmZfdHJxZGFvOFVZY1dMN3ZnaUhRcFp6MWVJenNreFRsRFU1dkI3cFJycWNiQTlQR1pQd29kYnNS?oc=5",
+              "title": "Lao Bai: Crypto has won, but \"Crypto VC\" is fading; Robinhood is the endgame for exchanges. - techflowpost.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "techflowpost.com",
+              "query": "Star Xu OKX blockchain BTC ETH market view"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMmRwVlYzczlOYVpsdFQ2eFdXUmZMcEJ2SlVYVF9WZ2hwTW5xZ1NoTEVTUXdCWVJTVWlpZ1Vmc0pjanB4Tkhlb0tZOXRVTTMyN2x1dWdRMVN4ckxmdWsyN3dBeXA1a3VSdGw0VTZtRXZ2LW9YMkVxQnhBbS12TEtTQXdOQXVGVU05QlpEajIzal94TlRkOGt6NmhfOEVTb3ROelRPaDB6NnFFbndxTWlR?oc=5",
+              "title": "OKX founder admits misjudging Ethereum, now foc... - Pluang",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Pluang",
+              "query": "Star Xu OKX blockchain BTC ETH market view"
+            },
+            {
+              "date": "2026-09-12",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdDRZX1pjbWVhSlE2SHhfbUtFNUp5TzBCY2tEeWRBaW16dWo5VU90WlM4Z0Q0OVM1ZE14RE1oZ2dLMk81XzhzWGZ6MHpYaVBwMmcxRkt6N1I4LXA2MmhkV3BhbW1QX3Y3eUhlZlBTZ3BRWFY3aFpfN05UeDlLNzU3VEVsdUQzelpJZ2lZVGJST0RxU3lKSjdvTEF2cmNUS2VSSGc?oc=5",
+              "title": "OKX Launches Exchange OS To Let Users Build Crypto Markets - CoinMarketCap",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinMarketCap",
+              "query": "Star Xu OKX blockchain BTC ETH market view"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNGE5bG5KZW5ZQjVfOTNkejR4N3cxLXBmQk90OVhrQnVNWVlJUFR0SXdHdEotalNIa3lVVFBtNjdhbWpJVWU2SVUzcnNJVW5nMDJZWTVwZmh2LXNKUEZ1aGpvbDJkZDdXVzdHSVpURUFJNmc4Zm51cnVPb21rdkhGYjhnWFNkUjNSWUZJR0NMWmFLRUV5a1HSAZsBQVVfeXFMTkw2dEQzWFlCSVMwQmxHUjhoemZVUUhkR0dWSGhxcWRydnVfaUxZblFuRUdUU3hSdndCTlZuRUtsbmhkM1dhSXNtbG91TjVIRFM5NGRyUW13ZUtBR1o5MXRoQTRzLWZDeGtrb05FS1NiVGN0dzZxcTk1Y1Rxb2FxbmtBN0pDcDVlaDM1c0RVVFJOLWQ0Zy14QnNHa1U?oc=5",
+              "title": "OKX Founder Once Branded Ethereum A “Shitcoin” — Here’s What He Thinks Now - ZyCrypto",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "ZyCrypto",
+              "query": "Star Xu OKX blockchain BTC ETH market view"
+            }
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-22",
+          "source_url": "https://x.com/star_okx/status/2102348637221077043",
+          "summary": "主张把安全保护内置于产品，宣布欧洲 OKX Shield 增加用户保障；这是交易平台基础设施观点，不等于 BTC/ETH 看涨预测。上期无可核新观点，本期补入生态安全更新",
+          "sources": [
+            {
+              "date": "2026-09-22",
+              "title": "Star Xu 本期已核来源",
+              "url": "https://x.com/star_okx/status/2102348637221077043"
             }
           ]
         },
@@ -49,21 +150,276 @@
           "org": "Ethereum",
           "handle": "@VitalikButerin",
           "has_update": true,
-          "date": "2026-09-07",
-          "source_url": "https://beincrypto.com/buterin-bets-against-ai-bitcoin-crash/",
           "stance": "看多",
-          "summary": "反对“AI 会令 BTC 两年内跌逾 50%”的预测，称长期网络安全前景乐观，现有约 90% 净资产已承担相反方向的风险；这是解释既有仓位，并非宣布本期增持",
           "raw_search_results": [
             {
-              "date": "2026-09-07",
-              "url": "https://beincrypto.com/buterin-bets-against-ai-bitcoin-crash/",
-              "title": "Vitalik Buterin 本期核实来源",
-              "snippet": "反对“AI 会令 BTC 两年内跌逾 50%”的预测，称长期网络安全前景乐观，现有约 90% 净资产已承担相反方向的风险；这是解释既有仓位，并非宣布本期增持"
+              "date": "2026-09-21",
+              "url": "https://x.com/VitalikButerin/status/2102143283493507554",
+              "title": "Vitalik Buterin 本期已核来源",
+              "snippet": "欢迎预测市场 Trueo 转向 Ethereum L1，强调去中心化、伦理和有意义的用途；看好的是以太坊应用生态，没有给出 ETH 价格目标。此前关于 AI 与加密安全的 9/7 发言已超出本期窗口"
             },
             {
-              "url": "https://news.google.com/rss/search?q=Vitalik+Buterin+Ethereum+BTC+market+commentary+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Vitalik Buterin Ethereum BTC market commentary [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 23 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Vitalik+Buterin+Ethereum+BTC+market+commentary+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中30条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/VitalikButerin",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-16",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUTNlU2NlSlc3Z2lILTVhZV9KNzdRcjVLRWlsWUt1LVhqRmZLR0xvei0wV3BoOWlYdUpRdTYxSVZCTmlrNDdMbkFNUlJCUm5SWGtEdWZNSmdJRnhpVXZwT0h0cWFPbnVxOFp4NUVnZ244SVJWVGphSDRCU2lVVFcyYzg0enZ5UmRTS084R0lyWGR1d0JJUGtlTQ?oc=5",
+              "title": "Ethereum's Vitalik Buterin Isn't Worried About AI Breaking Crypto. Here's Why That's Fantastic News For Crypto Investors. - The Motley Fool",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "The Motley Fool",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-18",
+              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPektoLU1FZU1GYTRXNW5ZMjBYaVpkSFVWUVA2ekNBTUYxbXE0RGl0T25PUnpSV1BQclJMMWJJcy16SzgwWC1XVjNHRTBINl9ERE5IXzV2U2g4VXNyWUlJNDFya2JiRXh5c0l2OHJ1VWw1eE43ZFBXSUIwd2Y0Tkp0OTJvRVozaDlXWGMwU25aSUM0RWhPNWRCRy1oTnR6YThM?oc=5",
+              "title": "Vitalik Buterin Says 90% of Net Worth Rides on Crypto Security - CryptoRank",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CryptoRank",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-16",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWEhSQm9EcHRYV2JXbWE3MUgtUThsZ0x1SE05cFJWN0dxYTczZzF2Z2F6YmVPOFgxUGhQU0tOaWlUQ1pPQ2FhcWdFeVJtWG1GTVltaDY5c0RROHZwQVk1V0txeEMwTzBNSFdaamtGYkhLTFNuWEk4WC1BRUV6WC1mN2ljeGdkalZDNGFRYWtQNGo?oc=5",
+              "title": "Wall Street Is Moving Onto Ethereum — Why Isn't ETH Price Moving With It? - CoinMarketCap",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinMarketCap",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-17",
+              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPN19qT1BLdlgwc01SaUVJLWdVYzFwQWJQZ251WUozdXpvSlJQMmxzeWNyVlVqdzB1NEQ0WlJUZ2JnVU5DRjNtZ2RIbmVjTFV4S2EwMUtHWllQN29USXhoVmYwTzRVVnR6Z2VuU1M3UTI1aWNoU3BOMXNfRk92bGlCanE2VUFZVFBmU1NLSlNLcXRuNkUtX1hhQmc0bC1oRmxpenI5akV1Z1gtYTdOZEdZOWRCTlpJMEVwamE3dA?oc=5",
+              "title": "What Is Ethereum? How It Works and How It Differs From Bitcoin - 24/7 Wall St.",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "24/7 Wall St.",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-23",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdGxlc2dNd0N1VHhSbG5rOS02U3JJT044V3E5cUp2djBvcUNZektHRXpsSkpGbkVCdWVjdDlibmFDdms3ZUtYVU9McmZQdlBVcUJGMzY3TEdaMDZUejZ5UVBsN21hWVROTnVKVTRZdEZmemJCa1hYbTctT09aMWdnVl9QZ0hOOUxuaVhiS2sxa2dteFU?oc=5",
+              "title": "Onchain Prediction Market Trueo, Migrates to Ethereum mainnet, draws Vitalik's endorsement - Altcoin Buzz",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Altcoin Buzz",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPb2NOVmV1c3hleTNLY0ppZVVTLVlTYnF5eGxWZGJFenF4bkItUUNjcVFzU1J3YWJpZjFtMHV1Q1VIaG44dy1ITUhzZ1JEblJsMW93TnRiVlBYWTVFS2Zxd1ZOaG1kdFFNOXdMczA4ajB2bXVzTTgxRjVlVTlIcmpnZ3BiTlIyejZGV01pUDRoOA?oc=5",
+              "title": "ETHUSD Futures Contract (Sep 2026) Trade Ideas — HTX:ETHUSD11U2026 - TradingView",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "TradingView",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1DcGdfYUFJbUJWcE5JQ1ZMb1pRcmZUWS0ybmQtdlM1emp0SGNKSUd2bFhJNXlFNjhodVpvQ2pQeDNtSW5LbnUwV3hPNDctU0IySHY1MlR4dXBUaHZKcjltNzNPNUZnbFBPN04yTHR2V3F3QQ?oc=5",
+              "title": "Bitcoin Whales Buy $1.4B Worth of BTC: Is Now the Time to Invest? - CryptoTicker",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CryptoTicker",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-14",
+              "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBlWEt1eFRPcktlbldUMnUtUW1NWWlvN19SOGY5MWljUDNjRVQ3MUF1MUxHZVQybkNZY0R6OXVkS1NKeTB5Z3dWT1JDRnlNcWJGdGhkdGdCUmxOX2s?oc=5",
+              "title": "Altcoin rally loses steam: Institutional bets fail to save Ethereum, Solana, and Aptos - Cryptonews.net",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Cryptonews.net",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUVoyZURFOC1BMEwxUkRjTlpuU3REQ2hPNUhYbFIxeWw4aGVndjJkTnJlaFI4VmtEQnJSaVZLVnRNLUs0OGJJUEZUYWxwelRFc2o3VXRvT1NPNlZnU3JpVmd3dUk3X21INktncnlOMXpqSlVoM0pzSVA3NS1zRTB5THVrai1aOG1aTnV2bDF0QzBtcnVSSDV0S1NwNjkzY0drU0hPanNsbjFRcnQ5MkE?oc=5",
+              "title": "Ethereum Founder Age: How Old Was Vitalik Buterin When He Built Ethereum? - MEXC",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "MEXC",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-14",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPY3lHVHVaRWFrcFZZVWd0QXpPaGV2SDdQTlBBbkUxSWc4cGlBdkFFYkt1N0dXN3BiclZOdUNEenpQSW5BNFhWSHZJVFZxbkJ3NldPQmhOanlEbWd2ZVo2VkhCLVN5Q1hEV1V4dU5XWFlfcVFxMnh2SHVYSTZtMHVYSFV2UXpRQkpTVURYOVJGREp6Y3dodHZ4dG0tVWdhQlVoeFJQNHZHXy14WjJ4b2JLSkJmcVQ0S1MxWEh1dG5MT2RDNGppeWlFTk9JRFdQZWJ0bWNv?oc=5",
+              "title": "Here’s Why Dogecoin Is Outperforming Bitcoin And Ethereum Today - Stocktwits",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Stocktwits",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-23",
+              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9iV0tFWUk4elYxX1Q5TmtEak9QYkhJSkNIMUJDVmgwdnVlZVZGQXpXMkJSWHNvTTJybDJ0MlNWTWJxUEpWemNrYURVYnBQNWx4MGpyc1FGU0FhR1ZLOFpEdlhFRdIBY0FVX3lxTE9iV0tFWUk4elYxX1Q5TmtEak9QYkhJSkNIMUJDVmgwdnVlZVZGQXpXMkJSWHNvTTJybDJ0MlNWTWJxUEpWemNrYURVYnBQNWx4MGpyc1FGU0FhR1ZLOFpEdlhFRQ?oc=5",
+              "title": "Buterin doubles down on Ethereum privacy challenges as AI advances - Bitget",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Bitget",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQR0RINS1ORy0xRnlCa0ZSVzB2Q1VaeGFMZVZORE82SF9QQlZxN1l6V1JSdk0xSXV4QzdsSnR4Y1RiTkdkeGJoWmtMak16Zzdaem0wZFZTeXFHSTBrYmV4VjN6Z2lHUi1ENFVleUhoWmxWaFF2eWtKdWhweGVZNE5kV24wN1NPRDNSYmdSZmlZZ3J2NThXaDExRlk2OUxrZ1hRT0NTRzRVQzRRMUFBeDF0RFZ1aTJvYTlmRFhBa0dxSG95M1cxY0HSAcsBQVVfeXFMTmNkbjV0em5uTWtuS05KUkFPam5KYWtOOTBZM1h1NG0yZThDLXRaYXFQejljb0M4SWRSNTlrRVNnaE9mVDlGMlg2MnJ0aW9Pbm81SnhUM19faG42RGU3TTVITWNzY0FDNXQ0WllqTnNScXhpdHMyT252TWhVcXVPanJISXNnSVNjTjZKOHNkQWRCWjZ1enhBQS1jRTNrNUp2NExtV0NWaWdVamk3NjVKSnBYOFUtYkZyemFNbDI0eGdnMThjZjYyNjA2cU0?oc=5",
+              "title": "Ethereum News: Vitalik Doubles Down on Ethereum Privacy With a Promise to Go Further - The Coin Republic",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "The Coin Republic",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOd2NoX2xGTm1rQUVsR0FHeFFoS1lIb1cxcGJRYVdqWXg0cjljdVJNOW5FMFFDVERUZWo4QVlEaFlHUkw2WjRMcDAzSDlySTMwY1lWQTBjalQ5SERIVmNUYTl5YUVDZVFwODNJX2phLWF5OTR5YThPLXdvSFMwWjdfX1dSZEZPcTFpalFSSEpockdJYWt1TjZpTG9qbjFvUTVnX3ZDbkIyZw?oc=5",
+              "title": "The Creator of Ethereum: Vitalik Buterin's Story, Vision, and Net Worth - MEXC",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "MEXC",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-12",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSXhJYTVfY3VzRGNZekFfVHBlYy1VeDR6X0VvREpxU0NEOTJDajNiM1NuaVRxajF6NW1lVVE4b0M4d3M0T2JvSm84aDZQYjJMZkREbGtFXzVWX2VuVFFOTWhub01VWHZ6cVJ5TnFDXzUwVEtnYTdpemZTekthbjJDcHEzcHEwZC1VOE1TazI1ekk5TVJ3MlhleHRYTTlFQmtuUDhvNUowMGtXWWRxcG1rRXV0NEZzNV9FUjY3NExGbXVnTjRZTUVsMnZvWkdsa0J5TnFz?oc=5",
+              "title": "Ethereum Price Prediction: Analyst Says ETH Crypto Breakout to $2,800 Depends on How High Bitcoin Goes - CryptoRank",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CryptoRank",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-19",
+              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQM0ptZGxVUl9TVk91TlMxOXNuN3Mzd0pqREFzeU1BWjhGNExQYmk1NHUtVkpKSXBickQybmh2c1RuU2FlM2Etb1h4bDdtNVAwUjlGYk1EZVBKczU3NzJhUlFuQ0tQbmJ1ME9FSUo1czFMX1k3VUJva3N1MkNPQnE1UA?oc=5",
+              "title": "World Liberty Financial: Trump's WLFI Stake Locked Until 2028, Voting Rewards From October - CryptoTicker",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CryptoTicker",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1lblFJZzJ5M01KRHFjSTNPUldiZk81bGE4WkdNMTl4NWJQeWdaLXlTcm10bnEtbGxsUGlNOVhWS1ctX1o1QnRpM0x3Y0d6SmtUXzZSWHZuWk4?oc=5",
+              "title": "Report: CFTC Eyes Unusual $5B Trading Pattern on Kalshi ETH Perpetuals - Cryptonews.net",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Cryptonews.net",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWFJEb2d5c3NrU2dBWlZ3ZzJuaEQ0TWpac2o5V1RXaUU4d1BDSzRrTFNkVUV2ZXJNdFRoSVV4LW9JZDA4cmtoTjV6czFkRVZSYm1hT3BOSHY1N1A3QmROeloxWkItUXpleDZyLUJWY2lpYURrektVc19oQWNZbHNnSENMNGxkMkppWlhIRXREOGVuMWpvSDlvTWlWQWFRZw?oc=5",
+              "title": "Is Ethereum a Good Investment? Complete Analysis & Expert Guide - MEXC",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "MEXC",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWG1hQVhFc3AtVDRmSmRQOTBtMlBtWV9jc05iNWdFU0JaOEtqY0VrejI1VGlvYWJpMmQ1TWhIeEJyWGZETDlpZmlUT3duWXpnSUxxelZrY2NRSXJFb3ZaQ2h1bTcySG5WdW1EYzVwMklIQmNNck1IUUI0aC1KbkFMWnlZbU9kQVltcGREVE1EMWZxZThlNko5WVUxTFJ1bnA2cV9xODVha2pDQUJEMENfRjVkWjNwbW1sd1Fj0gG7AUFVX3lxTFBYbWFBWEVzcC1UNGZKZFA5MG0yUG1ZX2NzTmI1Z0VTQlo4S2pjRWt6MjVUaW9hYmkyZDVNaEh4QnJYZkRMOWlmaVRPd25ZemdJTHF6VmtjY1FJckVvdlpDaHVtNzJIblZ1bURjNXAySUhCY01yTUhRQjRoLUpuQUxaeVltT2RBWW1wZERUTUQxZnFlOGU2SjlZVTFMUnVucDZxX3E4NWFrakNBQkQwQ19GNWRaM3BtbWx3UWM?oc=5",
+              "title": "Solana News: DFDV Adds 101,381 SOL as Peter Brandt Tracks SOL Price Setup - The Coin Republic",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "The Coin Republic",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOQklnVmF2ZHhlZ0pXQndpV2pPWWwwSEFWcjQ3MVBhbFZZTC1pekVsX05STklWQVdZRFNsb2M5U0Fpb2xVdkFOYUZIb0JHOHd2VTRXVm52V2FvOTdhZXhWUmJzNE9KZlNGM0xTSzBYTFpDa1ZtT0hodjFQbmxzQktmUTgtRm5yS2oyS0t2WjFIeWZiQkpldkxTbUxxMTU?oc=5",
+              "title": "The Ethereum Whitepaper by Vitalik Buterin, Explained Simply - MEXC",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "MEXC",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRjVLbkJELWM2ZHUtcUR2UFROaFhPTFR0cFdkTThUM09OVUhzWTdCZGdoOUhjblhEU1M5RDBtazV2Wm5mcUdkX0FlUnpqSGI0aWdpVVVFTnVJcWV1dWdXdmJER3Z4RTdLVzE3LW9waEhFVVVpa2trUnlMRjJzM0RzS0R3OVpkR0xnNHBwNmdDbElPNmN1aGYyeXdvMjBWM1BtNG9IUUN2QlEyRUV0ZVdTQjln?oc=5",
+              "title": "What is MegaETH (MEGA)? Blockchain's First Real-Time Network and the MEGA Token - MEXC",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "MEXC",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-15",
+              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUUJNU2VRejVJaVVzXzlvU3p4OWYyanlXZTEzZ09qRHU4VkJ3SXpQYkVmY3UxanlkMF9RMHZGSHMzTHp2UUVzYzJFMzd0dGZYQ1FkMjk1YXM3dmlwY3JOM2pTckJTVmxLbnRKNFFIT0ZmeDRDN2VnMDJiVGtIdHJEVWs1VGtnbEJ3QnM4X2FQUzF2QjAtbEJDelVQZXg3S1FI?oc=5",
+              "title": "Ethereum Price Prediction Shifts After Vitalik Reveals a 5 Year - openPR.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "openPR.com",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-13",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNFEzSUtEUDBLRHdkbDZpME1PRXRJOTNTZmY4eUtfRlcyeDFtOWJzYmtaT3A5QXZoU2hBWnlUZjJZS3RscmowS2F2MkdCRUM4dFBYdElwbzQ3d2M2cTdNbFBJd1hXZlpkM0JldzFmWF9PaUZDSDQ3Z2hON2ZsalREX1c4dTRKdjlfYVJOUDJISUduc0N6N1FJ?oc=5",
+              "title": "Everyone Wants to Be the House — Week in Review - Bitcoin News",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Bitcoin News",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBPcE1SVVlYeGJTUHh2WldpMjBNdHlfTmxJNXZuU19FZ1J2RWFQVkhpSWRRTnhSMUNEOGI5dmpDY1NQSXNodFRfZEZkamZCekszNXpKZ25jOWhYU1NjeHVwUzJDTUlpUQ?oc=5",
+              "title": "12 Best Crypto to Buy Now in September 2026 - CoinCodex",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinCodex",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBnTTZxWVY5dU51aUk3RFl0UVVoLWtQbUpHc1BlZ2h1TEl0U1hOT1VPSzVjaXJqWEQtQWhham1iNDRaZk95V3U1ZmhfTk42alI4N1RHZ21NS2pNQ3QwWGw1ZA?oc=5",
+              "title": "Ethereum News Today | ETH Price, Analysis & Updates - blockchainreporter.net",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "blockchainreporter.net",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE83UmVpb2J4ZFZzam5fZ2RONGdZMnoyN01LS3RGdnFIUWVycUlNZTgxcjBRek9xdXJmUUpNMUtxOUJ5V1VjajRYLW9PcWZza1lFbE9BSU5ndjJvZw?oc=5",
+              "title": "XRP News Today | XRP Price, Analysis & Updates - blockchainreporter.net",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "blockchainreporter.net",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1DNk83R3NsVVU1b0M5NDJjcnJ3TktoM01pVHRRWEZhdnpNTDhrcWVUNmgwZGczVkxjOEo3MjVjYzlsQWdNcnU4N2Y3Vm8zSFh3Sk5pWkJqSXp5VnZTRGRJ?oc=5",
+              "title": "Bitcoin News Today | BTC Price, Analysis & Updates - blockchainreporter.net",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "blockchainreporter.net",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxONmxoeFl2ejhOQlpzdExKQWdtb3N1R3djNGRIVVFjN2xWVDZRd0pBMUhKWTFweUVLcXE1TU1ILUxFeXV6cXJoLW1vWTJqV2s3MXpxWmlVNVJMUFY2WHZMcWZxSi1FVGtrM1JNRUFkUTF0R1NXSGxzRGNwaHNqVUFSeHBNcnhlUXhfX0E?oc=5",
+              "title": "24 Hour Crypto Recap: Here’s What Happened in the Market - Coin Edition",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Coin Edition",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5sVTAxRGl2OFlIU3hwdmsycTZsSWdfd3B0RGxkSW16UXh0Zlk4ajlyWnF6c2ljVkdaTVA1WFQ1cFVENXl5ZUJMQlB5cGJGcFp1ak5RT0ROdU9vUQ?oc=5",
+              "title": "Dogecoin Price Today | Live DOGE Chart & Analysis - blockchainreporter.net",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "blockchainreporter.net",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQc205amhXRkJpaWZpRTktZlk1X0VkbjJseDFEYzc3d0NMbjFtbVotUDZDbWs2dGJHdzFrNlJJcmxzZ3Z4c0ozQWtiNVRxaEQ0clhFZ2UxaEh3emtJc0szdjA4Z2VOeTc1ZTA0NDBOYkNGSnhVTDBRdXhiTWw1elZjVl9LcFhjZlJVb0xtOWIzUVZRWjNr?oc=5",
+              "title": "Why Is Crypto Up Today and Will this Bull Run Continue Till 2026 End? - Coin Gabbar",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Coin Gabbar",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPV1RTRG9EVHQ2Q2RTRmNQS3hEYXJ6ZkdLLUtjU1hRYW1DNnB6d05GelA3ZzFYdDVGNlFtTFV3cXB0MXQ4bkVHd21LX01ucVZPRzVFQ2NhdGVZMlpTdnJIWlRHaF8zbTczOGhxVFlmMWZ0MUY3OVhFRndhRHpJUFNXUE0zaTRnelFDUzhlV0I3UHY5MXZsamc?oc=5",
+              "title": "Crypto News Now: Bitcoin Jumps 5.4% as Market Hits $3T and Greed At 78 - Coin Gabbar",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Coin Gabbar",
+              "query": "Vitalik Buterin Ethereum BTC market commentary"
+            }
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-21",
+          "source_url": "https://x.com/VitalikButerin/status/2102143283493507554",
+          "summary": "欢迎预测市场 Trueo 转向 Ethereum L1，强调去中心化、伦理和有意义的用途；看好的是以太坊应用生态，没有给出 ETH 价格目标。此前关于 AI 与加密安全的 9/7 发言已超出本期窗口",
+          "sources": [
+            {
+              "date": "2026-09-21",
+              "title": "Vitalik Buterin 本期已核来源",
+              "url": "https://x.com/VitalikButerin/status/2102143283493507554"
             }
           ]
         },
@@ -72,21 +428,132 @@
           "org": "Ripple",
           "handle": "@bgarlinghouse",
           "has_update": true,
-          "date": "2026-09-15",
-          "source_url": "https://u.today/ripple-ceo-says-crypto-will-win-with-or-without-clarity-act?from=article-links",
           "stance": "看多",
-          "summary": "投票前称，无论 Clarity 是否通过，更好的技术仍会推动行业发展，同时主张继续妥协争取立法；这是投票前发言，不能当作对失败结果的事后回应",
           "raw_search_results": [
             {
               "date": "2026-09-15",
-              "url": "https://u.today/ripple-ceo-says-crypto-will-win-with-or-without-clarity-act?from=article-links",
-              "title": "Brad Garlinghouse 本期核实来源",
-              "snippet": "投票前称，无论 Clarity 是否通过，更好的技术仍会推动行业发展，同时主张继续妥协争取立法；这是投票前发言，不能当作对失败结果的事后回应"
+              "url": "https://x.com/bgarlinghouse/status/2099943667473543484",
+              "title": "Brad Garlinghouse 本期已核来源",
+              "snippet": "投票失败后承认 Clarity 受挫损害美国竞争力，但仍对美国加密前景乐观：SEC/CFTC 可继续填补规则空缺，Ripple 需求并未因此消失。本期用这条已核原帖替换上期的投票前表态"
             },
             {
-              "url": "https://news.google.com/rss/search?q=Brad+Garlinghouse+Ripple+BTC+ETH+market+strategy+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Brad Garlinghouse Ripple BTC ETH market strategy [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 17 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Brad+Garlinghouse+Ripple+BTC+ETH+market+strategy+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中12条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/bgarlinghouse",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSjVGT0tUa1FfUTByQWtWc3JrVmtQWFVpRllJR05fWUg1QTYtVzB5S1NSeklEMXJydFZIcHNra2h5WjlQcmk3ZmNSdl83aVV6cW1kTTdPMm5yRlBHdFZlS2NDNFY2LUtYaUpJVE93N1h1aW1lcVNyWGZvNlBKTlhIMHkwdWg4SUdVaDRlLTNEV2JwTUtaSzNYY2FmNm5xVlpVTHBtQWoxYmdqQzkzUjR4V2FMdDBpLXFkSks00gG7AUFVX3lxTE1KNUZPS1RrUV9RMHJBa1ZzcmtWa1BYVWlGWUlHTl9ZSDVBNi1XMHlLU1J6SUQxcnJ0Vkhwc2traHlaOVByaTdmY1J2XzdpVXpxbWRNN08ybnJGUEd0VmVLY0M0VjYtS1hpSklUT3c3WHVpbWVxU3JYZm82UEpOWEgweTB1aDhJR1VoNGUtM0RXYnBNS1pLM1hjYWY2bnFWWlVMcG1BajFiZ2pDOTNSNHhXYUx0MGktcWRKSzQ?oc=5",
+              "title": "Ripple CEO Says Buy The Top Five Cryptocurrencies; Refuses To Call Solana A Rival To XRP - Coinpedia",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Coinpedia",
+              "query": "Brad Garlinghouse Ripple BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-15",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZmxsRTVkN2NiUEtiMjY4U0NoQXVERzZOeEV5Z1dQOFp3RlhnaFBkZUNiM2NmamtabzNiUFhYT2tqbEY5VzJHcWI0Y0xKeGJCSVQ0Q0ktYlhrc3htU3Y4UUFzY0I1UVRUeGZqLXpIa1pGQ3hjbTN1VlpfSTZncnp5V09PNEtaRkN1X2RhQ2JfODV6aFJhaS1rUDU1THoxUzJDaDhBYldwOG1oREhTelduVWFkXzQ2UFJncHVhVDB5VzR5b0UtdHdad3FWWHFyUFBBVTdzQg?oc=5",
+              "title": "XRP Outperforms Bitcoin, Ethereum After Trump Rejects Iran Proposal, Retail Bets On CLARITY Act - Stocktwits",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Stocktwits",
+              "query": "Brad Garlinghouse Ripple BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-16",
+              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB1eTVsaENDNmUyLWFzLWxUMDZ0Z3p4bjl0Ni1yYVphU0p3VE9IMnktNjFJRDFvT2lXdVhPcE40cEdpZUI1ek9yRWV3Z21sNUMwU0U2TnVuYkRsNllqcW84cUVBR2kyYlFVOUdDeWgzSjZwYk0?oc=5",
+              "title": "Ripple shows how XRP survived CLARITY Act setback, Strategy says Bitcoin never needed it - Altcoin Buzz",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Altcoin Buzz",
+              "query": "Brad Garlinghouse Ripple BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-15",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPNlM2YVQtX2p0b0tVNzhmcWx1enlLb2RrLU1IUHlyS2hHRkJYSVJKY3kzbGh4X3htYzVzQVlpWmVEOE5nNTVJZF9Hcml5SWJiNmUxVERWWEM1ZzVLYi1TWHEyaFFGTUp3NHBlNXpZbUI1M3VadHFfdUx0RGFyc3lBS0VhcEtRTHdqZTk4NzhUNzVEN0ZMV01wdUJPaDBrSEVsTlFhSnc0a012aVJBSGNjb2JQUjg?oc=5",
+              "title": "Crypto industry reacts after Clarity Act fails Senate vote - CoinDesk",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinDesk",
+              "query": "Brad Garlinghouse Ripple BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-16",
+              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vdERqRTNuS010UVRQSW5vdjRud0o0ZHBYS1FGdDVtMkJQQ2JzOEhjZDFmWEx5WGVqOUtIQl9pTHZVeS0wSE1fWVBLVFltYnl0ZVF0cHBvbkM5QWVLem5XdVpDX1FjblNzd1lGZjFR?oc=5",
+              "title": "XRP Price Crashes 9% as CLARITY Act Dies: How Low Can XRP Go? - CryptoTicker",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CryptoTicker",
+              "query": "Brad Garlinghouse Ripple BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-15",
+              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQNVA4RjlJRGZrR0J3Mm5mSGRYeXBNTnlDQnRILWxuT0ZTNXJZX3lIMVlLNTZ4SDNSZnhHQ0JKaWZqTGlCcVRUMWl3Vm5PVjhZRURPT1ljVzZ4aWVQdjF6V295WXN6NEkxcG82c3A1azdIaHNUWlphaXI3NHFXci1aclV2ZV94TldSdGE5V0NDYTRuS3hhamd3MEh0RnZ3Sm8zLXdiZVRxaExRMlpLc25iQ2tTMGNma0tRNGhBOXhTd2l3eTdrRm1TS2liRV91NnJ0TGp3NktBcllja2lWckZV?oc=5",
+              "title": "Clarity Act Procedural Vote Fails: XRP Plunges Over 9%, Will It Test $1 Next? - tradingkey.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "tradingkey.com",
+              "query": "Brad Garlinghouse Ripple BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-20",
+              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVS1yZWRwRnhnOG5Fa3RnaHFmVlZIa2gtc2Q0c3NnNzNyU0VxMjhKSHU4ZjZTZ3NpRXEyeW1BN3RNMndzSlduYUs2aGlnT0xiOHVpVW5Gb24xOV9BMDl3V3hNcEU1RUlvMGU0TDFHSVo4bFQ5enNXQVRVNVFsWGEzY05EUkRtUXFjUjF6a0xEQ2tjRkJfYmIwZ0hFX1M3ZTdVeUNtWHBPai1yTmdSdVFONDN0V1pJdFF3STc3VmZNSFlrQQ?oc=5",
+              "title": "Garlinghouse Reveals What’s Next After XRP Price Reacts Following CLARITY Act Rejection - CryptoRank",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CryptoRank",
+              "query": "Brad Garlinghouse Ripple BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-15",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMFVJVEZ6NTZGSTA5QUNkMjhzVDlOU3Y1ODhHSEdVTmdLeExMek5MT3VRS1dSdFhoODl5MncyYzhnM2ZhaGxyZ3VtQWJMclF4UUZYb2lPR0VsekVUaXZ0R1VkZDg1ejVpc2VZM0xRZF9qVXNGZ2tiZlpUa2tKWFI2MlRSQ1NEcjF3cFB0OFRHeHZEODR5VHc?oc=5",
+              "title": "LIVE: CLARITY Act fails Senate cloture vote - thestreet.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "thestreet.com",
+              "query": "Brad Garlinghouse Ripple BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-23",
+              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMjlWWHJ4WV95NEZnNmtENUdZZGZ5c0djSmR5dWU0UUNydnQ5cU5ma08yNmpyM0Z5bHpHT3lyZFZGMUZTR1NoNm1lQWF6T3ctd2gyTjZoNEFHU291WlNudzI1cmt2cWpvakhwcXBHM2hRcklPczM0WV9WWFNmRWVPeWQweURjay1ETkhtaFZGUFV3SkxrOFdMZy1QNnlqaXFHYlJzVWJlZG4yY01fR3lYbnBVOFpNUVdjWXFRT0M4SkhUY2hrbEE?oc=5",
+              "title": "XRP News: Former BlackRock MD Says Ripple Will Eventually Succeed Despite Divided Opinions - CryptoRank",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CryptoRank",
+              "query": "Brad Garlinghouse Ripple BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMXltb2lmUDdQbWlfb1I5NnE0LTVzX3d1RzE4RTNpRWdFczRuemVaRXVRdF9tOVAweFBMMUEzTGhhNlppYnFIejZ3Z2NpNUs3WjlFclo4a3pSaXZkMVB3RTFZVVZtcVpib2h3aEVZSzVadlNlWnVhTUF5a1JkSVNhdkFNTWZXZ1huU0daN3hLX1FlT1ZGZURjVWRTMl9VYklxUVFEVjZ5Y1FwTTdWZ2IxetIBsAFBVV95cUxQMXltb2lmUDdQbWlfb1I5NnE0LTVzX3d1RzE4RTNpRWdFczRuemVaRXVRdF9tOVAweFBMMUEzTGhhNlppYnFIejZ3Z2NpNUs3WjlFclo4a3pSaXZkMVB3RTFZVVZtcVpib2h3aEVZSzVadlNlWnVhTUF5a1JkSVNhdkFNTWZXZ1huU0daN3hLX1FlT1ZGZURjVWRTMl9VYklxUVFEVjZ5Y1FwTTdWZ2Ixeg?oc=5",
+              "title": "Bitcoin Price Holds $84K, Yet Its Own Signals Are Fighting Each Other - Coinpedia",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Coinpedia",
+              "query": "Brad Garlinghouse Ripple BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-14",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZ2pOa2Z3NXRYazZvZTY1R2ZLaWZOYmtJZWwza2dNSkFIX2NIR1FrcUJvM052Q21QaWdmalZpSFBMUHl1eW9kNWhnNUxWeTBNMl9OZ09EMTJGR0MxaWpVTDVPdzQ2MHhWdXVZemV3R3FZemljMkZwaVBTV2Y5cTZCdG1DbExrNlQ1NG9oS052VVF5ODdqQzFILUJlMGVtWWw2NWhQbU9RQlpUUThVb2NsbTVn0gG3AUFVX3lxTE5ZV3RQZE1CaGkxS3lDVFdoTzVBVnRXckFYbTJWc0hiYUhwMElsX2JmZS1qNENla29odUpCOUMxa1lNVk54am8zdjZOanFrajB4WHZhakFRTWlZc2NfbXJLN2NhSkRnNjJkN19HbTU3Ti1hbGdTcEZWUzRad01hRFhiQTFVV2s0am9OeXRhT1M3dERweVpYUmEwRkhITEtxaHVkLThWRGFkcHVwdlpVcTVOQWpJTlR0QQ?oc=5",
+              "title": "Will Bitcoin, Ethereum and XRP Prices Rally if the CLARITY Act Passes on September 15? - Coinpedia",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Coinpedia",
+              "query": "Brad Garlinghouse Ripple BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-16",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxONkJUU3dXLW02NXJ4UDh6R1NydVJzRFRXcThvTVg4VkNCb1M3LVRUUXBBU2plTHVHeks3RjNBSkY2QVV6UUw2NkdITTBGejJNYlYzcFNzV241VDJmNnZpaFdvU3pnMU9BTmhlTDA0ekdRYjcyc3QtS3RZRVlyTlJraTAtTUs4Qjhua0ZsemZnMm4?oc=5",
+              "title": "Why Is Crypto Market Down Today: Market Reverse After Fed Meeting? - Coin Gabbar",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Coin Gabbar",
+              "query": "Brad Garlinghouse Ripple BTC ETH market strategy"
+            }
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-15",
+          "source_url": "https://x.com/bgarlinghouse/status/2099943667473543484",
+          "summary": "投票失败后承认 Clarity 受挫损害美国竞争力，但仍对美国加密前景乐观：SEC/CFTC 可继续填补规则空缺，Ripple 需求并未因此消失。本期用这条已核原帖替换上期的投票前表态",
+          "sources": [
+            {
+              "date": "2026-09-15",
+              "title": "Brad Garlinghouse 本期已核来源",
+              "url": "https://x.com/bgarlinghouse/status/2099943667473543484"
             }
           ]
         },
@@ -94,16 +561,112 @@
           "name": "Garrett Jin",
           "org": "前 BitForex CEO / Hyperliquid 大户",
           "handle": "@GarrettBullish",
-          "has_update": false,
-          "date": null,
-          "source_url": null,
+          "has_update": true,
           "stance": "看多",
-          "summary": "近 14 天未找到符合口径且可核实的新观点；近期 ZEC 空仓不属于本报告 BTC/ETH 观点范围",
           "raw_search_results": [
             {
-              "url": "https://news.google.com/rss/search?q=Garrett+Jin+BTC+ETH+trade+strategy+market+view+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Garrett Jin BTC ETH trade strategy market view [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 2 条；零命中已另跑互联网搜索"
+              "date": "2026-09-17",
+              "url": "https://garrettsignal.com/p/weekly-signal-playbook-sep-17-2026",
+              "title": "Garrett Jin 本期已核来源",
+              "snippet": "⚠️ 已核公开正文，付费后半未读：认为 BTC 在约 7.5 万美元反复获现货承接，坏消息未击穿区间，已建议开始建立多仓；同时因高利率与日本央行风险，短期承担的风险低于平常。9/13 的两周逢低买入、两年看多表态延续；这些价位为发文时观察"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Garrett+Jin+BTC+ETH+trade+strategy+market+view+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中8条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/GarrettBullish",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-13",
+              "url": "https://x.com/GarrettBullish/status/2099108018726330432",
+              "title": "本人 X：未来两周逢低买入、两年看多",
+              "snippet": "本人 X：未来两周逢低买入、两年看多"
+            },
+            {
+              "date": "2026-09-18",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE05S0xMbEgtb3JWM3FFNTRNbE9xc1oyd2tpRFRXTENyUk5qb05tanVjOGVkazZ1dllOaUdxLVZMY2pEd01wd0Q1czZHV3hLT0ZnWGpZTFpHeGo5UQ?oc=5",
+              "title": "Garrett Jin Sells 35,001 ETH for $87.5M as He Opens Long - Cryptonews.net",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Cryptonews.net",
+              "query": "Garrett Jin BTC ETH trade strategy market view"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNOWI4aGhyejIxVkhWVFJ5Yk1INkRUWFVOSi0tRXBFV2Zqc1k4TE1faGJxblNPeU8ySDlzaWM2cGowR3RxbG9ReXFOYTBubzFqbHlFNndnckRsc0YtRGE5UUxyRmhZU2trZWVoSzF1RGM2c0xJV0hPaTVLVTdDektVUGtqWDVDRXh6QW9SYklWclpHdzV0ckFzQXpXcw?oc=5",
+              "title": "24 Hour Crypto Recap: Here’s What Happened in the Market - CryptoRank",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CryptoRank",
+              "query": "Garrett Jin BTC ETH trade strategy market view"
+            },
+            {
+              "date": "2026-09-17",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSS14dEhYQTBaajV6UjlYYTZiU2IwTTZ0Mm1Wai03bnNPRmdIUW81S1F5ZlI1MkhlV2ZPM2txbHE2OTdINnBzeVJhLV8tNFBaNTlNd1FCZ3NUVTN4bDVhNnNISjRsemdKcG4xczlleWRyZTJ1LXZOa1pIYkJuSGhTclhoUUxpM2hKWnJyUzNYQUtLZXUxUjMxdnJxMFNCSVFqelhrM1hn?oc=5",
+              "title": "Trader Garrett Jin increases $51M Zcash short d... - Pluang",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Pluang",
+              "query": "Garrett Jin BTC ETH trade strategy market view"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5uSTBHdjJqNk1GZlh5NTFZcjFpOWhoNVBvRW54U3pycUFYN0tLTDUxeUMyVndMY3JubFhrSDhVYWlIQUhZSnNKSUZGZ0kwcVcxNThrbGp4MC1XcjJQ?oc=5",
+              "title": "Crypto Morning Brief: US Stocks Face Short-Term 7% Downside Risk, Apple and Google Hire Stablecoin-Related Roles - techflowpost.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "techflowpost.com",
+              "query": "Garrett Jin BTC ETH trade strategy market view"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxON0FKLUFFb1VuamhYQkJ5NGNoR2s5RXRvMkl6ZVhlN1hka25NUDlkSC0tUGFhQS1TaWpPRndGMmJwUFZnU0NxRV81NEYyVzJoVnc3eFNEZGV4NEpta0xCQU04VHRGMTR4OTNoSWtKaDFrZWl6YkhBbFVPS2diQmZqVkN1dDRUMWt5Q0d5a1Z5WGhfT2VRc0c3MDJ1amlXUlZJb1FzamV6U0NVSzdCOWF4WVhWT2tnWU0?oc=5",
+              "title": "Gold Price Prediction 2026-2027: Can XAU Reclaim $5,000 After Falling Near $4,000? - MEXC",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "MEXC",
+              "query": "Garrett Jin BTC ETH trade strategy market view"
+            },
+            {
+              "date": "2026-09-18",
+              "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1xV2JobnlkVWZkQzZHNUxXMTh2NGk0b0Y4STdfUGdqcWN0Z3pIOFVTYjU0OFY4XzdZTXZTdzFJU0VCSnRrTmhNSVIxZGZJWWxRY3ZBbl9KNmtCaENHRVRrQkhFaG5aYWJwSjNQLUUxcw?oc=5",
+              "title": "Largest cluster of net long Bitcoin positions enters at $78,057 - Crypto Briefing",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Crypto Briefing",
+              "query": "Garrett Jin BTC ETH trade strategy market view"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMlAtcVFjRkRfLTZ1Vy1DMnZ3Nl9PVnNjZTVqdFhIM3FXNG15SUN3b0lnQ3FVcHBIYzlCR3Qtd0lDZkF6c3RrQm04TUs4U0QyMk1kTHVFRjVEaEZDWkVwUVZzUzZ4OTFHcVA4THBiMmFrSGw3XzRRS0FzRGVEclE5YU1ZTnI?oc=5",
+              "title": "$43.23M: Garrett Jin Flips Short on Bitcoin After $8.38M - coinfomania.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "coinfomania.com",
+              "query": "Garrett Jin BTC ETH trade strategy market view"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQNUl2azktY3lsd1dqQ2l2N25tNlVELUZERE9OYUpiLVBFQ0RBREJkWFNfNEtKUnZ2c25SenBHTWJmcUpHbjRXVFVfODBIYVY1RXVmNm1EdkxXYWI1alUzd1JfNEVVWmlRaXo3eUwwV1VzVC1lcDFuOGlVWWUyYUZBeVRmMzZrY3RrYkE?oc=5",
+              "title": "24 Hour Crypto Recap: Here’s What Happened in the Market - Coin Edition",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Coin Edition",
+              "query": "Garrett Jin BTC ETH trade strategy market view"
+            }
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-17",
+          "source_url": "https://garrettsignal.com/p/weekly-signal-playbook-sep-17-2026",
+          "summary": "⚠️ 已核公开正文，付费后半未读：认为 BTC 在约 7.5 万美元反复获现货承接，坏消息未击穿区间，已建议开始建立多仓；同时因高利率与日本央行风险，短期承担的风险低于平常。9/13 的两周逢低买入、两年看多表态延续；这些价位为发文时观察",
+          "sources": [
+            {
+              "date": "2026-09-17",
+              "title": "Garrett Jin 本期已核来源",
+              "url": "https://garrettsignal.com/p/weekly-signal-playbook-sep-17-2026"
+            },
+            {
+              "date": "2026-09-13",
+              "title": "本人 X：未来两周逢低买入、两年看多",
+              "url": "https://x.com/GarrettBullish/status/2099108018726330432"
             }
           ]
         },
@@ -112,21 +675,68 @@
           "org": "Fundstrat / Bitmine",
           "handle": "@fundstrat",
           "has_update": true,
-          "date": "2026-09-14",
-          "source_url": "https://www.sec.gov/Archives/edgar/data/1829311/000149315226042492/ex99-1.htm",
           "stance": "看多",
-          "summary": "认为 ETH/BTC 相对强势、代币化与 AI 代理需求支持加密资产，四年周期可能未来数周见底，三季度表现有望吸引年末机构增配；其列举的 Clarity 催化随后在 9/15 受挫",
           "raw_search_results": [
             {
-              "date": "2026-09-14",
-              "url": "https://www.sec.gov/Archives/edgar/data/1829311/000149315226042492/ex99-1.htm",
-              "title": "Tom Lee 本期核实来源",
-              "snippet": "认为 ETH/BTC 相对强势、代币化与 AI 代理需求支持加密资产，四年周期可能未来数周见底，三季度表现有望吸引年末机构增配；其列举的 Clarity 催化随后在 9/15 受挫"
+              "date": "2026-09-21",
+              "url": "https://www.prnewswire.com/news-releases/bitmine-immersion-technologies-bmnr-announces-eth-holdings-reach-5-98-million-tokens-and-total-crypto-and-total-cash-holdings-of-17-1-billion-302884434.html",
+              "title": "Tom Lee 本期已核来源",
+              "snippet": "认为加密牛市已从 6 月底启动，ETH 三季度强势、代币化与 AI 需求、机构低配有望推动四季度增配；较 9/14 强调未来数周见底，判断进一步转向牛市已经开始。Bitmine 当周买入 27,562 ETH，属于持仓方观点，机构补仓仍是预测"
             },
             {
-              "url": "https://news.google.com/rss/search?q=Tom+Lee+Fundstrat+BMNR+BTC+ETH+bull+market+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Tom Lee Fundstrat BMNR BTC ETH bull market [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 11 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Tom+Lee+Fundstrat+BMNR+BTC+ETH+bull+market+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中4条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/fundstrat",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-14",
+              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTlk4aWVobUpvcjBRUm13c0VtSmZnRm5JMTNCSVZURkNKODVKaHlJdTZCcHozbnhyOFBqby1raGNzWXkzZEVWdnpSdlpBajFpbkQ1TFhTaVNMZkZyVW1iUEZWTlpoODh0NUl4WmlqYVpLekV3VlNNUWo0aTVLMVEwak5PbEJjVm5vX2ZYRW1XYnp1VW5RWXY4eE0wWE5yQmlhMEo3VldsX1VJb3J5NlFzeUNLaDk1U0luMXM2MlFyb3ZaQQ?oc=5",
+              "title": "Ethereum news: Bitmine (BMNR) bought $68M ETH as Tom Lee sees more upside ahead - CoinDesk",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinDesk",
+              "query": "Tom Lee Fundstrat BMNR BTC ETH bull market"
+            },
+            {
+              "date": "2026-09-17",
+              "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxORXJuZURNbks0VVE1NkI2MVk2SC1ueEY2STVLUWkyQXNKYUJWbU5RQ2lTX0pJei0wSVdLTmdMMDQ0Sk9QY0NvSDlsb2dtMDdlTmtRblpXQXc1VVZoTW1nVzR3Q2Z2R2M3Y1Z2Y3J3TmN6Q2p6RXpZaURQcWFPVTU3NzJQOFNJb3MtZl80cno0Q3dVZFhrOG1ReGZMZTAwSDhqeGdTZmtKMi1oVlFERFlkeXZhTDZNNklraGpRZTBqWXZ5YW9SdHFpSDVxUXN3b083aUxOMEQ5VXdjUHJralVaak9GaUF3a2tDV0FzYjM1eWRNZ3ZvdjQtcmlnWnJJSllQeEhPdw?oc=5",
+              "title": "Tom Lee Says Q4 Could Bring One of the Biggest Rallies of Our Lifetime. Can Bitcoin, Ethereum, and XRP Reach New Highs? - 24/7 Wall St.",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "24/7 Wall St.",
+              "query": "Tom Lee Fundstrat BMNR BTC ETH bull market"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNaWNfd25uZWJlRnhEcHF4bzQzWjRGSE15aXJqVzdZWHFiSzg5V1hpb0l5T2RLM0MyVEhFcFpSU0VzMzl5X21nR3ZtVG5Jd3dCU3duaWU1NUFHVWx3T1RBd3JLS3MyTDJIbWctZTd5dEc2RE9yUV8xMnNEcTRHV1hvbW9qNUxDY3VTMEZUdlZNTkEydE16Wnh6aVFVTWJabl9qcmRUZmxfN0N0Qk11SGVldk4xLV8wV1dmbkJjYllsMXl2Y2ZORG4zMzRwaExYbldERXhMNC1zZWdCc2ZnSXFTZUpFRzdzUkItT2pnWEhmVWFYWXZ5LVYyRXlzMFFsSTJzSHFjYmRNSjRDeEtnODBmWGx5ai1QM0hjMDVELTF3eHh6Vjk1cmtMaA?oc=5",
+              "title": "Bitmine Immersion Technologies (BMNR) Announces ETH Holdings Reach 5.98 Million Tokens, and Total Crypto and Total Cash Holdings of $17.1 Billion - TradingView",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "TradingView",
+              "query": "Tom Lee Fundstrat BMNR BTC ETH bull market"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOMENneGhNWGJ5T0lGdGhPa1pGQXpSc3dNcC04X3NnVVI5dXRJRm9UT1RvRUh5eXphN09EUlRjeDJGcXYwN3FOWFhmdnkxS0FEVzBqal85M01zQUsyOXVCdzhXLWduNUhGZzc1MU1yV29nZ3dUNllBZGM2bTZLV213TGlGQ05SaGFGMWJMbzFQbGlkMHg4U3ZnMnMzWExCY1JiMk9CQmNQUlpRLXFhSEN1LW5mOVdFNUIxZDN5Sk5OTG1jR2dGOU5NYlZtSWRzUVExMjFV?oc=5",
+              "title": "Bitmine bought $75 million ether as Tom Lee says institutions are still underweight crypto - CoinDesk",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinDesk",
+              "query": "Tom Lee Fundstrat BMNR BTC ETH bull market"
+            }
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-21",
+          "source_url": "https://www.prnewswire.com/news-releases/bitmine-immersion-technologies-bmnr-announces-eth-holdings-reach-5-98-million-tokens-and-total-crypto-and-total-cash-holdings-of-17-1-billion-302884434.html",
+          "summary": "认为加密牛市已从 6 月底启动，ETH 三季度强势、代币化与 AI 需求、机构低配有望推动四季度增配；较 9/14 强调未来数周见底，判断进一步转向牛市已经开始。Bitmine 当周买入 27,562 ETH，属于持仓方观点，机构补仓仍是预测",
+          "sources": [
+            {
+              "date": "2026-09-21",
+              "title": "Tom Lee 本期已核来源",
+              "url": "https://www.prnewswire.com/news-releases/bitmine-immersion-technologies-bmnr-announces-eth-holdings-reach-5-98-million-tokens-and-total-crypto-and-total-cash-holdings-of-17-1-billion-302884434.html"
             }
           ]
         },
@@ -134,16 +744,80 @@
           "name": "Joseph Chalom",
           "org": "SharpLink",
           "handle": "@joechalom",
-          "has_update": false,
-          "date": null,
-          "source_url": null,
+          "has_update": true,
           "stance": "看多",
-          "summary": "近 14 天未找到符合口径且可核实的新观点；近期活动预告未提供可核的新市场判断",
           "raw_search_results": [
             {
-              "url": "https://news.google.com/rss/search?q=Joseph+Chalom+SharpLink+BTC+ETH+ecosystem+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Joseph Chalom SharpLink BTC ETH ecosystem [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+              "date": "2026-09-24",
+              "url": "https://x.com/joechalom/status/2103111902985404583",
+              "title": "Joseph Chalom 本期已核来源",
+              "snippet": "预计 AI 代理到 2035 年将重塑逾 4 万亿美元金融手续费，消费者是主要受益者；9/22 明确认为新的代理金融将发生在 Ethereum。上期没有可核的新判断，本期增加长期生态论点，不视为短期 ETH 价格预测"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Joseph+Chalom+SharpLink+BTC+ETH+ecosystem+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中4条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/joechalom",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://x.com/joechalom/status/2102440198886092856",
+              "title": "本人 X：代理金融将发生在 Ethereum",
+              "snippet": "本人 X：代理金融将发生在 Ethereum"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9vazBUdHpWaklBYmxqTlNKcUhTT05hSG9IZ3h5X2Vma2VjR0RsM1RSLTdVT2xxM1pmS3A1ay1LdTB5NzgxdVFBVW1WMC1HeGRVdl9xVTFRSFlxZzh5SlYxY25kdUlWYkNhM0NQSA?oc=5",
+              "title": "AI Agents Could Wipe Out $1.4 Trillion in Wall Street Fees, Sharplink CEO Says - BeInCrypto",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "BeInCrypto",
+              "query": "Joseph Chalom SharpLink BTC ETH ecosystem"
+            },
+            {
+              "date": "2026-09-23",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRUhXdVJHTWx1dnNlM05CUFZSY2ZTYUVCYTI0QlpGSk1VYnFONlUwcTYzbmVYWjNHYXAxY1U5bkNRLVhnYk9fZ1YwdlhqeVpMd25iaWtITGFpTmZwWVlVbTY5Mm82REc0cmpQcTM5UldpclAzWTVpNEFaREV3bWVoUEk1bzlUNEo3VDlyaF9GV1p1bUNGaXlLNTBiYUJLOWgxRHc?oc=5",
+              "title": "AI agents could reshape finance with $4T in ann... - Pluang",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Pluang",
+              "query": "Joseph Chalom SharpLink BTC ETH ecosystem"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFAtZnlKeE9wMmR5LWlRclZCajNHcUtoMlZpRWxTVUloVmM3bHhxSDNOOGpqU1NmSDkzTm03LTZfcElrd0FPclZsSjhMVXQ3ODBpUXFoRVZoZ1Zjb0NzazVhX21FQlU1dE9QdFN3T25nSlc5bXEwTWotSElwOUs?oc=5",
+              "title": "SharpLink CEO Forecasted $4T in Financial Market Revenue Driven by AI Agents - Incrypted",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Incrypted",
+              "query": "Joseph Chalom SharpLink BTC ETH ecosystem"
+            },
+            {
+              "date": "2026-09-23",
+              "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9DMU81XzQwemF3SGJnU1o2UEM0dFg3NEducGVlb3VCRXp3YVBtLU40TzN0NkU5VW1VWkMtanRuUEJtVV9KaVdoYTdSYlItN1BLNmlERm9ndUdjeUdvZVJtUE95ZUlaX2tXTkJFZENQM2lOM2RD?oc=5",
+              "title": "SharpLink CEO Joseph Chalom: AI Agents Will Redistribute Trillions in Financial Income - ababnews.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "ababnews.com",
+              "query": "Joseph Chalom SharpLink BTC ETH ecosystem"
+            }
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-24",
+          "source_url": "https://x.com/joechalom/status/2103111902985404583",
+          "summary": "预计 AI 代理到 2035 年将重塑逾 4 万亿美元金融手续费，消费者是主要受益者；9/22 明确认为新的代理金融将发生在 Ethereum。上期没有可核的新判断，本期增加长期生态论点，不视为短期 ETH 价格预测",
+          "sources": [
+            {
+              "date": "2026-09-24",
+              "title": "Joseph Chalom 本期已核来源",
+              "url": "https://x.com/joechalom/status/2103111902985404583"
+            },
+            {
+              "date": "2026-09-22",
+              "title": "本人 X：代理金融将发生在 Ethereum",
+              "url": "https://x.com/joechalom/status/2102440198886092856"
             }
           ]
         },
@@ -152,61 +826,232 @@
           "org": "Founders Fund",
           "handle": "（无活跃 twitter）",
           "has_update": false,
-          "date": null,
-          "source_url": null,
-          "stance": "看多",
-          "summary": "近 14 天未找到符合口径且可核实的新观点；ETHZ 持股退出报道回溯 2 月事件，超出窗口",
+          "stance": "中性",
           "raw_search_results": [
             {
-              "url": "https://news.google.com/rss/search?q=Peter+Thiel+Founders+Fund+crypto+BTC+ETH+market+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Peter Thiel Founders Fund crypto BTC ETH market [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 5 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Peter+Thiel+Founders+Fund+crypto+BTC+ETH+market+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中7条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://www.google.com/search?q=Peter+Thiel+BTC+ETH+September+2026",
+              "title": "检索结论",
+              "snippet": "近期退出 ETHZ 的报道回溯 2025Q4 减持与 2026 年 2 月披露，不能按转发日期记为新观点"
+            },
+            {
+              "date": "2026-09-23",
+              "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMzBpSVlPQ1FIYksyUjRQT1o3R0JYNm1BdXlVTGNVYnRXLW96WXMxNWNkNWtBdEtXMjZxNjFzSUdCRjRUMW5qdWs2NmJhclF5SloxZHZEaExiTFd4Y09CQjVmOG5CR1U3Wk1SSEw4MTdLSGN0aWlyeGdtSDF1eUk5UEQ5NGtWQWRBbXhuUjJ6UjVOWlFwdlhVemNzc1Aya2J3enpWZnM2TkMyaUZWcUdnbVZIQ3NDYWJST2J4bzFVQ0F1Q015ZG5hdEJaTE94TDNr?oc=5",
+              "title": "Peter Thiel’s Fund Walks Away From Ethereum Play – ETHZ Stock Sinks After Hours - Stocktwits",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Stocktwits",
+              "query": "Peter Thiel Founders Fund crypto BTC ETH market"
+            },
+            {
+              "date": "2026-09-18",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUEJ4UGtlQzMzcjZHMUpZRENtaXBGUzZsVFlNMVBwZE5veVhVdUkweG81Mzc5TlRMS0M3b2h6MHlpcEswSjN2ZHUzVm8yU29qT1Z6NDR2TnVwNFk3Y1ZOT2pVWnVaV0lzUHhXclROTmJSMEU0OHJxbWUtYWFvd3Y2MG1EQjI1eXZVeHduemFaVWk2RTlYSlBGNzVFd19DeHRDTXkyMHdJVk13QlNTc3c?oc=5",
+              "title": "ETHZilla Completes Nasdaq Rebrand With $419M Ethereum Treasury - CoinMarketCap",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinMarketCap",
+              "query": "Peter Thiel Founders Fund crypto BTC ETH market"
+            },
+            {
+              "date": "2026-09-15",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQ2hBbFp0T2JKbEdpRV93Y2pDZTZfX1l4aWxpLWViV05lRXhVZk9qbnFtVTBVUFZtbFlZNDFCb0ZnMWxXMHpESWhONGpsZHkyRlRLVHJZdUJKbjZaUGlQZnpRMjgyNk1CdFlmVTJBZDFOMXJKX19WQnRyeE1jX1RWVVByQVVQRUVQaEROU0pVYmxSR3lYSHpneU1MSTlhY1U?oc=5",
+              "title": "Investor Cathie Wood Sells Crypto Stocks As Prices Rally - Yahoo Finance",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Yahoo Finance",
+              "query": "Peter Thiel Founders Fund crypto BTC ETH market"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPd2tOSHBEV3NqcjhnTEwyMjdzYWFyR3FKbUNkUWZWMmNRUXk0VXQ2UDVXV09neGM4Skd5eEdhb25qTkN0TWE2bHNhMkRPSkxpWUhCbEsyVWR3NWVLQ1lXOUY5YXFvVkx0NUF3SVdPaE8zZmMwNVJGZXQyRUhTaWdlRTl6amdWWVdDTWc?oc=5",
+              "title": "BitMine Now Owns Nearly 5% of All Ethereum in Existence - Startup Fortune",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Startup Fortune",
+              "query": "Peter Thiel Founders Fund crypto BTC ETH market"
+            },
+            {
+              "date": "2026-09-23",
+              "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBRTGI0LXZtSEprYjdza1dzQzhDbVdobkp0TC14T01WUmlxdDJqcEc0Q1FsNm1Ib0xyczlnbGY1bkE3X1hoaVdmUERlSEkzZ1pqckJDRE42X0Vvcmc?oc=5",
+              "title": "Founders Fund Partners Visit China as U.S. Investors Revisit AI - tokenpost.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "tokenpost.com",
+              "query": "Peter Thiel Founders Fund crypto BTC ETH market"
+            },
+            {
+              "date": "2026-09-18",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVF9iOVVkRzZ1d3doZ3piNkhoc2daOUpkUGZMY2JvRW4zbi1oejU4Zm1XSnZmLXBoSS1qVGVWQldYdFN2RW96eWVOMjQxRzlsSVV4RmJXaHpVRWxYMlg0LXNIOWtSdzZxdXlaT0FPeDJpY19NSDZoejItejZuUk9meXh3cEQta2dkZE1YVmtjcE82UmxxdFBTMGhRQl9qOHc?oc=5",
+              "title": "Infinex Raises $67.7 Million Through Patron NFT Sale - CoinMarketCap",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinMarketCap",
+              "query": "Peter Thiel Founders Fund crypto BTC ETH market"
+            },
+            {
+              "date": "2026-09-12",
+              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdmh2Zm8zT19qU2d1MWpDbS1NN1pYY1hjdWhUckdVUUtfUjFfSlR2MmZCOVdDcE9nVk9hd0FxTDlzQVpqSEsxNWkydVZpNkxVbVpxWUNqTktidFJPTWhXbENtOTlib1NrbFpIQjB6cHczWWoxbkZwVVZ5VUN0SUk2bGJkb0N4Mi1LcElFd0FnbHo1QzBFRmJ3anpuTUlKUWNGenJZUmFXclIxTkQ2NFJDNWxDYTY4TjBrQS1vSTZDWjNIdE5XWC1VS0JMZ0xTbWRaTzc0YkxISlU?oc=5",
+              "title": "CMPS Stock Slumps Premarket As $150M Offering Cuts Into Psychedelic Trial Buzz - Stocktwits",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Stocktwits",
+              "query": "Peter Thiel Founders Fund crypto BTC ETH market"
             }
-          ]
+          ],
+          "checked_at": "2026-09-25",
+          "summary": "本期未找到可核实的新观点；近期退出 ETHZ 的报道回溯 2025Q4 减持与 2026 年 2 月披露，不能按转发日期记为新观点"
         },
         {
           "name": "Trendresearch",
           "org": "Trend Research (Medium)",
           "handle": "（Medium）",
           "has_update": false,
-          "date": null,
-          "source_url": null,
-          "stance": "看多",
-          "summary": "近 14 天未找到符合口径且可核实的新观点；固定 Medium 渠道最新文章仍为 2026-01-07",
+          "stance": "中性",
           "raw_search_results": [
             {
-              "url": "https://trendresearch.medium.com/",
-              "title": "固定渠道直接核查",
-              "snippet": "本期直接打开 Medium，最新文章仍为 2026-01-07，窗口内无更新",
-              "date": "2026-09-17"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Trendresearch+Medium+crypto+BTC+ETH+analysis+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中0条；逐条筛选原始日期、人物与主题"
             },
             {
-              "url": "https://news.google.com/rss/search?q=Trendresearch+Medium+crypto+BTC+ETH+analysis+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Trendresearch Medium crypto BTC ETH analysis [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://www.google.com/search?q=Trendresearch+BTC+ETH+September+2026",
+              "title": "检索结论",
+              "snippet": "固定 Medium 目录最新文章仍为 2026-01-07，本期 14 天内无新文"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://trendresearch.medium.com/",
+              "title": "固定渠道优先直查",
+              "snippet": "先查官网/Medium，再跑 RSS；已读取目录及相关新文章"
             }
-          ]
+          ],
+          "checked_at": "2026-09-25",
+          "summary": "本期未找到可核实的新观点；固定 Medium 目录最新文章仍为 2026-01-07，本期 14 天内无新文"
         },
         {
           "name": "Matt Hougan",
           "org": "Bitwise CIO",
           "handle": "@Matt_Hougan",
           "has_update": true,
-          "date": "2026-09-16",
-          "source_url": "https://experts.bitwiseinvestments.com/cio-memos/the-clarity-acts-failure-is-a-speed-bump-not-a-roadblock",
           "stance": "看多",
-          "summary": "明确修正年初“法案失败会延长加密寒冬”的判断：如今机构采用已在推进，SEC/CFTC 仍可制定规则，故 Clarity 失败是减速带而非阻断牛市；但承认监管规则不如立法持久",
           "raw_search_results": [
             {
-              "date": "2026-09-16",
-              "url": "https://experts.bitwiseinvestments.com/cio-memos/the-clarity-acts-failure-is-a-speed-bump-not-a-roadblock",
-              "title": "Matt Hougan 本期核实来源",
-              "snippet": "明确修正年初“法案失败会延长加密寒冬”的判断：如今机构采用已在推进，SEC/CFTC 仍可制定规则，故 Clarity 失败是减速带而非阻断牛市；但承认监管规则不如立法持久"
+              "date": "2026-09-23",
+              "url": "https://experts.bitwiseinvestments.com/cio-memos/10-big-trends-in-institutional-crypto-investing",
+              "title": "Matt Hougan 本期已核来源",
+              "snippet": "Bitwise 访谈 15 家大型机构，称面对此前超过 50% 的回撤，没有一家受访机构计划削减加密敞口，配置着眼长期；延续 9/16“立法受挫不会阻断采用”的判断，新增机构访谈证据。样本未具名且非市场全体，不能等同实际资金净流入"
             },
             {
-              "url": "https://news.google.com/rss/search?q=Matt+Hougan+Bitwise+BTC+ETH+market+strategy+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Matt Hougan Bitwise BTC ETH market strategy [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 4 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Matt+Hougan+Bitwise+BTC+ETH+market+strategy+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中11条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/Matt_Hougan",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-17",
+              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5CY0g3WS1iVjhsSk5LeVBoY1Vja0hoeEx4akNfbnhOeWh4aGs5TmlQcHIwM3RpWmVoOVpSb09wTTNKT0dkOTZyVlp5aDFmMjQxcjFVcF9jNFRuRjdibVUtcU5WZy1uWDVoRmdIdDdR?oc=5",
+              "title": "Bitwise’s Matt Hougan Lays Out 5 Forces That Will Drive Crypto’s Next Cycle - Investing News Network",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Investing News Network",
+              "query": "Matt Hougan Bitwise BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-18",
+              "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNc1NQRFBjcmJ6SzVSNC1vM2ZuTHdqMHVnZHFacDd6TzMyN2tUYVNYRi1kM0RYMlcxM2JnTDhJckNZREFBODJJV1lVUE85MTZqUHEydWhyYm53Y3ZZdEtnM3RvQ2FCaGJPb0JzSEt3SFM4cXB6QmZtcmJFaXZrTHJwdXozWkYyenZuZFk5MHBLcDA0a1VEbzhRR1FNY2NULWlDNklOeDFhdWpqWEZVS0RHcFlMdUZJNElLQU9UdTdVUndRZkgxRE1sbVB3ZkZpMkdOdkxpYmNMamJxQkFxVVhLSF9wRGlEemF4?oc=5",
+              "title": "Bitwise CIO Matt Hougan Adjusts His Crypto Outlook After the Senate Vote. Here's What He Changed - 24/7 Wall St.",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "24/7 Wall St.",
+              "query": "Matt Hougan Bitwise BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-16",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZjJfVk9QSzhKbHJUR2ZfUDZsemZOcG01VmFzVGZwa1dpdURkdl9obWQwbWZ2YjBPV21CYVdubTByajNtRW1DQlpSNUdNY0l2YXg0YkpDX1QzRU92Q1lEZ3ZZZGxMMEI5VElHaUxiMkoyY3l0MnJUSzJndzU5LXpUaHlmVjE2dUtiWHdqamV0UlZmSXlfU2I3a3lVYVBjZw?oc=5",
+              "title": "Coinbase Bytes newsletter - Coinbase",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Coinbase",
+              "query": "Matt Hougan Bitwise BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-18",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQ2RsNGhiZkFrb3haU3E1ZEd3R1ZlT3Z0N0duSm91d2FabGF1UlB1Zm9CSjRjTlBwM055Z24zWXY0Vjh2MzNDQUUwcXp1WjdMZ0ZZRUJwYjdsRVNEMzRFRXFHc3EtM1dtZjM4NkJmQWcxbWFTM0dqeFVtSTlhZkZIWmpFelk0dUpqWlZBRndTTWg4NHhnNGc3Q2ZZU1NQVVg1VFE?oc=5",
+              "title": "Bitwise CIO Matt Hougan Calls CLARITY Act Failure a Speed Bump, Not a Roadblock - CoinGape",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinGape",
+              "query": "Matt Hougan Bitwise BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-14",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPT0ZpYkkyWnNNMnJMRHNYcXpZRWgzR250WlpDRGV6VlJEemV5SHFHQnJEZVJTRGo4Ml9hZ0dseHhmakxTR1lISXpUV21paXJ1YmJvT25FeHNtYlkwbEVydzdZQlA2UWxnZ2ZlSGcxWVJOVkttWHZPRlBwSEdNeU9PTkFuR1hlYVF0THVwbFU3ZjBETjRNSjFYMzVZQ2RXYXZrN0VyZg?oc=5",
+              "title": "Ethereum Will Dominate Solana in 2025, Predicts Bitwise Chief - Yellow.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Yellow.com",
+              "query": "Matt Hougan Bitwise BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1CTmtESjNXOXpfdjg2emdVSkVUMUF6Y25PdFN4MUZpQmtDMjhxcHpLbFRXWDhaT2JnUkFCemRNQkpRb1NPaWxGelRJLWFXYWhxNjZOcl9tNGJHallkcE1mVVI1XzM5dkJyS0pESWJpQkRJZUNEb1E?oc=5",
+              "title": "Zero Institutional Sellers Despite 50% Crypto Crash, Bitwise Survey Finds - finance.biggo.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "finance.biggo.com",
+              "query": "Matt Hougan Bitwise BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-15",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVDcwLVNiazBJa1FRWm5weFZjWHRLaVNieGlSSnhza2pScndBVy1hTEltWDREQ0I1ZmVZRXJaZ1djaXNGajhRa3JxNC0tMkRxRHhPOHBXVDNVVHl6Mk13NWl3YjBzd2hPSVdKa213dzBIOV9VTFdCbUJnNWV2Z3pfcnNyM0tiLWxQOGFiOWNJSFl0ZlhRTUxIOE9RZjZlcWRKTGhBVTFhQU55UHBm?oc=5",
+              "title": "Short Cycles and Violent Rotations Replace Altseason, Says DWF Labs - CoinMarketCap",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinMarketCap",
+              "query": "Matt Hougan Bitwise BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-14",
+              "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNTUxUVzM0Ykc0RDRGNlEtYmJsZUZYeHlodkpCa01FejBmZ1dhMVl4UXV5UlRHQ1c3QUdPZDBlMnd2SHJIV0F3RFpTTUNIdlliZW9pSTYxeFFYVVJCbFJYLU1xb1lmR21FaWFsQUJ2aXhVWV9UMWFHbVZTVzE1N1RJTktSUE1feGFvQWNkdm5WUU1fejY5a2dBai1hYWNwam1VMDJNOWpWS01ISFVzTWhTX3dadmExX2NzQzR3LURCQUs0ZFFYZmJJVDgxTlBNd2FBWmdBV3VYelh6aHR4QWQyWTVZVHBWVkZ2bG1NTXlGdnE1Y0RlLVE?oc=5",
+              "title": "Bitmine Immersion Technologies Announces ETH Holdings Reach 5.96 Million Tokens, and Total Crypto and Total Cash Holdings of $15.8 Billion - Investing News Network",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Investing News Network",
+              "query": "Matt Hougan Bitwise BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNT2ZkLU1oN0FvU2ZJbHJ5NUlxOTNGWmx3TFUyT2drcHRaQjRIb1E0dGFidmFnUUg5M2lzUEV6cFJnR3J4VzB5dVdGUGhmNDc5SEIzTWdlWDZON0FiLVotZm0tTWQ4TGdWcHBSUVpKaUpPdHRZbG9tUklmbFFhX0Q3Wkp5ZDJTZEt3a3p1WkZOX3hTa1hwRVF6Y3paNFp4YlRwa1JyTWk1blNFN0gzLU50Y0xVVnJkUHIy?oc=5",
+              "title": "Bitcoin Hits $87,000 After Absorbing a Fed Hike and a CLARITY Failure: Is Crypto Winter Over, or Is Leverage Setting Up the Next Flush? - MEXC",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "MEXC",
+              "query": "Matt Hougan Bitwise BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNbjJ4UDJCOHZRU1lvLXF6MGMyc3E0RVFoei00QWtKMkhCeHdJRUdod3Y1X2ctajg2Z3lYWm9yUEs5Tk1kTnZGU3JuZ0x3VWpVVzZKbXdRemxWR28wYXhKWG5oU05VckV0MDBEdi1zS0ZacnBWS0VtNVNweHJ0Zm91S0pxemdNYnVaTWxUNWhjZFc0WEVPY3c?oc=5",
+              "title": "Strategy buys 950 Bitcoin for $76 million as holdings hit 846,000 - Crypto Briefing",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Crypto Briefing",
+              "query": "Matt Hougan Bitwise BTC ETH market strategy"
+            },
+            {
+              "date": "2026-09-13",
+              "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBhaEV4X3l1T3JLMTRuNkV3cDB4TTRnMHQ0cV81eDdvOTlqRWlsamZYeFYtMVlVTUdqM0VxS1prWWROSEVxam4yelJzN1BRMjRrbHFYTkRwQzlRYjlTdUJFRGRwa1FVNGh2am9hYkxMX3hvNWVfXzZNWA?oc=5",
+              "title": "Aptos integration with Archax enables movement of 100+ regulated assets onto blockchain - Crypto Briefing",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Crypto Briefing",
+              "query": "Matt Hougan Bitwise BTC ETH market strategy"
+            }
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-23",
+          "source_url": "https://experts.bitwiseinvestments.com/cio-memos/10-big-trends-in-institutional-crypto-investing",
+          "summary": "Bitwise 访谈 15 家大型机构，称面对此前超过 50% 的回撤，没有一家受访机构计划削减加密敞口，配置着眼长期；延续 9/16“立法受挫不会阻断采用”的判断，新增机构访谈证据。样本未具名且非市场全体，不能等同实际资金净流入",
+          "sources": [
+            {
+              "date": "2026-09-23",
+              "title": "Matt Hougan 本期已核来源",
+              "url": "https://experts.bitwiseinvestments.com/cio-memos/10-big-trends-in-institutional-crypto-investing"
             }
           ]
         },
@@ -214,53 +1059,270 @@
           "name": "VanEck",
           "org": "数字资产研究 · Matthew Sigel；有 BTC 敞口背景",
           "handle": "@matthew_sigel",
-          "has_update": false,
-          "collection_status": "pending",
-          "date": null,
+          "has_update": true,
           "source": "官网（待首次采集）",
-          "source_url": "https://www.vaneck.com/us/en/insights/thought-leaders/matthew-sigel",
-          "stance": null,
-          "summary": "待首次采集；下次运行先查官网研究，再补充 Matthew Sigel 的 X，不代表已核实本期无更新",
-          "raw_search_results": [],
-          "sources": []
+          "stance": "中性",
+          "raw_search_results": [
+            {
+              "date": "2026-09-18",
+              "url": "https://www.vaneck.com/cl/en/news-and-insights/blogs/digital-assets/matthew-sigel-vaneck-mid-september-2026-bitcoin-chaincheck/",
+              "title": "VanEck 本期已核来源",
+              "snippet": "【官网研究·首次跟踪】偏好具有现成电力资源、可转 AI 的矿企，同时警惕 DAT 的高管股权稀释：10 家样本中 Metaplanet 治理最弱，Strategy 等获较好评价。重点是矿企与财库公司的选股差异，不能当作 BTC 目标价；适用未来数年的转型，风险在建设兑现、估值和稀释。VanEck 有 BTC 产品与相关资产敞口；已查 Sigel 个人 X，近期可见帖未提供新的可量化 BTC/ETH 判断"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=VanEck+Matthew+Sigel+Bitcoin+ChainCheck+BTC+ETH+research+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中2条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/matthew_sigel",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://www.vaneck.com/us/en/insights/thought-leaders/matthew-sigel",
+              "title": "固定渠道优先直查",
+              "snippet": "先查官网/Medium，再跑 RSS；已读取目录及相关新文章"
+            },
+            {
+              "date": "2026-09-18",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdmpNNk04MlFTcDF3Zm5ONTlzSmlxVXhYVTRxSXJ1ZjVXXzJnQk5MR3pvTW9CaldPb0NEM1M1ZFJkd3o1UG1SNTAzRjVPVGNlUXJNVFBZTnhHQWJ0Z00zRTlWY1F1WkN1dlhjcEFUS0ZUckNHUmlicms4bVRWQ1BfMmpTRFBoX2RubUs1TUxEVm1HSkJRUGZjVWt1bjlHMkJzV2JZZ2FHZTEwdkdJOEE?oc=5",
+              "title": "VanEck Mid-September 2026 Bitcoin ChainCheck - VanEck",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "VanEck",
+              "query": "VanEck Matthew Sigel Bitcoin ChainCheck BTC ETH research"
+            },
+            {
+              "date": "2026-09-20",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ0YzeENMbGZXQ2FBU0wzR3FGUUV5RFRYSFJrSHVaRkpELTJFTnBDbW1NSkFDbDB2VjhFM0VpcGJuY3I3MERtUVBlZXlZcHhoaHlvWGF6dElMby1JdEllTmJsbXl4aUdfRTdUdm44SXlFTkpQdi1nZGRIYTJTMmYtNkMyQ0xpSDNzaVpxbGhoakk3ZG13MmNMMk4yaVBfVlBkZ19QZlFaTUs5WFBJMmZxZQ?oc=5",
+              "title": "VanEck Flags Heavy Executive Dilution At Bitcoin Treasury Firm Metaplanet - CryptoRank",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CryptoRank",
+              "query": "VanEck Matthew Sigel Bitcoin ChainCheck BTC ETH research"
+            }
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-18",
+          "source_url": "https://www.vaneck.com/cl/en/news-and-insights/blogs/digital-assets/matthew-sigel-vaneck-mid-september-2026-bitcoin-chaincheck/",
+          "summary": "【官网研究·首次跟踪】偏好具有现成电力资源、可转 AI 的矿企，同时警惕 DAT 的高管股权稀释：10 家样本中 Metaplanet 治理最弱，Strategy 等获较好评价。重点是矿企与财库公司的选股差异，不能当作 BTC 目标价；适用未来数年的转型，风险在建设兑现、估值和稀释。VanEck 有 BTC 产品与相关资产敞口；已查 Sigel 个人 X，近期可见帖未提供新的可量化 BTC/ETH 判断",
+          "sources": [
+            {
+              "date": "2026-09-18",
+              "title": "官网研究：Mid-September Bitcoin ChainCheck",
+              "url": "https://www.vaneck.com/cl/en/news-and-insights/blogs/digital-assets/matthew-sigel-vaneck-mid-september-2026-bitcoin-chaincheck/"
+            },
+            {
+              "date": "2026-09-25",
+              "title": "Sigel 个人 X：已检查近期可见帖，未作为机构正式观点",
+              "url": "https://x.com/matthew_sigel"
+            }
+          ]
         },
         {
           "name": "David Sacks",
           "org": "前白宫 Crypto Czar",
           "handle": "@DavidSacks",
           "has_update": false,
-          "date": null,
-          "source_url": null,
-          "stance": "看多",
-          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "stance": "中性",
           "raw_search_results": [
             {
-              "url": "https://news.google.com/rss/search?q=David+Sacks+White+House+Crypto+Czar+BTC+strategy+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "David Sacks White House Crypto Czar BTC strategy [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 8 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=David+Sacks+White+House+Crypto+Czar+BTC+strategy+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中9条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/DavidSacks",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://www.google.com/search?q=David+Sacks+BTC+ETH+September+2026",
+              "title": "检索结论",
+              "snippet": "已查本人可见 X、独立 RSS 与检索；近期主要谈 AI 政策，未找到符合口径的新 BTC/ETH 判断"
+            },
+            {
+              "date": "2026-09-17",
+              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNN2ljZDVITFd2NTlxcTllamZLeHZkWVFQR0VDa1NxN0ZVRGxrY3JsVjd0YUZmVWZaQ0NXblF0dVlDeVlwZ1lEZndkNklTVXdiTXlVZC1SSlVIRVFNNHRUYjZSM3FSYVlUa2pOLTZ3WERMX1NmQjJ4M1pzNy1IeXk0U0Y4LUFYbm8?oc=5",
+              "title": "2026 Cryptocurrency Adoption and Sentiment Report - Security.org",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Security.org",
+              "query": "David Sacks White House Crypto Czar BTC strategy"
+            },
+            {
+              "date": "2026-09-23",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVXZqMU1VY1FQdFRRbERkX3dXM1Mtb3k4RElFdUpoOWVaRHlhSHdBZkxZbTJWWWF3N0lKNy1LSHZReEhHVl9HYjBjd1hlQnlvQkIzR1ZYT1BZbkptZEVCYkFfVGNyYjNZbjdvRDRnU01qVTVRTGdFSHBqWmg3RXV4OGZOeUNvd2EzcHZrNk90ZVk3WmJRUXYwUGxpT3BSNzRHV1NpVFlR?oc=5",
+              "title": "US treasury secretary Scott Bessent reportedly in running to become Trump’s AI czar - crypto.news",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "crypto.news",
+              "query": "David Sacks White House Crypto Czar BTC strategy"
+            },
+            {
+              "date": "2026-09-12",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPd1JyU28waUxBR0tnR3FuS0R3Yk9lTHJGdDdWLUNGRV9MVUYtUjk0cVoteWVZVlktOWN2Rmw2TFZWNUZha0ZtZGxnaDlseEJCNm50czFPNHJabWhKYkt1S1A2MjR0UkRVUmFEakxGMzNZLVdwUElmdFctaU45SnYtNDRoZk10ZWpROThHMnJHbDlQVjAyMWo5cG4tY00?oc=5",
+              "title": "David Sacks Accuses Jacob Coxon of AI Safety Campaign - Goldman Sachs Group (NYSE:GS), NVIDIA (NASDAQ:NVD - Benzinga",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Benzinga",
+              "query": "David Sacks White House Crypto Czar BTC strategy"
+            },
+            {
+              "date": "2026-09-14",
+              "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQbnZBY29JQnQzWlU0NGNLNEN6U1VwcWZVZ0FxbU5vc3YyQTdsZXI0S3FvVDBxbHlFaHUtRGZpbWxtVlp6OU90QVJOd3RPTUxnUzBzU3hWZVJGOW9oX2RTN2tfQlM4T25oSldoc1k4S1FJM1ZDWUJwNTJDZWxsMnUxdGJ5UFFMY1NmWTYtSjRlRUNCZFRORkdvYWpZMlM0RGcyMzFxYjVMTlpiUGNxU2Zid3czaXJtRFY5Mi1MZFNqZWtIamxLRWY5MWtLckNQbFpzLWI3bGFESQ?oc=5",
+              "title": "Trump says no need for AI regulation, attacks Anthropic’s Dario Amodei - Proactive financial news",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Proactive financial news",
+              "query": "David Sacks White House Crypto Czar BTC strategy"
+            },
+            {
+              "date": "2026-09-20",
+              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9LT0RHLUY0Z3dENW1JRS1ZY3pjb0ZOQjVfMWVaVW0tejRBcUpnYTdKSksyc09JT21VNWc5MmlZa01QaVMtbzA5QktqQVBhQXBPZGpfY0QxTkhfTERibkhJTUY0a2JtQW5aQk1YS1AtY0VXeXRCTWJUcGtn?oc=5",
+              "title": "Trump Wants an AI Force and a Czar Who Meets One Key Bar - CryptoRank",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CryptoRank",
+              "query": "David Sacks White House Crypto Czar BTC strategy"
+            },
+            {
+              "date": "2026-09-12",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUTV1UWJ6b1pyaWtCa3FHUmpraTYxUXliWlNPOFItZnh1c2FEQk5Zb0hZZF8tVW1OOThYODNtOHV1QllEMWxMR2ptNkV5QmJ4ZGMyenlFNTBSejF4cXd6RS1ScmlIczc5MVczNU1UUi1GYWpsM3R6WVlkV0k1dzNNMGp2SFcyd293cTkyUkhOZDNmczNMQjZaRk9rQQ?oc=5",
+              "title": "GCTK Stock Is Soaring Today — What Is Fueling The Surge? - Stocktwits",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Stocktwits",
+              "query": "David Sacks White House Crypto Czar BTC strategy"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPLURMZDdKc3lTalpvbWxHTDZzVUhxczhZTnR6SnJTODlfWGYxMS1POW9kcGt4QlJ0cGJrdGFTczlsbS1lUUZuc0VzQVd6VEpYMWFOTmVoMk5oUE1LWGtuWXB6RzZDU21vTXBLZFQxVW8xZmQwN3NTTFQwVWszWkxqazJoTEVpUEtlMFFJaDdZOEpRcC0yQW42aXJR?oc=5",
+              "title": "US Considers Overseas Expansion of Dollar-Backed Stablecoins - KuCoin",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "KuCoin",
+              "query": "David Sacks White House Crypto Czar BTC strategy"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPVlZGSllNem1mWW5vUy1WTnhPSHM1TFRlcTdUa3l2VHRPM21uM1F5WGhqNWxkaWlXTlRpNjFSUE9CVVdXSUtpRUQ0WDRsekVSc3hfWjd4anNadmttYVdiWmtVV0VIOFdpTXNELW5CLUZNYU9McFMwRWlTQmhqY0lkZTNBdUdzdzFoVWc?oc=5",
+              "title": "Trump wants another czar: How much can one White House adviser really change? - Traders Union",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Traders Union",
+              "query": "David Sacks White House Crypto Czar BTC strategy"
+            },
+            {
+              "date": "2026-09-23",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQamE1MW4wbE9OZVBQZ090MWdvZHZpRnFPRG5SOTVxSWxkSzk2czF5enpUU05zSUhDb2RqaGY5bUsyVVhtdEZfMTE3NlRKVkt5RDVhYXFFTGRQVmhtVF9NcGI5LV9EMUhWcm9YWGtVWXlQZlczNE9hMjl4Q2sxRG1JYnpXcGltcUQxREtPZEVzZ3JTT0s5MnFyUUV2cUY3TVFMSW5N?oc=5",
+              "title": "White House Calls Bessent AI Czar Reports \"Speculation\" as Trump Plans AI Force - Blockonomi",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Blockonomi",
+              "query": "David Sacks White House Crypto Czar BTC strategy"
             }
-          ]
+          ],
+          "checked_at": "2026-09-25",
+          "summary": "本期未找到可核实的新观点；已查本人可见 X、独立 RSS 与检索；近期主要谈 AI 政策，未找到符合口径的新 BTC/ETH 判断"
         },
         {
           "name": "Patrick Witt",
           "org": "白宫数字资产顾问委员会",
           "handle": "（白宫数字资产顾问委员会执行主任）",
           "has_update": true,
-          "date": "2026-09-14",
-          "source_url": "https://www.theblock.co/news/regulation/2026-09-14-white-house-crypto-adviser-feels-very-good-ahead-senate-clarity-act-vote-tuesday-414702",
-          "stance": "看多",
-          "summary": "投票前称白宫已提出最好、最终的方案，对通过感到乐观；同时表示若国会无法推进，监管机构会继续行动。9/15 程序投票失败，故当时的乐观预期没有兑现",
+          "stance": "中性",
           "raw_search_results": [
             {
-              "date": "2026-09-14",
-              "url": "https://www.theblock.co/news/regulation/2026-09-14-white-house-crypto-adviser-feels-very-good-ahead-senate-clarity-act-vote-tuesday-414702",
-              "title": "Patrick Witt 本期核实来源",
-              "snippet": "投票前称白宫已提出最好、最终的方案，对通过感到乐观；同时表示若国会无法推进，监管机构会继续行动。9/15 程序投票失败，故当时的乐观预期没有兑现"
+              "date": "2026-09-23",
+              "url": "https://en.bloomingbit.io/feed/news/120932",
+              "title": "Patrick Witt 本期已核来源",
+              "snippet": "已核媒体正文、未取得会议完整实录：承认 Clarity 本次受挫，但白宫仍寻求未来立法机会，当前通过监管政策尽量增加确定性。相较 9/14 投票前乐观表态，重心转为等待机会与行政推进；不能理解为法案已通过"
             },
             {
-              "url": "https://news.google.com/rss/search?q=Patrick+Witt+White+House+digital+assets+Bitcoin+reserve+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Patrick Witt White House digital assets Bitcoin reserve [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 8 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Patrick+Witt+White+House+digital+assets+Bitcoin+reserve+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中9条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-23",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaE9Bd2xjcE1kSDM0R0djNGN0dG1wVS02UTFPeFlrMVpHbU1EV0UyTC1zNzlTT0czbkYxZ3lhQnpiZ09oQTNDUFliZmVIeDRyQnlCclVMVy1qb0N6Y2FOdHZEakVaMndRQzduRUx3S3NVRWNzRThQM2V6czFJbjc4b1lRMHk5ZU9mOUpDXzVIQjBoX2RtSFFyUWJtbHVONjdsWnZvalpzNnZDMHg0dm8xMS1OOTFNUHZQRzdDM3RfOEZ6M2Jpdm9SVjZ3?oc=5",
+              "title": "White House adviser defends President Trump's crypto ties in wake of Clarity Act defeat - CoinDesk",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinDesk",
+              "query": "Patrick Witt White House digital assets Bitcoin reserve"
+            },
+            {
+              "date": "2026-09-16",
+              "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOSkRJLWJLQVJxUnNkWTZYeUtHUzdJYlZ5OGRXV1BEeWpmZ2xZZFVBWEdsbXpEQVVfZ3FBa0hmVHBiMTZ4Wmh3aFVjaXpHMWREQTBoQUsxMWk0LVBqUlY5Sktkc0oteVZCUTEwYk5icFdfYnhWNlpnNG1nQThCdHFrY2xtY3JIR0NCLVhRV0h1OUIwMEd4bHdqSGl3Y1NrTHpJb2pTOW1INi1JakRjYkN2M25xYWRVSFFEeks2bHJTaUY5VjFORXEyWHNpZFV1MDVQRldzb1Jn?oc=5",
+              "title": "Strategic Bitcoin Reserve Bill Heads to House Committee: What You Need to Know - Benzinga",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Benzinga",
+              "query": "Patrick Witt White House digital assets Bitcoin reserve"
+            },
+            {
+              "date": "2026-09-14",
+              "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOem0yUi1zRWhnNHIwanhkTExxSDNNQ2JuVjd6d0Y1LVltbmNadlZkQm4xd0JTcS1wX0ROTy1Wc1U2WWhqMUVGZzllUUl5X1Y4VkMxaG9YMk43VTRYR0tXOE40elBtR1ZSbHJ3TXRLT1k1UzZQZ0RhX3haNUxZbmREdkxfZy1Fc3hvS2lkUmk0WXcyVUVDOGFaYWlSemVrSkcwbXM2ay1aVXRuN1h6RU1CeFlsZTFkc0dCS0UzMk9OcEUzUE1NMGljTi1ZWDRJbzdBckJSN2x6THdPTng2eWpvWGpKQWtRb0p5b0lLT3ZoVzNkLW1N?oc=5",
+              "title": "Freedom Tech DC to Convene Policymakers, Industry Leaders on AI, Data Centers, Energy and the Future of Money - PR Newswire",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "PR Newswire",
+              "query": "Patrick Witt White House digital assets Bitcoin reserve"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSURmRnUzcXE1NkxCZC1JNFNCeEI0b3pqNW9oTTlkQjJRNVZLODlSTFI2QmtYdDg5cmFZNl9SdDdnbFFZSGN1clQyNU9pYWFtUEdQNUE5VjJNRUhoMzJ5M25Jc0pGWV96ZmczX3lNM3RyejU0cUZ3ZndhcXZsajRSemdZa0gtVmZuY1hzZEY3R0JrSjZnYlFadkt6VE5zQW1MLXJyQlV3?oc=5",
+              "title": "Trump Urges Senate To Pass CLARITY Act at White House Crypto Summit - CoinMarketCap",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinMarketCap",
+              "query": "Patrick Witt White House digital assets Bitcoin reserve"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVVlTMFdwTUpXUlB2YnJ6Z28tX3NESUVQQVB1MEpFTVhpcXZiaFAwTWtabk1UR21UckRaRHhYSXdaeEdJY2xxMUxiaGRWbTNfYTJVM3B6S0lDUk9Ja2w5Ti1faHc0U2szVm12VmxJOEx4RmdxVVNLUE1mSDdtVTB5WlF5UEFDbHlDaXVzOVhNQlpCSXBEVzFv?oc=5",
+              "title": "US Lawmakers File Bill To Build 1M Bitcoin Reserve - CoinMarketCap",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinMarketCap",
+              "query": "Patrick Witt White House digital assets Bitcoin reserve"
+            },
+            {
+              "date": "2026-09-15",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZzdZWG5IWHh4eWFRNFNRdWt6TkUtcWdFdmxBMmNLX0lNX1pZUXBZZnJib0I0N1duSXBnYnJvZFd0Z2ZaczlTWjVvZWZpTVB1RkJiaVh4Q1lINjZwcjNIcDc2VEpCQ3ZFYkxvZXo3SC1GQjZsbUx6VGxaVVF0RWo2SVQ3akd2eDNRVEdIS3QyYkZUWW1FckRLZktPd2cxRnhtSGxEemVGVzF0SzhXa0lIbA?oc=5",
+              "title": "White House Crypto Chief Says Stablecoins Will Boost U.S. Bank Deposits - CoinMarketCap",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinMarketCap",
+              "query": "Patrick Witt White House digital assets Bitcoin reserve"
+            },
+            {
+              "date": "2026-09-13",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNUFhVTdqQ1pUSzczMXFFdGJwN0Y3dnNCTGdLTzNmMExHcDlXYUl2bDRSTG9HT3VyaVdSVlc1aG1oeDg4clROOHVXdTU4c2pJa3laRHBJeDdhRklDWFI5aVV0bjNqYkJoV05nanhYTTVnX1lkY1ViQlRNUVJiMGdXOUpSeHJDLWpxT0JMU0RISUFKRnh0Y3hxaGdWck94b19VUTJn?oc=5",
+              "title": "Strategy May Sell Bitcoin, Yet ETF Inflows & CLARITY Act Hope Triggered $82K Rally - CoinMarketCap",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinMarketCap",
+              "query": "Patrick Witt White House digital assets Bitcoin reserve"
+            },
+            {
+              "date": "2026-09-15",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOTMybHNqLTJ0LU5Del9aaGhRTHRSdnk5azFxMkp2T01WMzhzVzRfUm9FV1Fia0EyaXN3M1hENGZVeEM5RlU1YnlXdkQxcnJ5YXVmckRab0h6UUplbXFTUWZic1BDMDZGbDBJc19RZEtlSXk4OGJLMy1iQlVQRUNEMGxMS1kyWWhFUXBBWDFaMGU4Y2MtYy1uMmhrajRrX0dIU1ZZNGszZC15UlduSWIzNWlMeGRMcUE?oc=5",
+              "title": "FDIC Rules Out Stablecoin Deposit Insurance Under GENIUS Act, Chairman Says - CoinMarketCap",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinMarketCap",
+              "query": "Patrick Witt White House digital assets Bitcoin reserve"
+            },
+            {
+              "date": "2026-09-19",
+              "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE92UVVNaXRBZXo1azlkd1VWSjVCeURBcThOZmkya09SeENrUmJsZUh5YnZwUXI4d2dtM0dDZjJidEpna21XNnpqUVpreEYyeUVvaE5WU0dXUDFBdTRXeENvS1Ryb1FFYnFGTUhGMDJZcXZNcWQ3?oc=5",
+              "title": "Coinbase Advances Bitcoin Reserve Plan with U.S. Treasury and Commerce Departments - ababnews.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "ababnews.com",
+              "query": "Patrick Witt White House digital assets Bitcoin reserve"
+            }
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-23",
+          "source_url": "https://en.bloomingbit.io/feed/news/120932",
+          "summary": "已核媒体正文、未取得会议完整实录：承认 Clarity 本次受挫，但白宫仍寻求未来立法机会，当前通过监管政策尽量增加确定性。相较 9/14 投票前乐观表态，重心转为等待机会与行政推进；不能理解为法案已通过",
+          "sources": [
+            {
+              "date": "2026-09-23",
+              "title": "Patrick Witt 本期已核来源",
+              "url": "https://en.bloomingbit.io/feed/news/120932"
             }
           ]
         }
@@ -274,32 +1336,99 @@
           "org": "Cantor Fitzgerald",
           "handle": "Cantor Fitzgerald 分析师",
           "has_update": false,
-          "date": null,
-          "source_url": null,
-          "stance": "看空",
-          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "stance": "中性",
           "raw_search_results": [
             {
-              "url": "https://news.google.com/rss/search?q=Brett+Knoblauch+Cantor+Fitzgerald+crypto+bitcoin+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Brett Knoblauch Cantor Fitzgerald crypto bitcoin [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 3 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Brett+Knoblauch+Cantor+Fitzgerald+crypto+bitcoin+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中5条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://www.google.com/search?q=Brett+Knoblauch+BTC+ETH+September+2026",
+              "title": "检索结论",
+              "snippet": "独立 RSS 与补充检索命中旧财报问答、个股评级或泛行情，未核实本期新的 BTC/ETH 观点"
+            },
+            {
+              "date": "2026-09-19",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBhbkp2MDVBQUc1ZHpfM2d3aWZDNlhMODlIYm5nUGN1Q3N3TTh2WGJtWWdfU1N2RDFmMWpLZjQ2cTJ0OG11WWJsU2FCTHJiNDhiNXB4TGJzQkV4ZFFWS0pSX0JMRmRQUzByQVNuVg?oc=5",
+              "title": "Bitgo Holdings (BTGO) Q1 2026 Earnings Call Transcript - Fortune",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Fortune",
+              "query": "Brett Knoblauch Cantor Fitzgerald crypto bitcoin"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPUjhyYVRQMTVjdWZlWDQ5MTBWNnhhcE0zbEx5UDc4U1RBMnl4aERZMkx2THJ0dF9OLWw0Y1B1Wm84VVd1dThxNkNzQktqX0Vpd3VMcjNLN09pbk9DNnNuSWQ1czlxUWxJWXhoWDVGajAteGlhOE1PdTZ6amhVM24zTFZwQzYtV1FSQWc?oc=5",
+              "title": "Galaxy Digital Rises as Crypto Rally Lifts Sector - Quiver Quantitative",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Quiver Quantitative",
+              "query": "Brett Knoblauch Cantor Fitzgerald crypto bitcoin"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9Uck42V3Y2RXNiWHp4SjNlbGdHYjBUVms4RG1CXzNtSWlmRzdGc2x3U0ZQc3lyX2JtWHNVMllEcFJnNVFUUlNVaVVvb1pGN0pmNXItTk1yNV91OUl4R1V3M2ZlRDhCN0hQV0ZOTg?oc=5",
+              "title": "Bitgo Holdings (BTGO) Q4 2025 Earnings Call Transcript - Fortune",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Fortune",
+              "query": "Brett Knoblauch Cantor Fitzgerald crypto bitcoin"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1xZHFxOUtlUWZlR044amN1Qk9GeVU1SVVYajA2eWd6YVlrZVc5RXpwcEd0UFpLU3A3MkNvZWVRODYxa2tqVmVPTkI0bEQyMTQyMDhObWhSNjVBNEZLRWI2VEpaNUpBT0R2S1NzMUttZGhhVGVtYnRmR0lCT1o?oc=5",
+              "title": "Why IREN (IREN) Stock Is Down Today - Quiver Quantitative",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Quiver Quantitative",
+              "query": "Brett Knoblauch Cantor Fitzgerald crypto bitcoin"
+            },
+            {
+              "date": "2026-09-23",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOG9nVlhaZHdCb054WGNiV2lzaFppWk90QkUtWkdBQ3R0a0JLWm1jWms2Qi0xVUxoMXU1eUgwVGNvdmtPcDJ4eFZSQzZ2cFozdmc0QUMyeGFRTDBmRzVCZllUbDBkQ2VjaTcwcFF6VnR2bjd1Z01mT0NGTGl4OUNnakpZamVVTEZEc0VrUldfVkhUX1JMSU1GRHB4RkM0Z0xHUklJbzRJUjUtdGw3MWc?oc=5",
+              "title": "Bitmine Price Prediction 2026, 2027-2030: What does the market data reveal? - The Crypto Times",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "The Crypto Times",
+              "query": "Brett Knoblauch Cantor Fitzgerald crypto bitcoin"
             }
-          ]
+          ],
+          "checked_at": "2026-09-25",
+          "summary": "本期未找到可核实的新观点；独立 RSS 与补充检索命中旧财报问答、个股评级或泛行情，未核实本期新的 BTC/ETH 观点"
         },
         {
           "name": "Aaron Day",
           "org": "Daylight Freedom",
           "handle": "@AaronRDay",
-          "has_update": false,
-          "date": null,
-          "source_url": null,
-          "stance": "看空",
-          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "has_update": true,
+          "stance": "中性",
           "raw_search_results": [
             {
-              "url": "https://news.google.com/rss/search?q=Aaron+Day+Daylight+Freedom+bitcoin+commentary+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Aaron Day Daylight Freedom bitcoin commentary [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+              "date": "2026-09-24",
+              "url": "https://x.com/AaronRDay/status/2103246292793114644",
+              "title": "Aaron Day 本期已核来源",
+              "snippet": "在讨论 Clarity 程序投票失败时，称独立支出委员会正筹划在六场参议院选战部署最多 250 万美元，并要追究共和党未兑现承诺的责任。这是其政治行动声明，不是经核实已经支出的金额，也不是新的 BTC 价格判断"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Aaron+Day+Daylight+Freedom+bitcoin+commentary+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中0条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/AaronRDay",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            }
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-24",
+          "source_url": "https://x.com/AaronRDay/status/2103246292793114644",
+          "summary": "在讨论 Clarity 程序投票失败时，称独立支出委员会正筹划在六场参议院选战部署最多 250 万美元，并要追究共和党未兑现承诺的责任。这是其政治行动声明，不是经核实已经支出的金额，也不是新的 BTC 价格判断",
+          "sources": [
+            {
+              "date": "2026-09-24",
+              "title": "Aaron Day 本期已核来源",
+              "url": "https://x.com/AaronRDay/status/2103246292793114644"
             }
           ]
         },
@@ -308,38 +1437,137 @@
           "org": "FT 专栏",
           "handle": "@jemimajoanna",
           "has_update": false,
-          "date": null,
-          "source_url": null,
-          "stance": "看空",
-          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "stance": "中性",
           "raw_search_results": [
             {
-              "url": "https://news.google.com/rss/search?q=Jemima+Kelly+FT+bitcoin+ethereum+critique+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Jemima Kelly FT bitcoin ethereum critique [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Jemima+Kelly+FT+bitcoin+ethereum+critique+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中0条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/jemimajoanna",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://www.google.com/search?q=Jemima+Kelly+BTC+ETH+September+2026",
+              "title": "检索结论",
+              "snippet": "本人近期推文介绍 BBC 节目但未展示具体加密论点；RSS 与 FT 补查未核实 14 天内的新观点，不以活动预告凑数"
             }
-          ]
+          ],
+          "checked_at": "2026-09-25",
+          "summary": "本期未找到可核实的新观点；本人近期推文介绍 BBC 节目但未展示具体加密论点；RSS 与 FT 补查未核实 14 天内的新观点，不以活动预告凑数"
         },
         {
           "name": "Peter Schiff",
           "org": "Euro Pacific",
           "handle": "@PeterSchiff",
           "has_update": true,
-          "date": "2026-09-09",
-          "source_url": "https://www.schiffgold.com/interviews/peter-schiff-golds-bull-market-is-just-getting-started",
           "stance": "看空",
-          "summary": "维持看多黄金、看空 BTC：认为美元购买力削弱支持黄金，而潜在 BTC 买家大多已经入场，后续卖盘可能压价；属于其一贯立场延续，并非本期由多转空",
           "raw_search_results": [
             {
-              "date": "2026-09-09",
-              "url": "https://www.schiffgold.com/interviews/peter-schiff-golds-bull-market-is-just-getting-started",
-              "title": "Peter Schiff 本期核实来源",
-              "snippet": "维持看多黄金、看空 BTC：认为美元购买力削弱支持黄金，而潜在 BTC 买家大多已经入场，后续卖盘可能压价；属于其一贯立场延续，并非本期由多转空"
+              "date": "2026-09-16",
+              "url": "https://podcasts.apple.com/us/podcast/fox-news-dumped-him-for-dangerous-truth-but-the/id1654639843?i=1000790567724",
+              "title": "Peter Schiff 本期已核来源",
+              "snippet": "⚠️ 已核节目官方介绍，未听完整音频：在 Clarity 受挫后仍认为 BTC 缺乏价值，认为黄金牛市尚早、美元有走弱风险。是长期看空 BTC 立场的延续，不能将宏观金价观点改写为具体 BTC 目标价"
             },
             {
-              "url": "https://news.google.com/rss/search?q=Peter+Schiff+bitcoin+ethereum+gold+market+view+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Peter Schiff bitcoin ethereum gold market view [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 5 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Peter+Schiff+bitcoin+ethereum+gold+market+view+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中9条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/PeterSchiff",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-17",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSFVkamtzZ3loWTNfVjVTLU9RZXNyV1J5d0piWllIMElTM3BEQnhEV1FHcW94d0NWVVZiSGlvUmVGdnQ1Y0JtbTFBZFRqeml2Uk9qcWg3VDB1YldreHNHVmVNeUQ3Z3hxdlo2X205bjg0anZRbmVrNkRUY2VJOURSX2ZUcVZROE5ZV25lYnRncFNYTVAtMlZzT3A2bldheWdLazJ1NXh3dkJvOHVVWjFSY2VR?oc=5",
+              "title": "Bitcoin Holds $76,000 as Ethereum, XRP, Dogecoin Spike 2% - TradingView",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "TradingView",
+              "query": "Peter Schiff bitcoin ethereum gold market view"
+            },
+            {
+              "date": "2026-09-16",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdTd2YlFwem9FVV9XdGNkWjJxYnRuX2VlQkt6OFd4UnB0SjBwQjJMT21heUJ6VGF6TmJveWEtTU4tOTJTRVZ5Q09WMGlfMklpSThGdmlwVV8yQ3BZX3BvSjlyckhIMUVfXzQzLWFjVG5XOUlfNDJXYTN5WWlvS0cwSWl5NGwxeEpUc3VuOW9vZw?oc=5",
+              "title": "Peter Schiff: “The Fed Has Already Lost The Battle Against Inflation” & BTC vs GOLD Debate - CryptoRank",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CryptoRank",
+              "query": "Peter Schiff bitcoin ethereum gold market view"
+            },
+            {
+              "date": "2026-09-17",
+              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNMldhMmlCX1p0RTlpX05vVHMyc3E4eTd5YXY1YmVvTXRVdXdhbkcwRGZpamFmRzQwNTNKeUpZdUFFQ0hOcURqbzVScXAtY3NGaUxqS0JqSTZNWk5jMERvZDRrU0RBb19tQklrZTF1SDA0TWVSYjNzUThvSVJhMDJJT2xaOFZJbTF0emJFc0o0NDFWNjc4OVhhM2xnN0lrRlliaGRxTXQtRQ?oc=5",
+              "title": "Veteran economist says Bitcoin is 'worthless' after CLARITY Act failure - thestreet.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "thestreet.com",
+              "query": "Peter Schiff bitcoin ethereum gold market view"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNa3k1dHM0ZlNTQnZHN1dvSDhHWFF5NmRaSlZCc3U3MzVIY2YycktBbFJ5djhDWTVkUG1QMHRFS0VDazc1Q3ZsaW1sQ0FPNzJRNWZrZVY4NVhwUGFUYVZaeVZMWVA3aDBCLXpCSV9halZUTFRhU2R6NE9CLTZHNUxFUkpNWXoxenhBejF2T2gyYlc4VnJDdHo4VDlpdmNpZmhPTWh2Slg2VE1UbjFR?oc=5",
+              "title": "Bitcoin Critic Peter Schiff Announces Ordinals Art Collection Sale - CoinMarketCap",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinMarketCap",
+              "query": "Peter Schiff bitcoin ethereum gold market view"
+            },
+            {
+              "date": "2026-09-17",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUkpGZlBvU2QxRGlqYktNX0pFdTUzY1lNdk5LQmRCOEFyNWRpRkhxeEdhRC1YQTYyVUJ2aWh5LU1iQlE4N0pWWHJKdlRWTnhKNEtiWlF5THhGRnUwa3NTODV6TWdWX3RrR2pGNkZqS1hvY1hESmNmZHk3U3RzQk1pR1RrNzJ1QmtHSkN3dFZheV9VVnJJc3dwVdIBngFBVV95cUxOdDdSRldqU2dKS3N4QmhtVUE4T1RGVE1fTHlPOUw3ZmFXazgyVkttS3Vsc2h1TndBUGNyR2dWVTR3bG13Y0g1THpLcm1LZEE3SVNYR3BtUDd2LVpoMGZkei1pSk42YXlVTFpKM3Q4R1VsRkUzV2ZvWUF5UG5kaDFSMmVpME03X1FCek1iSl9IcjhGdXp6ZzNBbkVSVklIUQ?oc=5",
+              "title": "S&P Global Enters Crypto With OpenZeppelin Acquisition - Coinpedia",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Coinpedia",
+              "query": "Peter Schiff bitcoin ethereum gold market view"
+            },
+            {
+              "date": "2026-09-19",
+              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE43SzE0clRrR0FPMVgxLW1BSW5nWG81S1NfLWJTelg3UTFTbVpVOXhoMUtBdTJMMDN6a0wxRzFFU0J5WmNqZ2dvb09KajFXS28zSlVjUFZpUVo?oc=5",
+              "title": "英伟达 CEO 黄仁勋：已与 SK 海力士达成长期协议 - CryptoRank",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CryptoRank",
+              "query": "Peter Schiff bitcoin ethereum gold market view"
+            },
+            {
+              "date": "2026-09-15",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQM04yaFMxQnpOeEpON294YXpDVXY3emRJTy14bFV5dDJpaGIxVkpTN0ttSkZLbUZGMzlWemhVSVFxRVNOR0ljaHdhTU1aNTlLOGdnMVV6QzJTNzRKZjNCZktyeERzQ3Z3ZjRtX2FaVkhXU2t6T1V0Sy0xcm13SGhJNzc3R0l2eGoyTFNNS3pxWXR6U2lKbTI1eFM3aVNmQQ?oc=5",
+              "title": "Many Cryptocurrencies Try to Dethrone Bitcoin, but Will Any Succeed? - CoinMarketCap",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinMarketCap",
+              "query": "Peter Schiff bitcoin ethereum gold market view"
+            },
+            {
+              "date": "2026-09-20",
+              "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE50bkJ0clhPQkY0TWllM1otX2M5aXREQ2RURldoTWJSdm9BYnQ3ZFhjbjlieEZFUWpiZjktUVJjLW5tR3FablRDZk1abWVFVWZtWkM4bWQxS1VvQTB2ZVFEcUtYU21ZVzhLNWUyVlc3X2JENXY5ZEFNWXZBTQ?oc=5",
+              "title": "Peter Schiff calls SEC tokenized stock announcement bearish for Bitcoin despite rally - Crypto Briefing",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Crypto Briefing",
+              "query": "Peter Schiff bitcoin ethereum gold market view"
+            },
+            {
+              "date": "2026-09-20",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQS0pzN3hVVENlOUNXTWxjellWaEppc3B6R2pUTFdfUmhkYVB3MU9QLU5lckROY0lSeG5YZHNNS1pCRTc4TXhIRDg0NmMwNE0tUTlLaG9IV3NhWEFLVEthcEFlV2pTcFFWNjBkbjJOZjF5Snhsa19OMEtJTjRMTkRfWUZrd2dXUDktSDZRTHpGcWFXVWFLR3JPWUFhM0pRTFEyY1g1WA?oc=5",
+              "title": "Schiff Warns Tokenized Stocks Will Siphon Liquidity From Bitcoin - Bitcoin News",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Bitcoin News",
+              "query": "Peter Schiff bitcoin ethereum gold market view"
+            }
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-16",
+          "source_url": "https://podcasts.apple.com/us/podcast/fox-news-dumped-him-for-dangerous-truth-but-the/id1654639843?i=1000790567724",
+          "summary": "⚠️ 已核节目官方介绍，未听完整音频：在 Clarity 受挫后仍认为 BTC 缺乏价值，认为黄金牛市尚早、美元有走弱风险。是长期看空 BTC 立场的延续，不能将宏观金价观点改写为具体 BTC 目标价",
+          "sources": [
+            {
+              "date": "2026-09-16",
+              "title": "Peter Schiff 本期已核来源",
+              "url": "https://podcasts.apple.com/us/podcast/fox-news-dumped-him-for-dangerous-truth-but-the/id1654639843?i=1000790567724"
             }
           ]
         },
@@ -348,17 +1576,29 @@
           "org": "NYU / 作家",
           "handle": "@nntaleb",
           "has_update": false,
-          "date": null,
-          "source_url": null,
-          "stance": "看空",
-          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "stance": "中性",
           "raw_search_results": [
             {
-              "url": "https://news.google.com/rss/search?q=Nassim+Taleb+bitcoin+ethereum+critique+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Nassim Taleb bitcoin ethereum critique [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Nassim+Taleb+bitcoin+ethereum+critique+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中0条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/nntaleb",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://www.google.com/search?q=Nassim+Taleb+BTC+ETH+September+2026",
+              "title": "检索结论",
+              "snippet": "已查本人可见 X 及 RSS/互联网搜索，近期内容主要为政治与 AI 评论；旧 Bitcoin Black Paper 不算本期观点"
             }
-          ]
+          ],
+          "checked_at": "2026-09-25",
+          "summary": "本期未找到可核实的新观点；已查本人可见 X 及 RSS/互联网搜索，近期内容主要为政治与 AI 评论；旧 Bitcoin Black Paper 不算本期观点"
         }
       ]
     },
@@ -370,38 +1610,154 @@
           "org": "Brevan Howard Digital",
           "handle": "@BHDigitalAssets",
           "has_update": false,
-          "date": null,
-          "source_url": null,
-          "stance": "中性偏多",
-          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "stance": "中性",
           "raw_search_results": [
             {
-              "url": "https://news.google.com/rss/search?q=Brevan+Howard+BH+Digital+crypto+BTC+ETH+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Brevan Howard BH Digital crypto BTC ETH [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Brevan+Howard+BH+Digital+crypto+BTC+ETH+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中0条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/BHDigitalAssets",
+              "title": "本人 X 原页面检查",
+              "snippet": "页面未展示帖子，不能判定无更新"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://www.google.com/search?q=BH+Digital+%28Brevan+Howard%29+BTC+ETH+September+2026",
+              "title": "检索结论",
+              "snippet": "指定 X 页面未展示帖子；独立 RSS 与互联网搜索未命中新观点，不能据此断言所有渠道均无更新"
             }
-          ]
+          ],
+          "checked_at": "2026-09-25",
+          "summary": "本期未找到可核实的新观点；指定 X 页面未展示帖子；独立 RSS 与互联网搜索未命中新观点，不能据此断言所有渠道均无更新"
         },
         {
           "name": "Galaxy Digital (Alex Thorn)",
           "org": "Galaxy Research",
           "handle": "@glxyresearch",
           "has_update": true,
-          "date": "2026-09-11",
-          "source_url": "https://www.galaxy.com/insights/research/liquid-network-exploit-4000-btc-bitcoin-sidechain-blockstream-white-hat",
-          "stance": "中性偏多",
-          "summary": "讨论 Liquid 侧链 4,000 BTC 失窃、其中 3,400 BTC 已归还事件：认为不构成 BTC 的系统性威胁，但暴露出安全防护需加强；侧链事件不能表述为比特币主链被攻破",
+          "stance": "中性",
           "raw_search_results": [
             {
-              "date": "2026-09-11",
-              "url": "https://www.galaxy.com/insights/research/liquid-network-exploit-4000-btc-bitcoin-sidechain-blockstream-white-hat",
-              "title": "Galaxy Digital (Alex Thorn) 本期核实来源",
-              "snippet": "讨论 Liquid 侧链 4,000 BTC 失窃、其中 3,400 BTC 已归还事件：认为不构成 BTC 的系统性威胁，但暴露出安全防护需加强；侧链事件不能表述为比特币主链被攻破"
+              "date": "2026-09-22",
+              "url": "https://www.galaxy.com/insights/research/clarity-act-fails-senate-sec-innovation-exemption-tokenized-stocks-ai-pacing-frontier",
+              "title": "Galaxy Digital (Alex Thorn) 本期已核来源",
+              "snippet": "9/18 官网认为 Clarity 短期复活概率很低，但本届政府余下任期 SEC/CFTC 仍可推动行业，长期稳定规则仍需国会；9/22 研究号又指出 BTC 升破 8.5 万美元、市场消化加息与法案挫折。相较上期侧链安全讨论，本期转向监管与市场韧性，并非无条件看多"
             },
             {
-              "url": "https://news.google.com/rss/search?q=Galaxy+Digital+Alex+Thorn+BTC+ETH+research+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Galaxy Digital Alex Thorn BTC ETH research [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 4 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Galaxy+Digital+Alex+Thorn+BTC+ETH+research+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中9条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/glxyresearch",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://www.galaxy.com/insights/research/",
+              "title": "固定渠道优先直查",
+              "snippet": "先查官网/Medium，再跑 RSS；已读取目录及相关新文章"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://x.com/glxyresearch/status/2102446061021511830",
+              "title": "研究号：BTC 升破 8.5 万美元，市场消化加息及法案失败",
+              "snippet": "研究号：BTC 升破 8.5 万美元，市场消化加息及法案失败"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWFZRYi03eHJmX2FhRjNoOXd1SzdBUmlnNXpGZXVOLWFCaUx5XzBGdElXS21qMVNpY0x1TWxfTXB6Z1J6VGlIVGhjLXFpWU1jTFdDeFZvcnc5MThOSmFXZGxmWmZ3SXpYNzh5c01QQXFDSkwyNHpCSE51LWVOSkV2cUp5NDJ0RUZGNkFlV21aaDBJazBPc0l5UGw2MUVNei1YODVnVTd3LWt6MS0wTTVPZUtn?oc=5",
+              "title": "Whitehats move 52 bitcoin from the Coldcard hack to a recovery trust - CoinDesk",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinDesk",
+              "query": "Galaxy Digital Alex Thorn BTC ETH research"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNOWI4aGhyejIxVkhWVFJ5Yk1INkRUWFVOSi0tRXBFV2Zqc1k4TE1faGJxblNPeU8ySDlzaWM2cGowR3RxbG9ReXFOYTBubzFqbHlFNndnckRsc0YtRGE5UUxyRmhZU2trZWVoSzF1RGM2c0xJV0hPaTVLVTdDektVUGtqWDVDRXh6QW9SYklWclpHdzV0ckFzQXpXcw?oc=5",
+              "title": "24 Hour Crypto Recap: Here’s What Happened in the Market - CryptoRank",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CryptoRank",
+              "query": "Galaxy Digital Alex Thorn BTC ETH research"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5LVEdtRHpLNmJIQkY4OEZmNDY3UElxNGxYb09VWXZuOXJaX20tb3V4MHpBbTNhVHlhR1l1YXcyQ1NxZHU5WXZrSlh2SnRobUZ4N1AtQWZVSmdKTktkTEQ4MkJSa0lUZUJzN3JEX3RxcXNpODNReVE?oc=5",
+              "title": "Bitcoin Ends 45-Week Drought Above Key Trendline, Bolstering Case for Bear Market Bottom - finance.biggo.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "finance.biggo.com",
+              "query": "Galaxy Digital Alex Thorn BTC ETH research"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBJQ0lvMG9XdGZzVmZtZTNPU2F4MWVyU2UxMjZpU2NFSDN3TWZZYWs3X1pIUTV6WFFRUm9xSktqMWZobEZEbWpESTJkMFZieENVSlJrQ2pHZWFBU1dXaW5PTmtGWFZDUXJNTE1Ma0JTQWsyQQ?oc=5",
+              "title": "Coldcard Bitcoin Recovery Advances With 52.37 BTC Moved - The Cryptonomist",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "The Cryptonomist",
+              "query": "Galaxy Digital Alex Thorn BTC ETH research"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNR1hhVzZqdFEtTVl3aWtpSzY2VUxzcUdUVHJPSWZxSF95M09INUpoZkRaN2dRZjgyR0pFR3Z6X0JCSjV1VWdYVE15TXVlb0lJRl90ZHpDaTVHejRFaHpqa1YzNVBmYjhEZHFGeVdlQWF5UVZwZ2FGZnY5YjQ0U2piMkc0UG1BeFpaUjhuMWlEMDFXWHJIT2dsZnpwRXZIeW1HQUxzZmlBYXB4VXlVNndRMzMwWERqSFMwSkE?oc=5",
+              "title": "Bitcoin hits $85,000 after $648M wipeout forces mass buying - CryptoRank",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CryptoRank",
+              "query": "Galaxy Digital Alex Thorn BTC ETH research"
+            },
+            {
+              "date": "2026-09-23",
+              "url": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxQVUJNby1yZXNvVUVzaUtzRTY0THRMWHlidG05MHh3b2NxX0NXU2xXWW1WYlp5bjljY1VQWUxfQzlVQkVpd09BcFZXdlFleUhxTXFKYkZ0T3hESUJBQWNaa3dFbGhfRU9rd2FKNHIza3dVRDJfNnFvRUM2a09IcC1RcThVZlVkLXRoY3Itbk1TaG1RTHVzT2pvYml5amNJUF9QSnZvVjlJdzA5NWNhX0wyUWlsX1U1b09vLUxJeUF1MzktV29qUTVRWTBxTkJOd3JUd1pXMHR5dWJfNi02emYtdHRvOEREQS01bmZmdHpBaU1YejAwa1c3NTgzZGEtVVlKUFJ6VVppQXh5X2RYUkJXMndnR1NXcnRHSFVhTi1CUkx0Mm1jWUUxM2pERmlxRHpTa2pLYlF3dEdOUmNRN3pnaHBzQy1DeXpfN2ZyaUF2VzExejNUTTZpYTJXeXRDVUFWUHA1YTlYbm1mZw?oc=5",
+              "title": "White hats outrun Coldcard hackers in 52 Bitcoin evacuation| - خبرپو",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "خبرپو",
+              "query": "Galaxy Digital Alex Thorn BTC ETH research"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB1LTNfQ08wbW5CcTNSSGRIUUlab1V6U0tYMWo3ZnZZM1Y0UTkzMWpUbEl4WlRnMkJJTUxXTlpBUDRMamMyT1JJXzRIYi1saG1yQ0h1N0NhNXFkbXF1MlZ6c2ZtanhsamJ2eXRyc1puUzFKMXZCMFE?oc=5",
+              "title": "Bitcoin Surges Past $84,000 as Oil Prices Retreat and ETF Inflows Reignite Risk-Asset Buying - finance.biggo.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "finance.biggo.com",
+              "query": "Galaxy Digital Alex Thorn BTC ETH research"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPbVRYaUdEeExPaDFOOFVkbXBoQ29Xd1NCUHR2NkJEX1pJOUJjRWZCRnY1QjJzZHp2bVBGNkwxaUYwSUpSRC1ST2hzY25JdERDdWJWbXNXNXlXc0VJNmlSVF9UUVZYR2RxQ0k5X2hVaTFiMnRBQkJBSjY3MmdzelNxT1Y5UlhmSlZQNWhnekZxc1NrNHk0dVcwMWZBNEZEQkhQNU9vaU93MFBuR2NwRkVGZ2JEZmZCNFl0Y3hOdTNTc3NQOFRLUG5lUzVB?oc=5",
+              "title": "Bitcoin (BTC) Reclaims Most Critical Level After 45 Weeks! According to Analysts, the Historical Bottom Signal Has Returned! Here Are the Details - Bitcoin Sistemi",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Bitcoin Sistemi",
+              "query": "Galaxy Digital Alex Thorn BTC ETH research"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdm9ZNVhpYm84b0Q3Tzc1MnJwWTA1QzJxNVItaTJEQUVUb0M3ZVBpb1piMHlnTWw0TTBINmRIRlp4OGRLSEI3ck5OTEZqMU1DeHZ4YVVnTFlzSjZWRzJuZVR6TWlCckdTX3dwdzY4cHc5U1RtU3dkNUF1Z29xMEc3ODJ1Zmk5SGVtcVE?oc=5",
+              "title": "24 Hour Crypto Recap: Here’s What Happened in the Market - Coin Edition",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Coin Edition",
+              "query": "Galaxy Digital Alex Thorn BTC ETH research"
+            }
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-22",
+          "source_url": "https://www.galaxy.com/insights/research/clarity-act-fails-senate-sec-innovation-exemption-tokenized-stocks-ai-pacing-frontier",
+          "summary": "9/18 官网认为 Clarity 短期复活概率很低，但本届政府余下任期 SEC/CFTC 仍可推动行业，长期稳定规则仍需国会；9/22 研究号又指出 BTC 升破 8.5 万美元、市场消化加息与法案挫折。相较上期侧链安全讨论，本期转向监管与市场韧性，并非无条件看多",
+          "sources": [
+            {
+              "date": "2026-09-22",
+              "title": "Galaxy Digital (Alex Thorn) 本期已核来源",
+              "url": "https://www.galaxy.com/insights/research/clarity-act-fails-senate-sec-innovation-exemption-tokenized-stocks-ai-pacing-frontier"
+            },
+            {
+              "date": "2026-09-22",
+              "title": "研究号：BTC 升破 8.5 万美元，市场消化加息及法案失败",
+              "url": "https://x.com/glxyresearch/status/2102446061021511830"
             }
           ]
         },
@@ -410,21 +1766,103 @@
           "org": "Galaxy Digital",
           "handle": "@novogratz",
           "has_update": true,
-          "date": "2026-09-15",
-          "source_url": "https://coingape.com/galaxy-ceo-warns-if-clarity-doesnt-advance-u-s-crypto-rules-may-never-arrive/",
-          "stance": "中性偏多",
-          "summary": "投票前警告：若 Clarity 无法推进，美国可能长期缺乏稳定的加密市场结构法律，行业面临外迁风险；SEC/CFTC 未来两年仍能制定规则，但行政规则不能替代长期法律确定性",
+          "stance": "中性",
           "raw_search_results": [
             {
-              "date": "2026-09-15",
-              "url": "https://coingape.com/galaxy-ceo-warns-if-clarity-doesnt-advance-u-s-crypto-rules-may-never-arrive/",
-              "title": "Mike Novogratz 本期核实来源",
-              "snippet": "投票前警告：若 Clarity 无法推进，美国可能长期缺乏稳定的加密市场结构法律，行业面临外迁风险；SEC/CFTC 未来两年仍能制定规则，但行政规则不能替代长期法律确定性"
+              "date": "2026-09-17",
+              "url": "https://x.com/novogratz/status/2100587469708140836",
+              "title": "Mike Novogratz 本期已核来源",
+              "snippet": "9/16 对 Clarity 失败失望，批评双方在伦理条款上僵持；9/17 又肯定 SEC 创新豁免推动股票代币化，表示 tokenized GLXY 将有后续进展。较投票前警告，出现对行政推进的积极评价，但不等于长期立法风险消失"
             },
             {
-              "url": "https://news.google.com/rss/search?q=Mike+Novogratz+Galaxy+bitcoin+ethereum+market+view+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Mike Novogratz Galaxy bitcoin ethereum market view [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 8 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Mike+Novogratz+Galaxy+bitcoin+ethereum+market+view+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中7条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/novogratz",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-16",
+              "url": "https://x.com/novogratz/status/2100020845942911165",
+              "title": "本人 X：对 Clarity 失败与伦理条款僵持失望",
+              "snippet": "本人 X：对 Clarity 失败与伦理条款僵持失望"
+            },
+            {
+              "date": "2026-09-16",
+              "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxNTjRWejhTekIxbXVEWjUtTWpRelRxeE10QnJ4NF80Q3htQzVVS2JSbk5HcEVJbEFwQnRpRy1oa290bDB5Y2VGMEhndlJxTTdoWmNsTWRWb3lsdF9FaVd3WkxoaFZTMXZzamd2SzBGTjRYX2hCbUpDRWVVVHd3Qk03MWhzeGZwMmE0VElCZXh0cW9ybUhtS3FuWHdZdmJuVmI5VkhPMjM5djlCNF85dldfZkFrRDl0WXUxdU91ZFBRdE5HOVllVHNZRnhQd0hudFZndk8xeFlDYV9IREVGMXV5bjdUMTRWeVlUbzdzWmI0MkNwVk5qc21NRVduMHMxeTZxWWZQQ3dLMFBkLXB2dXdXTW0yaHlnZHJiQVF3YXlxMzRKT1NDT0RuWlYybXlhdHM?oc=5",
+              "title": "Bitcoin and ethereum prices today, Wednesday, September 16, 2026: Crypto prices tank after CLARITY Act fails and ahead of Fed decision - Yahoo Finance",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Yahoo Finance",
+              "query": "Mike Novogratz Galaxy bitcoin ethereum market view"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZGQzQUNManptaXBHdDZrZnoyN3FOZDZ4eHV1T0ZXUUp2Y2syYzhRSEhTWUk3SUFXQ2dCb2cyOVZxSWlPVUNKUndiOE44a2FiZmMtVWx5dkNfb2tHXzlINUkwM3dKakFSYk8ydmxWZU80UzdJV3pHSWFyWnVidG9UMFpGdVBtTUdUMWdZamtqR3Y2ME1UdHRsU0dhb0ZtRXU1ZUtTSw?oc=5",
+              "title": "Galaxy's Novogratz Says Palantir CEO Alex Karp Exposed AI's ‘Human Commoditization’ Problem - Stocktwits",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Stocktwits",
+              "query": "Mike Novogratz Galaxy bitcoin ethereum market view"
+            },
+            {
+              "date": "2026-09-18",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNRHJrN2tMOFc4WHVOOEZGVVlsQzRwVzE4eGtsMjhlWDVQWWlGcmVjWEUxZGgxVlFjSHJJLXozWFRhb3c4V2U5cGFTMVZrMDZQUmp0Q3dMSVBndENieWlnVXZpcnRWbjB1Yk1HMkFiR1BEd3hsRk83NngyX1FXSVdyNFp3SkpxdXo1QzY2bmNnSDBRSzlGa1R3SVplS3NKQXNEazVETnNMZmFZQ0c2Zk80Wg?oc=5",
+              "title": "Galaxy Digital Preps $100M Hedge Fund for Long-Short Crypto Bets - CoinMarketCap",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinMarketCap",
+              "query": "Mike Novogratz Galaxy bitcoin ethereum market view"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPODNZQlZ5bmlwWjlWeElSVkt1REk5cFRjaHpMWFpDWEExY1ZIZzNsbldKSHpVQ3JSTEU1LUZKNHhpY2VJeWJ4STMyZ19BRnR3RUJWWnNpeGxHSENyTGRROV9JX2tRQm9LWFZWalBxY3R0eHFBN1BJcUdiWHNzdHRhUUNsWDltbGxJWWdDNQ?oc=5",
+              "title": "EU ETS Reform Poses Cost Risks for Aluminium Sector, Commerzbank Warns - CryptoRank",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CryptoRank",
+              "query": "Mike Novogratz Galaxy bitcoin ethereum market view"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRE1FUUZXM3pDVTN5YmdyYTExbG1kQ3NqQkdsMkk4RVN0Vm9kek9aUTZ0WDJxUHRpZE1GQkJRZHpXb2NYSE1mRjZ0ZmdaMTNDNjZLbHc4YlJnYnBRWGhlX0NwSV90UTZUdkxxUmZVb254VVV3VzJmclNLdVk3TmZfSTJxVHFnYUc5MjRkcDZwcHpwVE1BNUlTRWh5Z2xXSWwxcm83UDRYZGZzZlFZUTZ3dWlIMWNvSzlzbHNQTU1jTklaZDlkMF9hTjR1aGtmX3pIY2hUTA?oc=5",
+              "title": "Patrick Bet-David Show’s Adam Sosnick Compares His Bitcoin 'Dry Powder' To The Tesla Cash That Built SpaceX - Stocktwits",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Stocktwits",
+              "query": "Mike Novogratz Galaxy bitcoin ethereum market view"
+            },
+            {
+              "date": "2026-09-17",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPUXdteXRQRE1qZWc5Vzdka1VKSnpZU0d5OG02WlVWS29vTno3TW1tZW4tTGR4eFl1aTFTVXZRWWd1Z2dEekszS3gycVJFX1dzNHVwQS03dmVJUG80ZFdyZWRYdDd6WnVDWVR6RHZuWWgxUzZqd1VqUjlibTV1QXFZTHd4NWY1ajhtbXVZbjBub002eDN5SVFIQXln?oc=5",
+              "title": "Senate rejection of crypto bill dims Bitcoin’s $200K outlook by 2026 - Crypto Briefing",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Crypto Briefing",
+              "query": "Mike Novogratz Galaxy bitcoin ethereum market view"
+            },
+            {
+              "date": "2026-09-15",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcmxTUFNTbDdQeHNPYkx1WEJuZkNkQ0tYOXJMSVdsQm9sZWpoMlpnb0NuTHhEQldQWGVLQnoyN2JMVTJPVlRKcnNBS2ppUEY3TS1FX3lXa2dwOXhLQndLdk5pUWwzRnFVQnpoajhYVUtzMFRnTHgxcDlqR3h5ejdiZ0RkUjJJVEFRcGlROXFZQ0hVS3hSNkJ4LTkwUnBueUxIMFNlOVZYSk9mUQ?oc=5",
+              "title": "Galaxy CEO warns US crypto legislation at risk if Clarity Act stalls in Senate vote - Crypto Briefing",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Crypto Briefing",
+              "query": "Mike Novogratz Galaxy bitcoin ethereum market view"
+            }
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-17",
+          "source_url": "https://x.com/novogratz/status/2100587469708140836",
+          "summary": "9/16 对 Clarity 失败失望，批评双方在伦理条款上僵持；9/17 又肯定 SEC 创新豁免推动股票代币化，表示 tokenized GLXY 将有后续进展。较投票前警告，出现对行政推进的积极评价，但不等于长期立法风险消失",
+          "sources": [
+            {
+              "date": "2026-09-17",
+              "title": "Mike Novogratz 本期已核来源",
+              "url": "https://x.com/novogratz/status/2100587469708140836"
+            },
+            {
+              "date": "2026-09-16",
+              "title": "本人 X：对 Clarity 失败与伦理条款僵持失望",
+              "url": "https://x.com/novogratz/status/2100020845942911165"
             }
           ]
         },
@@ -433,32 +1871,59 @@
           "org": "DRW / Cumberland",
           "handle": "@DRWTrading",
           "has_update": false,
-          "date": null,
-          "source_url": null,
-          "stance": "中性偏多",
-          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "stance": "中性",
           "raw_search_results": [
             {
-              "url": "https://news.google.com/rss/search?q=DRW+Cumberland+Don+Wilson+BTC+ETH+trading+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "DRW Cumberland Don Wilson BTC ETH trading [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=DRW+Cumberland+Don+Wilson+BTC+ETH+trading+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中0条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/DRWTrading",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://www.google.com/search?q=DRW+Trading+%28Don+Wilson%29+BTC+ETH+September+2026",
+              "title": "检索结论",
+              "snippet": "已查官网目录及公司 X；可核最新相关发言在 8 月及以前，超出 14 天窗口"
             }
-          ]
+          ],
+          "checked_at": "2026-09-25",
+          "summary": "本期未找到可核实的新观点；已查官网目录及公司 X；可核最新相关发言在 8 月及以前，超出 14 天窗口"
         },
         {
           "name": "Jason Huang",
           "org": "NextGen Digital Venture",
           "handle": "（中文圈）",
-          "has_update": false,
-          "date": null,
-          "source_url": null,
-          "stance": "中性偏多",
-          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "has_update": true,
+          "stance": "看多",
           "raw_search_results": [
             {
-              "url": "https://news.google.com/rss/search?q=Jason+Huang+NextGen+NDV+BTC+ETH+ecosystem+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Jason Huang NextGen NDV BTC ETH ecosystem [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+              "date": "2026-09-18",
+              "url": "https://www.btcc.com/zh-CN/news/deep-article/12175",
+              "title": "Jason Huang 本期已核来源",
+              "snippet": "已核署名 NDV 的访谈整理转载：长期仍看好 BTC，但研究重心从减半转向 ETF、机构需求和美元流动性；买币与买高溢价财库股票应分开，强调估值、现金与等待成本。新增方法论观点，不能把访谈中历史 MSTR 多空案例当作当前仓位"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Jason+Huang+NextGen+NDV+BTC+ETH+ecosystem+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中0条；逐条筛选原始日期、人物与主题"
+            }
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-18",
+          "source_url": "https://www.btcc.com/zh-CN/news/deep-article/12175",
+          "summary": "已核署名 NDV 的访谈整理转载：长期仍看好 BTC，但研究重心从减半转向 ETF、机构需求和美元流动性；买币与买高溢价财库股票应分开，强调估值、现金与等待成本。新增方法论观点，不能把访谈中历史 MSTR 多空案例当作当前仓位",
+          "sources": [
+            {
+              "date": "2026-09-18",
+              "title": "Jason Huang 本期已核来源",
+              "url": "https://www.btcc.com/zh-CN/news/deep-article/12175"
             }
           ]
         }
@@ -472,168 +1937,592 @@
           "org": "Pantera Capital",
           "handle": "@FranklinBi",
           "has_update": false,
-          "date": null,
-          "source_url": null,
-          "whale_summary": "本期未核得新的具名鲸鱼买卖结论",
-          "market_summary": "本周无可核实更新",
-          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
           "raw_search_results": [
             {
-              "url": "https://news.google.com/rss/search?q=Franklin+Bi+Pantera+bitcoin+whales+onchain+flows+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Franklin Bi Pantera bitcoin whales onchain flows [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Franklin+Bi+Pantera+bitcoin+whales+onchain+flows+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中0条；逐条筛选原始日期、人物与主题"
             },
             {
-              "url": "https://news.google.com/rss/search?q=Franklin+Bi+Pantera+blockchain+BTC+ETH+ecosystem+strategy+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Franklin Bi Pantera blockchain BTC ETH ecosystem strategy [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Franklin+Bi+Pantera+blockchain+BTC+ETH+ecosystem+strategy+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中0条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/FranklinBi",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://www.google.com/search?q=Franklin+Bi+BTC+ETH+September+2026",
+              "title": "检索结论",
+              "snippet": "SOP 所列 @franklin_bi 不可用；另核本人 @FranklinBi，最近可见文章 8/27，RSS 与互联网搜索亦无本期有效结果"
             }
-          ]
+          ],
+          "checked_at": "2026-09-25",
+          "stance": "中性",
+          "summary": "本期未找到可核实的新观点；SOP 所列 @franklin_bi 不可用；另核本人 @FranklinBi，最近可见文章 8/27，RSS 与互联网搜索亦无本期有效结果",
+          "whale_summary": "本期未找到可核实的新鲸鱼观点",
+          "market_summary": "本期未找到可核实的新观点；SOP 所列 @franklin_bi 不可用；另核本人 @FranklinBi，最近可见文章 8/27，RSS 与互联网搜索亦无本期有效结果"
         },
         {
           "name": "Parker Lewis",
           "org": "Zaprite / Unchained",
           "handle": "@parkeralewis",
-          "has_update": false,
-          "date": null,
-          "source_url": null,
-          "whale_summary": "本期未核得新的具名鲸鱼买卖结论",
-          "market_summary": "本周无可核实更新",
-          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "has_update": true,
           "raw_search_results": [
             {
-              "url": "https://news.google.com/rss/search?q=Parker+Lewis+Unchained+bitcoin+whales+analysis+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Parker Lewis Unchained bitcoin whales analysis [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+              "date": "2026-09-18",
+              "url": "https://x.com/parkeralewis/status/2100934604555276409",
+              "title": "Parker Lewis 本期已核来源",
+              "snippet": "9/18 将 BTC 解决货币增发问题的价值置于 AI 之上；9/15 则批评财库公司的永续优先股缺乏信用保护、溢价与双重税负，倾向通过减少 BTC 配置量管理波动。长期看多 BTC 与谨慎看待相关证券同时成立"
             },
             {
-              "url": "https://news.google.com/rss/search?q=Parker+Lewis+Unchained+bitcoin+ethereum+strategy+market+view+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Parker Lewis Unchained bitcoin ethereum strategy market view [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Parker+Lewis+Unchained+bitcoin+whales+analysis+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中0条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Parker+Lewis+Unchained+bitcoin+ethereum+strategy+market+view+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中0条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/parkeralewis",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-15",
+              "url": "https://x.com/parkeralewis/status/2099883291524374862",
+              "title": "本人 X：批评财库优先股、溢价与双重税负；减少 BTC 仓位规模管理波动",
+              "snippet": "本人 X：批评财库优先股、溢价与双重税负；减少 BTC 仓位规模管理波动"
             }
-          ]
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-18",
+          "source_url": "https://x.com/parkeralewis/status/2100934604555276409",
+          "stance": "看多",
+          "summary": "9/18 将 BTC 解决货币增发问题的价值置于 AI 之上；9/15 则批评财库公司的永续优先股缺乏信用保护、溢价与双重税负，倾向通过减少 BTC 配置量管理波动。长期看多 BTC 与谨慎看待相关证券同时成立",
+          "sources": [
+            {
+              "date": "2026-09-18",
+              "title": "Parker Lewis 本期已核来源",
+              "url": "https://x.com/parkeralewis/status/2100934604555276409"
+            },
+            {
+              "date": "2026-09-15",
+              "title": "本人 X：批评财库优先股、溢价与双重税负；减少 BTC 仓位规模管理波动",
+              "url": "https://x.com/parkeralewis/status/2099883291524374862"
+            }
+          ],
+          "whale_summary": "本期未核实新的鲸鱼链上流量判断",
+          "market_summary": "9/18 将 BTC 解决货币增发问题的价值置于 AI 之上；9/15 则批评财库公司的永续优先股缺乏信用保护、溢价与双重税负，倾向通过减少 BTC 配置量管理波动。长期看多 BTC 与谨慎看待相关证券同时成立"
         },
         {
           "name": "James Check (Checkmate)",
           "org": "Checkonchain",
           "handle": "@_Checkmatey_",
           "has_update": true,
-          "date": "2026-09-14",
-          "source_url": "https://newsletter.checkonchain.com/p/local-sellers",
-          "whale_summary": "本期未核得新的具名鲸鱼买卖结论",
-          "market_summary": "⚠️ 仅核公开导语、未核付费全文：本期关注 BTC 在 50 周均线下震荡，以及宏观压力对风险资产的影响；相较 9/4 的牛市早期叙述，短期阻力更突出",
-          "summary": "⚠️ 仅核公开导语、未核付费全文：本期关注 BTC 在 50 周均线下震荡，以及宏观压力对风险资产的影响；相较 9/4 的牛市早期叙述，短期阻力更突出",
           "raw_search_results": [
             {
-              "date": "2026-09-14",
-              "url": "https://newsletter.checkonchain.com/p/local-sellers",
-              "title": "James Check (Checkmate) 本期核实来源",
-              "snippet": "⚠️ 仅核公开导语、未核付费全文：本期关注 BTC 在 50 周均线下震荡，以及宏观压力对风险资产的影响；相较 9/4 的牛市早期叙述，短期阻力更突出"
+              "date": "2026-09-21",
+              "url": "https://x.com/_Checkmatey_/status/2102012190639407128",
+              "title": "James Check (Checkmate) 本期已核来源",
+              "snippet": "9/21 反对为维持四年周期理论而移动日期，认为错过顶部或底部一个季度会错失大量涨幅；9/18 公开导语表示已有支持走出 2026 熊市的证据。较 9/14 的短期阻力关注转为更积极；付费正文未核，不能补写其具体链上证据"
             },
             {
-              "url": "https://news.google.com/rss/search?q=James+Check+Checkmate+bitcoin+whales+onchain+LTH+STH+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "James Check Checkmate bitcoin whales onchain LTH STH [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=James+Check+Checkmate+bitcoin+whales+onchain+LTH+STH+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中0条；逐条筛选原始日期、人物与主题"
             },
             {
-              "url": "https://news.google.com/rss/search?q=James+Check+Checkmate+bitcoin+ethereum+market+analysis+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "James Check Checkmate bitcoin ethereum market analysis [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 1 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=James+Check+Checkmate+bitcoin+ethereum+market+analysis+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中1条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/_Checkmatey_",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-18",
+              "url": "https://newsletter.checkonchain.com/p/just-another-lower-high",
+              "title": "公开导语：有支持走出 2026 熊市的证据；付费正文未读",
+              "snippet": "公开导语：有支持走出 2026 熊市的证据；付费正文未读"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONzhrS0xtZnJyeXpSdGttQ093RnIwdmp6OEtJZGNoOXZvSnoxTlJxMUFMQUllQkJDNGpGRGFxUnVMQWJKV3p5TTFXbExpR2JCemN0emNWd2N4VGFMRlVpanFObk5jZ0xna3VGNmJJUFJ2MDhBUEFXQWVxZlVHWk82QU1EdEJocXBITEpfdjlaM3RteFFXWkFkN1ZR?oc=5",
+              "title": "ETH Address: What It Is, How It Looks, and How to Find Yours - MEXC",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "MEXC",
+              "query": "James Check Checkmate bitcoin ethereum market analysis"
             }
-          ]
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-21",
+          "source_url": "https://x.com/_Checkmatey_/status/2102012190639407128",
+          "stance": "看多",
+          "summary": "9/21 反对为维持四年周期理论而移动日期，认为错过顶部或底部一个季度会错失大量涨幅；9/18 公开导语表示已有支持走出 2026 熊市的证据。较 9/14 的短期阻力关注转为更积极；付费正文未核，不能补写其具体链上证据",
+          "sources": [
+            {
+              "date": "2026-09-21",
+              "title": "James Check (Checkmate) 本期已核来源",
+              "url": "https://x.com/_Checkmatey_/status/2102012190639407128"
+            },
+            {
+              "date": "2026-09-18",
+              "title": "公开导语：有支持走出 2026 熊市的证据；付费正文未读",
+              "url": "https://newsletter.checkonchain.com/p/just-another-lower-high"
+            }
+          ],
+          "whale_summary": "9/18 公开导语支持熊市转折；具体链上论据在付费部分，未核实",
+          "market_summary": "9/21 反对为维持四年周期理论而移动日期，认为错过顶部或底部一个季度会错失大量涨幅；9/18 公开导语表示已有支持走出 2026 熊市的证据。较 9/14 的短期阻力关注转为更积极；付费正文未核，不能补写其具体链上证据"
         },
         {
           "name": "Arkham Intelligence",
           "org": "Arkham",
           "handle": "@arkham",
           "has_update": true,
-          "date": "2026-09-08",
-          "source_url": "https://info.arkm.com/announcements/arkham-api-upgrade-real-time-intel",
-          "whale_summary": "本期未核得新的具名鲸鱼买卖结论",
-          "market_summary": "公布 API 更新：地址标签与实体信息从每日更新提速至分钟级，便于追踪资金流；这是平台能力更新，不是新的 BTC 多空判断",
-          "summary": "公布 API 更新：地址标签与实体信息从每日更新提速至分钟级，便于追踪资金流；这是平台能力更新，不是新的 BTC 多空判断",
           "raw_search_results": [
             {
-              "date": "2026-09-08",
-              "url": "https://info.arkm.com/announcements/arkham-api-upgrade-real-time-intel",
-              "title": "Arkham Intelligence 本期核实来源",
-              "snippet": "公布 API 更新：地址标签与实体信息从每日更新提速至分钟级，便于追踪资金流；这是平台能力更新，不是新的 BTC 多空判断"
+              "date": "2026-09-24",
+              "url": "https://x.com/arkham/status/2103025497408208991",
+              "title": "Arkham Intelligence 本期已核来源",
+              "snippet": "9/24 记录地址 0xe77 在 Hyperliquid 持有约 2,771 万美元、40 倍杠杆 BTC 多仓，入场价约 85,270 美元；这是单个地址的杠杆头寸，不代表现货净买入。9/22 推出 Tracer v2，用于跨链与桥接资金追踪，属工具更新"
             },
             {
-              "url": "https://news.google.com/rss/search?q=Arkham+Intelligence+bitcoin+whale+movements+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Arkham Intelligence bitcoin whale movements [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 9 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Arkham+Intelligence+bitcoin+whale+movements+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中5条；逐条筛选原始日期、人物与主题"
             },
             {
-              "url": "https://news.google.com/rss/search?q=Arkham+Intelligence+platform+features+ecosystem+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Arkham Intelligence platform features ecosystem [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Arkham+Intelligence+platform+features+ecosystem+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中0条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/arkham",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://x.com/arkham/status/2102340628025864517",
+              "title": "官方 X：推出跨桥、跨链资金追踪 Tracer v2",
+              "snippet": "官方 X：推出跨桥、跨链资金追踪 Tracer v2"
+            },
+            {
+              "date": "2026-09-23",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZGRVWXRIaTJUVEdwMHBrYUl2T01PV2dUYTgyRDgtSHhlUGlfb1NBR25QbWpjU1pNTlVvNXBUaWFOVWFaSzQydDhKMlc3THlZZmo3WnJEWGQ2aDRnbkJkZklUdHpvUVN5QURLM2Z6NUFlRk1uWUF6TFA3Wkhhby05V2gzRklING9LTGhidzVpT05PalBMWTVvSmVaNnhMdkNhbi1xMDhn?oc=5",
+              "title": "Bitcoin Whale Moves $20M to Exchange, Still Holds 200 BTC - CoinMarketCap",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinMarketCap",
+              "query": "Arkham Intelligence bitcoin whale movements"
+            },
+            {
+              "date": "2026-09-12",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNcXI2eUc0emtUSC1BRjdkZ0t3YjVOVlJfRFZIamhGdmgxdEEtRzJ4cU9PQVprVzRjWXdzWTRxZF8wb3RUVlM3UjBLWlh3U3JqdUpsdzJxbFpocmtKeDBJMnBsMnhvcTYwa0dJc2V6Z0I5UWhnSXNab3lCODE4enRIeWZvbw?oc=5",
+              "title": "SHIB Trillionaire Cashes 125B. The Tape Doesn’t Go Quiet - DailyCoin",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "DailyCoin",
+              "query": "Arkham Intelligence bitcoin whale movements"
+            },
+            {
+              "date": "2026-09-23",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNeW5fX1BYcDExLUIteUp1T0NSalZaalZTc011XzROWnE2ZEZXRFM3bTBNQXBqdGZmVXBaazRFYWt4TU1ZTWZzR1kwSlJtSl83QzQ4M3dsMGhBaE5rWFgxbEY1VTFhMVBwTm5QV01YaTFhTHZXcEhfV0ZuVjdzajQxalJXVGY?oc=5",
+              "title": "$100B and Still Untouched: Satoshi’s Estimated Bitcoin Stash Just Got Bigger - Bitcoin News",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Bitcoin News",
+              "query": "Arkham Intelligence bitcoin whale movements"
+            },
+            {
+              "date": "2026-09-15",
+              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE54N2dld0E4VE5vY3haTjYwV3FLTkdhTlF2ejR6WTV6Z2NRRWxqaHQ5V2psSk9CdW10bGtWR0QySU94ZFZVYnpEM2ZlZW1vdHRndEdQNXh1eHhWaHBiNjlOU3ZZUENleURFeUFiTWtR?oc=5",
+              "title": "What Is a Whale Wallet Movement: Why It Moves Crypto Prices - Coin Gabbar",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Coin Gabbar",
+              "query": "Arkham Intelligence bitcoin whale movements"
+            },
+            {
+              "date": "2026-09-23",
+              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeUV6MzVxSERDZk1lRnJlaUl5SkpIdVZPOUpRSUpWSlZ1Ql9WY2ppU1p4dlQxdHlVQWhja2FwcnlFN0RxNnhrbzBmV3lLcWxBclFQeXdTMmNYUzh6MThrYWJNaDN1LUtMWnQxWVItWFVtMWRzcnNZamotMlc4NXlsa1BjaWpNVzZO?oc=5",
+              "title": "Ethereum News: FTX ETH Transfer, Whale Buys and Vitalik 5-Year Roadmap - Coin Gabbar",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Coin Gabbar",
+              "query": "Arkham Intelligence bitcoin whale movements"
             }
-          ]
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-24",
+          "source_url": "https://x.com/arkham/status/2103025497408208991",
+          "stance": "中性",
+          "summary": "9/24 记录地址 0xe77 在 Hyperliquid 持有约 2,771 万美元、40 倍杠杆 BTC 多仓，入场价约 85,270 美元；这是单个地址的杠杆头寸，不代表现货净买入。9/22 推出 Tracer v2，用于跨链与桥接资金追踪，属工具更新",
+          "sources": [
+            {
+              "date": "2026-09-24",
+              "title": "Arkham Intelligence 本期已核来源",
+              "url": "https://x.com/arkham/status/2103025497408208991"
+            },
+            {
+              "date": "2026-09-22",
+              "title": "官方 X：推出跨桥、跨链资金追踪 Tracer v2",
+              "url": "https://x.com/arkham/status/2102340628025864517"
+            }
+          ],
+          "whale_summary": "9/24：0xe77 地址约 2,771 万美元、40 倍 BTC 多仓，入场价约 85,270 美元；单个杠杆头寸不等于现货净流入",
+          "market_summary": "9/24 记录地址 0xe77 在 Hyperliquid 持有约 2,771 万美元、40 倍杠杆 BTC 多仓，入场价约 85,270 美元；这是单个地址的杠杆头寸，不代表现货净买入。9/22 推出 Tracer v2，用于跨链与桥接资金追踪，属工具更新"
         },
         {
           "name": "Lookonchain",
           "org": "Lookonchain",
           "handle": "@lookonchain",
           "has_update": true,
-          "date": "2026-09-17",
-          "source_url": "https://t.me/lookonchainchannel/10259",
-          "whale_summary": "9/17：地址 0x0058 花费 1,300 万 USDC 买入 5,368 ETH，均价约 $2,422（Lookonchain 地址识别口径）",
-          "market_summary": "9/16：地址 0x4553 把 512 WBTC 与 354 cbBTC 换成 26,924 ETH；这是 BTC 敞口转向 ETH，不能说成全体鲸鱼净买入",
-          "summary": "9/17 报告地址 0x0058 以 1,300 万 USDC 买入 5,368 ETH，均价约 $2,422；9/16 另有鲸鱼把 WBTC/cbBTC 换成 ETH，显示部分资金在币种间轮动",
           "raw_search_results": [
             {
+              "date": "2026-09-25",
+              "url": "https://t.me/lookonchainchannel/10382",
+              "title": "Lookonchain 本期已核来源",
+              "snippet": "9/25 记录沉睡逾四年的地址转出约 4,500 BTC，以及 Metalpha 从 Binance 提取 11,179 ETH；转账与提款都不能直接定性为卖出或买入。9/24 另记录两鲸鱼新开合计 2,031.58 BTC 多仓，属于衍生品风险暴露"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Lookonchain+bitcoin+BTC+whale+activity+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中11条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Lookonchain+ethereum+BTC+tracking+commentary+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中3条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/lookonchain",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://t.me/lookonchainchannel/10383",
+              "title": "Metalpha 提取 11,179 ETH，不等于已买入",
+              "snippet": "Metalpha 提取 11,179 ETH，不等于已买入"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://t.me/lookonchainchannel/10373",
+              "title": "两地址开 BTC 多仓合计 2,031.58 BTC",
+              "snippet": "两地址开 BTC 多仓合计 2,031.58 BTC"
+            },
+            {
               "date": "2026-09-17",
-              "url": "https://t.me/lookonchainchannel/10259",
-              "title": "Lookonchain 本期核实来源",
-              "snippet": "9/17 报告地址 0x0058 以 1,300 万 USDC 买入 5,368 ETH，均价约 $2,422；9/16 另有鲸鱼把 WBTC/cbBTC 换成 ETH，显示部分资金在币种间轮动"
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwZE5Jdkk1VDZKdzdWTGhUVk9qRHVaOHREQlUySGlTeTlVbXVuV0hQQTZ6c0Jod19USEVPTzVaUkZ4UWVlSm80TW1uTURFU0cwX0k0VVpqdzRadw?oc=5",
+              "title": "Whale Activity in Bitcoin and Altcoins After the FED Decision! Here are the Details and the Altcoins They Traded - Cryptonews.net",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Cryptonews.net",
+              "query": "Lookonchain bitcoin BTC whale activity"
             },
             {
-              "url": "https://news.google.com/rss/search?q=Lookonchain+bitcoin+BTC+whale+activity+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Lookonchain bitcoin BTC whale activity [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 7 条；零命中已另跑互联网搜索"
+              "date": "2026-09-15",
+              "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQdGNtMFhwWHVyNC1jOEFsZk9BbnlPaHFJcWh0MVZtSEtUMmxoT0dpMVJmbUxVOHlJR003UjZhZnMwOE5reTdoZDczbGlQUHVOODYxOWdpZ2o4VjJCXzRHc1RwUW5MVjZxZ3VyZ2RRTk5PNW1rODRmS0hzWGxoZGF0NFlkS3l2cHNlTndhZHplUVUtWm5ueG52NjBKb3pHOU1SYllKQUQyM1ltUkxiODNOeksxUnUtdENTYlZJWFljTHZtM1JRcURRZ3NadEMzVk5jTzBzbXpuamZWOU92RVF2TEtOV2NYQlpfWVNERm5KaENpb0E?oc=5",
+              "title": "This Ethereum Whale Must Know Something: $100 Million Accumulated Amid Price Dip - Yellow.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Yellow.com",
+              "query": "Lookonchain bitcoin BTC whale activity"
             },
             {
-              "url": "https://news.google.com/rss/search?q=Lookonchain+ethereum+BTC+tracking+commentary+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Lookonchain ethereum BTC tracking commentary [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE55V0JGc3dvZVJPajdXblFQeURaUkZJZ1pGS2JNWGFiSHpkWGtaV2h4LXlrLVVfRlJKS1BQRjJkOGwyTWhLX3Z4aXppN3ZENnVqcVpieGdCd0x4dDY2dzBTS3lTYWk1SDRU?oc=5",
+              "title": "BTC ETH whale swap worth $17.2M adds to week-long shift into Ethereum - The Cryptonomist",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "The Cryptonomist",
+              "query": "Lookonchain bitcoin BTC whale activity"
             },
             {
-              "date": "2026-09-16",
-              "url": "https://t.me/lookonchainchannel/10247",
-              "title": "BTC to ETH rotation",
-              "snippet": "9/16：地址 0x4553 把 512 WBTC 与 354 cbBTC 换成 26,924 ETH；这是 BTC 敞口转向 ETH，不能说成全体鲸鱼净买入"
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBfVEtmOXFZTVlheXQ0engzY2hadmV6emo0OTlxdHExaF9EZmd4bmxKRGgxM09oaEJFLWdvVzRYQ3kxeC02a1hFU2s5TmhNS3dNdDVCOXJIVHlaTHl3VzczaWhvVzNVeFJSZHdLU3BWWFdXeWUwcnc?oc=5",
+              "title": "Crypto Whale Converts $87 Million of Bitcoin Into Staked Ethereum - finance.biggo.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "finance.biggo.com",
+              "query": "Lookonchain bitcoin BTC whale activity"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE81MWxvZDZrcVk1MDgtNURYVVo4RTFhUzZoUmpmd3B6X19TV1g2N1VQWXczNE9HdDhVaF9BZERrTDItOHJGUmt6Z21ZWHdHLXJYV25RdWRjRlF3blhfX2trU2lLSQ?oc=5",
+              "title": "Ethereum Nears $3K Setup With $30B In Open Interest Behind It - Yellow.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Yellow.com",
+              "query": "Lookonchain bitcoin BTC whale activity"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcjVxMkFIZFROYkJ6RTc5OUFpSk5QX2RsUGxHcW9YQk0zRWRvLWFZWlZ6cHVLMjNCeTcySzl1clJDeHVPZV9iTnRvS0w3SWg5c0cyUHJkaGY2aU82MmNrNEViVkl1djhRa0M4OS13X1RKMG5ONTZMWWNUN283aTBLUlZqNndHQQ?oc=5",
+              "title": "Despite Market Challenges, Bitcoin Whales Bet on Upside - coinfomania.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "coinfomania.com",
+              "query": "Lookonchain bitcoin BTC whale activity"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxON3k2dVNYcHBDMUYxenNxOE1xSjdJcFhJSmdDUFpzSXhfSmRQN0NaeVRoNVoxOHpwMzltODcxWUQ2UUpfUHdLejBUeHk2aVJjR3dJV3dCUG1CWnFDWER1cWFsREctMWpzd1dJanNsaDlGUGp0NWNxR0RFZkUwdEpqQ3V3?oc=5",
+              "title": "BTW: Whales Pull $51M After 644% August Rally - blockchain.news",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "blockchain.news",
+              "query": "Lookonchain bitcoin BTC whale activity"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNHlWZUg2ZFctS0hyTThRR2VfM2dPVjh0YWNmLUQ5MlFoUWFGcW1RdXoxdTlxcWY5ekhNTFJwclVCRjJucUVHYXo5VmlsbkMwMG1ELXN3bFZYZHZaRnphWDdwSXJncHpWZnlsSTl2dmV3cUdTZkQzdGZwZDlUM2RCZmRsbGsxZEF3TE9ESVB4MjExOUN5MlZwMzZobVZwV2tjaGNiXzJJRFhXUW5iMFhJeGRtYWpNQXpqckQ2LUpB?oc=5",
+              "title": "Bitcoin Whale, Inactive for Over Four Years, Makes $381 Million Transfer! Here Are the Details - Bitcoin Sistemi",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Bitcoin Sistemi",
+              "query": "Lookonchain bitcoin BTC whale activity"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYlkzejRYRWNnNnktMzQxTWFycXk3RkU0QzBWc2dDYjB6Z3VOU3ZITVJZbHVxMm1Gb3pFS0NteVlSMW5zT0VDWTZaeDZCWkdtOUpST2k4Q01FbVJIWVk4Y00zQUVZNVVOSlNPaHFXRlRkNGdHMjE0NkVwS1d5YllCUTlFOHRTdGJ6ZHVFajJwWDVtOEh3T0hN?oc=5",
+              "title": "Crypto ETF News Today: Market Bleeds Red While ETF Inflows Stay Strong - Coin Gabbar",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Coin Gabbar",
+              "query": "Lookonchain bitcoin BTC whale activity"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8wTlJNR2FJWGFaWlBQbEd0U3NVRzdzdnJrWUYzV042c3A0b1BrMm52Snp2THBjUHRZeWFwUm9qRHQ3S25kQ0o5VVBneXVDaTFabzQ0Ri1QdUU5MGgxWDBfamJXZEdRVlRNZU1lTW5fOElFSFVpLXdjUDRET2ZQZw?oc=5",
+              "title": "Whale Closes $119.3M Bitcoin Long, Sparking Market - coinfomania.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "coinfomania.com",
+              "query": "Lookonchain bitcoin BTC whale activity"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNHZoUW9VMG1FSnp5VzktbkMxaEZRR1BMcFAzZGV5b1hDT2tNZk5GWUtTYmQzTDNSV3dIMFFNMTljQzRLZ2lmZ2R2OW56bW4yNDFiMW1RcEtBV181aXFnOG5RLUtQaF9Cdm5HZm52clZKb0l5LUU2a3V1WDdJU2szYUJxeU8yeDQ?oc=5",
+              "title": "Whale Activity Spikes as 950 BTC Withdrawn from Binance - coinfomania.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "coinfomania.com",
+              "query": "Lookonchain bitcoin BTC whale activity"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE55V0JGc3dvZVJPajdXblFQeURaUkZJZ1pGS2JNWGFiSHpkWGtaV2h4LXlrLVVfRlJKS1BQRjJkOGwyTWhLX3Z4aXppN3ZENnVqcVpieGdCd0x4dDY2dzBTS3lTYWk1SDRU?oc=5",
+              "title": "BTC ETH whale swap worth $17.2M adds to week-long shift into Ethereum - The Cryptonomist",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "The Cryptonomist",
+              "query": "Lookonchain ethereum BTC tracking commentary"
+            },
+            {
+              "date": "2026-09-21",
+              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOYXNRWVV3cDZVTTNWelZTWU02WkRBSktVV2J4SEsxSGE1eFdManFzRHUxX3NLNTFjRnRXc3A2WC1XeG9OR1NyWE1sNlhtTEFicm54VzFNVl85a3VNSkpXenBHTTdKTHpVVGYwNGJkbFJueHptZHZ0aUxhSEpCU2VsdVdmLTlURUlnRnVadklxVjZyMlNONXZCSmF5RVF0R285YjRHNU1BLVJTUnRQN0paN3ExYlN2eFpFZ25WWlRlNEVrWUt0Wk93dExyRnpsa3VqMGJhel96QWc?oc=5",
+              "title": "Ether hits highest since January: what to watch to see if the gain holds (ps. one Whale is not a trend) - investingLive",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "investingLive",
+              "query": "Lookonchain ethereum BTC tracking commentary"
+            },
+            {
+              "date": "2026-09-23",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZGNsbTdMRUZVSG1tRFl1TVZkcEtpcVVBWkVhUkpLZFZTMkpBcWN5Z0syZG9NUXdsSXp2SkpxM3RkMENidWZXaEZzclhBeTZFOVNMRTQ0c0ZEMldpMThNZGlSRWk0RXRrN3FfSjJXeDVhWW9vM1VOSi1ja1ZHX1hTaEFpdFY0Uk83WTlmLVhKSlJlUzNScTlxdFFaVQ?oc=5",
+              "title": "Ethereum (ETH) Price Surges Past $2,700 as Institutional Buying Intensifies - Blockonomi",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Blockonomi",
+              "query": "Lookonchain ethereum BTC tracking commentary"
             }
-          ]
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-25",
+          "source_url": "https://t.me/lookonchainchannel/10382",
+          "stance": "中性",
+          "summary": "9/25 记录沉睡逾四年的地址转出约 4,500 BTC，以及 Metalpha 从 Binance 提取 11,179 ETH；转账与提款都不能直接定性为卖出或买入。9/24 另记录两鲸鱼新开合计 2,031.58 BTC 多仓，属于衍生品风险暴露",
+          "sources": [
+            {
+              "date": "2026-09-25",
+              "title": "Lookonchain 本期已核来源",
+              "url": "https://t.me/lookonchainchannel/10382"
+            },
+            {
+              "date": "2026-09-25",
+              "title": "Metalpha 提取 11,179 ETH，不等于已买入",
+              "url": "https://t.me/lookonchainchannel/10383"
+            },
+            {
+              "date": "2026-09-24",
+              "title": "两地址开 BTC 多仓合计 2,031.58 BTC",
+              "url": "https://t.me/lookonchainchannel/10373"
+            }
+          ],
+          "whale_summary": "9/25：沉睡地址移动约 4,500 BTC，Metalpha 提取 11,179 ETH；9/24 两鲸鱼开合计 2,031.58 BTC 多仓。转账、提款与衍生品不能混成现货买卖",
+          "market_summary": "9/25 记录沉睡逾四年的地址转出约 4,500 BTC，以及 Metalpha 从 Binance 提取 11,179 ETH；转账与提款都不能直接定性为卖出或买入。9/24 另记录两鲸鱼新开合计 2,031.58 BTC 多仓，属于衍生品风险暴露"
         },
         {
           "name": "Whale Alert",
           "org": "Whale Alert",
           "handle": "@whale_alert",
           "has_update": true,
-          "date": "2026-09-06",
-          "source_url": "https://cryptobriefing.com/bitcoin-600-btc-dormant-16-years/",
-          "whale_summary": "据报道，Whale Alert 标记 12 笔早期挖矿奖励合计 600 BTC 在沉睡约 16 年后移动；这是链上转账，不能直接认定为交易所抛售，也无证据归属于中本聪",
-          "market_summary": "该来源是链上异动记录，没有本人新增方向性市场观点；转账目的尚不能据此确认",
-          "summary": "据报道，Whale Alert 标记 12 笔早期挖矿奖励合计 600 BTC 在沉睡约 16 年后移动；这是链上转账，不能直接认定为交易所抛售，也无证据归属于中本聪",
           "raw_search_results": [
             {
-              "date": "2026-09-06",
-              "url": "https://cryptobriefing.com/bitcoin-600-btc-dormant-16-years/",
-              "title": "Whale Alert 本期核实来源",
-              "snippet": "据报道，Whale Alert 标记 12 笔早期挖矿奖励合计 600 BTC 在沉睡约 16 年后移动；这是链上转账，不能直接认定为交易所抛售，也无证据归属于中本聪"
+              "date": "2026-09-25",
+              "url": "https://t.me/whale_alert_io/103447",
+              "title": "Whale Alert 本期已核来源",
+              "snippet": "9/25 记录 4,499 BTC 从未知地址转往新的未知地址；其约数与其他追踪者口径不同，不重复累加。9/24 两笔各 5 亿 USDT 在 Binance 与 Tether Treasury 间反向转移，不可只选一笔解释为新增购买力"
             },
             {
-              "url": "https://news.google.com/rss/search?q=Whale+Alert+bitcoin+dormant+whale+transfer+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Whale Alert bitcoin dormant whale transfer [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 17 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Whale+Alert+bitcoin+dormant+whale+transfer+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中8条；逐条筛选原始日期、人物与主题"
             },
             {
-              "url": "https://news.google.com/rss/search?q=Whale+Alert+ethereum+stablecoin+transfers+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-              "title": "Whale Alert ethereum stablecoin transfers [month] [year]",
-              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 4 条；零命中已另跑互联网搜索"
+              "date": "2026-09-25",
+              "url": "https://news.google.com/rss/search?q=Whale+Alert+ethereum+stablecoin+transfers+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+              "title": "本期独立 RSS 检索",
+              "snippet": "窗口14天，命中3条；逐条筛选原始日期、人物与主题"
+            },
+            {
+              "date": "2026-09-25",
+              "url": "https://x.com/whale_alert",
+              "title": "本人 X 原页面检查",
+              "snippet": "已读取可见近期帖子；不以页面成功推定完整时间窗均可见"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://t.me/whale_alert_io/103433",
+              "title": "Binance 向 Tether Treasury 转 5 亿 USDT",
+              "snippet": "Binance 向 Tether Treasury 转 5 亿 USDT"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://t.me/whale_alert_io/103434",
+              "title": "Tether Treasury 向 Binance 转 5 亿 USDT",
+              "snippet": "Tether Treasury 向 Binance 转 5 亿 USDT"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1BLTlnX0I3MUxfVjBLMjdNM2NicGhNVE9DdTN6TUtlS3hYVVpjLTlIQ1BwampGRVJ4ZG1sQlFWbFRYdzVmSEV4YWd6RGdlMWRycHBtNnZxeEFuVFFVcWJBM1o4c9IBY0FVX3lxTE1BLTlnX0I3MUxfVjBLMjdNM2NicGhNVE9DdTN6TUtlS3hYVVpjLTlIQ1BwampGRVJ4ZG1sQlFWbFRYdzVmSEV4YWd6RGdlMWRycHBtNnZxeEFuVFFVcWJBM1o4cw?oc=5",
+              "title": "Whale Alert tracks 600 dormant BTC moved after 14 years amid Bitcoin rally - Bitget",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Bitget",
+              "query": "Whale Alert bitcoin dormant whale transfer"
+            },
+            {
+              "date": "2026-09-12",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNLTV1alBzT29Ed0M4cjU2cnNDX3d2d1NsaGNlZnJKYXZUQ21mcDFHQXQwWVQ0RkNBbm9NUmw4eFM0MUpGeS1wMjZTVGxjcVJkeF9sOS1ROWhabEdDOEhPT0Z6R2M2dWlFMWEtdEYyZkJoVWx3TUxxTDBWS3dySFI0RGEwOVRoVDhYa29OR0tmR3RHZFltMUhCSzFXLTY?oc=5",
+              "title": "Bitcoin Whale From 2009 Moves $16M After 14 Years - CoinMarketCap",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "CoinMarketCap",
+              "query": "Whale Alert bitcoin dormant whale transfer"
+            },
+            {
+              "date": "2026-09-17",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMmJmZHJiMUlyRzdnanIyUXhDT24yQjU4a2VRZUZpcXgxRFV5cllreUxnaDRQZW1VdkZ5YTVOY0xQRmdUM0NxZkEzZER3NFRVZEJpZ3FwaUpfaWVHSTZ0ZllKWXBnbk0xampLMHhqeldjMVNBSmxZODU3X21qVDNLc1VheHNmcEZ6WDE1cmpKaFZHbVdxNkRpOF9OR0l3VHVjYmh2YlRmbTBfdV81RGtRNTdrZXI?oc=5",
+              "title": "Satoshi-era Bitcoin stash untouched for 16 years, here's what it's worth now - thestreet.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "thestreet.com",
+              "query": "Whale Alert bitcoin dormant whale transfer"
+            },
+            {
+              "date": "2026-09-23",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOY3NaQVhnZ0pNOGpLSGNrVGtkWlFfcDJadUstSENoaVRRcnhLSERIckZBdDRTTWZyR25UelRCZ2pTZU9saFhUeU1LWnhRS3pOUXdfNmoyYVRHY2xRRzJ3aFp6Nl9JQURadVpKUHdZTzZ2UF8yZC1zTWVLUi1kNzh5LWU1RmV6cGZ4dktmMzNNOFlqSVJ2TzBsbHRYWU9pQQ?oc=5",
+              "title": "Bitcoin 600 moved after more than 14 years, worth $51 million - 디지털투데이",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "디지털투데이",
+              "query": "Whale Alert bitcoin dormant whale transfer"
+            },
+            {
+              "date": "2026-09-13",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVnpHcWRQUFdvVTZyd2JmYi1ROUNYUTEyRk93UTFrWS1wNFdDLVFITjVac3JIR3k1dTVIVF80azYyYjQ5eWpJOXU2aDlvSTY1MGV2cDZoQlZqaXR5ZGhXNk90c2FqWnQyei1pUU92cjNiNHgwcFd6OXFBZUNjZGFPYWVFSUlGNnBoT1R1UEtCZW5OVjRJVE90T2s0NNIBoAFBVV95cUxPNTVWUERhYlJqcmpqYy1MNF9uNGNHS0k2Uk04SHJjRlAtY0VYVkloWXh4R2g4N0J1Um1IRUdHeW04YUFDSlhqX09qYVk5UWNpWFVXS0RsQnQ4YnpHTHQ3RXRGVFFMZ1JMYU1XZDlOUjlEUGtCWm1NOTRIandoRkd6MlF3OTJacWk0RmRQSkljV1BySXdtYUtxNHVTOGh0SmxQ?oc=5",
+              "title": "10-Year-Old Bitcoin Holdings Stir as Whale Moves 1,260 BTC With 12,000% Gain - ZyCrypto",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "ZyCrypto",
+              "query": "Whale Alert bitcoin dormant whale transfer"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZXZKYjZQckZ6cXVDWjFfQkZLWkRaeDRGbU5jLTc2TGVXRk1CQ0NVSGlFSDJWQ2FiZ242ZVc0ZWczNHVaMjZfbVFyc3pjTW1vN0hyTElsbzZDekljNGR1OXNKcHRnQ1RZUG0zNDFHNGVSTHRkYlhWajBUcWJtaGZLRGlQLTVlQTZxWnMwQXdWMlFmT18wa0FZ?oc=5",
+              "title": "600 Bitcoin Bought at Around $7 Moved After 14.2 Years - thecryptobasic.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "thecryptobasic.com",
+              "query": "Whale Alert bitcoin dormant whale transfer"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQd2lIcnZZOWxEem01THdyQkl6XzJEZ0V2WnZDSFltdTZoS3E3M3RlRUV4cENMajNGbXBpXzltVTF0XzJULVd6OE1KbHEtSXgzd3BwTEJldVN0ZVZSQ2hCcDlNOG9KSUg4NnZiendsSVY2bVRCa2hBeXFaYm9ncEVkUTJ4dGpYaFFHNXVndW5n?oc=5",
+              "title": "Is Satoshi's 1.1M BTC Wallet Real? Key Ownership Questions - Mena FN",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Mena FN",
+              "query": "Whale Alert bitcoin dormant whale transfer"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVmtTcnVSdWtTVzAzaFBsQk1EcVlRWm9qOXFFOHJneW5ncFVueEdLZkVsQUtZdjBNWUdZYk1EVnFlb2VGN1Z1cng4UlFrei1vUFZhV05zV3hCQ2k3TFQ3VEx0RnRwVU5TdXQ0azAtcEdyelpDeTE4a0QxdnN2RTFTbGRqYXZ5UUlyUGp6Q3oxN19OZWFvU0hDWHlIQQ?oc=5",
+              "title": "Bitcoin’s Price Breakout Triggers $51M Move After 14 Years of Silence - Crypto Economy",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "Crypto Economy",
+              "query": "Whale Alert bitcoin dormant whale transfer"
+            },
+            {
+              "date": "2026-09-22",
+              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQMHpVR18wenNkYXdIYUs1a1REUnVrelJ0MVNJc0xkU2ZTdEQ2M0RVWGFqTHNCWXQxRXhhM1hxeTd0eWtBR1piRXo1Y0drQ29Yc0s2RXB3NjNqRS16X1hva2d0WXI5UnRKR052Zm9VcnVpczFSOVZrbzJvbnhvdklRRlpxUHpCNmc?oc=5",
+              "title": "Whale Alert Reports $138 Million USDC Transfer from Aave - coinfomania.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "coinfomania.com",
+              "query": "Whale Alert ethereum stablecoin transfers"
+            },
+            {
+              "date": "2026-09-24",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNeUIwUlJ0aHhCQ1N3V1ZSUHZmczhrblpzQ2pZU0k3NzlpMk1JVFo3UGVDUGFrLWZEWUFMZ19PVXhZNWVYTEs4aFNaamNsNGVQRWNSVE5fSWp5cGlVVF9SdUZucVRJdXFUbHdIdkdzMUJ0UnhrcUtBZUR2Z1I4N2pGZG1zUEFnbWdjV3c?oc=5",
+              "title": "500M: Whale Alert Reveals Major USDT Transfer from Binance - coinfomania.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "coinfomania.com",
+              "query": "Whale Alert ethereum stablecoin transfers"
+            },
+            {
+              "date": "2026-09-14",
+              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5iWDJJNjB4Q1otSmUwc1EwWnFSbDdOcFZfeFJ0Zlp6MVdVUU1JRzdZbm93aDJma2lSUXl3SjBMZ2RDMmVySkp4UEk0eVJ3eUVXcDhUNzc4YXI4RjFMU3FzYVVWRHF2aHN3MW1oaDhQSGdKeGRfUkI4cHZaeHkzZw?oc=5",
+              "title": "Aave Transfers $185 Million USDC to Unknown Whale - coinfomania.com",
+              "snippet": "RSS 原始标题；候选线索，不代表全文已核或本卡采用其主张",
+              "source": "coinfomania.com",
+              "query": "Whale Alert ethereum stablecoin transfers"
             }
-          ]
+          ],
+          "checked_at": "2026-09-25",
+          "date": "2026-09-25",
+          "source_url": "https://t.me/whale_alert_io/103447",
+          "stance": "中性",
+          "summary": "9/25 记录 4,499 BTC 从未知地址转往新的未知地址；其约数与其他追踪者口径不同，不重复累加。9/24 两笔各 5 亿 USDT 在 Binance 与 Tether Treasury 间反向转移，不可只选一笔解释为新增购买力",
+          "sources": [
+            {
+              "date": "2026-09-25",
+              "title": "Whale Alert 本期已核来源",
+              "url": "https://t.me/whale_alert_io/103447"
+            },
+            {
+              "date": "2026-09-24",
+              "title": "Binance 向 Tether Treasury 转 5 亿 USDT",
+              "url": "https://t.me/whale_alert_io/103433"
+            },
+            {
+              "date": "2026-09-24",
+              "title": "Tether Treasury 向 Binance 转 5 亿 USDT",
+              "url": "https://t.me/whale_alert_io/103434"
+            }
+          ],
+          "whale_summary": "9/25：4,499 BTC 从未知钱包到未知新钱包，只能确认转账，不能确认出售",
+          "market_summary": "9/25 记录 4,499 BTC 从未知地址转往新的未知地址；其约数与其他追踪者口径不同，不重复累加。9/24 两笔各 5 亿 USDT 在 Binance 与 Tether Treasury 间反向转移，不可只选一笔解释为新增购买力"
         }
       ]
     }
