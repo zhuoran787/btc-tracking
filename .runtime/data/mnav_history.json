@@ -1,4 +1,991 @@
 {
+  "NAKA": [
+    {
+      "date": "2026-06-29",
+      "mnav": 0.92,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-07-01",
+      "mnav": 0.91,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-07-04",
+      "mnav": 0.86,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-07-05",
+      "mnav": 0.87,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-07-06",
+      "mnav": 0.86,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-07-07",
+      "mnav": 0.86,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-07-12",
+      "mnav": 0.84,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-07-19",
+      "mnav": 0.85,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-07-23",
+      "mnav": 0.88,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-07-26",
+      "mnav": 0.91,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-07-27",
+      "mnav": 0.9,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-07-30",
+      "mnav": 0.89,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-08-05",
+      "mnav": 0.9,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-08-08",
+      "mnav": 0.9,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-08-09",
+      "mnav": 0.9,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-08-10",
+      "mnav": 0.91,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-08-11",
+      "mnav": 0.92,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-08-12",
+      "mnav": 0.92,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-08-13",
+      "mnav": 0.92,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-08-15",
+      "mnav": 0.93,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-08-16",
+      "mnav": 0.93,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-08-23",
+      "mnav": 0.87,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-08-24",
+      "mnav": 0.84,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-08-28",
+      "mnav": 0.86,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-08-31",
+      "mnav": 0.87,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-09-02",
+      "mnav": 0.87,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-09-04",
+      "mnav": 0.87,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-09-06",
+      "mnav": 0.88,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-09-07",
+      "mnav": 0.89,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-09-08",
+      "mnav": 0.9,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-09-09",
+      "mnav": 0.9,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-09-10",
+      "mnav": 0.9,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-09-13",
+      "mnav": 0.92,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-09-17",
+      "mnav": 0.92,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-09-19",
+      "mnav": 0.92,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-09-20",
+      "mnav": 0.92,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-09-21",
+      "mnav": 0.89,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-09-22",
+      "mnav": 0.91,
+      "btc_holdings": 4467.0
+    },
+    {
+      "date": "2026-09-25",
+      "mnav": 0.92,
+      "btc_holdings": 4467.0
+    }
+  ],
+  "ASST": [
+    {
+      "date": "2026-06-29",
+      "mnav": 1.24,
+      "btc_holdings": 19864.0
+    },
+    {
+      "date": "2026-07-01",
+      "mnav": 1.27,
+      "btc_holdings": 19864.0
+    },
+    {
+      "date": "2026-07-04",
+      "mnav": 1.28,
+      "btc_holdings": 19864.0
+    },
+    {
+      "date": "2026-07-05",
+      "mnav": 1.29,
+      "btc_holdings": 19864.0
+    },
+    {
+      "date": "2026-07-06",
+      "mnav": 1.27,
+      "btc_holdings": 19882.0
+    },
+    {
+      "date": "2026-07-07",
+      "mnav": 1.24,
+      "btc_holdings": 19882.0
+    },
+    {
+      "date": "2026-07-12",
+      "mnav": 1.22,
+      "btc_holdings": 19882.0
+    },
+    {
+      "date": "2026-07-19",
+      "mnav": 1.16,
+      "btc_holdings": 19900.0
+    },
+    {
+      "date": "2026-07-23",
+      "mnav": 1.17,
+      "btc_holdings": 19921.0
+    },
+    {
+      "date": "2026-07-26",
+      "mnav": 1.16,
+      "btc_holdings": 19921.0
+    },
+    {
+      "date": "2026-07-27",
+      "mnav": 1.2,
+      "btc_holdings": 20000.0
+    },
+    {
+      "date": "2026-07-30",
+      "mnav": 1.26,
+      "btc_holdings": 20000.0
+    },
+    {
+      "date": "2026-08-05",
+      "mnav": 1.29,
+      "btc_holdings": 20020.0
+    },
+    {
+      "date": "2026-08-08",
+      "mnav": 1.3,
+      "btc_holdings": 20020.0
+    },
+    {
+      "date": "2026-08-09",
+      "mnav": 1.29,
+      "btc_holdings": 20020.0
+    },
+    {
+      "date": "2026-08-10",
+      "mnav": 1.29,
+      "btc_holdings": 20167.0
+    },
+    {
+      "date": "2026-08-11",
+      "mnav": 1.32,
+      "btc_holdings": 20167.0
+    },
+    {
+      "date": "2026-08-12",
+      "mnav": 1.31,
+      "btc_holdings": 20167.0
+    },
+    {
+      "date": "2026-08-13",
+      "mnav": 1.32,
+      "btc_holdings": 20167.0
+    },
+    {
+      "date": "2026-08-15",
+      "mnav": 1.31,
+      "btc_holdings": 20167.0
+    },
+    {
+      "date": "2026-08-16",
+      "mnav": 1.31,
+      "btc_holdings": 20167.0
+    },
+    {
+      "date": "2026-08-23",
+      "mnav": 1.4,
+      "btc_holdings": 20246.0
+    },
+    {
+      "date": "2026-08-24",
+      "mnav": 1.35,
+      "btc_holdings": 21356.0
+    },
+    {
+      "date": "2026-08-28",
+      "mnav": 1.52,
+      "btc_holdings": 21356.0
+    },
+    {
+      "date": "2026-08-31",
+      "mnav": 1.46,
+      "btc_holdings": 23156.0
+    },
+    {
+      "date": "2026-09-02",
+      "mnav": 1.49,
+      "btc_holdings": 23156.0
+    },
+    {
+      "date": "2026-09-04",
+      "mnav": 1.51,
+      "btc_holdings": 23156.0
+    },
+    {
+      "date": "2026-09-06",
+      "mnav": 1.57,
+      "btc_holdings": 23156.0
+    },
+    {
+      "date": "2026-09-07",
+      "mnav": 1.59,
+      "btc_holdings": 23156.0
+    },
+    {
+      "date": "2026-09-08",
+      "mnav": 1.51,
+      "btc_holdings": 24531.0
+    },
+    {
+      "date": "2026-09-09",
+      "mnav": 1.5,
+      "btc_holdings": 24531.0
+    },
+    {
+      "date": "2026-09-10",
+      "mnav": 1.53,
+      "btc_holdings": 24531.0
+    },
+    {
+      "date": "2026-09-13",
+      "mnav": 1.56,
+      "btc_holdings": 24531.0
+    },
+    {
+      "date": "2026-09-17",
+      "mnav": 1.56,
+      "btc_holdings": 25000.0
+    },
+    {
+      "date": "2026-09-19",
+      "mnav": 1.55,
+      "btc_holdings": 25000.0
+    },
+    {
+      "date": "2026-09-20",
+      "mnav": 1.56,
+      "btc_holdings": 25000.0
+    },
+    {
+      "date": "2026-09-21",
+      "mnav": 1.39,
+      "btc_holdings": 26355.0
+    },
+    {
+      "date": "2026-09-22",
+      "mnav": 1.37,
+      "btc_holdings": 26355.0
+    },
+    {
+      "date": "2026-09-25",
+      "mnav": 1.42,
+      "btc_holdings": 26355.0
+    }
+  ],
+  "XXI": [
+    {
+      "date": "2026-06-29",
+      "mnav": 0.84,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-07-01",
+      "mnav": 0.82,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-07-04",
+      "mnav": 0.83,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-07-05",
+      "mnav": 0.84,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-07-06",
+      "mnav": 0.85,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-07-07",
+      "mnav": 0.82,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-07-12",
+      "mnav": 0.82,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-07-19",
+      "mnav": 0.79,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-07-23",
+      "mnav": 0.68,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-07-26",
+      "mnav": 0.72,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-07-27",
+      "mnav": 0.7,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-07-30",
+      "mnav": 0.68,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-08-05",
+      "mnav": 0.69,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-08-08",
+      "mnav": 0.69,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-08-09",
+      "mnav": 0.68,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-08-10",
+      "mnav": 0.7,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-08-11",
+      "mnav": 0.7,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-08-12",
+      "mnav": 0.72,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-08-13",
+      "mnav": 0.76,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-08-15",
+      "mnav": 0.73,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-08-16",
+      "mnav": 0.73,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-08-23",
+      "mnav": 0.78,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-08-24",
+      "mnav": 0.72,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-08-28",
+      "mnav": 0.74,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-08-31",
+      "mnav": 0.72,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-09-02",
+      "mnav": 0.7,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-09-04",
+      "mnav": 0.73,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-09-06",
+      "mnav": 0.7,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-09-07",
+      "mnav": 0.71,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-09-08",
+      "mnav": 0.71,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-09-09",
+      "mnav": 0.68,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-09-10",
+      "mnav": 0.68,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-09-13",
+      "mnav": 0.67,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-09-17",
+      "mnav": 0.67,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-09-19",
+      "mnav": 0.69,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-09-20",
+      "mnav": 0.69,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-09-21",
+      "mnav": 0.7,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-09-22",
+      "mnav": 0.73,
+      "btc_holdings": 43514.0
+    },
+    {
+      "date": "2026-09-25",
+      "mnav": 0.74,
+      "btc_holdings": 43514.0
+    }
+  ],
+  "USBC": [
+    {
+      "date": "2026-06-29",
+      "mnav": 0.1,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-07-01",
+      "mnav": 0.1,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-07-04",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-07-05",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-07-06",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-07-07",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-07-12",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-07-19",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-07-23",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-07-26",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-07-27",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-07-30",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-08-05",
+      "mnav": 0.1,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-08-08",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-08-09",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-08-10",
+      "mnav": 0.1,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-08-11",
+      "mnav": 0.1,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-08-12",
+      "mnav": 0.1,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-08-13",
+      "mnav": 0.1,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-08-15",
+      "mnav": 0.1,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-08-16",
+      "mnav": 0.1,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-08-23",
+      "mnav": 0.08,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-08-24",
+      "mnav": 0.08,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-08-28",
+      "mnav": 0.08,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-08-31",
+      "mnav": 0.08,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-09-02",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-09-04",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-09-06",
+      "mnav": 0.08,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-09-07",
+      "mnav": 0.08,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-09-08",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-09-09",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-09-10",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-09-13",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-09-17",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-09-19",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-09-20",
+      "mnav": 0.09,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-09-21",
+      "mnav": 0.08,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-09-22",
+      "mnav": 0.08,
+      "btc_holdings": 1000.0
+    },
+    {
+      "date": "2026-09-25",
+      "mnav": 0.08,
+      "btc_holdings": 1000.0
+    }
+  ],
+  "DDC": [
+    {
+      "date": "2026-07-04",
+      "mnav": 2.79,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-07-05",
+      "mnav": 2.82,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-07-06",
+      "mnav": 2.75,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-07-07",
+      "mnav": 2.73,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-07-12",
+      "mnav": 2.7,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-07-19",
+      "mnav": 2.64,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-07-23",
+      "mnav": 2.58,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-07-26",
+      "mnav": 2.67,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-07-27",
+      "mnav": 2.66,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-07-30",
+      "mnav": 2.63,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-08-05",
+      "mnav": 2.61,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-08-08",
+      "mnav": 2.6,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-08-09",
+      "mnav": 2.59,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-08-10",
+      "mnav": 2.66,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-08-11",
+      "mnav": 2.68,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-08-12",
+      "mnav": 2.71,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-08-13",
+      "mnav": 2.73,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-08-15",
+      "mnav": 2.74,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-08-16",
+      "mnav": 2.74,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-08-23",
+      "mnav": 0.42,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-08-24",
+      "mnav": 0.4,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-08-28",
+      "mnav": 0.4,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-08-31",
+      "mnav": 0.37,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-09-02",
+      "mnav": 0.36,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-09-04",
+      "mnav": 0.35,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-09-06",
+      "mnav": 0.35,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-09-07",
+      "mnav": 0.36,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-09-08",
+      "mnav": 0.36,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-09-09",
+      "mnav": 0.36,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-09-10",
+      "mnav": 0.35,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-09-13",
+      "mnav": 0.36,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-09-17",
+      "mnav": 0.35,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-09-19",
+      "mnav": 0.34,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-09-20",
+      "mnav": 0.34,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-09-21",
+      "mnav": 0.31,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-09-22",
+      "mnav": 0.31,
+      "btc_holdings": 2899.0
+    },
+    {
+      "date": "2026-09-25",
+      "mnav": 0.31,
+      "btc_holdings": 2899.0
+    }
+  ],
+  "OBTC3.SA": [
+    {
+      "date": "2026-09-22",
+      "mnav": 0.75,
+      "btc_holdings": 3950.0
+    },
+    {
+      "date": "2026-09-25",
+      "mnav": 0.73,
+      "btc_holdings": 3950.0
+    }
+  ],
   "ZOOZ": [
     {
       "date": "2026-06-29",
@@ -194,6 +1181,203 @@
       "date": "2026-09-25",
       "mnav": 0.99,
       "btc_holdings": 1046.0
+    }
+  ],
+  "MPJPY": [
+    {
+      "date": "2026-06-29",
+      "mnav": 0.9,
+      "btc_holdings": 40177.0
+    },
+    {
+      "date": "2026-07-01",
+      "mnav": 0.89,
+      "btc_holdings": 40177.0
+    },
+    {
+      "date": "2026-07-04",
+      "mnav": 0.83,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-07-05",
+      "mnav": 0.83,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-07-06",
+      "mnav": 0.86,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-07-07",
+      "mnav": 0.86,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-07-12",
+      "mnav": 0.91,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-07-19",
+      "mnav": 0.84,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-07-23",
+      "mnav": 0.86,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-07-26",
+      "mnav": 0.84,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-07-27",
+      "mnav": 0.86,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-07-30",
+      "mnav": 0.84,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-08-05",
+      "mnav": 0.83,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-08-08",
+      "mnav": 0.85,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-08-09",
+      "mnav": 0.85,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-08-10",
+      "mnav": 0.87,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-08-11",
+      "mnav": 0.87,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-08-12",
+      "mnav": 0.88,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-08-13",
+      "mnav": 0.86,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-08-15",
+      "mnav": 0.87,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-08-16",
+      "mnav": 0.86,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-08-23",
+      "mnav": 0.92,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-08-24",
+      "mnav": 0.88,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-08-28",
+      "mnav": 0.89,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-08-31",
+      "mnav": 0.9,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-09-02",
+      "mnav": 0.87,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-09-04",
+      "mnav": 0.86,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-09-06",
+      "mnav": 0.82,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-09-07",
+      "mnav": 0.82,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-09-08",
+      "mnav": 0.77,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-09-09",
+      "mnav": 0.78,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-09-10",
+      "mnav": 0.79,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-09-13",
+      "mnav": 0.79,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-09-17",
+      "mnav": 0.76,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-09-19",
+      "mnav": 0.77,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-09-20",
+      "mnav": 0.77,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-09-21",
+      "mnav": 0.77,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-09-22",
+      "mnav": 0.76,
+      "btc_holdings": 43000.0
+    },
+    {
+      "date": "2026-09-25",
+      "mnav": 0.78,
+      "btc_holdings": 43000.0
     }
   ],
   "MSTR": [
@@ -401,1192 +1585,8 @@
     },
     {
       "date": "2026-09-25",
-      "mnav": 1.17,
+      "mnav": 1.18,
       "btc_holdings": 3525.0
-    }
-  ],
-  "NAKA": [
-    {
-      "date": "2026-06-29",
-      "mnav": 0.92,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-07-01",
-      "mnav": 0.91,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-07-04",
-      "mnav": 0.86,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-07-05",
-      "mnav": 0.87,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-07-06",
-      "mnav": 0.86,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-07-07",
-      "mnav": 0.86,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-07-12",
-      "mnav": 0.84,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-07-19",
-      "mnav": 0.85,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-07-23",
-      "mnav": 0.88,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-07-26",
-      "mnav": 0.91,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-07-27",
-      "mnav": 0.9,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-07-30",
-      "mnav": 0.89,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-08-05",
-      "mnav": 0.9,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-08-08",
-      "mnav": 0.9,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-08-09",
-      "mnav": 0.9,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-08-10",
-      "mnav": 0.91,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-08-11",
-      "mnav": 0.92,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-08-12",
-      "mnav": 0.92,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-08-13",
-      "mnav": 0.92,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-08-15",
-      "mnav": 0.93,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-08-16",
-      "mnav": 0.93,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-08-23",
-      "mnav": 0.87,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-08-24",
-      "mnav": 0.84,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-08-28",
-      "mnav": 0.86,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-08-31",
-      "mnav": 0.87,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-09-02",
-      "mnav": 0.87,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-09-04",
-      "mnav": 0.87,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-09-06",
-      "mnav": 0.88,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-09-07",
-      "mnav": 0.89,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-09-08",
-      "mnav": 0.9,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-09-09",
-      "mnav": 0.9,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-09-10",
-      "mnav": 0.9,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-09-13",
-      "mnav": 0.92,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-09-17",
-      "mnav": 0.92,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-09-19",
-      "mnav": 0.92,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-09-20",
-      "mnav": 0.92,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-09-21",
-      "mnav": 0.89,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-09-22",
-      "mnav": 0.91,
-      "btc_holdings": 4467.0
-    },
-    {
-      "date": "2026-09-25",
-      "mnav": 0.92,
-      "btc_holdings": 4467.0
-    }
-  ],
-  "OBTC3.SA": [
-    {
-      "date": "2026-09-22",
-      "mnav": 0.75,
-      "btc_holdings": 3950.0
-    },
-    {
-      "date": "2026-09-25",
-      "mnav": 0.73,
-      "btc_holdings": 3950.0
-    }
-  ],
-  "MPJPY": [
-    {
-      "date": "2026-06-29",
-      "mnav": 0.9,
-      "btc_holdings": 40177.0
-    },
-    {
-      "date": "2026-07-01",
-      "mnav": 0.89,
-      "btc_holdings": 40177.0
-    },
-    {
-      "date": "2026-07-04",
-      "mnav": 0.83,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-07-05",
-      "mnav": 0.83,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-07-06",
-      "mnav": 0.86,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-07-07",
-      "mnav": 0.86,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-07-12",
-      "mnav": 0.91,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-07-19",
-      "mnav": 0.84,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-07-23",
-      "mnav": 0.86,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-07-26",
-      "mnav": 0.84,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-07-27",
-      "mnav": 0.86,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-07-30",
-      "mnav": 0.84,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-08-05",
-      "mnav": 0.83,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-08-08",
-      "mnav": 0.85,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-08-09",
-      "mnav": 0.85,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-08-10",
-      "mnav": 0.87,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-08-11",
-      "mnav": 0.87,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-08-12",
-      "mnav": 0.88,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-08-13",
-      "mnav": 0.86,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-08-15",
-      "mnav": 0.87,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-08-16",
-      "mnav": 0.86,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-08-23",
-      "mnav": 0.92,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-08-24",
-      "mnav": 0.88,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-08-28",
-      "mnav": 0.89,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-08-31",
-      "mnav": 0.9,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-09-02",
-      "mnav": 0.87,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-09-04",
-      "mnav": 0.86,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-09-06",
-      "mnav": 0.82,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-09-07",
-      "mnav": 0.82,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-09-08",
-      "mnav": 0.77,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-09-09",
-      "mnav": 0.78,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-09-10",
-      "mnav": 0.79,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-09-13",
-      "mnav": 0.79,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-09-17",
-      "mnav": 0.76,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-09-19",
-      "mnav": 0.77,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-09-20",
-      "mnav": 0.77,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-09-21",
-      "mnav": 0.77,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-09-22",
-      "mnav": 0.76,
-      "btc_holdings": 43000.0
-    },
-    {
-      "date": "2026-09-25",
-      "mnav": 0.78,
-      "btc_holdings": 43000.0
-    }
-  ],
-  "XXI": [
-    {
-      "date": "2026-06-29",
-      "mnav": 0.84,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-07-01",
-      "mnav": 0.82,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-07-04",
-      "mnav": 0.83,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-07-05",
-      "mnav": 0.84,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-07-06",
-      "mnav": 0.85,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-07-07",
-      "mnav": 0.82,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-07-12",
-      "mnav": 0.82,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-07-19",
-      "mnav": 0.79,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-07-23",
-      "mnav": 0.68,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-07-26",
-      "mnav": 0.72,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-07-27",
-      "mnav": 0.7,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-07-30",
-      "mnav": 0.68,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-08-05",
-      "mnav": 0.69,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-08-08",
-      "mnav": 0.69,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-08-09",
-      "mnav": 0.68,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-08-10",
-      "mnav": 0.7,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-08-11",
-      "mnav": 0.7,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-08-12",
-      "mnav": 0.72,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-08-13",
-      "mnav": 0.76,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-08-15",
-      "mnav": 0.73,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-08-16",
-      "mnav": 0.73,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-08-23",
-      "mnav": 0.78,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-08-24",
-      "mnav": 0.72,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-08-28",
-      "mnav": 0.74,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-08-31",
-      "mnav": 0.72,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-09-02",
-      "mnav": 0.7,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-09-04",
-      "mnav": 0.73,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-09-06",
-      "mnav": 0.7,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-09-07",
-      "mnav": 0.71,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-09-08",
-      "mnav": 0.71,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-09-09",
-      "mnav": 0.68,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-09-10",
-      "mnav": 0.68,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-09-13",
-      "mnav": 0.67,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-09-17",
-      "mnav": 0.67,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-09-19",
-      "mnav": 0.69,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-09-20",
-      "mnav": 0.69,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-09-21",
-      "mnav": 0.7,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-09-22",
-      "mnav": 0.73,
-      "btc_holdings": 43514.0
-    },
-    {
-      "date": "2026-09-25",
-      "mnav": 0.75,
-      "btc_holdings": 43514.0
-    }
-  ],
-  "DDC": [
-    {
-      "date": "2026-07-04",
-      "mnav": 2.79,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-07-05",
-      "mnav": 2.82,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-07-06",
-      "mnav": 2.75,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-07-07",
-      "mnav": 2.73,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-07-12",
-      "mnav": 2.7,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-07-19",
-      "mnav": 2.64,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-07-23",
-      "mnav": 2.58,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-07-26",
-      "mnav": 2.67,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-07-27",
-      "mnav": 2.66,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-07-30",
-      "mnav": 2.63,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-08-05",
-      "mnav": 2.61,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-08-08",
-      "mnav": 2.6,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-08-09",
-      "mnav": 2.59,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-08-10",
-      "mnav": 2.66,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-08-11",
-      "mnav": 2.68,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-08-12",
-      "mnav": 2.71,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-08-13",
-      "mnav": 2.73,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-08-15",
-      "mnav": 2.74,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-08-16",
-      "mnav": 2.74,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-08-23",
-      "mnav": 0.42,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-08-24",
-      "mnav": 0.4,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-08-28",
-      "mnav": 0.4,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-08-31",
-      "mnav": 0.37,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-09-02",
-      "mnav": 0.36,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-09-04",
-      "mnav": 0.35,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-09-06",
-      "mnav": 0.35,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-09-07",
-      "mnav": 0.36,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-09-08",
-      "mnav": 0.36,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-09-09",
-      "mnav": 0.36,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-09-10",
-      "mnav": 0.35,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-09-13",
-      "mnav": 0.36,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-09-17",
-      "mnav": 0.35,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-09-19",
-      "mnav": 0.34,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-09-20",
-      "mnav": 0.34,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-09-21",
-      "mnav": 0.31,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-09-22",
-      "mnav": 0.31,
-      "btc_holdings": 2899.0
-    },
-    {
-      "date": "2026-09-25",
-      "mnav": 0.31,
-      "btc_holdings": 2899.0
-    }
-  ],
-  "ASST": [
-    {
-      "date": "2026-06-29",
-      "mnav": 1.24,
-      "btc_holdings": 19864.0
-    },
-    {
-      "date": "2026-07-01",
-      "mnav": 1.27,
-      "btc_holdings": 19864.0
-    },
-    {
-      "date": "2026-07-04",
-      "mnav": 1.28,
-      "btc_holdings": 19864.0
-    },
-    {
-      "date": "2026-07-05",
-      "mnav": 1.29,
-      "btc_holdings": 19864.0
-    },
-    {
-      "date": "2026-07-06",
-      "mnav": 1.27,
-      "btc_holdings": 19882.0
-    },
-    {
-      "date": "2026-07-07",
-      "mnav": 1.24,
-      "btc_holdings": 19882.0
-    },
-    {
-      "date": "2026-07-12",
-      "mnav": 1.22,
-      "btc_holdings": 19882.0
-    },
-    {
-      "date": "2026-07-19",
-      "mnav": 1.16,
-      "btc_holdings": 19900.0
-    },
-    {
-      "date": "2026-07-23",
-      "mnav": 1.17,
-      "btc_holdings": 19921.0
-    },
-    {
-      "date": "2026-07-26",
-      "mnav": 1.16,
-      "btc_holdings": 19921.0
-    },
-    {
-      "date": "2026-07-27",
-      "mnav": 1.2,
-      "btc_holdings": 20000.0
-    },
-    {
-      "date": "2026-07-30",
-      "mnav": 1.26,
-      "btc_holdings": 20000.0
-    },
-    {
-      "date": "2026-08-05",
-      "mnav": 1.29,
-      "btc_holdings": 20020.0
-    },
-    {
-      "date": "2026-08-08",
-      "mnav": 1.3,
-      "btc_holdings": 20020.0
-    },
-    {
-      "date": "2026-08-09",
-      "mnav": 1.29,
-      "btc_holdings": 20020.0
-    },
-    {
-      "date": "2026-08-10",
-      "mnav": 1.29,
-      "btc_holdings": 20167.0
-    },
-    {
-      "date": "2026-08-11",
-      "mnav": 1.32,
-      "btc_holdings": 20167.0
-    },
-    {
-      "date": "2026-08-12",
-      "mnav": 1.31,
-      "btc_holdings": 20167.0
-    },
-    {
-      "date": "2026-08-13",
-      "mnav": 1.32,
-      "btc_holdings": 20167.0
-    },
-    {
-      "date": "2026-08-15",
-      "mnav": 1.31,
-      "btc_holdings": 20167.0
-    },
-    {
-      "date": "2026-08-16",
-      "mnav": 1.31,
-      "btc_holdings": 20167.0
-    },
-    {
-      "date": "2026-08-23",
-      "mnav": 1.4,
-      "btc_holdings": 20246.0
-    },
-    {
-      "date": "2026-08-24",
-      "mnav": 1.35,
-      "btc_holdings": 21356.0
-    },
-    {
-      "date": "2026-08-28",
-      "mnav": 1.52,
-      "btc_holdings": 21356.0
-    },
-    {
-      "date": "2026-08-31",
-      "mnav": 1.46,
-      "btc_holdings": 23156.0
-    },
-    {
-      "date": "2026-09-02",
-      "mnav": 1.49,
-      "btc_holdings": 23156.0
-    },
-    {
-      "date": "2026-09-04",
-      "mnav": 1.51,
-      "btc_holdings": 23156.0
-    },
-    {
-      "date": "2026-09-06",
-      "mnav": 1.57,
-      "btc_holdings": 23156.0
-    },
-    {
-      "date": "2026-09-07",
-      "mnav": 1.59,
-      "btc_holdings": 23156.0
-    },
-    {
-      "date": "2026-09-08",
-      "mnav": 1.51,
-      "btc_holdings": 24531.0
-    },
-    {
-      "date": "2026-09-09",
-      "mnav": 1.5,
-      "btc_holdings": 24531.0
-    },
-    {
-      "date": "2026-09-10",
-      "mnav": 1.53,
-      "btc_holdings": 24531.0
-    },
-    {
-      "date": "2026-09-13",
-      "mnav": 1.56,
-      "btc_holdings": 24531.0
-    },
-    {
-      "date": "2026-09-17",
-      "mnav": 1.56,
-      "btc_holdings": 25000.0
-    },
-    {
-      "date": "2026-09-19",
-      "mnav": 1.55,
-      "btc_holdings": 25000.0
-    },
-    {
-      "date": "2026-09-20",
-      "mnav": 1.56,
-      "btc_holdings": 25000.0
-    },
-    {
-      "date": "2026-09-21",
-      "mnav": 1.39,
-      "btc_holdings": 26355.0
-    },
-    {
-      "date": "2026-09-22",
-      "mnav": 1.37,
-      "btc_holdings": 26355.0
-    },
-    {
-      "date": "2026-09-25",
-      "mnav": 1.43,
-      "btc_holdings": 26355.0
-    }
-  ],
-  "USBC": [
-    {
-      "date": "2026-06-29",
-      "mnav": 0.1,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-07-01",
-      "mnav": 0.1,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-07-04",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-07-05",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-07-06",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-07-07",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-07-12",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-07-19",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-07-23",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-07-26",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-07-27",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-07-30",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-08-05",
-      "mnav": 0.1,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-08-08",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-08-09",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-08-10",
-      "mnav": 0.1,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-08-11",
-      "mnav": 0.1,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-08-12",
-      "mnav": 0.1,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-08-13",
-      "mnav": 0.1,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-08-15",
-      "mnav": 0.1,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-08-16",
-      "mnav": 0.1,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-08-23",
-      "mnav": 0.08,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-08-24",
-      "mnav": 0.08,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-08-28",
-      "mnav": 0.08,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-08-31",
-      "mnav": 0.08,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-09-02",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-09-04",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-09-06",
-      "mnav": 0.08,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-09-07",
-      "mnav": 0.08,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-09-08",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-09-09",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-09-10",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-09-13",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-09-17",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-09-19",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-09-20",
-      "mnav": 0.09,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-09-21",
-      "mnav": 0.08,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-09-22",
-      "mnav": 0.08,
-      "btc_holdings": 1000.0
-    },
-    {
-      "date": "2026-09-25",
-      "mnav": 0.08,
-      "btc_holdings": 1000.0
     }
   ]
 }

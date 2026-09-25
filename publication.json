@@ -1,6 +1,6 @@
 {
   "mode": "data_only",
-  "built_at": "2026-09-25T09:19:38+00:00",
+  "built_at": "2026-09-25T09:22:48+00:00",
   "bootstrap": false,
   "config_hash": "5797a51ea5bd7a1013a180aaddf46c4bddb1357de9f45bff241e0fcbfed8df43",
   "editorial_as_of": "2026-09-17",
@@ -13,47 +13,44 @@
     {
       "source": "api_data.json",
       "status": "updated",
-      "source_date": "2026-09-25T09:17:30+00:00",
-      "sha256": "1945528db72defbbe99eb845d2bd8655c58d8016de44c667ad6e45198247bcbc"
+      "source_date": "2026-09-25T09:20:10+00:00",
+      "sha256": "6bac16dcb6306ef2e75657ffd96f931aedf533c851dba5e1b2dcd21304f6dc2f"
     },
     {
       "source": "etf_flows.json",
       "status": "updated",
       "source_date": "2026-09-24",
-      "sha256": "40eaa23d7af60bbf751bcefdcb663d507c0f198c5002c4215338aeda12c7e99c"
+      "sha256": "2aa965de941fc6c61f3dff8e26046f3ee3d982b3533bfcf1af3082193338fd48"
     },
     {
       "source": "treasuries.json",
       "status": "updated",
-      "source_date": "2026-09-25T09:19:02.779671",
-      "sha256": "1657e8bfb6c471620845ede3c6a9ed23bdb099fcc194fc9656bd1d095ee3772d"
+      "source_date": "2026-09-25T09:22:11.728126",
+      "sha256": "fd3c71ed96c72025282fa980f87feb4f9bcdb76d9c7115b7cb3910870769c369"
     },
     {
       "source": "brk_data.json",
-      "status": "retained",
+      "status": "updated",
       "source_date": "2026-09-25",
-      "reason": "Fetcher left output unchanged; not verified this run",
       "sha256": "b24bfb57ae1fe924b9396ae713d6dbd307aefaa446687938de1487d76b4066fe"
     },
     {
       "source": "derivatives_data.json",
       "status": "updated",
       "source_date": "2026-09-25",
-      "sha256": "b16faca3223a4206728200166f7a1c2ea7585af1ac42f1939dd0bb524cc88527"
+      "sha256": "04f9f0d08d38760fb8ac91927956594622646dc48d7c3643ae168cd414c368e9"
     },
     {
       "source": "mnav_data.json",
-      "status": "retained",
+      "status": "updated",
       "source_date": "2026-09-25",
-      "reason": "Fetcher left output unchanged; not verified this run",
-      "sha256": "41b717a60b96e6946bf1efb3f5d2b05ccba61229fe8a3ac12b7c0dd46883dccf"
+      "sha256": "b28fa3e6c8b8b80480ad26ba9460597de10f61415173749070ce738b18e74196"
     },
     {
       "source": "dat_data.json",
-      "status": "retained",
+      "status": "updated",
       "source_date": "2026-09-25",
-      "reason": "Fetcher left output unchanged; not verified this run",
-      "sha256": "772aba16bf414128b8efa290510280a74a3fe0cd18fad9bd74cafcd79414b461"
+      "sha256": "493989d2a6b99139b6b1a65a051c68abc8802262b33dc6bfaef04bc24f9bd42e"
     },
     {
       "source": "tether_data.json",
@@ -65,19 +62,19 @@
       "source": "fear_greed.json",
       "status": "updated",
       "source_date": "2026-09-25",
-      "sha256": "46d6ddbb8f5f10fa14256a9b5f0b051716a8a545be4d9eb2f1c93cfe2c76dcbc"
+      "sha256": "97ef9393013599ed9b5196abc1c4bd1c6b9a13f90bd0c1c6832f7758e79974b3"
     },
     {
       "source": "ahr999.json",
       "status": "updated",
       "source_date": "2026-09-25",
-      "sha256": "8a499367f397929749e000895c9380c4a5fe4f85e83c13ccfcf0225eb03f9a8f"
+      "sha256": "b24fcca589f2e31eabe1ecf092bd124605dd146da31716ce5967c3a442a84aa1"
     },
     {
       "source": "coinmetrics_data.json",
       "status": "updated",
       "source_date": "2026-09-24",
-      "sha256": "f42173afed5630e787ab2aaf97fb02030dc358da2d800b34dc222a92c3ec897c"
+      "sha256": "43bd71fb947d2373557894bcc4d44f593aa1207efa0d9f592a0bbff4b17f044c"
     },
     {
       "source": "bgeometrics_data.json",

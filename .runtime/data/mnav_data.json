@@ -18,7 +18,7 @@
       "country": "ðºð¸",
       "ticker": "XXI",
       "btc_holdings": 43514.0,
-      "mnav": 0.75,
+      "mnav": 0.74,
       "mnav_method": "enterprise_value"
     },
     {
@@ -36,7 +36,7 @@
       "country": "ðºð¸",
       "ticker": "ASST",
       "btc_holdings": 26355.0,
-      "mnav": 1.43,
+      "mnav": 1.42,
       "mnav_method": "enterprise_value"
     },
     {
@@ -63,7 +63,7 @@
       "country": "ð«ð·",
       "ticker": "ALCPB.PA",
       "btc_holdings": 3525.0,
-      "mnav": 1.17,
+      "mnav": 1.18,
       "mnav_method": "enterprise_value"
     },
     {
