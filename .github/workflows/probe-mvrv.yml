@@ -1,0 +1,21 @@
+name: Probe free MVRV sources (read only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python .diagnostics/probe_mvrv.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mvrv-source-probe
+          path: probe-result.json
+          retention-days: 14
