@@ -84,5 +84,6 @@ jobs:
         with:
           name: btc-verification-${{ github.run_id }}
           path: .receipts/
+          include-hidden-files: true
           retention-days: 14
           if-no-files-found: warn

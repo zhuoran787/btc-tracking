@@ -97,6 +97,7 @@ def fetch_one(spec, config):
         if key and spec['script'] == 'fetch_derivatives.py':
             (candidate / '.env').write_text('COINALYZE_API_KEY=' + key + '\n')
         try:
+            previous_mtime = (candidate / 'data' / spec['output']).stat().st_mtime_ns
             p = subprocess.run([sys.executable, str(candidate / 'scripts' / spec['script'])],
                                cwd=candidate, capture_output=True, text=True,
                                timeout=config['fetch_timeout_seconds'])
@@ -111,7 +112,7 @@ def fetch_one(spec, config):
                 raise ValueError('No output')
             d = read(output)
             validate(spec['output'], d, spec['validation'])
-            if output.read_bytes() == (ROOT / 'data' / spec['output']).read_bytes():
+            if output.stat().st_mtime_ns <= previous_mtime:
                 raise ValueError('Fetcher left output unchanged; not verified this run')
             for name in [spec['output']] + spec.get('sidecars', []):
                 shutil.copy2(candidate / 'data' / name, ROOT / 'data' / name)
@@ -152,6 +153,10 @@ def make_page(config, results, bootstrap=False):
         for value in (ctx.get(field) or {}).values():
             if isinstance(value, dict):
                 value['status'] = 'cached'
+    for category in ctx.get('opinion_categories', []):
+        for person in category['people']:
+            if not person.get('has_update') and not person.get('status_label'):
+                person['status_label'] = '上次采集未找到更新'
     now = datetime.now(timezone.utc).isoformat(timespec='seconds')
     ctx['report_date'] = now
     frozen = ['opinions_input.json', 'websearch_cache.json', 'user_inputs_cache.json']
