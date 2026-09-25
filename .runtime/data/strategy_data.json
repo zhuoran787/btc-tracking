@@ -1,10 +1,8 @@
 {
-  "fetched_at": "2026-09-25T09:45:15.864662",
-  "source": "preserved Strategy official ledger baseline + SEC EDGAR 8-K reconciliation",
+  "fetched_at": "2026-09-25T10:06:35.664852+00:00",
+  "source": "verified Strategy official ledger baseline + SEC EDGAR 8-K reconciliation",
   "errors": [],
-  "warnings": [
-    "Strategy ledger unavailable: https://www.strategy.com/ledger: 403 Client Error: Forbidden for url: https://www.strategy.com/ledger; https://www.strategy.com/purchases: 403 Client Error: Forbidden for url: https://www.strategy.com/purchases"
-  ],
+  "warnings": [],
   "purchases": [
     {
       "date": "2020-08-10",
@@ -1269,10 +1267,6 @@
       950.0
     ]
   },
-  "mnav": {
-    "deprecated": true,
-    "reason": "Use fetch_mnav.py EV mNAV; legacy equity/gross-BTC method is not comparable."
-  },
   "sec_reconciliation": {
     "source": "SEC EDGAR submissions API + official complete-submission text",
     "cik": "0001050446",
@@ -1286,6 +1280,11 @@
       "0001193125-26-389858",
       "0001193125-26-396093"
     ],
-    "verified_at": "2026-09-25T09:45:15.863106"
+    "verified_at": "2026-09-25T10:06:35.664040+00:00"
+  },
+  "refresh_status": "checked_no_new",
+  "mnav": {
+    "deprecated": true,
+    "reason": "Use fetch_mnav.py EV mNAV; legacy equity/gross-BTC method is not comparable."
   }
 }
