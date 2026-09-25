@@ -821,15 +821,20 @@ def _build_mvrv_z_chart(data):
     bg = data.get("bgeometrics_data") or {}
     mz = (bg.get("mvrv_zscore") or {})
     cur = mz.get("current")
+    chart = [(d, v) for d, v in zip(mz.get('dates', []), mz.get('values', []))
+             if d >= mz.get('chart_start', '')]
     return {
         "mvrv_z_current": cur,
         "mvrv_z_as_of": mz.get('current_date'),
         "mvrv_z_delayed": mz.get('delayed', False),
         "mvrv_z_delay_days": mz.get('delay_days'),
         "mvrv_z_stale": mz.get('stale', False),
+        "mvrv_z_source_url": mz.get('source_url', 'https://api.bgeometrics.com/v1/mvrv-zscore'),
+        "mvrv_z_source_label": mz.get('source_label', 'BGeometrics 免费 API'),
+        "mvrv_z_self_calculated": bool(mz.get('methodology_id')),
         "mvrv_z_color": _mvrv_z_color(cur),
-        "mvrv_z_chart_labels": json.dumps(mz.get("dates", [])),
-        "mvrv_z_chart_values": json.dumps(mz.get("values", [])),
+        "mvrv_z_chart_labels": json.dumps([d for d, _ in chart]),
+        "mvrv_z_chart_values": json.dumps([v for _, v in chart]),
         "mvrv_z_threshold_bottom": 0,
         "mvrv_z_threshold_top": 4.0,
     }

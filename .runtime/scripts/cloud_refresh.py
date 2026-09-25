@@ -35,6 +35,17 @@ def nested(d, path):
 
 
 def validate(name, d, rules):
+    if name == 'mvrv_zscore':
+        from fetch_bgeometrics import MVRV_Z_METHOD
+        if d.get('methodology_id') != MVRV_Z_METHOD:
+            raise ValueError('MVRV Z source/methodology not migrated to BRK')
+        dates, values = d.get('dates', []), d.get('values', [])
+        if not dates or len(dates) != len(values) or dates != sorted(set(dates)):
+            raise ValueError('MVRV Z series is not aligned')
+        if d.get('current_date') != dates[-1] or d.get('current') != values[-1]:
+            raise ValueError('MVRV Z latest value disagrees with history')
+        if dates[-1] >= datetime.now(timezone.utc).date().isoformat():
+            raise ValueError('MVRV Z contains an unfinished UTC day')
     if name == 'strategy_data.json':
         from fetch_strategy import validate_snapshot
         validate_snapshot(d)
@@ -114,7 +125,10 @@ def accept_components(spec, candidate, previous):
             merged[key]['stale'] = True
             status = 'retained' if merged[key].get('dates') else 'unavailable'
             reason = str(exc)
-        receipts.append({'label': component['label'], 'status': status,
+        label = component['label']
+        if key == 'mvrv_zscore':
+            label = 'MVRV Z（' + merged[key].get('source_label', 'BGeometrics 旧源') + '）'
+        receipts.append({'label': label, 'status': status,
                          'source_date': source_date(merged[key]), 'reason': reason,
                          'delay_days': merged[key].get('delay_days')})
     from fetch_bgeometrics import summarize

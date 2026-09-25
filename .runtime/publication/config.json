@@ -253,7 +253,7 @@
           }
         },
         "mvrv_zscore": {
-          "label": "MVRV Z（BGeometrics 免费源）",
+          "label": "MVRV Z（BRK 原始数据自算）",
           "validation": {
             "lengths": {
               "dates": 1000,
@@ -261,13 +261,13 @@
             },
             "required": [
               "current",
-              "current_date"
+              "current_date",
+              "methodology_id",
+              "raw_sha256",
+              "source_stamp"
             ],
             "max_age_days": {
-              "current_date": 4
-            },
-            "delayed_max_age_days": {
-              "current_date": 9
+              "current_date": 2
             }
           }
         }

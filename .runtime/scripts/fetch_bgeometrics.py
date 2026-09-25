@@ -11,9 +11,10 @@
   历史方案（已废，2026-05-22 切走）：从 charts.bgeometrics.com/files/cdd.json 自合成。
   该静态 JSON 4/26 后停更（BGeometrics 是一人项目，cron 静默挂掉），切走避免单点故障。
 
-- MVRV Z-Score：BGeometrics REST API（保留不变）
-    https://api.bgeometrics.com/v1/mvrv-zscore
-  MVRV Z 是无量纲 z-score，BGeometrics 值已验证与 MacroMicro / Glassnode 吻合（~0.79 vs 0.87）。
+- MVRV Z-Score：BRK/Bitview 原始 market_cap、realized_cap 自算。
+  使用截至每个历史日的全历史总体标准差（ddof=0），不使用未来数据。
+  仅输出上一完整 UTC 日及更早日期；失败保留旧来源标签，不拼接供应商。
+  文件名为兼容已有消费者保留，不再请求 BGeometrics。
 
 阈值参考（用户 2026-05-21 定）：
   BTC Price / CVDD ≤ 1.03 = 大周期底部
@@ -23,9 +24,10 @@
 Output: data/bgeometrics_data.json
 """
 import json
-import re
+import hashlib
+import math
 import sys
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
@@ -43,8 +45,10 @@ WOOCHARTS_HEADERS = {
     "Referer": "https://woocharts.com/bitcoin-price-models/",
 }
 
-# MVRV Z-Score REST API
-MVRV_Z_URL = "https://api.bgeometrics.com/v1/mvrv-zscore"
+# MVRV raw series; order follows the documented bulk request order.
+MVRV_Z_URL = "https://bitview.space/api/series/bulk?series=date,market_cap,realized_cap&index=day1&start=0"
+MVRV_Z_METHOD = "brk_expanding_population_v1"
+MVRV_Z_CHART_START = "2022-09-25"  # preserve the old chart start at migration
 
 CVDD_BOTTOM_BAND = 1.03  # BTC Price / CVDD ≤ 1.03 视为逼近大周期底部
 MVRV_Z_BOTTOM = 0.0      # z < 0 = 大周期底部
@@ -86,59 +90,67 @@ def fetch_cvdd() -> dict:
     }
 
 
-def fetch_mvrv_zscore() -> dict:
-    """Fetch MVRV Z-Score from BGeometrics REST API.
-
-    2026-07-01 加固（TODO #13）：BGeometrics 免费 API 偶发 429 限流（2026-05-21/22 两次实测），
-    429 时按 15s/30s 退避重试 2 次；仍失败由 main() 走上次 JSON 的 stale fallback。
-    """
-    import time
-    last_exc: Exception | None = None
-    for attempt, backoff in enumerate((0, 15, 30)):
-        if backoff:
-            print(f"  mvrv_zscore 429 backoff {backoff}s (retry {attempt}/2)...", file=sys.stderr)
-            time.sleep(backoff)
-        try:
-            r = requests.get(MVRV_Z_URL, timeout=30)
-            r.raise_for_status()
-            break
-        except requests.HTTPError as exc:
-            last_exc = exc
-            if exc.response is not None and exc.response.status_code == 429:
-                continue  # 限流才重试
-            raise
-    else:
-        raise last_exc  # 3 次全 429
-    rows = r.json()
-    out = []
-    for row in rows:
-        d = row.get("d")
-        v = row.get("mvrvZscore")
-        if d is None or v is None:
+def calculate_mvrv_zscore(raw: list, today: date | None = None) -> dict:
+    """Expand population variance through time; validate alignment before math."""
+    today = today or datetime.now(timezone.utc).date()
+    if len(raw) != 3 or len({(x['start'], x['end'], x['index'], x['stamp']) for x in raw}) != 1:
+        raise ValueError('BRK bulk components are not one aligned snapshot')
+    if raw[0]['start'] != 0 or raw[0]['index'] != 'day1':
+        raise ValueError('BRK requires full day1 history from index zero')
+    if [x['type'] for x in raw] != ['Date', 'Dollars', 'Dollars']:
+        raise ValueError('BRK bulk series types/order changed')
+    dates, market, realized = [x['data'] for x in raw]
+    if not dates or len({len(dates), len(market), len(realized)}) != 1:
+        raise ValueError('BRK dates and capitalizations have different lengths')
+    if dates[0] != '2009-01-01':
+        raise ValueError('BRK historical origin changed; review denominator before proceeding')
+    parsed = [date.fromisoformat(d) for d in dates]
+    if any(b-a != timedelta(days=1) for a,b in zip(parsed,parsed[1:])):
+        raise ValueError('BRK calendar is duplicated, unordered or missing days')
+    mean = m2 = 0.0
+    n = 0
+    price_started = False
+    out_dates, values = [], []
+    for day, market_cap, realized_cap in zip(parsed, market, realized):
+        if day >= today:
             continue
-        out.append({"date": d, "value": float(v)})
-    out.sort(key=lambda x: x["date"])
-    if len(out) < 100:
-        raise ValueError(f"too short ({len(out)} rows)")
-    latest = out[-1]
-    # The free tier explicitly withholds the latest seven days. Confirm this
-    # with the provider's /last metadata instead of treating the lag as downtime.
-    last_response = requests.get(MVRV_Z_URL + '/last', timeout=30)
-    last_response.raise_for_status()
-    metadata = last_response.json()
-    if metadata.get('d') != latest['date'] or abs(float(metadata['mvrvZscore']) - latest['value']) > 1e-8:
-        raise ValueError('MVRV history and /last disagree')
-    delay_match = re.search(r'last (\d+) days', metadata.get('message', ''), re.I)
+        if market_cap is None or realized_cap is None:
+            if price_started:
+                raise ValueError(f'BRK capitalization missing after price history begins: {day}')
+            continue  # null days before pricing began are not zeros
+        m, r = float(market_cap), float(realized_cap)
+        if not all(math.isfinite(x) and x >= 0 for x in (m,r)):
+            raise ValueError(f'Invalid BRK capitalization on {day}')
+        price_started = price_started or m > 0
+        n += 1
+        delta = m - mean
+        mean += delta / n
+        m2 += delta * (m - mean)
+        sd = math.sqrt(max(0.0, m2 / n))
+        if sd > 0:
+            out_dates.append(day.isoformat())
+            values.append(round((m-r)/sd, 8))
+    if len(values) < 1000:
+        raise ValueError('BRK calculated history too short')
     return {
-        "dates": [r["date"] for r in out],
-        "values": [round(r["value"], 4) for r in out],
-        "current": latest["value"],
-        "current_date": latest["date"],
-        "delayed": metadata.get('delayed') is True,
-        "delay_days": int(delay_match.group(1)) if delay_match else None,
-        "delay_message": metadata.get('message', ''),
-        "source_url": MVRV_Z_URL,
+        'dates': out_dates, 'values': values, 'current': values[-1],
+        'current_date': out_dates[-1], 'chart_start': MVRV_Z_CHART_START,
+        'source_url': MVRV_Z_URL, 'source_label': 'BRK / Bitview 原始数据自算',
+        'methodology_id': MVRV_Z_METHOD,
+        'methodology': '(market_cap - realized_cap) / expanding population std(market_cap), ddof=0; no future observations',
+        'history_origin': dates[0], 'denominator_observations': n,
+        'early_history': 'skip null days; include non-null zero market caps',
+        'day_policy': 'completed UTC days only', 'source_stamp': raw[0]['stamp'],
+        'raw_sha256': hashlib.sha256(json.dumps(raw, separators=(',',':')).encode()).hexdigest(),
+        'delayed': False,
     }
+
+
+def fetch_mvrv_zscore() -> dict:
+    response = requests.get(MVRV_Z_URL, headers={'User-Agent': 'btc-tracking/1.0',
+                                               'Accept': 'application/json'}, timeout=45)
+    response.raise_for_status()
+    return calculate_mvrv_zscore(response.json())
 
 
 def _load_previous(key: str) -> dict | None:
@@ -174,7 +186,7 @@ def main() -> int:
     OUT.parent.mkdir(exist_ok=True)
     result: dict = {
         "fetched_at": datetime.now().isoformat(),
-        "source": "woocharts.com (CVDD, Willy Woo official) + BGeometrics REST API (MVRV Z)",
+        "source": "woocharts.com (CVDD, Willy Woo official) + BRK raw capitalizations / local MVRV Z calculation",
         "thresholds": {
             "cvdd_bottom_band": CVDD_BOTTOM_BAND,
             "mvrv_z_bottom": MVRV_Z_BOTTOM,
@@ -228,7 +240,9 @@ def main() -> int:
 
     summarize(result)
 
-    OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2))
+    temporary = OUT.with_suffix(".json.tmp")
+    temporary.write_text(json.dumps(result, ensure_ascii=False, indent=2))
+    temporary.replace(OUT)
     err_n = len(result["errors"])
     print(
         f"OK fetch_bgeometrics done: CVDD={cvdd_cur} · MVRV-Z={mvrv_z_cur} · errors={err_n} -> {OUT}",

@@ -823,7 +823,7 @@ a:hover { text-decoration: underline; }
         </div>
       </div>
       <div class="chart-container" style="height:240px;"><canvas id="chartMvrvZ"></canvas></div>
-      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：<a href="https://api.bgeometrics.com/v1/mvrv-zscore" target="_blank">BGeometrics 免费 API</a> · 数据截至 {{ mvrv_z_as_of or '未披露' }}{% if mvrv_z_delayed %} · 免费源延迟{% if mvrv_z_delay_days %} {{ mvrv_z_delay_days }} 天{% endif %}（非实时）{% endif %}{% if mvrv_z_stale %} · 本次未更新，沿用旧值{% endif %}。<a href="https://www.bitcoinmagazinepro.com/charts/mvrv-zscore/" target="_blank">参照 Bitcoin Magazine Pro ↗</a></div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：<a href="{{ mvrv_z_source_url }}" target="_blank">{{ mvrv_z_source_label }}</a> · 数据截至 {{ mvrv_z_as_of or '未披露' }}{% if mvrv_z_self_calculated %}（完整 UTC 日）。计算为（市值 − 已实现市值）÷ 截至当日的全历史市值总体标准差；非 BRK 原生 Z 指标。历史曲线统一重算，与旧源可能有差异{% endif %}{% if mvrv_z_delayed %} · 免费源延迟{% if mvrv_z_delay_days %} {{ mvrv_z_delay_days }} 天{% endif %}（非实时）{% endif %}{% if mvrv_z_stale %} · 本次未更新，沿用旧值{% endif %}。<a href="https://www.bitcoinmagazinepro.com/charts/mvrv-zscore/" target="_blank">参照 Bitcoin Magazine Pro ↗</a></div>
     </div>
     {% endif %}
 
