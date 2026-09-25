@@ -1,0 +1,314 @@
+{
+  "repository": "zhuoran787/btc-tracking",
+  "url": "https://zhuoran787.github.io/btc-tracking/",
+  "schedule": {
+    "cron": "20 7 * * *",
+    "timezone": "Asia/Shanghai",
+    "label": "北京时间每天 07:20"
+  },
+  "mode": "data_only",
+  "fetch_timeout_seconds": 360,
+  "workers": 4,
+  "fetchers": [
+    {
+      "script": "fetch_api_data.py",
+      "output": "api_data.json",
+      "validation": {
+        "lengths": {
+          "btc_price.history": 200,
+          "funding.history_8h": 500
+        },
+        "positive": [
+          "btc_price.current",
+          "stablecoins.total_mcap"
+        ],
+        "equals": {
+          "correlations_meta.btc_gold_3m.observations": 63,
+          "correlations_meta.btc_gold_6m.observations": 126,
+          "correlations_meta.btc_sox_3m.observations": 63,
+          "correlations_meta.btc_sox_6m.observations": 126
+        },
+        "max_age_days": {
+          "btc_price.history.-1.ts": 3
+        }
+      },
+      "sidecars": [],
+      "required_for_publish": true
+    },
+    {
+      "script": "fetch_etf_flows.py",
+      "output": "etf_flows.json",
+      "validation": {
+        "lengths": {
+          "daily_flows": 500
+        },
+        "required": [
+          "summary.latest_date"
+        ],
+        "max_age_days": {
+          "summary.latest_date": 7
+        }
+      },
+      "sidecars": [],
+      "required_for_publish": false
+    },
+    {
+      "script": "fetch_treasuries.py",
+      "output": "treasuries.json",
+      "validation": {
+        "positive": [
+          "totals.public_btc"
+        ],
+        "required": [
+          "key_companies"
+        ]
+      },
+      "sidecars": [],
+      "required_for_publish": false
+    },
+    {
+      "script": "fetch_brk.py",
+      "output": "brk_data.json",
+      "validation": {
+        "lengths": {
+          "dates": 300,
+          "whales_pct_long.dates": 1000
+        },
+        "required": [
+          "whales_pct.current",
+          "latest"
+        ],
+        "max_age_days": {
+          "dates.-1": 4
+        }
+      },
+      "sidecars": [],
+      "required_for_publish": false
+    },
+    {
+      "script": "fetch_derivatives.py",
+      "output": "derivatives_data.json",
+      "validation": {
+        "positive": [
+          "coingecko_aggregate.total_oi_usd",
+          "okx_oi_history.latest_oi_usd"
+        ],
+        "lengths": {
+          "okx_oi_history.dates": 365,
+          "coinalyze_oi_agg.dates": 1000
+        },
+        "no_error": [
+          "coingecko_aggregate",
+          "okx_oi_history",
+          "coinalyze_oi_agg"
+        ],
+        "max_age_days": {
+          "okx_oi_history.dates.-1": 4,
+          "coinalyze_oi_agg.dates.-1": 4
+        }
+      },
+      "sidecars": [
+        "derivatives_history.sqlite"
+      ],
+      "required_for_publish": false
+    },
+    {
+      "script": "fetch_mnav.py",
+      "output": "mnav_data.json",
+      "validation": {
+        "lengths": {
+          "snapshot": 3
+        },
+        "required": [
+          "methodology"
+        ]
+      },
+      "sidecars": [
+        "mnav_history.json",
+        "mnav_history.sqlite"
+      ],
+      "required_for_publish": false
+    },
+    {
+      "script": "fetch_dat_history.py",
+      "output": "dat_data.json",
+      "validation": {
+        "positive": [
+          "total_holdings"
+        ],
+        "lengths": {
+          "cost_basis_summary": 4
+        }
+      },
+      "sidecars": [
+        "dat_history.json",
+        "dat_history.sqlite"
+      ],
+      "required_for_publish": false
+    },
+    {
+      "script": "fetch_tether.py",
+      "output": "tether_data.json",
+      "validation": {
+        "positive": [
+          "quarterly_reserves.btc_count"
+        ],
+        "lengths": {
+          "quarterly_history": 8
+        },
+        "required": [
+          "quarterly_reserves.source_pdf"
+        ]
+      },
+      "sidecars": [
+        "tether_history.sqlite"
+      ],
+      "required_for_publish": false
+    },
+    {
+      "script": "fetch_fear_greed.py",
+      "output": "fear_greed.json",
+      "validation": {
+        "lengths": {
+          "values": 1000
+        },
+        "required": [
+          "current"
+        ],
+        "max_age_days": {
+          "timestamp": 3
+        }
+      },
+      "sidecars": [],
+      "required_for_publish": false
+    },
+    {
+      "script": "fetch_ahr999.py",
+      "output": "ahr999.json",
+      "validation": {
+        "lengths": {
+          "dates": 3000
+        },
+        "positive": [
+          "current"
+        ],
+        "max_age_days": {
+          "current_date": 3
+        }
+      },
+      "sidecars": [],
+      "required_for_publish": false
+    },
+    {
+      "script": "fetch_coinmetrics.py",
+      "output": "coinmetrics_data.json",
+      "validation": {
+        "lengths": {
+          "series.exchange_reserve_btc": 5000
+        },
+        "positive": [
+          "latest.exchange_reserve_btc"
+        ],
+        "max_age_days": {
+          "latest.date": 4
+        }
+      },
+      "sidecars": [],
+      "required_for_publish": false
+    },
+    {
+      "script": "fetch_bgeometrics.py",
+      "output": "bgeometrics_data.json",
+      "validation": {
+        "lengths": {
+          "cvdd.dates": 2000,
+          "mvrv_zscore.dates": 1000
+        },
+        "positive": [
+          "cvdd.current"
+        ],
+        "required": [
+          "mvrv_zscore.current"
+        ],
+        "max_age_days": {
+          "cvdd.current_date": 4,
+          "mvrv_zscore.current_date": 4
+        }
+      },
+      "sidecars": [],
+      "required_for_publish": false
+    },
+    {
+      "script": "fetch_strategy.py",
+      "output": "strategy_data.json",
+      "validation": {
+        "lengths": {
+          "purchases": 80
+        },
+        "required": [
+          "weekly_net_buys",
+          "sec_reconciliation"
+        ]
+      },
+      "sidecars": [],
+      "required_for_publish": false
+    }
+  ],
+  "data_files": [
+    "api_data.json",
+    "etf_flows.json",
+    "treasuries.json",
+    "brk_data.json",
+    "derivatives_data.json",
+    "mnav_data.json",
+    "dat_data.json",
+    "tether_data.json",
+    "fear_greed.json",
+    "ahr999.json",
+    "coinmetrics_data.json",
+    "bgeometrics_data.json",
+    "strategy_data.json",
+    "mnav_history.json",
+    "dat_history.json",
+    "coinshares_data.json",
+    "policy_data.json",
+    "whale_tweets.json",
+    "exchange_reserve.json",
+    "opinions_input.json",
+    "websearch_cache.json",
+    "user_inputs_cache.json",
+    "mnav_history.sqlite",
+    "dat_history.sqlite",
+    "tether_history.sqlite",
+    "derivatives_history.sqlite"
+  ],
+  "editorial_keys": [
+    "whale_news_summary",
+    "policy_one_liner",
+    "opinion_one_liner",
+    "verify_1_strategic_reserve",
+    "verify_2_trump_clearance",
+    "verify_3_institutional_entry",
+    "verify_4_clarity_act",
+    "verify_4_clarity_passage_probability",
+    "dat_announcements",
+    "whale_buysell_news",
+    "whale_news",
+    "news_items",
+    "legislation_milestones",
+    "legislation_summary",
+    "opinion_categories",
+    "analyst_funding_cards",
+    "coinshares_paras",
+    "coinshares_title",
+    "coinshares_url",
+    "coinshares_report_date",
+    "user_inputs_freshness",
+    "websearch_freshness",
+    "onchain_summary_cn"
+  ],
+  "seed_report_date": "2026-09-17",
+  "seed_report": "ai-work/btc-tracking/2026-09-17/btc-tracking-report.html",
+  "seed_extra": "ai-work/btc-tracking/run-20260917-0506/extra-input.json",
+  "preserve_september_17_manual_revisions": false
+}

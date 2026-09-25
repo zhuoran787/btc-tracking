@@ -1,0 +1,241 @@
+{
+  "fetched_at": "2026-09-24",
+  "current_holdings": {
+    "name": "Tether Holdings Limited",
+    "country": "🇻🇬",
+    "btc_holdings": 100000.0,
+    "usd_value_m": 8415.0,
+    "pct_of_supply": "0.476%",
+    "source": "https://bitcointreasuries.net/private-companies"
+  },
+  "quarterly_reserves": {
+    "quarter": "2026 Q2",
+    "as_of": "2026-06-30",
+    "btc_usd": 5801630681,
+    "btc_count": 98932.77584467827,
+    "btc_valuation_price_usd": 58642.15,
+    "btc_count_method": "btc_usd / attestation BTC valuation price",
+    "gold_usd": 18838357171,
+    "gold_tons": 146.19148722974583,
+    "gold_added_tons": 14.0,
+    "xau_valuation_price_usd_per_oz": 4008.02,
+    "treasury_bills_usd": 114960963604,
+    "overnight_repo_usd": 18625552412,
+    "term_repo_usd": 6993428950,
+    "treasury_and_repo_usd": 140579944966,
+    "net_operating_profit_usd": 1500000000.0,
+    "excess_reserves_usd": 4109529196,
+    "total_assets_usd": 187751426411,
+    "source_article": "https://tether.io/news/tether-posts-strong-q2-performance-generates-1-5b-net-operating-profit-maintains-4-11b-reserve-buffer-and-expands-gold-holdings-to-more-than-146-tons/",
+    "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/2kYf7r64h3tzwiu6F0CbUB/2997abd2f11ecea74a21528048b50707/Opinion___Report_-_Tether_International_Financial_Figure_30-06-2026.pdf"
+  },
+  "transparency_page": {
+    "error": "HTTPSConnectionPool(host='tether.to', port=443): Max retries exceeded with url: /en/transparency/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))",
+    "url": "https://tether.to/en/transparency/"
+  },
+  "quarterly_history": [
+    {
+      "as_of": "2024-03-31",
+      "quarter": "2024 Q1",
+      "btc_count": 75354.38555365505,
+      "btc_usd": 5374726904.0,
+      "btc_valuation_price_usd": 71326.0,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-releases-q1-2024-attestation-reports-record-breaking-4-52-billion-profit-highest-treasury-bill-ownership-percentage-ever-total-group-equity-of-11-37-billion/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/2JwUN6EeDvWi02CyuQd2nJ/d7b3b4c3800ec70abd7282cc79fa2973/ISAE_3000R_-_Opinion_on_Consolidated_Financials_Figures_and_Reserves_Report_31.03.2024_RC134792024BD0043.pdf"
+    },
+    {
+      "as_of": "2024-06-30",
+      "quarter": "2024 Q2",
+      "btc_count": 75354.01886221826,
+      "btc_usd": 4734040881.0,
+      "btc_valuation_price_usd": 62824.0,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-q2-2024-attestation-reports-record-breaking-5-2-billion-profit-in-first-half-of-2024-highest-treasury-bill-ownership-ever-largest-ever-group-consolidated-equity-at-almost-12-billion/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/6h4YWqZOXbwtBaPtYgICGy/d7462f312aa15b872f8474322ba90363/ISAE_3000R_-_Opinion_on_Consolidated_Financials_Figures_30.06.2024_RC134792024BD0209.pdf"
+    },
+    {
+      "as_of": "2024-09-30",
+      "quarter": "2024 Q3",
+      "btc_count": 75353.56901359634,
+      "btc_usd": 4782917086.0,
+      "btc_valuation_price_usd": 63473.0,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-hits-7-7-billion-2024-nine-month-profits-102-5-billion-in-u-s-treasury-holdings-almost-120-billion-usd%e2%82%ae-circulation-and-an-over-6-billion-reserve-buffer-in-q3-2024-attestation/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/5TKa7xwJVLIAnVBMWb7iTq/5688216da5194fce27f4a0f2e808a486/ISAE_3000R_-_Opinion_on_Tether_Consolidated_Financials_Figures_30.09.2024_.pdf"
+    },
+    {
+      "as_of": "2024-12-31",
+      "quarter": "2024 Q4",
+      "btc_count": 83758.25349635442,
+      "btc_usd": 7857529277.0,
+      "btc_valuation_price_usd": 93812.0,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-hits-13-billion-profits-for-2024-and-all-time-highs-in-u-s-treasury-holdings-usdt-circulation-and-reserve-buffer-in-q4-2024-attestation/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/6L2yLNnLltcCP6ZcTxJrll/aea0ec279fea08637445c8be57f63d87/ISAE_3000R_-_Opinion_on_Tether_Consolidated_Financials_Figures_31.12.2024.pdf"
+    },
+    {
+      "as_of": "2025-03-31",
+      "quarter": "2025 Q1",
+      "btc_count": 92646.18932578835,
+      "btc_usd": 7662210442.0,
+      "btc_valuation_price_usd": 82704.0,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-approaching-120b-in-u-s-treasuries-confirms-quarterly-operating-profit-over-1b-and-strengthens-global-usdt-demand-in-q1-2025/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/1LdSmP3HBynDxm6wvkDSsL/c4bcbd1f6fc18a0e8b3a12444ac8ae97/ISAE_3000R_-_Opinion_Tether_International_Financial_Figures___Reserves_Report_31.03.2025_RC187322025BD0040.pdf"
+    },
+    {
+      "as_of": "2025-06-30",
+      "quarter": "2025 Q2",
+      "btc_count": 83254.14892763895,
+      "btc_usd": 8928174931.0,
+      "btc_valuation_price_usd": 107240.0,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-issues-20b-in-usdt-ytd-becomes-one-of-largest-u-s-debt-holders-with-127b-in-treasuries-net-profit-4-9b-in-q2-2025-attestation-report/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/2SGAAXnsb1wKByIzkhcbSx/9efa4682b3cd4c62d87a4c88ee729693/ISAE_3000R_-_Opinion_Tether_International_Financial_Figure_RC187322025BD0201.pdf"
+    },
+    {
+      "as_of": "2025-09-30",
+      "quarter": "2025 Q3",
+      "btc_count": 86335.06491765943,
+      "btc_usd": 9856011011.0,
+      "btc_valuation_price_usd": 114160.0,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-attestation-reports-q1-q3-2025-profit-surpassing-10b-record-levels-in-us-treasuries-exposure-accelerating-usdt-supply-amidst-worlds-macroeconomic-uncertainty/",
+      "source_pdf": "https://tether.io/wp-content/uploads/2025/10/ISAE-3000R-Opinion-Tether-International-Financial-Figure-31-10-2025-RC187322025BD0440-Fascicolo.pdf"
+    },
+    {
+      "as_of": "2025-12-31",
+      "quarter": "2025 Q4",
+      "btc_count": 96184.95045040626,
+      "btc_usd": 8430374292.0,
+      "btc_valuation_price_usd": 87647.54,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-delivers-10b-profits-in-2025-6-3b-in-excess-reserves-and-record-141-billion-exposure-in-u-s-treasury-holdings/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/20d2BoOAd28ZfkiQPYPjGN/4ed12f5939e1e06ee5aceccad4effbe4/ISAE_3000R_-_Opinion_Tether_International_Financial_Figure_31-12-2025.pdf"
+    },
+    {
+      "as_of": "2026-03-31",
+      "quarter": "2026 Q1",
+      "btc_count": 97137.07584030548,
+      "btc_usd": 6624160893.0,
+      "btc_valuation_price_usd": 68193.95,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-posts-1-04b-q1-2026-profit-despite-highly-volatile-global-markets-reaches-all-time-highs-8-23b-reserve-buffer-and-maintains-u-s-treasury-heavy-backing/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/6crn1tXbl6AtWZBWucZnfg/c4ff472d70c1b48c2f689f27b54c84f5/ISAE_3000R_-_Opinion_Tether_International_Financial_Figure_31-03-2026.pdf"
+    },
+    {
+      "as_of": "2026-06-30",
+      "quarter": "2026 Q2",
+      "btc_count": 98932.77584467827,
+      "btc_usd": 5801630681.0,
+      "btc_valuation_price_usd": 58642.15,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-posts-strong-q2-performance-generates-1-5b-net-operating-profit-maintains-4-11b-reserve-buffer-and-expands-gold-holdings-to-more-than-146-tons/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/2kYf7r64h3tzwiu6F0CbUB/2997abd2f11ecea74a21528048b50707/Opinion___Report_-_Tether_International_Financial_Figure_30-06-2026.pdf"
+    }
+  ],
+  "history": [
+    {
+      "as_of": "2024-03-31",
+      "quarter": "2024 Q1",
+      "btc_count": 75354.38555365505,
+      "btc_usd": 5374726904.0,
+      "btc_valuation_price_usd": 71326.0,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-releases-q1-2024-attestation-reports-record-breaking-4-52-billion-profit-highest-treasury-bill-ownership-percentage-ever-total-group-equity-of-11-37-billion/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/2JwUN6EeDvWi02CyuQd2nJ/d7b3b4c3800ec70abd7282cc79fa2973/ISAE_3000R_-_Opinion_on_Consolidated_Financials_Figures_and_Reserves_Report_31.03.2024_RC134792024BD0043.pdf"
+    },
+    {
+      "as_of": "2024-06-30",
+      "quarter": "2024 Q2",
+      "btc_count": 75354.01886221826,
+      "btc_usd": 4734040881.0,
+      "btc_valuation_price_usd": 62824.0,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-q2-2024-attestation-reports-record-breaking-5-2-billion-profit-in-first-half-of-2024-highest-treasury-bill-ownership-ever-largest-ever-group-consolidated-equity-at-almost-12-billion/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/6h4YWqZOXbwtBaPtYgICGy/d7462f312aa15b872f8474322ba90363/ISAE_3000R_-_Opinion_on_Consolidated_Financials_Figures_30.06.2024_RC134792024BD0209.pdf"
+    },
+    {
+      "as_of": "2024-09-30",
+      "quarter": "2024 Q3",
+      "btc_count": 75353.56901359634,
+      "btc_usd": 4782917086.0,
+      "btc_valuation_price_usd": 63473.0,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-hits-7-7-billion-2024-nine-month-profits-102-5-billion-in-u-s-treasury-holdings-almost-120-billion-usd%e2%82%ae-circulation-and-an-over-6-billion-reserve-buffer-in-q3-2024-attestation/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/5TKa7xwJVLIAnVBMWb7iTq/5688216da5194fce27f4a0f2e808a486/ISAE_3000R_-_Opinion_on_Tether_Consolidated_Financials_Figures_30.09.2024_.pdf"
+    },
+    {
+      "as_of": "2024-12-31",
+      "quarter": "2024 Q4",
+      "btc_count": 83758.25349635442,
+      "btc_usd": 7857529277.0,
+      "btc_valuation_price_usd": 93812.0,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-hits-13-billion-profits-for-2024-and-all-time-highs-in-u-s-treasury-holdings-usdt-circulation-and-reserve-buffer-in-q4-2024-attestation/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/6L2yLNnLltcCP6ZcTxJrll/aea0ec279fea08637445c8be57f63d87/ISAE_3000R_-_Opinion_on_Tether_Consolidated_Financials_Figures_31.12.2024.pdf"
+    },
+    {
+      "as_of": "2025-03-31",
+      "quarter": "2025 Q1",
+      "btc_count": 92646.18932578835,
+      "btc_usd": 7662210442.0,
+      "btc_valuation_price_usd": 82704.0,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-approaching-120b-in-u-s-treasuries-confirms-quarterly-operating-profit-over-1b-and-strengthens-global-usdt-demand-in-q1-2025/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/1LdSmP3HBynDxm6wvkDSsL/c4bcbd1f6fc18a0e8b3a12444ac8ae97/ISAE_3000R_-_Opinion_Tether_International_Financial_Figures___Reserves_Report_31.03.2025_RC187322025BD0040.pdf"
+    },
+    {
+      "as_of": "2025-06-30",
+      "quarter": "2025 Q2",
+      "btc_count": 83254.14892763895,
+      "btc_usd": 8928174931.0,
+      "btc_valuation_price_usd": 107240.0,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-issues-20b-in-usdt-ytd-becomes-one-of-largest-u-s-debt-holders-with-127b-in-treasuries-net-profit-4-9b-in-q2-2025-attestation-report/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/2SGAAXnsb1wKByIzkhcbSx/9efa4682b3cd4c62d87a4c88ee729693/ISAE_3000R_-_Opinion_Tether_International_Financial_Figure_RC187322025BD0201.pdf"
+    },
+    {
+      "as_of": "2025-09-30",
+      "quarter": "2025 Q3",
+      "btc_count": 86335.06491765943,
+      "btc_usd": 9856011011.0,
+      "btc_valuation_price_usd": 114160.0,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-attestation-reports-q1-q3-2025-profit-surpassing-10b-record-levels-in-us-treasuries-exposure-accelerating-usdt-supply-amidst-worlds-macroeconomic-uncertainty/",
+      "source_pdf": "https://tether.io/wp-content/uploads/2025/10/ISAE-3000R-Opinion-Tether-International-Financial-Figure-31-10-2025-RC187322025BD0440-Fascicolo.pdf"
+    },
+    {
+      "as_of": "2025-12-31",
+      "quarter": "2025 Q4",
+      "btc_count": 96184.95045040626,
+      "btc_usd": 8430374292.0,
+      "btc_valuation_price_usd": 87647.54,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-delivers-10b-profits-in-2025-6-3b-in-excess-reserves-and-record-141-billion-exposure-in-u-s-treasury-holdings/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/20d2BoOAd28ZfkiQPYPjGN/4ed12f5939e1e06ee5aceccad4effbe4/ISAE_3000R_-_Opinion_Tether_International_Financial_Figure_31-12-2025.pdf"
+    },
+    {
+      "as_of": "2026-03-31",
+      "quarter": "2026 Q1",
+      "btc_count": 97137.07584030548,
+      "btc_usd": 6624160893.0,
+      "btc_valuation_price_usd": 68193.95,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-posts-1-04b-q1-2026-profit-despite-highly-volatile-global-markets-reaches-all-time-highs-8-23b-reserve-buffer-and-maintains-u-s-treasury-heavy-backing/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/6crn1tXbl6AtWZBWucZnfg/c4ff472d70c1b48c2f689f27b54c84f5/ISAE_3000R_-_Opinion_Tether_International_Financial_Figure_31-03-2026.pdf"
+    },
+    {
+      "as_of": "2026-06-30",
+      "quarter": "2026 Q2",
+      "btc_count": 98932.77584467827,
+      "btc_usd": 5801630681.0,
+      "btc_valuation_price_usd": 58642.15,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-posts-strong-q2-performance-generates-1-5b-net-operating-profit-maintains-4-11b-reserve-buffer-and-expands-gold-holdings-to-more-than-146-tons/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/2kYf7r64h3tzwiu6F0CbUB/2997abd2f11ecea74a21528048b50707/Opinion___Report_-_Tether_International_Financial_Figure_30-06-2026.pdf"
+    }
+  ],
+  "context": "Tether quarterly BTC and gold reserve values are parsed from official attestation PDFs. The BTC-unit history includes only quarters whose PDF discloses both BTC USD value and valuation price."
+}

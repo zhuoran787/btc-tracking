@@ -1,0 +1,88 @@
+name: Refresh BTC data and publish
+on:
+  schedule:
+    - cron: '20 7 * * *'
+      timezone: 'Asia/Shanghai'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'refresh fetches data; bootstrap publishes a dated initial snapshot'
+        type: choice
+        default: refresh
+        options: [refresh, bootstrap]
+  push:
+    branches: [main]
+    paths: ['.runtime/**', '.github/workflows/update-btc.yml']
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: btc-publication
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: .runtime/requirements.txt
+      - run: pip install -r .runtime/requirements.txt
+      - run: python -m playwright install --with-deps chromium
+      - name: Refresh data or publish initial snapshot
+        env:
+          COINALYZE_API_KEY: ${{ secrets.COINALYZE_API_KEY }}
+          REQUESTED_MODE: ${{ inputs.mode }}
+        run: |
+          if [ "$REQUESTED_MODE" = bootstrap ]; then
+            python .runtime/scripts/cloud_refresh.py --bootstrap
+          else
+            python .runtime/scripts/cloud_refresh.py
+          fi
+      - name: Save verified page and market history
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html publication.json .runtime/data
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh BTC market data and dated report'
+            git push origin HEAD:main
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .site
+      - id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verify public page
+        run: |
+          python - <<'PY'
+          import os,time,urllib.request
+          from pathlib import Path
+          expected=Path('.site/index.html').read_bytes()
+          url='${{ steps.deployment.outputs.page_url }}'
+          for attempt in range(8):
+              try:
+                  req=urllib.request.Request(url+'?run='+os.environ['GITHUB_RUN_ID'],headers={'Cache-Control':'no-cache'})
+                  if urllib.request.urlopen(req,timeout=30).read()==expected:
+                      print('Public HTML matches this build');break
+              except Exception as exc:
+                  print(type(exc).__name__)
+              time.sleep(10)
+          else:raise SystemExit('Public page verification failed')
+          PY
+      - name: Preserve verification receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: btc-verification-${{ github.run_id }}
+          path: .receipts/
+          retention-days: 14
+          if-no-files-found: warn

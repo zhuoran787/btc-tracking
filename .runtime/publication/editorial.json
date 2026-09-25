@@ -1,0 +1,632 @@
+{
+  "as_of": "2026-09-17",
+  "context": {
+    "whale_news_summary": [
+      "Franklin Bi：本期未核得新的具名鲸鱼买卖结论。",
+      "Parker Lewis：本期未核得新的具名鲸鱼买卖结论。",
+      "James Check (Checkmate)：本期未核得新的具名鲸鱼买卖结论。",
+      "Arkham Intelligence：本期未核得新的具名鲸鱼买卖结论。",
+      "Lookonchain：9/17：地址 0x0058 花费 1,300 万 USDC 买入 5,368 ETH，均价约 $2,422（Lookonchain 地址识别口径）。",
+      "Whale Alert：据报道，Whale Alert 标记 12 笔早期挖矿奖励合计 600 BTC 在沉睡约 16 年后移动；这是链上转账，不能直接认定为交易所抛售，也无证据归属于中本聪。"
+    ],
+    "policy_one_liner": "Clarity Act 立法预期显著转弱：9/15 推进审议的程序投票 49–50 失败，未达 60 票；后续时间表不明，不能把行政规则推进当成立法已完成；9/16 众议院金融服务委员会审议储备法案 H.R.8957，战略储备制度化仍在立法阶段，不能据此认定政府已经新增买币；未核实 Trump 家族或相关交易者已实际清仓；谈判涉及更严伦理约束，但接受条款不能作为已经减持的证据；德银计划年内推出 BTC/ETH 等机构托管，仍受监管条件约束；Block 已申请国家信托银行牌照，尚不等于获批或正式运营",
+    "opinion_one_liner": "本期氛围从普遍期待立法转为分歧：Matt Hougan 9/16 明确修正年初判断，认为 Clarity 失败也不会阻断牛市；James Check 从 9/4 强调牛市早期，转为 9/14 公开导语关注 50 周均线下震荡与宏观压力（仅核公开部分）。Novogratz 9/15 警告立法失败会延长政策不确定性；Tom Lee 仍看好年末机构配置，Peter Schiff 继续看空 BTC",
+    "verify_1_strategic_reserve": "9/16 众议院金融服务委员会审议 H.R.8957《American Reserve Modernization Act》，旨在推动战略比特币储备制度化；委员会阶段的推进不等于全院通过、总统签署或政府已经买币。来源：https://docs.house.gov/Committee/Calendar/ByEvent.aspx?EventID=119565",
+    "verify_2_trump_clearance": "本期未核实 Trump 家族或相关交易者已经完成数字资产清仓。9/14 Clarity 谈判涉及更严伦理限制，但接受限制条款与实际完成减持是不同事实。来源：https://coingape.com/galaxy-ceo-warns-if-clarity-doesnt-advance-u-s-crypto-rules-may-never-arrive/",
+    "verify_3_institutional_entry": "Deutsche Bank 9/16 宣布计划于 2026 年为欧洲机构和企业客户推出数字资产托管，覆盖 BTC、ETH 与部分稳定币，仍需满足监管条件；Block 9/8 向 OCC 申请设立 Builders Bank 国家信托银行，提供 BTC/稳定币托管，并非已获批。来源：https://www.db.com/news/detail/20260916-deutsche-bank-to-launch-digital-asset-custody-solution-for-institutional-and-corporate-clients?language_id=1；https://investors.block.xyz/investor-news/news-details/2026/Block-Applies-to-Establish-Builders-Bank-a-National-Trust-Bank/default.aspx",
+    "verify_4_clarity_act": null,
+    "verify_4_clarity_passage_probability": "9/15 参议院就推进 H.R.3633 审议的 cloture 程序投票以 49–50 失败，未达到 60 票门槛；因此当前无法按原计划推进，立法预期显著转弱。这不是最终法案表决，后续能否重启及具体时间仍不确定。来源：https://www.senate.gov/legislative/cloture/119.htm",
+    "dat_announcements": [
+      {
+        "date": "2026-09-14",
+        "company": "Strategy",
+        "text": "SEC 周报确认未买卖 BTC，截至 9/13 持仓仍为 845,050 枚",
+        "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526389858/0001193125-26-389858.txt",
+        "action": "none"
+      },
+      {
+        "date": "2026-09-11",
+        "company": "Metaplanet",
+        "text": "削减高管期权对应潜在股数约 41.1%，行权期后移；此项不是新增买币公告",
+        "url": "https://www.theblock.co/news/business/2026-09-11-metaplanet-reverses-course-executive-options-41-cut-potential-shares-scraps-employee-warrant-plan-414265",
+        "action": "equity_compensation"
+      },
+      {
+        "date": "2026-08-31",
+        "company": "Strategy",
+        "text": "披露买入 4,603 BTC，持币总量增至 845,050 枚",
+        "url": "https://www.strategy.com/purchases",
+        "action": "buy"
+      }
+    ],
+    "whale_buysell_news": [
+      {
+        "date": "2026-09-16",
+        "side": "买",
+        "asset": "BTC",
+        "text": "Lookonchain 识别 MARA 经 FalconX 买入 1,292 BTC，约 $98.64M；属于链上监测归因，尚非公司公告确认",
+        "url": "https://t.me/lookonchainchannel/10246"
+      },
+      {
+        "date": "2026-09-15",
+        "side": "卖",
+        "asset": "ETH",
+        "text": "Lookonchain 报告麻吉削减 ETH 多头、过去一周亏损逾 $5M，仍持有 20,000 ETH 多仓；这是衍生品减仓",
+        "url": "https://t.me/lookonchainchannel/10243"
+      }
+    ],
+    "whale_news": [],
+    "news_items": [
+      {
+        "factor": 9,
+        "title": "储备立法进入委员会审议",
+        "date": "2026-09-16",
+        "url": "https://docs.house.gov/Committee/Calendar/ByEvent.aspx?EventID=119565",
+        "summary": "9/16 众议院金融服务委员会审议储备法案 H.R.8957，战略储备制度化仍在立法阶段，不能据此认定政府已经新增买币"
+      },
+      {
+        "factor": 10,
+        "title": "德银计划推出机构数字资产托管",
+        "date": "2026-09-16",
+        "url": "https://www.db.com/news/detail/20260916-deutsche-bank-to-launch-digital-asset-custody-solution-for-institutional-and-corporate-clients?language_id=1",
+        "summary": "覆盖 BTC、ETH 与部分稳定币，计划年内上线，须满足监管要求"
+      },
+      {
+        "factor": 10,
+        "title": "Block 申请国家信托银行牌照",
+        "date": "2026-09-08",
+        "url": "https://investors.block.xyz/investor-news/news-details/2026/Block-Applies-to-Establish-Builders-Bank-a-National-Trust-Bank/default.aspx",
+        "summary": "Builders Bank 定位为无存款保险、不吸收存款的信托银行，拟提供 BTC/稳定币托管；目前为申请阶段"
+      },
+      {
+        "factor": 11,
+        "title": "Clarity 推进审议的程序投票失败",
+        "date": "2026-09-15",
+        "url": "https://www.senate.gov/legislative/cloture/119.htm",
+        "summary": "Clarity Act 立法预期显著转弱：9/15 推进审议的程序投票 49–50 失败，未达 60 票；后续时间表不明，不能把行政规则推进当成立法已完成"
+      },
+      {
+        "factor": 10,
+        "title": "iPower Inc.  (IPW)  (CIK 0001830072) — S-1/A",
+        "date": "2026-09-09",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001830072&type=S-1/A",
+        "summary": "SEC S-1/A filing by iPower Inc.  (IPW)  (CIK 0001830072)",
+        "source_auto": true
+      },
+      {
+        "factor": 10,
+        "title": "Teucrium Commodity Trust  (BTCK, CANE, CORN, SOYB, TAGS, WEAT)  (CIK 0001471824) — 8-K",
+        "date": "2026-08-31",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001471824&type=8-K",
+        "summary": "SEC 8-K filing by Teucrium Commodity Trust  (BTCK, CANE, CORN, SOYB, TAGS, WEAT)  (CIK 0001471824)",
+        "source_auto": true
+      },
+      {
+        "factor": 10,
+        "title": "Canary Staked SEI ETF  (CIK 0002066353) — S-1/A",
+        "date": "2026-09-15",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002066353&type=S-1/A",
+        "summary": "SEC S-1/A filing by Canary Staked SEI ETF  (CIK 0002066353)",
+        "source_auto": true
+      }
+    ],
+    "legislation_milestones": [
+      {
+        "label": "众议院通过",
+        "date": "2025-07-17",
+        "state": "done"
+      },
+      {
+        "label": "参议院推进审议程序投票失败（49–50）",
+        "date": "2026-09-15",
+        "state": "active"
+      },
+      {
+        "label": "参议院重新推进／全院表决",
+        "date": "TBD",
+        "state": "pending"
+      },
+      {
+        "label": "总统签署",
+        "date": "TBD",
+        "state": "pending"
+      }
+    ],
+    "legislation_summary": null,
+    "opinion_categories": [
+      {
+        "name": "币圈老鸟，一般倾向看多",
+        "badge_class": "bullish",
+        "color": "#22c55e",
+        "count": 5,
+        "total": 13,
+        "people": [
+          {
+            "name": "CZ",
+            "org": "Binance 创始人",
+            "date": "—",
+            "source": "—",
+            "source_url": "https://x.com/cz_binance",
+            "summary": "本周无更新",
+            "has_update": false
+          },
+          {
+            "name": "Star Xu",
+            "org": "OKX 创始人",
+            "date": "—",
+            "source": "—",
+            "source_url": "https://x.com/star_okx",
+            "summary": "本周无更新",
+            "has_update": false
+          },
+          {
+            "name": "Vitalik Buterin",
+            "org": "Ethereum 联合创始人",
+            "date": "2026-09-07",
+            "source": "—",
+            "source_url": "https://beincrypto.com/buterin-bets-against-ai-bitcoin-crash/",
+            "summary": "反对“AI 会令 BTC 两年内跌逾 50%”的预测，称长期网络安全前景乐观，现有约 90% 净资产已承担相反方向的风险；这是解释既有仓位，并非宣布本期增持",
+            "has_update": true
+          },
+          {
+            "name": "Brad Garlinghouse",
+            "org": "Ripple",
+            "date": "2026-09-15",
+            "source": "https://x.com/bgarlinghouse",
+            "source_url": "https://u.today/ripple-ceo-says-crypto-will-win-with-or-without-clarity-act?from=article-links",
+            "sources": [],
+            "summary": "投票前称，无论 Clarity 是否通过，更好的技术仍会推动行业发展，同时主张继续妥协争取立法；这是投票前发言，不能当作对失败结果的事后回应",
+            "has_update": true
+          },
+          {
+            "name": "Garrett Jin",
+            "org": "Bitget 前 CMO / 1011 Insider Whale",
+            "date": "—",
+            "source": "—",
+            "source_url": "https://x.com/GarrettBullish",
+            "summary": "本周无更新",
+            "has_update": false
+          },
+          {
+            "name": "Tom Lee",
+            "org": "Fundstrat / Bitmine",
+            "date": "2026-09-14",
+            "source": "https://x.com/fundstrat",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1829311/000149315226042492/ex99-1.htm",
+            "sources": [],
+            "summary": "认为 ETH/BTC 相对强势、代币化与 AI 代理需求支持加密资产，四年周期可能未来数周见底，三季度表现有望吸引年末机构增配；其列举的 Clarity 催化随后在 9/15 受挫",
+            "has_update": true
+          },
+          {
+            "name": "Joseph Chalom",
+            "org": "SharpLink Gaming（前 BlackRock）",
+            "date": "—",
+            "source": "—",
+            "source_url": "https://x.com/joechalom",
+            "summary": "本周无更新",
+            "has_update": false
+          },
+          {
+            "name": "Peter Thiel",
+            "org": "Founders Fund",
+            "date": "—",
+            "source": "—",
+            "source_url": null,
+            "summary": "本周无更新",
+            "has_update": false
+          },
+          {
+            "name": "Trendresearch",
+            "org": "中文加密研究 (Medium)",
+            "date": "—",
+            "source": "—",
+            "source_url": null,
+            "summary": "本周无更新",
+            "has_update": false
+          },
+          {
+            "name": "Matt Hougan",
+            "org": "Bitwise CIO",
+            "date": "2026-09-16",
+            "source": "https://x.com/Matt_Hougan",
+            "source_url": "https://experts.bitwiseinvestments.com/cio-memos/the-clarity-acts-failure-is-a-speed-bump-not-a-roadblock",
+            "sources": [],
+            "summary": "明确修正年初“法案失败会延长加密寒冬”的判断：如今机构采用已在推进，SEC/CFTC 仍可制定规则，故 Clarity 失败是减速带而非阻断牛市；但承认监管规则不如立法持久",
+            "has_update": true
+          },
+          {
+            "name": "VanEck",
+            "org": "数字资产研究 · Matthew Sigel；有 BTC 敞口背景",
+            "date": "—",
+            "source_url": "https://www.vaneck.com/us/en/insights/thought-leaders/matthew-sigel",
+            "summary": "待首次采集",
+            "has_update": false,
+            "status_label": "待首次采集"
+          },
+          {
+            "name": "David Sacks",
+            "org": "白宫 AI & Crypto Czar / Craft Ventures",
+            "date": "—",
+            "source": "—",
+            "source_url": "https://x.com/DavidSacks",
+            "summary": "本周无更新",
+            "has_update": false
+          },
+          {
+            "name": "Patrick Witt",
+            "org": "白宫数字资产顾问委员会",
+            "date": "2026-09-14",
+            "source": "WebSearch",
+            "source_url": "https://www.theblock.co/news/regulation/2026-09-14-white-house-crypto-adviser-feels-very-good-ahead-senate-clarity-act-vote-tuesday-414702",
+            "sources": [],
+            "summary": "投票前称白宫已提出最好、最终的方案，对通过感到乐观；同时表示若国会无法推进，监管机构会继续行动。9/15 程序投票失败，故当时的乐观预期没有兑现",
+            "has_update": true
+          }
+        ]
+      },
+      {
+        "name": "币圈的空头",
+        "badge_class": "bearish",
+        "color": "#ef4444",
+        "count": 1,
+        "total": 5,
+        "people": [
+          {
+            "name": "Brett Knoblauch",
+            "org": "Cantor Fitzgerald",
+            "date": "—",
+            "source": "—",
+            "source_url": null,
+            "summary": "本周无更新",
+            "has_update": false
+          },
+          {
+            "name": "Aaron Day",
+            "org": "Daylight Freedom 主席",
+            "date": "—",
+            "source": "—",
+            "source_url": "https://x.com/AaronRDay",
+            "summary": "本周无更新",
+            "has_update": false
+          },
+          {
+            "name": "Jemima Kelly",
+            "org": "FT 专栏",
+            "date": "—",
+            "source": "—",
+            "source_url": "https://x.com/jemimajoanna",
+            "summary": "本周无更新",
+            "has_update": false
+          },
+          {
+            "name": "Peter Schiff",
+            "org": "SchiffGold / Euro Pacific",
+            "date": "2026-09-09",
+            "source": "—",
+            "source_url": "https://www.schiffgold.com/interviews/peter-schiff-golds-bull-market-is-just-getting-started",
+            "summary": "维持看多黄金、看空 BTC：认为美元购买力削弱支持黄金，而潜在 BTC 买家大多已经入场，后续卖盘可能压价；属于其一贯立场延续，并非本期由多转空",
+            "has_update": true
+          },
+          {
+            "name": "Nassim Taleb",
+            "org": "《黑天鹅》作者",
+            "date": "—",
+            "source": "—",
+            "source_url": "https://x.com/nntaleb",
+            "summary": "本周无更新",
+            "has_update": false
+          }
+        ]
+      },
+      {
+        "name": "对冲基金，一般中性偏多",
+        "badge_class": "hedge",
+        "color": "#a855f7",
+        "count": 2,
+        "total": 5,
+        "people": [
+          {
+            "name": "BH Digital (Brevan Howard)",
+            "org": "Brevan Howard 加密部门",
+            "date": "—",
+            "source": "—",
+            "source_url": "https://x.com/BHDigitalAssets",
+            "summary": "本周无更新",
+            "has_update": false
+          },
+          {
+            "name": "Galaxy Digital",
+            "org": "公司号",
+            "date": "2026-09-11",
+            "source": "—",
+            "source_url": "https://www.galaxy.com/insights/research/liquid-network-exploit-4000-btc-bitcoin-sidechain-blockstream-white-hat",
+            "summary": "讨论 Liquid 侧链 4,000 BTC 失窃、其中 3,400 BTC 已归还事件：认为不构成 BTC 的系统性威胁，但暴露出安全防护需加强；侧链事件不能表述为比特币主链被攻破",
+            "has_update": true
+          },
+          {
+            "name": "Mike Novogratz",
+            "org": "Galaxy Digital",
+            "date": "2026-09-15",
+            "source": "https://x.com/novogratz",
+            "source_url": "https://coingape.com/galaxy-ceo-warns-if-clarity-doesnt-advance-u-s-crypto-rules-may-never-arrive/",
+            "sources": [],
+            "summary": "投票前警告：若 Clarity 无法推进，美国可能长期缺乏稳定的加密市场结构法律，行业面临外迁风险；SEC/CFTC 未来两年仍能制定规则，但行政规则不能替代长期法律确定性",
+            "has_update": true
+          },
+          {
+            "name": "DRW Trading",
+            "org": "Don Wilson 公司号",
+            "date": "—",
+            "source": "—",
+            "source_url": "https://x.com/DRWTrading",
+            "summary": "本周无更新",
+            "has_update": false
+          },
+          {
+            "name": "Jason Huang",
+            "org": "NextGen CIO",
+            "date": "—",
+            "source": "—",
+            "source_url": null,
+            "summary": "本周无更新",
+            "has_update": false
+          }
+        ]
+      }
+    ],
+    "analyst_funding_cards": [
+      {
+        "name": "Franklin Bi",
+        "org": "Pantera Capital",
+        "handle": "@FranklinBi",
+        "has_update": false,
+        "date": null,
+        "source_url": null,
+        "whale_summary": "本期未核得新的具名鲸鱼买卖结论",
+        "market_summary": "本周无可核实更新",
+        "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+        "raw_search_results": [
+          {
+            "url": "https://news.google.com/rss/search?q=Franklin+Bi+Pantera+bitcoin+whales+onchain+flows+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+            "title": "Franklin Bi Pantera bitcoin whales onchain flows [month] [year]",
+            "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+          },
+          {
+            "url": "https://news.google.com/rss/search?q=Franklin+Bi+Pantera+blockchain+BTC+ETH+ecosystem+strategy+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+            "title": "Franklin Bi Pantera blockchain BTC ETH ecosystem strategy [month] [year]",
+            "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+          }
+        ]
+      },
+      {
+        "name": "Parker Lewis",
+        "org": "Zaprite / Unchained",
+        "handle": "@parkeralewis",
+        "has_update": false,
+        "date": null,
+        "source_url": null,
+        "whale_summary": "本期未核得新的具名鲸鱼买卖结论",
+        "market_summary": "本周无可核实更新",
+        "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+        "raw_search_results": [
+          {
+            "url": "https://news.google.com/rss/search?q=Parker+Lewis+Unchained+bitcoin+whales+analysis+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+            "title": "Parker Lewis Unchained bitcoin whales analysis [month] [year]",
+            "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+          },
+          {
+            "url": "https://news.google.com/rss/search?q=Parker+Lewis+Unchained+bitcoin+ethereum+strategy+market+view+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+            "title": "Parker Lewis Unchained bitcoin ethereum strategy market view [month] [year]",
+            "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+          }
+        ]
+      },
+      {
+        "name": "James Check (Checkmate)",
+        "org": "Checkonchain",
+        "handle": "@_Checkmatey_",
+        "has_update": true,
+        "date": "2026-09-14",
+        "source_url": "https://newsletter.checkonchain.com/p/local-sellers",
+        "whale_summary": "本期未核得新的具名鲸鱼买卖结论",
+        "market_summary": "⚠️ 仅核公开导语、未核付费全文：本期关注 BTC 在 50 周均线下震荡，以及宏观压力对风险资产的影响；相较 9/4 的牛市早期叙述，短期阻力更突出",
+        "summary": "⚠️ 仅核公开导语、未核付费全文：本期关注 BTC 在 50 周均线下震荡，以及宏观压力对风险资产的影响；相较 9/4 的牛市早期叙述，短期阻力更突出",
+        "raw_search_results": [
+          {
+            "date": "2026-09-14",
+            "url": "https://newsletter.checkonchain.com/p/local-sellers",
+            "title": "James Check (Checkmate) 本期核实来源",
+            "snippet": "⚠️ 仅核公开导语、未核付费全文：本期关注 BTC 在 50 周均线下震荡，以及宏观压力对风险资产的影响；相较 9/4 的牛市早期叙述，短期阻力更突出"
+          },
+          {
+            "url": "https://news.google.com/rss/search?q=James+Check+Checkmate+bitcoin+whales+onchain+LTH+STH+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+            "title": "James Check Checkmate bitcoin whales onchain LTH STH [month] [year]",
+            "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+          },
+          {
+            "url": "https://news.google.com/rss/search?q=James+Check+Checkmate+bitcoin+ethereum+market+analysis+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+            "title": "James Check Checkmate bitcoin ethereum market analysis [month] [year]",
+            "snippet": "本期独立 RSS 检索，窗口 14 天；命中 1 条；零命中已另跑互联网搜索"
+          }
+        ]
+      },
+      {
+        "name": "Arkham Intelligence",
+        "org": "Arkham",
+        "handle": "@arkham",
+        "has_update": true,
+        "date": "2026-09-08",
+        "source_url": "https://info.arkm.com/announcements/arkham-api-upgrade-real-time-intel",
+        "whale_summary": "本期未核得新的具名鲸鱼买卖结论",
+        "market_summary": "公布 API 更新：地址标签与实体信息从每日更新提速至分钟级，便于追踪资金流；这是平台能力更新，不是新的 BTC 多空判断",
+        "summary": "公布 API 更新：地址标签与实体信息从每日更新提速至分钟级，便于追踪资金流；这是平台能力更新，不是新的 BTC 多空判断",
+        "raw_search_results": [
+          {
+            "date": "2026-09-08",
+            "url": "https://info.arkm.com/announcements/arkham-api-upgrade-real-time-intel",
+            "title": "Arkham Intelligence 本期核实来源",
+            "snippet": "公布 API 更新：地址标签与实体信息从每日更新提速至分钟级，便于追踪资金流；这是平台能力更新，不是新的 BTC 多空判断"
+          },
+          {
+            "url": "https://news.google.com/rss/search?q=Arkham+Intelligence+bitcoin+whale+movements+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+            "title": "Arkham Intelligence bitcoin whale movements [month] [year]",
+            "snippet": "本期独立 RSS 检索，窗口 14 天；命中 9 条；零命中已另跑互联网搜索"
+          },
+          {
+            "url": "https://news.google.com/rss/search?q=Arkham+Intelligence+platform+features+ecosystem+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+            "title": "Arkham Intelligence platform features ecosystem [month] [year]",
+            "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+          }
+        ]
+      },
+      {
+        "name": "Lookonchain",
+        "org": "Lookonchain",
+        "handle": "@lookonchain",
+        "has_update": true,
+        "date": "2026-09-17",
+        "source_url": "https://t.me/lookonchainchannel/10259",
+        "whale_summary": "9/17：地址 0x0058 花费 1,300 万 USDC 买入 5,368 ETH，均价约 $2,422（Lookonchain 地址识别口径）",
+        "market_summary": "9/16：地址 0x4553 把 512 WBTC 与 354 cbBTC 换成 26,924 ETH；这是 BTC 敞口转向 ETH，不能说成全体鲸鱼净买入",
+        "summary": "9/17 报告地址 0x0058 以 1,300 万 USDC 买入 5,368 ETH，均价约 $2,422；9/16 另有鲸鱼把 WBTC/cbBTC 换成 ETH，显示部分资金在币种间轮动",
+        "raw_search_results": [
+          {
+            "date": "2026-09-17",
+            "url": "https://t.me/lookonchainchannel/10259",
+            "title": "Lookonchain 本期核实来源",
+            "snippet": "9/17 报告地址 0x0058 以 1,300 万 USDC 买入 5,368 ETH，均价约 $2,422；9/16 另有鲸鱼把 WBTC/cbBTC 换成 ETH，显示部分资金在币种间轮动"
+          },
+          {
+            "url": "https://news.google.com/rss/search?q=Lookonchain+bitcoin+BTC+whale+activity+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+            "title": "Lookonchain bitcoin BTC whale activity [month] [year]",
+            "snippet": "本期独立 RSS 检索，窗口 14 天；命中 7 条；零命中已另跑互联网搜索"
+          },
+          {
+            "url": "https://news.google.com/rss/search?q=Lookonchain+ethereum+BTC+tracking+commentary+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+            "title": "Lookonchain ethereum BTC tracking commentary [month] [year]",
+            "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+          },
+          {
+            "date": "2026-09-16",
+            "url": "https://t.me/lookonchainchannel/10247",
+            "title": "BTC to ETH rotation",
+            "snippet": "9/16：地址 0x4553 把 512 WBTC 与 354 cbBTC 换成 26,924 ETH；这是 BTC 敞口转向 ETH，不能说成全体鲸鱼净买入"
+          }
+        ]
+      },
+      {
+        "name": "Whale Alert",
+        "org": "Whale Alert",
+        "handle": "@whale_alert",
+        "has_update": true,
+        "date": "2026-09-06",
+        "source_url": "https://cryptobriefing.com/bitcoin-600-btc-dormant-16-years/",
+        "whale_summary": "据报道，Whale Alert 标记 12 笔早期挖矿奖励合计 600 BTC 在沉睡约 16 年后移动；这是链上转账，不能直接认定为交易所抛售，也无证据归属于中本聪",
+        "market_summary": "该来源是链上异动记录，没有本人新增方向性市场观点；转账目的尚不能据此确认",
+        "summary": "据报道，Whale Alert 标记 12 笔早期挖矿奖励合计 600 BTC 在沉睡约 16 年后移动；这是链上转账，不能直接认定为交易所抛售，也无证据归属于中本聪",
+        "raw_search_results": [
+          {
+            "date": "2026-09-06",
+            "url": "https://cryptobriefing.com/bitcoin-600-btc-dormant-16-years/",
+            "title": "Whale Alert 本期核实来源",
+            "snippet": "据报道，Whale Alert 标记 12 笔早期挖矿奖励合计 600 BTC 在沉睡约 16 年后移动；这是链上转账，不能直接认定为交易所抛售，也无证据归属于中本聪"
+          },
+          {
+            "url": "https://news.google.com/rss/search?q=Whale+Alert+bitcoin+dormant+whale+transfer+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+            "title": "Whale Alert bitcoin dormant whale transfer [month] [year]",
+            "snippet": "本期独立 RSS 检索，窗口 14 天；命中 17 条；零命中已另跑互联网搜索"
+          },
+          {
+            "url": "https://news.google.com/rss/search?q=Whale+Alert+ethereum+stablecoin+transfers+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+            "title": "Whale Alert ethereum stablecoin transfers [month] [year]",
+            "snippet": "本期独立 RSS 检索，窗口 14 天；命中 4 条；零命中已另跑互联网搜索"
+          }
+        ]
+      }
+    ],
+    "coinshares_paras": [
+      "全球数字资产投资产品上周小幅净流出 9,270 万美元，上周为净流入 13.5 亿美元。总管理规模约 1,560 亿美元，年初至今仍累计净流入 50 亿美元。",
+      "总额掩盖了显著的币种轮动：BTC 净流出 4.36 亿美元，ETH 净流入 2.20 亿美元；Zcash 流入 1.02 亿美元，XRP 流入 2,770 万美元，Hyperliquid 流出 2,530 万美元。",
+      "地区上，美国净流出 1.335 亿美元，德国、瑞士和加拿大分别净流入约 2,300 万、1,110 万和 990 万美元，部分抵消美国流出。",
+      "CoinShares 将 BTC 弱势主要归于利率前景：8 月 CPI 达 3.4%，高于预期，重新抬高紧缩担忧。当前更像资产间轮动，并非所有数字资产同步失血。以上为 9/15 报告口径，不混用美国现货 BTC ETF 单独流量。"
+    ],
+    "coinshares_title": "CoinShares Digital Asset Fund Flows (Bi-Weekly Digest 2026-09-15)",
+    "coinshares_url": "https://coinshares.com/insights/research-data/digital-asset-bi-weekly-digest-15-09-2026/",
+    "coinshares_report_date": "2026-09-15",
+    "user_inputs_freshness": {
+      "macro_summary": {
+        "status": "cached",
+        "date": "2026-09-17",
+        "seed": false
+      },
+      "cycle_summary": {
+        "status": "cached",
+        "date": "2026-09-04",
+        "seed": false
+      },
+      "dat_outflow_bullish": {
+        "status": "cached",
+        "date": "2026-09-04",
+        "seed": false
+      },
+      "trump_clearance_bullish": {
+        "status": "cached",
+        "date": "2026-09-17",
+        "seed": false
+      },
+      "miner_selloff_note": {
+        "status": "cached",
+        "date": "2026-09-17",
+        "seed": false
+      }
+    },
+    "websearch_freshness": {
+      "dat_announcements": {
+        "status": "cached",
+        "date": "2026-09-17",
+        "seed": false
+      },
+      "verify_1_strategic_reserve": {
+        "status": "cached",
+        "date": "2026-09-17",
+        "seed": false
+      },
+      "verify_2_trump_clearance": {
+        "status": "cached",
+        "date": "2026-09-17",
+        "seed": false
+      },
+      "verify_3_institutional_entry": {
+        "status": "cached",
+        "date": "2026-09-17",
+        "seed": false
+      },
+      "verify_4_clarity_passage_probability": {
+        "status": "cached",
+        "date": "2026-09-17",
+        "seed": false
+      },
+      "verify_1_strategic_reserve_tldr": {
+        "status": "cached",
+        "date": "2026-09-17",
+        "seed": false
+      },
+      "verify_2_trump_clearance_tldr": {
+        "status": "cached",
+        "date": "2026-09-17",
+        "seed": false
+      },
+      "verify_3_institutional_entry_tldr": {
+        "status": "cached",
+        "date": "2026-09-17",
+        "seed": false
+      },
+      "verify_4_clarity_passage_probability_tldr": {
+        "status": "cached",
+        "date": "2026-09-17",
+        "seed": false
+      }
+    },
+    "onchain_summary_cn": []
+  }
+}

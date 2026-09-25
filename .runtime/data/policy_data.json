@@ -1,0 +1,545 @@
+{
+  "fetched_at": "2026-09-17",
+  "lookback_days": 30,
+  "factor_9_strategic_reserve": [],
+  "factor_10_institution": [
+    {
+      "factor": 10,
+      "title": "iPower Inc.  (IPW)  (CIK 0001830072) — S-1/A",
+      "date": "2026-09-09",
+      "form": "S-1/A",
+      "company": "iPower Inc.  (IPW)  (CIK 0001830072)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001830072&type=S-1/A",
+      "adsh": "0001683168-26-007035"
+    },
+    {
+      "factor": 10,
+      "title": "iPower Inc.  (IPW)  (CIK 0001830072) — S-1/A",
+      "date": "2026-08-18",
+      "form": "S-1/A",
+      "company": "iPower Inc.  (IPW)  (CIK 0001830072)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001830072&type=S-1/A",
+      "adsh": "0001683168-26-006558"
+    },
+    {
+      "factor": 10,
+      "title": "Teucrium Commodity Trust  (BTCK, CANE, CORN, SOYB, TAGS, WEAT)  (CIK 0001471824) — 8-K",
+      "date": "2026-08-31",
+      "form": "8-K",
+      "company": "Teucrium Commodity Trust  (BTCK, CANE, CORN, SOYB, TAGS, WEAT)  (CIK 0001471824)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001471824&type=8-K",
+      "adsh": "0001437749-26-029334"
+    },
+    {
+      "factor": 10,
+      "title": "Canary Staked TRX ETF  (CIK 0002064768) — S-1/A",
+      "date": "2026-08-19",
+      "form": "S-1/A",
+      "company": "Canary Staked TRX ETF  (CIK 0002064768)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002064768&type=S-1/A",
+      "adsh": "0001999371-26-018236"
+    },
+    {
+      "factor": 10,
+      "title": "Canary Staked SEI ETF  (CIK 0002066353) — S-1/A",
+      "date": "2026-09-15",
+      "form": "S-1/A",
+      "company": "Canary Staked SEI ETF  (CIK 0002066353)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002066353&type=S-1/A",
+      "adsh": "0001999371-26-020568"
+    },
+    {
+      "factor": 10,
+      "title": "Cryptex Digital Market Cap ETF  (BAGZ)  (CIK 0002115027) — S-1/A",
+      "date": "2026-08-24",
+      "form": "S-1/A",
+      "company": "Cryptex Digital Market Cap ETF  (BAGZ)  (CIK 0002115027)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002115027&type=S-1/A",
+      "adsh": "0001213900-26-092828"
+    },
+    {
+      "factor": 10,
+      "title": "Bitwise NEAR ETF  (CIK 0002067111) — S-1/A",
+      "date": "2026-09-16",
+      "form": "S-1/A",
+      "company": "Bitwise NEAR ETF  (CIK 0002067111)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002067111&type=S-1/A",
+      "adsh": "0001193125-26-393240"
+    },
+    {
+      "factor": 10,
+      "title": "HeartSciences Inc.  (HSCS, HSCSW)  (CIK 0001468492) — 8-K/A",
+      "date": "2026-08-19",
+      "form": "8-K/A",
+      "company": "HeartSciences Inc.  (HSCS, HSCSW)  (CIK 0001468492)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001468492&type=8-K/A",
+      "adsh": "0001213900-26-091764"
+    },
+    {
+      "factor": 10,
+      "title": "StableCoinX Inc.  (USDE, USDEW)  (CIK 0002080215) — 8-K",
+      "date": "2026-09-08",
+      "form": "8-K",
+      "company": "StableCoinX Inc.  (USDE, USDEW)  (CIK 0002080215)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002080215&type=8-K",
+      "adsh": "0001213900-26-097877"
+    },
+    {
+      "factor": 10,
+      "title": "Bitwise NEAR ETF  (CIK 0002067111) — S-1/A",
+      "date": "2026-08-28",
+      "form": "S-1/A",
+      "company": "Bitwise NEAR ETF  (CIK 0002067111)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002067111&type=S-1/A",
+      "adsh": "0001193125-26-374507"
+    },
+    {
+      "factor": 10,
+      "title": "Cryptex Digital Market Cap ETF  (BAGZ)  (CIK 0002115027) — S-1/A",
+      "date": "2026-08-24",
+      "form": "S-1/A",
+      "company": "Cryptex Digital Market Cap ETF  (BAGZ)  (CIK 0002115027)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002115027&type=S-1/A",
+      "adsh": "0001213900-26-092828"
+    },
+    {
+      "factor": 10,
+      "title": "ZeroStack Corp.  (ZSTK)  (CIK 0001790169) — 8-K",
+      "date": "2026-08-21",
+      "form": "8-K",
+      "company": "ZeroStack Corp.  (ZSTK)  (CIK 0001790169)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001790169&type=8-K",
+      "adsh": "0001062993-26-004559"
+    },
+    {
+      "factor": 10,
+      "title": "BITGO HOLDINGS, INC.  (BTGO)  (CIK 0001740604) — 8-K",
+      "date": "2026-08-28",
+      "form": "8-K",
+      "company": "BITGO HOLDINGS, INC.  (BTGO)  (CIK 0001740604)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001740604&type=8-K",
+      "adsh": "0001740604-26-000056"
+    },
+    {
+      "factor": 10,
+      "title": "Cryptex Digital Market Cap ETF  (BAGZ)  (CIK 0002115027) — S-1/A",
+      "date": "2026-09-11",
+      "form": "S-1/A",
+      "company": "Cryptex Digital Market Cap ETF  (BAGZ)  (CIK 0002115027)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002115027&type=S-1/A",
+      "adsh": "0001213900-26-099328"
+    },
+    {
+      "factor": 10,
+      "title": "Grayscale Horizen Trust (ZEN)  (HZEN)  (CIK 0001748945) — 8-K",
+      "date": "2026-08-27",
+      "form": "8-K",
+      "company": "Grayscale Horizen Trust (ZEN)  (HZEN)  (CIK 0001748945)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001748945&type=8-K",
+      "adsh": "0001193125-26-371276"
+    },
+    {
+      "factor": 10,
+      "title": "Cryptex Digital Market Cap ETF  (BAGZ)  (CIK 0002115027) — S-1/A",
+      "date": "2026-08-24",
+      "form": "S-1/A",
+      "company": "Cryptex Digital Market Cap ETF  (BAGZ)  (CIK 0002115027)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002115027&type=S-1/A",
+      "adsh": "0001213900-26-092828"
+    },
+    {
+      "factor": 10,
+      "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
+      "date": "2026-08-31",
+      "form": "8-K",
+      "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
+      "adsh": "0001493152-26-040741"
+    },
+    {
+      "factor": 10,
+      "title": "Grayscale Ethereum Classic Trust (ETC)  (ETCG)  (CIK 0001705181) — 8-K",
+      "date": "2026-08-27",
+      "form": "8-K",
+      "company": "Grayscale Ethereum Classic Trust (ETC)  (ETCG)  (CIK 0001705181)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001705181&type=8-K",
+      "adsh": "0001193125-26-371263"
+    },
+    {
+      "factor": 10,
+      "title": "AIxCrypto Holdings, Inc.  (AIXC)  (CIK 0001460702) — 8-K",
+      "date": "2026-08-18",
+      "form": "8-K",
+      "company": "AIxCrypto Holdings, Inc.  (AIXC)  (CIK 0001460702)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001460702&type=8-K",
+      "adsh": "0001493152-26-038912"
+    },
+    {
+      "factor": 10,
+      "title": "Zcash ETF  (ZCSH)  (CIK 0001720265) — 8-K",
+      "date": "2026-09-08",
+      "form": "8-K",
+      "company": "Zcash ETF  (ZCSH)  (CIK 0001720265)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001720265&type=8-K",
+      "adsh": "0001193125-26-385317"
+    },
+    {
+      "factor": 10,
+      "title": "Datacentrex, Inc.  (DTCX)  (CIK 0001853825) — 8-K/A",
+      "date": "2026-08-24",
+      "form": "8-K/A",
+      "company": "Datacentrex, Inc.  (DTCX)  (CIK 0001853825)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001853825&type=8-K/A",
+      "adsh": "0001493152-26-039796"
+    },
+    {
+      "factor": 10,
+      "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
+      "date": "2026-08-24",
+      "form": "8-K",
+      "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
+      "adsh": "0001493152-26-039789"
+    },
+    {
+      "factor": 10,
+      "title": "Datacentrex, Inc.  (DTCX)  (CIK 0001853825) — 8-K",
+      "date": "2026-08-24",
+      "form": "8-K",
+      "company": "Datacentrex, Inc.  (DTCX)  (CIK 0001853825)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001853825&type=8-K",
+      "adsh": "0001493152-26-039786"
+    },
+    {
+      "factor": 10,
+      "title": "BTCS Inc.  (BTCS)  (CIK 0001436229) — 8-K",
+      "date": "2026-08-20",
+      "form": "8-K",
+      "company": "BTCS Inc.  (BTCS)  (CIK 0001436229)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001436229&type=8-K",
+      "adsh": "0001493152-26-039377"
+    },
+    {
+      "factor": 10,
+      "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
+      "date": "2026-09-14",
+      "form": "8-K",
+      "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
+      "adsh": "0001493152-26-042492"
+    },
+    {
+      "factor": 10,
+      "title": "HeartSciences Inc.  (HSCS, HSCSW)  (CIK 0001468492) — 8-K",
+      "date": "2026-09-17",
+      "form": "8-K",
+      "company": "HeartSciences Inc.  (HSCS, HSCSW)  (CIK 0001468492)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001468492&type=8-K",
+      "adsh": "0001213900-26-100752"
+    },
+    {
+      "factor": 10,
+      "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
+      "date": "2026-09-08",
+      "form": "8-K",
+      "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
+      "adsh": "0001493152-26-041713"
+    },
+    {
+      "factor": 10,
+      "title": "Hyperliquid Strategies Inc  (PURR)  (CIK 0002078856) — 8-K",
+      "date": "2026-08-27",
+      "form": "8-K",
+      "company": "Hyperliquid Strategies Inc  (PURR)  (CIK 0002078856)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002078856&type=8-K",
+      "adsh": "0001193125-26-369668"
+    },
+    {
+      "factor": 10,
+      "title": "UPEXI, INC.  (UPXI)  (CIK 0001775194) — 8-K",
+      "date": "2026-09-14",
+      "form": "8-K",
+      "company": "UPEXI, INC.  (UPXI)  (CIK 0001775194)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001775194&type=8-K",
+      "adsh": "0001477932-26-005580"
+    },
+    {
+      "factor": 10,
+      "title": "CEA Industries Inc.  (BNC, BNCWW, BNCWZ)  (CIK 0001482541) — 8-K",
+      "date": "2026-09-11",
+      "form": "8-K",
+      "company": "CEA Industries Inc.  (BNC, BNCWW, BNCWZ)  (CIK 0001482541)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001482541&type=8-K",
+      "adsh": "0001482541-26-000053"
+    }
+  ],
+  "factor_11_clarity_act": {
+    "factor": 11,
+    "bill": "HR 3633 (119th Congress)",
+    "url": "https://www.congress.gov/bill/119th-congress/hr-bill/3633",
+    "total_actions": 32,
+    "latest_action": {
+      "date": "2026-09-15",
+      "text": "Motion by Senator Tillis to reconsider the vote by which cloture on the motion to proceed to the measure was not invoked (Record Vote No. 234) entered in Senate.",
+      "chamber": "Senate",
+      "type": "Floor",
+      "actionCode": null
+    },
+    "timeline": [
+      {
+        "date": "2026-09-15",
+        "text": "Motion by Senator Tillis to reconsider the vote by which cloture on the motion to proceed to the measure was not invoked (Record Vote No. 234) entered in Senate.",
+        "chamber": "Senate",
+        "type": "Floor",
+        "actionCode": null
+      },
+      {
+        "date": "2026-09-15",
+        "text": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 49 - 50. Record Vote Number: 234.",
+        "chamber": "Senate",
+        "type": "Floor",
+        "actionCode": null
+      },
+      {
+        "date": "2026-08-08",
+        "text": "Cloture motion on the motion to proceed to the measure presented in Senate. (CR S4557)",
+        "chamber": "Senate",
+        "type": "Floor",
+        "actionCode": null
+      },
+      {
+        "date": "2026-08-08",
+        "text": "Motion to proceed to consideration of measure made in Senate. (CR S4557)",
+        "chamber": "Senate",
+        "type": "Floor",
+        "actionCode": null
+      },
+      {
+        "date": "2026-06-01",
+        "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 423.",
+        "chamber": "Senate",
+        "type": "Calendars",
+        "actionCode": null
+      },
+      {
+        "date": "2026-06-01",
+        "text": "Committee on Banking, Housing, and Urban Affairs. Reported by Senator Scott SC, with an amendment in the nature of a substitute. Without written report.",
+        "chamber": "Senate",
+        "type": "Committee",
+        "actionCode": null
+      },
+      {
+        "date": "2026-06-01",
+        "text": "Committee on Banking, Housing, and Urban Affairs. Reported by Senator Scott SC, with an amendment in the nature of a substitute. Without written report.",
+        "chamber": "Library of Congress",
+        "type": "Committee",
+        "actionCode": "14000"
+      },
+      {
+        "date": "2026-05-14",
+        "text": "Committee on Banking, Housing, and Urban Affairs. Ordered to be reported with an amendment in the nature of a substitute favorably.",
+        "chamber": "Senate",
+        "type": "Committee",
+        "actionCode": null
+      },
+      {
+        "date": "2025-09-18",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs.",
+        "chamber": "Senate",
+        "type": "IntroReferral",
+        "actionCode": null
+      },
+      {
+        "date": "2025-07-17",
+        "text": "Motion to reconsider laid on the table Agreed to without objection.",
+        "chamber": "House floor actions",
+        "type": "Floor",
+        "actionCode": "H38310"
+      },
+      {
+        "date": "2025-07-17",
+        "text": "On passage Passed by the Yeas and Nays: 294 - 134 (Roll no. 199). (text of amendment in the nature of a substitute: CR H3373-3397)",
+        "chamber": "House floor actions",
+        "type": "Floor",
+        "actionCode": "H37100"
+      },
+      {
+        "date": "2025-07-17",
+        "text": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 294 - 134 (Roll no. 199).",
+        "chamber": "Library of Congress",
+        "type": "Floor",
+        "actionCode": "8000"
+      },
+      {
+        "date": "2025-07-17",
+        "text": "Considered as unfinished business. (consideration: CR H3449)",
+        "chamber": "House floor actions",
+        "type": "Floor",
+        "actionCode": "H30000"
+      },
+      {
+        "date": "2025-07-17",
+        "text": "POSTPONED PROCEEDINGS - At the conclusion of debate on H.R. 3633, the Chair put the question on passage of the bill and by voice vote, announced that the ayes had prevailed. Ms. Craig demanded the yeas and nays and the Chair postponed further proceedings until a time to be announced.",
+        "chamber": "House floor actions",
+        "type": "Floor",
+        "actionCode": "H8D000"
+      },
+      {
+        "date": "2025-07-17",
+        "text": "The previous question was ordered pursuant to the rule.",
+        "chamber": "House floor actions",
+        "type": "Floor",
+        "actionCode": "H35000"
+      },
+      {
+        "date": "2025-07-17",
+        "text": "DEBATE - The House proceeded with one hour of debate on H.R. 3633.",
+        "chamber": "House floor actions",
+        "type": "Floor",
+        "actionCode": "H8D000"
+      },
+      {
+        "date": "2025-07-17",
+        "text": "Rule provides for consideration of H.R. 4016, H.R. 3633, H.R. 1919 and S. 1582. The resolution provides for consideration of H.R. 4016 and H.R. 3633 under a structured rule, and H.R. 1919 and S. 1582 under a closed rule, with one hour of general debate on each bill. The resolution provides for a motion to recommit on H.R. 4016, H.R. 3633, and H.R. 1919, and a motion to commit on S. 1582.",
+        "chamber": "House floor actions",
+        "type": "Floor",
+        "actionCode": "H8D000"
+      },
+      {
+        "date": "2025-07-17",
+        "text": "Considered under the provisions of rule H. Res. 580. (consideration: CR H3373)",
+        "chamber": "House floor actions",
+        "type": "Floor",
+        "actionCode": "H30000"
+      },
+      {
+        "date": "2025-07-15",
+        "text": "Rules Committee Resolution H. Res. 580 Reported to House. Rule provides for consideration of H.R. 4016, H.R. 3633, H.R. 1919 and S. 1582. The resolution provides for consideration of H.R. 4016 and H.R. 3633 under a structured rule, and H.R. 1919 and S. 1582 under a closed rule, with one hour of general debate on each bill. The resolution provides for a motion to recommit on H.R. 4016, H.R. 3633, and H.R. 1919, and a motion to commit on S. 1582.",
+        "chamber": "House floor actions",
+        "type": "Floor",
+        "actionCode": "H1L210"
+      },
+      {
+        "date": "2025-06-23",
+        "text": "Placed on the Union Calendar, Calendar No. 134.",
+        "chamber": "House floor actions",
+        "type": "Calendars",
+        "actionCode": "H12410"
+      },
+      {
+        "date": "2025-06-23",
+        "text": "Reported (Amended) by the Committee on Financial Services. H. Rept. 119-168, Part II.",
+        "chamber": "House floor actions",
+        "type": "Committee",
+        "actionCode": "H12200"
+      },
+      {
+        "date": "2025-06-23",
+        "text": "Reported (Amended) by the Committee on Financial Services. H. Rept. 119-168, Part II.",
+        "chamber": "Library of Congress",
+        "type": "Committee",
+        "actionCode": "5000"
+      },
+      {
+        "date": "2025-06-23",
+        "text": "Reported (Amended) by the Committee on Agriculture. H. Rept. 119-168, Part I.",
+        "chamber": "House floor actions",
+        "type": "Committee",
+        "actionCode": "H12200"
+      },
+      {
+        "date": "2025-06-23",
+        "text": "Reported (Amended) by the Committee on Agriculture. H. Rept. 119-168, Part I.",
+        "chamber": "Library of Congress",
+        "type": "Committee",
+        "actionCode": "5000"
+      },
+      {
+        "date": "2025-06-10",
+        "text": "Ordered to be Reported (Amended) by the Yeas and Nays: 32 - 19.",
+        "chamber": "House committee actions",
+        "type": "Committee",
+        "actionCode": "H19000"
+      },
+      {
+        "date": "2025-06-10",
+        "text": "Committee Consideration and Mark-up Session Held",
+        "chamber": "House committee actions",
+        "type": "Committee",
+        "actionCode": "H15001"
+      },
+      {
+        "date": "2025-06-10",
+        "text": "Ordered to be Reported (Amended) by the Yeas and Nays: 47 - 6.",
+        "chamber": "House committee actions",
+        "type": "Committee",
+        "actionCode": "H19000"
+      },
+      {
+        "date": "2025-06-10",
+        "text": "Committee Consideration and Mark-up Session Held",
+        "chamber": "House committee actions",
+        "type": "Committee",
+        "actionCode": "H15001"
+      },
+      {
+        "date": "2025-05-29",
+        "text": "Referred to the Committee on Financial Services, and in addition to the Committee on Agriculture, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+        "chamber": "House floor actions",
+        "type": "IntroReferral",
+        "actionCode": "H11100"
+      },
+      {
+        "date": "2025-05-29",
+        "text": "Referred to the Committee on Financial Services, and in addition to the Committee on Agriculture, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.",
+        "chamber": "House floor actions",
+        "type": "IntroReferral",
+        "actionCode": "H11100"
+      },
+      {
+        "date": "2025-05-29",
+        "text": "Introduced in House",
+        "chamber": "Library of Congress",
+        "type": "IntroReferral",
+        "actionCode": "Intro-H"
+      },
+      {
+        "date": "2025-05-29",
+        "text": "Introduced in House",
+        "chamber": "Library of Congress",
+        "type": "IntroReferral",
+        "actionCode": "1000"
+      }
+    ]
+  },
+  "factor_11_genius_act": {
+    "factor": 11,
+    "bill": "S 394 (119th Congress)",
+    "url": "https://www.congress.gov/bill/119th-congress/s-bill/394",
+    "total_actions": 2,
+    "latest_action": {
+      "date": "2025-02-04",
+      "text": "Read twice and referred to the Committee on Banking, Housing, and Urban Affairs.",
+      "chamber": "Senate",
+      "type": "IntroReferral",
+      "actionCode": null
+    },
+    "timeline": [
+      {
+        "date": "2025-02-04",
+        "text": "Read twice and referred to the Committee on Banking, Housing, and Urban Affairs.",
+        "chamber": "Senate",
+        "type": "IntroReferral",
+        "actionCode": null
+      },
+      {
+        "date": "2025-02-04",
+        "text": "Introduced in Senate",
+        "chamber": "Library of Congress",
+        "type": "IntroReferral",
+        "actionCode": "10000"
+      }
+    ]
+  }
+}

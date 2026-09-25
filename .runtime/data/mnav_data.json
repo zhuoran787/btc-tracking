@@ -1,0 +1,4 @@
+{
+  "error": "HTTPSConnectionPool(host='bitcointreasuries.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))",
+  "fetched_at": "2026-09-24"
+}

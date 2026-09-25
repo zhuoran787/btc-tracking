@@ -1,0 +1,84 @@
+{
+  "mode": "data_only",
+  "built_at": "2026-09-25T09:14:37+00:00",
+  "bootstrap": true,
+  "config_hash": "22020f39822b3267672010d4245a514a66306aad54f21b463bbf575beb15ce82",
+  "editorial_as_of": "2026-09-17",
+  "schedule": {
+    "cron": "20 7 * * *",
+    "timezone": "Asia/Shanghai",
+    "label": "北京时间每天 07:20"
+  },
+  "sources": [
+    {
+      "source": "api_data.json",
+      "status": "retained",
+      "source_date": "2026-09-17T05:08:17.142376"
+    },
+    {
+      "source": "etf_flows.json",
+      "status": "retained",
+      "source_date": "2026-09-16"
+    },
+    {
+      "source": "treasuries.json",
+      "status": "retained",
+      "source_date": "2026-09-17T05:07:00.878020"
+    },
+    {
+      "source": "brk_data.json",
+      "status": "retained",
+      "source_date": "2026-09-24"
+    },
+    {
+      "source": "derivatives_data.json",
+      "status": "retained",
+      "source_date": "2026-09-24"
+    },
+    {
+      "source": "mnav_data.json",
+      "status": "retained",
+      "source_date": "2026-09-24"
+    },
+    {
+      "source": "dat_data.json",
+      "status": "retained",
+      "source_date": "2026-09-24"
+    },
+    {
+      "source": "tether_data.json",
+      "status": "retained",
+      "source_date": "2026-06-30"
+    },
+    {
+      "source": "fear_greed.json",
+      "status": "retained",
+      "source_date": "2026-09-24T21:11:12.902966Z"
+    },
+    {
+      "source": "ahr999.json",
+      "status": "retained",
+      "source_date": "2026-09-23"
+    },
+    {
+      "source": "coinmetrics_data.json",
+      "status": "retained",
+      "source_date": "2026-09-16"
+    },
+    {
+      "source": "bgeometrics_data.json",
+      "status": "retained",
+      "source_date": "2026-09-17T05:07:00.863845"
+    },
+    {
+      "source": "strategy_data.json",
+      "status": "retained",
+      "source_date": "2026-09-17T05:09:53.759942"
+    }
+  ],
+  "preserved_inputs": {
+    "opinions_input.json": "554d64a32c73207418483cc6cc848071166cdd1cd84c9b78f9c76bbedc4e64e7",
+    "websearch_cache.json": "f2547b2b89dbe5b959b6a2ca1b95c77328b63c2d960a6e26e546855a922dbb4e",
+    "user_inputs_cache.json": "12831da869d082bcf1c175ea6c05f85719e89ea73c3629b921242ff6a14cb4ee"
+  }
+}

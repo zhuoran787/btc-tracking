@@ -1,0 +1,92 @@
+{
+  "fetched_at": "2026-09-24",
+  "aggregate_source": "https://api.coingecko.com/api/v3/companies/public_treasury/bitcoin",
+  "featured_source": "https://bitcointreasuries.net/public-companies/",
+  "featured_companies": [
+    "Strategy",
+    "Twenty One Capital",
+    "Metaplanet",
+    "MARA Holdings"
+  ],
+  "total_holdings": 1296098.6692943657,
+  "total_value_usd": 109312419260.33286,
+  "market_cap_dominance_pct": 6.17,
+  "company_count": 180,
+  "cost_basis_summary": [
+    {
+      "name": "Strategy",
+      "symbol": "MSTR.US",
+      "country": "USA",
+      "holdings": 846000.0,
+      "holdings_as_of": "2026-09-21",
+      "total_cost_basis_usd": 63800000000.0,
+      "avg_cost_basis_usd": 75413.71158392435,
+      "holdings_source": "https://bitcointreasuries.net/public-companies/strategy",
+      "cost_source": "https://bitcointreasuries.net/public-companies/strategy",
+      "cost_currency": "USD",
+      "avg_cost_basis_native": 75413.71158392435,
+      "total_cost_basis_native": 63800000000.0,
+      "avg_current_price_usd": 84339.58143005097,
+      "pnl_pct": 11.835871300663193
+    },
+    {
+      "name": "Twenty One Capital",
+      "symbol": "XXI.US",
+      "country": "USA",
+      "holdings": 43514.0,
+      "holdings_as_of": "2025-07-30",
+      "total_cost_basis_usd": 3692815061.0,
+      "avg_cost_basis_usd": 84864.98738337087,
+      "holdings_source": "https://bitcointreasuries.net/public-companies/twenty-one-capital",
+      "cost_source": "https://bitcointreasuries.net/public-companies/twenty-one-capital",
+      "cost_currency": "USD",
+      "avg_cost_basis_native": 84864.98738337087,
+      "total_cost_basis_native": 3692815061.0,
+      "avg_current_price_usd": 84339.58143005097,
+      "pnl_pct": -0.6191080320868014
+    },
+    {
+      "name": "Metaplanet",
+      "symbol": "3350.T",
+      "country": "Japan",
+      "holdings": 43000.0,
+      "holdings_as_of": "2026-07-02",
+      "total_cost_basis_usd": null,
+      "avg_cost_basis_usd": null,
+      "holdings_source": "https://bitcointreasuries.net/public-companies/metaplanet",
+      "cost_source": "https://contents.xj-storage.jp/xcontents/33500/ef8f0fb6/d3f6/44c3/aafb/fbe407834e59/140120260702587030.pdf",
+      "avg_cost_basis_native": 15331542.0,
+      "total_cost_basis_native": 659256000000.0,
+      "cost_currency": "JPY",
+      "cost_as_of": "June 30, 2026",
+      "disclosure_date": "2026-07-02",
+      "avg_current_price_usd": 84339.58143005097,
+      "pnl_pct": null
+    },
+    {
+      "name": "MARA Holdings",
+      "symbol": "MARA.US",
+      "country": "USA",
+      "holdings": 35577.0,
+      "holdings_as_of": "2026-08-07",
+      "total_cost_basis_usd": 1944717000.0,
+      "avg_cost_basis_usd": 54662.19748714057,
+      "holdings_source": "https://bitcointreasuries.net/public-companies/mara",
+      "cost_source": "https://bitcointreasuries.net/public-companies/mara",
+      "cost_currency": "USD",
+      "avg_cost_basis_native": 54662.19748714057,
+      "total_cost_basis_native": 1944717000.0,
+      "avg_current_price_usd": 84339.58143005097,
+      "pnl_pct": 54.29233603331092
+    }
+  ],
+  "total_cost_summary": {
+    "scope": "four tracked companies; USD-comparable rows only",
+    "total_entry_value_usd": 69437532061.0,
+    "covered_holdings": 925091.0,
+    "tracked_holdings": 968091.0,
+    "coverage_pct": 95.55826879911082,
+    "weighted_avg_cost_usd": 75060.21792558786
+  },
+  "history_days_accumulated": 75
+}

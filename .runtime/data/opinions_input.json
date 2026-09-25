@@ -1,0 +1,641 @@
+{
+  "report_date": "2026-09-17",
+  "one_liner": "本期氛围从普遍期待立法转为分歧：Matt Hougan 9/16 明确修正年初判断，认为 Clarity 失败也不会阻断牛市；James Check 从 9/4 强调牛市早期，转为 9/14 公开导语关注 50 周均线下震荡与宏观压力（仅核公开部分）。Novogratz 9/15 警告立法失败会延长政策不确定性；Tom Lee 仍看好年末机构配置，Peter Schiff 继续看空 BTC",
+  "categories": [
+    {
+      "name": "币圈老鸟，一般倾向看多",
+      "people": [
+        {
+          "name": "CZ",
+          "org": "Binance",
+          "handle": "@cz_binance",
+          "has_update": false,
+          "date": null,
+          "source_url": null,
+          "stance": "看多",
+          "summary": "近 14 天未找到符合口径且可核实的新观点；命中报道回溯 8/27 演讲，超出窗口",
+          "raw_search_results": [
+            {
+              "url": "https://news.google.com/rss/search?q=CZ+Binance+blockchain+BTC+ETH+strategy+ecosystem+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "CZ Binance blockchain BTC ETH strategy ecosystem [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 11 条；零命中已另跑互联网搜索"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=David+Sacks+White+House+Crypto+Czar+BTC+strategy+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "David Sacks White House Crypto Czar BTC strategy [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 8 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Star Xu",
+          "org": "OKX",
+          "handle": "@star_okx",
+          "has_update": false,
+          "date": null,
+          "source_url": null,
+          "stance": "看多",
+          "summary": "近 14 天未找到符合口径且可核实的新观点；命中 ICE 合作旧闻，原事件超出窗口",
+          "raw_search_results": [
+            {
+              "url": "https://news.google.com/rss/search?q=Star+Xu+OKX+blockchain+BTC+ETH+market+view+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Star Xu OKX blockchain BTC ETH market view [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 1 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Vitalik Buterin",
+          "org": "Ethereum",
+          "handle": "@VitalikButerin",
+          "has_update": true,
+          "date": "2026-09-07",
+          "source_url": "https://beincrypto.com/buterin-bets-against-ai-bitcoin-crash/",
+          "stance": "看多",
+          "summary": "反对“AI 会令 BTC 两年内跌逾 50%”的预测，称长期网络安全前景乐观，现有约 90% 净资产已承担相反方向的风险；这是解释既有仓位，并非宣布本期增持",
+          "raw_search_results": [
+            {
+              "date": "2026-09-07",
+              "url": "https://beincrypto.com/buterin-bets-against-ai-bitcoin-crash/",
+              "title": "Vitalik Buterin 本期核实来源",
+              "snippet": "反对“AI 会令 BTC 两年内跌逾 50%”的预测，称长期网络安全前景乐观，现有约 90% 净资产已承担相反方向的风险；这是解释既有仓位，并非宣布本期增持"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=Vitalik+Buterin+Ethereum+BTC+market+commentary+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Vitalik Buterin Ethereum BTC market commentary [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 23 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Brad Garlinghouse",
+          "org": "Ripple",
+          "handle": "@bgarlinghouse",
+          "has_update": true,
+          "date": "2026-09-15",
+          "source_url": "https://u.today/ripple-ceo-says-crypto-will-win-with-or-without-clarity-act?from=article-links",
+          "stance": "看多",
+          "summary": "投票前称，无论 Clarity 是否通过，更好的技术仍会推动行业发展，同时主张继续妥协争取立法；这是投票前发言，不能当作对失败结果的事后回应",
+          "raw_search_results": [
+            {
+              "date": "2026-09-15",
+              "url": "https://u.today/ripple-ceo-says-crypto-will-win-with-or-without-clarity-act?from=article-links",
+              "title": "Brad Garlinghouse 本期核实来源",
+              "snippet": "投票前称，无论 Clarity 是否通过，更好的技术仍会推动行业发展，同时主张继续妥协争取立法；这是投票前发言，不能当作对失败结果的事后回应"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=Brad+Garlinghouse+Ripple+BTC+ETH+market+strategy+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Brad Garlinghouse Ripple BTC ETH market strategy [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 17 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Garrett Jin",
+          "org": "前 BitForex CEO / Hyperliquid 大户",
+          "handle": "@GarrettBullish",
+          "has_update": false,
+          "date": null,
+          "source_url": null,
+          "stance": "看多",
+          "summary": "近 14 天未找到符合口径且可核实的新观点；近期 ZEC 空仓不属于本报告 BTC/ETH 观点范围",
+          "raw_search_results": [
+            {
+              "url": "https://news.google.com/rss/search?q=Garrett+Jin+BTC+ETH+trade+strategy+market+view+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Garrett Jin BTC ETH trade strategy market view [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 2 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Tom Lee",
+          "org": "Fundstrat / Bitmine",
+          "handle": "@fundstrat",
+          "has_update": true,
+          "date": "2026-09-14",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1829311/000149315226042492/ex99-1.htm",
+          "stance": "看多",
+          "summary": "认为 ETH/BTC 相对强势、代币化与 AI 代理需求支持加密资产，四年周期可能未来数周见底，三季度表现有望吸引年末机构增配；其列举的 Clarity 催化随后在 9/15 受挫",
+          "raw_search_results": [
+            {
+              "date": "2026-09-14",
+              "url": "https://www.sec.gov/Archives/edgar/data/1829311/000149315226042492/ex99-1.htm",
+              "title": "Tom Lee 本期核实来源",
+              "snippet": "认为 ETH/BTC 相对强势、代币化与 AI 代理需求支持加密资产，四年周期可能未来数周见底，三季度表现有望吸引年末机构增配；其列举的 Clarity 催化随后在 9/15 受挫"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=Tom+Lee+Fundstrat+BMNR+BTC+ETH+bull+market+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Tom Lee Fundstrat BMNR BTC ETH bull market [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 11 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Joseph Chalom",
+          "org": "SharpLink",
+          "handle": "@joechalom",
+          "has_update": false,
+          "date": null,
+          "source_url": null,
+          "stance": "看多",
+          "summary": "近 14 天未找到符合口径且可核实的新观点；近期活动预告未提供可核的新市场判断",
+          "raw_search_results": [
+            {
+              "url": "https://news.google.com/rss/search?q=Joseph+Chalom+SharpLink+BTC+ETH+ecosystem+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Joseph Chalom SharpLink BTC ETH ecosystem [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Peter Thiel",
+          "org": "Founders Fund",
+          "handle": "（无活跃 twitter）",
+          "has_update": false,
+          "date": null,
+          "source_url": null,
+          "stance": "看多",
+          "summary": "近 14 天未找到符合口径且可核实的新观点；ETHZ 持股退出报道回溯 2 月事件，超出窗口",
+          "raw_search_results": [
+            {
+              "url": "https://news.google.com/rss/search?q=Peter+Thiel+Founders+Fund+crypto+BTC+ETH+market+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Peter Thiel Founders Fund crypto BTC ETH market [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 5 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Trendresearch",
+          "org": "Trend Research (Medium)",
+          "handle": "（Medium）",
+          "has_update": false,
+          "date": null,
+          "source_url": null,
+          "stance": "看多",
+          "summary": "近 14 天未找到符合口径且可核实的新观点；固定 Medium 渠道最新文章仍为 2026-01-07",
+          "raw_search_results": [
+            {
+              "url": "https://trendresearch.medium.com/",
+              "title": "固定渠道直接核查",
+              "snippet": "本期直接打开 Medium，最新文章仍为 2026-01-07，窗口内无更新",
+              "date": "2026-09-17"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=Trendresearch+Medium+crypto+BTC+ETH+analysis+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Trendresearch Medium crypto BTC ETH analysis [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Matt Hougan",
+          "org": "Bitwise CIO",
+          "handle": "@Matt_Hougan",
+          "has_update": true,
+          "date": "2026-09-16",
+          "source_url": "https://experts.bitwiseinvestments.com/cio-memos/the-clarity-acts-failure-is-a-speed-bump-not-a-roadblock",
+          "stance": "看多",
+          "summary": "明确修正年初“法案失败会延长加密寒冬”的判断：如今机构采用已在推进，SEC/CFTC 仍可制定规则，故 Clarity 失败是减速带而非阻断牛市；但承认监管规则不如立法持久",
+          "raw_search_results": [
+            {
+              "date": "2026-09-16",
+              "url": "https://experts.bitwiseinvestments.com/cio-memos/the-clarity-acts-failure-is-a-speed-bump-not-a-roadblock",
+              "title": "Matt Hougan 本期核实来源",
+              "snippet": "明确修正年初“法案失败会延长加密寒冬”的判断：如今机构采用已在推进，SEC/CFTC 仍可制定规则，故 Clarity 失败是减速带而非阻断牛市；但承认监管规则不如立法持久"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=Matt+Hougan+Bitwise+BTC+ETH+market+strategy+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Matt Hougan Bitwise BTC ETH market strategy [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 4 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "VanEck",
+          "org": "数字资产研究 · Matthew Sigel；有 BTC 敞口背景",
+          "handle": "@matthew_sigel",
+          "has_update": false,
+          "collection_status": "pending",
+          "date": null,
+          "source": "官网（待首次采集）",
+          "source_url": "https://www.vaneck.com/us/en/insights/thought-leaders/matthew-sigel",
+          "stance": null,
+          "summary": "待首次采集；下次运行先查官网研究，再补充 Matthew Sigel 的 X，不代表已核实本期无更新",
+          "raw_search_results": [],
+          "sources": []
+        },
+        {
+          "name": "David Sacks",
+          "org": "前白宫 Crypto Czar",
+          "handle": "@DavidSacks",
+          "has_update": false,
+          "date": null,
+          "source_url": null,
+          "stance": "看多",
+          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "raw_search_results": [
+            {
+              "url": "https://news.google.com/rss/search?q=David+Sacks+White+House+Crypto+Czar+BTC+strategy+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "David Sacks White House Crypto Czar BTC strategy [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 8 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Patrick Witt",
+          "org": "白宫数字资产顾问委员会",
+          "handle": "（白宫数字资产顾问委员会执行主任）",
+          "has_update": true,
+          "date": "2026-09-14",
+          "source_url": "https://www.theblock.co/news/regulation/2026-09-14-white-house-crypto-adviser-feels-very-good-ahead-senate-clarity-act-vote-tuesday-414702",
+          "stance": "看多",
+          "summary": "投票前称白宫已提出最好、最终的方案，对通过感到乐观；同时表示若国会无法推进，监管机构会继续行动。9/15 程序投票失败，故当时的乐观预期没有兑现",
+          "raw_search_results": [
+            {
+              "date": "2026-09-14",
+              "url": "https://www.theblock.co/news/regulation/2026-09-14-white-house-crypto-adviser-feels-very-good-ahead-senate-clarity-act-vote-tuesday-414702",
+              "title": "Patrick Witt 本期核实来源",
+              "snippet": "投票前称白宫已提出最好、最终的方案，对通过感到乐观；同时表示若国会无法推进，监管机构会继续行动。9/15 程序投票失败，故当时的乐观预期没有兑现"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=Patrick+Witt+White+House+digital+assets+Bitcoin+reserve+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Patrick Witt White House digital assets Bitcoin reserve [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 8 条；零命中已另跑互联网搜索"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "币圈的空头",
+      "people": [
+        {
+          "name": "Brett Knoblauch",
+          "org": "Cantor Fitzgerald",
+          "handle": "Cantor Fitzgerald 分析师",
+          "has_update": false,
+          "date": null,
+          "source_url": null,
+          "stance": "看空",
+          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "raw_search_results": [
+            {
+              "url": "https://news.google.com/rss/search?q=Brett+Knoblauch+Cantor+Fitzgerald+crypto+bitcoin+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Brett Knoblauch Cantor Fitzgerald crypto bitcoin [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 3 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Aaron Day",
+          "org": "Daylight Freedom",
+          "handle": "@AaronRDay",
+          "has_update": false,
+          "date": null,
+          "source_url": null,
+          "stance": "看空",
+          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "raw_search_results": [
+            {
+              "url": "https://news.google.com/rss/search?q=Aaron+Day+Daylight+Freedom+bitcoin+commentary+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Aaron Day Daylight Freedom bitcoin commentary [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Jemima Kelly",
+          "org": "FT 专栏",
+          "handle": "@jemimajoanna",
+          "has_update": false,
+          "date": null,
+          "source_url": null,
+          "stance": "看空",
+          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "raw_search_results": [
+            {
+              "url": "https://news.google.com/rss/search?q=Jemima+Kelly+FT+bitcoin+ethereum+critique+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Jemima Kelly FT bitcoin ethereum critique [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Peter Schiff",
+          "org": "Euro Pacific",
+          "handle": "@PeterSchiff",
+          "has_update": true,
+          "date": "2026-09-09",
+          "source_url": "https://www.schiffgold.com/interviews/peter-schiff-golds-bull-market-is-just-getting-started",
+          "stance": "看空",
+          "summary": "维持看多黄金、看空 BTC：认为美元购买力削弱支持黄金，而潜在 BTC 买家大多已经入场，后续卖盘可能压价；属于其一贯立场延续，并非本期由多转空",
+          "raw_search_results": [
+            {
+              "date": "2026-09-09",
+              "url": "https://www.schiffgold.com/interviews/peter-schiff-golds-bull-market-is-just-getting-started",
+              "title": "Peter Schiff 本期核实来源",
+              "snippet": "维持看多黄金、看空 BTC：认为美元购买力削弱支持黄金，而潜在 BTC 买家大多已经入场，后续卖盘可能压价；属于其一贯立场延续，并非本期由多转空"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=Peter+Schiff+bitcoin+ethereum+gold+market+view+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Peter Schiff bitcoin ethereum gold market view [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 5 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Nassim Taleb",
+          "org": "NYU / 作家",
+          "handle": "@nntaleb",
+          "has_update": false,
+          "date": null,
+          "source_url": null,
+          "stance": "看空",
+          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "raw_search_results": [
+            {
+              "url": "https://news.google.com/rss/search?q=Nassim+Taleb+bitcoin+ethereum+critique+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Nassim Taleb bitcoin ethereum critique [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "对冲基金，一般中性偏多",
+      "people": [
+        {
+          "name": "BH Digital (Brevan Howard)",
+          "org": "Brevan Howard Digital",
+          "handle": "@BHDigitalAssets",
+          "has_update": false,
+          "date": null,
+          "source_url": null,
+          "stance": "中性偏多",
+          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "raw_search_results": [
+            {
+              "url": "https://news.google.com/rss/search?q=Brevan+Howard+BH+Digital+crypto+BTC+ETH+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Brevan Howard BH Digital crypto BTC ETH [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Galaxy Digital (Alex Thorn)",
+          "org": "Galaxy Research",
+          "handle": "@glxyresearch",
+          "has_update": true,
+          "date": "2026-09-11",
+          "source_url": "https://www.galaxy.com/insights/research/liquid-network-exploit-4000-btc-bitcoin-sidechain-blockstream-white-hat",
+          "stance": "中性偏多",
+          "summary": "讨论 Liquid 侧链 4,000 BTC 失窃、其中 3,400 BTC 已归还事件：认为不构成 BTC 的系统性威胁，但暴露出安全防护需加强；侧链事件不能表述为比特币主链被攻破",
+          "raw_search_results": [
+            {
+              "date": "2026-09-11",
+              "url": "https://www.galaxy.com/insights/research/liquid-network-exploit-4000-btc-bitcoin-sidechain-blockstream-white-hat",
+              "title": "Galaxy Digital (Alex Thorn) 本期核实来源",
+              "snippet": "讨论 Liquid 侧链 4,000 BTC 失窃、其中 3,400 BTC 已归还事件：认为不构成 BTC 的系统性威胁，但暴露出安全防护需加强；侧链事件不能表述为比特币主链被攻破"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=Galaxy+Digital+Alex+Thorn+BTC+ETH+research+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Galaxy Digital Alex Thorn BTC ETH research [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 4 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Mike Novogratz",
+          "org": "Galaxy Digital",
+          "handle": "@novogratz",
+          "has_update": true,
+          "date": "2026-09-15",
+          "source_url": "https://coingape.com/galaxy-ceo-warns-if-clarity-doesnt-advance-u-s-crypto-rules-may-never-arrive/",
+          "stance": "中性偏多",
+          "summary": "投票前警告：若 Clarity 无法推进，美国可能长期缺乏稳定的加密市场结构法律，行业面临外迁风险；SEC/CFTC 未来两年仍能制定规则，但行政规则不能替代长期法律确定性",
+          "raw_search_results": [
+            {
+              "date": "2026-09-15",
+              "url": "https://coingape.com/galaxy-ceo-warns-if-clarity-doesnt-advance-u-s-crypto-rules-may-never-arrive/",
+              "title": "Mike Novogratz 本期核实来源",
+              "snippet": "投票前警告：若 Clarity 无法推进，美国可能长期缺乏稳定的加密市场结构法律，行业面临外迁风险；SEC/CFTC 未来两年仍能制定规则，但行政规则不能替代长期法律确定性"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=Mike+Novogratz+Galaxy+bitcoin+ethereum+market+view+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Mike Novogratz Galaxy bitcoin ethereum market view [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 8 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "DRW Trading (Don Wilson)",
+          "org": "DRW / Cumberland",
+          "handle": "@DRWTrading",
+          "has_update": false,
+          "date": null,
+          "source_url": null,
+          "stance": "中性偏多",
+          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "raw_search_results": [
+            {
+              "url": "https://news.google.com/rss/search?q=DRW+Cumberland+Don+Wilson+BTC+ETH+trading+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "DRW Cumberland Don Wilson BTC ETH trading [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Jason Huang",
+          "org": "NextGen Digital Venture",
+          "handle": "（中文圈）",
+          "has_update": false,
+          "date": null,
+          "source_url": null,
+          "stance": "中性偏多",
+          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "raw_search_results": [
+            {
+              "url": "https://news.google.com/rss/search?q=Jason+Huang+NextGen+NDV+BTC+ETH+ecosystem+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Jason Huang NextGen NDV BTC ETH ecosystem [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资金面分析",
+      "people": [
+        {
+          "name": "Franklin Bi",
+          "org": "Pantera Capital",
+          "handle": "@FranklinBi",
+          "has_update": false,
+          "date": null,
+          "source_url": null,
+          "whale_summary": "本期未核得新的具名鲸鱼买卖结论",
+          "market_summary": "本周无可核实更新",
+          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "raw_search_results": [
+            {
+              "url": "https://news.google.com/rss/search?q=Franklin+Bi+Pantera+bitcoin+whales+onchain+flows+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Franklin Bi Pantera bitcoin whales onchain flows [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=Franklin+Bi+Pantera+blockchain+BTC+ETH+ecosystem+strategy+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Franklin Bi Pantera blockchain BTC ETH ecosystem strategy [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Parker Lewis",
+          "org": "Zaprite / Unchained",
+          "handle": "@parkeralewis",
+          "has_update": false,
+          "date": null,
+          "source_url": null,
+          "whale_summary": "本期未核得新的具名鲸鱼买卖结论",
+          "market_summary": "本周无可核实更新",
+          "summary": "近 14 天未找到符合口径且可核实的新观点；无关材料、旧文与非本人观点均不纳入",
+          "raw_search_results": [
+            {
+              "url": "https://news.google.com/rss/search?q=Parker+Lewis+Unchained+bitcoin+whales+analysis+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Parker Lewis Unchained bitcoin whales analysis [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=Parker+Lewis+Unchained+bitcoin+ethereum+strategy+market+view+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Parker Lewis Unchained bitcoin ethereum strategy market view [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "James Check (Checkmate)",
+          "org": "Checkonchain",
+          "handle": "@_Checkmatey_",
+          "has_update": true,
+          "date": "2026-09-14",
+          "source_url": "https://newsletter.checkonchain.com/p/local-sellers",
+          "whale_summary": "本期未核得新的具名鲸鱼买卖结论",
+          "market_summary": "⚠️ 仅核公开导语、未核付费全文：本期关注 BTC 在 50 周均线下震荡，以及宏观压力对风险资产的影响；相较 9/4 的牛市早期叙述，短期阻力更突出",
+          "summary": "⚠️ 仅核公开导语、未核付费全文：本期关注 BTC 在 50 周均线下震荡，以及宏观压力对风险资产的影响；相较 9/4 的牛市早期叙述，短期阻力更突出",
+          "raw_search_results": [
+            {
+              "date": "2026-09-14",
+              "url": "https://newsletter.checkonchain.com/p/local-sellers",
+              "title": "James Check (Checkmate) 本期核实来源",
+              "snippet": "⚠️ 仅核公开导语、未核付费全文：本期关注 BTC 在 50 周均线下震荡，以及宏观压力对风险资产的影响；相较 9/4 的牛市早期叙述，短期阻力更突出"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=James+Check+Checkmate+bitcoin+whales+onchain+LTH+STH+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "James Check Checkmate bitcoin whales onchain LTH STH [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=James+Check+Checkmate+bitcoin+ethereum+market+analysis+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "James Check Checkmate bitcoin ethereum market analysis [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 1 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Arkham Intelligence",
+          "org": "Arkham",
+          "handle": "@arkham",
+          "has_update": true,
+          "date": "2026-09-08",
+          "source_url": "https://info.arkm.com/announcements/arkham-api-upgrade-real-time-intel",
+          "whale_summary": "本期未核得新的具名鲸鱼买卖结论",
+          "market_summary": "公布 API 更新：地址标签与实体信息从每日更新提速至分钟级，便于追踪资金流；这是平台能力更新，不是新的 BTC 多空判断",
+          "summary": "公布 API 更新：地址标签与实体信息从每日更新提速至分钟级，便于追踪资金流；这是平台能力更新，不是新的 BTC 多空判断",
+          "raw_search_results": [
+            {
+              "date": "2026-09-08",
+              "url": "https://info.arkm.com/announcements/arkham-api-upgrade-real-time-intel",
+              "title": "Arkham Intelligence 本期核实来源",
+              "snippet": "公布 API 更新：地址标签与实体信息从每日更新提速至分钟级，便于追踪资金流；这是平台能力更新，不是新的 BTC 多空判断"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=Arkham+Intelligence+bitcoin+whale+movements+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Arkham Intelligence bitcoin whale movements [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 9 条；零命中已另跑互联网搜索"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=Arkham+Intelligence+platform+features+ecosystem+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Arkham Intelligence platform features ecosystem [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+            }
+          ]
+        },
+        {
+          "name": "Lookonchain",
+          "org": "Lookonchain",
+          "handle": "@lookonchain",
+          "has_update": true,
+          "date": "2026-09-17",
+          "source_url": "https://t.me/lookonchainchannel/10259",
+          "whale_summary": "9/17：地址 0x0058 花费 1,300 万 USDC 买入 5,368 ETH，均价约 $2,422（Lookonchain 地址识别口径）",
+          "market_summary": "9/16：地址 0x4553 把 512 WBTC 与 354 cbBTC 换成 26,924 ETH；这是 BTC 敞口转向 ETH，不能说成全体鲸鱼净买入",
+          "summary": "9/17 报告地址 0x0058 以 1,300 万 USDC 买入 5,368 ETH，均价约 $2,422；9/16 另有鲸鱼把 WBTC/cbBTC 换成 ETH，显示部分资金在币种间轮动",
+          "raw_search_results": [
+            {
+              "date": "2026-09-17",
+              "url": "https://t.me/lookonchainchannel/10259",
+              "title": "Lookonchain 本期核实来源",
+              "snippet": "9/17 报告地址 0x0058 以 1,300 万 USDC 买入 5,368 ETH，均价约 $2,422；9/16 另有鲸鱼把 WBTC/cbBTC 换成 ETH，显示部分资金在币种间轮动"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=Lookonchain+bitcoin+BTC+whale+activity+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Lookonchain bitcoin BTC whale activity [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 7 条；零命中已另跑互联网搜索"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=Lookonchain+ethereum+BTC+tracking+commentary+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Lookonchain ethereum BTC tracking commentary [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 0 条；零命中已另跑互联网搜索"
+            },
+            {
+              "date": "2026-09-16",
+              "url": "https://t.me/lookonchainchannel/10247",
+              "title": "BTC to ETH rotation",
+              "snippet": "9/16：地址 0x4553 把 512 WBTC 与 354 cbBTC 换成 26,924 ETH；这是 BTC 敞口转向 ETH，不能说成全体鲸鱼净买入"
+            }
+          ]
+        },
+        {
+          "name": "Whale Alert",
+          "org": "Whale Alert",
+          "handle": "@whale_alert",
+          "has_update": true,
+          "date": "2026-09-06",
+          "source_url": "https://cryptobriefing.com/bitcoin-600-btc-dormant-16-years/",
+          "whale_summary": "据报道，Whale Alert 标记 12 笔早期挖矿奖励合计 600 BTC 在沉睡约 16 年后移动；这是链上转账，不能直接认定为交易所抛售，也无证据归属于中本聪",
+          "market_summary": "该来源是链上异动记录，没有本人新增方向性市场观点；转账目的尚不能据此确认",
+          "summary": "据报道，Whale Alert 标记 12 笔早期挖矿奖励合计 600 BTC 在沉睡约 16 年后移动；这是链上转账，不能直接认定为交易所抛售，也无证据归属于中本聪",
+          "raw_search_results": [
+            {
+              "date": "2026-09-06",
+              "url": "https://cryptobriefing.com/bitcoin-600-btc-dormant-16-years/",
+              "title": "Whale Alert 本期核实来源",
+              "snippet": "据报道，Whale Alert 标记 12 笔早期挖矿奖励合计 600 BTC 在沉睡约 16 年后移动；这是链上转账，不能直接认定为交易所抛售，也无证据归属于中本聪"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=Whale+Alert+bitcoin+dormant+whale+transfer+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Whale Alert bitcoin dormant whale transfer [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 17 条；零命中已另跑互联网搜索"
+            },
+            {
+              "url": "https://news.google.com/rss/search?q=Whale+Alert+ethereum+stablecoin+transfers+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+              "title": "Whale Alert ethereum stablecoin transfers [month] [year]",
+              "snippet": "本期独立 RSS 检索，窗口 14 天；命中 4 条；零命中已另跑互联网搜索"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BTC Tracking Report — {{ report_date }}</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+/* ── Reset + Variables (Cream / warm-light theme) ─────────────── */
+:root {
+  /* Page bg = warm cream; card bg = off-white; raised pill = lightest cream */
+  --bg: #f7f1e3; --bg2: #f1e9d4; --card: #fefdf7;
+  --border: #e2d8be; --border-hover: #c9bd9a;
+  /* Text: dark slate for primary, warm gray for dim/muted */
+  --text: #2c2618; --text-dim: #6b624e; --text-muted: #9a907a;
+  /* Accent: muted navy that reads well on cream */
+  --accent: #2563eb; --accent-dim: #1d4ed8;
+  /* Status colors: slightly desaturated to harmonize with cream */
+  --green: #15803d; --green-bg: rgba(21,128,61,0.10);
+  --yellow: #a16207; --yellow-bg: rgba(161,98,7,0.10);
+  --red: #b91c1c; --red-bg: rgba(185,28,28,0.10);
+  --radius: 10px;
+  /* Shadow for cards (subtle, replaces dark bg's natural depth) */
+  --shadow: 0 1px 3px rgba(44,38,24,0.06), 0 1px 2px rgba(44,38,24,0.04);
+  --shadow-hover: 0 4px 12px rgba(44,38,24,0.08);
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif;
+  font-size: 14px; line-height: 1.5; padding: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 1440px; margin: 0 auto; }
+
+/* ── Header ─────────────────────────────────────────────────── */
+.header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 24px 28px; background: var(--card);
+  border-radius: var(--radius); margin-bottom: 24px;
+  border: 1px solid var(--border);
+}
+.header h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.3px; }
+.header .subtitle { color: var(--text-dim); font-size: 13px; margin-top: 2px; }
+.header .price {
+  font-size: 36px; font-weight: 700; letter-spacing: -0.5px;
+  font-variant-numeric: tabular-nums;
+}
+.header .price-meta { color: var(--text-dim); font-size: 13px; text-align: right; margin-top: 4px; }
+
+/* ── Section Headers ────────────────────────────────────────── */
+.section-header {
+  font-size: 18px; font-weight: 600; margin: 32px 0 14px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--border);
+  letter-spacing: -0.2px;
+}
+.section-header span { color: var(--text-dim); font-weight: 400; font-size: 13px; margin-left: 10px; }
+
+/* ── Factor Dashboard Table ─────────────────────────────────── */
+.dashboard-wrap { overflow-x: auto; margin-bottom: 28px; }
+.dashboard {
+  width: 100%; border-collapse: separate; border-spacing: 0;
+  background: var(--card); border-radius: var(--radius);
+  border: 1px solid var(--border); overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.dashboard th {
+  padding: 10px 14px; text-align: left; font-size: 12px;
+  color: var(--text-muted); font-weight: 500; text-transform: uppercase;
+  letter-spacing: 0.5px; background: var(--bg2);
+  border-bottom: 1px solid var(--border); white-space: nowrap;
+}
+.dashboard td {
+  padding: 11px 14px; border-bottom: 1px solid var(--border);
+  font-size: 13px; font-variant-numeric: tabular-nums;
+}
+.dashboard tbody tr:last-child td { border-bottom: none; }
+.dashboard tbody tr:hover { background: rgba(37,99,235,0.05); }
+.dashboard tr.highlight-green { background: var(--green-bg); }
+.dashboard tr.highlight-red { background: var(--red-bg); }
+.factor-name { font-weight: 600; white-space: nowrap; font-size: 14px; }
+.factor-status { max-width: 280px; color: var(--text-dim); font-size: 12px; line-height: 1.4; }
+.factor-rationale { color: var(--text-muted); font-size: 11px; max-width: 320px; }
+.na { color: var(--text-muted); }
+.change-pos { color: var(--green); font-weight: 500; }
+.change-neg { color: var(--red); font-weight: 500; }
+.signal { font-size: 16px; text-align: center; }
+
+/* Percentile bar */
+.pct-bar {
+  width: 72px; height: 18px; background: var(--bg);
+  border-radius: 3px; position: relative; overflow: hidden;
+  display: inline-flex; align-items: center;
+}
+.pct-fill { height: 100%; border-radius: 3px; min-width: 2px; }
+.pct-bar .pct-label {
+  position: absolute; right: 5px; font-size: 10px;
+  font-weight: 600; color: var(--text); z-index: 1;
+}
+
+/* ── Cards ──────────────────────────────────────────────────── */
+.card {
+  background: var(--card); border-radius: var(--radius);
+  padding: 20px; margin-bottom: 16px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.card:hover { border-color: var(--border-hover); box-shadow: var(--shadow-hover); }
+.card-title {
+  font-size: 15px; font-weight: 600; margin-bottom: 14px;
+  display: flex; align-items: center; gap: 8px;
+}
+.card-title .badge {
+  font-size: 10px; font-weight: 500; padding: 2px 7px;
+  border-radius: 4px; background: var(--accent-dim); color: #fff;
+}
+.chart-container { position: relative; height: 240px; }
+
+/* ── Grid layouts ───────────────────────────────────────────── */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+@media (max-width: 1000px) { .grid-3 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 768px) {
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .header { flex-direction: column; gap: 16px; text-align: center; }
+  .header .price-meta { text-align: center; }
+  body { padding: 12px; }
+}
+
+/* ── Stat boxes ─────────────────────────────────────────────── */
+.stat-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+.stat-box {
+  background: var(--bg2); border-radius: 6px; padding: 10px 14px;
+  flex: 1; min-width: 130px;
+}
+.stat-label { font-size: 11px; color: var(--text-muted); margin-bottom: 2px; }
+.stat-value { font-size: 18px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.stat-sub { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+
+/* ── Company table ──────────────────────────────────────────── */
+.co-table { width: 100%; border-collapse: collapse; }
+.co-table th {
+  text-align: left; padding: 8px 12px; color: var(--text-muted);
+  font-size: 11px; font-weight: 500; text-transform: uppercase;
+  letter-spacing: 0.5px; border-bottom: 1px solid var(--border);
+}
+.co-table td {
+  padding: 9px 12px; font-size: 13px; border-bottom: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+}
+.co-table tbody tr:last-child td { border-bottom: none; }
+.co-table tbody tr:hover { background: rgba(37,99,235,0.05); }
+
+/* ── Cycle countdown ────────────────────────────────────────── */
+.countdown {
+  display: flex; align-items: center; gap: 20px;
+  background: var(--bg2); border-radius: 8px; padding: 16px 20px;
+}
+.countdown-number {
+  font-size: 42px; font-weight: 700; color: var(--yellow);
+  font-variant-numeric: tabular-nums; line-height: 1;
+}
+.countdown-label { font-size: 13px; color: var(--text-dim); }
+.countdown-detail { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+
+/* ── Timeline (Clarity Act) ─────────────────────────────────── */
+.timeline { display: flex; align-items: flex-start; gap: 0; margin: 16px 0; position: relative; }
+.timeline::before {
+  content: ''; position: absolute; top: 14px; left: 0; right: 0;
+  height: 2px; background: var(--border);
+}
+.timeline-node {
+  flex: 1; text-align: center; position: relative; z-index: 1;
+  min-width: 120px;
+}
+.timeline-dot {
+  width: 28px; height: 28px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 600; margin-bottom: 8px;
+}
+.timeline-dot.done { background: var(--green); color: #fff; }
+.timeline-dot.active { background: var(--yellow); color: #fff; animation: pulse 2s infinite; }
+.timeline-dot.pending { background: var(--border); color: var(--text-muted); }
+@keyframes pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(161,98,7,0.35); } 50% { box-shadow: 0 0 0 8px rgba(161,98,7,0); } }
+.timeline-label { font-size: 12px; font-weight: 500; }
+.timeline-date { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+
+/* ── Opinion cards ──────────────────────────────────────────── */
+.opinion-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.opinion-card {
+  background: var(--bg2); border-radius: 8px; padding: 14px;
+  border-left: 3px solid var(--accent);
+}
+.opinion-card .person { font-weight: 600; font-size: 14px; }
+.opinion-card .org { color: var(--text-dim); font-size: 12px; margin-bottom: 6px; }
+.opinion-card .text { font-size: 13px; line-height: 1.5; color: var(--text-dim); }
+.opinion-card .meta { font-size: 11px; color: var(--text-muted); margin-top: 8px; }
+.opinion-card .meta a { color: var(--accent); }
+
+/* ── News cards ─────────────────────────────────────────────── */
+.news-card {
+  background: var(--bg2); border-radius: 8px; padding: 14px;
+  margin-bottom: 10px; border-left: 3px solid var(--yellow);
+}
+.news-card .title { font-weight: 600; font-size: 14px; margin-bottom: 4px; }
+.news-card .summary { font-size: 13px; color: var(--text-dim); line-height: 1.5; }
+.news-card .meta { font-size: 11px; color: var(--text-muted); margin-top: 6px; }
+.news-card .meta a { color: var(--accent); }
+
+/* ── Category badges ────────────────────────────────────────── */
+.cat-header {
+  font-size: 14px; font-weight: 600; margin: 16px 0 10px;
+  display: flex; align-items: center; gap: 8px;
+}
+.cat-badge {
+  font-size: 10px; padding: 2px 8px; border-radius: 4px;
+  font-weight: 500;
+}
+.cat-badge.bullish { background: var(--green-bg); color: var(--green); border: 1px solid rgba(21,128,61,0.25); }
+.cat-badge.bearish { background: var(--red-bg); color: var(--red); border: 1px solid rgba(185,28,28,0.25); }
+.cat-badge.fund { background: rgba(37,99,235,0.10); color: var(--accent); border: 1px solid rgba(37,99,235,0.25); }
+.cat-badge.hedge { background: rgba(124,58,237,0.10); color: #7c3aed; border: 1px solid rgba(124,58,237,0.25); }
+
+/* ── Correlation table ──────────────────────────────────────── */
+.corr-grid { display: grid; grid-template-columns: repeat(3, auto); gap: 0; width: fit-content; }
+.corr-cell {
+  padding: 8px 16px; text-align: center; font-size: 13px;
+  font-variant-numeric: tabular-nums; border: 1px solid var(--border);
+}
+.corr-header { background: var(--bg2); color: var(--text-muted); font-size: 11px; font-weight: 500; }
+.corr-pos { color: var(--green); font-weight: 600; }
+.corr-neg { color: var(--red); font-weight: 600; }
+.corr-neutral { color: var(--yellow); font-weight: 600; }
+
+/* ── Footer ─────────────────────────────────────────────────── */
+.footer {
+  text-align: center; padding: 24px 0; margin-top: 32px;
+  border-top: 1px solid var(--border); color: var(--text-muted); font-size: 12px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- ═══════════════════ HEADER ═══════════════════ -->
+  <div class="header">
+    <div>
+      <h1>BTC Tracking Report</h1>
+      <div class="subtitle">{{ report_date }} · Data from CoinGecko, Hyperliquid, DefiLlama, Farside, BitcoinTreasuries</div>
+    </div>
+    <div style="text-align:right">
+      <div class="price" style="color:{{ 'var(--green)' if btc_change_7d and btc_change_7d > 0 else 'var(--red)' if btc_change_7d and btc_change_7d < 0 else 'var(--text)' }}">
+        ${{ '{:,.0f}'.format(btc_current) }}
+      </div>
+      <div class="price-meta">
+        7d <span class="{{ 'change-pos' if btc_change_7d and btc_change_7d > 0 else 'change-neg' }}">{{ '{:+.1f}'.format(btc_change_7d or 0) }}%</span>
+        &nbsp;·&nbsp;
+        30d <span class="{{ 'change-pos' if btc_change_30d and btc_change_30d > 0 else 'change-neg' }}">{{ '{:+.1f}'.format(btc_change_30d or 0) }}%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ SECTION 1: 本期总结（PPT slide 1）═══════════════════ -->
+  <div class="section-header">本期总结</div>
+  {% if summary_rows %}
+  <div class="card" style="overflow-x:auto;">
+    <table class="dashboard" style="font-size:13px;">
+      <thead>
+        <tr>
+          <th style="width:18%;">因素</th>
+          <th style="width:36%;">一句话总结</th>
+          <th style="width:23%;">后续关注点</th>
+          <th style="width:23%;">数据变化</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% macro ui_badge(col_name, row, freshness) %}
+          {% set fkey = (row.user_input_cells or {}).get(col_name) %}
+          {% if fkey %}
+            {% set fr = freshness.get(fkey) if freshness else None %}
+            {% if fr and fr.status == 'cached' %}<span style="display:inline-block;margin-top:4px;padding:1px 5px;background:#fef3c7;border:1px solid #d4a017;border-radius:3px;font-size:10px;color:#8b6914;">⚠️ 未本期更新 · 上次 {{ fr.date }}{% if fr.seed %} · seed{% endif %}</span>{% elif fr and fr.status == 'fresh' %}<span style="display:inline-block;margin-top:4px;padding:1px 5px;background:#dcfce7;border:1px solid #15803d;border-radius:3px;font-size:10px;color:#15803d;">✓ 本期更新 · {{ fr.date }}</span>{% endif %}
+          {% endif %}
+        {% endmacro %}
+        {% for row in summary_rows %}
+        {# 行染色：基于 one_liner sentiment → 正向 = 浅绿 / 负向 = 浅红 / 中性 = 不染 #}
+        {% set row_bg = '#dcfce7' if row.sentiment == 'positive' else '#fee2e2' if row.sentiment == 'negative' else '' %}
+        <tr{% if row_bg %} style="background-color: {{ row_bg }};"{% endif %}>
+          <td class="factor-name">{{ row.label }}{% if row.user_input_required %} <span style="color:#a16207;font-size:11px;font-weight:normal;">⚠️ 用户填</span>{% endif %}</td>
+          <td>{{ row.one_liner }}{{ ui_badge('one_liner', row, user_inputs_freshness) }}</td>
+          <td style="color:var(--text-dim);">{{ row.watch_next }}{{ ui_badge('watch_next', row, user_inputs_freshness) }}</td>
+          <td style="color:var(--text-dim);">{{ row.data_change }}{{ ui_badge('data_change', row, user_inputs_freshness) }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <div style="font-size:11px;color:var(--text-muted);margin-top:10px;line-height:1.55;">
+      <strong>⚠️ 用户填</strong> 标记的内容 PPT 明确要求每次问用户是否更新（宏观环境、四年周期、DAT 出清利好、Trump 出清利好、矿企抛售观察）；其他由 AI 综合后文数据写出。
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- ═══════════════════ PPT 没要求速览表，已删除 ═══════════════════ -->
+
+  <!-- Inline screenshot macro used by each factor section -->
+  {% macro render_screenshot(s) %}
+  <div class="card" style="margin-top:12px">
+    <div class="card-title" style="font-size:13px;font-weight:500;color:var(--text-dim)">
+      📸 外部源截图：{{ s.caption }} <span class="badge" style="background:#fef3c7;color:#a16207;border:1px solid #fde68a">SCREENSHOT</span>
+    </div>
+    <a href="{{ s.url }}" target="_blank" title="点击打开原始网页">
+      <img src="{{ s.data_uri }}" style="width:100%;border-radius:6px;border:1px solid var(--border);display:block" alt="{{ s.caption }}">
+    </a>
+    <div style="font-size:11px;color:var(--text-muted);margin-top:8px;line-height:1.5">
+      {{ s.note }} · <a href="{{ s.url }}" target="_blank">原始页面 ↗</a> · 抓取于 {{ report_date }}
+    </div>
+  </div>
+  {% endmacro %}
+
+  <!-- ═══════════════════ SECTION 2: 价格驱动因素跟踪（1-8）═══════════════════ -->
+  <div class="section-header">价格驱动因素跟踪</div>
+
+  <!-- ── 因素 0：比特币和黄金、AI 资产的相关性 ─────────────── -->
+  <div class="card">
+    <div class="card-title">因素 0：比特币与黄金 / AI 资产相关性 <span class="badge">宏观</span></div>
+    <div class="grid-2">
+      <div>
+        <div style="font-size:12px;color:var(--text-muted);margin-bottom:6px;">BTC vs 黄金（1 年）</div>
+        <div class="chart-container"><canvas id="chartBtcGold"></canvas></div>
+        <!-- PPT 2.2：AI 根据左上图数据更新 -->
+        <div style="font-size:12px;color:var(--text-dim);margin-top:6px;line-height:1.55;">{{ macro_gold_caption_ai }}</div>
+      </div>
+      <div>
+        <div style="font-size:12px;color:var(--text-muted);margin-bottom:6px;">BTC vs AI 资产（SOX 半导体指数，1 年）</div>
+        <div class="chart-container"><canvas id="chartBtcSox"></canvas></div>
+        <!-- PPT 2.3：AI 根据右上图数据更新 -->
+        <div style="font-size:12px;color:var(--text-dim);margin-top:6px;line-height:1.55;">{{ macro_sox_caption_ai }}</div>
+      </div>
+    </div>
+    <!-- PPT 2.1：永远保留不变 -->
+    <div style="margin-top:14px;padding:10px 12px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:4px;font-size:12px;color:var(--text-dim);line-height:1.55;">
+      <strong>注：相关性原因——</strong>23 年机构资金开始流入比特币后，比特币与全球其他风险资产类别联动加大。
+    </div>
+  </div>
+
+  <!-- ── 因素 1（四年周期）按 PPT 要求不放 detailed-data，只在总结表 SECTION A 保留 ── -->
+
+  <!-- ══════════ 因素 2：DAT 公司（PPT slides 4-6）══════════ -->
+  <div class="card">
+    <div class="card-title">因素 2：DAT 公司 <span class="badge">公司财库</span></div>
+
+    <!-- PPT 4.4 一句话总结（SECTION A 行 3 SSOT 同源） -->
+    {% if dat_one_liner %}
+    <div style="margin-bottom:14px;padding:10px 12px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:4px;font-size:13px;line-height:1.55;">
+      <strong>一句话总结 DAT 公司近期动向：</strong>{{ dat_one_liner }}
+    </div>
+    {% endif %}
+
+    <!-- 永远不变 3 段（PPT 4.1+4.2+4.3，AI 永不改）-->
+    <div style="padding:12px 14px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:4px;font-size:12px;color:var(--text-dim);line-height:1.7;margin-bottom:16px;">
+      <strong>相关性原因：</strong>DAT 公司 25-26 年买入至少 70 万枚币（占币的流通盘的至少 4.7%），是本轮周期第二大买入力量。
+      <br><br>
+      币圈的 DAT（Digital Asset Treasury，数字资产财库）公司兴起来源于美国监管放松和币价上涨，部分是币圈原生 whales 的出货工具。他的商业模式具有强烈的放大周期的属性，不可持续。因此如果 DAT 公司可以出清干净、只留 1-2 家，对下一轮币价上涨是利好。
+      <br><br>
+      模式源头是 MicroStrategy/Strategy 在 2020 年 8 月把 BTC 作为核心资产负债表储备；真正成为一轮板块行情，是在 25Q2-Q3，大量小盘上市公司、壳公司、SPAC/PIPE 交易集中宣布转型 BTC/ETH/SOL 财库。它兴起的直接原因，是美国监管放松（比如规定了对上市公司加密资产的会计方式），以及币价上涨。根本原因，部分 DAT 公司具有把币圈原生 whales 的存量币装入上市公司、换成股票/可转债/注册权的"资产证券化 + 间接变现"属性。纯 DAT 的可持续性核心不在经营现金流，而在股票能否长期高于 NAV 并持续低成本融资；一旦 mNAV 跌到 1 倍附近或以下，继续发股买币会从增厚变成稀释，商业模式迅速失效。
+    </div>
+
+    <!-- 近 2 周 DAT 公司公告动向（每周 WebSearch 一次）-->
+    <div style="margin-bottom:18px;">
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px;">
+        DAT 公司近期动向（最近一个月）
+        {% set fr = websearch_freshness.dat_announcements if websearch_freshness else None %}
+        {% if fr and fr.status == 'cached' %}<span style="margin-left:8px;padding:2px 6px;background:#fef3c7;border:1px solid #d4a017;border-radius:3px;font-size:10px;font-weight:normal;color:#8b6914;">⚠️ 未本期 WebSearch · 上次 {{ fr.date }}{% if fr.seed %} · seed{% endif %}</span>{% elif fr and fr.status == 'fresh' %}<span style="margin-left:8px;padding:2px 6px;background:#dcfce7;border:1px solid #15803d;border-radius:3px;font-size:10px;font-weight:normal;color:#15803d;">✓ 本期 WebSearch · {{ fr.date }}</span>{% endif %}
+      </div>
+      {% if dat_announcements %}
+      <ul style="margin:0;padding-left:18px;font-size:13px;color:var(--text-dim);line-height:1.7;">
+        {% for a in dat_announcements %}
+          {% if a is mapping %}
+          <li>{% if a.date %}<span style="color:var(--text-muted);font-size:11px;">{{ a.date }}</span> · {% endif %}{% if a.company %}<strong>{{ a.company }}</strong> {% endif %}{{ a.text or a.title or a.summary or '(无描述)' }}{% if a.url %} <a href="{{ a.url }}" target="_blank" style="font-size:11px;">↗</a>{% endif %}</li>
+          {% else %}
+          <li>{{ a }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      {% else %}
+      <div style="font-size:12px;color:var(--text-muted);padding:8px 0;">⚠️ 待 Phase 2 WebSearch 6 家 DAT 公司 8-K + Tether 持仓变化后填入。</div>
+      {% endif %}
+    </div>
+
+    <!-- 图 1：所有 DAT 公司买卖 BTC 合计 flow（月度，更新截图 = Exhibit 9）-->
+    <div style="margin-bottom:18px;">
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 1：DAT 公司 vs Spot ETF 月度净流入（Exhibit 9 · May-24 → Jul-26）</div>
+      {% if ppt_img_dat_flow %}
+      <div style="padding:6px 10px;background:#fef3c7;border-left:3px solid #d4a017;border-radius:4px;font-size:11px;color:#8b6914;margin-bottom:6px;">📌 <strong>TODO #1</strong> · 静态截图已更新至 Exhibit 9（数据 May-24 → Jul-26）。目标：换成实时 174 家 DAT 公司月/周度合计 flow 时序。候选路径：(a) CoinGecko Analyst plan $35+/月 + holding_chart API；(b) scrape CoinGecko 174 家公司页 Transaction History（中等工作量 + CloudFlare 反爬风险）。</div>
+      <div style="padding:8px;background:var(--bg2);border-radius:6px;border:1px solid var(--border);max-width:760px;">
+        <img src="{{ ppt_img_dat_flow }}" style="width:100%;border-radius:4px;display:block;" alt="DAT companies vs Spot ETF monthly flow (Exhibit 9, May-24 to Jul-26)">
+        <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">来源：图片原注：Bitcoin Treasuries、The Block、Bloomberg；CRSHK calculated。深红柱 = DAT 月度净流入（流出）；浅红柱 = 现货 ETF 月度净流入（流出）。每周可手动替换 <code>data/ppt_assets/dat_flow.png</code>。</div>
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- 图 2：Strategy 周度净买入（2026-07-02 TODO #2 主线解决：strategy.com 官方购买记录替换 MacroMicro 截图）-->
+    <div style="margin-bottom:18px;">
+      {% if chart_strat_weekly_values and chart_strat_weekly_values != '[]' %}
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 2：Strategy 周度 BTC 净买入（官方购买记录 · 2024-01 起）</div>
+      <div class="chart-container" style="height:240px;"><canvas id="chartStratWeekly"></canvas></div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：<a href="https://www.strategy.com/purchases" target="_blank">strategy.com/purchases</a> 官方披露（一手数据，每笔 8-K 购买/出售记录周度聚合；负值 = 净卖出）。当前累计持仓 {{ '{:,.0f}'.format(strat_holdings_latest) if strat_holdings_latest else '—' }} BTC。Metaplanet / MARA 右轴待 dat_history.sqlite 累积（2026-05-11 起）后加入。</div>
+      {% elif ppt_img_dat_per_company %}
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 2：公开 DAT 公司 BTC 累计持仓时序（MacroMicro 142919 · 2024-07 起）</div>
+      <div style="padding:8px;background:var(--bg2);border-radius:6px;border:1px solid var(--border);max-width:900px;">
+        <img src="{{ ppt_img_dat_per_company }}" style="width:100%;border-radius:4px;display:block;" alt="Public DAT companies cumulative BTC holdings over time (MacroMicro)">
+        <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">⚠️ strategy.com 官方数据未就绪 · MacroMicro 截图 fallback。</div>
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- 图 3：表格（DAT 公司存量 BTC 买入成本）-->
+    <div style="margin-bottom:18px;">
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 3：DAT 公司持仓 + 平均成本</div>
+      <table style="width:100%;font-size:12px;border-collapse:collapse;">
+        <thead><tr style="color:var(--text-muted);text-align:left;border-bottom:1px solid var(--border);">
+          <th style="padding:6px 8px;">公司</th>
+          <th style="text-align:right;padding:6px 8px;">BTC 持仓量</th>
+          <th style="text-align:right;padding:6px 8px;">平均成本（原币/BTC）</th>
+          <th style="text-align:right;padding:6px 8px;">PnL%</th>
+        </tr></thead>
+        <tbody>
+          {# 第一行：四家追踪公司中美元成本可比部分的加权平均 #}
+          {% if dat_total_cost.weighted_avg_cost_usd %}
+          <tr style="background:var(--bg2);font-weight:600;border-bottom:1px solid var(--border);">
+            <td style="padding:7px 8px;">四家追踪公司（美元成本可比部分）</td>
+            <td style="text-align:right;padding:7px 8px;">{{ '{:,.0f}'.format(dat_total_cost.covered_holdings) }}</td>
+            <td style="text-align:right;padding:7px 8px;">${{ '{:,.0f}'.format(dat_total_cost.weighted_avg_cost_usd) }}</td>
+            <td style="text-align:right;padding:7px 8px;color:var(--text-muted);">覆盖 {{ '{:.0f}'.format(dat_total_cost.coverage_pct) }}%</td>
+          </tr>
+          {% endif %}
+          {# Strategy / Twenty One Capital / Metaplanet / MARA 四家分项 #}
+          {% for c in dat_cost_basis %}
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:6px 8px;">{{ c.name }}</td>
+              <td style="text-align:right;padding:6px 8px;">{{ '{:,.0f}'.format(c.holdings or 0) }}</td>
+              <td style="text-align:right;padding:6px 8px;">{% if c.avg_cost_basis_usd %}${{ '{:,.0f}'.format(c.avg_cost_basis_usd) }}{% elif c.avg_cost_basis_native and c.cost_currency == 'JPY' %}¥{{ '{:,.0f}'.format(c.avg_cost_basis_native) }}{% else %}数据源未披露{% endif %}</td>
+              <td style="text-align:right;padding:6px 8px;" class="{{ 'change-pos' if c.pnl_pct and c.pnl_pct > 0 else 'change-neg' if c.pnl_pct and c.pnl_pct < 0 else '' }}">{{ '{:+.1f}%'.format(c.pnl_pct) if c.pnl_pct is not none else '未计算（原币口径）' }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">持仓与美元成本：<a href="https://bitcointreasuries.net/public-companies/" target="_blank">BitcoinTreasuries.net 公司页</a>；Metaplanet 成本：公司最新官方购币公告（日元原币口径）。缺失字段不使用人工常数补齐。</div>
+    </div>
+
+    <!-- 图 4：跨公司统一 EV mNAV；不再混用 Strategy 旧股权口径 -->
+    <div>
+      {% if chart_ev_mnav_labels and chart_ev_mnav_labels != '[]' %}
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 4：核心 BTC 财库公司 EV mNAV（统一口径 · 2026-06-29 起）</div>
+      <div class="chart-container" style="height:240px;"><canvas id="chartEvMnav"></canvas></div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;line-height:1.5;">
+        统一公式：（市值 + 债务 + 优先股 − 现金）÷（BTC 持仓 × BTC 价格）。数据源：<a href="{{ ev_mnav_methodology.source }}" target="_blank">BitcoinTreasuries EV mNAV 方法说明 ↗</a>。只连接 2026-06-26 方法切换后的快照；MARA 属矿企，来源不再给出 mNAV，因此不强行比较。Strategy 自 2026-07-23 起披露的 Net BPS mNAV 是公司专用普通股口径，不与本图混画。
+      </div>
+      {% else %}
+      <div style="font-size:12px;color:var(--text-muted);">EV mNAV 同口径历史数据暂不可用。</div>
+      {% endif %}
+    </div>
+
+    <!-- Tether 持仓变化（PPT slide 4 要求"网络搜索 tether 的 bitcoin 和黄金持仓变化"，放因素 2 末尾）-->
+    {% if tether_quarterly %}
+    <div style="margin-top:18px;padding-top:14px;border-top:1px dashed var(--border);">
+      <div style="font-size:13px;font-weight:600;margin-bottom:10px;">Tether {{ tether_quarterly.quarter }} 储备明细（BDO attestation，截至 {{ tether_quarterly.as_of }}）</div>
+      <div class="stat-row">
+        <div class="stat-box">
+          <div class="stat-label">BTC 持仓</div>
+          <div class="stat-value">${{ '{:,.3f}'.format(tether_quarterly.btc_usd/1e9) }}B</div>
+          <div class="stat-sub">约 {{ '{:,.0f}'.format(tether_quarterly.btc_count) }} BTC（按报告估值价反推）</div>
+        </div>
+        <div class="stat-box" style="background:#fef3c7">
+          <div class="stat-label">黄金（LBMA 实物）</div>
+          <div class="stat-value" style="color:#a16207">${{ '{:,.2f}'.format(tether_quarterly.gold_usd/1e9) }}B</div>
+          <div class="stat-sub">约 {{ '{:,.1f}'.format(tether_quarterly.gold_tons) }} 吨{% if tether_quarterly.gold_added_tons is not none %}（本季增持 +{{ tether_quarterly.gold_added_tons }} 吨）{% endif %}</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">美国国债 + Repo</div>
+          <div class="stat-value">${{ '{:,.1f}'.format(tether_quarterly.treasury_and_repo_usd/1e9) }}B</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">本季净经营利润</div>
+          <div class="stat-value">{{ '${:,.2f}B'.format(tether_quarterly.net_operating_profit_usd/1e9) if tether_quarterly.net_operating_profit_usd else '—' }}</div>
+        </div>
+      </div>
+      {% if chart_tether_quarterly_btc and chart_tether_quarterly_btc != '[]' %}
+      <div style="font-size:13px;font-weight:600;margin:14px 0 8px;">Tether BTC 持仓季度时序（官方 attestation）</div>
+      <div class="chart-container" style="height:230px;"><canvas id="chartTetherQuarterly"></canvas></div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">仅纳入同时披露 BTC 美元价值和报告估值价的季度，BTC 枚数按两者相除；不再连接第三方每日快照。</div>
+      {% endif %}
+      <div style="font-size:12px;color:var(--text-dim);margin-top:10px;line-height:1.6;">
+        <strong style="color:#a16207;">⚠️ 关键信号</strong>：黄金仓位 ${{ '{:,.2f}'.format(tether_quarterly.gold_usd/1e9) }}B 是 BTC 仓位 ${{ '{:,.3f}'.format(tether_quarterly.btc_usd/1e9) }}B 的 <strong>{{ '{:.1f}'.format(tether_quarterly.gold_usd / tether_quarterly.btc_usd) }}×</strong>。<a href="{{ tether_quarterly.source_pdf }}" target="_blank">原 attestation 报告 ↗</a>
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+
+  <!-- ══════════ 因素 3：ETF 动向（PPT slide 7）══════════ -->
+  <div class="card">
+    <div class="card-title">因素 3：ETF 动向 <span class="badge">现货 BTC ETF</span></div>
+
+    <!-- PPT 7.2 一句话总结（SECTION A 行 4 SSOT 同源） -->
+    {% if etf_one_liner %}
+    <div style="margin-bottom:14px;padding:10px 12px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:4px;font-size:13px;line-height:1.55;">
+      <strong>一句话总结 ETF 近期动向：</strong>{{ etf_one_liner }}
+    </div>
+    {% endif %}
+
+    <!-- 永远不变（PPT 7.1，AI 永不改）-->
+    <div style="padding:12px 14px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:4px;font-size:12px;color:var(--text-dim);line-height:1.7;margin-bottom:16px;">
+      <strong>相关性原因：</strong>24 年至今 ETF 份额增加对应月 152 万枚币（占币的流通盘的 10%），是本轮周期第一大买入力量。
+    </div>
+
+    <div class="stat-row">
+      <div class="stat-box">
+        <div class="stat-label">7 日累计</div>
+        <div class="stat-value {{ 'change-pos' if etf_sum_7d and etf_sum_7d > 0 else 'change-neg' }}">${{ '{:,.0f}'.format(etf_sum_7d or 0) }}M</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">30 日累计</div>
+        <div class="stat-value {{ 'change-pos' if etf_sum_30d and etf_sum_30d > 0 else 'change-neg' }}">${{ '{:,.0f}'.format(etf_sum_30d or 0) }}M</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">最新日期</div>
+        <div class="stat-value" style="font-size:15px;">{{ etf_latest_date }}</div>
+        <div class="stat-sub">${{ '{:,.0f}'.format(etf_latest_flow or 0) }}M</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">30d 正/负天数</div>
+        <div class="stat-value" style="font-size:15px;">
+          <span class="change-pos">{{ etf_pos_days }}</span> / <span class="change-neg">{{ etf_neg_days }}</span>
+        </div>
+      </div>
+    </div>
+    <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">本节 7 日／30 日累计按最近 7／30 个已披露交易日计算；尚未公布的占位行不计入</div>
+    {% if chart_etf_btc_holdings and chart_etf_btc_holdings != '[]' %}
+    <div style="margin-top:14px;">
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px;">US BTC 现货 ETF 累计持有 BTC 数量 vs BTC 价格（2024-01-11 起 daily · 双轴）</div>
+      <div class="chart-container" style="height:320px"><canvas id="chartEtfBtc"></canvas></div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：Farside 日度 USD flow / 当日 BTC 价格 累加得到 BTC 数量；价格序列来自 blockchain.com（含 ahr999.json）</div>
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- ══════════ 因素 4：Whales 动向（PPT slides 8-9）══════════ -->
+  <div class="card">
+    <div class="card-title">因素 4：Whales 动向 <span class="badge">链上鲸鱼</span></div>
+
+    <!-- PPT 8.2 一句话总结（SECTION A 行 5 SSOT 同源） -->
+    {% if whale_summary %}
+    <div style="margin-bottom:14px;padding:10px 12px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:4px;font-size:13px;line-height:1.55;">
+      <strong>一句话总结 whales 近期动向：</strong>{{ whale_summary }}
+    </div>
+    {% endif %}
+
+    <!-- 永远不变（PPT 8.1，AI 永不改）-->
+    <div style="padding:12px 14px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:4px;font-size:12px;color:var(--text-dim);line-height:1.7;margin-bottom:16px;">
+      <strong>相关性原因：</strong>WHALES whales 22 年后开始明显卖出，是本轮周期的主要卖出力量。Whales 是指持有极大量加密货币的个人或实体，22 年前没有趋势性净卖出。
+    </div>
+
+    {# Whales 新闻汇总 模块 2026-05-20 用户删除 —— 内容已被「知名鲸鱼买卖动向」+ 链上分析师卡片覆盖 #}
+
+    {# 知名鲸鱼买卖动向（近 2 周 WebSearch，每条 1 句话，2026-05-20 用户新增）#}
+    {% if whale_buysell_news %}
+    <div style="margin-bottom:14px;padding:10px 12px;background:rgba(34,197,94,0.05);border-left:2px solid #22c55e;border-radius:3px;font-size:12px;color:var(--text-dim);line-height:1.65;">
+      <strong style="color:#15803d;">知名鲸鱼买卖动向（近 2 周）：</strong>
+      <ul style="margin:6px 0 0;padding-left:18px;">
+      {% for w in whale_buysell_news %}
+        <li>
+          <span style="color:var(--text-muted);">{{ w.date }}</span>
+          {% if w.side == "买" %}<span style="color:#15803d;font-weight:600;">[买 {{ w.asset }}]</span>
+          {% elif w.side == "卖" %}<span style="color:#b91c1c;font-weight:600;">[卖 {{ w.asset }}]</span>
+          {% endif %}
+          {{ w.text }}
+          {% if w.url %}<a href="{{ w.url }}" target="_blank" style="font-size:10px;color:var(--text-muted);">↗</a>{% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {# 独立 "Whales 最新动向新闻" section 已删 — Lookonchain / Whale Alert / Arkham / James Check / Franklin Bi 5 源全部合并到本因素末尾"链上分析师本期观点"卡片，每卡 ① 鲸鱼链上动向 + ② 区块链生态/交易策略/市场观察 #}
+
+    <!-- 图 1：whales ownership as % of total（PPT slide 8 image9，原 CoinShares Exhibit 35 截图）-->
+    {# 2026-07-01 TODO #3 已解决：BRK API whale_supply/supply 自合成 5.5 年（2000d）周度实时时序，替换截图；截图降级为 fallback #}
+    <div style="margin-bottom:18px;">
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 1：鲸鱼地址（≥1k BTC）持有占总供应量比例 vs BTC 价格（BRK 自合成 · 5.5 年周度实时）</div>
+      {% if chart_whales_pct_values and chart_whales_pct_values != '[]' %}
+      <div class="chart-container" style="height:260px;"><canvas id="chartWhalesPct"></canvas></div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：<a href="https://bitview.space" target="_blank">bitview.space</a>（Bitcoin Research Kit）<code>addrs_over_1k_btc_supply / supply × 100</code> 自合成，2000 天周度降采样；BTC 价格按日期配对自 ahr999 数据（blockchain.com）。样式参考 CoinShares Exhibit 35。</div>
+      {% elif ppt_img_whales_pct %}
+      <div style="padding:8px;background:var(--bg2);border-radius:6px;border:1px solid var(--border);max-width:820px;">
+        <img src="{{ ppt_img_whales_pct }}" style="width:100%;border-radius:4px;display:block;" alt="Whales ownership relative to BTC price (CoinShares Exhibit 35)">
+        <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">⚠️ BRK 实时数据未就绪 · CoinShares Exhibit 35 截图 fallback。红线 = 鲸鱼持有占比（≥1k BTC 地址）；灰线 = BTC 价格。</div>
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- 图 2：Exchange Reserve（主源 = Coin Metrics Community 17 年 daily 长时序）-->
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 2：BTC Exchange Reserve 长时序（{{ cm_xres_history_start or '2009' }} 起 · {{ cm_xres_rows or '~6300' }} 天 daily）</div>
+      <!-- PPT slide 9 隐式 caption：根据 ExRes 数据生成 -->
+      {% if cm_xres_latest and cm_xres_latest.exchange_reserve_btc and cm_xres_latest.exchange_reserve_btc_1y_delta %}
+      <div style="margin-bottom:10px;font-size:12px;color:var(--text-dim);line-height:1.55;">
+        Exchange Reserve 近 1 年{% if cm_xres_latest.exchange_reserve_btc_1y_delta < 0 %}持续降低，已降 {{ '{:,.0f}'.format(-cm_xres_latest.exchange_reserve_btc_1y_delta) }} 枚（活跃流通盘下降，长期利好价格）{% else %}持续上升，已升 {{ '{:,.0f}'.format(cm_xres_latest.exchange_reserve_btc_1y_delta) }} 枚（活跃流通盘上升，短期或有抛压）{% endif %}。
+      </div>
+      {% endif %}
+      {% if cm_xres_latest and cm_xres_latest.exchange_reserve_btc %}
+      <div class="stat-row" style="margin-bottom:10px;">
+        <div class="stat-box">
+          <div class="stat-label">CM 最新（{{ cm_xres_latest.date }}）</div>
+          <div class="stat-value">{{ '{:,.0f}'.format(cm_xres_latest.exchange_reserve_btc) }} BTC</div>
+        </div>
+        <div class="stat-box" style="background:{{ '#dcfce7' if cm_xres_latest.exchange_reserve_btc_30d_delta and cm_xres_latest.exchange_reserve_btc_30d_delta < 0 else '#fee2e2' if cm_xres_latest.exchange_reserve_btc_30d_delta and cm_xres_latest.exchange_reserve_btc_30d_delta > 0 else 'var(--bg2)' }};">
+          <div class="stat-label">30d 变化（CM）</div>
+          <div class="stat-value" style="color:{{ '#15803d' if cm_xres_latest.exchange_reserve_btc_30d_delta and cm_xres_latest.exchange_reserve_btc_30d_delta < 0 else '#b91c1c' if cm_xres_latest.exchange_reserve_btc_30d_delta and cm_xres_latest.exchange_reserve_btc_30d_delta > 0 else 'var(--text)' }}">{{ '{:+,.0f}'.format(cm_xres_latest.exchange_reserve_btc_30d_delta or 0) }} BTC</div>
+        </div>
+      </div>
+      <div class="chart-container" style="height:260px;"><canvas id="chartCmExchangeReserve"></canvas></div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据来源 <a href="https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&amp;metrics=SplyExNtv&amp;frequency=1d" target="_blank">Coin Metrics Community REST API</a>，字段 SplyExNtv，每日自动更新；周度采样压缩到 ~900 点</div>
+      {% endif %}
+    </div>
+
+    {# 链上分析师卡片（合并：鲸鱼动向解读 + 区块链生态 / BTC/ETH 交易策略 / 市场观察）#}
+    {% if analyst_funding_cards %}
+    <div style="margin-top:18px;padding-top:14px;border-top:1px dashed var(--border);">
+      <div style="font-size:13px;font-weight:600;margin-bottom:10px;">链上分析师本期观点（策略组 6 人，14 天内有更新才显示）</div>
+      <div style="font-size:11px;color:var(--text-muted);margin-bottom:10px;">每张卡片含两段：① 鲸鱼链上动向解读；② 区块链生态 / BTC·ETH 交易策略 / 市场观察。</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:12px;">
+        {% for c in analyst_funding_cards %}
+        <div style="padding:10px 12px;border:1px solid var(--border);border-radius:6px;background:var(--bg2);font-size:12px;line-height:1.55;">
+          <div style="font-weight:600;margin-bottom:4px;">{{ c.name }}<span style="font-weight:normal;color:var(--text-muted);"> · {{ c.org or '—' }}</span></div>
+          {% if c.date %}<div style="font-size:11px;color:var(--text-muted);margin-bottom:8px;">{{ c.date }}</div>{% endif %}
+          <div style="margin-bottom:8px;padding:6px 8px;background:rgba(124,58,237,0.06);border-left:2px solid #7c3aed;border-radius:3px;">
+            <div style="font-size:11px;font-weight:600;color:#7c3aed;margin-bottom:3px;">① 鲸鱼链上动向</div>
+            <div style="color:var(--text-dim);">{{ c.whale_summary or '本期无链上鲸鱼解读' }}</div>
+          </div>
+          <div style="padding:6px 8px;background:rgba(34,197,94,0.06);border-left:2px solid #22c55e;border-radius:3px;">
+            <div style="font-size:11px;font-weight:600;color:#15803d;margin-bottom:3px;">② 区块链生态 / 交易策略 / 市场观察</div>
+            <div style="color:var(--text-dim);">{{ c.market_summary or c.summary or c.text or '本期无更新' }}</div>
+          </div>
+          {% if c.source_url %}<div style="margin-top:8px;"><a href="{{ c.source_url }}" target="_blank" style="font-size:11px;">原始来源 ↗</a></div>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- ══════════ 因素 5：整体资金流向（PPT slide 10）══════════ -->
+  <div class="card">
+    <div class="card-title">因素 5：整体资金流向 <span class="badge">CoinShares 周报</span></div>
+    {% if total_flow_percentile is defined and total_flow_percentile is not none %}
+    <div style="padding:10px 12px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:4px;font-size:13px;line-height:1.55;margin-bottom:14px;">
+      本周整体资金流入<strong>处于历史 {{ '{:.0f}'.format(total_flow_percentile) }}% 分位</strong>
+      （依据本期 CoinShares 原图的历史柱目测：{{ total_flow_label or '中性' }}）
+    </div>
+    {% endif %}
+
+    {% for paragraph in coinshares_paras %}
+    <p style="font-size:13px;line-height:1.65;">{{ paragraph }}</p>
+    {% endfor %}
+    {% if coinshares_images %}
+    {% set img = coinshares_images[0] %}
+    <div style="margin-top:8px;">
+      <div style="font-size:13px;font-weight:600;margin-bottom:10px;">CoinShares 周度 Crypto Asset Flows（来源：CoinShares 周报，最新一期）</div>
+      <div style="padding:8px;background:var(--bg2);border-radius:6px;border:1px solid var(--border);max-width:800px;">
+        <div style="font-size:11px;color:var(--text-muted);margin-bottom:6px;">{{ img.alt }}</div>
+        <a href="{{ img.src }}" target="_blank"><img src="{{ img.data_uri }}" style="width:100%;border-radius:4px;display:block;" alt="{{ img.alt }}"></a>
+      </div>
+    </div>
+    {% elif ppt_img_coinshares_flow %}
+    <div style="margin-top:8px;">
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px;">CoinShares 周度 Crypto Asset Flows</div>
+      <div style="padding:6px 10px;background:#fef3c7;border-left:3px solid #d4a017;border-radius:4px;font-size:11px;color:#8b6914;margin-bottom:6px;">📌 <strong>TODO #6（fallback 触发）</strong> · CoinShares Bi-Weekly Digest PDF 管线失败（2026-07-01 起走 digest PDF 第 8 页，旧周报已停刊），当前为 PPT 截图占位。查 <code>fetch_coinshares.py</code>：digest URL 结构 / /en/d/ 下载路由是否又变。</div>
+      <div style="padding:8px;background:var(--bg2);border-radius:6px;border:1px solid var(--border);max-width:760px;">
+        <img src="{{ ppt_img_coinshares_flow }}" style="width:100%;border-radius:4px;display:block;" alt="CoinShares Weekly Crypto Asset Flows US$m">
+        <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">来源：CoinShares 周报「Digital Asset Fund Flows Weekly Report」，2025/26 week 35 → week 19。</div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- ── Factor 6: 情绪指标（funding rate + fear&greed + ahr999 + CVDD + MVRV Z）── -->
+  <div class="card">
+    <div class="card-title">因素 6：情绪指标 <span class="badge">funding · 恐惧贪婪 · ahr999 · CVDD · MVRV Z · OI</span></div>
+    {% if sentiment_signal %}
+    <div style="margin:6px 0 14px;padding:10px 12px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:4px;font-size:13px;line-height:1.55;">
+      <strong>一句话总结：</strong>{{ sentiment_signal }}
+    </div>
+    {% endif %}
+    <!-- PPT 11.1：3 段原理，永远不变（AI 永不改）-->
+    <div style="margin-bottom:14px;padding:10px 12px;background:rgba(241,233,212,0.4);border-radius:4px;font-size:11px;color:var(--text-muted);line-height:1.65;">
+      <strong>相关性原因：</strong>
+      <ul style="margin:4px 0 0;padding-left:18px;">
+        <li>图 1：funding rate 在最近一个月有多日为负可以指示小周期底部。原理是：市场上做空意愿 &gt; 做多意愿，一般伴随剧烈杠杆爆仓。</li>
+        <li>图 2：数据进入"extreme greed"区域指示小周期顶部，数据进入"extreme fear"区域指示小周期底部。</li>
+        <li>图 3：数据高于"over-value"线指示大周期顶部，数据低于"buy-the-dip"线指示大周期底部。</li>
+        <li>图 4：BTC Price / CVDD ≤ 1.03 是大周期底部。原理是：CVDD（Cumulative Value Coin Days Destroyed）用长期持币者转出老币的"币天销毁"乘成本价聚合，形成结构性底部参考线；BTC 价格逼近 CVDD（差距 ≤ 3%）历史上对应大周期底部。</li>
+        <li>图 5：MVRV Z-Score &lt; 0 是大周期底部，MVRV Z-Score ≥ 4 是大周期顶部。原理是：链上市值 vs 实现市值的 z-score，识别市场极度高估 / 低估状态。</li>
+      </ul>
+    </div>
+    <div class="grid-2" style="gap:14px;">
+      <div>
+        <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 1：BTC 永续合约 funding rate (8h)</div>
+        <div class="stat-row">
+          <div class="stat-box">
+            <div class="stat-label">当前 (8h)</div>
+            <div class="stat-value {{ 'change-pos' if funding_current > 0 else 'change-neg' if funding_current < 0 else '' }}">{{ '{:+.4f}'.format(funding_current) }}%</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">730d 百分位</div>
+            <div class="stat-value" style="color:{{ funding_pct_color }}">{{ '{:.0f}'.format(funding_percentile or 0) }}</div>
+          </div>
+        </div>
+        <div class="chart-container"><canvas id="chartFunding"></canvas></div>
+        {% if negative_streaks %}
+        <div style="margin-top:10px;font-size:11px;color:var(--text-muted)">
+          负值连续记录：
+          {% for s in negative_streaks %}
+            {{ s.days }}天 ({{ s.start }}){{ ',' if not loop.last else '' }}
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      <div>
+        <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 2：恐惧贪婪指数 fear &amp; greed</div>
+        {# 2026-05-21 切回 Chart.js 实时图（fetch_fear_greed.py 1200 天 daily），PPT 截图降级为 fallback #}
+        {% if fear_greed_current is defined and fear_greed_current is not none %}
+        <div class="stat-row">
+          <div class="stat-box">
+            <div class="stat-label">当前</div>
+            <div class="stat-value" style="color:{{ fear_greed_color or 'var(--text)' }}">{{ fear_greed_current }}</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">分级</div>
+            <div class="stat-value" style="font-size:16px;color:{{ fear_greed_color or 'var(--text)' }}">{{ fear_greed_label or '—' }}</div>
+          </div>
+        </div>
+        <div class="chart-container"><canvas id="chartFearGreed"></canvas></div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：alternative.me Crypto Fear &amp; Greed Index（1200 天 daily）</div>
+        {% elif ppt_img_fear_greed %}
+        <div style="padding:8px;background:var(--bg2);border-radius:6px;border:1px solid var(--border);">
+          <img src="{{ ppt_img_fear_greed }}" style="width:100%;border-radius:4px;display:block;" alt="Crypto Fear &amp; Greed Index (CoinShares Exhibit 30)">
+          <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">⚠️ 自合成 fetch_fear_greed.py 数据未就绪 · PPT Exhibit 30 占位（CMC crypto fear &amp; greed index, Sep-23 → Mar-26）</div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    <div style="margin-top:18px;">
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 3：ahr999 大周期估值指标</div>
+      {# 2026-05-21 切回 Chart.js 实时图（fetch_ahr999.py 3451 天自合成），PPT 截图降级为最终 fallback #}
+      {% if ahr999_current is defined and ahr999_current is not none %}
+      <div class="stat-row" style="margin-bottom:10px;">
+        <div class="stat-box">
+          <div class="stat-label">当前值</div>
+          <div class="stat-value" style="color:{{ ahr999_color or 'var(--text)' }}">{{ '{:.3f}'.format(ahr999_current) }}</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">阈值参考</div>
+          <div class="stat-value" style="font-size:14px;">底部 {{ '%g'|format(ahr999_threshold_low) }} · 顶部 {{ '%.2f'|format(ahr999_threshold_high) }}</div>
+        </div>
+      </div>
+      <div class="chart-container" style="height:240px;"><canvas id="chartAhr999"></canvas></div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：blockchain.com 历史日价（3451 天，2016-12 起）+ ahr999 公式 10^[5.84·log10(coin_age) − 17.01] 自合成。<strong>Coinglass 原 API 数据 AES 加密反爬</strong>，但本图与 Coinglass /pro/i/ahr999 同公式 raw data。<a href="https://www.coinglass.com/pro/i/ahr999" target="_blank">参照 Coinglass 实时页 ↗</a>{% if shot_coinglass_ahr999 %} · <a href="#" onclick="document.getElementById('coinglassAhrCollapse').style.display = document.getElementById('coinglassAhrCollapse').style.display==='none'?'block':'none'; return false;">展开 Coinglass 截图对比</a>{% endif %}</div>
+      {% if shot_coinglass_ahr999 %}
+      <div id="coinglassAhrCollapse" style="display:none;margin-top:10px;padding:8px;background:var(--bg2);border-radius:6px;border:1px solid var(--border);max-width:1100px;">
+        <img src="{{ shot_coinglass_ahr999 }}" style="width:100%;border-radius:4px;display:block;" alt="Coinglass Bitcoin Ahr999 Index (screenshot)">
+        <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">Coinglass 截图（每日 take_screenshots.py 刷新，用作视觉对照）</div>
+      </div>
+      {% endif %}
+      {% elif shot_coinglass_ahr999 %}
+      <div style="padding:8px;background:var(--bg2);border-radius:6px;border:1px solid var(--border);max-width:1100px;">
+        <img src="{{ shot_coinglass_ahr999 }}" style="width:100%;border-radius:4px;display:block;" alt="Coinglass Bitcoin Ahr999 Index (live screenshot)">
+        <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">⚠️ 自合成 fetch_ahr999.py 数据未就绪，临时使用 <a href="https://www.coinglass.com/pro/i/ahr999" target="_blank">Coinglass 截图 ↗</a></div>
+      </div>
+      {% elif ppt_img_ahr999 %}
+      <div style="padding:6px 10px;background:#fef3c7;border-left:3px solid #d4a017;border-radius:4px;font-size:11px;color:#8b6914;margin-bottom:6px;">📌 <strong>TODO #5（fallback）</strong> · 自合成 + Coinglass 都失败。</div>
+      <div style="padding:8px;background:var(--bg2);border-radius:6px;border:1px solid var(--border);">
+        <img src="{{ ppt_img_ahr999 }}" style="width:100%;border-radius:4px;display:block;" alt="ahr999 indicator (CoinShares Exhibit 38)">
+      </div>
+      {% endif %}
+    </div>
+    <!-- 图 4：CVDD（Cumulative Value Coin Days Destroyed）vs BTC 价格 -->
+    {% if cvdd_chart_values and cvdd_chart_values != '[]' %}
+    <div style="margin-top:18px;">
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 4：CVDD（Cumulative Value Coin Days Destroyed）大周期底部参考线</div>
+      <div class="stat-row" style="margin-bottom:10px;">
+        <div class="stat-box">
+          <div class="stat-label">CVDD 当前</div>
+          <div class="stat-value" style="color:{{ cvdd_color or 'var(--text)' }}">{% if cvdd_current %}${{ '{:,.0f}'.format(cvdd_current) }}{% else %}—{% endif %}</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">BTC 价 / CVDD 倍数</div>
+          <div class="stat-value" style="font-size:16px;color:{{ cvdd_color or 'var(--text)' }}">{% if cvdd_price_ratio %}{{ '{:.2f}'.format(cvdd_price_ratio) }}x{% else %}—{% endif %}</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">阈值参考</div>
+          <div class="stat-value" style="font-size:14px;">BTC/CVDD ≤ 1.03 = 大周期底</div>
+        </div>
+      </div>
+      <div class="chart-container" style="height:240px;"><canvas id="chartCvdd"></canvas></div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：<a href="https://api.bgeometrics.com/v1/cvdd" target="_blank">BGeometrics 免费 API</a>（每日序列，日期范围见横轴）。BTC 价格序列对齐自 ahr999.json。<a href="https://www.bitcoinmagazinepro.com/charts/cvdd/" target="_blank">参照 Bitcoin Magazine Pro ↗</a></div>
+    </div>
+    {% endif %}
+    <!-- 图 5：MVRV Z-Score -->
+    {% if mvrv_z_chart_values and mvrv_z_chart_values != '[]' %}
+    <div style="margin-top:18px;">
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 5：MVRV Z-Score 大周期估值</div>
+      <div class="stat-row" style="margin-bottom:10px;">
+        <div class="stat-box">
+          <div class="stat-label">当前值</div>
+          <div class="stat-value" style="color:{{ mvrv_z_color or 'var(--text)' }}">{% if mvrv_z_current is not none %}{{ '{:.2f}'.format(mvrv_z_current) }}{% else %}—{% endif %}</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">阈值参考</div>
+          <div class="stat-value" style="font-size:14px;">底部 &lt; 0 · 顶部 ≥ 4.0</div>
+        </div>
+      </div>
+      <div class="chart-container" style="height:240px;"><canvas id="chartMvrvZ"></canvas></div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：<a href="https://api.bgeometrics.com/v1/mvrv-zscore" target="_blank">BGeometrics 免费 API</a>（每日序列，日期范围见横轴）。<a href="https://www.bitcoinmagazinepro.com/charts/mvrv-zscore/" target="_blank">参照 Bitcoin Magazine Pro ↗</a></div>
+    </div>
+    {% endif %}
+
+    <!-- 图 6：BTC 永续合约 OI（2026-05-21 用户决定从原"因素 7"独立卡片合并进情绪指标 section）-->
+    <div style="margin-top:18px;">
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 6：BTC 永续合约 open interest <span class="badge" style="font-size:10px;">CoinGecko 聚合 + OKX 日度历史</span></div>
+      {# 2026-05-20 用户删除：3 个 stat-box（全市场 OI / OI 加权资金费率 / 交易所数）— 数据来源不稳定常显示 0，去掉避免误导 #}
+      <div class="chart-container"><canvas id="chartOi"></canvas></div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:8px;">OKX BTC-USDT-SWAP 单交易所日度历史，日期范围见横轴 · 当前快照为全市场聚合</div>
+      {# 2026-07-03 TODO #10 解决：Coinalyze 头部 6 所 4 年聚合替代原 11/1 等待门控（show_oi_chart 现为数据驱动）#}
+      {% if show_oi_chart and chart_market_labels and chart_market_labels != '[]' %}
+      <div style="margin-top:10px;font-size:12px;color:var(--text-dim)">跨所聚合 OI 长时序（头部 6 所：Binance / Bybit / OKX / Deribit / Hyperliquid / Bitget · 9 个 BTC 永续合约合计）：</div>
+      <div class="chart-container" style="height:200px"><canvas id="chartMarketOi"></canvas></div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：{% if market_oi_source == 'coinalyze' %}<a href="https://coinalyze.net" target="_blank">Coinalyze API</a>（daily，2022-05 起 4 年+，替代付费 Coinglass）。口径为头部所线性+反向永续合计，小所刷量不计入，绝对值低于 CoinGecko 204 所快照属正常{% else %}CoinGecko 快照 SQLite 每日累积（Coinalyze 数据未就绪 fallback）{% endif %}。</div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- ══════════ 因素 7：美国政府和主流机构态度（PPT slide 15，5 验证问题问答板）══════════ -->
+  <!-- 2026-05-21 用户决定：原 PPT 因素 7 OI 合并进因素 6 情绪指标 → 此处原因素 8 顺延为因素 7 -->
+  <div class="card">
+    <div class="card-title">因素 7：美国政府和主流机构态度 <span class="badge">5 个验证问题</span></div>
+
+    {% if policy_one_liner %}
+    <div style="margin-bottom:14px;padding:10px 12px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:4px;font-size:13px;line-height:1.55;">
+      <strong>一句话总结：</strong>{{ policy_one_liner }}
+    </div>
+    {% endif %}
+
+    <!-- 验证问题 1：BTC 战略储备地位是否有更改风声 -->
+    <div style="margin-bottom:14px;padding:10px 14px;border:1px solid var(--border);border-radius:6px;background:var(--card);">
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px;">
+        验证 1：美国是否有更改 BTC 战略储备地位的风声？
+        {% set fr = websearch_freshness.verify_1_strategic_reserve if websearch_freshness else None %}
+        {% if fr and fr.status == 'cached' %}<span style="margin-left:8px;padding:2px 6px;background:#fef3c7;border:1px solid #d4a017;border-radius:3px;font-size:10px;font-weight:normal;color:#8b6914;">⚠️ 未本期 WebSearch · 上次 {{ fr.date }}{% if fr.seed %} · seed{% endif %}</span>{% elif fr and fr.status == 'fresh' %}<span style="margin-left:8px;padding:2px 6px;background:#dcfce7;border:1px solid #15803d;border-radius:3px;font-size:10px;font-weight:normal;color:#15803d;">✓ 本期 WebSearch · {{ fr.date }}</span>{% endif %}
+      </div>
+      {% if verify_1_strategic_reserve %}
+      <div style="font-size:12px;color:var(--text-dim);line-height:1.6;">{{ verify_1_strategic_reserve }}</div>
+      {% elif news_items %}
+      <ul style="margin:0;padding-left:18px;font-size:12px;color:var(--text-dim);line-height:1.6;">
+        {% for item in news_items if item.factor == 9 %}
+        <li>{{ item.date }} · {{ item.title }}{% if item.url %} <a href="{{ item.url }}" target="_blank">↗</a>{% endif %}</li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <div style="font-size:12px;color:var(--text-muted);">无（每周 WebSearch 一次）</div>
+      {% endif %}
+    </div>
+
+    <!-- 验证问题 2：Trump 家族持仓清算风声 -->
+    <div style="margin-bottom:14px;padding:10px 14px;border:1px solid var(--border);border-radius:6px;background:var(--card);">
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px;">
+        验证 2：是否有特朗普家族在比特币上的持仓和收益会遭到清算的风声？
+        {% set fr = websearch_freshness.verify_2_trump_clearance if websearch_freshness else None %}
+        {% if fr and fr.status == 'cached' %}<span style="margin-left:8px;padding:2px 6px;background:#fef3c7;border:1px solid #d4a017;border-radius:3px;font-size:10px;font-weight:normal;color:#8b6914;">⚠️ 未本期 WebSearch · 上次 {{ fr.date }}{% if fr.seed %} · seed{% endif %}</span>{% elif fr and fr.status == 'fresh' %}<span style="margin-left:8px;padding:2px 6px;background:#dcfce7;border:1px solid #15803d;border-radius:3px;font-size:10px;font-weight:normal;color:#15803d;">✓ 本期 WebSearch · {{ fr.date }}</span>{% endif %}
+      </div>
+      {% if verify_2_trump_clearance %}
+      <div style="font-size:12px;color:var(--text-dim);line-height:1.6;">{{ verify_2_trump_clearance }}</div>
+      {% else %}
+      <div style="font-size:12px;color:var(--text-muted);">无（每周 WebSearch 一次）</div>
+      {% endif %}
+    </div>
+
+    <!-- 验证问题 3：大型企业大举进入数字货币 -->
+    <div style="margin-bottom:14px;padding:10px 14px;border:1px solid var(--border);border-radius:6px;background:var(--card);">
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px;">
+        验证 3：美国是否有大型企业大举进入数字货币行业的新闻？（新批 ETF / 资产上链等）
+        {% set fr = websearch_freshness.verify_3_institutional_entry if websearch_freshness else None %}
+        {% if fr and fr.status == 'cached' %}<span style="margin-left:8px;padding:2px 6px;background:#fef3c7;border:1px solid #d4a017;border-radius:3px;font-size:10px;font-weight:normal;color:#8b6914;">⚠️ 未本期 WebSearch · 上次 {{ fr.date }}{% if fr.seed %} · seed{% endif %}</span>{% elif fr and fr.status == 'fresh' %}<span style="margin-left:8px;padding:2px 6px;background:#dcfce7;border:1px solid #15803d;border-radius:3px;font-size:10px;font-weight:normal;color:#15803d;">✓ 本期 WebSearch · {{ fr.date }}</span>{% endif %}
+      </div>
+      {% if verify_3_institutional_entry %}
+      <div style="font-size:12px;color:var(--text-dim);line-height:1.6;">{{ verify_3_institutional_entry }}</div>
+      {% elif news_items %}
+      <ul style="margin:0;padding-left:18px;font-size:12px;color:var(--text-dim);line-height:1.6;">
+        {% for item in news_items if item.factor == 10 %}
+        <li>{{ item.date }} · {{ item.title }}{% if item.url %} <a href="{{ item.url }}" target="_blank">↗</a>{% endif %}</li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <div style="font-size:12px;color:var(--text-muted);">无（每周 WebSearch 一次，"大举"门槛）</div>
+      {% endif %}
+    </div>
+
+    <!-- 验证问题 4：Clarity Act 中期选举前立法概率 -->
+    <div style="margin-bottom:14px;padding:10px 14px;border:1px solid var(--border);border-radius:6px;background:var(--card);">
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px;">
+        验证 4：Clarity Act 在中期选举前成功立法的概率？
+        {% set fr = websearch_freshness.verify_4_clarity_passage_probability if websearch_freshness else None %}
+        {% if fr and fr.status == 'cached' %}<span style="margin-left:8px;padding:2px 6px;background:#fef3c7;border:1px solid #d4a017;border-radius:3px;font-size:10px;font-weight:normal;color:#8b6914;">⚠️ 未本期 WebSearch · 上次 {{ fr.date }}{% if fr.seed %} · seed{% endif %}</span>{% elif fr and fr.status == 'fresh' %}<span style="margin-left:8px;padding:2px 6px;background:#dcfce7;border:1px solid #15803d;border-radius:3px;font-size:10px;font-weight:normal;color:#15803d;">✓ 本期 WebSearch · {{ fr.date }}</span>{% endif %}
+      </div>
+      {% if verify_4_clarity_passage_probability %}
+      <div style="margin-bottom:10px;padding:8px 10px;background:rgba(34,197,94,0.06);border-left:2px solid #22c55e;border-radius:3px;">
+        <div style="font-size:11px;font-weight:600;color:#15803d;margin-bottom:3px;">📊 立法进展与预期</div>
+        <div style="font-size:12px;color:var(--text-dim);line-height:1.6;">{{ verify_4_clarity_passage_probability }}</div>
+      </div>
+      {% endif %}
+      {% if verify_4_clarity_act %}
+      <div style="font-size:12px;color:var(--text-dim);line-height:1.6;margin-bottom:10px;">{{ verify_4_clarity_act }}</div>
+      {% elif legislation_summary %}
+      <div style="font-size:12px;color:var(--text-dim);line-height:1.6;margin-bottom:10px;">{{ legislation_summary }}</div>
+      {% endif %}
+      {% if legislation_milestones %}
+      <div class="timeline" style="margin-top:8px;">
+        {% for m in legislation_milestones %}
+        <div class="timeline-node">
+          <div class="timeline-dot {{ m.state }}">{{ '✓' if m.state == 'done' else '●' if m.state == 'active' else '○' }}</div>
+          <div class="timeline-label">{{ m.label }}</div>
+          <div class="timeline-date">{{ m.date }}</div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- 验证问题 5：稳定币市值 + 与 1 年前对比 + 状态标签（PPT 14.6：根据下图来更新写。格式按 PPT 范例）-->
+    <div style="padding:10px 14px;border:1px solid var(--border);border-radius:6px;background:var(--card);">
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px;">验证 5：稳定币市值 + 状态判断</div>
+      {% if verify_5_stablecoin_text %}
+      <div style="font-size:12px;color:var(--text-dim);line-height:1.6;margin-bottom:10px;">{{ verify_5_stablecoin_text }}</div>
+      {% endif %}
+      <div class="stat-row">
+        <div class="stat-box">
+          <div class="stat-label">总市值（USDT+USDC）</div>
+          <div class="stat-value">{{ fmt_usd(stable_total) }}</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">USDT</div>
+          <div class="stat-value">{{ fmt_usd(stable_usdt) }}</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">USDC</div>
+          <div class="stat-value">{{ fmt_usd(stable_usdc) }}</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">30d 变化</div>
+          <div class="stat-value {{ 'change-pos' if stable_change_30d and stable_change_30d > 0 else 'change-neg' }}">{{ '{:+.2f}%'.format(stable_change_30d or 0) }}</div>
+        </div>
+        {% if stable_status_label %}
+        <div class="stat-box" style="background:{{ stable_status_color or 'var(--bg2)' }};">
+          <div class="stat-label">状态</div>
+          <div class="stat-value" style="font-size:15px;">{{ stable_status_label }}</div>
+        </div>
+        {% endif %}
+      </div>
+      <div class="chart-container" style="margin-top:10px;"><canvas id="chartStable"></canvas></div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">市值上升 = 铸造 = 资金入场（利好）/ 市值下降 = 销毁 = 资金离场（利空）</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ SECTION 3: 具体观点跟踪（PPT slides 16-17）═══════════════════ -->
+  {% if opinion_one_liner %}
+  <div class="section-header">具体观点跟踪</div>
+  <div class="card" style="margin-bottom:14px;">
+    <div style="padding:10px 12px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:4px;font-size:13px;line-height:1.55;">
+      <strong>一句话总结：</strong>{{ opinion_one_liner }}
+    </div>
+  </div>
+  {% else %}
+  <div class="section-header">具体观点跟踪</div>
+  {% endif %}
+
+  {% if has_opinions %}
+
+  {% for cat in opinion_categories %}
+  {% if cat.people %}
+  <div class="cat-header">{{ cat.name }} <span class="cat-badge {{ cat.badge_class }}">{{ cat.count }}/{{ cat.total }}人本周有更新</span></div>
+  <div class="opinion-grid">
+    {% for p in cat.people %}
+    <div class="opinion-card" style="border-left-color:{{ cat.color }}{% if not p.has_update %};opacity:0.55{% endif %}">
+      <div class="person">{{ p.name }}{% if not p.has_update %} <span style="color:var(--text-muted);font-size:11px;font-weight:normal;">· {{ p.status_label or '本周无更新' }}</span>{% endif %}</div>
+      <div class="org">{{ p.org }}</div>
+      {% if p.has_update %}<div class="text">{{ p.summary }}</div>{% endif %}
+      <div class="meta">
+        {% if p.date and p.date != '—' %}{{ p.date }}{% endif %}
+        {% if p.source_url %} · <a href="{{ p.source_url }}" target="_blank">{{ '来源' if p.has_update else '渠道' }} ↗</a>{% endif %}
+        {% for s in p.sources %}<div>{{ s.date }} · <a href="{{ s.url }}" target="_blank">{{ s.title }} ↗</a></div>{% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% endfor %}
+
+  {% else %}
+  <div class="card" style="text-align:center;padding:30px;color:var(--text-muted)">
+    运行 /btc-tracking 时按配置名单搜索最新观点
+  </div>
+  {% endif %}
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <div class="footer">
+    BTC 多因素追踪报告 · 生成于 {{ report_date }} · 数据源：CoinGecko · Hyperliquid · DefiLlama · Farside Investors · BitcoinTreasuries.net · BRK · alternative.me · blockchain.com
+  </div>
+
+</div>
+
+<!-- ═══════════════════ CHART.JS ═══════════════════ -->
+<script>
+Chart.defaults.color = '#6b624e';        /* axis labels / legend text */
+Chart.defaults.borderColor = '#e2d8be';   /* gridline color */
+Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, SF Pro Display, Inter, system-ui, sans-serif';
+Chart.defaults.font.size = 11;
+
+/* Chart series palette — slightly deeper than CSS vars for stronger contrast on cream */
+const green = '#15803d', red = '#b91c1c', blue = '#2563eb',
+      gold = '#a16207', purple = '#7c3aed', cyan = '#0e7490';
+
+// ── BTC vs Gold (dual axis) ────────────────────────────
+new Chart(document.getElementById('chartBtcGold'), {
+  type: 'line',
+  data: {
+    labels: {{ chart_btc_labels | safe }},
+    datasets: [
+      { label: 'BTC (USD)', data: {{ chart_btc_values | safe }}, borderColor: blue, borderWidth: 2, fill: false, pointRadius: 0, tension: 0.2, yAxisID: 'y' },
+      { label: 'Gold (USD)', data: {{ chart_gold_values | safe }}, borderColor: gold, borderWidth: 2, fill: false, pointRadius: 0, tension: 0.2, yAxisID: 'y1' }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: { legend: { position: 'top', labels: { boxWidth: 12, padding: 16 } } },
+    scales: {
+      y: { position: 'left', ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'K', color: blue } },
+      y1: { position: 'right', grid: { drawOnChartArea: false }, ticks: { callback: v => '$' + v.toFixed(0), color: gold } }
+    }
+  }
+});
+
+// ── BTC vs SOX (dual axis) ─────────────────────────────
+new Chart(document.getElementById('chartBtcSox'), {
+  type: 'line',
+  data: {
+    labels: {{ chart_btc_labels | safe }},
+    datasets: [
+      { label: 'BTC (USD)', data: {{ chart_btc_values | safe }}, borderColor: blue, borderWidth: 2, fill: false, pointRadius: 0, tension: 0.2, yAxisID: 'y' },
+      { label: 'SOX Index', data: {{ chart_sox_values | safe }}, borderColor: purple, borderWidth: 2, fill: false, pointRadius: 0, tension: 0.2, yAxisID: 'y1' }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: { legend: { position: 'top', labels: { boxWidth: 12, padding: 16 } } },
+    scales: {
+      y: { position: 'left', ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'K', color: blue } },
+      y1: { position: 'right', grid: { drawOnChartArea: false }, ticks: { callback: v => v.toFixed(0), color: purple } }
+    }
+  }
+});
+
+// ── ETF 累计持有 BTC 数量 vs BTC 价格（双轴，dashboard 唯一保留图）────
+{% if chart_etf_btc_holdings and chart_etf_btc_holdings != '[]' %}
+new Chart(document.getElementById('chartEtfBtc'), {
+  type: 'line',
+  data: {
+    labels: {{ chart_etf_btc_labels | safe }},
+    datasets: [
+      {
+        label: 'ETF 累计持有 BTC (left)',
+        data: {{ chart_etf_btc_holdings | safe }},
+        borderColor: blue,
+        backgroundColor: 'rgba(37, 99, 235, 0.12)',
+        borderWidth: 2, fill: true, pointRadius: 0, tension: 0.15,
+        yAxisID: 'y'
+      },
+      {
+        label: 'BTC 价格 (right)',
+        data: {{ chart_etf_btc_price | safe }},
+        borderColor: '#f59e0b',
+        backgroundColor: 'transparent',
+        borderWidth: 1.5, fill: false, pointRadius: 0, tension: 0.15,
+        yAxisID: 'y1'
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: { legend: { display: true, position: 'top', labels: { font: { size: 11 } } } },
+    scales: {
+      x: { ticks: { maxTicksLimit: 14, font: { size: 10 } } },
+      y: {
+        position: 'left',
+        title: { display: true, text: 'ETF 累计 BTC 持仓', font: { size: 11 } },
+        ticks: { callback: v => (v/1000).toFixed(0) + 'K' }
+      },
+      y1: {
+        position: 'right',
+        grid: { drawOnChartArea: false },
+        title: { display: true, text: 'BTC 价格 (USD)', font: { size: 11 } },
+        ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'K', color: '#f59e0b' }
+      }
+    }
+  }
+});
+{% endif %}
+
+// ── 因素 4 图 2：Coin Metrics SplyExNtv 17 年 daily（周度采样）+ BTC 价格双轴 ──
+{% if chart_cm_xres_values and chart_cm_xres_values != '[]' %}
+new Chart(document.getElementById('chartCmExchangeReserve'), {
+  type: 'line',
+  data: {
+    labels: {{ chart_cm_xres_labels | safe }},
+    datasets: [
+      {
+        label: 'Exchange Reserve (left, BTC)',
+        data: {{ chart_cm_xres_values | safe }},
+        borderColor: '#7c3aed', backgroundColor: 'rgba(124, 58, 237, 0.10)',
+        borderWidth: 2, fill: true, pointRadius: 0, tension: 0.15, spanGaps: true,
+        yAxisID: 'y'
+      },
+      {
+        label: 'BTC 价格 (right, USD)',
+        data: {{ chart_cm_xres_btc_price | safe }},
+        borderColor: '#f59e0b', backgroundColor: 'transparent',
+        borderWidth: 1.5, fill: false, pointRadius: 0, tension: 0.15, spanGaps: true,
+        yAxisID: 'y1'
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: { legend: { display: true, position: 'top', labels: { font: { size: 11 } } } },
+    scales: {
+      x: { ticks: { maxTicksLimit: 12, font: { size: 10 } } },
+      y: { position: 'left', ticks: { callback: v => (v/1e6).toFixed(2) + 'M BTC' }, title: { display: true, text: 'BTC on Exchanges', font: { size: 11 } } },
+      y1: { position: 'right', grid: { drawOnChartArea: false }, type: 'logarithmic', ticks: { callback: v => v >= 1000 ? '$' + (v/1000).toFixed(0) + 'K' : '$' + v, color: '#f59e0b' }, title: { display: true, text: 'BTC 价格 (log)', font: { size: 11 }, color: '#f59e0b' } }
+    }
+  }
+});
+{% endif %}
+
+// ── 因素 4 图 1：whales% 5.5 年周度实时（BRK 自合成，2026-07-01 TODO #3 解决）+ BTC 价格右轴对数 ──
+{% if chart_whales_pct_values and chart_whales_pct_values != '[]' %}
+if (document.getElementById('chartWhalesPct')) {
+  new Chart(document.getElementById('chartWhalesPct'), {
+    type: 'line',
+    data: {
+      labels: {{ chart_whales_pct_labels | safe }},
+      datasets: [
+        {
+          label: '鲸鱼持有占比 (%, 左轴)',
+          data: {{ chart_whales_pct_values | safe }},
+          borderColor: '#b91c1c', borderWidth: 2, fill: false,
+          pointRadius: 0, tension: 0.2, yAxisID: 'y', spanGaps: true,
+        },
+        {
+          label: 'BTC 价格 ($, 右轴对数)',
+          data: {{ chart_whales_pct_btc_price | safe }},
+          borderColor: '#9ca3af', borderWidth: 1.2, fill: false,
+          pointRadius: 0, tension: 0.2, yAxisID: 'y1', spanGaps: true,
+        }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: { legend: { display: true, position: 'top', labels: { boxWidth: 12, font: { size: 11 } } } },
+      scales: {
+        x: { ticks: { maxTicksLimit: 12, font: { size: 10 } } },
+        y: { position: 'left', ticks: { callback: v => v.toFixed(1) + '%', color: '#b91c1c' } },
+        y1: { position: 'right', type: 'logarithmic', grid: { drawOnChartArea: false },
+              ticks: { callback: v => '$' + (v >= 1000 ? (v/1000).toFixed(0) + 'K' : v), color: '#9ca3af', maxTicksLimit: 6 } }
+      }
+    }
+  });
+}
+{% endif %}
+
+// ── 因素 2 图 2：Strategy 周度净买入 bar（官方购买记录，2026-07-02 TODO #2）──
+{% if chart_strat_weekly_values and chart_strat_weekly_values != '[]' %}
+if (document.getElementById('chartStratWeekly')) {
+  const swVals = {{ chart_strat_weekly_values | safe }};
+  new Chart(document.getElementById('chartStratWeekly'), {
+    type: 'bar',
+    data: {
+      labels: {{ chart_strat_weekly_labels | safe }},
+      datasets: [{
+        label: 'Strategy 周度净买入 (BTC)',
+        data: swVals,
+        backgroundColor: swVals.map(v => v >= 0 ? 'rgba(59,130,246,0.7)' : 'rgba(239,68,68,0.8)'),
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { ticks: { maxTicksLimit: 14, font: { size: 10 } } },
+        y: { ticks: { callback: v => (v/1000).toFixed(0) + 'K' } }
+      }
+    }
+  });
+}
+{% endif %}
+
+// ── 因素 2 图 4：核心财库公司统一 EV mNAV（方法切换后）──
+{% if chart_ev_mnav_labels and chart_ev_mnav_labels != '[]' %}
+if (document.getElementById('chartEvMnav')) {
+  const mnavLabels = {{ chart_ev_mnav_labels | safe }};
+  new Chart(document.getElementById('chartEvMnav'), {
+    type: 'line',
+    data: {
+      labels: mnavLabels,
+      datasets: [
+        {
+          label: 'Strategy EV mNAV',
+          data: {{ chart_ev_mnav_mstr | safe }},
+          borderColor: '#b91c1c', borderWidth: 2, fill: false,
+          pointRadius: 2, tension: 0.15, spanGaps: false,
+        },
+        {
+          label: 'Twenty One EV mNAV',
+          data: {{ chart_ev_mnav_xxi | safe }},
+          borderColor: '#2563eb', borderWidth: 2, fill: false,
+          pointRadius: 2, tension: 0.15, spanGaps: false,
+        },
+        {
+          label: 'Metaplanet EV mNAV',
+          data: {{ chart_ev_mnav_metaplanet | safe }},
+          borderColor: '#a16207', borderWidth: 2, fill: false,
+          pointRadius: 2, tension: 0.15, spanGaps: false,
+        },
+        {
+          label: 'mNAV = 1.0（币值平价）',
+          data: mnavLabels.map(() => 1.0),
+          borderColor: '#9ca3af', borderWidth: 1, borderDash: [6, 4],
+          fill: false, pointRadius: 0,
+        }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: { legend: { display: true, position: 'top', labels: { boxWidth: 12, font: { size: 11 } } } },
+      scales: {
+        x: { ticks: { maxTicksLimit: 12, font: { size: 10 } } },
+        y: { ticks: { callback: v => v.toFixed(1) + 'x' } }
+      }
+    }
+  });
+}
+{% endif %}
+
+// ── Tether 官方季度 attestation BTC 持仓 ──────────────────────
+{% if chart_tether_quarterly_btc and chart_tether_quarterly_btc != '[]' %}
+if (document.getElementById('chartTetherQuarterly')) {
+  new Chart(document.getElementById('chartTetherQuarterly'), {
+    type: 'line',
+    data: {
+      labels: {{ chart_tether_quarterly_labels | safe }},
+      datasets: [{
+        label: 'Tether BTC 持仓（枚）',
+        data: {{ chart_tether_quarterly_btc | safe }},
+        borderColor: '#a16207', backgroundColor: 'rgba(161,98,7,0.10)',
+        borderWidth: 2.2, pointRadius: 3, tension: 0.15, fill: true,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { ticks: { maxTicksLimit: 10, font: { size: 10 } } },
+        y: { ticks: { callback: v => Math.round(v).toLocaleString() + ' BTC' } }
+      }
+    }
+  });
+}
+{% endif %}
+
+// ── Funding Rate (2 年 8h 时序 + BTC 价格右轴双轴) ──────────────────────
+const frData = {{ chart_fr_values | safe }};
+new Chart(document.getElementById('chartFunding'), {
+  type: 'line',
+  data: {
+    labels: {{ chart_fr_labels | safe }},
+    datasets: [
+      {
+        label: 'Funding Rate 8h (%, 左轴)',
+        data: frData,
+        borderColor: gold, borderWidth: 1.5,
+        fill: { target: 'origin', above: 'rgba(234,179,8,0.12)', below: 'rgba(239,68,68,0.12)' },
+        pointRadius: 0, tension: 0.2,
+        yAxisID: 'y'
+      },
+      {
+        label: 'BTC 价格 ($, 右轴)',
+        data: {{ chart_fr_btc_price | safe }},
+        borderColor: '#9ca3af', borderWidth: 1, fill: false, pointRadius: 0, tension: 0.2,
+        yAxisID: 'y1', spanGaps: true,
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: { legend: { display: true, position: 'top', labels: { boxWidth: 12, font: { size: 11 } } } },
+    scales: {
+      x: { ticks: { maxTicksLimit: 12, font: { size: 10 } } },
+      y: { position: 'left', ticks: { callback: v => v.toFixed(3) + '%', color: gold } },
+      y1: { position: 'right', grid: { drawOnChartArea: false }, ticks: { callback: v => '$' + (v/1000).toFixed(0) + 'K', color: '#9ca3af' } }
+    }
+  }
+});
+
+// ── Stablecoin Supply (area) ───────────────────────────
+new Chart(document.getElementById('chartStable'), {
+  type: 'line',
+  data: {
+    labels: {{ chart_stable_labels | safe }},
+    datasets: [{
+      label: 'USDT+USDC ($B)', data: {{ chart_stable_values | safe }},
+      borderColor: cyan, borderWidth: 2,
+      fill: true, backgroundColor: 'rgba(6,182,212,0.1)',
+      pointRadius: 0, tension: 0.2
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: { y: { ticks: { callback: v => '$' + v.toFixed(0) + 'B' } } }
+  }
+});
+
+// ── BRK Whale Supply (>=1k BTC) 365d ──────────────────
+{% if chart_brk_dates and chart_brk_dates != '[]' %}
+new Chart(document.getElementById('chartBrkWhale'), {
+  type: 'line',
+  data: {
+    labels: {{ chart_brk_dates | safe }},
+    datasets: [
+      { label: 'Whale supply (>=1k BTC)', data: {{ chart_brk_whale | safe }}, borderColor: gold, borderWidth: 2, fill: false, pointRadius: 0, tension: 0.2, yAxisID: 'y' },
+      { label: 'MVRV', data: {{ chart_brk_mvrv | safe }}, borderColor: purple, borderWidth: 1.5, fill: false, pointRadius: 0, tension: 0.2, yAxisID: 'y1' }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: { legend: { position: 'top' }, tooltip: { callbacks: { label: c => c.dataset.label + ': ' + (c.dataset.yAxisID === 'y' ? Math.round(c.parsed.y).toLocaleString() : c.parsed.y.toFixed(2)) } } },
+    scales: {
+      x: { ticks: { maxTicksLimit: 8 } },
+      y: { position: 'left', ticks: { callback: v => (v/1e6).toFixed(1)+'M' } },
+      y1: { position: 'right', grid: { display: false }, ticks: { callback: v => v.toFixed(2) } }
+    }
+  }
+});
+{% endif %}
+
+// ── OKX OI 100d history ───────────────────────────────
+// ⚠️ 2026-05-21：图 6 OI 11/1 前隐藏（show_oi_chart=false），canvas 不渲染 → 加 null 守卫防止后续 chart 中断
+{% if chart_oi_labels and chart_oi_labels != '[]' %}
+if (document.getElementById('chartOi')) {
+  new Chart(document.getElementById('chartOi'), {
+    type: 'line',
+    data: {
+      labels: {{ chart_oi_labels | safe }},
+      datasets: [{
+        label: 'OKX BTC-USDT-SWAP OI ($B)', data: {{ chart_oi_values | safe }},
+        borderColor: cyan, borderWidth: 2, fill: true, backgroundColor: 'rgba(6,182,212,0.1)',
+        pointRadius: 0, tension: 0.2
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { x: { ticks: { maxTicksLimit: 8 } }, y: { ticks: { callback: v => '$' + v.toFixed(2) + 'B' } } }
+    }
+  });
+}
+{% endif %}
+
+// ── 全 DAT 持仓历史 (Item 1) ──────────────────────────
+// ⚠️ canvas 已被 TODO #1 静态截图替代（Exhibit 9），init 仅当 canvas 存在时执行
+{% if chart_dat_labels and chart_dat_labels != '[]' %}
+if (document.getElementById('chartDat')) {
+  new Chart(document.getElementById('chartDat'), {
+    type: 'line',
+    data: {
+      labels: {{ chart_dat_labels | safe }},
+      datasets: [{
+        label: '全 DAT 持仓 (BTC)', data: {{ chart_dat_holdings | safe }},
+        borderColor: blue, borderWidth: 2, fill: true, backgroundColor: 'rgba(59,130,246,0.1)',
+        pointRadius: 2, tension: 0.2
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { y: { ticks: { callback: v => v.toLocaleString() + ' BTC' } } }
+    }
+  });
+}
+{% endif %}
+
+// ── 四家分项持仓 (Item 2) ─────────────────────────────
+// ⚠️ canvas 已被 TODO #2 MacroMicro 截图占位替代，init 仅当 canvas 存在时执行
+{% if chart_dat_per_company and chart_dat_per_company != '{}' %}
+if (document.getElementById('chartDatPerCompany')) {
+  const datPerCompany = {{ chart_dat_per_company | safe }};
+  const perCompanyColors = { 'Strategy': blue, 'Twenty One Capital': purple, 'Metaplanet': gold, 'MARA Holdings': green };
+  const perCompanyKeys = Object.keys(datPerCompany);
+  if (perCompanyKeys.length > 0) {
+    const allDates = [...new Set(perCompanyKeys.flatMap(k => datPerCompany[k].labels))].sort();
+    // PPT slide 5 要求：Strategy 左轴（量级远大），其他公司右轴
+    const dsets = perCompanyKeys.map(k => {
+      const lookup = {};
+      datPerCompany[k].labels.forEach((d, i) => lookup[d] = datPerCompany[k].holdings[i]);
+      const isStrategy = (k === 'Strategy' || k === 'MicroStrategy');
+      return {
+        label: k, data: allDates.map(d => lookup[d] ?? null),
+        borderColor: perCompanyColors[k] || cyan, borderWidth: 2, fill: false,
+        pointRadius: 2, tension: 0.2, spanGaps: true,
+        yAxisID: isStrategy ? 'y' : 'y1',
+      };
+    });
+    new Chart(document.getElementById('chartDatPerCompany'), {
+      type: 'line',
+      data: { labels: allDates, datasets: dsets },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: { legend: { position: 'top', labels: { boxWidth: 12, padding: 14 } } },
+        scales: {
+          x: { ticks: { maxTicksLimit: 10 } },
+          y:  { position: 'left',  title: { display: true, text: 'Strategy (BTC)', font: { size: 11 } }, ticks: { callback: v => (v/1000).toFixed(0) + 'K BTC', color: blue } },
+          y1: { position: 'right', title: { display: true, text: '其他公司 (BTC)', font: { size: 11 } }, grid: { drawOnChartArea: false }, ticks: { callback: v => v.toLocaleString() + ' BTC' } }
+        }
+      }
+    });
+  }
+}
+{% endif %}
+
+// ── 因素 6 图 2：fear & greed 指数 (90d) ───────────────
+{% if fear_greed_chart_values and fear_greed_chart_values != '[]' %}
+new Chart(document.getElementById('chartFearGreed'), {
+  type: 'line',
+  data: {
+    labels: {{ fear_greed_chart_labels | safe }},
+    datasets: [{
+      label: '恐惧贪婪指数',
+      data: {{ fear_greed_chart_values | safe }},
+      borderColor: '#a16207', backgroundColor: 'rgba(161, 98, 7, 0.12)',
+      borderWidth: 2, fill: true, pointRadius: 0, tension: 0.25,
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: { y: { min: 0, max: 100, ticks: { stepSize: 25 } } }
+  }
+});
+{% endif %}
+
+// ── 因素 6 图 3：ahr999 大周期估值（对数轴）────────────
+{% if ahr999_chart_values and ahr999_chart_values != '[]' %}
+new Chart(document.getElementById('chartAhr999'), {
+  type: 'line',
+  data: {
+    labels: {{ ahr999_chart_labels | safe }},
+    datasets: [
+      {
+        label: 'ahr999', data: {{ ahr999_chart_values | safe }},
+        borderColor: '#b91c1c', borderWidth: 2, fill: false, pointRadius: 0, tension: 0.15,
+        yAxisID: 'y',
+      },
+      {
+        label: 'BTC 价 ($, 对数)', data: {{ ahr999_price_values | safe }},
+        borderColor: '#525252', borderWidth: 1.5, fill: false, pointRadius: 0, tension: 0.15,
+        yAxisID: 'y1', borderDash: [4, 3],
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { labels: { boxWidth: 14, font: { size: 11 } } },
+      tooltip: { mode: 'index', intersect: false }
+    },
+    scales: {
+      x: { ticks: { maxTicksLimit: 8, font: { size: 10 } } },
+      y: { type: 'logarithmic', position: 'left', title: { display: true, text: 'ahr999', font: { size: 11 } } },
+      y1: { type: 'logarithmic', position: 'right', title: { display: true, text: 'BTC $', font: { size: 11 } }, grid: { drawOnChartArea: false } }
+    }
+  }
+});
+{% endif %}
+
+// ── 因素 6 图 4：CVDD vs BTC 价格（双轴对数）─────────
+{% if cvdd_chart_values and cvdd_chart_values != '[]' %}
+new Chart(document.getElementById('chartCvdd'), {
+  type: 'line',
+  data: {
+    labels: {{ cvdd_chart_labels | safe }},
+    datasets: [
+      {
+        label: 'CVDD ($)', data: {{ cvdd_chart_values | safe }},
+        borderColor: '#15803d', borderWidth: 2, fill: false, pointRadius: 0, tension: 0.15,
+        yAxisID: 'y',
+      },
+      {
+        label: 'BTC 价 ($)', data: {{ cvdd_price_values | safe }},
+        borderColor: '#525252', borderWidth: 1.5, fill: false, pointRadius: 0, tension: 0.15,
+        yAxisID: 'y', borderDash: [4, 3],
+        spanGaps: true,
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { labels: { boxWidth: 14, font: { size: 11 } } },
+      tooltip: { mode: 'index', intersect: false }
+    },
+    scales: {
+      x: { ticks: { maxTicksLimit: 8, font: { size: 10 } } },
+      y: { type: 'logarithmic', position: 'left', title: { display: true, text: 'USD (对数)', font: { size: 11 } } }
+    }
+  }
+});
+{% endif %}
+
+// ── 因素 6 图 5：MVRV Z-Score（本项目阈值 <0 底 / ≥4.0 顶）─────────
+{% if mvrv_z_chart_values and mvrv_z_chart_values != '[]' %}
+new Chart(document.getElementById('chartMvrvZ'), {
+  type: 'line',
+  data: {
+    labels: {{ mvrv_z_chart_labels | safe }},
+    datasets: [
+      {
+        label: 'MVRV Z-Score', data: {{ mvrv_z_chart_values | safe }},
+        borderColor: '#b91c1c', backgroundColor: 'rgba(185, 28, 28, 0.10)',
+        borderWidth: 2, fill: true, pointRadius: 0, tension: 0.15,
+      },
+      {
+        label: '顶部红线 (4.0)',
+        data: Array({{ mvrv_z_chart_values | safe }}.length).fill({{ mvrv_z_threshold_top }}),
+        borderColor: '#b91c1c', borderWidth: 1, borderDash: [6, 4], pointRadius: 0, fill: false,
+      },
+      {
+        label: '底部红线 (0)',
+        data: Array({{ mvrv_z_chart_values | safe }}.length).fill({{ mvrv_z_threshold_bottom }}),
+        borderColor: '#15803d', borderWidth: 1, borderDash: [6, 4], pointRadius: 0, fill: false,
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { labels: { boxWidth: 14, font: { size: 11 } } },
+      tooltip: { mode: 'index', intersect: false }
+    },
+    scales: {
+      x: { ticks: { maxTicksLimit: 8, font: { size: 10 } } },
+      y: { title: { display: true, text: 'MVRV Z-Score', font: { size: 11 } } }
+    }
+  }
+});
+{% endif %}
+
+// ── 全市场 OI 聚合累积曲线 (Item 9) ───────────────────
+// ⚠️ 2026-05-21：图 6 OI 11/1 前隐藏，加 null 守卫
+{% if chart_market_labels and chart_market_labels != '[]' %}
+if (document.getElementById('chartMarketOi')) {
+  new Chart(document.getElementById('chartMarketOi'), {
+    type: 'line',
+    data: {
+      labels: {{ chart_market_labels | safe }},
+      datasets: [{
+        label: '全市场 OI ($B)', data: {{ chart_market_oi | safe }},
+        borderColor: purple, borderWidth: 2, fill: false, pointRadius: 3, tension: 0.2
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { y: { ticks: { callback: v => '$' + v.toFixed(1) + 'B' } } }
+    }
+  });
+}
+{% endif %}
+
+</script>
+</body>
+</html>

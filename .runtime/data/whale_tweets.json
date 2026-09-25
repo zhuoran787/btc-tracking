@@ -1,0 +1,295 @@
+{
+  "fetched_at": "2026-09-17T12:14:13.664040Z",
+  "total_handles": 27,
+  "successful": 5,
+  "failed": 22,
+  "twitter_api_used": false,
+  "twitter_exhausted": false,
+  "results": [
+    {
+      "name": "Franklin Bi",
+      "handle": "FranklinBi",
+      "role": "Pantera 合伙人",
+      "group": "资金面分析",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "James Check",
+      "handle": "_Checkmatey_",
+      "role": "Glassnode 链上分析师",
+      "group": "资金面分析",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "Arkham",
+      "handle": "arkham",
+      "role": "链上追踪",
+      "group": "资金面分析",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "CZ",
+      "handle": "cz_binance",
+      "role": "Binance 创始人",
+      "group": "看多 KOL",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "Star Xu",
+      "handle": "star_okx",
+      "role": "OKX 创始人",
+      "group": "看多 KOL",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "Vitalik Buterin",
+      "handle": "VitalikButerin",
+      "role": "ETH 联合创始人",
+      "group": "看多 KOL",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "Brad Garlinghouse",
+      "handle": "bgarlinghouse",
+      "role": "Ripple CEO",
+      "group": "看多 KOL",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "Garrett Jin",
+      "handle": "GarrettBullish",
+      "role": "Bitget 前 CMO / OG",
+      "group": "看多 KOL",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "Tom Lee",
+      "handle": "fundstrat",
+      "role": "BMNT/Fundstrat",
+      "group": "看多 KOL",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "Joseph Chalom",
+      "handle": "joechalom",
+      "role": "SharpLink",
+      "group": "看多 KOL",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "Peter Thiel",
+      "handle": null,
+      "role": "Founders Fund",
+      "group": "看多 KOL",
+      "nohandle": true,
+      "note": "事实上不用社交媒体，Phase 2 WebSearch 抓媒体 quote",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "事实上不用社交媒体，Phase 2 WebSearch 抓媒体 quote"
+    },
+    {
+      "name": "Trendresearch",
+      "handle": null,
+      "role": "中文加密研究 (Medium RSS)",
+      "group": "看多 KOL",
+      "rss": "https://trendresearch.medium.com/feed",
+      "nohandle": true,
+      "note": "Medium 作者，走 RSS",
+      "fetched_via": "medium_rss",
+      "tweets": [
+        {
+          "text": "Trend Research： Redefining the Rules — The WLFI Era of Finance Begins (2026)",
+          "date": "Wed, 07 Jan 2026 12:42:26 GMT",
+          "url": "https://trendresearch.medium.com/trend-research-redefining-the-rules-the-wlfi-era-of-finance-begins-2026-f8063b9e28ca?source=rss-5ed44f3ec875------2",
+          "source": "medium_rss"
+        },
+        {
+          "text": "《Trend Research：2026超越范式，WLFI开启金融生态新纪元》",
+          "date": "Wed, 07 Jan 2026 09:00:36 GMT",
+          "url": "https://trendresearch.medium.com/trend-research-2026%E8%B6%85%E8%B6%8A%E8%8C%83%E5%BC%8F-wlfi%E5%BC%80%E5%90%AF%E9%87%91%E8%9E%8D%E7%94%9F%E6%80%81%E6%96%B0%E7%BA%AA%E5%85%83-489768144702?source=rss-5ed44f3ec875------2",
+          "source": "medium_rss"
+        },
+        {
+          "text": "《“区块链革命”进行时，持续看涨以太坊》",
+          "date": "Fri, 12 Dec 2025 03:17:48 GMT",
+          "url": "https://trendresearch.medium.com/%E5%8C%BA%E5%9D%97%E9%93%BE%E9%9D%A9%E5%91%BD-%E8%BF%9B%E8%A1%8C%E6%97%B6-%E6%8C%81%E7%BB%AD%E7%9C%8B%E6%B6%A8%E4%BB%A5%E5%A4%AA%E5%9D%8A-7ffb991b0cb1?source=rss-5ed44f3ec875------2",
+          "source": "medium_rss"
+        },
+        {
+          "text": "Trend Research: 以太坊—从公链基建到全球金融生态的价值跃迁",
+          "date": "Fri, 05 Dec 2025 02:57:05 GMT",
+          "url": "https://trendresearch.medium.com/trend-research-%E4%BB%A5%E5%A4%AA%E5%9D%8A-%E4%BB%8E%E5%85%AC%E9%93%BE%E5%9F%BA%E5%BB%BA%E5%88%B0%E5%85%A8%E7%90%83%E9%87%91%E8%9E%8D%E7%94%9F%E6%80%81%E7%9A%84%E4%BB%B7%E5%80%BC%E8%B7%83%E8%BF%81-5581a7616e8e?source=rss-5ed44f3ec875------2",
+          "source": "medium_rss"
+        },
+        {
+          "text": "Trend Research:x402与技术共振，新叙事正在酝酿",
+          "date": "Mon, 03 Nov 2025 03:48:09 GMT",
+          "url": "https://trendresearch.medium.com/trend-research-x402%E4%B8%8E%E6%8A%80%E6%9C%AF%E5%85%B1%E6%8C%AF-%E6%96%B0%E5%8F%99%E4%BA%8B%E6%AD%A3%E5%9C%A8%E9%85%9D%E9%85%BF-9cb1122f5d58?source=rss-5ed44f3ec875------2",
+          "source": "medium_rss"
+        }
+      ],
+      "error": null
+    },
+    {
+      "name": "Matt Hougan",
+      "handle": "Matt_Hougan",
+      "role": "Bitwise CIO",
+      "group": "看多 KOL",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "David Sacks",
+      "handle": "DavidSacks",
+      "role": "白宫 AI & Crypto Czar / Craft Ventures",
+      "group": "看多 KOL",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "Patrick Witt",
+      "handle": null,
+      "role": "白宫数字资产顾问委员会执行主任",
+      "group": "看多 KOL",
+      "nohandle": true,
+      "note": "handle 待补；Phase 2 WebSearch 抓政府公告/媒体 quote",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "handle 待补；Phase 2 WebSearch 抓政府公告/媒体 quote"
+    },
+    {
+      "name": "Brett Knoblauch",
+      "handle": null,
+      "role": "Cantor Fitzgerald（预警 2026 crypto winter 回测 $75K）",
+      "group": "看空 KOL",
+      "nohandle": true,
+      "note": "LinkedIn-only，Phase 2 WebSearch 抓研报",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "LinkedIn-only，Phase 2 WebSearch 抓研报"
+    },
+    {
+      "name": "Aaron Day",
+      "handle": "AaronRDay",
+      "role": "Daylight Freedom（机构化怀疑论）",
+      "group": "看空 KOL",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "Jemima Kelly",
+      "handle": "jemimajoanna",
+      "role": "FT 记者",
+      "group": "看空 KOL",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "Peter Schiff",
+      "handle": "PeterSchiff",
+      "role": "SchiffGold",
+      "group": "看空 KOL",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "Nassim Taleb",
+      "handle": "nntaleb",
+      "role": "《黑天鹅》作者",
+      "group": "看空 KOL",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "BH Digital (Brevan Howard)",
+      "handle": "BHDigitalAssets",
+      "role": "Brevan Howard 加密部门",
+      "group": "对冲基金",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "Galaxy Digital",
+      "handle": "galaxyhq",
+      "role": "公司号",
+      "group": "对冲基金",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "Mike Novogratz",
+      "handle": "novogratz",
+      "role": "Galaxy CEO 个人号",
+      "group": "对冲基金",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "DRW Trading",
+      "handle": "DRWTrading",
+      "role": "Don Wilson 公司号",
+      "group": "对冲基金",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "Jason Huang",
+      "handle": null,
+      "role": "NextGen CIO",
+      "group": "对冲基金",
+      "nohandle": true,
+      "note": "中文圈 only，Phase 2 WebSearch 补",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "中文圈 only，Phase 2 WebSearch 补"
+    },
+    {
+      "name": "Lookonchain",
+      "handle": "lookonchain",
+      "role": "鲸鱼动向解读",
+      "group": "链上动向",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "Whale Alert",
+      "handle": "whale_alert",
+      "role": "大额转账告警",
+      "group": "链上动向",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    }
+  ]
+}

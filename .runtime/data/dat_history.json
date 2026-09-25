@@ -1,0 +1,2022 @@
+{
+  "Strategy": [
+    {
+      "date": "2026-05-11",
+      "holdings": 818869.0,
+      "entry_value_usd": 61856039734.0,
+      "current_value_usd": 67124337111.68457
+    },
+    {
+      "date": "2026-05-13",
+      "holdings": 818869.0,
+      "entry_value_usd": 61856039734.0,
+      "current_value_usd": 65191827343.40502
+    },
+    {
+      "date": "2026-05-17",
+      "holdings": 818869.0,
+      "entry_value_usd": 61856039734.0,
+      "current_value_usd": 64182887865.39303
+    },
+    {
+      "date": "2026-05-18",
+      "holdings": 843738.0,
+      "entry_value_usd": 63870055699.0,
+      "current_value_usd": 64906388353.504486
+    },
+    {
+      "date": "2026-05-19",
+      "holdings": 843738.0,
+      "entry_value_usd": 63870055699.0,
+      "current_value_usd": 64810108053.000465
+    },
+    {
+      "date": "2026-05-20",
+      "holdings": 843738.0,
+      "entry_value_usd": 63870055699.0,
+      "current_value_usd": 65483889172.31435
+    },
+    {
+      "date": "2026-05-21",
+      "holdings": 843738.0,
+      "entry_value_usd": 63870055699.0,
+      "current_value_usd": 65503117901.77071
+    },
+    {
+      "date": "2026-05-24",
+      "holdings": 843738.0,
+      "entry_value_usd": 63870055699.0,
+      "current_value_usd": 64643949115.42336
+    },
+    {
+      "date": "2026-05-25",
+      "holdings": 843738.0,
+      "entry_value_usd": 63870055699.0,
+      "current_value_usd": 65271927437.78439
+    },
+    {
+      "date": "2026-05-26",
+      "holdings": 843738.0,
+      "entry_value_usd": 63870055699.0,
+      "current_value_usd": 64111216629.937096
+    },
+    {
+      "date": "2026-05-31",
+      "holdings": 843738.0,
+      "entry_value_usd": 63870055699.0,
+      "current_value_usd": 62040741977.0429
+    },
+    {
+      "date": "2026-06-01",
+      "holdings": 843738.0,
+      "entry_value_usd": 63870055699.0,
+      "current_value_usd": 60288476104.3726
+    },
+    {
+      "date": "2026-06-02",
+      "holdings": 843738.0,
+      "entry_value_usd": 63870055699.0,
+      "current_value_usd": 56662317411.14203
+    },
+    {
+      "date": "2026-06-03",
+      "holdings": 843706.0,
+      "entry_value_usd": 63872524019.0,
+      "current_value_usd": 55062792959.29595
+    },
+    {
+      "date": "2026-06-04",
+      "holdings": 843706.0,
+      "entry_value_usd": 63872524019.0,
+      "current_value_usd": 53459314794.808495
+    },
+    {
+      "date": "2026-06-06",
+      "holdings": 843706.0,
+      "entry_value_usd": 63872524019.0,
+      "current_value_usd": 51065506597.97195
+    },
+    {
+      "date": "2026-06-07",
+      "holdings": 843706.0,
+      "entry_value_usd": 63872524019.0,
+      "current_value_usd": 51882602470.96067
+    },
+    {
+      "date": "2026-06-08",
+      "holdings": 845256.0,
+      "entry_value_usd": 63968974080.0,
+      "current_value_usd": 53551259661.185684
+    },
+    {
+      "date": "2026-06-09",
+      "holdings": 845256.0,
+      "entry_value_usd": 63968974080.0,
+      "current_value_usd": 52419213604.11195
+    },
+    {
+      "date": "2026-06-10",
+      "holdings": 845256.0,
+      "entry_value_usd": 63968974080.0,
+      "current_value_usd": 52338762975.54121
+    },
+    {
+      "date": "2026-06-11",
+      "holdings": 845256.0,
+      "entry_value_usd": 63968974080.0,
+      "current_value_usd": 53725940827.59058
+    },
+    {
+      "date": "2026-06-14",
+      "holdings": 845256.0,
+      "entry_value_usd": 63968974080.0,
+      "current_value_usd": 53919982368.721
+    },
+    {
+      "date": "2026-06-19",
+      "holdings": 846843.0,
+      "entry_value_usd": 64068993168.0,
+      "current_value_usd": 53330807384.33017
+    },
+    {
+      "date": "2026-06-20",
+      "holdings": 846843.0,
+      "entry_value_usd": 64068993168.0,
+      "current_value_usd": 54074401972.44518
+    },
+    {
+      "date": "2026-06-21",
+      "holdings": 846843.0,
+      "entry_value_usd": 64068993168.0,
+      "current_value_usd": 54317522958.66423
+    },
+    {
+      "date": "2026-06-22",
+      "holdings": 847363.0,
+      "entry_value_usd": 64103868528.0,
+      "current_value_usd": 54586402695.23945
+    },
+    {
+      "date": "2026-06-23",
+      "holdings": 847363.0,
+      "entry_value_usd": 64103868528.0,
+      "current_value_usd": 52886154026.2809
+    },
+    {
+      "date": "2026-06-27",
+      "holdings": 847363.0,
+      "entry_value_usd": 64103868528.0,
+      "current_value_usd": 50986569447.62834
+    },
+    {
+      "date": "2026-06-28",
+      "holdings": 847363.0,
+      "entry_value_usd": 64103868528.0,
+      "current_value_usd": 50310998751.107216
+    },
+    {
+      "date": "2026-06-29",
+      "holdings": 847363.0,
+      "entry_value_usd": 64103868528.0,
+      "current_value_usd": 51153638270.636955
+    },
+    {
+      "date": "2026-06-30",
+      "holdings": 847363.0,
+      "entry_value_usd": 64103868528.0,
+      "current_value_usd": 49735773892.172646
+    },
+    {
+      "date": "2026-07-01",
+      "holdings": 847363.0,
+      "entry_value_usd": 64103868528.0,
+      "current_value_usd": 51477653610.32098
+    },
+    {
+      "date": "2026-07-02",
+      "holdings": 847363.0,
+      "entry_value_usd": 64103868528.0,
+      "current_value_usd": 52059203154.497475
+    },
+    {
+      "date": "2026-07-03",
+      "holdings": 847363.0,
+      "entry_value_usd": 64103868528.0,
+      "current_value_usd": 52823587705.066505
+    },
+    {
+      "date": "2026-07-04",
+      "holdings": 847363.0,
+      "entry_value_usd": 64103868528.0,
+      "current_value_usd": 53601868144.82572
+    },
+    {
+      "date": "2026-07-06",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 53832729537.30317
+    },
+    {
+      "date": "2026-07-08",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 52500817486.78969
+    },
+    {
+      "date": "2026-07-09",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 53335554378.45125
+    },
+    {
+      "date": "2026-07-12",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 54168269110.78357
+    },
+    {
+      "date": "2026-07-13",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 52427663246.355705
+    },
+    {
+      "date": "2026-07-17",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 54105946364.15893
+    },
+    {
+      "date": "2026-07-18",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 54488009360.97426
+    },
+    {
+      "date": "2026-07-19",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 54386687259.97723
+    },
+    {
+      "date": "2026-07-20",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 54915424789.43063
+    },
+    {
+      "date": "2026-07-21",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 56022463630.36504
+    },
+    {
+      "date": "2026-07-22",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 55574492608.573
+    },
+    {
+      "date": "2026-07-23",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 54707594097.9703
+    },
+    {
+      "date": "2026-07-25",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 54257160820.34482
+    },
+    {
+      "date": "2026-07-26",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 54535117334.56557
+    },
+    {
+      "date": "2026-07-28",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 53880316515.231476
+    },
+    {
+      "date": "2026-07-29",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 53570040689.83163
+    },
+    {
+      "date": "2026-07-30",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 54712039089.97252
+    },
+    {
+      "date": "2026-07-31",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 53094625087.6049
+    },
+    {
+      "date": "2026-08-01",
+      "holdings": 843775.0,
+      "entry_value_usd": 63684761900.0,
+      "current_value_usd": 52699941100.43348
+    },
+    {
+      "date": "2026-08-04",
+      "holdings": 842137.0,
+      "entry_value_usd": 63789523466.0,
+      "current_value_usd": 54005026320.012695
+    },
+    {
+      "date": "2026-08-05",
+      "holdings": 842137.0,
+      "entry_value_usd": 63789523466.0,
+      "current_value_usd": 54613849374.33316
+    },
+    {
+      "date": "2026-08-07",
+      "holdings": 842137.0,
+      "entry_value_usd": 63789523466.0,
+      "current_value_usd": 54683767609.97331
+    },
+    {
+      "date": "2026-08-08",
+      "holdings": 842137.0,
+      "entry_value_usd": 63789523466.0,
+      "current_value_usd": 54766490016.79835
+    },
+    {
+      "date": "2026-08-09",
+      "holdings": 842137.0,
+      "entry_value_usd": 63789523466.0,
+      "current_value_usd": 54856719610.87614
+    },
+    {
+      "date": "2026-08-10",
+      "holdings": 840447.0,
+      "entry_value_usd": 63898126246.0,
+      "current_value_usd": 53803732616.08198
+    },
+    {
+      "date": "2026-08-11",
+      "holdings": 840447.0,
+      "entry_value_usd": 63898126246.0,
+      "current_value_usd": 53422240311.03587
+    },
+    {
+      "date": "2026-08-12",
+      "holdings": 840447.0,
+      "entry_value_usd": 63898126246.0,
+      "current_value_usd": 53227018081.44658
+    },
+    {
+      "date": "2026-08-23",
+      "holdings": 840447.0,
+      "entry_value_usd": 63898126246.0,
+      "current_value_usd": 64911360465.80753
+    },
+    {
+      "date": "2026-08-24",
+      "holdings": 840447.0,
+      "entry_value_usd": 63360000000.0,
+      "current_value_usd": 66144623028.035866
+    },
+    {
+      "date": "2026-08-27",
+      "holdings": 840447.0,
+      "entry_value_usd": 63360000000.0,
+      "current_value_usd": 67243754923.59983
+    },
+    {
+      "date": "2026-08-28",
+      "holdings": 840447.0,
+      "entry_value_usd": 63360000000.0,
+      "current_value_usd": 65141490389.99137
+    },
+    {
+      "date": "2026-08-31",
+      "holdings": 845050.0,
+      "entry_value_usd": 63730000000.0,
+      "current_value_usd": 66686779640.21284
+    },
+    {
+      "date": "2026-09-02",
+      "holdings": 845050.0,
+      "entry_value_usd": 63730000000.0,
+      "current_value_usd": 65425411962.902084
+    },
+    {
+      "date": "2026-09-04",
+      "holdings": 845050.0,
+      "entry_value_usd": 63730000000.0,
+      "current_value_usd": 68533284847.3826
+    },
+    {
+      "date": "2026-09-06",
+      "holdings": 845050.0,
+      "entry_value_usd": 63730000000.0,
+      "current_value_usd": 67417934845.37067
+    },
+    {
+      "date": "2026-09-13",
+      "holdings": 845050.0,
+      "entry_value_usd": 63730000000.0,
+      "current_value_usd": 65276729962.75221
+    },
+    {
+      "date": "2026-09-17",
+      "holdings": 845050.0,
+      "entry_value_usd": 63730000000.0,
+      "current_value_usd": 64575619036.34943
+    },
+    {
+      "date": "2026-09-19",
+      "holdings": 845050.0,
+      "entry_value_usd": 63730000000.0,
+      "current_value_usd": 68773691530.55008
+    },
+    {
+      "date": "2026-09-23",
+      "holdings": 846000.0,
+      "entry_value_usd": 63800000000.0,
+      "current_value_usd": 71362122053.41985
+    },
+    {
+      "date": "2026-09-24",
+      "holdings": 846000.0,
+      "entry_value_usd": 63800000000.0,
+      "current_value_usd": 71351285889.82312
+    }
+  ],
+  "Twenty One Capital": [
+    {
+      "date": "2026-07-17",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2790277206.7079635
+    },
+    {
+      "date": "2026-07-18",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2809980432.3823695
+    },
+    {
+      "date": "2026-07-19",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2804755188.801101
+    },
+    {
+      "date": "2026-07-20",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2832022511.080898
+    },
+    {
+      "date": "2026-07-21",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2889113190.6156316
+    },
+    {
+      "date": "2026-07-22",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2866011047.2216473
+    },
+    {
+      "date": "2026-07-23",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2821304553.4402885
+    },
+    {
+      "date": "2026-07-25",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2798075429.986056
+    },
+    {
+      "date": "2026-07-26",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2812409819.7935305
+    },
+    {
+      "date": "2026-07-28",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2778641335.478987
+    },
+    {
+      "date": "2026-07-29",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2762640218.7518396
+    },
+    {
+      "date": "2026-07-30",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2821533784.434315
+    },
+    {
+      "date": "2026-07-31",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2738122741.3256373
+    },
+    {
+      "date": "2026-08-01",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2717768643.3519154
+    },
+    {
+      "date": "2026-08-04",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2790489807.8210936
+    },
+    {
+      "date": "2026-08-05",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2821948259.813704
+    },
+    {
+      "date": "2026-08-07",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2825560999.9090157
+    },
+    {
+      "date": "2026-08-08",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2829835343.407264
+    },
+    {
+      "date": "2026-08-09",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2834497590.2349195
+    },
+    {
+      "date": "2026-08-10",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2785679074.4165797
+    },
+    {
+      "date": "2026-08-11",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2765927375.425714
+    },
+    {
+      "date": "2026-08-12",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2755819777.8040338
+    },
+    {
+      "date": "2026-08-23",
+      "holdings": 43514.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 3360774610.783487
+    },
+    {
+      "date": "2026-08-24",
+      "holdings": 43514.0,
+      "entry_value_usd": 3692815061.0,
+      "current_value_usd": 3424626569.4826117
+    },
+    {
+      "date": "2026-08-27",
+      "holdings": 43514.0,
+      "entry_value_usd": 3692815061.0,
+      "current_value_usd": 3481533935.805022
+    },
+    {
+      "date": "2026-08-28",
+      "holdings": 43514.0,
+      "entry_value_usd": 3692815061.0,
+      "current_value_usd": 3372689548.3356886
+    },
+    {
+      "date": "2026-08-31",
+      "holdings": 43514.0,
+      "entry_value_usd": 3692815061.0,
+      "current_value_usd": 3433889745.2981734
+    },
+    {
+      "date": "2026-09-02",
+      "holdings": 43514.0,
+      "entry_value_usd": 3692815061.0,
+      "current_value_usd": 3368938377.7927
+    },
+    {
+      "date": "2026-09-04",
+      "holdings": 43514.0,
+      "entry_value_usd": 3692815061.0,
+      "current_value_usd": 3528971489.0823107
+    },
+    {
+      "date": "2026-09-06",
+      "holdings": 43514.0,
+      "entry_value_usd": 3692815061.0,
+      "current_value_usd": 3471538982.144795
+    },
+    {
+      "date": "2026-09-13",
+      "holdings": 43514.0,
+      "entry_value_usd": 3692815061.0,
+      "current_value_usd": 3361282323.648541
+    },
+    {
+      "date": "2026-09-17",
+      "holdings": 43514.0,
+      "entry_value_usd": 3692815061.0,
+      "current_value_usd": 3325180151.1717753
+    },
+    {
+      "date": "2026-09-19",
+      "holdings": 43514.0,
+      "entry_value_usd": 3692815061.0,
+      "current_value_usd": 3541350705.000126
+    },
+    {
+      "date": "2026-09-23",
+      "holdings": 43514.0,
+      "entry_value_usd": 3692815061.0,
+      "current_value_usd": 3670509904.2937484
+    },
+    {
+      "date": "2026-09-24",
+      "holdings": 43514.0,
+      "entry_value_usd": 3692815061.0,
+      "current_value_usd": 3669952546.3472376
+    }
+  ],
+  "Metaplanet": [
+    {
+      "date": "2026-05-11",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 3293389409.2170434
+    },
+    {
+      "date": "2026-05-13",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 3198572723.0802283
+    },
+    {
+      "date": "2026-05-17",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 3149070102.5046687
+    },
+    {
+      "date": "2026-05-18",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 3090703470.601952
+    },
+    {
+      "date": "2026-05-19",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 3086118808.4990835
+    },
+    {
+      "date": "2026-05-20",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 3118202825.1377482
+    },
+    {
+      "date": "2026-05-21",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 3119118456.1314554
+    },
+    {
+      "date": "2026-05-24",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 3078206675.070181
+    },
+    {
+      "date": "2026-05-25",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 3108109660.425231
+    },
+    {
+      "date": "2026-05-26",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 3052839092.8712263
+    },
+    {
+      "date": "2026-05-31",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2954247515.7118115
+    },
+    {
+      "date": "2026-06-01",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2870808360.4689817
+    },
+    {
+      "date": "2026-06-02",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2698138434.7124977
+    },
+    {
+      "date": "2026-06-03",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2622071945.3525677
+    },
+    {
+      "date": "2026-06-04",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2545714846.7724786
+    },
+    {
+      "date": "2026-06-06",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2431722494.0758023
+    },
+    {
+      "date": "2026-06-07",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2470632328.6497746
+    },
+    {
+      "date": "2026-06-08",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2545416961.7340274
+    },
+    {
+      "date": "2026-06-09",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2491608157.732576
+    },
+    {
+      "date": "2026-06-10",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2487784150.6813545
+    },
+    {
+      "date": "2026-06-11",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2553719967.2408204
+    },
+    {
+      "date": "2026-06-14",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2562943216.7628546
+    },
+    {
+      "date": "2026-06-19",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2530187824.9926295
+    },
+    {
+      "date": "2026-06-20",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2565466382.8441987
+    },
+    {
+      "date": "2026-06-21",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2577000837.1212287
+    },
+    {
+      "date": "2026-06-22",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2588168118.1343007
+    },
+    {
+      "date": "2026-06-23",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2507552265.4563484
+    },
+    {
+      "date": "2026-06-27",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2417485069.205717
+    },
+    {
+      "date": "2026-06-28",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2385453455.984312
+    },
+    {
+      "date": "2026-06-29",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2425406496.15263
+    },
+    {
+      "date": "2026-06-30",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2358179655.786033
+    },
+    {
+      "date": "2026-07-01",
+      "holdings": 40177.0,
+      "entry_value_usd": 3588937607.45,
+      "current_value_usd": 2440769409.4524612
+    },
+    {
+      "date": "2026-07-02",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2641778949.096658
+    },
+    {
+      "date": "2026-07-03",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2680568152.394971
+    },
+    {
+      "date": "2026-07-04",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2720062511.8485303
+    },
+    {
+      "date": "2026-07-06",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2743394115.853203
+    },
+    {
+      "date": "2026-07-08",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2675517942.4988375
+    },
+    {
+      "date": "2026-07-09",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2718057347.365594
+    },
+    {
+      "date": "2026-07-12",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2760493700.054746
+    },
+    {
+      "date": "2026-07-13",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2671789896.1136503
+    },
+    {
+      "date": "2026-07-17",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2757317642.3321786
+    },
+    {
+      "date": "2026-07-18",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2776788127.7851243
+    },
+    {
+      "date": "2026-07-19",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2771624606.297912
+    },
+    {
+      "date": "2026-07-20",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2798569839.0513077
+    },
+    {
+      "date": "2026-07-21",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2854986146.9061027
+    },
+    {
+      "date": "2026-07-22",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2832156892.7363796
+    },
+    {
+      "date": "2026-07-23",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2787978485.0377445
+    },
+    {
+      "date": "2026-07-25",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2765023750.7331066
+    },
+    {
+      "date": "2026-07-26",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2779188818.56694
+    },
+    {
+      "date": "2026-07-28",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2745819217.392022
+    },
+    {
+      "date": "2026-07-29",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2730007110.5007377
+    },
+    {
+      "date": "2026-07-30",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2788205008.2887244
+    },
+    {
+      "date": "2026-07-31",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2705779240.635253
+    },
+    {
+      "date": "2026-08-01",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2685665571.175538
+    },
+    {
+      "date": "2026-08-04",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2757527732.139243
+    },
+    {
+      "date": "2026-08-05",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2788614587.764611
+    },
+    {
+      "date": "2026-08-07",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2792184653.1251473
+    },
+    {
+      "date": "2026-08-08",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2796408506.8371644
+    },
+    {
+      "date": "2026-08-09",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2801015681.851853
+    },
+    {
+      "date": "2026-08-10",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2752773824.514247
+    },
+    {
+      "date": "2026-08-11",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2733255438.3257275
+    },
+    {
+      "date": "2026-08-12",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 2723267234.581363
+    },
+    {
+      "date": "2026-08-23",
+      "holdings": 43000.0,
+      "entry_value_usd": 3810765023.48,
+      "current_value_usd": 3321076165.456863
+    },
+    {
+      "date": "2026-08-24",
+      "holdings": 43000.0,
+      "entry_value_usd": null,
+      "current_value_usd": 3384173886.2837777
+    },
+    {
+      "date": "2026-08-27",
+      "holdings": 43000.0,
+      "entry_value_usd": null,
+      "current_value_usd": 3440409046.2751284
+    },
+    {
+      "date": "2026-08-28",
+      "holdings": 43000.0,
+      "entry_value_usd": null,
+      "current_value_usd": 3332850360.307823
+    },
+    {
+      "date": "2026-08-31",
+      "holdings": 43000.0,
+      "entry_value_usd": null,
+      "current_value_usd": 3393327642.77753
+    },
+    {
+      "date": "2026-09-02",
+      "holdings": 43000.0,
+      "entry_value_usd": null,
+      "current_value_usd": 3329143499.680243
+    },
+    {
+      "date": "2026-09-04",
+      "holdings": 43000.0,
+      "entry_value_usd": null,
+      "current_value_usd": 3487286253.4021087
+    },
+    {
+      "date": "2026-09-06",
+      "holdings": 43000.0,
+      "entry_value_usd": null,
+      "current_value_usd": 3430532155.909045
+    },
+    {
+      "date": "2026-09-13",
+      "holdings": 43000.0,
+      "entry_value_usd": null,
+      "current_value_usd": 3321577881.0701675
+    },
+    {
+      "date": "2026-09-17",
+      "holdings": 43000.0,
+      "entry_value_usd": null,
+      "current_value_usd": 3285902157.9350634
+    },
+    {
+      "date": "2026-09-19",
+      "holdings": 43000.0,
+      "entry_value_usd": null,
+      "current_value_usd": 3499519242.427849
+    },
+    {
+      "date": "2026-09-23",
+      "holdings": 43000.0,
+      "entry_value_usd": null,
+      "current_value_usd": 3627152775.764838
+    },
+    {
+      "date": "2026-09-24",
+      "holdings": 43000.0,
+      "entry_value_usd": null,
+      "current_value_usd": 3626602001.492192
+    }
+  ],
+  "MARA Holdings": [
+    {
+      "date": "2026-05-11",
+      "holdings": 38689.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 3171415059.690823
+    },
+    {
+      "date": "2026-05-13",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2810543665.353344
+    },
+    {
+      "date": "2026-05-17",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2767046365.550497
+    },
+    {
+      "date": "2026-05-18",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2715760375.9031463
+    },
+    {
+      "date": "2026-05-19",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2711731893.7810974
+    },
+    {
+      "date": "2026-05-20",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2739923696.040967
+    },
+    {
+      "date": "2026-05-21",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2740728248.9187536
+    },
+    {
+      "date": "2026-05-24",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2704779606.491341
+    },
+    {
+      "date": "2026-05-25",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2731054965.328221
+    },
+    {
+      "date": "2026-05-26",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2682489446.589663
+    },
+    {
+      "date": "2026-05-31",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2595858328.077609
+    },
+    {
+      "date": "2026-06-01",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2522541442.8562727
+    },
+    {
+      "date": "2026-06-02",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2370818656.46154
+    },
+    {
+      "date": "2026-06-03",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2303980035.5124
+    },
+    {
+      "date": "2026-06-04",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2236886060.0743914
+    },
+    {
+      "date": "2026-06-06",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2136722483.2206998
+    },
+    {
+      "date": "2026-06-07",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2170912041.673669
+    },
+    {
+      "date": "2026-06-08",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2236624312.419951
+    },
+    {
+      "date": "2026-06-09",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2189343226.03562
+    },
+    {
+      "date": "2026-06-10",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2185983121.4750695
+    },
+    {
+      "date": "2026-06-11",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2243920053.8492837
+    },
+    {
+      "date": "2026-06-14",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2252024401.5575843
+    },
+    {
+      "date": "2026-06-19",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2223242670.8244715
+    },
+    {
+      "date": "2026-06-20",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2254241474.3148756
+    },
+    {
+      "date": "2026-06-21",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2264376647.1585917
+    },
+    {
+      "date": "2026-06-22",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2274189189.6979666
+    },
+    {
+      "date": "2026-06-23",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2203353103.203461
+    },
+    {
+      "date": "2026-06-27",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2124212245.766718
+    },
+    {
+      "date": "2026-06-28",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2096066489.6984384
+    },
+    {
+      "date": "2026-06-29",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2131172699.1481767
+    },
+    {
+      "date": "2026-06-30",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2072101361.1821272
+    },
+    {
+      "date": "2026-07-01",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2144671888.441154
+    },
+    {
+      "date": "2026-07-02",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2168900517.2083564
+    },
+    {
+      "date": "2026-07-03",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2200746453.116271
+    },
+    {
+      "date": "2026-07-04",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2233171322.2276435
+    },
+    {
+      "date": "2026-07-06",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2252326569.1154795
+    },
+    {
+      "date": "2026-07-08",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2196600230.7915454
+    },
+    {
+      "date": "2026-07-09",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2231525082.1871524
+    },
+    {
+      "date": "2026-07-12",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2266365327.7449465
+    },
+    {
+      "date": "2026-07-13",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2193539504.709307
+    },
+    {
+      "date": "2026-07-17",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2263757784.3547187
+    },
+    {
+      "date": "2026-07-18",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2279743052.9115868
+    },
+    {
+      "date": "2026-07-19",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2275503801.770586
+    },
+    {
+      "date": "2026-07-20",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2297625837.8611236
+    },
+    {
+      "date": "2026-07-21",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2343943626.6099105
+    },
+    {
+      "date": "2026-07-22",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2325200808.936568
+    },
+    {
+      "date": "2026-07-23",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2288930336.215988
+    },
+    {
+      "date": "2026-07-25",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2270084499.3518806
+    },
+    {
+      "date": "2026-07-26",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2281714020.0434575
+    },
+    {
+      "date": "2026-07-28",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2254317577.4788504
+    },
+    {
+      "date": "2026-07-29",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2241335837.7211056
+    },
+    {
+      "date": "2026-07-30",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2289116311.8050427
+    },
+    {
+      "date": "2026-07-31",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2221444756.561543
+    },
+    {
+      "date": "2026-08-01",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2204931433.935117
+    },
+    {
+      "date": "2026-08-04",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2263930268.086319
+    },
+    {
+      "date": "2026-08-05",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2289452576.5547457
+    },
+    {
+      "date": "2026-08-07",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2292383600.215746
+    },
+    {
+      "date": "2026-08-08",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2295851384.113312
+    },
+    {
+      "date": "2026-08-09",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2299633874.800371
+    },
+    {
+      "date": "2026-08-10",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2260027309.9261966
+    },
+    {
+      "date": "2026-08-11",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2244002714.8654222
+    },
+    {
+      "date": "2026-08-12",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2235802399.591299
+    },
+    {
+      "date": "2026-08-23",
+      "holdings": 35303.0,
+      "entry_value_usd": 0.0,
+      "current_value_usd": 2726603531.8400846
+    },
+    {
+      "date": "2026-08-24",
+      "holdings": 35577.0,
+      "entry_value_usd": 1944717000.0,
+      "current_value_usd": 2799971031.449255
+    },
+    {
+      "date": "2026-08-27",
+      "holdings": 35577.0,
+      "entry_value_usd": 1944717000.0,
+      "current_value_usd": 2846498433.4727964
+    },
+    {
+      "date": "2026-08-28",
+      "holdings": 35577.0,
+      "entry_value_usd": 1944717000.0,
+      "current_value_usd": 2757507378.341196
+    },
+    {
+      "date": "2026-08-31",
+      "holdings": 35577.0,
+      "entry_value_usd": 1944717000.0,
+      "current_value_usd": 2807544594.118516
+    },
+    {
+      "date": "2026-09-02",
+      "holdings": 35577.0,
+      "entry_value_usd": 1944717000.0,
+      "current_value_usd": 2754440425.3052096
+    },
+    {
+      "date": "2026-09-04",
+      "holdings": 35577.0,
+      "entry_value_usd": 1944717000.0,
+      "current_value_usd": 2885283326.4485307
+    },
+    {
+      "date": "2026-09-06",
+      "holdings": 35577.0,
+      "entry_value_usd": 1944717000.0,
+      "current_value_usd": 2838326570.018049
+    },
+    {
+      "date": "2026-09-13",
+      "holdings": 35577.0,
+      "entry_value_usd": 1944717000.0,
+      "current_value_usd": 2748180843.6007757
+    },
+    {
+      "date": "2026-09-17",
+      "holdings": 35577.0,
+      "entry_value_usd": 1944717000.0,
+      "current_value_usd": 2718663745.8803663
+    },
+    {
+      "date": "2026-09-19",
+      "holdings": 35577.0,
+      "entry_value_usd": 1944717000.0,
+      "current_value_usd": 2895404560.1826878
+    },
+    {
+      "date": "2026-09-23",
+      "holdings": 35577.0,
+      "entry_value_usd": 1944717000.0,
+      "current_value_usd": 3001004983.7996664
+    },
+    {
+      "date": "2026-09-24",
+      "holdings": 35577.0,
+      "entry_value_usd": 1944717000.0,
+      "current_value_usd": 3000549288.5369234
+    }
+  ],
+  "__aggregate__": [
+    {
+      "date": "2026-05-11",
+      "total_holdings": 1230462.5267804659,
+      "total_value_usd": 100863485430.40118,
+      "company_count": 174
+    },
+    {
+      "date": "2026-05-13",
+      "total_holdings": 1226807.5267804659,
+      "total_value_usd": 97668643543.05981,
+      "company_count": 174
+    },
+    {
+      "date": "2026-05-17",
+      "total_holdings": 1226807.5267804659,
+      "total_value_usd": 96157077534.71042,
+      "company_count": 174
+    },
+    {
+      "date": "2026-05-18",
+      "total_holdings": 1251951.0267804659,
+      "total_value_usd": 96309066966.0269,
+      "company_count": 174
+    },
+    {
+      "date": "2026-05-19",
+      "total_holdings": 1251951.0267804659,
+      "total_value_usd": 96166204820.34337,
+      "company_count": 174
+    },
+    {
+      "date": "2026-05-20",
+      "total_holdings": 1251951.0267804659,
+      "total_value_usd": 97165971293.05206,
+      "company_count": 174
+    },
+    {
+      "date": "2026-05-21",
+      "total_holdings": 1271929.0267804659,
+      "total_value_usd": 98745483792.22617,
+      "company_count": 175
+    },
+    {
+      "date": "2026-05-24",
+      "total_holdings": 1271929.0267804659,
+      "total_value_usd": 97450292964.909,
+      "company_count": 175
+    },
+    {
+      "date": "2026-05-25",
+      "total_holdings": 1272129.0267804659,
+      "total_value_usd": 98412437898.39244,
+      "company_count": 175
+    },
+    {
+      "date": "2026-05-26",
+      "total_holdings": 1272129.0267804659,
+      "total_value_usd": 96658749475.00105,
+      "company_count": 175
+    },
+    {
+      "date": "2026-05-31",
+      "total_holdings": 1273652.3437804657,
+      "total_value_usd": 93652693642.979,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-01",
+      "total_holdings": 1273652.3437804657,
+      "total_value_usd": 91007586351.7902,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-02",
+      "total_holdings": 1273652.3437804657,
+      "total_value_usd": 85533771591.10262,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-03",
+      "total_holdings": 1275830.3437804657,
+      "total_value_usd": 83264528248.90562,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-04",
+      "total_holdings": 1275859.3313804658,
+      "total_value_usd": 80841626858.36322,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-06",
+      "total_holdings": 1275990.3313804658,
+      "total_value_usd": 77229618713.2219,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-07",
+      "total_holdings": 1275990.3313804658,
+      "total_value_usd": 78465364854.34746,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-08",
+      "total_holdings": 1277540.3313804658,
+      "total_value_usd": 80938667117.88206,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-09",
+      "total_holdings": 1277540.3313804658,
+      "total_value_usd": 79227665368.24419,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-10",
+      "total_holdings": 1277540.3313804658,
+      "total_value_usd": 79106070345.3351,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-11",
+      "total_holdings": 1277540.3313804658,
+      "total_value_usd": 81202684451.34653,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-14",
+      "total_holdings": 1277540.3313804658,
+      "total_value_usd": 81495963522.7253,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-19",
+      "total_holdings": 1279127.3313804658,
+      "total_value_usd": 80554356982.2079,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-20",
+      "total_holdings": 1279127.3313804658,
+      "total_value_usd": 81677531125.61407,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-21",
+      "total_holdings": 1279127.3313804658,
+      "total_value_usd": 82044757043.8834,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-22",
+      "total_holdings": 1279674.3313804658,
+      "total_value_usd": 82435530429.69234,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-23",
+      "total_holdings": 1279674.3313804658,
+      "total_value_usd": 79867841518.76509,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-27",
+      "total_holdings": 1279674.3313804658,
+      "total_value_usd": 76999118638.97466,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-28",
+      "total_holdings": 1279674.3313804658,
+      "total_value_usd": 75978882353.73337,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-29",
+      "total_holdings": 1280591.7364809657,
+      "total_value_usd": 77306805301.05063,
+      "company_count": 175
+    },
+    {
+      "date": "2026-06-30",
+      "total_holdings": 1280591.7364809657,
+      "total_value_usd": 75164033659.48483,
+      "company_count": 175
+    },
+    {
+      "date": "2026-07-01",
+      "total_holdings": 1280591.7364809657,
+      "total_value_usd": 77796478990.47586,
+      "company_count": 175
+    },
+    {
+      "date": "2026-07-02",
+      "total_holdings": 1283326.7364809657,
+      "total_value_usd": 78843385052.28673,
+      "company_count": 175
+    },
+    {
+      "date": "2026-07-03",
+      "total_holdings": 1283470.8797809659,
+      "total_value_usd": 80010027089.93515,
+      "company_count": 175
+    },
+    {
+      "date": "2026-07-04",
+      "total_holdings": 1283470.8797809659,
+      "total_value_usd": 81188861049.80132,
+      "company_count": 175
+    },
+    {
+      "date": "2026-07-06",
+      "total_holdings": 1279882.8797809659,
+      "total_value_usd": 81656352590.05473,
+      "company_count": 175
+    },
+    {
+      "date": "2026-07-08",
+      "total_holdings": 1279882.8797809659,
+      "total_value_usd": 79636037422.1176,
+      "company_count": 175
+    },
+    {
+      "date": "2026-07-09",
+      "total_holdings": 1279882.8797809659,
+      "total_value_usd": 80902210817.58347,
+      "company_count": 175
+    },
+    {
+      "date": "2026-07-12",
+      "total_holdings": 1279882.8797809659,
+      "total_value_usd": 82165316894.02982,
+      "company_count": 175
+    },
+    {
+      "date": "2026-07-13",
+      "total_holdings": 1279882.8797809659,
+      "total_value_usd": 79525073172.27037,
+      "company_count": 175
+    },
+    {
+      "date": "2026-07-17",
+      "total_holdings": 1285045.0097809657,
+      "total_value_usd": 82401797131.62753,
+      "company_count": 179
+    },
+    {
+      "date": "2026-07-18",
+      "total_holdings": 1285045.0097809657,
+      "total_value_usd": 82983668065.79778,
+      "company_count": 179
+    },
+    {
+      "date": "2026-07-19",
+      "total_holdings": 1285045.0097809657,
+      "total_value_usd": 82829357425.79688,
+      "company_count": 179
+    },
+    {
+      "date": "2026-07-20",
+      "total_holdings": 1285045.0097809657,
+      "total_value_usd": 83634609446.428,
+      "company_count": 179
+    },
+    {
+      "date": "2026-07-21",
+      "total_holdings": 1285045.0097809657,
+      "total_value_usd": 85320597699.42964,
+      "company_count": 179
+    },
+    {
+      "date": "2026-07-22",
+      "total_holdings": 1285045.0097809657,
+      "total_value_usd": 84638350742.50351,
+      "company_count": 179
+    },
+    {
+      "date": "2026-07-23",
+      "total_holdings": 1285045.0097809657,
+      "total_value_usd": 83318089292.42908,
+      "company_count": 179
+    },
+    {
+      "date": "2026-07-25",
+      "total_holdings": 1285045.0097809657,
+      "total_value_usd": 82632092390.8239,
+      "company_count": 179
+    },
+    {
+      "date": "2026-07-26",
+      "total_holdings": 1285045.0097809657,
+      "total_value_usd": 83055412152.05823,
+      "company_count": 179
+    },
+    {
+      "date": "2026-07-28",
+      "total_holdings": 1285045.0097809657,
+      "total_value_usd": 82058169373.72778,
+      "company_count": 179
+    },
+    {
+      "date": "2026-07-29",
+      "total_holdings": 1285045.0097809657,
+      "total_value_usd": 81585628232.91922,
+      "company_count": 179
+    },
+    {
+      "date": "2026-07-30",
+      "total_holdings": 1285828.9317682658,
+      "total_value_usd": 83375689938.5772,
+      "company_count": 179
+    },
+    {
+      "date": "2026-07-31",
+      "total_holdings": 1285828.9317682658,
+      "total_value_usd": 80910912339.22737,
+      "company_count": 179
+    },
+    {
+      "date": "2026-08-01",
+      "total_holdings": 1285828.9317682658,
+      "total_value_usd": 80309453313.28957,
+      "company_count": 179
+    },
+    {
+      "date": "2026-08-04",
+      "total_holdings": 1284190.9317682658,
+      "total_value_usd": 82353304830.52855,
+      "company_count": 179
+    },
+    {
+      "date": "2026-08-05",
+      "total_holdings": 1284190.9317682658,
+      "total_value_usd": 83281710832.65149,
+      "company_count": 179
+    },
+    {
+      "date": "2026-08-07",
+      "total_holdings": 1284190.9317682658,
+      "total_value_usd": 83388330496.87988,
+      "company_count": 179
+    },
+    {
+      "date": "2026-08-08",
+      "total_holdings": 1284190.9317682658,
+      "total_value_usd": 83514475488.3703,
+      "company_count": 179
+    },
+    {
+      "date": "2026-08-09",
+      "total_holdings": 1284190.9317682658,
+      "total_value_usd": 83652068334.29897,
+      "company_count": 179
+    },
+    {
+      "date": "2026-08-10",
+      "total_holdings": 1282500.9317682658,
+      "total_value_usd": 82103139415.97241,
+      "company_count": 179
+    },
+    {
+      "date": "2026-08-11",
+      "total_holdings": 1282500.9317682658,
+      "total_value_usd": 81520991777.0564,
+      "company_count": 179
+    },
+    {
+      "date": "2026-08-12",
+      "total_holdings": 1282500.9317682658,
+      "total_value_usd": 81223087576.85086,
+      "company_count": 179
+    },
+    {
+      "date": "2026-08-23",
+      "total_holdings": 1282516.8892943657,
+      "total_value_usd": 99054331926.31154,
+      "company_count": 179
+    },
+    {
+      "date": "2026-08-24",
+      "total_holdings": 1282516.8892943657,
+      "total_value_usd": 100936282917.85803,
+      "company_count": 179
+    },
+    {
+      "date": "2026-08-27",
+      "total_holdings": 1282516.8892943657,
+      "total_value_usd": 102613551347.18542,
+      "company_count": 179
+    },
+    {
+      "date": "2026-08-28",
+      "total_holdings": 1282516.8892943657,
+      "total_value_usd": 99405508757.80453,
+      "company_count": 179
+    },
+    {
+      "date": "2026-08-31",
+      "total_holdings": 1287119.8892943657,
+      "total_value_usd": 101572546509.56572,
+      "company_count": 179
+    },
+    {
+      "date": "2026-09-02",
+      "total_holdings": 1290275.8892943657,
+      "total_value_usd": 99895664875.31355,
+      "company_count": 179
+    },
+    {
+      "date": "2026-09-04",
+      "total_holdings": 1293204.7792943658,
+      "total_value_usd": 104878494178.3058,
+      "company_count": 180
+    },
+    {
+      "date": "2026-09-06",
+      "total_holdings": 1293204.7792943658,
+      "total_value_usd": 103171641384.7577,
+      "company_count": 180
+    },
+    {
+      "date": "2026-09-13",
+      "total_holdings": 1294579.7792943658,
+      "total_value_usd": 100001106050.8108,
+      "company_count": 180
+    },
+    {
+      "date": "2026-09-17",
+      "total_holdings": 1294036.6692943657,
+      "total_value_usd": 98885532187.94089,
+      "company_count": 180
+    },
+    {
+      "date": "2026-09-19",
+      "total_holdings": 1294036.6692943657,
+      "total_value_usd": 105314098246.57849,
+      "company_count": 180
+    },
+    {
+      "date": "2026-09-23",
+      "total_holdings": 1296273.6692943657,
+      "total_value_usd": 109343782272.8356,
+      "company_count": 180
+    },
+    {
+      "date": "2026-09-24",
+      "total_holdings": 1296098.6692943657,
+      "total_value_usd": 109312419260.33286,
+      "company_count": 180
+    }
+  ]
+}

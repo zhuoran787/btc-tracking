@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "doc": "用户填的 5 项 SECTION A cell 上一版内容。当 generate_report stdin 的 extra.user_inputs 缺该字段时，从这里读取并标 '未本期更新 · 上次 _last_updated 结果'。Phase 3 跑报告前 Claude 应逐项问用户'要改吗' — 改了写回此 JSON + extra.user_inputs.X，不改沿用本 cache。",
+    "version": 1,
+    "seed_source": "首版默认值（PPT slide 1 隐含逻辑）",
+    "seed_date": "2026-05-19"
+  },
+  "macro_summary": {
+    "value": "当前：美国金融条件已经从极宽松状态明显收紧，目前美国短端利率隐含的加息预期已经充分；长端利率方面则主要看27年全社会ai发债需求，可能仍会推高利率",
+    "_last_updated": "2026-09-17",
+    "_status": "fresh"
+  },
+  "cycle_summary": {
+    "_last_updated": "2026-09-04",
+    "_status": "fresh",
+    "value": "四年周期指向 2026-10-15 见底；按当前节奏，可能 2026 年 8 月已经提前见底"
+  },
+  "dat_outflow_bullish": {
+    "value": "DAT 公司彻底出清对币价是大利好，目前最大公司 Strategy 已出风险，最差的时候已过去。",
+    "_last_updated": "2026-09-04",
+    "_status": "fresh"
+  },
+  "trump_clearance_bullish": {
+    "value": "此前我们认为，trump等人的内幕交易、数字货币政策clarity act都可能在中选后面临来自民主党的负面挑战。本周部分利空已经落地，数字货币政策clarity act 未通过参议院，已经严重推迟。",
+    "_last_updated": "2026-09-17",
+    "_status": "fresh"
+  },
+  "miner_selloff_note": {
+    "value": "上市矿企 26Q3 持续卖出比特币转型 AI 电力提供商，但卖出节奏已经放缓。",
+    "_last_updated": "2026-09-17",
+    "_status": "fresh"
+  }
+}

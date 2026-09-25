@@ -1,0 +1,1274 @@
+{
+  "fetched_at": "2026-09-17T05:09:53.759942",
+  "source": "preserved Strategy official ledger baseline + SEC EDGAR 8-K reconciliation",
+  "errors": [],
+  "warnings": [
+    "Strategy ledger unavailable: https://www.strategy.com/ledger: 403 Client Error: Forbidden for url: https://www.strategy.com/ledger; https://www.strategy.com/purchases: 403 Client Error: Forbidden for url: https://www.strategy.com/purchases"
+  ],
+  "purchases": [
+    {
+      "date": "2020-08-10",
+      "btc_delta": 21454,
+      "btc_holdings": 21454,
+      "avg_price": 11652.84,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2020-09-14",
+      "btc_delta": 16796,
+      "btc_holdings": 38250,
+      "avg_price": 11035.995,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2020-12-04",
+      "btc_delta": 2574,
+      "btc_holdings": 40824,
+      "avg_price": 13832.997,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2020-12-21",
+      "btc_delta": 29646,
+      "btc_holdings": 70470,
+      "avg_price": 15698.498,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2021-01-22",
+      "btc_delta": 314,
+      "btc_holdings": 70784,
+      "avg_price": 18920.398,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2021-02-02",
+      "btc_delta": 295,
+      "btc_holdings": 71079,
+      "avg_price": 16109,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2021-02-19",
+      "btc_delta": 19452,
+      "btc_holdings": 90531,
+      "avg_price": 23985,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2021-03-01",
+      "btc_delta": 328,
+      "btc_holdings": 90859,
+      "avg_price": 24063,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2021-03-05",
+      "btc_delta": 205,
+      "btc_holdings": 91064,
+      "avg_price": 24119,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2021-03-12",
+      "btc_delta": 262,
+      "btc_holdings": 91326,
+      "avg_price": 24214,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2021-04-05",
+      "btc_delta": 253,
+      "btc_holdings": 91579,
+      "avg_price": 24311,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2021-05-13",
+      "btc_delta": 271,
+      "btc_holdings": 91850,
+      "avg_price": 24403,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2021-05-18",
+      "btc_delta": 229,
+      "btc_holdings": 92079,
+      "avg_price": 24450,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2021-06-21",
+      "btc_delta": 13005,
+      "btc_holdings": 105084,
+      "avg_price": 26080,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2021-08-24",
+      "btc_delta": 3907,
+      "btc_holdings": 108991,
+      "avg_price": 26769,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2021-09-13",
+      "btc_delta": 5050,
+      "btc_holdings": 114041,
+      "avg_price": 27713,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2021-11-29",
+      "btc_delta": 7002,
+      "btc_holdings": 121043,
+      "avg_price": 29534,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2021-12-09",
+      "btc_delta": 1434,
+      "btc_holdings": 122477,
+      "avg_price": 29861,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2021-12-30",
+      "btc_delta": 1914,
+      "btc_holdings": 124391,
+      "avg_price": 30159,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2022-02-01",
+      "btc_delta": 660,
+      "btc_holdings": 125051,
+      "avg_price": 30200,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2022-04-05",
+      "btc_delta": 4167,
+      "btc_holdings": 129218,
+      "avg_price": 30700,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2022-06-29",
+      "btc_delta": 480,
+      "btc_holdings": 129698,
+      "avg_price": 30664,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2022-09-20",
+      "btc_delta": 301,
+      "btc_holdings": 129999,
+      "avg_price": 30639,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2022-12-28",
+      "btc_delta": 2501,
+      "btc_holdings": 132500,
+      "avg_price": 30397,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2023-03-23",
+      "btc_delta": 6455,
+      "btc_holdings": 138955,
+      "avg_price": 29817,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2023-04-05",
+      "btc_delta": 1045,
+      "btc_holdings": 140000,
+      "avg_price": 29803,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2023-06-28",
+      "btc_delta": 12333,
+      "btc_holdings": 152333,
+      "avg_price": 29668,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2023-08-01",
+      "btc_delta": 467,
+      "btc_holdings": 152800,
+      "avg_price": 29672,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2023-09-25",
+      "btc_delta": 5445,
+      "btc_holdings": 158245,
+      "avg_price": 29582,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2023-11-01",
+      "btc_delta": 155,
+      "btc_holdings": 158400,
+      "avg_price": 29586,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2023-11-30",
+      "btc_delta": 16130,
+      "btc_holdings": 174530,
+      "avg_price": 30252,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2023-12-27",
+      "btc_delta": 14620,
+      "btc_holdings": 189150,
+      "avg_price": 31168,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2024-02-06",
+      "btc_delta": 850,
+      "btc_holdings": 190000,
+      "avg_price": 31224,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2024-02-26",
+      "btc_delta": 3000,
+      "btc_holdings": 193000,
+      "avg_price": 31544,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2024-03-11",
+      "btc_delta": 12000,
+      "btc_holdings": 205000,
+      "avg_price": 33706,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2024-03-19",
+      "btc_delta": 9245,
+      "btc_holdings": 214245,
+      "avg_price": 35160,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2024-04-29",
+      "btc_delta": 155,
+      "btc_holdings": 214400,
+      "avg_price": 35180,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2024-06-20",
+      "btc_delta": 11931,
+      "btc_holdings": 226331,
+      "avg_price": 43723,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2024-08-01",
+      "btc_delta": 169,
+      "btc_holdings": 226500,
+      "avg_price": 36821,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2024-09-13",
+      "btc_delta": 18300,
+      "btc_holdings": 244800,
+      "avg_price": 36821,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2024-09-20",
+      "btc_delta": 7420,
+      "btc_holdings": 252220,
+      "avg_price": 39266,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2024-11-11",
+      "btc_delta": 27200,
+      "btc_holdings": 279420,
+      "avg_price": 42692,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2024-11-18",
+      "btc_delta": 51780,
+      "btc_holdings": 331200,
+      "avg_price": 42692,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2024-11-25",
+      "btc_delta": 55500,
+      "btc_holdings": 386700,
+      "avg_price": 56761,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2024-12-02",
+      "btc_delta": 15400,
+      "btc_holdings": 402100,
+      "avg_price": 58263,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2024-12-09",
+      "btc_delta": 21550,
+      "btc_holdings": 423650,
+      "avg_price": 60324,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2024-12-16",
+      "btc_delta": 15350,
+      "btc_holdings": 439000,
+      "avg_price": 61725,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2024-12-23",
+      "btc_delta": 5262,
+      "btc_holdings": 444262,
+      "avg_price": 62257,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2024-12-30",
+      "btc_delta": 2138,
+      "btc_holdings": 446400,
+      "avg_price": 62428,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": null
+    },
+    {
+      "date": "2025-01-06",
+      "btc_delta": 1070,
+      "btc_holdings": 447470,
+      "avg_price": 62503,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 281735000
+    },
+    {
+      "date": "2025-01-13",
+      "btc_delta": 2530,
+      "btc_holdings": 450000,
+      "avg_price": 62691,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 282418000
+    },
+    {
+      "date": "2025-01-21",
+      "btc_delta": 11000,
+      "btc_holdings": 461000,
+      "avg_price": 63610,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 285425000
+    },
+    {
+      "date": "2025-01-27",
+      "btc_delta": 10107,
+      "btc_holdings": 471107,
+      "avg_price": 64511,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 288254000
+    },
+    {
+      "date": "2025-02-10",
+      "btc_delta": 7633,
+      "btc_holdings": 478740,
+      "avg_price": 65033,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 289439000
+    },
+    {
+      "date": "2025-02-24",
+      "btc_delta": 20356,
+      "btc_holdings": 499096,
+      "avg_price": 66357,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 294063000
+    },
+    {
+      "date": "2025-03-17",
+      "btc_delta": 130,
+      "btc_holdings": 499226,
+      "avg_price": 66360,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 294038000
+    },
+    {
+      "date": "2025-03-24",
+      "btc_delta": 6911,
+      "btc_holdings": 506137,
+      "avg_price": 66608,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 296002000
+    },
+    {
+      "date": "2025-03-31",
+      "btc_delta": 22048,
+      "btc_holdings": 528185,
+      "avg_price": 67458,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 299674000
+    },
+    {
+      "date": "2025-04-14",
+      "btc_delta": 3459,
+      "btc_holdings": 531644,
+      "avg_price": 67556,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 300590000
+    },
+    {
+      "date": "2025-04-21",
+      "btc_delta": 6556,
+      "btc_holdings": 538200,
+      "avg_price": 67766,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 302353000
+    },
+    {
+      "date": "2025-04-28",
+      "btc_delta": 15355,
+      "btc_holdings": 553555,
+      "avg_price": 68459,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 306417000
+    },
+    {
+      "date": "2025-05-05",
+      "btc_delta": 1895,
+      "btc_holdings": 555450,
+      "avg_price": 68550,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 306828000
+    },
+    {
+      "date": "2025-05-12",
+      "btc_delta": 13390,
+      "btc_holdings": 568840,
+      "avg_price": 69287,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 310078000
+    },
+    {
+      "date": "2025-05-19",
+      "btc_delta": 7390,
+      "btc_holdings": 576230,
+      "avg_price": 69726,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 311846000
+    },
+    {
+      "date": "2025-05-26",
+      "btc_delta": 4020,
+      "btc_holdings": 580250,
+      "avg_price": 69979,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 312737000
+    },
+    {
+      "date": "2025-06-02",
+      "btc_delta": 705,
+      "btc_holdings": 580955,
+      "avg_price": 70023,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 312778000
+    },
+    {
+      "date": "2025-06-09",
+      "btc_delta": 1045,
+      "btc_holdings": 582000,
+      "avg_price": 70086,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 312840000
+    },
+    {
+      "date": "2025-06-16",
+      "btc_delta": 10100,
+      "btc_holdings": 592100,
+      "avg_price": 70666,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 312883000
+    },
+    {
+      "date": "2025-06-23",
+      "btc_delta": 245,
+      "btc_holdings": 592345,
+      "avg_price": 70681,
+      "total_cost": null,
+      "shares_basic": null,
+      "shares_diluted": 312903000
+    },
+    {
+      "date": "2025-06-30",
+      "btc_delta": 4980,
+      "btc_holdings": 597325,
+      "avg_price": 70982,
+      "total_cost": 42399,
+      "shares_basic": 261318000,
+      "shares_diluted": 314216000
+    },
+    {
+      "date": "2025-07-14",
+      "btc_delta": 4225,
+      "btc_holdings": 601550,
+      "avg_price": 71268,
+      "total_cost": 42872,
+      "shares_basic": null,
+      "shares_diluted": 314242000
+    },
+    {
+      "date": "2025-07-21",
+      "btc_delta": 6220,
+      "btc_holdings": 607770,
+      "avg_price": 71756,
+      "total_cost": 43611,
+      "shares_basic": 283553000,
+      "shares_diluted": 316705000
+    },
+    {
+      "date": "2025-07-29",
+      "btc_delta": 21021,
+      "btc_holdings": 628791,
+      "avg_price": 73277,
+      "total_cost": 46076,
+      "shares_basic": 283590000,
+      "shares_diluted": 316703000
+    },
+    {
+      "date": "2025-08-11",
+      "btc_delta": 155,
+      "btc_holdings": 628946,
+      "avg_price": 73288,
+      "total_cost": 46094,
+      "shares_basic": 283754000,
+      "shares_diluted": 316710000
+    },
+    {
+      "date": "2025-08-18",
+      "btc_delta": 430,
+      "btc_holdings": 629376,
+      "avg_price": 73320,
+      "total_cost": 46094,
+      "shares_basic": 283756000,
+      "shares_diluted": 316727000
+    },
+    {
+      "date": "2025-08-25",
+      "btc_delta": 3081,
+      "btc_holdings": 632457,
+      "avg_price": 73527,
+      "total_cost": 46502,
+      "shares_basic": 284641000,
+      "shares_diluted": 317624000
+    },
+    {
+      "date": "2025-09-02",
+      "btc_delta": 4048,
+      "btc_holdings": 636505,
+      "avg_price": 73765,
+      "total_cost": 46952,
+      "shares_basic": 285883000,
+      "shares_diluted": 318877000
+    },
+    {
+      "date": "2025-09-08",
+      "btc_delta": 1955,
+      "btc_holdings": 638460,
+      "avg_price": 73880,
+      "total_cost": 47169,
+      "shares_basic": 286488000,
+      "shares_diluted": 319486000
+    },
+    {
+      "date": "2025-09-15",
+      "btc_delta": 525,
+      "btc_holdings": 638985,
+      "avg_price": 73913,
+      "total_cost": 47229,
+      "shares_basic": 286488000,
+      "shares_diluted": 319500000
+    },
+    {
+      "date": "2025-09-22",
+      "btc_delta": 850,
+      "btc_holdings": 639835,
+      "avg_price": 73971,
+      "total_cost": 47329,
+      "shares_basic": 286726000,
+      "shares_diluted": 319727000
+    },
+    {
+      "date": "2025-09-29",
+      "btc_delta": 196,
+      "btc_holdings": 640031,
+      "avg_price": 73983,
+      "total_cost": 47351,
+      "shares_basic": 287093000,
+      "shares_diluted": 320094000
+    },
+    {
+      "date": "2025-10-13",
+      "btc_delta": 220,
+      "btc_holdings": 640250,
+      "avg_price": 74000,
+      "total_cost": 47378,
+      "shares_basic": 287170000,
+      "shares_diluted": 320067000
+    },
+    {
+      "date": "2025-10-20",
+      "btc_delta": 168,
+      "btc_holdings": 640418,
+      "avg_price": 74010,
+      "total_cost": 47397,
+      "shares_basic": 287170000,
+      "shares_diluted": 320071000
+    },
+    {
+      "date": "2025-10-27",
+      "btc_delta": 390,
+      "btc_holdings": 640808,
+      "avg_price": 74032,
+      "total_cost": 47440,
+      "shares_basic": 287170000,
+      "shares_diluted": 320089000
+    },
+    {
+      "date": "2025-11-03",
+      "btc_delta": 397,
+      "btc_holdings": 641205,
+      "avg_price": 74057,
+      "total_cost": 47486,
+      "shares_basic": 287354000,
+      "shares_diluted": 320277000
+    },
+    {
+      "date": "2025-11-10",
+      "btc_delta": 487,
+      "btc_holdings": 641692,
+      "avg_price": 74079,
+      "total_cost": 47536,
+      "shares_basic": 287355000,
+      "shares_diluted": 320282000
+    },
+    {
+      "date": "2025-11-17",
+      "btc_delta": 8178,
+      "btc_holdings": 649870,
+      "avg_price": 74433,
+      "total_cost": 48372,
+      "shares_basic": 287396000,
+      "shares_diluted": 320283000
+    },
+    {
+      "date": "2025-12-01",
+      "btc_delta": 130,
+      "btc_holdings": 650000,
+      "avg_price": 74436,
+      "total_cost": 48383,
+      "shares_basic": 295663000,
+      "shares_diluted": 328510000
+    },
+    {
+      "date": "2025-12-08",
+      "btc_delta": 10624,
+      "btc_holdings": 660624,
+      "avg_price": 74696,
+      "total_cost": 49346,
+      "shares_basic": 300800000,
+      "shares_diluted": 333631000
+    },
+    {
+      "date": "2025-12-15",
+      "btc_delta": 10645,
+      "btc_holdings": 671268,
+      "avg_price": 74972,
+      "total_cost": 50326,
+      "shares_basic": 305590000,
+      "shares_diluted": 338444000
+    },
+    {
+      "date": "2025-12-29",
+      "btc_delta": 1229,
+      "btc_holdings": 672497,
+      "avg_price": 74997,
+      "total_cost": 50435,
+      "shares_basic": 305590000,
+      "shares_diluted": 343641000
+    },
+    {
+      "date": "2025-12-31",
+      "btc_delta": 3,
+      "btc_holdings": 672500,
+      "avg_price": 74997,
+      "total_cost": 50435,
+      "shares_basic": 312062000,
+      "shares_diluted": 344897000
+    },
+    {
+      "date": "2026-01-05",
+      "btc_delta": 1283,
+      "btc_holdings": 673783,
+      "avg_price": 75026,
+      "total_cost": 50551,
+      "shares_basic": 312797000,
+      "shares_diluted": 345632000
+    },
+    {
+      "date": "2026-01-12",
+      "btc_delta": 13627,
+      "btc_holdings": 687410,
+      "avg_price": 75353,
+      "total_cost": 51798,
+      "shares_basic": 319625000,
+      "shares_diluted": 352204000
+    },
+    {
+      "date": "2026-01-20",
+      "btc_delta": 22305,
+      "btc_holdings": 709715,
+      "avg_price": 75979,
+      "total_cost": 53924,
+      "shares_basic": 330174000,
+      "shares_diluted": 362606000
+    },
+    {
+      "date": "2026-01-26",
+      "btc_delta": 2932,
+      "btc_holdings": 712647,
+      "avg_price": 76037,
+      "total_cost": 54188,
+      "shares_basic": 331748000,
+      "shares_diluted": 364173000
+    },
+    {
+      "date": "2026-02-02",
+      "btc_delta": 855,
+      "btc_holdings": 713502,
+      "avg_price": 76052,
+      "total_cost": 54263,
+      "shares_basic": 332431000,
+      "shares_diluted": 364845000
+    },
+    {
+      "date": "2026-02-09",
+      "btc_delta": 1142,
+      "btc_holdings": 714644,
+      "avg_price": 76056,
+      "total_cost": 54353,
+      "shares_basic": 333083000,
+      "shares_diluted": 365461000
+    },
+    {
+      "date": "2026-02-17",
+      "btc_delta": 2486,
+      "btc_holdings": 717131,
+      "avg_price": 76027,
+      "total_cost": 54521,
+      "shares_basic": 333755000,
+      "shares_diluted": 366114000
+    },
+    {
+      "date": "2026-02-23",
+      "btc_delta": 592,
+      "btc_holdings": 717722,
+      "avg_price": 76020,
+      "total_cost": 54561,
+      "shares_basic": 334098000,
+      "shares_diluted": 366419000
+    },
+    {
+      "date": "2026-03-02",
+      "btc_delta": 3015,
+      "btc_holdings": 720737,
+      "avg_price": 75985,
+      "total_cost": 54765,
+      "shares_basic": 335853000,
+      "shares_diluted": 368154000
+    },
+    {
+      "date": "2026-03-09",
+      "btc_delta": 17994,
+      "btc_holdings": 738731,
+      "avg_price": 75862,
+      "total_cost": 56042,
+      "shares_basic": 342225000,
+      "shares_diluted": 374506000
+    },
+    {
+      "date": "2026-03-16",
+      "btc_delta": 22337,
+      "btc_holdings": 761068,
+      "avg_price": 75696,
+      "total_cost": 57610,
+      "shares_basic": 345084000,
+      "shares_diluted": 377340000
+    },
+    {
+      "date": "2026-03-23",
+      "btc_delta": 1031,
+      "btc_holdings": 762099,
+      "avg_price": 75694,
+      "total_cost": 57686,
+      "shares_basic": 345594000,
+      "shares_diluted": 377847000
+    },
+    {
+      "date": "2026-04-06",
+      "btc_delta": 4871,
+      "btc_holdings": 766970,
+      "avg_price": 75644,
+      "total_cost": 58016,
+      "shares_basic": 346819000,
+      "shares_diluted": 379425000
+    },
+    {
+      "date": "2026-04-13",
+      "btc_delta": 13927,
+      "btc_holdings": 780897,
+      "avg_price": 75577,
+      "total_cost": 59018,
+      "shares_basic": 346823000,
+      "shares_diluted": 379423000
+    },
+    {
+      "date": "2026-04-20",
+      "btc_delta": 34164,
+      "btc_holdings": 815061,
+      "avg_price": 75527,
+      "total_cost": 61559,
+      "shares_basic": 348992000,
+      "shares_diluted": 381588000
+    },
+    {
+      "date": "2026-04-27",
+      "btc_delta": 3273,
+      "btc_holdings": 818334,
+      "avg_price": 75537,
+      "total_cost": 61814,
+      "shares_basic": 350449000,
+      "shares_diluted": 383036000
+    },
+    {
+      "date": "2026-05-11",
+      "btc_delta": 535,
+      "btc_holdings": 818869,
+      "avg_price": 75540,
+      "total_cost": 61857,
+      "shares_basic": 351180000,
+      "shares_diluted": 383741000
+    },
+    {
+      "date": "2026-05-18",
+      "btc_delta": 24869,
+      "btc_holdings": 843738,
+      "avg_price": 75700,
+      "total_cost": 63871,
+      "shares_basic": 351659000,
+      "shares_diluted": 384169000
+    },
+    {
+      "date": "2026-06-01",
+      "btc_delta": -32,
+      "btc_holdings": 843706,
+      "avg_price": 75699,
+      "total_cost": 63867,
+      "shares_basic": 352527000,
+      "shares_diluted": 382756000
+    },
+    {
+      "date": "2026-06-08",
+      "btc_delta": 1550,
+      "btc_holdings": 845256,
+      "avg_price": 75680,
+      "total_cost": 63969,
+      "shares_basic": 354289783,
+      "shares_diluted": 384179562
+    },
+    {
+      "date": "2026-06-15",
+      "btc_delta": 1587,
+      "btc_holdings": 846842,
+      "avg_price": 75656,
+      "total_cost": 64069,
+      "shares_basic": 356320000,
+      "shares_diluted": 386052000
+    },
+    {
+      "date": "2026-06-22",
+      "btc_delta": 520,
+      "btc_holdings": 847363,
+      "avg_price": 75651,
+      "total_cost": 64103,
+      "shares_basic": 358892000,
+      "shares_diluted": 388617000
+    },
+    {
+      "date": "2026-06-30",
+      "btc_delta": -1363,
+      "btc_holdings": 846000,
+      "avg_price": 75578,
+      "total_cost": 63939,
+      "shares_basic": 371614000,
+      "shares_diluted": 401283000
+    },
+    {
+      "date": "2026-07-06",
+      "btc_delta": -2225,
+      "btc_holdings": 843775,
+      "avg_price": 75476,
+      "total_cost": 63685,
+      "shares_basic": 371614000,
+      "shares_diluted": 401294000
+    },
+    {
+      "date": "2026-08-03",
+      "btc_delta": -1638,
+      "btc_holdings": 842138,
+      "avg_price": 75419,
+      "total_cost": 63513,
+      "shares_basic": 387614000,
+      "shares_diluted": 417268000
+    },
+    {
+      "date": "2026-08-10",
+      "btc_delta": -1690,
+      "btc_holdings": 840447,
+      "avg_price": 75385,
+      "total_cost": 63357,
+      "shares_basic": 394203000,
+      "shares_diluted": 423850000
+    },
+    {
+      "date": "2026-08-31",
+      "btc_delta": 4603,
+      "btc_holdings": 845050,
+      "avg_price": 75412,
+      "total_cost": 63730.0,
+      "shares_basic": null,
+      "shares_diluted": null,
+      "sec_accession": "0001193125-26-375463"
+    }
+  ],
+  "weekly_net_buys": {
+    "week_start": [
+      "2024-02-05",
+      "2024-02-26",
+      "2024-03-11",
+      "2024-03-18",
+      "2024-04-29",
+      "2024-06-17",
+      "2024-07-29",
+      "2024-09-09",
+      "2024-09-16",
+      "2024-11-11",
+      "2024-11-18",
+      "2024-11-25",
+      "2024-12-02",
+      "2024-12-09",
+      "2024-12-16",
+      "2024-12-23",
+      "2024-12-30",
+      "2025-01-06",
+      "2025-01-13",
+      "2025-01-20",
+      "2025-01-27",
+      "2025-02-10",
+      "2025-02-24",
+      "2025-03-17",
+      "2025-03-24",
+      "2025-03-31",
+      "2025-04-14",
+      "2025-04-21",
+      "2025-04-28",
+      "2025-05-05",
+      "2025-05-12",
+      "2025-05-19",
+      "2025-05-26",
+      "2025-06-02",
+      "2025-06-09",
+      "2025-06-16",
+      "2025-06-23",
+      "2025-06-30",
+      "2025-07-14",
+      "2025-07-21",
+      "2025-07-28",
+      "2025-08-11",
+      "2025-08-18",
+      "2025-08-25",
+      "2025-09-01",
+      "2025-09-08",
+      "2025-09-15",
+      "2025-09-22",
+      "2025-09-29",
+      "2025-10-13",
+      "2025-10-20",
+      "2025-10-27",
+      "2025-11-03",
+      "2025-11-10",
+      "2025-11-17",
+      "2025-12-01",
+      "2025-12-08",
+      "2025-12-15",
+      "2025-12-29",
+      "2026-01-05",
+      "2026-01-12",
+      "2026-01-19",
+      "2026-01-26",
+      "2026-02-02",
+      "2026-02-09",
+      "2026-02-16",
+      "2026-02-23",
+      "2026-03-02",
+      "2026-03-09",
+      "2026-03-16",
+      "2026-03-23",
+      "2026-04-06",
+      "2026-04-13",
+      "2026-04-20",
+      "2026-04-27",
+      "2026-05-11",
+      "2026-05-18",
+      "2026-06-01",
+      "2026-06-08",
+      "2026-06-15",
+      "2026-06-22",
+      "2026-06-29",
+      "2026-07-06",
+      "2026-08-03",
+      "2026-08-10",
+      "2026-08-31"
+    ],
+    "net_btc": [
+      850.0,
+      3000.0,
+      12000.0,
+      9245.0,
+      155.0,
+      11931.0,
+      169.0,
+      18300.0,
+      7420.0,
+      27200.0,
+      51780.0,
+      55500.0,
+      15400.0,
+      21550.0,
+      15350.0,
+      5262.0,
+      2138.0,
+      1070.0,
+      2530.0,
+      11000.0,
+      10107.0,
+      7633.0,
+      20356.0,
+      130.0,
+      6911.0,
+      22048.0,
+      3459.0,
+      6556.0,
+      15355.0,
+      1895.0,
+      13390.0,
+      7390.0,
+      4020.0,
+      705.0,
+      1045.0,
+      10100.0,
+      245.0,
+      4980.0,
+      4225.0,
+      6220.0,
+      21021.0,
+      155.0,
+      430.0,
+      3081.0,
+      4048.0,
+      1955.0,
+      525.0,
+      850.0,
+      196.0,
+      220.0,
+      168.0,
+      390.0,
+      397.0,
+      487.0,
+      8178.0,
+      130.0,
+      10624.0,
+      10645.0,
+      1232.0,
+      1283.0,
+      13627.0,
+      22305.0,
+      2932.0,
+      855.0,
+      1142.0,
+      2486.0,
+      592.0,
+      3015.0,
+      17994.0,
+      22337.0,
+      1031.0,
+      4871.0,
+      13927.0,
+      34164.0,
+      3273.0,
+      535.0,
+      24869.0,
+      -32.0,
+      1550.0,
+      1587.0,
+      520.0,
+      -1363.0,
+      -2225.0,
+      -1638.0,
+      -1690.0,
+      4603.0
+    ]
+  },
+  "mnav": {
+    "deprecated": true,
+    "reason": "Use fetch_mnav.py EV mNAV; legacy equity/gross-BTC method is not comparable."
+  },
+  "sec_reconciliation": {
+    "source": "SEC EDGAR submissions API + official complete-submission text",
+    "cik": "0001050446",
+    "filings_checked": 6,
+    "btc_updates_found": 5,
+    "latest_filing_date": "2026-09-14",
+    "latest_as_of": "2026-09-13",
+    "latest_holdings": 845050,
+    "latest_accession": "0001193125-26-389858"
+  }
+}
