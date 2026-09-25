@@ -9,7 +9,7 @@
       "country": "ðºð¸",
       "ticker": "MSTR",
       "btc_holdings": 846000.0,
-      "mnav": 1.13,
+      "mnav": 1.14,
       "mnav_method": "enterprise_value"
     },
     {
@@ -27,7 +27,7 @@
       "country": "ð¯ðµ",
       "ticker": "MPJPY",
       "btc_holdings": 43000.0,
-      "mnav": 0.79,
+      "mnav": 0.78,
       "mnav_method": "enterprise_value"
     },
     {
@@ -63,7 +63,7 @@
       "country": "ð«ð·",
       "ticker": "ALCPB.PA",
       "btc_holdings": 3525.0,
-      "mnav": 1.18,
+      "mnav": 1.19,
       "mnav_method": "enterprise_value"
     },
     {
