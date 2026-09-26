@@ -1,7 +1,7 @@
 {
   "source": "farside",
   "url": "https://farside.co.uk/btc/",
-  "fetched_at": "2026-09-25T11:30:27.644999",
+  "fetched_at": "2026-09-26T01:40:32.203967",
   "daily_flows": [
     {
       "date": "2024-01-11",
@@ -12206,6 +12206,24 @@
         "GBTC": 0.0,
         "BTC": 0.0
       }
+    },
+    {
+      "date": "2026-09-25",
+      "total_flow_m": 37.5,
+      "etf_flows": {
+        "IBIT": 0.0,
+        "FBTC": 49.3,
+        "BITB": -11.8,
+        "ARKB": 0.0,
+        "BTCO": 0.0,
+        "EZBC": 0.0,
+        "BRRR": 0.0,
+        "HODL": 0.0,
+        "BTCW": 0.0,
+        "MSBT": 0.0,
+        "GBTC": 0.0,
+        "BTC": 0.0
+      }
     }
   ],
   "etf_names": [
@@ -12225,12 +12243,12 @@
     "Total"
   ],
   "summary": {
-    "total_days": 678,
-    "latest_date": "2026-09-24",
-    "latest_flow_m": 190.7,
-    "sum_7d_m": 2547.9,
-    "sum_30d_m": 5436.4,
-    "positive_days_30d": 20,
-    "negative_days_30d": 10
+    "total_days": 679,
+    "latest_date": "2026-09-25",
+    "latest_flow_m": 37.5,
+    "sum_7d_m": 2881.3,
+    "sum_30d_m": 5605.0,
+    "positive_days_30d": 21,
+    "negative_days_30d": 9
   }
 }
