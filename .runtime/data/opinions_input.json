@@ -901,35 +901,6 @@
           "summary": "本期未找到可核实的新观点；近期退出 ETHZ 的报道回溯 2025Q4 减持与 2026 年 2 月披露，不能按转发日期记为新观点"
         },
         {
-          "name": "Trendresearch",
-          "org": "Trend Research (Medium)",
-          "handle": "（Medium）",
-          "has_update": false,
-          "stance": "中性",
-          "raw_search_results": [
-            {
-              "date": "2026-09-25",
-              "url": "https://news.google.com/rss/search?q=Trendresearch+Medium+crypto+BTC+ETH+analysis+when%3A14d&hl=en-US&gl=US&ceid=US:en",
-              "title": "本期独立 RSS 检索",
-              "snippet": "窗口14天，命中0条；逐条筛选原始日期、人物与主题"
-            },
-            {
-              "date": "2026-09-25",
-              "url": "https://www.google.com/search?q=Trendresearch+BTC+ETH+September+2026",
-              "title": "检索结论",
-              "snippet": "固定 Medium 目录最新文章仍为 2026-01-07，本期 14 天内无新文"
-            },
-            {
-              "date": "2026-09-25",
-              "url": "https://trendresearch.medium.com/",
-              "title": "固定渠道优先直查",
-              "snippet": "先查官网/Medium，再跑 RSS；已读取目录及相关新文章"
-            }
-          ],
-          "checked_at": "2026-09-25",
-          "summary": "本期未找到可核实的新观点；固定 Medium 目录最新文章仍为 2026-01-07，本期 14 天内无新文"
-        },
-        {
           "name": "Matt Hougan",
           "org": "Bitwise CIO",
           "handle": "@Matt_Hougan",

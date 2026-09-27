@@ -13,6 +13,8 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+from fetch_dat_history import FEATURED_SOURCES
+
 from jinja2 import Environment, FileSystemLoader
 
 
@@ -566,10 +568,10 @@ def build_factor_rows(data, extra):
 
 
 def _top_company_line_v2(dat):
-    """Summarize the four dynamically tracked DAT companies."""
+    """Summarize the dynamically tracked DAT companies."""
     cb = dat.get("cost_basis_summary", []) or []
     parts = []
-    targets = ["Strategy", "Twenty One Capital", "Metaplanet", "MARA Holdings"]
+    targets = list(FEATURED_SOURCES)
     for c in cb:
         if c.get("name") in targets:
             h = c.get("holdings")
@@ -1062,7 +1064,7 @@ def _dat_data_change(data, extra):
     else:
         weekly_str = "DAT 公司每周买入量历史分位与环比待算"
 
-    cost_str = f"四家追踪公司美元可比部分存量成本 ${weighted_cost:,.0f}，{'低于' if cur_btc and weighted_cost < cur_btc else '高于'}现价" if weighted_cost else "四家追踪公司美元可比成本未披露"
+    cost_str = f"追踪公司美元可比部分存量成本 ${weighted_cost:,.0f}，{'低于' if cur_btc and weighted_cost < cur_btc else '高于'}现价" if weighted_cost else "追踪公司美元可比成本未披露"
     mnav_history = (data.get("mnav_history", {}) or {}).get("MSTR") or []
     mnav_values = [float(r["mnav"]) for r in mnav_history if r.get("mnav") is not None]
     if mstr_mnav is not None and len(mnav_values) >= 2 and mnav_values[-2] != 0:
@@ -1520,9 +1522,9 @@ def prepare_chart_data(data):
         "total_holdings": [r["total_holdings"] for r in dat_agg],
     }
 
-    # DAT per-company history (the four report-tracked companies)
+    # DAT per-company history (the configured report-tracked companies)
     dat_per_company = {}
-    featured_dats = ["Strategy", "Twenty One Capital", "Metaplanet", "MARA Holdings"]
+    featured_dats = list(FEATURED_SOURCES)
     for name in featured_dats:
         rows = dat_hist.get(name, []) or []
         if rows:
@@ -1604,7 +1606,7 @@ def prepare_key_companies(tres):
     kc = tres.get("key_companies", {})
     order = [
         "Strategy", "Twenty One Capital", "Metaplanet Inc",
-        "MARA Holdings, Inc", "Tether Holdings Limited",
+        "MARA Holdings, Inc", "Strive", "Tether Holdings Limited",
         "Block", "Tesla", "Coinbase",
     ]
     result = []
@@ -1634,7 +1636,6 @@ FULL_KOL_ROSTER = {
         {"name": "Tom Lee", "org": "BMNR / Fundstrat", "twitter": "fundstrat"},
         {"name": "Joseph Chalom", "org": "SharpLink Gaming（前 BlackRock）", "twitter": "joechalom"},
         {"name": "Peter Thiel", "org": "Founders Fund", "twitter": None},
-        {"name": "Trendresearch", "org": "中文加密研究 (Medium)", "twitter": None, "rss": "https://trendresearch.medium.com/feed"},
         {"name": "Matt Hougan", "org": "Bitwise CIO", "twitter": "Matt_Hougan"},
         {"name": "VanEck", "org": "数字资产研究 · Matthew Sigel；有 BTC 敞口背景", "twitter": "matthew_sigel", "website": "https://www.vaneck.com/us/en/insights/thought-leaders/matthew-sigel"},
         {"name": "David Sacks", "org": "白宫 AI & Crypto Czar / Craft Ventures", "twitter": "DavidSacks"},
@@ -2042,7 +2043,7 @@ def build_context(data, extra):
     _strat = data.get("strategy_data", {}) or {}
     _strat_weekly = _strat.get("weekly_net_buys") or {}
 
-    _mnav_names = {"MSTR": "Strategy", "XXI": "Twenty One", "MPJPY": "Metaplanet"}
+    _mnav_names = {cfg["mnav_ticker"]: name for name, cfg in FEATURED_SOURCES.items() if cfg.get("mnav_ticker")}
     _mnav_dates = sorted({
         item.get("date")
         for ticker in _mnav_names
@@ -2292,6 +2293,11 @@ def build_context(data, extra):
         # Strategy 官方周度净买入 + 跨公司统一 EV mNAV（2026-06-26 后同口径）
         "chart_strat_weekly_labels": json.dumps(_strat_weekly.get("week_start") or []),
         "chart_strat_weekly_values": json.dumps(_strat_weekly.get("net_btc") or []),
+        "chart_ev_mnav_datasets": json.dumps([{
+            "label": name + " EV mNAV", "data": _mnav_series[cfg["mnav_ticker"]],
+            "borderColor": cfg["chart_color"], "borderWidth": 2, "fill": False,
+            "pointRadius": 2, "tension": 0.15, "spanGaps": False,
+        } for name, cfg in FEATURED_SOURCES.items() if cfg.get("mnav_ticker")]),
         "chart_ev_mnav_labels": json.dumps(_mnav_dates),
         "chart_ev_mnav_mstr": json.dumps(_mnav_series.get("MSTR") or []),
         "chart_ev_mnav_xxi": json.dumps(_mnav_series.get("XXI") or []),

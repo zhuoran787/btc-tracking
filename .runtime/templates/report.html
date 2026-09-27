@@ -387,7 +387,7 @@ a:hover { text-decoration: underline; }
         {% endfor %}
       </ul>
       {% else %}
-      <div style="font-size:12px;color:var(--text-muted);padding:8px 0;">⚠️ 待 Phase 2 WebSearch 6 家 DAT 公司 8-K + Tether 持仓变化后填入。</div>
+      <div style="font-size:12px;color:var(--text-muted);padding:8px 0;">⚠️ 待 Phase 2 WebSearch 指定 DAT 公司 8-K + Tether 持仓变化后填入。</div>
       {% endif %}
     </div>
 
@@ -421,7 +421,8 @@ a:hover { text-decoration: underline; }
     <!-- 图 3：表格（DAT 公司存量 BTC 买入成本）-->
     <div style="margin-bottom:18px;">
       <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 3：DAT 公司持仓 + 平均成本</div>
-      <table style="width:100%;font-size:12px;border-collapse:collapse;">
+      <div style="overflow-x:auto;">
+      <table style="min-width:540px;width:100%;font-size:12px;border-collapse:collapse;">
         <thead><tr style="color:var(--text-muted);text-align:left;border-bottom:1px solid var(--border);">
           <th style="padding:6px 8px;">公司</th>
           <th style="text-align:right;padding:6px 8px;">BTC 持仓量</th>
@@ -429,16 +430,16 @@ a:hover { text-decoration: underline; }
           <th style="text-align:right;padding:6px 8px;">PnL%</th>
         </tr></thead>
         <tbody>
-          {# 第一行：四家追踪公司中美元成本可比部分的加权平均 #}
+          {# 第一行：追踪公司中美元成本可比部分的加权平均 #}
           {% if dat_total_cost.weighted_avg_cost_usd %}
           <tr style="background:var(--bg2);font-weight:600;border-bottom:1px solid var(--border);">
-            <td style="padding:7px 8px;">四家追踪公司（美元成本可比部分）</td>
+            <td style="padding:7px 8px;">追踪公司（美元成本可比部分）</td>
             <td style="text-align:right;padding:7px 8px;">{{ '{:,.0f}'.format(dat_total_cost.covered_holdings) }}</td>
             <td style="text-align:right;padding:7px 8px;">${{ '{:,.0f}'.format(dat_total_cost.weighted_avg_cost_usd) }}</td>
             <td style="text-align:right;padding:7px 8px;color:var(--text-muted);">覆盖 {{ '{:.0f}'.format(dat_total_cost.coverage_pct) }}%</td>
           </tr>
           {% endif %}
-          {# Strategy / Twenty One Capital / Metaplanet / MARA 四家分项 #}
+          {# 配置中追踪公司的分项 #}
           {% for c in dat_cost_basis %}
             <tr style="border-bottom:1px solid var(--border);">
               <td style="padding:6px 8px;">{{ c.name }}</td>
@@ -449,6 +450,7 @@ a:hover { text-decoration: underline; }
           {% endfor %}
         </tbody>
       </table>
+      </div>
       <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">持仓与美元成本：<a href="https://bitcointreasuries.net/public-companies/" target="_blank">BitcoinTreasuries.net 公司页</a>；Metaplanet 成本：公司最新官方购币公告（日元原币口径）。缺失字段不使用人工常数补齐。</div>
     </div>
 
@@ -1230,24 +1232,7 @@ if (document.getElementById('chartEvMnav')) {
     data: {
       labels: mnavLabels,
       datasets: [
-        {
-          label: 'Strategy EV mNAV',
-          data: {{ chart_ev_mnav_mstr | safe }},
-          borderColor: '#b91c1c', borderWidth: 2, fill: false,
-          pointRadius: 2, tension: 0.15, spanGaps: false,
-        },
-        {
-          label: 'Twenty One EV mNAV',
-          data: {{ chart_ev_mnav_xxi | safe }},
-          borderColor: '#2563eb', borderWidth: 2, fill: false,
-          pointRadius: 2, tension: 0.15, spanGaps: false,
-        },
-        {
-          label: 'Metaplanet EV mNAV',
-          data: {{ chart_ev_mnav_metaplanet | safe }},
-          borderColor: '#a16207', borderWidth: 2, fill: false,
-          pointRadius: 2, tension: 0.15, spanGaps: false,
-        },
+        ...{{ chart_ev_mnav_datasets | safe }},
         {
           label: 'mNAV = 1.0（币值平价）',
           data: mnavLabels.map(() => 1.0),
@@ -1420,7 +1405,7 @@ if (document.getElementById('chartDat')) {
 }
 {% endif %}
 
-// ── 四家分项持仓 (Item 2) ─────────────────────────────
+// ── 追踪公司分项持仓 (Item 2) ─────────────────────────────
 // ⚠️ canvas 已被 TODO #2 MacroMicro 截图占位替代，init 仅当 canvas 存在时执行
 {% if chart_dat_per_company and chart_dat_per_company != '{}' %}
 if (document.getElementById('chartDatPerCompany')) {

@@ -17,6 +17,14 @@
         "action": "buy"
       },
       {
+        "date": "2026-09-21",
+        "company": "Strive (ASST)",
+        "text": "披露9/14–18买入1,355 BTC，均价$79,475；截至9/18累计持仓26,355枚",
+        "url": "https://www.sec.gov/Archives/edgar/data/1920406/000162828026062806/asst-20260921.htm",
+        "action": "buy",
+        "checked_at": "2026-09-26"
+      },
+      {
         "date": "2026-09-14",
         "company": "Strategy",
         "text": "确认截至9/13的一周未买卖 BTC，当时持仓为845,050枚",

@@ -32,7 +32,7 @@ HEADERS = {
 
 KEY_PUBLIC_COMPANIES = [
     "Strategy", "MicroStrategy", "Twenty One Capital",
-    "MARA", "Marathon", "Metaplanet", "Block", "Tesla", "Coinbase",
+    "Strive", "MARA", "Marathon", "Metaplanet", "Block", "Tesla", "Coinbase",
 ]
 
 KEY_PRIVATE_COMPANIES = ["Tether", "Block.one"]

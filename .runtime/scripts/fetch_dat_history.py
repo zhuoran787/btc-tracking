@@ -1,7 +1,7 @@
-"""Fetch DAT aggregate totals plus four dynamically sourced company snapshots.
+"""Fetch DAT aggregate totals plus dynamically sourced company snapshots.
 
 Aggregate market totals remain sourced from CoinGecko's free public-treasury
-endpoint.  Holdings and cost basis for the four companies shown in the report
+endpoint.  Holdings and cost basis for the tracked companies shown in the report
 come from their public BitcoinTreasuries.net company pages.  Metaplanet's page
 does not publish a USD cost basis, so its native-yen average cost is parsed from
 the latest official "Notice of Additional Purchase of Bitcoin" PDF.
@@ -28,16 +28,19 @@ HEADERS = {"User-Agent": "Mozilla/5.0 btc-tracking/1.0"}
 
 FEATURED_SOURCES = {
     "Strategy": {
-        "slug": "strategy", "symbol": "MSTR.US", "country": "USA",
+        "slug": "strategy", "symbol": "MSTR.US", "country": "USA", "mnav_ticker": "MSTR", "chart_color": "#b91c1c",
     },
     "Twenty One Capital": {
-        "slug": "twenty-one-capital", "symbol": "XXI.US", "country": "USA",
+        "slug": "twenty-one-capital", "symbol": "XXI.US", "country": "USA", "mnav_ticker": "XXI", "chart_color": "#2563eb",
     },
     "Metaplanet": {
-        "slug": "metaplanet", "symbol": "3350.T", "country": "Japan",
+        "slug": "metaplanet", "symbol": "3350.T", "country": "Japan", "mnav_ticker": "MPJPY", "chart_color": "#a16207",
     },
     "MARA Holdings": {
         "slug": "mara", "symbol": "MARA.US", "country": "USA",
+    },
+    "Strive": {
+        "slug": "strive", "symbol": "ASST.US", "country": "USA", "mnav_ticker": "ASST", "chart_color": "#0891b2",
     },
 }
 
@@ -242,7 +245,7 @@ def total_cost_summary(cost_basis: list[dict]) -> dict:
     covered_holdings = sum(company["holdings"] for company in usd_comparable)
     total_entry_usd = sum(company["avg_cost_basis_usd"] * company["holdings"] for company in usd_comparable)
     return {
-        "scope": "four tracked companies; USD-comparable rows only",
+        "scope": "tracked companies; USD-comparable rows only",
         "total_entry_value_usd": total_entry_usd,
         "covered_holdings": covered_holdings,
         "tracked_holdings": tracked_holdings,

@@ -35,6 +35,10 @@ def nested(d, path):
 
 
 def validate(name, d, rules):
+    if name == 'dat_data.json':
+        from fetch_dat_history import FEATURED_SOURCES
+        if [row.get('name') for row in d.get('cost_basis_summary', [])] != list(FEATURED_SOURCES):
+            raise ValueError('DAT tracked-company coverage does not match configuration')
     if name == 'mvrv_zscore':
         from fetch_bgeometrics import MVRV_Z_METHOD
         if d.get('methodology_id') != MVRV_Z_METHOD:
