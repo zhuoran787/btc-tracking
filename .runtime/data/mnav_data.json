@@ -9,7 +9,7 @@
       "country": "ðºð¸",
       "ticker": "MSTR",
       "btc_holdings": 846000.0,
-      "mnav": 1.12,
+      "mnav": 1.11,
       "mnav_method": "enterprise_value"
     },
     {
@@ -36,7 +36,7 @@
       "country": "ðºð¸",
       "ticker": "ASST",
       "btc_holdings": 26355.0,
-      "mnav": 1.4,
+      "mnav": 1.39,
       "mnav_method": "enterprise_value"
     },
     {
@@ -90,7 +90,7 @@
       "country": "ðºð¸",
       "ticker": "USBC",
       "btc_holdings": 1000.0,
-      "mnav": 0.09,
+      "mnav": 0.08,
       "mnav_method": "enterprise_value"
     }
   ],
