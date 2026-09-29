@@ -1,11 +1,7 @@
 {
   "btc_price": {
-    "current": 83880.39640442189,
+    "current": 82886.68132284911,
     "history": [
-      {
-        "ts": 1759104000000,
-        "price": 112179.39882976888
-      },
       {
         "ts": 1759190400000,
         "price": 114327.17133804818
@@ -1463,21 +1459,21 @@
         "price": 84448.75015162026
       },
       {
-        "ts": 1790559840000,
-        "price": 83880.39640442189
+        "ts": 1790640000000,
+        "price": 83479.2543356063
+      },
+      {
+        "ts": 1790649320000,
+        "price": 82886.68132284911
       }
     ],
-    "change_7d": -2.6720932852994124,
-    "change_30d": 8.012241542750258,
-    "change_90d": 39.87599545666676
+    "change_7d": -1.7725480460696912,
+    "change_30d": 5.517184790803855,
+    "change_90d": 34.796539607859955
   },
   "gold_price": {
-    "current": 4215.978693441427,
+    "current": 4139.880161931836,
     "history": [
-      {
-        "ts": 1759104000000,
-        "price": 3768.828622825624
-      },
       {
         "ts": 1759190400000,
         "price": 3828.318885535945
@@ -2935,18 +2931,18 @@
         "price": 4260.393885281655
       },
       {
-        "ts": 1790559870000,
-        "price": 4215.978693441427
+        "ts": 1790640000000,
+        "price": 4131.336782215656
+      },
+      {
+        "ts": 1790649330000,
+        "price": 4139.880161931836
       }
     ]
   },
   "sox_price": {
-    "current": 12668.9296875,
+    "current": 12465.2412109375,
     "history": [
-      {
-        "ts": 1758600000000,
-        "price": 6308.2099609375
-      },
       {
         "ts": 1758686400000,
         "price": 6297.0
@@ -3958,82 +3954,62 @@
       {
         "ts": 1790308800000,
         "price": 12668.9296875
+      },
+      {
+        "ts": 1790568000000,
+        "price": 12465.2412109375
       }
     ]
   },
   "correlations": {
-    "btc_gold_3m": 0.5186126514627832,
-    "btc_gold_6m": 0.5768631721715795,
-    "btc_sox_3m": 0.04188332389642055,
-    "btc_sox_6m": 0.07998598596935524
+    "btc_gold_3m": 0.5263458841805548,
+    "btc_gold_6m": 0.5800184230273484,
+    "btc_sox_3m": 0.052047933228961736,
+    "btc_sox_6m": 0.07269749784224366
   },
   "correlations_meta": {
     "btc_gold_3m": {
       "observations": 63,
       "requested_observations": 63,
       "price_points": 64,
-      "start_date": "2026-07-27",
-      "end_date": "2026-09-28",
+      "start_date": "2026-07-28",
+      "end_date": "2026-09-29",
       "method": "Pearson correlation of daily simple returns"
     },
     "btc_gold_6m": {
       "observations": 126,
       "requested_observations": 126,
       "price_points": 127,
-      "start_date": "2026-05-25",
-      "end_date": "2026-09-28",
+      "start_date": "2026-05-26",
+      "end_date": "2026-09-29",
       "method": "Pearson correlation of daily simple returns"
     },
     "btc_sox_3m": {
       "observations": 63,
       "requested_observations": 63,
       "price_points": 64,
-      "start_date": "2026-06-26",
-      "end_date": "2026-09-25",
+      "start_date": "2026-06-29",
+      "end_date": "2026-09-28",
       "method": "Pearson correlation of daily simple returns"
     },
     "btc_sox_6m": {
       "observations": 126,
       "requested_observations": 126,
       "price_points": 127,
-      "start_date": "2026-03-26",
-      "end_date": "2026-09-25",
+      "start_date": "2026-03-27",
+      "end_date": "2026-09-28",
       "method": "Pearson correlation of daily simple returns"
     }
   },
   "funding": {
     "source": "Hyperliquid",
-    "current_rate_pct": 0.00899783,
-    "current_rate_pct_hourly_snapshot": 0.00021894000000000001,
-    "current_oi_usd": 3130815743.71944,
-    "mark_price": 83796.0,
-    "percentile_90d": 38.1,
-    "percentile_730d": 39.9,
+    "current_rate_pct": 0.0057605500000000006,
+    "current_rate_pct_hourly_snapshot": -5.729999999999999e-06,
+    "current_oi_usd": 2809744190.92,
+    "mark_price": 82900.0,
+    "percentile_90d": 20.7,
+    "percentile_730d": 26.4,
     "history_8h": [
-      {
-        "ts": 1726444800000,
-        "date": "2024-09-16 00:00",
-        "rate_8h": 0.0075,
-        "n_hours": 6
-      },
-      {
-        "ts": 1726473600000,
-        "date": "2024-09-16 08:00",
-        "rate_8h": 0.01,
-        "n_hours": 8
-      },
-      {
-        "ts": 1726502400000,
-        "date": "2024-09-16 16:00",
-        "rate_8h": 0.01,
-        "n_hours": 8
-      },
-      {
-        "ts": 1726531200000,
-        "date": "2024-09-17 00:00",
-        "rate_8h": 0.01,
-        "n_hours": 8
-      },
       {
         "ts": 1726560000000,
         "date": "2024-09-17 08:00",
@@ -17365,6 +17341,24 @@
         "date": "2026-09-27 16:00",
         "rate_8h": 0.00899783,
         "n_hours": 8
+      },
+      {
+        "ts": 1790553600000,
+        "date": "2026-09-28 00:00",
+        "rate_8h": -0.0004757600000000001,
+        "n_hours": 8
+      },
+      {
+        "ts": 1790582400000,
+        "date": "2026-09-28 08:00",
+        "rate_8h": 0.00879531,
+        "n_hours": 8
+      },
+      {
+        "ts": 1790611200000,
+        "date": "2026-09-28 16:00",
+        "rate_8h": 0.0057605500000000006,
+        "n_hours": 8
       }
     ],
     "negative_streak": [
@@ -17516,20 +17510,13 @@
     ]
   },
   "stablecoins": {
-    "usdt_mcap": 183744868831.0076,
-    "usdc_mcap": 75234974568.16663,
-    "total_mcap": 258979843399.17422,
-    "change_7d": -0.09,
-    "change_30d": 0.62,
-    "change_1y": 4.58,
+    "usdt_mcap": 183787916908.7507,
+    "usdc_mcap": 74885852839.52843,
+    "total_mcap": 258673769748.2791,
+    "change_7d": -0.23,
+    "change_30d": 0.44,
+    "change_1y": 4.4,
     "history": [
-      {
-        "ts": 1759104000000,
-        "usdt": 174335617850,
-        "usdc": 73347331002,
-        "total": 247682948852,
-        "date": "2025-09-29"
-      },
       {
         "ts": 1759190400000,
         "usdt": 174592531943,
@@ -20073,12 +20060,19 @@
       },
       {
         "ts": 1790553600000,
-        "usdt": 183788149244.86,
-        "usdc": 75247177712.13,
-        "total": 259035326956.99,
+        "usdt": 183788149245,
+        "usdc": 75247177712,
+        "total": 259035326957,
         "date": "2026-09-28"
+      },
+      {
+        "ts": 1790640000000,
+        "usdt": 183843576172.02,
+        "usdc": 74859243691.11,
+        "total": 258702819863.13,
+        "date": "2026-09-29"
       }
     ]
   },
-  "generated_at": "2026-09-28T01:46:19.710905"
+  "generated_at": "2026-09-29T02:37:34.094710"
 }
