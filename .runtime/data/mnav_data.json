@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-03",
+  "fetched_at": "2026-10-04",
   "source": "https://bitcointreasuries.net/",
   "count": 10,
   "snapshot": [
@@ -9,7 +9,7 @@
       "country": "ðºð¸",
       "ticker": "MSTR",
       "btc_holdings": 847666.0,
-      "mnav": 1.15,
+      "mnav": 1.14,
       "mnav_method": "enterprise_value"
     },
     {
@@ -27,7 +27,7 @@
       "country": "ð¯ðµ",
       "ticker": "MPJPY",
       "btc_holdings": 43000.0,
-      "mnav": 0.78,
+      "mnav": 0.77,
       "mnav_method": "enterprise_value"
     },
     {
@@ -54,7 +54,7 @@
       "country": "ð§ð·",
       "ticker": "OBTC3.SA",
       "btc_holdings": 3950.0,
-      "mnav": 0.77,
+      "mnav": 0.76,
       "mnav_method": "enterprise_value"
     },
     {
