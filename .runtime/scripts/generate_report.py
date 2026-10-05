@@ -1300,20 +1300,22 @@ def _opinions_one_liner(extra):
 
 
 def _whale_one_liner_ai(api, brk, whales_pct):
-    """PPT slide 8 因素 4 一句话总结：whales 在 [时间][价格] 大笔[买/卖]。
-    基于 BRK 鲸鱼 30d delta + whales% 30d 变化 + 当前 BTC 价格生成。"""
+    """Summarize address-group balance changes without inferring executed trades."""
     accum = brk.get("accumulation", {}) or {}
     whale_30d = accum.get("whale_30d_change")
     pct_30d = whales_pct.get("change_30d")
-    cur_price = (api.get("btc_price", {}) or {}).get("current") or 0
     if whale_30d is None and pct_30d is None:
         return None
-    direction = "卖出" if (whale_30d and whale_30d < 0) or (pct_30d and pct_30d < 0) else "买入"
-    parts = [f"近 30 天 whales（≥1k BTC 地址）在 BTC ${cur_price:,.0f} 价位附近出现明显大笔{direction}"]
+    if whale_30d is not None:
+        direction = "增加" if whale_30d > 0 else "减少" if whale_30d < 0 else "不变"
+        parts = [f"近 30 天 whales（≥1k BTC 地址）地址组余额{direction}"]
+    else:
+        parts = ["近 30 天 whales（≥1k BTC 地址）持有占比观测"]
     if whale_30d is not None:
         parts.append(f"30d 鲸鱼供应 {whale_30d:+,.0f} BTC")
     if pct_30d is not None:
-        parts.append(f"持有占比 30d {pct_30d:+.3f}%")
+        parts.append(f"持有占比 30d {pct_30d:+.3f} 个百分点")
+    parts.append("地址组余额变化不能直接认定为现货买卖，也不能据此推断成交价")
     return "；".join(parts)
 
 
