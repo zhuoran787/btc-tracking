@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-05T03:14:47.643507+00:00",
+  "fetched_at": "2026-10-05T06:46:10.070130+00:00",
   "source": "verified Strategy official ledger baseline + SEC EDGAR 8-K reconciliation",
   "errors": [],
   "warnings": [],
@@ -1282,8 +1282,8 @@
   "sec_reconciliation": {
     "source": "SEC EDGAR submissions API + official complete-submission text",
     "cik": "0001050446",
-    "filings_checked": 2,
-    "btc_updates_found": 1,
+    "filings_checked": 0,
+    "btc_updates_found": 0,
     "latest_filing_date": "2026-09-28",
     "latest_as_of": "2026-09-27",
     "latest_holdings": 847666,
@@ -1294,9 +1294,9 @@
       "0001193125-26-403417",
       "0001193125-26-409863"
     ],
-    "verified_at": "2026-10-05T03:14:47.642306+00:00"
+    "verified_at": "2026-10-05T06:46:10.069423+00:00"
   },
-  "refresh_status": "updated",
+  "refresh_status": "checked_no_new",
   "mnav": {
     "deprecated": true,
     "reason": "Use fetch_mnav.py EV mNAV; legacy equity/gross-BTC method is not comparable."
