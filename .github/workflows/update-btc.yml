@@ -6,10 +6,10 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'refresh fetches data; bootstrap publishes a dated initial snapshot'
+        description: 'refresh fetches data; bootstrap initializes; publish-only deploys the existing page'
         type: choice
         default: refresh
-        options: [refresh, bootstrap]
+        options: [refresh, bootstrap, publish-only]
   push:
     branches: [main]
     paths: ['.runtime/**', '.github/workflows/update-btc.yml']
@@ -30,18 +30,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
+        if: inputs.mode != 'publish-only'
         with:
           python-version: '3.12'
           cache: pip
           cache-dependency-path: .runtime/requirements.txt
       - run: pip install -r .runtime/requirements.txt
+        if: inputs.mode != 'publish-only'
       - run: python -m playwright install --with-deps chromium
+        if: inputs.mode != 'publish-only'
       - name: Refresh data or publish initial snapshot
         env:
           COINALYZE_API_KEY: ${{ secrets.COINALYZE_API_KEY }}
           REQUESTED_MODE: ${{ inputs.mode }}
         run: |
-          if [ "$REQUESTED_MODE" = bootstrap ]; then
+          if [ "$REQUESTED_MODE" = publish-only ]; then
+            mkdir -p .site
+            cp index.html publication.json .site/
+          elif [ "$REQUESTED_MODE" = bootstrap ]; then
             python .runtime/scripts/cloud_refresh.py --bootstrap
           else
             python .runtime/scripts/cloud_refresh.py
