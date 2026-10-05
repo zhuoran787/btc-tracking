@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-28T01:45:57.756707+00:00",
+  "fetched_at": "2026-10-05T03:14:47.643507+00:00",
   "source": "verified Strategy official ledger baseline + SEC EDGAR 8-K reconciliation",
   "errors": [],
   "warnings": [],
@@ -1085,6 +1085,16 @@
       "shares_basic": null,
       "shares_diluted": null,
       "sec_accession": "0001193125-26-396093"
+    },
+    {
+      "date": "2026-09-28",
+      "btc_delta": 1665,
+      "btc_holdings": 847666,
+      "avg_price": 75437,
+      "total_cost": 63950.0,
+      "shares_basic": null,
+      "shares_diluted": null,
+      "sec_accession": "0001193125-26-403417"
     }
   ],
   "weekly_net_buys": {
@@ -1175,7 +1185,8 @@
       "2026-08-03",
       "2026-08-10",
       "2026-08-31",
-      "2026-09-21"
+      "2026-09-21",
+      "2026-09-28"
     ],
     "net_btc": [
       850.0,
@@ -1264,25 +1275,28 @@
       -1638.0,
       -1690.0,
       4603.0,
-      950.0
+      950.0,
+      1665.0
     ]
   },
   "sec_reconciliation": {
     "source": "SEC EDGAR submissions API + official complete-submission text",
     "cik": "0001050446",
-    "filings_checked": 0,
-    "btc_updates_found": 0,
-    "latest_filing_date": "2026-09-21",
-    "latest_as_of": "2026-09-20",
-    "latest_holdings": 846000,
-    "latest_accession": "0001193125-26-396093",
+    "filings_checked": 2,
+    "btc_updates_found": 1,
+    "latest_filing_date": "2026-09-28",
+    "latest_as_of": "2026-09-27",
+    "latest_holdings": 847666,
+    "latest_accession": "0001193125-26-403417",
     "checked_accessions": [
       "0001193125-26-389858",
-      "0001193125-26-396093"
+      "0001193125-26-396093",
+      "0001193125-26-403417",
+      "0001193125-26-409863"
     ],
-    "verified_at": "2026-09-28T01:45:57.755219+00:00"
+    "verified_at": "2026-10-05T03:14:47.642306+00:00"
   },
-  "refresh_status": "checked_no_new",
+  "refresh_status": "updated",
   "mnav": {
     "deprecated": true,
     "reason": "Use fetch_mnav.py EV mNAV; legacy equity/gross-BTC method is not comparable."

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-25",
+  "fetched_at": "2026-10-04",
   "lookback_days": 30,
   "factor_9_strategic_reserve": [],
   "factor_10_institution": [
@@ -23,21 +23,21 @@
     },
     {
       "factor": 10,
-      "title": "Teucrium Commodity Trust  (BTCK, CANE, CORN, SOYB, TAGS, WEAT)  (CIK 0001471824) — 8-K",
-      "date": "2026-08-31",
-      "form": "8-K",
-      "company": "Teucrium Commodity Trust  (BTCK, CANE, CORN, SOYB, TAGS, WEAT)  (CIK 0001471824)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001471824&type=8-K",
-      "adsh": "0001437749-26-029334"
-    },
-    {
-      "factor": 10,
       "title": "Canary Staked INJ ETF  (CIK 0002073616) — S-1/A",
       "date": "2026-09-24",
       "form": "S-1/A",
       "company": "Canary Staked INJ ETF  (CIK 0002073616)",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002073616&type=S-1/A",
       "adsh": "0001999371-26-021228"
+    },
+    {
+      "factor": 10,
+      "title": "Canary PEPE ETF  (CIK 0002109686) — S-1/A",
+      "date": "2026-10-02",
+      "form": "S-1/A",
+      "company": "Canary PEPE ETF  (CIK 0002109686)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002109686&type=S-1/A",
+      "adsh": "0001999371-26-022017"
     },
     {
       "factor": 10,
@@ -77,24 +77,6 @@
     },
     {
       "factor": 10,
-      "title": "Bitwise NEAR ETF  (CIK 0002067111) — S-1/A",
-      "date": "2026-08-28",
-      "form": "S-1/A",
-      "company": "Bitwise NEAR ETF  (CIK 0002067111)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002067111&type=S-1/A",
-      "adsh": "0001193125-26-374507"
-    },
-    {
-      "factor": 10,
-      "title": "BITGO HOLDINGS, INC.  (BTGO)  (CIK 0001740604) — 8-K",
-      "date": "2026-08-28",
-      "form": "8-K",
-      "company": "BITGO HOLDINGS, INC.  (BTGO)  (CIK 0001740604)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001740604&type=8-K",
-      "adsh": "0001740604-26-000056"
-    },
-    {
-      "factor": 10,
       "title": "Cryptex Digital Market Cap ETF  (BAGZ)  (CIK 0002115027) — S-1/A",
       "date": "2026-09-11",
       "form": "S-1/A",
@@ -104,30 +86,30 @@
     },
     {
       "factor": 10,
-      "title": "Grayscale Horizen Trust (ZEN)  (HZEN)  (CIK 0001748945) — 8-K",
-      "date": "2026-08-27",
+      "title": "BNB PLUS CORP.  (BNBX)  (CIK 0000744452) — 8-K",
+      "date": "2026-10-02",
       "form": "8-K",
-      "company": "Grayscale Horizen Trust (ZEN)  (HZEN)  (CIK 0001748945)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001748945&type=8-K",
-      "adsh": "0001193125-26-371276"
+      "company": "BNB PLUS CORP.  (BNBX)  (CIK 0000744452)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000744452&type=8-K",
+      "adsh": "0001104659-26-113043"
     },
     {
       "factor": 10,
       "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
-      "date": "2026-08-31",
+      "date": "2026-09-28",
       "form": "8-K",
       "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
-      "adsh": "0001493152-26-040741"
+      "adsh": "0001493152-26-044459"
     },
     {
       "factor": 10,
-      "title": "Grayscale Ethereum Classic Trust (ETC)  (ETCG)  (CIK 0001705181) — 8-K",
-      "date": "2026-08-27",
-      "form": "8-K",
-      "company": "Grayscale Ethereum Classic Trust (ETC)  (ETCG)  (CIK 0001705181)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001705181&type=8-K",
-      "adsh": "0001193125-26-371263"
+      "title": "Cryptex Digital Market Cap ETF  (BAGZ)  (CIK 0002115027) — S-1/A",
+      "date": "2026-09-30",
+      "form": "S-1/A",
+      "company": "Cryptex Digital Market Cap ETF  (BAGZ)  (CIK 0002115027)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002115027&type=S-1/A",
+      "adsh": "0001213900-26-105231"
     },
     {
       "factor": 10,
@@ -167,12 +149,30 @@
     },
     {
       "factor": 10,
+      "title": "Zcash ETF  (ZCSH)  (CIK 0001720265) — 8-K",
+      "date": "2026-09-30",
+      "form": "8-K",
+      "company": "Zcash ETF  (ZCSH)  (CIK 0001720265)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001720265&type=8-K",
+      "adsh": "0001193125-26-408382"
+    },
+    {
+      "factor": 10,
       "title": "HeartSciences Inc.  (HSCS, HSCSW)  (CIK 0001468492) — 8-K",
       "date": "2026-09-17",
       "form": "8-K",
       "company": "HeartSciences Inc.  (HSCS, HSCSW)  (CIK 0001468492)",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001468492&type=8-K",
       "adsh": "0001213900-26-100752"
+    },
+    {
+      "factor": 10,
+      "title": "ProText Mobility, Inc.  (CIK 0001163573) — 8-K",
+      "date": "2026-09-30",
+      "form": "8-K",
+      "company": "ProText Mobility, Inc.  (CIK 0001163573)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001163573&type=8-K",
+      "adsh": "0001140361-26-038066"
     },
     {
       "factor": 10,
@@ -185,6 +185,15 @@
     },
     {
       "factor": 10,
+      "title": "VanEck BNB ETF  (VBNB)  (CIK 0002066824) — 8-K",
+      "date": "2026-09-29",
+      "form": "8-K",
+      "company": "VanEck BNB ETF  (VBNB)  (CIK 0002066824)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002066824&type=8-K",
+      "adsh": "0002066824-26-000020"
+    },
+    {
+      "factor": 10,
       "title": "Cuentas Inc.  (CUEN, CUENW)  (CIK 0001424657) — 8-K",
       "date": "2026-09-23",
       "form": "8-K",
@@ -194,12 +203,21 @@
     },
     {
       "factor": 10,
-      "title": "Hyperliquid Strategies Inc  (PURR)  (CIK 0002078856) — 8-K",
-      "date": "2026-08-27",
+      "title": "Solana Co  (HSDT)  (CIK 0001610853) — 8-K",
+      "date": "2026-09-30",
       "form": "8-K",
-      "company": "Hyperliquid Strategies Inc  (PURR)  (CIK 0002078856)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002078856&type=8-K",
-      "adsh": "0001193125-26-369668"
+      "company": "Solana Co  (HSDT)  (CIK 0001610853)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001610853&type=8-K",
+      "adsh": "0001610853-26-000008"
+    },
+    {
+      "factor": 10,
+      "title": "American Drive Variable Insurance Trust  (CIK 0002122254) — N-1A/A",
+      "date": "2026-09-29",
+      "form": "N-1A/A",
+      "company": "American Drive Variable Insurance Trust  (CIK 0002122254)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002122254&type=N-1A/A",
+      "adsh": "0001829126-26-010578"
     },
     {
       "factor": 10,
@@ -230,48 +248,30 @@
     },
     {
       "factor": 10,
+      "title": "Forward Industries, Inc.  (FWDI)  (CIK 0000038264) — 8-K",
+      "date": "2026-10-01",
+      "form": "8-K",
+      "company": "Forward Industries, Inc.  (FWDI)  (CIK 0000038264)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000038264&type=8-K",
+      "adsh": "0001683168-26-007543"
+    },
+    {
+      "factor": 10,
+      "title": "Fathom Holdings Inc.  (FTHM)  (CIK 0001753162) — 8-K",
+      "date": "2026-09-25",
+      "form": "8-K",
+      "company": "Fathom Holdings Inc.  (FTHM)  (CIK 0001753162)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001753162&type=8-K",
+      "adsh": "0001628280-26-063504"
+    },
+    {
+      "factor": 10,
       "title": "CEA Industries Inc.  (BNC, BNCWW, BNCWZ)  (CIK 0001482541) — 8-K",
       "date": "2026-09-11",
       "form": "8-K",
       "company": "CEA Industries Inc.  (BNC, BNCWW, BNCWZ)  (CIK 0001482541)",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001482541&type=8-K",
       "adsh": "0001482541-26-000053"
-    },
-    {
-      "factor": 10,
-      "title": "AtlasClear Holdings, Inc.  (ATCH, ATCHW)  (CIK 0001963088) — 8-K",
-      "date": "2026-09-24",
-      "form": "8-K",
-      "company": "AtlasClear Holdings, Inc.  (ATCH, ATCHW)  (CIK 0001963088)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001963088&type=8-K",
-      "adsh": "0001493152-26-044145"
-    },
-    {
-      "factor": 10,
-      "title": "POWERCOMPUTE, INC.  (PWCM)  (CIK 0001640384) — 8-K",
-      "date": "2026-08-28",
-      "form": "8-K",
-      "company": "POWERCOMPUTE, INC.  (PWCM)  (CIK 0001640384)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001640384&type=8-K",
-      "adsh": "0001193125-26-374752"
-    },
-    {
-      "factor": 10,
-      "title": "Forward Industries, Inc.  (FWDI)  (CIK 0000038264) — 8-K",
-      "date": "2026-09-24",
-      "form": "8-K",
-      "company": "Forward Industries, Inc.  (FWDI)  (CIK 0000038264)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000038264&type=8-K",
-      "adsh": "0001683168-26-007389"
-    },
-    {
-      "factor": 10,
-      "title": "Hyperliquid Strategies Inc  (PURR)  (CIK 0002078856) — 8-K",
-      "date": "2026-08-27",
-      "form": "8-K",
-      "company": "Hyperliquid Strategies Inc  (PURR)  (CIK 0002078856)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002078856&type=8-K",
-      "adsh": "0001193125-26-369668"
     }
   ],
   "factor_11_clarity_act": {
