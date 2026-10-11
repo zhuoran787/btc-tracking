@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-10",
+  "fetched_at": "2026-10-11",
   "source": "https://bitcointreasuries.net/",
   "count": 10,
   "snapshot": [
@@ -27,7 +27,7 @@
       "country": "ðºð¸",
       "ticker": "XXI",
       "btc_holdings": 43514.0,
-      "mnav": 0.72,
+      "mnav": 0.71,
       "mnav_method": "enterprise_value"
     },
     {
@@ -36,7 +36,7 @@
       "country": "ðºð¸",
       "ticker": "ASST",
       "btc_holdings": 29462.0,
-      "mnav": 1.48,
+      "mnav": 1.47,
       "mnav_method": "enterprise_value"
     },
     {
