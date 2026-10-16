@@ -22,17 +22,18 @@
           "btc_price.current",
           "stablecoins.total_mcap"
         ],
-        "equals": {
-          "correlations_meta.btc_gold_3m.observations": 63,
-          "correlations_meta.btc_gold_6m.observations": 126,
-          "correlations_meta.btc_sox_3m.observations": 63,
-          "correlations_meta.btc_sox_6m.observations": 126
-        },
         "max_age_days": {
           "btc_price.history.-1.ts": 3
-        }
+        },
+        "required": [
+          "correlations_as_of",
+          "correlation_config_hash",
+          "correlations_meta"
+        ]
       },
-      "sidecars": [],
+      "sidecars": [
+        "btc_us_close.json"
+      ],
       "required_for_publish": true,
       "label": "价格、相关性、资金费率与稳定币"
     },
@@ -317,7 +318,8 @@
     "mnav_history.sqlite",
     "dat_history.sqlite",
     "tether_history.sqlite",
-    "derivatives_history.sqlite"
+    "derivatives_history.sqlite",
+    "btc_us_close.json"
   ],
   "editorial_keys": [
     "whale_news_summary",

@@ -35,6 +35,11 @@ def nested(d, path):
 
 
 def validate(name, d, rules):
+    if name == 'api_data.json':
+        from correlations import validate_correlations, latest_completed_session
+        validate_correlations(d)
+        if d['correlations_as_of'] != latest_completed_session():
+            raise ValueError('Correlations have not reached the latest completed session')
     if name == 'dat_data.json':
         from fetch_dat_history import FEATURED_SOURCES
         if [row.get('name') for row in d.get('cost_basis_summary', [])] != list(FEATURED_SOURCES):

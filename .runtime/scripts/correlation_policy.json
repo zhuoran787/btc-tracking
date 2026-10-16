@@ -1,0 +1,29 @@
+{
+  "methodology_id": "calendar_months_synchronized_simple_returns_v1",
+  "horizons_months": [3, 6],
+  "chart_years": 1,
+  "reference_calendar": "XNYS",
+  "close_finalization_minutes": 80,
+  "return_definition": "simple",
+  "estimator": "pearson",
+  "window_start": "first_price_on_or_after_calendar_cutoff",
+  "missing_policy": "fail",
+  "summary_min_abs_correlation": 0.3,
+  "summary_strong_abs_correlation": 0.5,
+  "pairs": {
+    "btc_gold": {
+      "label": "黄金代币 XAUT",
+      "calendar": "UTC_daily",
+      "clock": "00:00 UTC",
+      "btc_source": "CoinGecko bitcoin/USD",
+      "comparison_source": "CoinGecko tether-gold/USD"
+    },
+    "btc_sox": {
+      "label": "SOX 半导体指数",
+      "calendar": "reference_calendar",
+      "clock": "scheduled_regular_session_close",
+      "btc_source": "Coinbase BTC-USD hourly candle close",
+      "comparison_source": "Yahoo Finance ^SOX daily Close"
+    }
+  }
+}

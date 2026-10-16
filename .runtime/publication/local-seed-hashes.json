@@ -1,5 +1,5 @@
 {
-  "api_data.json": "75c1e1bb9b48a8e8cd164005b335832da9ffbea50497aa138c63f21d86386ab6",
+  "api_data.json": "203a746df35f7cdd5b8dbea9106c3e64542443242726bc55182659489b26b7b6",
   "etf_flows.json": "d4219cfbb7da3fc1c1d6e876869dc29504415824751a1d35b1b708114ebd33cd",
   "treasuries.json": "9f9b8b6ee821d8048ff2a370116be844c5bdcd6e9433b2cdb135dce7242d7f2e",
   "brk_data.json": "59fbfb5b6af2615fc33b08dbd94c10ffe3901906ffed3738a4d8521aff909042",
@@ -24,5 +24,6 @@
   "mnav_history.sqlite": "7309c0a66f6a9e79e4be6988f227026f4aa256b7c66fa16b9254aec84598eea0",
   "dat_history.sqlite": "768a470b06a808f1070176320b4fb826efe0c6d564d485f6fce61d283a1d041c",
   "tether_history.sqlite": "75320827524bfe2915650b4d3b59096a2e141a7f755d826c0737e70163eefc6d",
-  "derivatives_history.sqlite": "540b035976dea4b3c5ee29fb9163aeda7a80f4da1f1b28861aebe31268b7ff65"
+  "derivatives_history.sqlite": "540b035976dea4b3c5ee29fb9163aeda7a80f4da1f1b28861aebe31268b7ff65",
+  "btc_us_close.json": "f58b53e814b9ff25bd5474c2697e7916eb321f2ef37c56d67e845c3b68ddb273"
 }

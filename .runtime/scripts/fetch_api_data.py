@@ -17,6 +17,8 @@ from pathlib import Path
 import numpy as np
 import requests
 import yfinance as yf
+from correlations import (POLICY, compute_correlations, fetch_btc_session_closes,
+                          latest_completed_session, validate_correlations)
 
 CACHE_DIR = Path(__file__).parent.parent / "cache"
 DATA_DIR = Path(__file__).parent.parent / "data"
@@ -67,33 +69,10 @@ def fetch_btc_price_history(days=90):
 
 
 def fetch_gold_price_history(days=90):
-    # CoinGecko: get BTC price in XAU (gold ounces), then derive gold USD price
-    # Simpler: just get gold price via CoinGecko commodity endpoint
-    try:
-        data = _get_json(f"{COINGECKO_BASE}/coins/tether-gold/market_chart",
-                         {"vs_currency": "usd", "days": days, "interval": "daily"})
-        prices = [(ts, price) for ts, price in data["prices"]]
-        if prices:
-            return prices
-    except Exception:
-        pass
-    # Fallback: yfinance
-    try:
-        ticker = yf.Ticker("GC=F")
-        end = datetime.now()
-        start = end - timedelta(days=days + 5)
-        df = ticker.history(start=start.strftime("%Y-%m-%d"),
-                            end=end.strftime("%Y-%m-%d"))
-        if not df.empty:
-            result = []
-            for idx, row in df.iterrows():
-                ts = int(idx.timestamp() * 1000)
-                result.append((ts, float(row["Close"])))
-            return result
-    except Exception:
-        pass
-    print("WARNING: Could not fetch gold price from any source")
-    return []
+    # User selected XAUT. Futures are a different asset/clock, never a silent fallback.
+    data = _get_json(f"{COINGECKO_BASE}/coins/tether-gold/market_chart",
+                     {"vs_currency": "usd", "days": days, "interval": "daily"})
+    return [(ts, price) for ts, price in data['prices']]
 
 
 # ── yfinance: SOX ──────────────────────────────────────────────────
@@ -104,7 +83,9 @@ def fetch_sox_history(days=90):
     Sanity check：拿到数据后验证 latest close > 2000，否则视为'拿错 ticker'告警。
     旧版静默 fallback 到 SOXX 会导致数据错 10-23x（2026-05-20 用户发现）。"""
     SOX_MIN_VALID = 2000.0  # SOX 指数实际范围 4000-12000
-    end = datetime.now()
+    # Yahoo's end date is exclusive. Include today's finalized close when a
+    # scheduled run occurs after the US session, then filter by our shared clock.
+    end = datetime.now(timezone.utc) + timedelta(days=1)
     start = end - timedelta(days=days + 5)
 
     def _try_ticker(name):
@@ -113,6 +94,8 @@ def fetch_sox_history(days=90):
                 start=start.strftime("%Y-%m-%d"),
                 end=end.strftime("%Y-%m-%d"),
             )
+            as_of = latest_completed_session()
+            df = df[[day.strftime('%Y-%m-%d') <= as_of for day in df.index]]
             if df.empty:
                 return None, "empty"
             latest = float(df["Close"].iloc[-1])
@@ -209,72 +192,6 @@ def fetch_stablecoin_history(coin_id, days=90):
 
 # ── Calculations ──────────────────────────────────────────────────
 
-def align_daily_series(series_a, series_b):
-    """Align two price series on common UTC dates and drop invalid prices."""
-    a_by_date = {}
-    for ts, val in series_a:
-        try:
-            val = float(val)
-        except (TypeError, ValueError):
-            continue
-        if not np.isfinite(val) or val <= 0:
-            continue
-        d = datetime.fromtimestamp(ts / 1000, timezone.utc).strftime("%Y-%m-%d")
-        a_by_date[d] = val
-    b_by_date = {}
-    for ts, val in series_b:
-        try:
-            val = float(val)
-        except (TypeError, ValueError):
-            continue
-        if not np.isfinite(val) or val <= 0:
-            continue
-        d = datetime.fromtimestamp(ts / 1000, timezone.utc).strftime("%Y-%m-%d")
-        b_by_date[d] = val
-
-    common_dates = sorted(set(a_by_date) & set(b_by_date))
-    a_vals = np.array([a_by_date[d] for d in common_dates])
-    b_vals = np.array([b_by_date[d] for d in common_dates])
-    return common_dates, a_vals, b_vals
-
-
-def compute_return_correlation(common_dates, a_vals, b_vals, observations):
-    """Pearson correlation of aligned daily simple returns.
-
-    ``observations`` is the requested number of return observations, so the
-    calculation requires observations + 1 common-date price points.
-    """
-    required_prices = observations + 1
-    if len(a_vals) < required_prices or len(b_vals) < required_prices:
-        return None, {
-            "observations": 0,
-            "requested_observations": observations,
-            "price_points": min(len(a_vals), len(b_vals)),
-            "method": "Pearson correlation of daily simple returns",
-        }
-
-    dates_w = common_dates[-required_prices:]
-    a_w = np.asarray(a_vals[-required_prices:], dtype=float)
-    b_w = np.asarray(b_vals[-required_prices:], dtype=float)
-    a_returns = a_w[1:] / a_w[:-1] - 1.0
-    b_returns = b_w[1:] / b_w[:-1] - 1.0
-    valid = np.isfinite(a_returns) & np.isfinite(b_returns)
-    a_returns = a_returns[valid]
-    b_returns = b_returns[valid]
-
-    meta = {
-        "observations": int(valid.sum()),
-        "requested_observations": observations,
-        "price_points": required_prices,
-        "start_date": dates_w[0],
-        "end_date": dates_w[-1],
-        "method": "Pearson correlation of daily simple returns",
-    }
-    if len(a_returns) != observations or np.std(a_returns) == 0 or np.std(b_returns) == 0:
-        return None, meta
-    return float(np.corrcoef(a_returns, b_returns)[0, 1]), meta
-
-
 def compute_change_pct(series, days):
     if len(series) < 2:
         return None
@@ -360,6 +277,7 @@ def main():
     output["gold_price"] = {
         "current": gold_prices[-1][1] if gold_prices else 0,
         "history": [{"ts": ts, "price": p} for ts, p in gold_prices],
+        "source": POLICY['pairs']['btc_gold']['comparison_source'],
     }
 
     print("Fetching SOX index...", flush=True)
@@ -371,25 +289,10 @@ def main():
 
     # Correlations
     print("Computing correlations...", flush=True)
-    dates_bg, btc_arr, gold_arr = align_daily_series(btc_prices, gold_prices)
-    dates_bs, btc_arr2, sox_arr = align_daily_series(btc_prices, sox_prices)
-
-    bg_3m, bg_3m_meta = compute_return_correlation(dates_bg, btc_arr, gold_arr, 63)
-    bg_6m, bg_6m_meta = compute_return_correlation(dates_bg, btc_arr, gold_arr, 126)
-    bs_3m, bs_3m_meta = compute_return_correlation(dates_bs, btc_arr2, sox_arr, 63)
-    bs_6m, bs_6m_meta = compute_return_correlation(dates_bs, btc_arr2, sox_arr, 126)
-    output["correlations"] = {
-        "btc_gold_3m": bg_3m,
-        "btc_gold_6m": bg_6m,
-        "btc_sox_3m": bs_3m,
-        "btc_sox_6m": bs_6m,
-    }
-    output["correlations_meta"] = {
-        "btc_gold_3m": bg_3m_meta,
-        "btc_gold_6m": bg_6m_meta,
-        "btc_sox_3m": bs_3m_meta,
-        "btc_sox_6m": bs_6m_meta,
-    }
+    as_of = latest_completed_session()
+    output['btc_us_close'] = fetch_btc_session_closes(as_of, DATA_DIR/'btc_us_close.json')
+    output.update(compute_correlations(output, as_of=as_of))
+    validate_correlations(output)
 
     # Funding rate — 2 年 (730d) 满足 PPT 因素 6 图 1 时间跨度要求
     print("Fetching Hyperliquid funding rate (730d / 2 years)...", flush=True)
@@ -443,8 +346,10 @@ def main():
     output["generated_at"] = datetime.now().isoformat()
 
     out_path = DATA_DIR / "api_data.json"
-    with open(out_path, "w") as f:
+    temp_path = out_path.with_suffix('.tmp')
+    with open(temp_path, "w") as f:
         json.dump(output, f, indent=2, default=str)
+    temp_path.replace(out_path)
     print(f"Saved to {out_path}")
     return output
 

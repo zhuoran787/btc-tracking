@@ -329,18 +329,19 @@ a:hover { text-decoration: underline; }
     <div class="card-title">因素 0：比特币与黄金 / AI 资产相关性 <span class="badge">宏观</span></div>
     <div class="grid-2">
       <div>
-        <div style="font-size:12px;color:var(--text-muted);margin-bottom:6px;">BTC vs 黄金（1 年）</div>
+        <div style="font-size:12px;color:var(--text-muted);margin-bottom:6px;">BTC vs 黄金代币 XAUT（约 1 年，UTC 零点）</div>
         <div class="chart-container"><canvas id="chartBtcGold"></canvas></div>
         <!-- PPT 2.2：AI 根据左上图数据更新 -->
         <div style="font-size:12px;color:var(--text-dim);margin-top:6px;line-height:1.55;">{{ macro_gold_caption_ai }}</div>
       </div>
       <div>
-        <div style="font-size:12px;color:var(--text-muted);margin-bottom:6px;">BTC vs AI 资产（SOX 半导体指数，1 年）</div>
+        <div style="font-size:12px;color:var(--text-muted);margin-bottom:6px;">BTC vs SOX 半导体指数（约 1 年，美股收盘）</div>
         <div class="chart-container"><canvas id="chartBtcSox"></canvas></div>
         <!-- PPT 2.3：AI 根据右上图数据更新 -->
         <div style="font-size:12px;color:var(--text-dim);margin-top:6px;line-height:1.55;">{{ macro_sox_caption_ai }}</div>
       </div>
     </div>
+    <div style="margin-top:10px;font-size:11px;color:var(--text-dim);line-height:1.6;">图为价格走势；下方系数衡量各期涨跌幅的同步程度。窗口按日历月回退，两组分别按上述时刻取样。XAUT 为黄金代币；BTC—SOX 使用 Coinbase BTC-USD 与 Yahoo Finance SOX 收盘价。</div>
     <!-- PPT 2.1：永远保留不变 -->
     <div style="margin-top:14px;padding:10px 12px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:4px;font-size:12px;color:var(--text-dim);line-height:1.55;">
       <strong>注：相关性原因——</strong>23 年机构资金开始流入比特币后，比特币与全球其他风险资产类别联动加大。
@@ -1044,7 +1045,7 @@ new Chart(document.getElementById('chartBtcGold'), {
     labels: {{ chart_btc_labels | safe }},
     datasets: [
       { label: 'BTC (USD)', data: {{ chart_btc_values | safe }}, borderColor: blue, borderWidth: 2, fill: false, pointRadius: 0, tension: 0.2, yAxisID: 'y' },
-      { label: 'Gold (USD)', data: {{ chart_gold_values | safe }}, borderColor: gold, borderWidth: 2, fill: false, pointRadius: 0, tension: 0.2, yAxisID: 'y1' }
+      { label: 'XAUT (USD)', data: {{ chart_gold_values | safe }}, borderColor: gold, borderWidth: 2, fill: false, pointRadius: 0, tension: 0.2, yAxisID: 'y1' }
     ]
   },
   options: {
@@ -1062,9 +1063,9 @@ new Chart(document.getElementById('chartBtcGold'), {
 new Chart(document.getElementById('chartBtcSox'), {
   type: 'line',
   data: {
-    labels: {{ chart_btc_labels | safe }},
+    labels: {{ chart_sox_labels | safe }},
     datasets: [
-      { label: 'BTC (USD)', data: {{ chart_btc_values | safe }}, borderColor: blue, borderWidth: 2, fill: false, pointRadius: 0, tension: 0.2, yAxisID: 'y' },
+      { label: 'BTC (USD)', data: {{ chart_sox_btc_values | safe }}, borderColor: blue, borderWidth: 2, fill: false, pointRadius: 0, tension: 0.2, yAxisID: 'y' },
       { label: 'SOX Index', data: {{ chart_sox_values | safe }}, borderColor: purple, borderWidth: 2, fill: false, pointRadius: 0, tension: 0.2, yAxisID: 'y1' }
     ]
   },

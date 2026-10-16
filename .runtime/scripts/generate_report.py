@@ -10,10 +10,11 @@ import base64
 import json
 import re
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from fetch_dat_history import FEATURED_SOURCES
+from correlations import POLICY as CORRELATION_POLICY, validate_correlations
 
 from jinja2 import Environment, FileSystemLoader
 
@@ -899,14 +900,14 @@ def _macro_correlation_one_liner_ai(api):
 
     PPT 范例："比特币与黄金近6个月是负相关、4月以来转为正相关。与AI资产近3个月明显正相关"
     PPT 规则："如果相关性强就写、相关性弱就不写"
-    阈值：|c| < 0.2 → 跳过该 period 不写；0.2 ≤ |c| < 0.5 → "正/负相关"；|c| ≥ 0.5 → "明显正/负相关"
+    阈值只读取 correlation_policy.json；不以相关性推断涨幅强弱或拐点。
     """
     corr = (api or {}).get("correlations", {}) or {}
 
     def _describe(c, period_label):
-        if c is None or abs(c) <= 0.3:
-            return ""  # 相关性 |corr| > 0.3 才写
-        strength = "明显" if abs(c) >= 0.5 else ""
+        if c is None or abs(c) <= CORRELATION_POLICY['summary_min_abs_correlation']:
+            return ""
+        strength = "明显" if abs(c) >= CORRELATION_POLICY['summary_strong_abs_correlation'] else ""
         direction = "正相关" if c > 0 else "负相关"
         return f"近 {period_label}{strength}{direction}"
 
@@ -920,14 +921,27 @@ def _macro_correlation_one_liner_ai(api):
 
     sentences = []
     if gold_parts:
-        sentences.append(f"比特币与黄金{'、'.join(gold_parts)}")
+        sentences.append(f"比特币与黄金代币 XAUT{'、'.join(gold_parts)}")
     if ai_parts:
-        prefix = "与 AI 资产" if sentences else "比特币与 AI 资产"
+        prefix = "与 SOX 半导体指数" if sentences else "比特币与 SOX 半导体指数"
         sentences.append(f"{prefix}{'、'.join(ai_parts)}")
 
     if not sentences:
         return ""
     return "。".join(sentences) + "。"
+
+
+def _correlation_caption(api, pair):
+    definition = CORRELATION_POLICY['pairs'][pair]
+    parts = []
+    for months in CORRELATION_POLICY['horizons_months']:
+        key = f'{pair}_{months}m'
+        meta = api['correlations_meta'][key]
+        parts.append(f"近 {months} 个月 {api['correlations'][key]:+.2f}"
+                     f"（{meta['start_date']}—{meta['end_date']}，{meta['observations']} 条收益率）")
+    clock = ('双方均取 UTC 零点价格，包含周末。' if pair == 'btc_gold' else
+             '双方均取美股交易日收盘价格，BTC 周末变化并入相邻交易日区间。')
+    return (f"BTC 与{definition['label']}的简单收益率 Pearson 相关性："+'；'.join(parts)+'。'+clock)
 
 
 def _macro_correlation_data_change(api):
@@ -1436,25 +1450,15 @@ def prepare_chart_data(data):
     gold_hist = api.get("gold_price", {}).get("history", [])
     sox_hist = api.get("sox_price", {}).get("history", [])
 
-    # 2026-05-20 bug fix：用 YYYY-MM-DD 作 join key（之前用 "%m-%d" 跨年时 05-16 等日期冲突
-    # 导致 chart 末尾几点错位映射回 2025 旧数据 → SOX/Gold 折线垂直跳水）。
-    # x 轴 tick 显示仍用 "mm-dd" 简短格式，但 join 用 full date。
-    btc_full_dates = [datetime.fromtimestamp(p["ts"]/1000).strftime("%Y-%m-%d") for p in btc_hist]
-    btc_labels = [d[5:] for d in btc_full_dates]  # "05-20" for x-axis display
-    btc_values = [p["price"] for p in btc_hist]
-
-    # Align gold/sox to btc dates (用 full YYYY-MM-DD 避免跨年同 mm-dd 冲突)
-    gold_by_date = {}
-    for p in gold_hist:
-        d = datetime.fromtimestamp(p["ts"]/1000).strftime("%Y-%m-%d")
-        gold_by_date[d] = p["price"]
-    gold_values = [gold_by_date.get(d) for d in btc_full_dates]
-
-    sox_by_date = {}
-    for p in sox_hist:
-        d = datetime.fromtimestamp(p["ts"]/1000).strftime("%Y-%m-%d")
-        sox_by_date[d] = p["price"]
-    sox_values = [sox_by_date.get(d) for d in btc_full_dates]
+    # Each chart reads the exact synchronized price pairs used by its coefficients.
+    pairs = api['correlation_pairs']
+    bg, bs = pairs['btc_gold'], pairs['btc_sox']
+    btc_labels = [p['date'] for p in bg]
+    btc_values = [p['btc'] for p in bg]
+    gold_values = [p['comparison'] for p in bg]
+    sox_labels = [p['date'] for p in bs]
+    sox_btc_values = [p['btc'] for p in bs]
+    sox_values = [p['comparison'] for p in bs]
 
     # ETF
     flows = etf.get("daily_flows", [])
@@ -1574,6 +1578,8 @@ def prepare_chart_data(data):
         "chart_btc_values": json.dumps(btc_values),
         "chart_gold_values": json.dumps(gold_values),
         "chart_sox_values": json.dumps(sox_values),
+        "chart_sox_labels": json.dumps(sox_labels),
+        "chart_sox_btc_values": json.dumps(sox_btc_values),
         "chart_etf_labels": json.dumps(etf_labels),
         "chart_etf_values": json.dumps(etf_values),
         "chart_fr_labels": json.dumps(fr_labels),
@@ -2031,6 +2037,7 @@ def build_context(data, extra):
     btc = api.get("btc_price", {})
     funding = api.get("funding", {})
     stable = api.get("stablecoins", {})
+    validate_correlations(api)
     corr = api.get("correlations", {})
     etf_summary = etf.get("summary", {})
 
@@ -2381,14 +2388,8 @@ def build_context(data, extra):
         # PPT 1.2 / slide 2 — 宏观相关性 AI helper（SECTION A 行 1 第 2 段 + slide 2 双图 caption 共用）
         "macro_correlation_ai": _macro_correlation_one_liner_ai(api),
         # PPT 2.2+2.3 — slide 2 黄金 / AI 资产 双图 caption（AI 根据各图数据）
-        "macro_gold_caption_ai": (
-            f"比特币与黄金近 3 个月日收益率相关性 {_corr_signed('btc_gold_3m')}，6 个月 {_corr_signed('btc_gold_6m')}。"
-            + ("近期回到正相关、比特币强于黄金" if corr.get('btc_gold_3m', 0) > 0.2 else "近期处于负相关或弱相关")
-        ),
-        "macro_sox_caption_ai": (
-            f"比特币与 AI 资产近 3 个月日收益率相关性 {_corr_signed('btc_sox_3m')}，6 个月 {_corr_signed('btc_sox_6m')}。"
-            + ("近期回到正相关、比特币 " + ("强于" if abs(corr.get('btc_sox_3m', 0)) > abs(corr.get('btc_gold_3m', 0)) else "弱于") + " AI 资产" if corr.get('btc_sox_3m', 0) > 0.2 else "近期处于负相关或弱相关")
-        ),
+        "macro_gold_caption_ai": _correlation_caption(api, 'btc_gold'),
+        "macro_sox_caption_ai": _correlation_caption(api, 'btc_sox'),
 
         # Funding
         "funding_source": funding.get("source", "Hyperliquid"),

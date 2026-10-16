@@ -1,0 +1,1772 @@
+{
+  "config_hash": "bba5212d1965b94acf3a653312c473250482735f740fa7f9478415a1cc6f4aa0",
+  "source": "Coinbase BTC-USD hourly candle close",
+  "source_url": "https://api.exchange.coinbase.com/products/BTC-USD/candles",
+  "as_of_date": "2026-10-15",
+  "history": [
+    {
+      "date": "2025-10-15",
+      "ts": 1760558400000,
+      "price": 111318.21,
+      "candle_start_ts": 1760554800000,
+      "closing_hour_volume": 383.48311011
+    },
+    {
+      "date": "2025-10-16",
+      "ts": 1760644800000,
+      "price": 108246.33,
+      "candle_start_ts": 1760641200000,
+      "closing_hour_volume": 1037.02962882
+    },
+    {
+      "date": "2025-10-17",
+      "ts": 1760731200000,
+      "price": 106484.0,
+      "candle_start_ts": 1760727600000,
+      "closing_hour_volume": 510.94557868
+    },
+    {
+      "date": "2025-10-20",
+      "ts": 1760990400000,
+      "price": 110840.0,
+      "candle_start_ts": 1760986800000,
+      "closing_hour_volume": 344.69164434
+    },
+    {
+      "date": "2025-10-21",
+      "ts": 1761076800000,
+      "price": 111841.0,
+      "candle_start_ts": 1761073200000,
+      "closing_hour_volume": 542.56580414
+    },
+    {
+      "date": "2025-10-22",
+      "ts": 1761163200000,
+      "price": 107846.83,
+      "candle_start_ts": 1761159600000,
+      "closing_hour_volume": 733.21324635
+    },
+    {
+      "date": "2025-10-23",
+      "ts": 1761249600000,
+      "price": 110247.6,
+      "candle_start_ts": 1761246000000,
+      "closing_hour_volume": 275.36499268
+    },
+    {
+      "date": "2025-10-24",
+      "ts": 1761336000000,
+      "price": 110624.14,
+      "candle_start_ts": 1761332400000,
+      "closing_hour_volume": 248.21949787
+    },
+    {
+      "date": "2025-10-27",
+      "ts": 1761595200000,
+      "price": 114950.0,
+      "candle_start_ts": 1761591600000,
+      "closing_hour_volume": 430.57206758
+    },
+    {
+      "date": "2025-10-28",
+      "ts": 1761681600000,
+      "price": 113687.51,
+      "candle_start_ts": 1761678000000,
+      "closing_hour_volume": 642.1505464
+    },
+    {
+      "date": "2025-10-29",
+      "ts": 1761768000000,
+      "price": 110644.31,
+      "candle_start_ts": 1761764400000,
+      "closing_hour_volume": 562.51785269
+    },
+    {
+      "date": "2025-10-30",
+      "ts": 1761854400000,
+      "price": 106491.99,
+      "candle_start_ts": 1761850800000,
+      "closing_hour_volume": 677.16252765
+    },
+    {
+      "date": "2025-10-31",
+      "ts": 1761940800000,
+      "price": 109756.29,
+      "candle_start_ts": 1761937200000,
+      "closing_hour_volume": 383.85050932
+    },
+    {
+      "date": "2025-11-03",
+      "ts": 1762203600000,
+      "price": 106632.31,
+      "candle_start_ts": 1762200000000,
+      "closing_hour_volume": 356.69880243
+    },
+    {
+      "date": "2025-11-04",
+      "ts": 1762290000000,
+      "price": 100680.87,
+      "candle_start_ts": 1762286400000,
+      "closing_hour_volume": 1336.12919059
+    },
+    {
+      "date": "2025-11-05",
+      "ts": 1762376400000,
+      "price": 103841.98,
+      "candle_start_ts": 1762372800000,
+      "closing_hour_volume": 681.71889946
+    },
+    {
+      "date": "2025-11-06",
+      "ts": 1762462800000,
+      "price": 100860.0,
+      "candle_start_ts": 1762459200000,
+      "closing_hour_volume": 758.17860104
+    },
+    {
+      "date": "2025-11-07",
+      "ts": 1762549200000,
+      "price": 103749.09,
+      "candle_start_ts": 1762545600000,
+      "closing_hour_volume": 732.08914004
+    },
+    {
+      "date": "2025-11-10",
+      "ts": 1762808400000,
+      "price": 105985.94,
+      "candle_start_ts": 1762804800000,
+      "closing_hour_volume": 313.18987801
+    },
+    {
+      "date": "2025-11-11",
+      "ts": 1762894800000,
+      "price": 102771.54,
+      "candle_start_ts": 1762891200000,
+      "closing_hour_volume": 280.08129276
+    },
+    {
+      "date": "2025-11-12",
+      "ts": 1762981200000,
+      "price": 101519.99,
+      "candle_start_ts": 1762977600000,
+      "closing_hour_volume": 317.63096136
+    },
+    {
+      "date": "2025-11-13",
+      "ts": 1763067600000,
+      "price": 98090.0,
+      "candle_start_ts": 1763064000000,
+      "closing_hour_volume": 1583.13254737
+    },
+    {
+      "date": "2025-11-14",
+      "ts": 1763154000000,
+      "price": 94287.01,
+      "candle_start_ts": 1763150400000,
+      "closing_hour_volume": 1767.52472524
+    },
+    {
+      "date": "2025-11-17",
+      "ts": 1763413200000,
+      "price": 91787.28,
+      "candle_start_ts": 1763409600000,
+      "closing_hour_volume": 1528.08842333
+    },
+    {
+      "date": "2025-11-18",
+      "ts": 1763499600000,
+      "price": 92748.97,
+      "candle_start_ts": 1763496000000,
+      "closing_hour_volume": 699.41132746
+    },
+    {
+      "date": "2025-11-19",
+      "ts": 1763586000000,
+      "price": 89413.61,
+      "candle_start_ts": 1763582400000,
+      "closing_hour_volume": 801.75684061
+    },
+    {
+      "date": "2025-11-20",
+      "ts": 1763672400000,
+      "price": 86333.83,
+      "candle_start_ts": 1763668800000,
+      "closing_hour_volume": 1211.98003851
+    },
+    {
+      "date": "2025-11-21",
+      "ts": 1763758800000,
+      "price": 84487.2,
+      "candle_start_ts": 1763755200000,
+      "closing_hour_volume": 1318.88115716
+    },
+    {
+      "date": "2025-11-24",
+      "ts": 1764018000000,
+      "price": 89072.01,
+      "candle_start_ts": 1764014400000,
+      "closing_hour_volume": 1321.75676168
+    },
+    {
+      "date": "2025-11-25",
+      "ts": 1764104400000,
+      "price": 87343.65,
+      "candle_start_ts": 1764100800000,
+      "closing_hour_volume": 1083.49540773
+    },
+    {
+      "date": "2025-11-26",
+      "ts": 1764190800000,
+      "price": 89856.06,
+      "candle_start_ts": 1764187200000,
+      "closing_hour_volume": 1042.02429852
+    },
+    {
+      "date": "2025-11-28",
+      "ts": 1764352800000,
+      "price": 90673.19,
+      "candle_start_ts": 1764349200000,
+      "closing_hour_volume": 889.34263132
+    },
+    {
+      "date": "2025-12-01",
+      "ts": 1764622800000,
+      "price": 85511.18,
+      "candle_start_ts": 1764619200000,
+      "closing_hour_volume": 988.09665687
+    },
+    {
+      "date": "2025-12-02",
+      "ts": 1764709200000,
+      "price": 91070.79,
+      "candle_start_ts": 1764705600000,
+      "closing_hour_volume": 1164.07404395
+    },
+    {
+      "date": "2025-12-03",
+      "ts": 1764795600000,
+      "price": 92991.75,
+      "candle_start_ts": 1764792000000,
+      "closing_hour_volume": 461.0563756
+    },
+    {
+      "date": "2025-12-04",
+      "ts": 1764882000000,
+      "price": 92523.07,
+      "candle_start_ts": 1764878400000,
+      "closing_hour_volume": 347.33060052
+    },
+    {
+      "date": "2025-12-05",
+      "ts": 1764968400000,
+      "price": 89321.7,
+      "candle_start_ts": 1764964800000,
+      "closing_hour_volume": 348.28109668
+    },
+    {
+      "date": "2025-12-08",
+      "ts": 1765227600000,
+      "price": 90813.85,
+      "candle_start_ts": 1765224000000,
+      "closing_hour_volume": 523.20655974
+    },
+    {
+      "date": "2025-12-09",
+      "ts": 1765314000000,
+      "price": 93136.46,
+      "candle_start_ts": 1765310400000,
+      "closing_hour_volume": 535.34886729
+    },
+    {
+      "date": "2025-12-10",
+      "ts": 1765400400000,
+      "price": 92498.32,
+      "candle_start_ts": 1765396800000,
+      "closing_hour_volume": 1734.66528265
+    },
+    {
+      "date": "2025-12-11",
+      "ts": 1765486800000,
+      "price": 91808.02,
+      "candle_start_ts": 1765483200000,
+      "closing_hour_volume": 668.74771929
+    },
+    {
+      "date": "2025-12-12",
+      "ts": 1765573200000,
+      "price": 90220.0,
+      "candle_start_ts": 1765569600000,
+      "closing_hour_volume": 382.4334512
+    },
+    {
+      "date": "2025-12-15",
+      "ts": 1765832400000,
+      "price": 85757.01,
+      "candle_start_ts": 1765828800000,
+      "closing_hour_volume": 889.78152266
+    },
+    {
+      "date": "2025-12-16",
+      "ts": 1765918800000,
+      "price": 87552.02,
+      "candle_start_ts": 1765915200000,
+      "closing_hour_volume": 331.62547327
+    },
+    {
+      "date": "2025-12-17",
+      "ts": 1766005200000,
+      "price": 85857.38,
+      "candle_start_ts": 1766001600000,
+      "closing_hour_volume": 780.83183909
+    },
+    {
+      "date": "2025-12-18",
+      "ts": 1766091600000,
+      "price": 84558.65,
+      "candle_start_ts": 1766088000000,
+      "closing_hour_volume": 645.85898633
+    },
+    {
+      "date": "2025-12-19",
+      "ts": 1766178000000,
+      "price": 88021.73,
+      "candle_start_ts": 1766174400000,
+      "closing_hour_volume": 618.84037304
+    },
+    {
+      "date": "2025-12-22",
+      "ts": 1766437200000,
+      "price": 88294.02,
+      "candle_start_ts": 1766433600000,
+      "closing_hour_volume": 608.18122268
+    },
+    {
+      "date": "2025-12-23",
+      "ts": 1766523600000,
+      "price": 87613.32,
+      "candle_start_ts": 1766520000000,
+      "closing_hour_volume": 441.78008543
+    },
+    {
+      "date": "2025-12-24",
+      "ts": 1766599200000,
+      "price": 87257.34,
+      "candle_start_ts": 1766595600000,
+      "closing_hour_volume": 255.89608459
+    },
+    {
+      "date": "2025-12-26",
+      "ts": 1766782800000,
+      "price": 87507.92,
+      "candle_start_ts": 1766779200000,
+      "closing_hour_volume": 439.40461901
+    },
+    {
+      "date": "2025-12-29",
+      "ts": 1767042000000,
+      "price": 87076.36,
+      "candle_start_ts": 1767038400000,
+      "closing_hour_volume": 659.54300362
+    },
+    {
+      "date": "2025-12-30",
+      "ts": 1767128400000,
+      "price": 87836.94,
+      "candle_start_ts": 1767124800000,
+      "closing_hour_volume": 449.41325164
+    },
+    {
+      "date": "2025-12-31",
+      "ts": 1767214800000,
+      "price": 87523.98,
+      "candle_start_ts": 1767211200000,
+      "closing_hour_volume": 735.96887061
+    },
+    {
+      "date": "2026-01-02",
+      "ts": 1767387600000,
+      "price": 89693.1,
+      "candle_start_ts": 1767384000000,
+      "closing_hour_volume": 590.65065971
+    },
+    {
+      "date": "2026-01-05",
+      "ts": 1767646800000,
+      "price": 94194.02,
+      "candle_start_ts": 1767643200000,
+      "closing_hour_volume": 956.58657074
+    },
+    {
+      "date": "2026-01-06",
+      "ts": 1767733200000,
+      "price": 92447.52,
+      "candle_start_ts": 1767729600000,
+      "closing_hour_volume": 557.91063241
+    },
+    {
+      "date": "2026-01-07",
+      "ts": 1767819600000,
+      "price": 90930.07,
+      "candle_start_ts": 1767816000000,
+      "closing_hour_volume": 503.26750833
+    },
+    {
+      "date": "2026-01-08",
+      "ts": 1767906000000,
+      "price": 90847.09,
+      "candle_start_ts": 1767902400000,
+      "closing_hour_volume": 618.1691389
+    },
+    {
+      "date": "2026-01-09",
+      "ts": 1767992400000,
+      "price": 90195.99,
+      "candle_start_ts": 1767988800000,
+      "closing_hour_volume": 441.45461356
+    },
+    {
+      "date": "2026-01-12",
+      "ts": 1768251600000,
+      "price": 91409.51,
+      "candle_start_ts": 1768248000000,
+      "closing_hour_volume": 268.2444502
+    },
+    {
+      "date": "2026-01-13",
+      "ts": 1768338000000,
+      "price": 94411.91,
+      "candle_start_ts": 1768334400000,
+      "closing_hour_volume": 2096.13111292
+    },
+    {
+      "date": "2026-01-14",
+      "ts": 1768424400000,
+      "price": 97676.01,
+      "candle_start_ts": 1768420800000,
+      "closing_hour_volume": 1076.05447647
+    },
+    {
+      "date": "2026-01-15",
+      "ts": 1768510800000,
+      "price": 95225.99,
+      "candle_start_ts": 1768507200000,
+      "closing_hour_volume": 956.07918407
+    },
+    {
+      "date": "2026-01-16",
+      "ts": 1768597200000,
+      "price": 95536.0,
+      "candle_start_ts": 1768593600000,
+      "closing_hour_volume": 829.11757859
+    },
+    {
+      "date": "2026-01-20",
+      "ts": 1768942800000,
+      "price": 89592.06,
+      "candle_start_ts": 1768939200000,
+      "closing_hour_volume": 1458.8148265
+    },
+    {
+      "date": "2026-01-21",
+      "ts": 1769029200000,
+      "price": 90136.01,
+      "candle_start_ts": 1769025600000,
+      "closing_hour_volume": 1035.4114781
+    },
+    {
+      "date": "2026-01-22",
+      "ts": 1769115600000,
+      "price": 89312.0,
+      "candle_start_ts": 1769112000000,
+      "closing_hour_volume": 297.37952446
+    },
+    {
+      "date": "2026-01-23",
+      "ts": 1769202000000,
+      "price": 89395.04,
+      "candle_start_ts": 1769198400000,
+      "closing_hour_volume": 636.94784328
+    },
+    {
+      "date": "2026-01-26",
+      "ts": 1769461200000,
+      "price": 87528.0,
+      "candle_start_ts": 1769457600000,
+      "closing_hour_volume": 414.16348193
+    },
+    {
+      "date": "2026-01-27",
+      "ts": 1769547600000,
+      "price": 89297.98,
+      "candle_start_ts": 1769544000000,
+      "closing_hour_volume": 650.00341239
+    },
+    {
+      "date": "2026-01-28",
+      "ts": 1769634000000,
+      "price": 88997.89,
+      "candle_start_ts": 1769630400000,
+      "closing_hour_volume": 545.53365734
+    },
+    {
+      "date": "2026-01-29",
+      "ts": 1769720400000,
+      "price": 84043.29,
+      "candle_start_ts": 1769716800000,
+      "closing_hour_volume": 1185.39383947
+    },
+    {
+      "date": "2026-01-30",
+      "ts": 1769806800000,
+      "price": 83738.0,
+      "candle_start_ts": 1769803200000,
+      "closing_hour_volume": 1520.57526658
+    },
+    {
+      "date": "2026-02-02",
+      "ts": 1770066000000,
+      "price": 77941.95,
+      "candle_start_ts": 1770062400000,
+      "closing_hour_volume": 707.73429894
+    },
+    {
+      "date": "2026-02-03",
+      "ts": 1770152400000,
+      "price": 76370.3,
+      "candle_start_ts": 1770148800000,
+      "closing_hour_volume": 1848.31818835
+    },
+    {
+      "date": "2026-02-04",
+      "ts": 1770238800000,
+      "price": 73337.99,
+      "candle_start_ts": 1770235200000,
+      "closing_hour_volume": 1178.41382359
+    },
+    {
+      "date": "2026-02-05",
+      "ts": 1770325200000,
+      "price": 63620.01,
+      "candle_start_ts": 1770321600000,
+      "closing_hour_volume": 5899.35511315
+    },
+    {
+      "date": "2026-02-06",
+      "ts": 1770411600000,
+      "price": 69963.99,
+      "candle_start_ts": 1770408000000,
+      "closing_hour_volume": 1976.4676123
+    },
+    {
+      "date": "2026-02-09",
+      "ts": 1770670800000,
+      "price": 70707.99,
+      "candle_start_ts": 1770667200000,
+      "closing_hour_volume": 1195.93654654
+    },
+    {
+      "date": "2026-02-10",
+      "ts": 1770757200000,
+      "price": 68708.94,
+      "candle_start_ts": 1770753600000,
+      "closing_hour_volume": 522.64921689
+    },
+    {
+      "date": "2026-02-11",
+      "ts": 1770843600000,
+      "price": 67517.41,
+      "candle_start_ts": 1770840000000,
+      "closing_hour_volume": 643.03673995
+    },
+    {
+      "date": "2026-02-12",
+      "ts": 1770930000000,
+      "price": 65362.5,
+      "candle_start_ts": 1770926400000,
+      "closing_hour_volume": 1156.9501257
+    },
+    {
+      "date": "2026-02-13",
+      "ts": 1771016400000,
+      "price": 68729.57,
+      "candle_start_ts": 1771012800000,
+      "closing_hour_volume": 511.50725266
+    },
+    {
+      "date": "2026-02-17",
+      "ts": 1771362000000,
+      "price": 67712.49,
+      "candle_start_ts": 1771358400000,
+      "closing_hour_volume": 338.95154665
+    },
+    {
+      "date": "2026-02-18",
+      "ts": 1771448400000,
+      "price": 66221.41,
+      "candle_start_ts": 1771444800000,
+      "closing_hour_volume": 893.6575844
+    },
+    {
+      "date": "2026-02-19",
+      "ts": 1771534800000,
+      "price": 67125.14,
+      "candle_start_ts": 1771531200000,
+      "closing_hour_volume": 476.98252866
+    },
+    {
+      "date": "2026-02-20",
+      "ts": 1771621200000,
+      "price": 67733.36,
+      "candle_start_ts": 1771617600000,
+      "closing_hour_volume": 329.37071075
+    },
+    {
+      "date": "2026-02-23",
+      "ts": 1771880400000,
+      "price": 64463.59,
+      "candle_start_ts": 1771876800000,
+      "closing_hour_volume": 837.3193294
+    },
+    {
+      "date": "2026-02-24",
+      "ts": 1771966800000,
+      "price": 64474.97,
+      "candle_start_ts": 1771963200000,
+      "closing_hour_volume": 414.36759795
+    },
+    {
+      "date": "2026-02-25",
+      "ts": 1772053200000,
+      "price": 69177.78,
+      "candle_start_ts": 1772049600000,
+      "closing_hour_volume": 705.7609184
+    },
+    {
+      "date": "2026-02-26",
+      "ts": 1772139600000,
+      "price": 67434.87,
+      "candle_start_ts": 1772136000000,
+      "closing_hour_volume": 538.42092813
+    },
+    {
+      "date": "2026-02-27",
+      "ts": 1772226000000,
+      "price": 65590.47,
+      "candle_start_ts": 1772222400000,
+      "closing_hour_volume": 367.18007394
+    },
+    {
+      "date": "2026-03-02",
+      "ts": 1772485200000,
+      "price": 69128.01,
+      "candle_start_ts": 1772481600000,
+      "closing_hour_volume": 1396.67352392
+    },
+    {
+      "date": "2026-03-03",
+      "ts": 1772571600000,
+      "price": 68264.6,
+      "candle_start_ts": 1772568000000,
+      "closing_hour_volume": 663.71229162
+    },
+    {
+      "date": "2026-03-04",
+      "ts": 1772658000000,
+      "price": 73077.92,
+      "candle_start_ts": 1772654400000,
+      "closing_hour_volume": 1338.81547013
+    },
+    {
+      "date": "2026-03-05",
+      "ts": 1772744400000,
+      "price": 71233.32,
+      "candle_start_ts": 1772740800000,
+      "closing_hour_volume": 541.15335384
+    },
+    {
+      "date": "2026-03-06",
+      "ts": 1772830800000,
+      "price": 68102.86,
+      "candle_start_ts": 1772827200000,
+      "closing_hour_volume": 622.37523835
+    },
+    {
+      "date": "2026-03-09",
+      "ts": 1773086400000,
+      "price": 69012.12,
+      "candle_start_ts": 1773082800000,
+      "closing_hour_volume": 1321.66878092
+    },
+    {
+      "date": "2026-03-10",
+      "ts": 1773172800000,
+      "price": 70055.27,
+      "candle_start_ts": 1773169200000,
+      "closing_hour_volume": 812.14362047
+    },
+    {
+      "date": "2026-03-11",
+      "ts": 1773259200000,
+      "price": 70670.11,
+      "candle_start_ts": 1773255600000,
+      "closing_hour_volume": 592.26743409
+    },
+    {
+      "date": "2026-03-12",
+      "ts": 1773345600000,
+      "price": 70462.0,
+      "candle_start_ts": 1773342000000,
+      "closing_hour_volume": 777.44637842
+    },
+    {
+      "date": "2026-03-13",
+      "ts": 1773432000000,
+      "price": 71190.64,
+      "candle_start_ts": 1773428400000,
+      "closing_hour_volume": 447.92759704
+    },
+    {
+      "date": "2026-03-16",
+      "ts": 1773691200000,
+      "price": 73969.53,
+      "candle_start_ts": 1773687600000,
+      "closing_hour_volume": 485.45728646
+    },
+    {
+      "date": "2026-03-17",
+      "ts": 1773777600000,
+      "price": 74542.28,
+      "candle_start_ts": 1773774000000,
+      "closing_hour_volume": 690.75753439
+    },
+    {
+      "date": "2026-03-18",
+      "ts": 1773864000000,
+      "price": 71065.73,
+      "candle_start_ts": 1773860400000,
+      "closing_hour_volume": 590.75627343
+    },
+    {
+      "date": "2026-03-19",
+      "ts": 1773950400000,
+      "price": 70265.41,
+      "candle_start_ts": 1773946800000,
+      "closing_hour_volume": 689.38484611
+    },
+    {
+      "date": "2026-03-20",
+      "ts": 1774036800000,
+      "price": 70169.39,
+      "candle_start_ts": 1774033200000,
+      "closing_hour_volume": 433.99008568
+    },
+    {
+      "date": "2026-03-23",
+      "ts": 1774296000000,
+      "price": 70660.88,
+      "candle_start_ts": 1774292400000,
+      "closing_hour_volume": 356.48622867
+    },
+    {
+      "date": "2026-03-24",
+      "ts": 1774382400000,
+      "price": 69334.0,
+      "candle_start_ts": 1774378800000,
+      "closing_hour_volume": 396.16704974
+    },
+    {
+      "date": "2026-03-25",
+      "ts": 1774468800000,
+      "price": 70859.88,
+      "candle_start_ts": 1774465200000,
+      "closing_hour_volume": 505.9808358
+    },
+    {
+      "date": "2026-03-26",
+      "ts": 1774555200000,
+      "price": 68479.59,
+      "candle_start_ts": 1774551600000,
+      "closing_hour_volume": 418.21840547
+    },
+    {
+      "date": "2026-03-27",
+      "ts": 1774641600000,
+      "price": 65975.02,
+      "candle_start_ts": 1774638000000,
+      "closing_hour_volume": 1154.28881521
+    },
+    {
+      "date": "2026-03-30",
+      "ts": 1774900800000,
+      "price": 66488.0,
+      "candle_start_ts": 1774897200000,
+      "closing_hour_volume": 763.28904511
+    },
+    {
+      "date": "2026-03-31",
+      "ts": 1774987200000,
+      "price": 67772.92,
+      "candle_start_ts": 1774983600000,
+      "closing_hour_volume": 684.68520157
+    },
+    {
+      "date": "2026-04-01",
+      "ts": 1775073600000,
+      "price": 68162.03,
+      "candle_start_ts": 1775070000000,
+      "closing_hour_volume": 649.12816627
+    },
+    {
+      "date": "2026-04-02",
+      "ts": 1775160000000,
+      "price": 66976.06,
+      "candle_start_ts": 1775156400000,
+      "closing_hour_volume": 343.29746968
+    },
+    {
+      "date": "2026-04-06",
+      "ts": 1775505600000,
+      "price": 69732.99,
+      "candle_start_ts": 1775502000000,
+      "closing_hour_volume": 699.21486856
+    },
+    {
+      "date": "2026-04-07",
+      "ts": 1775592000000,
+      "price": 68993.62,
+      "candle_start_ts": 1775588400000,
+      "closing_hour_volume": 488.54226473
+    },
+    {
+      "date": "2026-04-08",
+      "ts": 1775678400000,
+      "price": 71331.51,
+      "candle_start_ts": 1775674800000,
+      "closing_hour_volume": 498.03842072
+    },
+    {
+      "date": "2026-04-09",
+      "ts": 1775764800000,
+      "price": 72136.37,
+      "candle_start_ts": 1775761200000,
+      "closing_hour_volume": 785.57696612
+    },
+    {
+      "date": "2026-04-10",
+      "ts": 1775851200000,
+      "price": 73286.01,
+      "candle_start_ts": 1775847600000,
+      "closing_hour_volume": 1071.64068647
+    },
+    {
+      "date": "2026-04-13",
+      "ts": 1776110400000,
+      "price": 73373.2,
+      "candle_start_ts": 1776106800000,
+      "closing_hour_volume": 2125.50643503
+    },
+    {
+      "date": "2026-04-14",
+      "ts": 1776196800000,
+      "price": 74299.83,
+      "candle_start_ts": 1776193200000,
+      "closing_hour_volume": 2713.18751958
+    },
+    {
+      "date": "2026-04-15",
+      "ts": 1776283200000,
+      "price": 75048.06,
+      "candle_start_ts": 1776279600000,
+      "closing_hour_volume": 1262.63540988
+    },
+    {
+      "date": "2026-04-16",
+      "ts": 1776369600000,
+      "price": 75378.0,
+      "candle_start_ts": 1776366000000,
+      "closing_hour_volume": 703.21190124
+    },
+    {
+      "date": "2026-04-17",
+      "ts": 1776456000000,
+      "price": 77453.07,
+      "candle_start_ts": 1776452400000,
+      "closing_hour_volume": 924.06995477
+    },
+    {
+      "date": "2026-04-20",
+      "ts": 1776715200000,
+      "price": 76337.42,
+      "candle_start_ts": 1776711600000,
+      "closing_hour_volume": 956.74454347
+    },
+    {
+      "date": "2026-04-21",
+      "ts": 1776801600000,
+      "price": 75030.96,
+      "candle_start_ts": 1776798000000,
+      "closing_hour_volume": 692.76267637
+    },
+    {
+      "date": "2026-04-22",
+      "ts": 1776888000000,
+      "price": 78878.3,
+      "candle_start_ts": 1776884400000,
+      "closing_hour_volume": 1154.32492186
+    },
+    {
+      "date": "2026-04-23",
+      "ts": 1776974400000,
+      "price": 77743.16,
+      "candle_start_ts": 1776970800000,
+      "closing_hour_volume": 691.04509369
+    },
+    {
+      "date": "2026-04-24",
+      "ts": 1777060800000,
+      "price": 77659.72,
+      "candle_start_ts": 1777057200000,
+      "closing_hour_volume": 321.8029166
+    },
+    {
+      "date": "2026-04-27",
+      "ts": 1777320000000,
+      "price": 76886.0,
+      "candle_start_ts": 1777316400000,
+      "closing_hour_volume": 575.76572475
+    },
+    {
+      "date": "2026-04-28",
+      "ts": 1777406400000,
+      "price": 76308.13,
+      "candle_start_ts": 1777402800000,
+      "closing_hour_volume": 304.36666757
+    },
+    {
+      "date": "2026-04-29",
+      "ts": 1777492800000,
+      "price": 75526.0,
+      "candle_start_ts": 1777489200000,
+      "closing_hour_volume": 674.55836458
+    },
+    {
+      "date": "2026-04-30",
+      "ts": 1777579200000,
+      "price": 76375.39,
+      "candle_start_ts": 1777575600000,
+      "closing_hour_volume": 467.66399212
+    },
+    {
+      "date": "2026-05-01",
+      "ts": 1777665600000,
+      "price": 78374.85,
+      "candle_start_ts": 1777662000000,
+      "closing_hour_volume": 369.11194247
+    },
+    {
+      "date": "2026-05-04",
+      "ts": 1777924800000,
+      "price": 80052.2,
+      "candle_start_ts": 1777921200000,
+      "closing_hour_volume": 438.88050018
+    },
+    {
+      "date": "2026-05-05",
+      "ts": 1778011200000,
+      "price": 81611.95,
+      "candle_start_ts": 1778007600000,
+      "closing_hour_volume": 646.80063074
+    },
+    {
+      "date": "2026-05-06",
+      "ts": 1778097600000,
+      "price": 81457.38,
+      "candle_start_ts": 1778094000000,
+      "closing_hour_volume": 297.25062328
+    },
+    {
+      "date": "2026-05-07",
+      "ts": 1778184000000,
+      "price": 80142.85,
+      "candle_start_ts": 1778180400000,
+      "closing_hour_volume": 269.12932062
+    },
+    {
+      "date": "2026-05-08",
+      "ts": 1778270400000,
+      "price": 80149.99,
+      "candle_start_ts": 1778266800000,
+      "closing_hour_volume": 152.72443817
+    },
+    {
+      "date": "2026-05-11",
+      "ts": 1778529600000,
+      "price": 81956.0,
+      "candle_start_ts": 1778526000000,
+      "closing_hour_volume": 356.14735098
+    },
+    {
+      "date": "2026-05-12",
+      "ts": 1778616000000,
+      "price": 80820.63,
+      "candle_start_ts": 1778612400000,
+      "closing_hour_volume": 372.63326141
+    },
+    {
+      "date": "2026-05-13",
+      "ts": 1778702400000,
+      "price": 79612.0,
+      "candle_start_ts": 1778698800000,
+      "closing_hour_volume": 544.14373279
+    },
+    {
+      "date": "2026-05-14",
+      "ts": 1778788800000,
+      "price": 81439.17,
+      "candle_start_ts": 1778785200000,
+      "closing_hour_volume": 1127.49531861
+    },
+    {
+      "date": "2026-05-15",
+      "ts": 1778875200000,
+      "price": 79089.14,
+      "candle_start_ts": 1778871600000,
+      "closing_hour_volume": 491.60806594
+    },
+    {
+      "date": "2026-05-18",
+      "ts": 1779134400000,
+      "price": 76859.05,
+      "candle_start_ts": 1779130800000,
+      "closing_hour_volume": 526.78698035
+    },
+    {
+      "date": "2026-05-19",
+      "ts": 1779220800000,
+      "price": 76758.13,
+      "candle_start_ts": 1779217200000,
+      "closing_hour_volume": 349.52393869
+    },
+    {
+      "date": "2026-05-20",
+      "ts": 1779307200000,
+      "price": 77598.0,
+      "candle_start_ts": 1779303600000,
+      "closing_hour_volume": 332.78191179
+    },
+    {
+      "date": "2026-05-21",
+      "ts": 1779393600000,
+      "price": 77613.34,
+      "candle_start_ts": 1779390000000,
+      "closing_hour_volume": 348.86208162
+    },
+    {
+      "date": "2026-05-22",
+      "ts": 1779480000000,
+      "price": 75769.44,
+      "candle_start_ts": 1779476400000,
+      "closing_hour_volume": 619.97328425
+    },
+    {
+      "date": "2026-05-26",
+      "ts": 1779825600000,
+      "price": 75919.93,
+      "candle_start_ts": 1779822000000,
+      "closing_hour_volume": 402.5505322
+    },
+    {
+      "date": "2026-05-27",
+      "ts": 1779912000000,
+      "price": 74920.54,
+      "candle_start_ts": 1779908400000,
+      "closing_hour_volume": 276.74248326
+    },
+    {
+      "date": "2026-05-28",
+      "ts": 1779998400000,
+      "price": 73318.39,
+      "candle_start_ts": 1779994800000,
+      "closing_hour_volume": 367.08284141
+    },
+    {
+      "date": "2026-05-29",
+      "ts": 1780084800000,
+      "price": 73404.1,
+      "candle_start_ts": 1780081200000,
+      "closing_hour_volume": 507.51756103
+    },
+    {
+      "date": "2026-06-01",
+      "ts": 1780344000000,
+      "price": 71488.84,
+      "candle_start_ts": 1780340400000,
+      "closing_hour_volume": 601.08681252
+    },
+    {
+      "date": "2026-06-02",
+      "ts": 1780430400000,
+      "price": 67213.59,
+      "candle_start_ts": 1780426800000,
+      "closing_hour_volume": 1375.18135011
+    },
+    {
+      "date": "2026-06-03",
+      "ts": 1780516800000,
+      "price": 65356.01,
+      "candle_start_ts": 1780513200000,
+      "closing_hour_volume": 850.85455004
+    },
+    {
+      "date": "2026-06-04",
+      "ts": 1780603200000,
+      "price": 63541.28,
+      "candle_start_ts": 1780599600000,
+      "closing_hour_volume": 1154.82923256
+    },
+    {
+      "date": "2026-06-05",
+      "ts": 1780689600000,
+      "price": 60264.11,
+      "candle_start_ts": 1780686000000,
+      "closing_hour_volume": 2129.13600082
+    },
+    {
+      "date": "2026-06-08",
+      "ts": 1780948800000,
+      "price": 63352.53,
+      "candle_start_ts": 1780945200000,
+      "closing_hour_volume": 416.66852213
+    },
+    {
+      "date": "2026-06-09",
+      "ts": 1781035200000,
+      "price": 62044.83,
+      "candle_start_ts": 1781031600000,
+      "closing_hour_volume": 582.88136609
+    },
+    {
+      "date": "2026-06-10",
+      "ts": 1781121600000,
+      "price": 61882.0,
+      "candle_start_ts": 1781118000000,
+      "closing_hour_volume": 367.818541
+    },
+    {
+      "date": "2026-06-11",
+      "ts": 1781208000000,
+      "price": 63548.0,
+      "candle_start_ts": 1781204400000,
+      "closing_hour_volume": 707.87072734
+    },
+    {
+      "date": "2026-06-12",
+      "ts": 1781294400000,
+      "price": 63552.05,
+      "candle_start_ts": 1781290800000,
+      "closing_hour_volume": 487.21628567
+    },
+    {
+      "date": "2026-06-15",
+      "ts": 1781553600000,
+      "price": 66577.42,
+      "candle_start_ts": 1781550000000,
+      "closing_hour_volume": 682.07691227
+    },
+    {
+      "date": "2026-06-16",
+      "ts": 1781640000000,
+      "price": 65622.49,
+      "candle_start_ts": 1781636400000,
+      "closing_hour_volume": 727.62417845
+    },
+    {
+      "date": "2026-06-17",
+      "ts": 1781726400000,
+      "price": 64241.65,
+      "candle_start_ts": 1781722800000,
+      "closing_hour_volume": 1369.0799133
+    },
+    {
+      "date": "2026-06-18",
+      "ts": 1781812800000,
+      "price": 62872.8,
+      "candle_start_ts": 1781809200000,
+      "closing_hour_volume": 348.32464011
+    },
+    {
+      "date": "2026-06-22",
+      "ts": 1782158400000,
+      "price": 64408.02,
+      "candle_start_ts": 1782154800000,
+      "closing_hour_volume": 425.63264842
+    },
+    {
+      "date": "2026-06-23",
+      "ts": 1782244800000,
+      "price": 62310.83,
+      "candle_start_ts": 1782241200000,
+      "closing_hour_volume": 292.43950264
+    },
+    {
+      "date": "2026-06-24",
+      "ts": 1782331200000,
+      "price": 59858.28,
+      "candle_start_ts": 1782327600000,
+      "closing_hour_volume": 1133.51574435
+    },
+    {
+      "date": "2026-06-25",
+      "ts": 1782417600000,
+      "price": 59220.01,
+      "candle_start_ts": 1782414000000,
+      "closing_hour_volume": 826.89471914
+    },
+    {
+      "date": "2026-06-26",
+      "ts": 1782504000000,
+      "price": 59655.5,
+      "candle_start_ts": 1782500400000,
+      "closing_hour_volume": 1111.85563562
+    },
+    {
+      "date": "2026-06-29",
+      "ts": 1782763200000,
+      "price": 60332.0,
+      "candle_start_ts": 1782759600000,
+      "closing_hour_volume": 593.34513117
+    },
+    {
+      "date": "2026-06-30",
+      "ts": 1782849600000,
+      "price": 58716.53,
+      "candle_start_ts": 1782846000000,
+      "closing_hour_volume": 971.67126343
+    },
+    {
+      "date": "2026-07-01",
+      "ts": 1782936000000,
+      "price": 59971.68,
+      "candle_start_ts": 1782932400000,
+      "closing_hour_volume": 551.07842683
+    },
+    {
+      "date": "2026-07-02",
+      "ts": 1783022400000,
+      "price": 61424.29,
+      "candle_start_ts": 1783018800000,
+      "closing_hour_volume": 516.35280174
+    },
+    {
+      "date": "2026-07-06",
+      "ts": 1783368000000,
+      "price": 63692.7,
+      "candle_start_ts": 1783364400000,
+      "closing_hour_volume": 489.32492154
+    },
+    {
+      "date": "2026-07-07",
+      "ts": 1783454400000,
+      "price": 63776.81,
+      "candle_start_ts": 1783450800000,
+      "closing_hour_volume": 635.53231771
+    },
+    {
+      "date": "2026-07-08",
+      "ts": 1783540800000,
+      "price": 62223.7,
+      "candle_start_ts": 1783537200000,
+      "closing_hour_volume": 312.4992429
+    },
+    {
+      "date": "2026-07-09",
+      "ts": 1783627200000,
+      "price": 63193.84,
+      "candle_start_ts": 1783623600000,
+      "closing_hour_volume": 275.68205426
+    },
+    {
+      "date": "2026-07-10",
+      "ts": 1783713600000,
+      "price": 63878.41,
+      "candle_start_ts": 1783710000000,
+      "closing_hour_volume": 268.10752902
+    },
+    {
+      "date": "2026-07-13",
+      "ts": 1783972800000,
+      "price": 62210.67,
+      "candle_start_ts": 1783969200000,
+      "closing_hour_volume": 561.90747732
+    },
+    {
+      "date": "2026-07-14",
+      "ts": 1784059200000,
+      "price": 64542.41,
+      "candle_start_ts": 1784055600000,
+      "closing_hour_volume": 315.59263698
+    },
+    {
+      "date": "2026-07-15",
+      "ts": 1784145600000,
+      "price": 64941.86,
+      "candle_start_ts": 1784142000000,
+      "closing_hour_volume": 309.12735661
+    },
+    {
+      "date": "2026-07-16",
+      "ts": 1784232000000,
+      "price": 64217.54,
+      "candle_start_ts": 1784228400000,
+      "closing_hour_volume": 280.63102433
+    },
+    {
+      "date": "2026-07-17",
+      "ts": 1784318400000,
+      "price": 64113.2,
+      "candle_start_ts": 1784314800000,
+      "closing_hour_volume": 735.9042241
+    },
+    {
+      "date": "2026-07-20",
+      "ts": 1784577600000,
+      "price": 65099.39,
+      "candle_start_ts": 1784574000000,
+      "closing_hour_volume": 498.91006481
+    },
+    {
+      "date": "2026-07-21",
+      "ts": 1784664000000,
+      "price": 66424.0,
+      "candle_start_ts": 1784660400000,
+      "closing_hour_volume": 448.07279798
+    },
+    {
+      "date": "2026-07-22",
+      "ts": 1784750400000,
+      "price": 65894.99,
+      "candle_start_ts": 1784746800000,
+      "closing_hour_volume": 687.78820947
+    },
+    {
+      "date": "2026-07-23",
+      "ts": 1784836800000,
+      "price": 64778.48,
+      "candle_start_ts": 1784833200000,
+      "closing_hour_volume": 745.62687523
+    },
+    {
+      "date": "2026-07-24",
+      "ts": 1784923200000,
+      "price": 64163.76,
+      "candle_start_ts": 1784919600000,
+      "closing_hour_volume": 362.43039701
+    },
+    {
+      "date": "2026-07-27",
+      "ts": 1785182400000,
+      "price": 64915.15,
+      "candle_start_ts": 1785178800000,
+      "closing_hour_volume": 203.96392059
+    },
+    {
+      "date": "2026-07-28",
+      "ts": 1785268800000,
+      "price": 63825.78,
+      "candle_start_ts": 1785265200000,
+      "closing_hour_volume": 611.05645064
+    },
+    {
+      "date": "2026-07-29",
+      "ts": 1785355200000,
+      "price": 63515.6,
+      "candle_start_ts": 1785351600000,
+      "closing_hour_volume": 483.78435645
+    },
+    {
+      "date": "2026-07-30",
+      "ts": 1785441600000,
+      "price": 64741.54,
+      "candle_start_ts": 1785438000000,
+      "closing_hour_volume": 444.58996786
+    },
+    {
+      "date": "2026-07-31",
+      "ts": 1785528000000,
+      "price": 62903.64,
+      "candle_start_ts": 1785524400000,
+      "closing_hour_volume": 385.66576944
+    },
+    {
+      "date": "2026-08-03",
+      "ts": 1785787200000,
+      "price": 63813.48,
+      "candle_start_ts": 1785783600000,
+      "closing_hour_volume": 487.12152339
+    },
+    {
+      "date": "2026-08-04",
+      "ts": 1785873600000,
+      "price": 64197.18,
+      "candle_start_ts": 1785870000000,
+      "closing_hour_volume": 396.74398843
+    },
+    {
+      "date": "2026-08-05",
+      "ts": 1785960000000,
+      "price": 64794.63,
+      "candle_start_ts": 1785956400000,
+      "closing_hour_volume": 499.27723482
+    },
+    {
+      "date": "2026-08-06",
+      "ts": 1786046400000,
+      "price": 64390.13,
+      "candle_start_ts": 1786042800000,
+      "closing_hour_volume": 465.41675914
+    },
+    {
+      "date": "2026-08-07",
+      "ts": 1786132800000,
+      "price": 64914.79,
+      "candle_start_ts": 1786129200000,
+      "closing_hour_volume": 661.73118592
+    },
+    {
+      "date": "2026-08-10",
+      "ts": 1786392000000,
+      "price": 63977.9,
+      "candle_start_ts": 1786388400000,
+      "closing_hour_volume": 368.81669542
+    },
+    {
+      "date": "2026-08-11",
+      "ts": 1786478400000,
+      "price": 63468.75,
+      "candle_start_ts": 1786474800000,
+      "closing_hour_volume": 445.976907
+    },
+    {
+      "date": "2026-08-12",
+      "ts": 1786564800000,
+      "price": 63344.07,
+      "candle_start_ts": 1786561200000,
+      "closing_hour_volume": 360.71997429
+    },
+    {
+      "date": "2026-08-13",
+      "ts": 1786651200000,
+      "price": 63339.67,
+      "candle_start_ts": 1786647600000,
+      "closing_hour_volume": 365.92399342
+    },
+    {
+      "date": "2026-08-14",
+      "ts": 1786737600000,
+      "price": 62892.03,
+      "candle_start_ts": 1786734000000,
+      "closing_hour_volume": 485.73427459
+    },
+    {
+      "date": "2026-08-17",
+      "ts": 1786996800000,
+      "price": 64262.0,
+      "candle_start_ts": 1786993200000,
+      "closing_hour_volume": 318.57181294
+    },
+    {
+      "date": "2026-08-18",
+      "ts": 1787083200000,
+      "price": 64610.51,
+      "candle_start_ts": 1787079600000,
+      "closing_hour_volume": 276.95650895
+    },
+    {
+      "date": "2026-08-19",
+      "ts": 1787169600000,
+      "price": 68418.55,
+      "candle_start_ts": 1787166000000,
+      "closing_hour_volume": 1270.57575236
+    },
+    {
+      "date": "2026-08-20",
+      "ts": 1787256000000,
+      "price": 72669.36,
+      "candle_start_ts": 1787252400000,
+      "closing_hour_volume": 666.66317283
+    },
+    {
+      "date": "2026-08-21",
+      "ts": 1787342400000,
+      "price": 77003.92,
+      "candle_start_ts": 1787338800000,
+      "closing_hour_volume": 759.57000463
+    },
+    {
+      "date": "2026-08-24",
+      "ts": 1787601600000,
+      "price": 78746.35,
+      "candle_start_ts": 1787598000000,
+      "closing_hour_volume": 552.45074535
+    },
+    {
+      "date": "2026-08-25",
+      "ts": 1787688000000,
+      "price": 78928.78,
+      "candle_start_ts": 1787684400000,
+      "closing_hour_volume": 750.66656642
+    },
+    {
+      "date": "2026-08-26",
+      "ts": 1787774400000,
+      "price": 78475.06,
+      "candle_start_ts": 1787770800000,
+      "closing_hour_volume": 430.73127088
+    },
+    {
+      "date": "2026-08-27",
+      "ts": 1787860800000,
+      "price": 79910.05,
+      "candle_start_ts": 1787857200000,
+      "closing_hour_volume": 534.05676091
+    },
+    {
+      "date": "2026-08-28",
+      "ts": 1787947200000,
+      "price": 77559.99,
+      "candle_start_ts": 1787943600000,
+      "closing_hour_volume": 626.87551469
+    },
+    {
+      "date": "2026-08-31",
+      "ts": 1788206400000,
+      "price": 78893.63,
+      "candle_start_ts": 1788202800000,
+      "closing_hour_volume": 697.25643985
+    },
+    {
+      "date": "2026-09-01",
+      "ts": 1788292800000,
+      "price": 77277.15,
+      "candle_start_ts": 1788289200000,
+      "closing_hour_volume": 465.21724797
+    },
+    {
+      "date": "2026-09-02",
+      "ts": 1788379200000,
+      "price": 77316.03,
+      "candle_start_ts": 1788375600000,
+      "closing_hour_volume": 225.91931297
+    },
+    {
+      "date": "2026-09-03",
+      "ts": 1788465600000,
+      "price": 81768.48,
+      "candle_start_ts": 1788462000000,
+      "closing_hour_volume": 757.28656217
+    },
+    {
+      "date": "2026-09-04",
+      "ts": 1788552000000,
+      "price": 79807.37,
+      "candle_start_ts": 1788548400000,
+      "closing_hour_volume": 313.98600278
+    },
+    {
+      "date": "2026-09-08",
+      "ts": 1788897600000,
+      "price": 78434.47,
+      "candle_start_ts": 1788894000000,
+      "closing_hour_volume": 342.3604794
+    },
+    {
+      "date": "2026-09-09",
+      "ts": 1788984000000,
+      "price": 78212.95,
+      "candle_start_ts": 1788980400000,
+      "closing_hour_volume": 199.66961964
+    },
+    {
+      "date": "2026-09-10",
+      "ts": 1789070400000,
+      "price": 77123.6,
+      "candle_start_ts": 1789066800000,
+      "closing_hour_volume": 227.64197845
+    },
+    {
+      "date": "2026-09-11",
+      "ts": 1789156800000,
+      "price": 77257.36,
+      "candle_start_ts": 1789153200000,
+      "closing_hour_volume": 227.10857265
+    },
+    {
+      "date": "2026-09-14",
+      "ts": 1789416000000,
+      "price": 78982.77,
+      "candle_start_ts": 1789412400000,
+      "closing_hour_volume": 419.82260737
+    },
+    {
+      "date": "2026-09-15",
+      "ts": 1789502400000,
+      "price": 76126.33,
+      "candle_start_ts": 1789498800000,
+      "closing_hour_volume": 670.70700403
+    },
+    {
+      "date": "2026-09-16",
+      "ts": 1789588800000,
+      "price": 76000.0,
+      "candle_start_ts": 1789585200000,
+      "closing_hour_volume": 805.99533927
+    },
+    {
+      "date": "2026-09-17",
+      "ts": 1789675200000,
+      "price": 76524.57,
+      "candle_start_ts": 1789671600000,
+      "closing_hour_volume": 157.36040165
+    },
+    {
+      "date": "2026-09-18",
+      "ts": 1789761600000,
+      "price": 81193.47,
+      "candle_start_ts": 1789758000000,
+      "closing_hour_volume": 867.78533377
+    },
+    {
+      "date": "2026-09-21",
+      "ts": 1790020800000,
+      "price": 86494.97,
+      "candle_start_ts": 1790017200000,
+      "closing_hour_volume": 1009.21807904
+    },
+    {
+      "date": "2026-09-22",
+      "ts": 1790107200000,
+      "price": 86211.14,
+      "candle_start_ts": 1790103600000,
+      "closing_hour_volume": 634.29322002
+    },
+    {
+      "date": "2026-09-23",
+      "ts": 1790193600000,
+      "price": 84515.87,
+      "candle_start_ts": 1790190000000,
+      "closing_hour_volume": 559.10895483
+    },
+    {
+      "date": "2026-09-24",
+      "ts": 1790280000000,
+      "price": 84395.47,
+      "candle_start_ts": 1790276400000,
+      "closing_hour_volume": 399.42074393
+    },
+    {
+      "date": "2026-09-25",
+      "ts": 1790366400000,
+      "price": 84003.55,
+      "candle_start_ts": 1790362800000,
+      "closing_hour_volume": 415.48272096
+    },
+    {
+      "date": "2026-09-28",
+      "ts": 1790625600000,
+      "price": 83355.13,
+      "candle_start_ts": 1790622000000,
+      "closing_hour_volume": 267.94583196
+    },
+    {
+      "date": "2026-09-29",
+      "ts": 1790712000000,
+      "price": 83571.71,
+      "candle_start_ts": 1790708400000,
+      "closing_hour_volume": 191.47834289
+    },
+    {
+      "date": "2026-09-30",
+      "ts": 1790798400000,
+      "price": 83556.83,
+      "candle_start_ts": 1790794800000,
+      "closing_hour_volume": 582.2626661
+    },
+    {
+      "date": "2026-10-01",
+      "ts": 1790884800000,
+      "price": 84644.92,
+      "candle_start_ts": 1790881200000,
+      "closing_hour_volume": 409.063357
+    },
+    {
+      "date": "2026-10-02",
+      "ts": 1790971200000,
+      "price": 84292.32,
+      "candle_start_ts": 1790967600000,
+      "closing_hour_volume": 401.1902947
+    },
+    {
+      "date": "2026-10-05",
+      "ts": 1791230400000,
+      "price": 85732.25,
+      "candle_start_ts": 1791226800000,
+      "closing_hour_volume": 197.9963518
+    },
+    {
+      "date": "2026-10-06",
+      "ts": 1791316800000,
+      "price": 85610.01,
+      "candle_start_ts": 1791313200000,
+      "closing_hour_volume": 150.31971864
+    },
+    {
+      "date": "2026-10-07",
+      "ts": 1791403200000,
+      "price": 83392.04,
+      "candle_start_ts": 1791399600000,
+      "closing_hour_volume": 365.27477807
+    },
+    {
+      "date": "2026-10-08",
+      "ts": 1791489600000,
+      "price": 81710.68,
+      "candle_start_ts": 1791486000000,
+      "closing_hour_volume": 289.2723043
+    },
+    {
+      "date": "2026-10-09",
+      "ts": 1791576000000,
+      "price": 82252.59,
+      "candle_start_ts": 1791572400000,
+      "closing_hour_volume": 215.41582472
+    },
+    {
+      "date": "2026-10-12",
+      "ts": 1791835200000,
+      "price": 82762.91,
+      "candle_start_ts": 1791831600000,
+      "closing_hour_volume": 248.6719346
+    },
+    {
+      "date": "2026-10-13",
+      "ts": 1791921600000,
+      "price": 83206.49,
+      "candle_start_ts": 1791918000000,
+      "closing_hour_volume": 179.43596328
+    },
+    {
+      "date": "2026-10-14",
+      "ts": 1792008000000,
+      "price": 81721.33,
+      "candle_start_ts": 1792004400000,
+      "closing_hour_volume": 272.97168357
+    },
+    {
+      "date": "2026-10-15",
+      "ts": 1792094400000,
+      "price": 82299.26,
+      "candle_start_ts": 1792090800000,
+      "closing_hour_volume": 241.27383001
+    }
+  ]
+}

@@ -6,5 +6,6 @@ lxml>=5.0
 numpy>=1.26
 python-dotenv>=1.0
 PyMuPDF>=1.24
+exchange_calendars>=4.5,<5
 
 playwright>=1.50
