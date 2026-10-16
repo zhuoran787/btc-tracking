@@ -1837,7 +1837,7 @@ def build_summary_rows(data, extra):
         macro_pieces.append(user["macro_summary"])
     # PPT 1.2 AI 相关性总结（独立 helper，非照抄）
     macro_pieces.append(_macro_correlation_one_liner_ai(api))
-    macro_one_default = "。".join(p for p in macro_pieces if p)
+    macro_one_default = "".join(p if p.endswith(("。", "！", "？", ".", "!", "?")) else p + "。" for p in macro_pieces if p)
     rows.append({
         "label": "宏观环境",
         "user_input_required": True,  # PPT 1.1 明确"只能用户来更新"
@@ -2195,6 +2195,10 @@ def build_context(data, extra):
         pass
 
     # 因素 8 验证 5：稳定币状态标签
+    if coinshares.get("flow_page_missing"):
+        total_flow_percentile = None
+        total_flow_label = None
+
     sc_30d = stable.get("change_30d") or 0
     if sc_30d >= 3:
         stable_status_label, stable_status_color = "快速发展", "#dcfce7"
@@ -2330,6 +2334,7 @@ def build_context(data, extra):
         "onchain_summary_cn": extra.get("onchain_summary_cn") or [],
         # PPT slide 10 因素 5：CoinShares 周报截图（5 张 PNG base64 嵌入）
         "coinshares_images": (data.get("coinshares_data", {}) or {}).get("images") or [],
+        "coinshares_flow_page_missing": bool(coinshares.get("flow_page_missing")),
 
         # 因素 5 整体资金流向
         "total_flow_percentile": total_flow_percentile,

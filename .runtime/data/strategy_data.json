@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-05T06:50:43.070354+00:00",
+  "fetched_at": "2026-10-16T12:10:22.230364+00:00",
   "source": "verified Strategy official ledger baseline + SEC EDGAR 8-K reconciliation",
   "errors": [],
   "warnings": [],
@@ -1095,6 +1095,26 @@
       "shares_basic": null,
       "shares_diluted": null,
       "sec_accession": "0001193125-26-403417"
+    },
+    {
+      "date": "2026-10-05",
+      "btc_delta": 334,
+      "btc_holdings": 848000,
+      "avg_price": 75440.7,
+      "total_cost": 63970.0,
+      "shares_basic": null,
+      "shares_diluted": null,
+      "sec_accession": "0001193125-26-413164"
+    },
+    {
+      "date": "2026-10-13",
+      "btc_delta": 250,
+      "btc_holdings": 848250,
+      "avg_price": 75444,
+      "total_cost": 64000.0,
+      "shares_basic": null,
+      "shares_diluted": null,
+      "sec_accession": "0001193125-26-419726"
     }
   ],
   "weekly_net_buys": {
@@ -1186,7 +1206,9 @@
       "2026-08-10",
       "2026-08-31",
       "2026-09-21",
-      "2026-09-28"
+      "2026-09-28",
+      "2026-10-05",
+      "2026-10-12"
     ],
     "net_btc": [
       850.0,
@@ -1276,27 +1298,29 @@
       -1690.0,
       4603.0,
       950.0,
-      1665.0
+      1665.0,
+      334.0,
+      250.0
     ]
   },
   "sec_reconciliation": {
     "source": "SEC EDGAR submissions API + official complete-submission text",
+    "parser_version": "split_tables_exhibits_v1",
     "cik": "0001050446",
-    "filings_checked": 0,
-    "btc_updates_found": 0,
-    "latest_filing_date": "2026-09-28",
-    "latest_as_of": "2026-09-27",
-    "latest_holdings": 847666,
-    "latest_accession": "0001193125-26-403417",
+    "filings_checked": 2,
+    "btc_updates_found": 1,
+    "latest_filing_date": "2026-10-13",
+    "latest_as_of": "2026-10-11",
+    "latest_holdings": 848250,
+    "latest_accession": "0001193125-26-419726",
     "checked_accessions": [
-      "0001193125-26-389858",
-      "0001193125-26-396093",
-      "0001193125-26-403417",
-      "0001193125-26-409863"
+      "0001193125-26-413164",
+      "0001193125-26-419726",
+      "0001193125-26-423400"
     ],
-    "verified_at": "2026-10-05T06:50:43.069293+00:00"
+    "verified_at": "2026-10-16T12:10:22.229331+00:00"
   },
-  "refresh_status": "checked_no_new",
+  "refresh_status": "updated",
   "mnav": {
     "deprecated": true,
     "reason": "Use fetch_mnav.py EV mNAV; legacy equity/gross-BTC method is not comparable."

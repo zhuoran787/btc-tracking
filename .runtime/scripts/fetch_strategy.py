@@ -250,6 +250,21 @@ def parse_sec_btc_events(complete_submission: str, filing_date: str, accession: 
     soup = BeautifulSoup(html, "html.parser")
     plain_text = " ".join(soup.stripped_strings)
     if "BTC Update" not in plain_text and "BTC Updates" not in plain_text:
+        exhibit_events = []
+        for match in re.finditer(r"<DOCUMENT>(.*?)</DOCUMENT>", complete_submission, re.I | re.S):
+            document = match.group(1)
+            if not re.search(r"<TYPE>EX-99(?:\.\d+)?(?:\s|$)", document, re.I):
+                continue
+            body = re.search(r"<TEXT>(.*?)</TEXT>", document, re.I | re.S)
+            if body and re.search(r"BTC Updates?", " ".join(BeautifulSoup(body.group(1), "html.parser").stripped_strings)):
+                exhibit_events.extend(parse_sec_btc_events(
+                    "<DOCUMENT><TYPE>8-K\n<TEXT>" + body.group(1) + "</TEXT></DOCUMENT>",
+                    filing_date, accession,
+                ))
+        if exhibit_events:
+            return exhibit_events
+        if re.search(r"Press release.*capital markets and capital management", plain_text, re.I):
+            raise ValueError("Capital management press-release exhibit missing or BTC disclosure unrecognized")
         return []
 
     events = []
@@ -336,6 +351,50 @@ def parse_sec_btc_events(complete_submission: str, filing_date: str, accession: 
             })
 
     if not events:
+        # October 2026 filings split each activity/holdings pair into adjacent
+        # tables. Require matching period-end and holdings dates for every pair.
+        tables = soup.find_all("table")
+        for index, table in enumerate(tables):
+            activity_text = " ".join(table.stripped_strings)
+            if "During Period" not in activity_text or "Aggregate BTC Holdings" in activity_text:
+                continue
+            label = re.search(r"BTC (Acquired|Purchased|Sold)", activity_text, re.I)
+            if not label:
+                continue
+            period = re.search(r"During Period .*? to ([A-Z][a-z]+ \d{1,2}, \d{4})", activity_text)
+            if not period or index + 1 >= len(tables):
+                raise ValueError("Split BTC activity table missing period or holdings pair")
+            holdings_table = tables[index + 1]
+            holdings_text = " ".join(holdings_table.stripped_strings)
+            as_of = re.search(r"As of ([A-Z][a-z]+ \d{1,2}, \d{4})", holdings_text)
+            if "Aggregate BTC Holdings" not in holdings_text or not as_of or as_of.group(1) != period.group(1):
+                raise ValueError("Split BTC activity/holdings dates do not match")
+
+            def values_after_header(node, header):
+                seen = False
+                for tr in node.find_all("tr"):
+                    cells = [" ".join(c.stripped_strings) for c in tr.find_all(["th", "td"])]
+                    if header in " ".join(cells):
+                        seen = True
+                        continue
+                    if seen:
+                        values = _row_values(cells)
+                        if len(values) == 3:
+                            return values
+                raise ValueError("Split BTC table lacks three disclosed numeric cells")
+
+            activity = values_after_header(table, label.group(0))
+            holdings, cost_billions, average_cost = values_after_header(holdings_table, "Aggregate BTC Holdings")
+            quantity = -abs(activity[0]) if label.group(1).lower() == "sold" else activity[0]
+            events.append({
+                "date": filing_date, "as_of": _parse_sec_date(as_of.group(1)),
+                "btc_delta": int(quantity) if quantity.is_integer() else quantity,
+                "btc_holdings": int(holdings), "avg_price": average_cost,
+                "total_cost": round(cost_billions * 1000, 2),
+                "shares_basic": None, "shares_diluted": None, "sec_accession": accession,
+            })
+
+    if not events:
         # No-activity announcements may disclose holdings in prose, without a
         # BTC table. Require both an explicit no-trading statement and the
         # complete holdings/cost sentence; never infer zero from a missing table.
@@ -381,6 +440,9 @@ def fetch_sec_updates(since: str, previous: dict | None = None) -> tuple[list[di
     recent = response.json()["filings"]["recent"]
     filings = []
     verified = set((previous or {}).get('checked_accessions', []))
+    if (previous or {}).get('parser_version') != 'split_tables_exhibits_v1':
+        # Recheck recent filings previously classified without examining EX-99.
+        verified = set()
     if previous and previous.get('latest_accession'):
         verified.add(previous['latest_accession'])
     for index, form in enumerate(recent["form"]):
@@ -431,6 +493,7 @@ def fetch_sec_updates(since: str, previous: dict | None = None) -> tuple[list[di
         metadata = dict(previous)
         metadata.update(filings_checked=checked, btc_updates_found=0,
                         checked_accessions=sorted(verified | {f['accession'] for f in filings}),
+                        parser_version='split_tables_exhibits_v1',
                         verified_at=utc_now())
         return [], metadata
     if not events:
@@ -439,6 +502,7 @@ def fetch_sec_updates(since: str, previous: dict | None = None) -> tuple[list[di
     latest = max(events, key=lambda event: event["as_of"])
     metadata = {
         "source": "SEC EDGAR submissions API + official complete-submission text",
+        "parser_version": "split_tables_exhibits_v1",
         "cik": SEC_CIK,
         "filings_checked": checked,
         "btc_updates_found": len(events),

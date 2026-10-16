@@ -678,6 +678,8 @@ a:hover { text-decoration: underline; }
         <a href="{{ img.src }}" target="_blank"><img src="{{ img.data_uri }}" style="width:100%;border-radius:4px;display:block;" alt="{{ img.alt }}"></a>
       </div>
     </div>
+    {% elif coinshares_flow_page_missing %}
+      <div style="font-size:12px;color:var(--text-muted);margin-top:8px;">本期未披露资金流专页，图表及历史分位留空。<a href="{{ coinshares_url }}" target="_blank">查看 CoinShares 官方报告（{{ coinshares_report_date }}）</a></div>
     {% elif ppt_img_coinshares_flow %}
     <div style="margin-top:8px;">
       <div style="font-size:13px;font-weight:600;margin-bottom:6px;">CoinShares 周度 Crypto Asset Flows</div>

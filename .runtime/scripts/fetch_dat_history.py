@@ -61,6 +61,13 @@ def fetch_bitcointreasuries_company(name: str, config: dict) -> dict:
     cost_match = re.search(r"cost_basis:(null|[\d.]+)", html)
     holdings_match = re.search(r'holdings:\[\{asset:"BTC",balance:([\d.]+)', html)
     date_match = re.search(r'balance_date:"([^"]+)"', html)
+    if not date_match and holdings_match:
+        # The current page stores the date in the BTC asset record. Match the
+        # same balance so a peer company's date cannot be used accidentally.
+        date_match = re.search(
+            r'asset_holdings:new Map\(\[\["BTC",\{asset:\{[^}]+\},balance:'
+            + re.escape(holdings_match.group(1)) + r',date:"(\d{4}-\d{2}-\d{2})"', html
+        )
     if not cost_match or not holdings_match or not date_match:
         raise RuntimeError(f"BitcoinTreasuries schema changed for {name}")
     cost_basis_raw = cost_match.group(1)
@@ -107,14 +114,25 @@ def fetch_metaplanet_native_cost() -> dict:
         text,
         re.I | re.S,
     )
+    cost_scale = 1e9
+    if not match:
+        match = re.search(
+            r"Total Bitcoin Holdings\s*\([^)]+\)\s*([\d,]+)\s+BTC\s*"
+            r"Average Purchase Price \(Total Holdings\)\s*[¥￥]([\d,]+) per Bitcoin\s*"
+            r"Aggregate Cost Basis \(Total Holdings\)\s*[¥￥]([\d,]+) million",
+            text, re.I | re.S,
+        )
+        cost_scale = 1e6
     if not match:
         raise RuntimeError(f"could not parse Metaplanet cost basis from {pdf_url}")
-    holdings, avg_cost_jpy, aggregate_cost_billion_jpy = match.groups()
+    holdings, avg_cost_jpy, aggregate_cost = match.groups()
     as_of_match = re.search(r"As of ([A-Za-z]+ \d{1,2}, 20\d{2}), the Company held", text)
+    if not as_of_match:
+        as_of_match = re.search(r"Total Bitcoin Holdings\s*\(([A-Za-z]+ \d{1,2}, 20\d{2})\)", text)
     return {
         "holdings": float(holdings.replace(",", "")),
         "avg_cost_basis_native": float(avg_cost_jpy.replace(",", "")),
-        "total_cost_basis_native": float(aggregate_cost_billion_jpy) * 1e9,
+        "total_cost_basis_native": float(aggregate_cost.replace(",", "")) * cost_scale,
         "cost_currency": "JPY",
         "cost_source": pdf_url,
         "cost_as_of": as_of_match.group(1) if as_of_match else disclosure_date,
