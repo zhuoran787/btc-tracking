@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-05",
+  "fetched_at": "2026-10-16",
   "aggregate_source": "https://api.coingecko.com/api/v3/companies/public_treasury/bitcoin",
   "featured_source": "https://bitcointreasuries.net/public-companies/",
   "featured_companies": [
@@ -9,26 +9,26 @@
     "MARA Holdings",
     "Strive"
   ],
-  "total_holdings": 1298212.6692943657,
-  "total_value_usd": 111408964229.60654,
-  "market_cap_dominance_pct": 6.18,
+  "total_holdings": 1302063.2192943657,
+  "total_value_usd": 107088438605.98087,
+  "market_cap_dominance_pct": 6.2,
   "company_count": 180,
   "cost_basis_summary": [
     {
       "name": "Strategy",
       "symbol": "MSTR.US",
       "country": "USA",
-      "holdings": 847666.0,
-      "holdings_as_of": "2026-09-28",
-      "total_cost_basis_usd": 63950000000.0,
-      "avg_cost_basis_usd": 75442.45021034229,
+      "holdings": 848250.0,
+      "holdings_as_of": "2026-10-12",
+      "total_cost_basis_usd": 64000000000.0,
+      "avg_cost_basis_usd": 75449.45475979958,
       "holdings_source": "https://bitcointreasuries.net/public-companies/strategy",
       "cost_source": "https://bitcointreasuries.net/public-companies/strategy",
       "cost_currency": "USD",
-      "avg_cost_basis_native": 75442.45021034229,
-      "total_cost_basis_native": 63950000000.0,
-      "avg_current_price_usd": 85817.19071510994,
-      "pnl_pct": 13.75186049212569
+      "avg_cost_basis_native": 75449.45475979958,
+      "total_cost_basis_native": 64000000000.0,
+      "avg_current_price_usd": 82245.19133872463,
+      "pnl_pct": 9.007005551676839
     },
     {
       "name": "Twenty One Capital",
@@ -43,25 +43,25 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 84864.98738337087,
       "total_cost_basis_native": 3692815061.0,
-      "avg_current_price_usd": 85817.19071510994,
-      "pnl_pct": 1.1220214143644158
+      "avg_current_price_usd": 82245.19133872463,
+      "pnl_pct": -3.08701636024703
     },
     {
       "name": "Metaplanet",
       "symbol": "3350.T",
       "country": "Japan",
-      "holdings": 43000.0,
-      "holdings_as_of": "2026-07-02",
+      "holdings": 44000.0,
+      "holdings_as_of": "2026-10-05",
       "total_cost_basis_usd": null,
       "avg_cost_basis_usd": null,
       "holdings_source": "https://bitcointreasuries.net/public-companies/metaplanet",
-      "cost_source": "https://contents.xj-storage.jp/xcontents/33500/ef8f0fb6/d3f6/44c3/aafb/fbe407834e59/140120260702587030.pdf",
-      "avg_cost_basis_native": 15331542.0,
-      "total_cost_basis_native": 659256000000.0,
+      "cost_source": "https://contents.xj-storage.jp/xcontents/33500/4b5f0c2e/ab52/4d40/9d89/e2aa6e3f3524/140120261005546274.pdf",
+      "avg_cost_basis_native": 15555717.0,
+      "total_cost_basis_native": 684452000000.0,
       "cost_currency": "JPY",
-      "cost_as_of": "June 30, 2026",
-      "disclosure_date": "2026-07-02",
-      "avg_current_price_usd": 85817.19071510994,
+      "cost_as_of": "September 30, 2026",
+      "disclosure_date": "2026-10-05",
+      "avg_current_price_usd": 82245.19133872463,
       "pnl_pct": null
     },
     {
@@ -77,33 +77,33 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 54662.19748714057,
       "total_cost_basis_native": 1944717000.0,
-      "avg_current_price_usd": 85817.19071510994,
-      "pnl_pct": 56.99550084004339
+      "avg_current_price_usd": 82245.19133872463,
+      "pnl_pct": 50.460821407834985
     },
     {
       "name": "Strive",
       "symbol": "ASST.US",
       "country": "USA",
-      "holdings": 27462.0,
-      "holdings_as_of": "2026-09-28",
-      "total_cost_basis_usd": null,
-      "avg_cost_basis_usd": null,
+      "holdings": 35595.0,
+      "holdings_as_of": "2026-10-14",
+      "total_cost_basis_usd": 3166139655.0,
+      "avg_cost_basis_usd": 88949.0,
       "holdings_source": "https://bitcointreasuries.net/public-companies/strive",
-      "cost_source": null,
+      "cost_source": "https://bitcointreasuries.net/public-companies/strive",
       "cost_currency": "USD",
-      "avg_cost_basis_native": null,
-      "total_cost_basis_native": null,
-      "avg_current_price_usd": 85817.19071510994,
-      "pnl_pct": null
+      "avg_cost_basis_native": 88949.0,
+      "total_cost_basis_native": 3166139655.0,
+      "avg_current_price_usd": 82245.19133872463,
+      "pnl_pct": -7.536688058635132
     }
   ],
   "total_cost_summary": {
     "scope": "tracked companies; USD-comparable rows only",
-    "total_entry_value_usd": 69587532061.0,
-    "covered_holdings": 926757.0,
-    "tracked_holdings": 997219.0,
-    "coverage_pct": 92.93414987079068,
-    "weighted_avg_cost_usd": 75087.13941302845
+    "total_entry_value_usd": 72803671716.0,
+    "covered_holdings": 962936.0,
+    "tracked_holdings": 1006936.0,
+    "coverage_pct": 95.63030818244656,
+    "weighted_avg_cost_usd": 75605.92990188341
   },
-  "history_days_accumulated": 86
+  "history_days_accumulated": 87
 }
