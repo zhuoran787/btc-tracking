@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-15",
+  "fetched_at": "2026-10-16",
   "source": "https://bitcointreasuries.net/",
   "count": 11,
   "snapshot": [
@@ -9,7 +9,7 @@
       "country": "ðºð¸",
       "ticker": "MSTR",
       "btc_holdings": 848250.0,
-      "mnav": 1.07,
+      "mnav": 1.11,
       "mnav_method": "enterprise_value"
     },
     {
@@ -18,7 +18,7 @@
       "country": "ð¯ðµ",
       "ticker": "MPJPY",
       "btc_holdings": 44000.0,
-      "mnav": 0.74,
+      "mnav": 0.73,
       "mnav_method": "enterprise_value"
     },
     {
@@ -27,7 +27,7 @@
       "country": "ðºð¸",
       "ticker": "XXI",
       "btc_holdings": 43514.0,
-      "mnav": 0.7,
+      "mnav": 0.68,
       "mnav_method": "enterprise_value"
     },
     {
@@ -36,7 +36,7 @@
       "country": "ðºð¸",
       "ticker": "ASST",
       "btc_holdings": 35595.0,
-      "mnav": 1.12,
+      "mnav": 1.16,
       "mnav_method": "enterprise_value"
     },
     {
@@ -54,7 +54,7 @@
       "country": "ð§ð·",
       "ticker": "OBTC3.SA",
       "btc_holdings": 3950.0,
-      "mnav": 0.74,
+      "mnav": 0.73,
       "mnav_method": "enterprise_value"
     },
     {
@@ -63,7 +63,7 @@
       "country": "ð«ð·",
       "ticker": "ALCPB.PA",
       "btc_holdings": 3538.0,
-      "mnav": 1.19,
+      "mnav": 1.2,
       "mnav_method": "enterprise_value"
     },
     {
@@ -80,7 +80,7 @@
       "name": "The Smarter Web Company PLC",
       "country": "ð¬ð§",
       "ticker": "SWC.L",
-      "btc_holdings": 2747.0,
+      "btc_holdings": 2830.0,
       "mnav": 1.06,
       "mnav_method": "enterprise_value"
     },
@@ -90,7 +90,7 @@
       "country": "ð®ð±",
       "ticker": "ZOOZ",
       "btc_holdings": 1046.0,
-      "mnav": 0.91,
+      "mnav": 0.9,
       "mnav_method": "enterprise_value"
     },
     {
