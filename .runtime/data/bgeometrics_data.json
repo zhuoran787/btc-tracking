@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-16T12:43:48.967758",
+  "fetched_at": "2026-10-16T13:38:17.470998",
   "source": "woocharts.com (CVDD, Willy Woo official) + BRK raw capitalizations / local MVRV Z calculation",
   "thresholds": {
     "cvdd_bottom_band": 1.03,
@@ -24278,8 +24278,8 @@
     "denominator_observations": 6490,
     "early_history": "skip null days; include non-null zero market caps",
     "day_policy": "completed UTC days only",
-    "source_stamp": "2026-10-16T12:43:49Z",
-    "raw_sha256": "75eba3468f7e9a33afde8a9ab5a63c383304e5249857e5369add2619faa643ec",
+    "source_stamp": "2026-10-16T13:38:17Z",
+    "raw_sha256": "1ae5d3197e8a1088ad785899829de743c3718842aee8138f006ce335dc391024",
     "delayed": false
   },
   "summary": {

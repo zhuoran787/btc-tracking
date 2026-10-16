@@ -1,6 +1,6 @@
 {
   "btc_price": {
-    "current": 82238.94532150656,
+    "current": 81792.36827930219,
     "history": [
       {
         "ts": 1760659200000,
@@ -1463,16 +1463,16 @@
         "price": 82155.53979682797
       },
       {
-        "ts": 1792154540000,
-        "price": 82238.94532150656
+        "ts": 1792157800000,
+        "price": 81792.36827930219
       }
     ],
-    "change_7d": -0.8188317145722795,
-    "change_30d": 7.682963180205247,
-    "change_90d": 27.16628291718527
+    "change_7d": -1.3574090589451213,
+    "change_30d": 7.098219066515325,
+    "change_90d": 26.475739741184327
   },
   "gold_price": {
-    "current": 4171.341289040474,
+    "current": 4160.098267620195,
     "history": [
       {
         "ts": 1760659200000,
@@ -2935,10 +2935,11 @@
         "price": 4149.417347818839
       },
       {
-        "ts": 1792154520000,
-        "price": 4171.341289040474
+        "ts": 1792157780000,
+        "price": 4160.098267620195
       }
-    ]
+    ],
+    "source": "CoinGecko tether-gold/USD"
   },
   "sox_price": {
     "current": 11581.2099609375,
@@ -3961,54 +3962,5570 @@
       }
     ]
   },
+  "btc_us_close": {
+    "config_hash": "bba5212d1965b94acf3a653312c473250482735f740fa7f9478415a1cc6f4aa0",
+    "source": "Coinbase BTC-USD hourly candle close",
+    "source_url": "https://api.exchange.coinbase.com/products/BTC-USD/candles",
+    "as_of_date": "2026-10-15",
+    "history": [
+      {
+        "date": "2025-10-15",
+        "ts": 1760558400000,
+        "price": 111318.21,
+        "candle_start_ts": 1760554800000,
+        "closing_hour_volume": 383.48311011
+      },
+      {
+        "date": "2025-10-16",
+        "ts": 1760644800000,
+        "price": 108246.33,
+        "candle_start_ts": 1760641200000,
+        "closing_hour_volume": 1037.02962882
+      },
+      {
+        "date": "2025-10-17",
+        "ts": 1760731200000,
+        "price": 106484.0,
+        "candle_start_ts": 1760727600000,
+        "closing_hour_volume": 510.94557868
+      },
+      {
+        "date": "2025-10-20",
+        "ts": 1760990400000,
+        "price": 110840.0,
+        "candle_start_ts": 1760986800000,
+        "closing_hour_volume": 344.69164434
+      },
+      {
+        "date": "2025-10-21",
+        "ts": 1761076800000,
+        "price": 111841.0,
+        "candle_start_ts": 1761073200000,
+        "closing_hour_volume": 542.56580414
+      },
+      {
+        "date": "2025-10-22",
+        "ts": 1761163200000,
+        "price": 107846.83,
+        "candle_start_ts": 1761159600000,
+        "closing_hour_volume": 733.21324635
+      },
+      {
+        "date": "2025-10-23",
+        "ts": 1761249600000,
+        "price": 110247.6,
+        "candle_start_ts": 1761246000000,
+        "closing_hour_volume": 275.36499268
+      },
+      {
+        "date": "2025-10-24",
+        "ts": 1761336000000,
+        "price": 110624.14,
+        "candle_start_ts": 1761332400000,
+        "closing_hour_volume": 248.21949787
+      },
+      {
+        "date": "2025-10-27",
+        "ts": 1761595200000,
+        "price": 114950.0,
+        "candle_start_ts": 1761591600000,
+        "closing_hour_volume": 430.57206758
+      },
+      {
+        "date": "2025-10-28",
+        "ts": 1761681600000,
+        "price": 113687.51,
+        "candle_start_ts": 1761678000000,
+        "closing_hour_volume": 642.1505464
+      },
+      {
+        "date": "2025-10-29",
+        "ts": 1761768000000,
+        "price": 110644.31,
+        "candle_start_ts": 1761764400000,
+        "closing_hour_volume": 562.51785269
+      },
+      {
+        "date": "2025-10-30",
+        "ts": 1761854400000,
+        "price": 106491.99,
+        "candle_start_ts": 1761850800000,
+        "closing_hour_volume": 677.16252765
+      },
+      {
+        "date": "2025-10-31",
+        "ts": 1761940800000,
+        "price": 109756.29,
+        "candle_start_ts": 1761937200000,
+        "closing_hour_volume": 383.85050932
+      },
+      {
+        "date": "2025-11-03",
+        "ts": 1762203600000,
+        "price": 106632.31,
+        "candle_start_ts": 1762200000000,
+        "closing_hour_volume": 356.69880243
+      },
+      {
+        "date": "2025-11-04",
+        "ts": 1762290000000,
+        "price": 100680.87,
+        "candle_start_ts": 1762286400000,
+        "closing_hour_volume": 1336.12919059
+      },
+      {
+        "date": "2025-11-05",
+        "ts": 1762376400000,
+        "price": 103841.98,
+        "candle_start_ts": 1762372800000,
+        "closing_hour_volume": 681.71889946
+      },
+      {
+        "date": "2025-11-06",
+        "ts": 1762462800000,
+        "price": 100860.0,
+        "candle_start_ts": 1762459200000,
+        "closing_hour_volume": 758.17860104
+      },
+      {
+        "date": "2025-11-07",
+        "ts": 1762549200000,
+        "price": 103749.09,
+        "candle_start_ts": 1762545600000,
+        "closing_hour_volume": 732.08914004
+      },
+      {
+        "date": "2025-11-10",
+        "ts": 1762808400000,
+        "price": 105985.94,
+        "candle_start_ts": 1762804800000,
+        "closing_hour_volume": 313.18987801
+      },
+      {
+        "date": "2025-11-11",
+        "ts": 1762894800000,
+        "price": 102771.54,
+        "candle_start_ts": 1762891200000,
+        "closing_hour_volume": 280.08129276
+      },
+      {
+        "date": "2025-11-12",
+        "ts": 1762981200000,
+        "price": 101519.99,
+        "candle_start_ts": 1762977600000,
+        "closing_hour_volume": 317.63096136
+      },
+      {
+        "date": "2025-11-13",
+        "ts": 1763067600000,
+        "price": 98090.0,
+        "candle_start_ts": 1763064000000,
+        "closing_hour_volume": 1583.13254737
+      },
+      {
+        "date": "2025-11-14",
+        "ts": 1763154000000,
+        "price": 94287.01,
+        "candle_start_ts": 1763150400000,
+        "closing_hour_volume": 1767.52472524
+      },
+      {
+        "date": "2025-11-17",
+        "ts": 1763413200000,
+        "price": 91787.28,
+        "candle_start_ts": 1763409600000,
+        "closing_hour_volume": 1528.08842333
+      },
+      {
+        "date": "2025-11-18",
+        "ts": 1763499600000,
+        "price": 92748.97,
+        "candle_start_ts": 1763496000000,
+        "closing_hour_volume": 699.41132746
+      },
+      {
+        "date": "2025-11-19",
+        "ts": 1763586000000,
+        "price": 89413.61,
+        "candle_start_ts": 1763582400000,
+        "closing_hour_volume": 801.75684061
+      },
+      {
+        "date": "2025-11-20",
+        "ts": 1763672400000,
+        "price": 86333.83,
+        "candle_start_ts": 1763668800000,
+        "closing_hour_volume": 1211.98003851
+      },
+      {
+        "date": "2025-11-21",
+        "ts": 1763758800000,
+        "price": 84487.2,
+        "candle_start_ts": 1763755200000,
+        "closing_hour_volume": 1318.88115716
+      },
+      {
+        "date": "2025-11-24",
+        "ts": 1764018000000,
+        "price": 89072.01,
+        "candle_start_ts": 1764014400000,
+        "closing_hour_volume": 1321.75676168
+      },
+      {
+        "date": "2025-11-25",
+        "ts": 1764104400000,
+        "price": 87343.65,
+        "candle_start_ts": 1764100800000,
+        "closing_hour_volume": 1083.49540773
+      },
+      {
+        "date": "2025-11-26",
+        "ts": 1764190800000,
+        "price": 89856.06,
+        "candle_start_ts": 1764187200000,
+        "closing_hour_volume": 1042.02429852
+      },
+      {
+        "date": "2025-11-28",
+        "ts": 1764352800000,
+        "price": 90673.19,
+        "candle_start_ts": 1764349200000,
+        "closing_hour_volume": 889.34263132
+      },
+      {
+        "date": "2025-12-01",
+        "ts": 1764622800000,
+        "price": 85511.18,
+        "candle_start_ts": 1764619200000,
+        "closing_hour_volume": 988.09665687
+      },
+      {
+        "date": "2025-12-02",
+        "ts": 1764709200000,
+        "price": 91070.79,
+        "candle_start_ts": 1764705600000,
+        "closing_hour_volume": 1164.07404395
+      },
+      {
+        "date": "2025-12-03",
+        "ts": 1764795600000,
+        "price": 92991.75,
+        "candle_start_ts": 1764792000000,
+        "closing_hour_volume": 461.0563756
+      },
+      {
+        "date": "2025-12-04",
+        "ts": 1764882000000,
+        "price": 92523.07,
+        "candle_start_ts": 1764878400000,
+        "closing_hour_volume": 347.33060052
+      },
+      {
+        "date": "2025-12-05",
+        "ts": 1764968400000,
+        "price": 89321.7,
+        "candle_start_ts": 1764964800000,
+        "closing_hour_volume": 348.28109668
+      },
+      {
+        "date": "2025-12-08",
+        "ts": 1765227600000,
+        "price": 90813.85,
+        "candle_start_ts": 1765224000000,
+        "closing_hour_volume": 523.20655974
+      },
+      {
+        "date": "2025-12-09",
+        "ts": 1765314000000,
+        "price": 93136.46,
+        "candle_start_ts": 1765310400000,
+        "closing_hour_volume": 535.34886729
+      },
+      {
+        "date": "2025-12-10",
+        "ts": 1765400400000,
+        "price": 92498.32,
+        "candle_start_ts": 1765396800000,
+        "closing_hour_volume": 1734.66528265
+      },
+      {
+        "date": "2025-12-11",
+        "ts": 1765486800000,
+        "price": 91808.02,
+        "candle_start_ts": 1765483200000,
+        "closing_hour_volume": 668.74771929
+      },
+      {
+        "date": "2025-12-12",
+        "ts": 1765573200000,
+        "price": 90220.0,
+        "candle_start_ts": 1765569600000,
+        "closing_hour_volume": 382.4334512
+      },
+      {
+        "date": "2025-12-15",
+        "ts": 1765832400000,
+        "price": 85757.01,
+        "candle_start_ts": 1765828800000,
+        "closing_hour_volume": 889.78152266
+      },
+      {
+        "date": "2025-12-16",
+        "ts": 1765918800000,
+        "price": 87552.02,
+        "candle_start_ts": 1765915200000,
+        "closing_hour_volume": 331.62547327
+      },
+      {
+        "date": "2025-12-17",
+        "ts": 1766005200000,
+        "price": 85857.38,
+        "candle_start_ts": 1766001600000,
+        "closing_hour_volume": 780.83183909
+      },
+      {
+        "date": "2025-12-18",
+        "ts": 1766091600000,
+        "price": 84558.65,
+        "candle_start_ts": 1766088000000,
+        "closing_hour_volume": 645.85898633
+      },
+      {
+        "date": "2025-12-19",
+        "ts": 1766178000000,
+        "price": 88021.73,
+        "candle_start_ts": 1766174400000,
+        "closing_hour_volume": 618.84037304
+      },
+      {
+        "date": "2025-12-22",
+        "ts": 1766437200000,
+        "price": 88294.02,
+        "candle_start_ts": 1766433600000,
+        "closing_hour_volume": 608.18122268
+      },
+      {
+        "date": "2025-12-23",
+        "ts": 1766523600000,
+        "price": 87613.32,
+        "candle_start_ts": 1766520000000,
+        "closing_hour_volume": 441.78008543
+      },
+      {
+        "date": "2025-12-24",
+        "ts": 1766599200000,
+        "price": 87257.34,
+        "candle_start_ts": 1766595600000,
+        "closing_hour_volume": 255.89608459
+      },
+      {
+        "date": "2025-12-26",
+        "ts": 1766782800000,
+        "price": 87507.92,
+        "candle_start_ts": 1766779200000,
+        "closing_hour_volume": 439.40461901
+      },
+      {
+        "date": "2025-12-29",
+        "ts": 1767042000000,
+        "price": 87076.36,
+        "candle_start_ts": 1767038400000,
+        "closing_hour_volume": 659.54300362
+      },
+      {
+        "date": "2025-12-30",
+        "ts": 1767128400000,
+        "price": 87836.94,
+        "candle_start_ts": 1767124800000,
+        "closing_hour_volume": 449.41325164
+      },
+      {
+        "date": "2025-12-31",
+        "ts": 1767214800000,
+        "price": 87523.98,
+        "candle_start_ts": 1767211200000,
+        "closing_hour_volume": 735.96887061
+      },
+      {
+        "date": "2026-01-02",
+        "ts": 1767387600000,
+        "price": 89693.1,
+        "candle_start_ts": 1767384000000,
+        "closing_hour_volume": 590.65065971
+      },
+      {
+        "date": "2026-01-05",
+        "ts": 1767646800000,
+        "price": 94194.02,
+        "candle_start_ts": 1767643200000,
+        "closing_hour_volume": 956.58657074
+      },
+      {
+        "date": "2026-01-06",
+        "ts": 1767733200000,
+        "price": 92447.52,
+        "candle_start_ts": 1767729600000,
+        "closing_hour_volume": 557.91063241
+      },
+      {
+        "date": "2026-01-07",
+        "ts": 1767819600000,
+        "price": 90930.07,
+        "candle_start_ts": 1767816000000,
+        "closing_hour_volume": 503.26750833
+      },
+      {
+        "date": "2026-01-08",
+        "ts": 1767906000000,
+        "price": 90847.09,
+        "candle_start_ts": 1767902400000,
+        "closing_hour_volume": 618.1691389
+      },
+      {
+        "date": "2026-01-09",
+        "ts": 1767992400000,
+        "price": 90195.99,
+        "candle_start_ts": 1767988800000,
+        "closing_hour_volume": 441.45461356
+      },
+      {
+        "date": "2026-01-12",
+        "ts": 1768251600000,
+        "price": 91409.51,
+        "candle_start_ts": 1768248000000,
+        "closing_hour_volume": 268.2444502
+      },
+      {
+        "date": "2026-01-13",
+        "ts": 1768338000000,
+        "price": 94411.91,
+        "candle_start_ts": 1768334400000,
+        "closing_hour_volume": 2096.13111292
+      },
+      {
+        "date": "2026-01-14",
+        "ts": 1768424400000,
+        "price": 97676.01,
+        "candle_start_ts": 1768420800000,
+        "closing_hour_volume": 1076.05447647
+      },
+      {
+        "date": "2026-01-15",
+        "ts": 1768510800000,
+        "price": 95225.99,
+        "candle_start_ts": 1768507200000,
+        "closing_hour_volume": 956.07918407
+      },
+      {
+        "date": "2026-01-16",
+        "ts": 1768597200000,
+        "price": 95536.0,
+        "candle_start_ts": 1768593600000,
+        "closing_hour_volume": 829.11757859
+      },
+      {
+        "date": "2026-01-20",
+        "ts": 1768942800000,
+        "price": 89592.06,
+        "candle_start_ts": 1768939200000,
+        "closing_hour_volume": 1458.8148265
+      },
+      {
+        "date": "2026-01-21",
+        "ts": 1769029200000,
+        "price": 90136.01,
+        "candle_start_ts": 1769025600000,
+        "closing_hour_volume": 1035.4114781
+      },
+      {
+        "date": "2026-01-22",
+        "ts": 1769115600000,
+        "price": 89312.0,
+        "candle_start_ts": 1769112000000,
+        "closing_hour_volume": 297.37952446
+      },
+      {
+        "date": "2026-01-23",
+        "ts": 1769202000000,
+        "price": 89395.04,
+        "candle_start_ts": 1769198400000,
+        "closing_hour_volume": 636.94784328
+      },
+      {
+        "date": "2026-01-26",
+        "ts": 1769461200000,
+        "price": 87528.0,
+        "candle_start_ts": 1769457600000,
+        "closing_hour_volume": 414.16348193
+      },
+      {
+        "date": "2026-01-27",
+        "ts": 1769547600000,
+        "price": 89297.98,
+        "candle_start_ts": 1769544000000,
+        "closing_hour_volume": 650.00341239
+      },
+      {
+        "date": "2026-01-28",
+        "ts": 1769634000000,
+        "price": 88997.89,
+        "candle_start_ts": 1769630400000,
+        "closing_hour_volume": 545.53365734
+      },
+      {
+        "date": "2026-01-29",
+        "ts": 1769720400000,
+        "price": 84043.29,
+        "candle_start_ts": 1769716800000,
+        "closing_hour_volume": 1185.39383947
+      },
+      {
+        "date": "2026-01-30",
+        "ts": 1769806800000,
+        "price": 83738.0,
+        "candle_start_ts": 1769803200000,
+        "closing_hour_volume": 1520.57526658
+      },
+      {
+        "date": "2026-02-02",
+        "ts": 1770066000000,
+        "price": 77941.95,
+        "candle_start_ts": 1770062400000,
+        "closing_hour_volume": 707.73429894
+      },
+      {
+        "date": "2026-02-03",
+        "ts": 1770152400000,
+        "price": 76370.3,
+        "candle_start_ts": 1770148800000,
+        "closing_hour_volume": 1848.31818835
+      },
+      {
+        "date": "2026-02-04",
+        "ts": 1770238800000,
+        "price": 73337.99,
+        "candle_start_ts": 1770235200000,
+        "closing_hour_volume": 1178.41382359
+      },
+      {
+        "date": "2026-02-05",
+        "ts": 1770325200000,
+        "price": 63620.01,
+        "candle_start_ts": 1770321600000,
+        "closing_hour_volume": 5899.35511315
+      },
+      {
+        "date": "2026-02-06",
+        "ts": 1770411600000,
+        "price": 69963.99,
+        "candle_start_ts": 1770408000000,
+        "closing_hour_volume": 1976.4676123
+      },
+      {
+        "date": "2026-02-09",
+        "ts": 1770670800000,
+        "price": 70707.99,
+        "candle_start_ts": 1770667200000,
+        "closing_hour_volume": 1195.93654654
+      },
+      {
+        "date": "2026-02-10",
+        "ts": 1770757200000,
+        "price": 68708.94,
+        "candle_start_ts": 1770753600000,
+        "closing_hour_volume": 522.64921689
+      },
+      {
+        "date": "2026-02-11",
+        "ts": 1770843600000,
+        "price": 67517.41,
+        "candle_start_ts": 1770840000000,
+        "closing_hour_volume": 643.03673995
+      },
+      {
+        "date": "2026-02-12",
+        "ts": 1770930000000,
+        "price": 65362.5,
+        "candle_start_ts": 1770926400000,
+        "closing_hour_volume": 1156.9501257
+      },
+      {
+        "date": "2026-02-13",
+        "ts": 1771016400000,
+        "price": 68729.57,
+        "candle_start_ts": 1771012800000,
+        "closing_hour_volume": 511.50725266
+      },
+      {
+        "date": "2026-02-17",
+        "ts": 1771362000000,
+        "price": 67712.49,
+        "candle_start_ts": 1771358400000,
+        "closing_hour_volume": 338.95154665
+      },
+      {
+        "date": "2026-02-18",
+        "ts": 1771448400000,
+        "price": 66221.41,
+        "candle_start_ts": 1771444800000,
+        "closing_hour_volume": 893.6575844
+      },
+      {
+        "date": "2026-02-19",
+        "ts": 1771534800000,
+        "price": 67125.14,
+        "candle_start_ts": 1771531200000,
+        "closing_hour_volume": 476.98252866
+      },
+      {
+        "date": "2026-02-20",
+        "ts": 1771621200000,
+        "price": 67733.36,
+        "candle_start_ts": 1771617600000,
+        "closing_hour_volume": 329.37071075
+      },
+      {
+        "date": "2026-02-23",
+        "ts": 1771880400000,
+        "price": 64463.59,
+        "candle_start_ts": 1771876800000,
+        "closing_hour_volume": 837.3193294
+      },
+      {
+        "date": "2026-02-24",
+        "ts": 1771966800000,
+        "price": 64474.97,
+        "candle_start_ts": 1771963200000,
+        "closing_hour_volume": 414.36759795
+      },
+      {
+        "date": "2026-02-25",
+        "ts": 1772053200000,
+        "price": 69177.78,
+        "candle_start_ts": 1772049600000,
+        "closing_hour_volume": 705.7609184
+      },
+      {
+        "date": "2026-02-26",
+        "ts": 1772139600000,
+        "price": 67434.87,
+        "candle_start_ts": 1772136000000,
+        "closing_hour_volume": 538.42092813
+      },
+      {
+        "date": "2026-02-27",
+        "ts": 1772226000000,
+        "price": 65590.47,
+        "candle_start_ts": 1772222400000,
+        "closing_hour_volume": 367.18007394
+      },
+      {
+        "date": "2026-03-02",
+        "ts": 1772485200000,
+        "price": 69128.01,
+        "candle_start_ts": 1772481600000,
+        "closing_hour_volume": 1396.67352392
+      },
+      {
+        "date": "2026-03-03",
+        "ts": 1772571600000,
+        "price": 68264.6,
+        "candle_start_ts": 1772568000000,
+        "closing_hour_volume": 663.71229162
+      },
+      {
+        "date": "2026-03-04",
+        "ts": 1772658000000,
+        "price": 73077.92,
+        "candle_start_ts": 1772654400000,
+        "closing_hour_volume": 1338.81547013
+      },
+      {
+        "date": "2026-03-05",
+        "ts": 1772744400000,
+        "price": 71233.32,
+        "candle_start_ts": 1772740800000,
+        "closing_hour_volume": 541.15335384
+      },
+      {
+        "date": "2026-03-06",
+        "ts": 1772830800000,
+        "price": 68102.86,
+        "candle_start_ts": 1772827200000,
+        "closing_hour_volume": 622.37523835
+      },
+      {
+        "date": "2026-03-09",
+        "ts": 1773086400000,
+        "price": 69012.12,
+        "candle_start_ts": 1773082800000,
+        "closing_hour_volume": 1321.66878092
+      },
+      {
+        "date": "2026-03-10",
+        "ts": 1773172800000,
+        "price": 70055.27,
+        "candle_start_ts": 1773169200000,
+        "closing_hour_volume": 812.14362047
+      },
+      {
+        "date": "2026-03-11",
+        "ts": 1773259200000,
+        "price": 70670.11,
+        "candle_start_ts": 1773255600000,
+        "closing_hour_volume": 592.26743409
+      },
+      {
+        "date": "2026-03-12",
+        "ts": 1773345600000,
+        "price": 70462.0,
+        "candle_start_ts": 1773342000000,
+        "closing_hour_volume": 777.44637842
+      },
+      {
+        "date": "2026-03-13",
+        "ts": 1773432000000,
+        "price": 71190.64,
+        "candle_start_ts": 1773428400000,
+        "closing_hour_volume": 447.92759704
+      },
+      {
+        "date": "2026-03-16",
+        "ts": 1773691200000,
+        "price": 73969.53,
+        "candle_start_ts": 1773687600000,
+        "closing_hour_volume": 485.45728646
+      },
+      {
+        "date": "2026-03-17",
+        "ts": 1773777600000,
+        "price": 74542.28,
+        "candle_start_ts": 1773774000000,
+        "closing_hour_volume": 690.75753439
+      },
+      {
+        "date": "2026-03-18",
+        "ts": 1773864000000,
+        "price": 71065.73,
+        "candle_start_ts": 1773860400000,
+        "closing_hour_volume": 590.75627343
+      },
+      {
+        "date": "2026-03-19",
+        "ts": 1773950400000,
+        "price": 70265.41,
+        "candle_start_ts": 1773946800000,
+        "closing_hour_volume": 689.38484611
+      },
+      {
+        "date": "2026-03-20",
+        "ts": 1774036800000,
+        "price": 70169.39,
+        "candle_start_ts": 1774033200000,
+        "closing_hour_volume": 433.99008568
+      },
+      {
+        "date": "2026-03-23",
+        "ts": 1774296000000,
+        "price": 70660.88,
+        "candle_start_ts": 1774292400000,
+        "closing_hour_volume": 356.48622867
+      },
+      {
+        "date": "2026-03-24",
+        "ts": 1774382400000,
+        "price": 69334.0,
+        "candle_start_ts": 1774378800000,
+        "closing_hour_volume": 396.16704974
+      },
+      {
+        "date": "2026-03-25",
+        "ts": 1774468800000,
+        "price": 70859.88,
+        "candle_start_ts": 1774465200000,
+        "closing_hour_volume": 505.9808358
+      },
+      {
+        "date": "2026-03-26",
+        "ts": 1774555200000,
+        "price": 68479.59,
+        "candle_start_ts": 1774551600000,
+        "closing_hour_volume": 418.21840547
+      },
+      {
+        "date": "2026-03-27",
+        "ts": 1774641600000,
+        "price": 65975.02,
+        "candle_start_ts": 1774638000000,
+        "closing_hour_volume": 1154.28881521
+      },
+      {
+        "date": "2026-03-30",
+        "ts": 1774900800000,
+        "price": 66488.0,
+        "candle_start_ts": 1774897200000,
+        "closing_hour_volume": 763.28904511
+      },
+      {
+        "date": "2026-03-31",
+        "ts": 1774987200000,
+        "price": 67772.92,
+        "candle_start_ts": 1774983600000,
+        "closing_hour_volume": 684.68520157
+      },
+      {
+        "date": "2026-04-01",
+        "ts": 1775073600000,
+        "price": 68162.03,
+        "candle_start_ts": 1775070000000,
+        "closing_hour_volume": 649.12816627
+      },
+      {
+        "date": "2026-04-02",
+        "ts": 1775160000000,
+        "price": 66976.06,
+        "candle_start_ts": 1775156400000,
+        "closing_hour_volume": 343.29746968
+      },
+      {
+        "date": "2026-04-06",
+        "ts": 1775505600000,
+        "price": 69732.99,
+        "candle_start_ts": 1775502000000,
+        "closing_hour_volume": 699.21486856
+      },
+      {
+        "date": "2026-04-07",
+        "ts": 1775592000000,
+        "price": 68993.62,
+        "candle_start_ts": 1775588400000,
+        "closing_hour_volume": 488.54226473
+      },
+      {
+        "date": "2026-04-08",
+        "ts": 1775678400000,
+        "price": 71331.51,
+        "candle_start_ts": 1775674800000,
+        "closing_hour_volume": 498.03842072
+      },
+      {
+        "date": "2026-04-09",
+        "ts": 1775764800000,
+        "price": 72136.37,
+        "candle_start_ts": 1775761200000,
+        "closing_hour_volume": 785.57696612
+      },
+      {
+        "date": "2026-04-10",
+        "ts": 1775851200000,
+        "price": 73286.01,
+        "candle_start_ts": 1775847600000,
+        "closing_hour_volume": 1071.64068647
+      },
+      {
+        "date": "2026-04-13",
+        "ts": 1776110400000,
+        "price": 73373.2,
+        "candle_start_ts": 1776106800000,
+        "closing_hour_volume": 2125.50643503
+      },
+      {
+        "date": "2026-04-14",
+        "ts": 1776196800000,
+        "price": 74299.83,
+        "candle_start_ts": 1776193200000,
+        "closing_hour_volume": 2713.18751958
+      },
+      {
+        "date": "2026-04-15",
+        "ts": 1776283200000,
+        "price": 75048.06,
+        "candle_start_ts": 1776279600000,
+        "closing_hour_volume": 1262.63540988
+      },
+      {
+        "date": "2026-04-16",
+        "ts": 1776369600000,
+        "price": 75378.0,
+        "candle_start_ts": 1776366000000,
+        "closing_hour_volume": 703.21190124
+      },
+      {
+        "date": "2026-04-17",
+        "ts": 1776456000000,
+        "price": 77453.07,
+        "candle_start_ts": 1776452400000,
+        "closing_hour_volume": 924.06995477
+      },
+      {
+        "date": "2026-04-20",
+        "ts": 1776715200000,
+        "price": 76337.42,
+        "candle_start_ts": 1776711600000,
+        "closing_hour_volume": 956.74454347
+      },
+      {
+        "date": "2026-04-21",
+        "ts": 1776801600000,
+        "price": 75030.96,
+        "candle_start_ts": 1776798000000,
+        "closing_hour_volume": 692.76267637
+      },
+      {
+        "date": "2026-04-22",
+        "ts": 1776888000000,
+        "price": 78878.3,
+        "candle_start_ts": 1776884400000,
+        "closing_hour_volume": 1154.32492186
+      },
+      {
+        "date": "2026-04-23",
+        "ts": 1776974400000,
+        "price": 77743.16,
+        "candle_start_ts": 1776970800000,
+        "closing_hour_volume": 691.04509369
+      },
+      {
+        "date": "2026-04-24",
+        "ts": 1777060800000,
+        "price": 77659.72,
+        "candle_start_ts": 1777057200000,
+        "closing_hour_volume": 321.8029166
+      },
+      {
+        "date": "2026-04-27",
+        "ts": 1777320000000,
+        "price": 76886.0,
+        "candle_start_ts": 1777316400000,
+        "closing_hour_volume": 575.76572475
+      },
+      {
+        "date": "2026-04-28",
+        "ts": 1777406400000,
+        "price": 76308.13,
+        "candle_start_ts": 1777402800000,
+        "closing_hour_volume": 304.36666757
+      },
+      {
+        "date": "2026-04-29",
+        "ts": 1777492800000,
+        "price": 75526.0,
+        "candle_start_ts": 1777489200000,
+        "closing_hour_volume": 674.55836458
+      },
+      {
+        "date": "2026-04-30",
+        "ts": 1777579200000,
+        "price": 76375.39,
+        "candle_start_ts": 1777575600000,
+        "closing_hour_volume": 467.66399212
+      },
+      {
+        "date": "2026-05-01",
+        "ts": 1777665600000,
+        "price": 78374.85,
+        "candle_start_ts": 1777662000000,
+        "closing_hour_volume": 369.11194247
+      },
+      {
+        "date": "2026-05-04",
+        "ts": 1777924800000,
+        "price": 80052.2,
+        "candle_start_ts": 1777921200000,
+        "closing_hour_volume": 438.88050018
+      },
+      {
+        "date": "2026-05-05",
+        "ts": 1778011200000,
+        "price": 81611.95,
+        "candle_start_ts": 1778007600000,
+        "closing_hour_volume": 646.80063074
+      },
+      {
+        "date": "2026-05-06",
+        "ts": 1778097600000,
+        "price": 81457.38,
+        "candle_start_ts": 1778094000000,
+        "closing_hour_volume": 297.25062328
+      },
+      {
+        "date": "2026-05-07",
+        "ts": 1778184000000,
+        "price": 80142.85,
+        "candle_start_ts": 1778180400000,
+        "closing_hour_volume": 269.12932062
+      },
+      {
+        "date": "2026-05-08",
+        "ts": 1778270400000,
+        "price": 80149.99,
+        "candle_start_ts": 1778266800000,
+        "closing_hour_volume": 152.72443817
+      },
+      {
+        "date": "2026-05-11",
+        "ts": 1778529600000,
+        "price": 81956.0,
+        "candle_start_ts": 1778526000000,
+        "closing_hour_volume": 356.14735098
+      },
+      {
+        "date": "2026-05-12",
+        "ts": 1778616000000,
+        "price": 80820.63,
+        "candle_start_ts": 1778612400000,
+        "closing_hour_volume": 372.63326141
+      },
+      {
+        "date": "2026-05-13",
+        "ts": 1778702400000,
+        "price": 79612.0,
+        "candle_start_ts": 1778698800000,
+        "closing_hour_volume": 544.14373279
+      },
+      {
+        "date": "2026-05-14",
+        "ts": 1778788800000,
+        "price": 81439.17,
+        "candle_start_ts": 1778785200000,
+        "closing_hour_volume": 1127.49531861
+      },
+      {
+        "date": "2026-05-15",
+        "ts": 1778875200000,
+        "price": 79089.14,
+        "candle_start_ts": 1778871600000,
+        "closing_hour_volume": 491.60806594
+      },
+      {
+        "date": "2026-05-18",
+        "ts": 1779134400000,
+        "price": 76859.05,
+        "candle_start_ts": 1779130800000,
+        "closing_hour_volume": 526.78698035
+      },
+      {
+        "date": "2026-05-19",
+        "ts": 1779220800000,
+        "price": 76758.13,
+        "candle_start_ts": 1779217200000,
+        "closing_hour_volume": 349.52393869
+      },
+      {
+        "date": "2026-05-20",
+        "ts": 1779307200000,
+        "price": 77598.0,
+        "candle_start_ts": 1779303600000,
+        "closing_hour_volume": 332.78191179
+      },
+      {
+        "date": "2026-05-21",
+        "ts": 1779393600000,
+        "price": 77613.34,
+        "candle_start_ts": 1779390000000,
+        "closing_hour_volume": 348.86208162
+      },
+      {
+        "date": "2026-05-22",
+        "ts": 1779480000000,
+        "price": 75769.44,
+        "candle_start_ts": 1779476400000,
+        "closing_hour_volume": 619.97328425
+      },
+      {
+        "date": "2026-05-26",
+        "ts": 1779825600000,
+        "price": 75919.93,
+        "candle_start_ts": 1779822000000,
+        "closing_hour_volume": 402.5505322
+      },
+      {
+        "date": "2026-05-27",
+        "ts": 1779912000000,
+        "price": 74920.54,
+        "candle_start_ts": 1779908400000,
+        "closing_hour_volume": 276.74248326
+      },
+      {
+        "date": "2026-05-28",
+        "ts": 1779998400000,
+        "price": 73318.39,
+        "candle_start_ts": 1779994800000,
+        "closing_hour_volume": 367.08284141
+      },
+      {
+        "date": "2026-05-29",
+        "ts": 1780084800000,
+        "price": 73404.1,
+        "candle_start_ts": 1780081200000,
+        "closing_hour_volume": 507.51756103
+      },
+      {
+        "date": "2026-06-01",
+        "ts": 1780344000000,
+        "price": 71488.84,
+        "candle_start_ts": 1780340400000,
+        "closing_hour_volume": 601.08681252
+      },
+      {
+        "date": "2026-06-02",
+        "ts": 1780430400000,
+        "price": 67213.59,
+        "candle_start_ts": 1780426800000,
+        "closing_hour_volume": 1375.18135011
+      },
+      {
+        "date": "2026-06-03",
+        "ts": 1780516800000,
+        "price": 65356.01,
+        "candle_start_ts": 1780513200000,
+        "closing_hour_volume": 850.85455004
+      },
+      {
+        "date": "2026-06-04",
+        "ts": 1780603200000,
+        "price": 63541.28,
+        "candle_start_ts": 1780599600000,
+        "closing_hour_volume": 1154.82923256
+      },
+      {
+        "date": "2026-06-05",
+        "ts": 1780689600000,
+        "price": 60264.11,
+        "candle_start_ts": 1780686000000,
+        "closing_hour_volume": 2129.13600082
+      },
+      {
+        "date": "2026-06-08",
+        "ts": 1780948800000,
+        "price": 63352.53,
+        "candle_start_ts": 1780945200000,
+        "closing_hour_volume": 416.66852213
+      },
+      {
+        "date": "2026-06-09",
+        "ts": 1781035200000,
+        "price": 62044.83,
+        "candle_start_ts": 1781031600000,
+        "closing_hour_volume": 582.88136609
+      },
+      {
+        "date": "2026-06-10",
+        "ts": 1781121600000,
+        "price": 61882.0,
+        "candle_start_ts": 1781118000000,
+        "closing_hour_volume": 367.818541
+      },
+      {
+        "date": "2026-06-11",
+        "ts": 1781208000000,
+        "price": 63548.0,
+        "candle_start_ts": 1781204400000,
+        "closing_hour_volume": 707.87072734
+      },
+      {
+        "date": "2026-06-12",
+        "ts": 1781294400000,
+        "price": 63552.05,
+        "candle_start_ts": 1781290800000,
+        "closing_hour_volume": 487.21628567
+      },
+      {
+        "date": "2026-06-15",
+        "ts": 1781553600000,
+        "price": 66577.42,
+        "candle_start_ts": 1781550000000,
+        "closing_hour_volume": 682.07691227
+      },
+      {
+        "date": "2026-06-16",
+        "ts": 1781640000000,
+        "price": 65622.49,
+        "candle_start_ts": 1781636400000,
+        "closing_hour_volume": 727.62417845
+      },
+      {
+        "date": "2026-06-17",
+        "ts": 1781726400000,
+        "price": 64241.65,
+        "candle_start_ts": 1781722800000,
+        "closing_hour_volume": 1369.0799133
+      },
+      {
+        "date": "2026-06-18",
+        "ts": 1781812800000,
+        "price": 62872.8,
+        "candle_start_ts": 1781809200000,
+        "closing_hour_volume": 348.32464011
+      },
+      {
+        "date": "2026-06-22",
+        "ts": 1782158400000,
+        "price": 64408.02,
+        "candle_start_ts": 1782154800000,
+        "closing_hour_volume": 425.63264842
+      },
+      {
+        "date": "2026-06-23",
+        "ts": 1782244800000,
+        "price": 62310.83,
+        "candle_start_ts": 1782241200000,
+        "closing_hour_volume": 292.43950264
+      },
+      {
+        "date": "2026-06-24",
+        "ts": 1782331200000,
+        "price": 59858.28,
+        "candle_start_ts": 1782327600000,
+        "closing_hour_volume": 1133.51574435
+      },
+      {
+        "date": "2026-06-25",
+        "ts": 1782417600000,
+        "price": 59220.01,
+        "candle_start_ts": 1782414000000,
+        "closing_hour_volume": 826.89471914
+      },
+      {
+        "date": "2026-06-26",
+        "ts": 1782504000000,
+        "price": 59655.5,
+        "candle_start_ts": 1782500400000,
+        "closing_hour_volume": 1111.85563562
+      },
+      {
+        "date": "2026-06-29",
+        "ts": 1782763200000,
+        "price": 60332.0,
+        "candle_start_ts": 1782759600000,
+        "closing_hour_volume": 593.34513117
+      },
+      {
+        "date": "2026-06-30",
+        "ts": 1782849600000,
+        "price": 58716.53,
+        "candle_start_ts": 1782846000000,
+        "closing_hour_volume": 971.67126343
+      },
+      {
+        "date": "2026-07-01",
+        "ts": 1782936000000,
+        "price": 59971.68,
+        "candle_start_ts": 1782932400000,
+        "closing_hour_volume": 551.07842683
+      },
+      {
+        "date": "2026-07-02",
+        "ts": 1783022400000,
+        "price": 61424.29,
+        "candle_start_ts": 1783018800000,
+        "closing_hour_volume": 516.35280174
+      },
+      {
+        "date": "2026-07-06",
+        "ts": 1783368000000,
+        "price": 63692.7,
+        "candle_start_ts": 1783364400000,
+        "closing_hour_volume": 489.32492154
+      },
+      {
+        "date": "2026-07-07",
+        "ts": 1783454400000,
+        "price": 63776.81,
+        "candle_start_ts": 1783450800000,
+        "closing_hour_volume": 635.53231771
+      },
+      {
+        "date": "2026-07-08",
+        "ts": 1783540800000,
+        "price": 62223.7,
+        "candle_start_ts": 1783537200000,
+        "closing_hour_volume": 312.4992429
+      },
+      {
+        "date": "2026-07-09",
+        "ts": 1783627200000,
+        "price": 63193.84,
+        "candle_start_ts": 1783623600000,
+        "closing_hour_volume": 275.68205426
+      },
+      {
+        "date": "2026-07-10",
+        "ts": 1783713600000,
+        "price": 63878.41,
+        "candle_start_ts": 1783710000000,
+        "closing_hour_volume": 268.10752902
+      },
+      {
+        "date": "2026-07-13",
+        "ts": 1783972800000,
+        "price": 62210.67,
+        "candle_start_ts": 1783969200000,
+        "closing_hour_volume": 561.90747732
+      },
+      {
+        "date": "2026-07-14",
+        "ts": 1784059200000,
+        "price": 64542.41,
+        "candle_start_ts": 1784055600000,
+        "closing_hour_volume": 315.59263698
+      },
+      {
+        "date": "2026-07-15",
+        "ts": 1784145600000,
+        "price": 64941.86,
+        "candle_start_ts": 1784142000000,
+        "closing_hour_volume": 309.12735661
+      },
+      {
+        "date": "2026-07-16",
+        "ts": 1784232000000,
+        "price": 64217.54,
+        "candle_start_ts": 1784228400000,
+        "closing_hour_volume": 280.63102433
+      },
+      {
+        "date": "2026-07-17",
+        "ts": 1784318400000,
+        "price": 64113.2,
+        "candle_start_ts": 1784314800000,
+        "closing_hour_volume": 735.9042241
+      },
+      {
+        "date": "2026-07-20",
+        "ts": 1784577600000,
+        "price": 65099.39,
+        "candle_start_ts": 1784574000000,
+        "closing_hour_volume": 498.91006481
+      },
+      {
+        "date": "2026-07-21",
+        "ts": 1784664000000,
+        "price": 66424.0,
+        "candle_start_ts": 1784660400000,
+        "closing_hour_volume": 448.07279798
+      },
+      {
+        "date": "2026-07-22",
+        "ts": 1784750400000,
+        "price": 65894.99,
+        "candle_start_ts": 1784746800000,
+        "closing_hour_volume": 687.78820947
+      },
+      {
+        "date": "2026-07-23",
+        "ts": 1784836800000,
+        "price": 64778.48,
+        "candle_start_ts": 1784833200000,
+        "closing_hour_volume": 745.62687523
+      },
+      {
+        "date": "2026-07-24",
+        "ts": 1784923200000,
+        "price": 64163.76,
+        "candle_start_ts": 1784919600000,
+        "closing_hour_volume": 362.43039701
+      },
+      {
+        "date": "2026-07-27",
+        "ts": 1785182400000,
+        "price": 64915.15,
+        "candle_start_ts": 1785178800000,
+        "closing_hour_volume": 203.96392059
+      },
+      {
+        "date": "2026-07-28",
+        "ts": 1785268800000,
+        "price": 63825.78,
+        "candle_start_ts": 1785265200000,
+        "closing_hour_volume": 611.05645064
+      },
+      {
+        "date": "2026-07-29",
+        "ts": 1785355200000,
+        "price": 63515.6,
+        "candle_start_ts": 1785351600000,
+        "closing_hour_volume": 483.78435645
+      },
+      {
+        "date": "2026-07-30",
+        "ts": 1785441600000,
+        "price": 64741.54,
+        "candle_start_ts": 1785438000000,
+        "closing_hour_volume": 444.58996786
+      },
+      {
+        "date": "2026-07-31",
+        "ts": 1785528000000,
+        "price": 62903.64,
+        "candle_start_ts": 1785524400000,
+        "closing_hour_volume": 385.66576944
+      },
+      {
+        "date": "2026-08-03",
+        "ts": 1785787200000,
+        "price": 63813.48,
+        "candle_start_ts": 1785783600000,
+        "closing_hour_volume": 487.12152339
+      },
+      {
+        "date": "2026-08-04",
+        "ts": 1785873600000,
+        "price": 64197.18,
+        "candle_start_ts": 1785870000000,
+        "closing_hour_volume": 396.74398843
+      },
+      {
+        "date": "2026-08-05",
+        "ts": 1785960000000,
+        "price": 64794.63,
+        "candle_start_ts": 1785956400000,
+        "closing_hour_volume": 499.27723482
+      },
+      {
+        "date": "2026-08-06",
+        "ts": 1786046400000,
+        "price": 64390.13,
+        "candle_start_ts": 1786042800000,
+        "closing_hour_volume": 465.41675914
+      },
+      {
+        "date": "2026-08-07",
+        "ts": 1786132800000,
+        "price": 64914.79,
+        "candle_start_ts": 1786129200000,
+        "closing_hour_volume": 661.73118592
+      },
+      {
+        "date": "2026-08-10",
+        "ts": 1786392000000,
+        "price": 63977.9,
+        "candle_start_ts": 1786388400000,
+        "closing_hour_volume": 368.81669542
+      },
+      {
+        "date": "2026-08-11",
+        "ts": 1786478400000,
+        "price": 63468.75,
+        "candle_start_ts": 1786474800000,
+        "closing_hour_volume": 445.976907
+      },
+      {
+        "date": "2026-08-12",
+        "ts": 1786564800000,
+        "price": 63344.07,
+        "candle_start_ts": 1786561200000,
+        "closing_hour_volume": 360.71997429
+      },
+      {
+        "date": "2026-08-13",
+        "ts": 1786651200000,
+        "price": 63339.67,
+        "candle_start_ts": 1786647600000,
+        "closing_hour_volume": 365.92399342
+      },
+      {
+        "date": "2026-08-14",
+        "ts": 1786737600000,
+        "price": 62892.03,
+        "candle_start_ts": 1786734000000,
+        "closing_hour_volume": 485.73427459
+      },
+      {
+        "date": "2026-08-17",
+        "ts": 1786996800000,
+        "price": 64262.0,
+        "candle_start_ts": 1786993200000,
+        "closing_hour_volume": 318.57181294
+      },
+      {
+        "date": "2026-08-18",
+        "ts": 1787083200000,
+        "price": 64610.51,
+        "candle_start_ts": 1787079600000,
+        "closing_hour_volume": 276.95650895
+      },
+      {
+        "date": "2026-08-19",
+        "ts": 1787169600000,
+        "price": 68418.55,
+        "candle_start_ts": 1787166000000,
+        "closing_hour_volume": 1270.57575236
+      },
+      {
+        "date": "2026-08-20",
+        "ts": 1787256000000,
+        "price": 72669.36,
+        "candle_start_ts": 1787252400000,
+        "closing_hour_volume": 666.66317283
+      },
+      {
+        "date": "2026-08-21",
+        "ts": 1787342400000,
+        "price": 77003.92,
+        "candle_start_ts": 1787338800000,
+        "closing_hour_volume": 759.57000463
+      },
+      {
+        "date": "2026-08-24",
+        "ts": 1787601600000,
+        "price": 78746.35,
+        "candle_start_ts": 1787598000000,
+        "closing_hour_volume": 552.45074535
+      },
+      {
+        "date": "2026-08-25",
+        "ts": 1787688000000,
+        "price": 78928.78,
+        "candle_start_ts": 1787684400000,
+        "closing_hour_volume": 750.66656642
+      },
+      {
+        "date": "2026-08-26",
+        "ts": 1787774400000,
+        "price": 78475.06,
+        "candle_start_ts": 1787770800000,
+        "closing_hour_volume": 430.73127088
+      },
+      {
+        "date": "2026-08-27",
+        "ts": 1787860800000,
+        "price": 79910.05,
+        "candle_start_ts": 1787857200000,
+        "closing_hour_volume": 534.05676091
+      },
+      {
+        "date": "2026-08-28",
+        "ts": 1787947200000,
+        "price": 77559.99,
+        "candle_start_ts": 1787943600000,
+        "closing_hour_volume": 626.87551469
+      },
+      {
+        "date": "2026-08-31",
+        "ts": 1788206400000,
+        "price": 78893.63,
+        "candle_start_ts": 1788202800000,
+        "closing_hour_volume": 697.25643985
+      },
+      {
+        "date": "2026-09-01",
+        "ts": 1788292800000,
+        "price": 77277.15,
+        "candle_start_ts": 1788289200000,
+        "closing_hour_volume": 465.21724797
+      },
+      {
+        "date": "2026-09-02",
+        "ts": 1788379200000,
+        "price": 77316.03,
+        "candle_start_ts": 1788375600000,
+        "closing_hour_volume": 225.91931297
+      },
+      {
+        "date": "2026-09-03",
+        "ts": 1788465600000,
+        "price": 81768.48,
+        "candle_start_ts": 1788462000000,
+        "closing_hour_volume": 757.28656217
+      },
+      {
+        "date": "2026-09-04",
+        "ts": 1788552000000,
+        "price": 79807.37,
+        "candle_start_ts": 1788548400000,
+        "closing_hour_volume": 313.98600278
+      },
+      {
+        "date": "2026-09-08",
+        "ts": 1788897600000,
+        "price": 78434.47,
+        "candle_start_ts": 1788894000000,
+        "closing_hour_volume": 342.3604794
+      },
+      {
+        "date": "2026-09-09",
+        "ts": 1788984000000,
+        "price": 78212.95,
+        "candle_start_ts": 1788980400000,
+        "closing_hour_volume": 199.66961964
+      },
+      {
+        "date": "2026-09-10",
+        "ts": 1789070400000,
+        "price": 77123.6,
+        "candle_start_ts": 1789066800000,
+        "closing_hour_volume": 227.64197845
+      },
+      {
+        "date": "2026-09-11",
+        "ts": 1789156800000,
+        "price": 77257.36,
+        "candle_start_ts": 1789153200000,
+        "closing_hour_volume": 227.10857265
+      },
+      {
+        "date": "2026-09-14",
+        "ts": 1789416000000,
+        "price": 78982.77,
+        "candle_start_ts": 1789412400000,
+        "closing_hour_volume": 419.82260737
+      },
+      {
+        "date": "2026-09-15",
+        "ts": 1789502400000,
+        "price": 76126.33,
+        "candle_start_ts": 1789498800000,
+        "closing_hour_volume": 670.70700403
+      },
+      {
+        "date": "2026-09-16",
+        "ts": 1789588800000,
+        "price": 76000.0,
+        "candle_start_ts": 1789585200000,
+        "closing_hour_volume": 805.99533927
+      },
+      {
+        "date": "2026-09-17",
+        "ts": 1789675200000,
+        "price": 76524.57,
+        "candle_start_ts": 1789671600000,
+        "closing_hour_volume": 157.36040165
+      },
+      {
+        "date": "2026-09-18",
+        "ts": 1789761600000,
+        "price": 81193.47,
+        "candle_start_ts": 1789758000000,
+        "closing_hour_volume": 867.78533377
+      },
+      {
+        "date": "2026-09-21",
+        "ts": 1790020800000,
+        "price": 86494.97,
+        "candle_start_ts": 1790017200000,
+        "closing_hour_volume": 1009.21807904
+      },
+      {
+        "date": "2026-09-22",
+        "ts": 1790107200000,
+        "price": 86211.14,
+        "candle_start_ts": 1790103600000,
+        "closing_hour_volume": 634.29322002
+      },
+      {
+        "date": "2026-09-23",
+        "ts": 1790193600000,
+        "price": 84515.87,
+        "candle_start_ts": 1790190000000,
+        "closing_hour_volume": 559.10895483
+      },
+      {
+        "date": "2026-09-24",
+        "ts": 1790280000000,
+        "price": 84395.47,
+        "candle_start_ts": 1790276400000,
+        "closing_hour_volume": 399.42074393
+      },
+      {
+        "date": "2026-09-25",
+        "ts": 1790366400000,
+        "price": 84003.55,
+        "candle_start_ts": 1790362800000,
+        "closing_hour_volume": 415.48272096
+      },
+      {
+        "date": "2026-09-28",
+        "ts": 1790625600000,
+        "price": 83355.13,
+        "candle_start_ts": 1790622000000,
+        "closing_hour_volume": 267.94583196
+      },
+      {
+        "date": "2026-09-29",
+        "ts": 1790712000000,
+        "price": 83571.71,
+        "candle_start_ts": 1790708400000,
+        "closing_hour_volume": 191.47834289
+      },
+      {
+        "date": "2026-09-30",
+        "ts": 1790798400000,
+        "price": 83556.83,
+        "candle_start_ts": 1790794800000,
+        "closing_hour_volume": 582.2626661
+      },
+      {
+        "date": "2026-10-01",
+        "ts": 1790884800000,
+        "price": 84644.92,
+        "candle_start_ts": 1790881200000,
+        "closing_hour_volume": 409.063357
+      },
+      {
+        "date": "2026-10-02",
+        "ts": 1790971200000,
+        "price": 84292.32,
+        "candle_start_ts": 1790967600000,
+        "closing_hour_volume": 401.1902947
+      },
+      {
+        "date": "2026-10-05",
+        "ts": 1791230400000,
+        "price": 85732.25,
+        "candle_start_ts": 1791226800000,
+        "closing_hour_volume": 197.9963518
+      },
+      {
+        "date": "2026-10-06",
+        "ts": 1791316800000,
+        "price": 85610.01,
+        "candle_start_ts": 1791313200000,
+        "closing_hour_volume": 150.31971864
+      },
+      {
+        "date": "2026-10-07",
+        "ts": 1791403200000,
+        "price": 83392.04,
+        "candle_start_ts": 1791399600000,
+        "closing_hour_volume": 365.27477807
+      },
+      {
+        "date": "2026-10-08",
+        "ts": 1791489600000,
+        "price": 81710.68,
+        "candle_start_ts": 1791486000000,
+        "closing_hour_volume": 289.2723043
+      },
+      {
+        "date": "2026-10-09",
+        "ts": 1791576000000,
+        "price": 82252.59,
+        "candle_start_ts": 1791572400000,
+        "closing_hour_volume": 215.41582472
+      },
+      {
+        "date": "2026-10-12",
+        "ts": 1791835200000,
+        "price": 82762.91,
+        "candle_start_ts": 1791831600000,
+        "closing_hour_volume": 248.6719346
+      },
+      {
+        "date": "2026-10-13",
+        "ts": 1791921600000,
+        "price": 83206.49,
+        "candle_start_ts": 1791918000000,
+        "closing_hour_volume": 179.43596328
+      },
+      {
+        "date": "2026-10-14",
+        "ts": 1792008000000,
+        "price": 81721.33,
+        "candle_start_ts": 1792004400000,
+        "closing_hour_volume": 272.97168357
+      },
+      {
+        "date": "2026-10-15",
+        "ts": 1792094400000,
+        "price": 82299.26,
+        "candle_start_ts": 1792090800000,
+        "closing_hour_volume": 241.27383001
+      }
+    ]
+  },
   "correlations": {
-    "btc_gold_3m": 0.5937051532936118,
-    "btc_gold_6m": 0.5673440308788013,
-    "btc_sox_3m": 0.06470954716964389,
-    "btc_sox_6m": 0.013374490132893477
+    "btc_gold_3m": 0.5190626987455402,
+    "btc_gold_6m": 0.5343836713794237,
+    "btc_sox_3m": 0.26091753593426986,
+    "btc_sox_6m": 0.27406494663680286
   },
   "correlations_meta": {
     "btc_gold_3m": {
-      "observations": 63,
-      "requested_observations": 63,
-      "price_points": 64,
-      "start_date": "2026-08-14",
-      "end_date": "2026-10-16",
-      "method": "Pearson correlation of daily simple returns"
+      "config_hash": "bba5212d1965b94acf3a653312c473250482735f740fa7f9478415a1cc6f4aa0",
+      "methodology_id": "calendar_months_synchronized_simple_returns_v1",
+      "months": 3,
+      "calendar_cutoff": "2026-07-15",
+      "start_date": "2026-07-15",
+      "end_date": "2026-10-15",
+      "start_timestamp": 1784073600000,
+      "end_timestamp": 1792022400000,
+      "observations": 92,
+      "price_points": 93,
+      "missing_observations": 0,
+      "clock": "00:00 UTC",
+      "calendar": "UTC_daily",
+      "btc_source": "CoinGecko bitcoin/USD",
+      "comparison_source": "CoinGecko tether-gold/USD",
+      "method": "Pearson correlation of simple returns between synchronized price endpoints"
     },
     "btc_gold_6m": {
-      "observations": 126,
-      "requested_observations": 126,
-      "price_points": 127,
-      "start_date": "2026-06-12",
-      "end_date": "2026-10-16",
-      "method": "Pearson correlation of daily simple returns"
+      "config_hash": "bba5212d1965b94acf3a653312c473250482735f740fa7f9478415a1cc6f4aa0",
+      "methodology_id": "calendar_months_synchronized_simple_returns_v1",
+      "months": 6,
+      "calendar_cutoff": "2026-04-15",
+      "start_date": "2026-04-15",
+      "end_date": "2026-10-15",
+      "start_timestamp": 1776211200000,
+      "end_timestamp": 1792022400000,
+      "observations": 183,
+      "price_points": 184,
+      "missing_observations": 0,
+      "clock": "00:00 UTC",
+      "calendar": "UTC_daily",
+      "btc_source": "CoinGecko bitcoin/USD",
+      "comparison_source": "CoinGecko tether-gold/USD",
+      "method": "Pearson correlation of simple returns between synchronized price endpoints"
     },
     "btc_sox_3m": {
-      "observations": 63,
-      "requested_observations": 63,
-      "price_points": 64,
-      "start_date": "2026-07-17",
+      "config_hash": "bba5212d1965b94acf3a653312c473250482735f740fa7f9478415a1cc6f4aa0",
+      "methodology_id": "calendar_months_synchronized_simple_returns_v1",
+      "months": 3,
+      "calendar_cutoff": "2026-07-15",
+      "start_date": "2026-07-15",
       "end_date": "2026-10-15",
-      "method": "Pearson correlation of daily simple returns"
+      "start_timestamp": 1784145600000,
+      "end_timestamp": 1792094400000,
+      "observations": 65,
+      "price_points": 66,
+      "missing_observations": 0,
+      "clock": "scheduled_regular_session_close",
+      "calendar": "reference_calendar",
+      "btc_source": "Coinbase BTC-USD hourly candle close",
+      "comparison_source": "Yahoo Finance ^SOX daily Close",
+      "method": "Pearson correlation of simple returns between synchronized price endpoints"
     },
     "btc_sox_6m": {
-      "observations": 126,
-      "requested_observations": 126,
-      "price_points": 127,
-      "start_date": "2026-04-16",
+      "config_hash": "bba5212d1965b94acf3a653312c473250482735f740fa7f9478415a1cc6f4aa0",
+      "methodology_id": "calendar_months_synchronized_simple_returns_v1",
+      "months": 6,
+      "calendar_cutoff": "2026-04-15",
+      "start_date": "2026-04-15",
       "end_date": "2026-10-15",
-      "method": "Pearson correlation of daily simple returns"
+      "start_timestamp": 1776283200000,
+      "end_timestamp": 1792094400000,
+      "observations": 127,
+      "price_points": 128,
+      "missing_observations": 0,
+      "clock": "scheduled_regular_session_close",
+      "calendar": "reference_calendar",
+      "btc_source": "Coinbase BTC-USD hourly candle close",
+      "comparison_source": "Yahoo Finance ^SOX daily Close",
+      "method": "Pearson correlation of simple returns between synchronized price endpoints"
     }
   },
+  "correlation_pairs": {
+    "btc_gold": [
+      {
+        "date": "2025-10-17",
+        "ts": 1760659200000,
+        "btc": 108168.17353436728,
+        "comparison": 4389.799706921246
+      },
+      {
+        "date": "2025-10-18",
+        "ts": 1760745600000,
+        "btc": 106483.89143637568,
+        "comparison": 4233.20408863487
+      },
+      {
+        "date": "2025-10-19",
+        "ts": 1760832000000,
+        "btc": 107210.0961099579,
+        "comparison": 4229.120013179007
+      },
+      {
+        "date": "2025-10-20",
+        "ts": 1760918400000,
+        "btc": 108655.50525004532,
+        "comparison": 4239.91715568742
+      },
+      {
+        "date": "2025-10-21",
+        "ts": 1761004800000,
+        "btc": 110535.86301373685,
+        "comparison": 4360.3111425884035
+      },
+      {
+        "date": "2025-10-22",
+        "ts": 1761091200000,
+        "btc": 108301.75462476298,
+        "comparison": 4088.13030314698
+      },
+      {
+        "date": "2025-10-23",
+        "ts": 1761177600000,
+        "btc": 107591.4605093986,
+        "comparison": 4093.1702717214425
+      },
+      {
+        "date": "2025-10-24",
+        "ts": 1761264000000,
+        "btc": 110109.30522515893,
+        "comparison": 4109.471196501308
+      },
+      {
+        "date": "2025-10-25",
+        "ts": 1761350400000,
+        "btc": 111030.1833786475,
+        "comparison": 4103.750123851834
+      },
+      {
+        "date": "2025-10-26",
+        "ts": 1761436800000,
+        "btc": 111631.63726547628,
+        "comparison": 4112.875762252154
+      },
+      {
+        "date": "2025-10-27",
+        "ts": 1761523200000,
+        "btc": 114419.22169689646,
+        "comparison": 4052.50566109858
+      },
+      {
+        "date": "2025-10-28",
+        "ts": 1761609600000,
+        "btc": 114085.33123756813,
+        "comparison": 3997.4660422743177
+      },
+      {
+        "date": "2025-10-29",
+        "ts": 1761696000000,
+        "btc": 112893.85203624627,
+        "comparison": 3957.3643733949807
+      },
+      {
+        "date": "2025-10-30",
+        "ts": 1761782400000,
+        "btc": 110026.087620204,
+        "comparison": 3945.6000826788686
+      },
+      {
+        "date": "2025-10-31",
+        "ts": 1761868800000,
+        "btc": 108409.379924928,
+        "comparison": 4038.8880926194192
+      },
+      {
+        "date": "2025-11-01",
+        "ts": 1761955200000,
+        "btc": 109566.6066188076,
+        "comparison": 4002.6815110053344
+      },
+      {
+        "date": "2025-11-02",
+        "ts": 1762041600000,
+        "btc": 110066.94174051796,
+        "comparison": 4004.271007352434
+      },
+      {
+        "date": "2025-11-03",
+        "ts": 1762128000000,
+        "btc": 110499.52238345638,
+        "comparison": 3966.296254311113
+      },
+      {
+        "date": "2025-11-04",
+        "ts": 1762214400000,
+        "btc": 106451.70653262926,
+        "comparison": 3984.023939125929
+      },
+      {
+        "date": "2025-11-05",
+        "ts": 1762300800000,
+        "btc": 101480.76659609628,
+        "comparison": 3933.368462546082
+      },
+      {
+        "date": "2025-11-06",
+        "ts": 1762387200000,
+        "btc": 103878.9335997028,
+        "comparison": 3974.446617673483
+      },
+      {
+        "date": "2025-11-07",
+        "ts": 1762473600000,
+        "btc": 101261.6455104612,
+        "comparison": 3972.733379056841
+      },
+      {
+        "date": "2025-11-08",
+        "ts": 1762560000000,
+        "btc": 103191.7560668328,
+        "comparison": 3983.13384127222
+      },
+      {
+        "date": "2025-11-09",
+        "ts": 1762646400000,
+        "btc": 102286.82524827348,
+        "comparison": 3987.165419256365
+      },
+      {
+        "date": "2025-11-10",
+        "ts": 1762732800000,
+        "btc": 104610.22853607994,
+        "comparison": 3995.898687396799
+      },
+      {
+        "date": "2025-11-11",
+        "ts": 1762819200000,
+        "btc": 105951.49599987874,
+        "comparison": 4104.526200238372
+      },
+      {
+        "date": "2025-11-12",
+        "ts": 1762905600000,
+        "btc": 103112.21006199118,
+        "comparison": 4117.895433447856
+      },
+      {
+        "date": "2025-11-13",
+        "ts": 1762992000000,
+        "btc": 101633.69431605682,
+        "comparison": 4166.737091564873
+      },
+      {
+        "date": "2025-11-14",
+        "ts": 1763078400000,
+        "btc": 99480.3070908126,
+        "comparison": 4170.239236700401
+      },
+      {
+        "date": "2025-11-15",
+        "ts": 1763164800000,
+        "btc": 94772.61435799382,
+        "comparison": 4072.692652554384
+      },
+      {
+        "date": "2025-11-16",
+        "ts": 1763251200000,
+        "btc": 95380.13316661112,
+        "comparison": 4066.2654814342222
+      },
+      {
+        "date": "2025-11-17",
+        "ts": 1763337600000,
+        "btc": 94188.27668924726,
+        "comparison": 4084.312031181799
+      },
+      {
+        "date": "2025-11-18",
+        "ts": 1763424000000,
+        "btc": 92100.36452360668,
+        "comparison": 4020.95427586194
+      },
+      {
+        "date": "2025-11-19",
+        "ts": 1763510400000,
+        "btc": 92903.18008511196,
+        "comparison": 4060.477374571083
+      },
+      {
+        "date": "2025-11-20",
+        "ts": 1763596800000,
+        "btc": 91408.3573343969,
+        "comparison": 4076.423364884344
+      },
+      {
+        "date": "2025-11-21",
+        "ts": 1763683200000,
+        "btc": 86618.47155915352,
+        "comparison": 4054.0302912216425
+      },
+      {
+        "date": "2025-11-22",
+        "ts": 1763769600000,
+        "btc": 85087.95256265256,
+        "comparison": 4050.984917522547
+      },
+      {
+        "date": "2025-11-23",
+        "ts": 1763856000000,
+        "btc": 84675.50764856212,
+        "comparison": 4047.844289875839
+      },
+      {
+        "date": "2025-11-24",
+        "ts": 1763942400000,
+        "btc": 86740.11773876166,
+        "comparison": 4055.0082224780695
+      },
+      {
+        "date": "2025-11-25",
+        "ts": 1764028800000,
+        "btc": 88256.04395603726,
+        "comparison": 4119.330803234771
+      },
+      {
+        "date": "2025-11-26",
+        "ts": 1764115200000,
+        "btc": 87317.00455056976,
+        "comparison": 4108.457586555448
+      },
+      {
+        "date": "2025-11-27",
+        "ts": 1764201600000,
+        "btc": 90515.94357835098,
+        "comparison": 4156.653025363239
+      },
+      {
+        "date": "2025-11-28",
+        "ts": 1764288000000,
+        "btc": 91323.62827620257,
+        "comparison": 4152.673628628799
+      },
+      {
+        "date": "2025-11-29",
+        "ts": 1764374400000,
+        "btc": 90904.86767344688,
+        "comparison": 4213.635623111577
+      },
+      {
+        "date": "2025-11-30",
+        "ts": 1764460800000,
+        "btc": 90832.18685385384,
+        "comparison": 4211.678624426858
+      },
+      {
+        "date": "2025-12-01",
+        "ts": 1764547200000,
+        "btc": 90359.86873169734,
+        "comparison": 4214.6141857205785
+      },
+      {
+        "date": "2025-12-02",
+        "ts": 1764633600000,
+        "btc": 86303.89766361401,
+        "comparison": 4226.914253141233
+      },
+      {
+        "date": "2025-12-03",
+        "ts": 1764720000000,
+        "btc": 91320.07942505728,
+        "comparison": 4206.147867633826
+      },
+      {
+        "date": "2025-12-04",
+        "ts": 1764806400000,
+        "btc": 93428.59451478458,
+        "comparison": 4199.56471293157
+      },
+      {
+        "date": "2025-12-05",
+        "ts": 1764892800000,
+        "btc": 92119.19047831658,
+        "comparison": 4198.242916793865
+      },
+      {
+        "date": "2025-12-06",
+        "ts": 1764979200000,
+        "btc": 89264.22915485654,
+        "comparison": 4194.154120033919
+      },
+      {
+        "date": "2025-12-07",
+        "ts": 1765065600000,
+        "btc": 89227.45274823112,
+        "comparison": 4211.084406823203
+      },
+      {
+        "date": "2025-12-08",
+        "ts": 1765152000000,
+        "btc": 90398.44875659447,
+        "comparison": 4212.196047094114
+      },
+      {
+        "date": "2025-12-09",
+        "ts": 1765238400000,
+        "btc": 90626.0373431212,
+        "comparison": 4202.321086261025
+      },
+      {
+        "date": "2025-12-10",
+        "ts": 1765324800000,
+        "btc": 92686.10402025311,
+        "comparison": 4216.163642764472
+      },
+      {
+        "date": "2025-12-11",
+        "ts": 1765411200000,
+        "btc": 91986.58107213798,
+        "comparison": 4223.224173386084
+      },
+      {
+        "date": "2025-12-12",
+        "ts": 1765497600000,
+        "btc": 92525.8680026296,
+        "comparison": 4266.565408661498
+      },
+      {
+        "date": "2025-12-13",
+        "ts": 1765584000000,
+        "btc": 90260.54242242372,
+        "comparison": 4305.860697811301
+      },
+      {
+        "date": "2025-12-14",
+        "ts": 1765670400000,
+        "btc": 90253.11813342397,
+        "comparison": 4313.556429815963
+      },
+      {
+        "date": "2025-12-15",
+        "ts": 1765756800000,
+        "btc": 88184.41093067056,
+        "comparison": 4299.89578193262
+      },
+      {
+        "date": "2025-12-16",
+        "ts": 1765843200000,
+        "btc": 86413.22138097929,
+        "comparison": 4307.135970470025
+      },
+      {
+        "date": "2025-12-17",
+        "ts": 1765929600000,
+        "btc": 87719.68139798648,
+        "comparison": 4303.628479447406
+      },
+      {
+        "date": "2025-12-18",
+        "ts": 1766016000000,
+        "btc": 86196.82137334664,
+        "comparison": 4334.2285567357785
+      },
+      {
+        "date": "2025-12-19",
+        "ts": 1766102400000,
+        "btc": 85450.17964790671,
+        "comparison": 4328.556438379187
+      },
+      {
+        "date": "2025-12-20",
+        "ts": 1766188800000,
+        "btc": 88091.69571216944,
+        "comparison": 4332.448278679934
+      },
+      {
+        "date": "2025-12-21",
+        "ts": 1766275200000,
+        "btc": 88348.27802016199,
+        "comparison": 4353.4421128839
+      },
+      {
+        "date": "2025-12-22",
+        "ts": 1766361600000,
+        "btc": 88672.32967904503,
+        "comparison": 4348.5325889914475
+      },
+      {
+        "date": "2025-12-23",
+        "ts": 1766448000000,
+        "btc": 88489.72404150236,
+        "comparison": 4458.243454497443
+      },
+      {
+        "date": "2025-12-24",
+        "ts": 1766534400000,
+        "btc": 87496.14669239183,
+        "comparison": 4510.016168222313
+      },
+      {
+        "date": "2025-12-25",
+        "ts": 1766620800000,
+        "btc": 87589.01664996856,
+        "comparison": 4488.407114435125
+      },
+      {
+        "date": "2025-12-26",
+        "ts": 1766707200000,
+        "btc": 87192.23473670239,
+        "comparison": 4490.868321593755
+      },
+      {
+        "date": "2025-12-27",
+        "ts": 1766793600000,
+        "btc": 87303.04428036696,
+        "comparison": 4530.606089703744
+      },
+      {
+        "date": "2025-12-28",
+        "ts": 1766880000000,
+        "btc": 87852.98655230374,
+        "comparison": 4553.148804599577
+      },
+      {
+        "date": "2025-12-29",
+        "ts": 1766966400000,
+        "btc": 87867.03943448896,
+        "comparison": 4523.426528924054
+      },
+      {
+        "date": "2025-12-30",
+        "ts": 1767052800000,
+        "btc": 87154.68240604762,
+        "comparison": 4343.521727951107
+      },
+      {
+        "date": "2025-12-31",
+        "ts": 1767139200000,
+        "btc": 88363.72223633934,
+        "comparison": 4342.487627420772
+      },
+      {
+        "date": "2026-01-01",
+        "ts": 1767225600000,
+        "btc": 87575.04615968224,
+        "comparison": 4318.183175066801
+      },
+      {
+        "date": "2026-01-02",
+        "ts": 1767312000000,
+        "btc": 88764.12624075128,
+        "comparison": 4357.615700267275
+      },
+      {
+        "date": "2026-01-03",
+        "ts": 1767398400000,
+        "btc": 89978.91920361611,
+        "comparison": 4343.991028917381
+      },
+      {
+        "date": "2026-01-04",
+        "ts": 1767484800000,
+        "btc": 90614.40684381907,
+        "comparison": 4329.260241360639
+      },
+      {
+        "date": "2026-01-05",
+        "ts": 1767571200000,
+        "btc": 91879.5772256957,
+        "comparison": 4365.926202342984
+      },
+      {
+        "date": "2026-01-06",
+        "ts": 1767657600000,
+        "btc": 93879.9479734475,
+        "comparison": 4433.584737587188
+      },
+      {
+        "date": "2026-01-07",
+        "ts": 1767744000000,
+        "btc": 93649.6319764084,
+        "comparison": 4479.015549976373
+      },
+      {
+        "date": "2026-01-08",
+        "ts": 1767830400000,
+        "btc": 91286.03314397692,
+        "comparison": 4467.107168924931
+      },
+      {
+        "date": "2026-01-09",
+        "ts": 1767916800000,
+        "btc": 91027.66616983686,
+        "comparison": 4474.7152654860765
+      },
+      {
+        "date": "2026-01-10",
+        "ts": 1768003200000,
+        "btc": 90551.71363174269,
+        "comparison": 4489.649263445921
+      },
+      {
+        "date": "2026-01-11",
+        "ts": 1768089600000,
+        "btc": 90420.29795170767,
+        "comparison": 4491.9102561521995
+      },
+      {
+        "date": "2026-01-12",
+        "ts": 1768176000000,
+        "btc": 90856.55910152226,
+        "comparison": 4522.394343906483
+      },
+      {
+        "date": "2026-01-13",
+        "ts": 1768262400000,
+        "btc": 91200.62761511702,
+        "comparison": 4599.71912868976
+      },
+      {
+        "date": "2026-01-14",
+        "ts": 1768348800000,
+        "btc": 95429.1573224277,
+        "comparison": 4588.879586501393
+      },
+      {
+        "date": "2026-01-15",
+        "ts": 1768435200000,
+        "btc": 96898.76071081961,
+        "comparison": 4606.865350750459
+      },
+      {
+        "date": "2026-01-16",
+        "ts": 1768521600000,
+        "btc": 95593.30783680787,
+        "comparison": 4599.3367576252585
+      },
+      {
+        "date": "2026-01-17",
+        "ts": 1768608000000,
+        "btc": 95523.1861982478,
+        "comparison": 4587.7273794294215
+      },
+      {
+        "date": "2026-01-18",
+        "ts": 1768694400000,
+        "btc": 94802.88170431636,
+        "comparison": 4598.152783293056
+      },
+      {
+        "date": "2026-01-19",
+        "ts": 1768780800000,
+        "btc": 93344.2194849136,
+        "comparison": 4660.330630695548
+      },
+      {
+        "date": "2026-01-20",
+        "ts": 1768867200000,
+        "btc": 92566.01277952259,
+        "comparison": 4663.444166145613
+      },
+      {
+        "date": "2026-01-21",
+        "ts": 1768953600000,
+        "btc": 88416.88686186896,
+        "comparison": 4776.474662012148
+      },
+      {
+        "date": "2026-01-22",
+        "ts": 1769040000000,
+        "btc": 89453.90473719541,
+        "comparison": 4785.878011085735
+      },
+      {
+        "date": "2026-01-23",
+        "ts": 1769126400000,
+        "btc": 89483.65163014928,
+        "comparison": 4956.941971588032
+      },
+      {
+        "date": "2026-01-24",
+        "ts": 1769212800000,
+        "btc": 89524.84864062016,
+        "comparison": 4989.6640402836065
+      },
+      {
+        "date": "2026-01-25",
+        "ts": 1769299200000,
+        "btc": 89149.95970929884,
+        "comparison": 5025.0257304249135
+      },
+      {
+        "date": "2026-01-26",
+        "ts": 1769385600000,
+        "btc": 86625.33128140382,
+        "comparison": 5042.825578992549
+      },
+      {
+        "date": "2026-01-27",
+        "ts": 1769472000000,
+        "btc": 88249.90141827049,
+        "comparison": 5041.506079178377
+      },
+      {
+        "date": "2026-01-28",
+        "ts": 1769558400000,
+        "btc": 89141.65035979386,
+        "comparison": 5163.042441432119
+      },
+      {
+        "date": "2026-01-29",
+        "ts": 1769644800000,
+        "btc": 89212.20824183176,
+        "comparison": 5486.569497387119
+      },
+      {
+        "date": "2026-01-30",
+        "ts": 1769731200000,
+        "btc": 84630.42066738439,
+        "comparison": 5441.904385962764
+      },
+      {
+        "date": "2026-01-31",
+        "ts": 1769817600000,
+        "btc": 84091.63017682909,
+        "comparison": 4892.403667120859
+      },
+      {
+        "date": "2026-02-01",
+        "ts": 1769904000000,
+        "btc": 78647.02739790398,
+        "comparison": 4808.364968010982
+      },
+      {
+        "date": "2026-02-02",
+        "ts": 1769990400000,
+        "btc": 76895.58665593083,
+        "comparison": 4741.399000082566
+      },
+      {
+        "date": "2026-02-03",
+        "ts": 1770076800000,
+        "btc": 78670.58922752787,
+        "comparison": 4775.280277319207
+      },
+      {
+        "date": "2026-02-04",
+        "ts": 1770163200000,
+        "btc": 75628.04173330522,
+        "comparison": 4936.51209994532
+      },
+      {
+        "date": "2026-02-05",
+        "ts": 1770249600000,
+        "btc": 73059.17986713687,
+        "comparison": 4992.097892316793
+      },
+      {
+        "date": "2026-02-06",
+        "ts": 1770336000000,
+        "btc": 62778.217566354324,
+        "comparison": 4651.395755300183
+      },
+      {
+        "date": "2026-02-07",
+        "ts": 1770422400000,
+        "btc": 70272.52223140873,
+        "comparison": 4905.402084684465
+      },
+      {
+        "date": "2026-02-08",
+        "ts": 1770508800000,
+        "btc": 69245.78200906444,
+        "comparison": 4953.975905829947
+      },
+      {
+        "date": "2026-02-09",
+        "ts": 1770595200000,
+        "btc": 70398.0850329669,
+        "comparison": 5011.14730164045
+      },
+      {
+        "date": "2026-02-10",
+        "ts": 1770681600000,
+        "btc": 70175.14749173766,
+        "comparison": 5017.405651120224
+      },
+      {
+        "date": "2026-02-11",
+        "ts": 1770768000000,
+        "btc": 68841.8723764457,
+        "comparison": 5012.563443191779
+      },
+      {
+        "date": "2026-02-12",
+        "ts": 1770854400000,
+        "btc": 67090.5793396472,
+        "comparison": 5028.213025961605
+      },
+      {
+        "date": "2026-02-13",
+        "ts": 1770940800000,
+        "btc": 66258.52954947444,
+        "comparison": 4896.421815901974
+      },
+      {
+        "date": "2026-02-14",
+        "ts": 1771027200000,
+        "btc": 68837.58112429692,
+        "comparison": 5011.62203114938
+      },
+      {
+        "date": "2026-02-15",
+        "ts": 1771113600000,
+        "btc": 69799.5509626349,
+        "comparison": 4995.328782870397
+      },
+      {
+        "date": "2026-02-16",
+        "ts": 1771200000000,
+        "btc": 68778.84298479716,
+        "comparison": 4992.3685177198195
+      },
+      {
+        "date": "2026-02-17",
+        "ts": 1771286400000,
+        "btc": 68859.77618747062,
+        "comparison": 4966.852354217037
+      },
+      {
+        "date": "2026-02-18",
+        "ts": 1771372800000,
+        "btc": 67559.29573331702,
+        "comparison": 4845.662117707498
+      },
+      {
+        "date": "2026-02-19",
+        "ts": 1771459200000,
+        "btc": 66426.61953458567,
+        "comparison": 4946.44303562653
+      },
+      {
+        "date": "2026-02-20",
+        "ts": 1771545600000,
+        "btc": 66976.02936410521,
+        "comparison": 4972.90121491744
+      },
+      {
+        "date": "2026-02-21",
+        "ts": 1771632000000,
+        "btc": 68002.9401106256,
+        "comparison": 5083.693216766183
+      },
+      {
+        "date": "2026-02-22",
+        "ts": 1771718400000,
+        "btc": 68026.03124326779,
+        "comparison": 5105.279935749748
+      },
+      {
+        "date": "2026-02-23",
+        "ts": 1771804800000,
+        "btc": 65192.18870120006,
+        "comparison": 5150.235575209244
+      },
+      {
+        "date": "2026-02-24",
+        "ts": 1771891200000,
+        "btc": 64737.90196985264,
+        "comparison": 5204.092567691271
+      },
+      {
+        "date": "2026-02-25",
+        "ts": 1771977600000,
+        "btc": 64073.54894566756,
+        "comparison": 5131.733896020696
+      },
+      {
+        "date": "2026-02-26",
+        "ts": 1772064000000,
+        "btc": 67850.10521282951,
+        "comparison": 5137.0323717429765
+      },
+      {
+        "date": "2026-02-27",
+        "ts": 1772150400000,
+        "btc": 67496.84163950248,
+        "comparison": 5162.322101270663
+      },
+      {
+        "date": "2026-02-28",
+        "ts": 1772236800000,
+        "btc": 65891.22197698704,
+        "comparison": 5257.9310825471375
+      },
+      {
+        "date": "2026-03-01",
+        "ts": 1772323200000,
+        "btc": 67017.07604771722,
+        "comparison": 5307.451350454214
+      },
+      {
+        "date": "2026-03-02",
+        "ts": 1772409600000,
+        "btc": 65824.42166938317,
+        "comparison": 5351.591389840149
+      },
+      {
+        "date": "2026-03-03",
+        "ts": 1772496000000,
+        "btc": 68815.9363388441,
+        "comparison": 5306.799521523826
+      },
+      {
+        "date": "2026-03-04",
+        "ts": 1772582400000,
+        "btc": 68287.46303403362,
+        "comparison": 5091.89457912141
+      },
+      {
+        "date": "2026-03-05",
+        "ts": 1772668800000,
+        "btc": 72752.30156666112,
+        "comparison": 5127.232718604523
+      },
+      {
+        "date": "2026-03-06",
+        "ts": 1772755200000,
+        "btc": 70868.21819643723,
+        "comparison": 5056.601193645791
+      },
+      {
+        "date": "2026-03-07",
+        "ts": 1772841600000,
+        "btc": 68142.88312387785,
+        "comparison": 5139.989230501112
+      },
+      {
+        "date": "2026-03-08",
+        "ts": 1772928000000,
+        "btc": 67339.67440056572,
+        "comparison": 5143.867872493985
+      },
+      {
+        "date": "2026-03-09",
+        "ts": 1773014400000,
+        "btc": 66042.7510790264,
+        "comparison": 5039.733272496674
+      },
+      {
+        "date": "2026-03-10",
+        "ts": 1773100800000,
+        "btc": 68430.60926017091,
+        "comparison": 5101.863234750126
+      },
+      {
+        "date": "2026-03-11",
+        "ts": 1773187200000,
+        "btc": 69849.2035305081,
+        "comparison": 5157.700650808723
+      },
+      {
+        "date": "2026-03-12",
+        "ts": 1773273600000,
+        "btc": 70028.95987601393,
+        "comparison": 5093.093452944832
+      },
+      {
+        "date": "2026-03-13",
+        "ts": 1773360000000,
+        "btc": 70417.19388567522,
+        "comparison": 5082.540890000062
+      },
+      {
+        "date": "2026-03-14",
+        "ts": 1773446400000,
+        "btc": 70838.93230193328,
+        "comparison": 4999.071368016881
+      },
+      {
+        "date": "2026-03-15",
+        "ts": 1773532800000,
+        "btc": 71149.2823885419,
+        "comparison": 4991.246860679184
+      },
+      {
+        "date": "2026-03-16",
+        "ts": 1773619200000,
+        "btc": 72934.2940718683,
+        "comparison": 4982.208618719899
+      },
+      {
+        "date": "2026-03-17",
+        "ts": 1773705600000,
+        "btc": 74679.37090810013,
+        "comparison": 4971.856939682807
+      },
+      {
+        "date": "2026-03-18",
+        "ts": 1773792000000,
+        "btc": 74004.69080880683,
+        "comparison": 4968.313837370362
+      },
+      {
+        "date": "2026-03-19",
+        "ts": 1773878400000,
+        "btc": 71220.04730260483,
+        "comparison": 4823.53117100574
+      },
+      {
+        "date": "2026-03-20",
+        "ts": 1773964800000,
+        "btc": 69936.19932093748,
+        "comparison": 4650.880048235748
+      },
+      {
+        "date": "2026-03-21",
+        "ts": 1774051200000,
+        "btc": 70526.28915957874,
+        "comparison": 4498.87904850733
+      },
+      {
+        "date": "2026-03-22",
+        "ts": 1774137600000,
+        "btc": 68424.07687771624,
+        "comparison": 4486.800158006301
+      },
+      {
+        "date": "2026-03-23",
+        "ts": 1774224000000,
+        "btc": 67933.42948137881,
+        "comparison": 4467.4956618569895
+      },
+      {
+        "date": "2026-03-24",
+        "ts": 1774310400000,
+        "btc": 70987.25185405998,
+        "comparison": 4430.4736000713765
+      },
+      {
+        "date": "2026-03-25",
+        "ts": 1774396800000,
+        "btc": 70528.86345595501,
+        "comparison": 4533.896481687576
+      },
+      {
+        "date": "2026-03-26",
+        "ts": 1774483200000,
+        "btc": 71303.58545062262,
+        "comparison": 4502.144664887857
+      },
+      {
+        "date": "2026-03-27",
+        "ts": 1774569600000,
+        "btc": 68727.2122901201,
+        "comparison": 4406.344672900292
+      },
+      {
+        "date": "2026-03-28",
+        "ts": 1774656000000,
+        "btc": 66329.88185741157,
+        "comparison": 4491.7785870407915
+      },
+      {
+        "date": "2026-03-29",
+        "ts": 1774742400000,
+        "btc": 66388.84446013413,
+        "comparison": 4487.437643012913
+      },
+      {
+        "date": "2026-03-30",
+        "ts": 1774828800000,
+        "btc": 65947.03192607871,
+        "comparison": 4435.6436390540175
+      },
+      {
+        "date": "2026-03-31",
+        "ts": 1774915200000,
+        "btc": 66691.27147786925,
+        "comparison": 4504.872056911924
+      },
+      {
+        "date": "2026-04-01",
+        "ts": 1775001600000,
+        "btc": 68107.47456405059,
+        "comparison": 4667.305079902109
+      },
+      {
+        "date": "2026-04-02",
+        "ts": 1775088000000,
+        "btc": 67959.87524726024,
+        "comparison": 4746.813551681915
+      },
+      {
+        "date": "2026-04-03",
+        "ts": 1775174400000,
+        "btc": 66887.51063938277,
+        "comparison": 4652.704923718512
+      },
+      {
+        "date": "2026-04-04",
+        "ts": 1775260800000,
+        "btc": 66822.55230312092,
+        "comparison": 4644.085031722674
+      },
+      {
+        "date": "2026-04-05",
+        "ts": 1775347200000,
+        "btc": 67077.1500532805,
+        "comparison": 4644.885108192134
+      },
+      {
+        "date": "2026-04-06",
+        "ts": 1775433600000,
+        "btc": 69002.03847938096,
+        "comparison": 4594.021777000427
+      },
+      {
+        "date": "2026-04-07",
+        "ts": 1775520000000,
+        "btc": 68672.24657456316,
+        "comparison": 4624.126237532052
+      },
+      {
+        "date": "2026-04-08",
+        "ts": 1775606400000,
+        "btc": 71661.76372427847,
+        "comparison": 4797.184573941994
+      },
+      {
+        "date": "2026-04-09",
+        "ts": 1775692800000,
+        "btc": 70644.79416156793,
+        "comparison": 4689.771673068961
+      },
+      {
+        "date": "2026-04-10",
+        "ts": 1775779200000,
+        "btc": 71367.80291658688,
+        "comparison": 4735.16939265688
+      },
+      {
+        "date": "2026-04-11",
+        "ts": 1775865600000,
+        "btc": 72920.25491187068,
+        "comparison": 4722.103626796684
+      },
+      {
+        "date": "2026-04-12",
+        "ts": 1775952000000,
+        "btc": 73021.85968305328,
+        "comparison": 4724.533941719004
+      },
+      {
+        "date": "2026-04-13",
+        "ts": 1776038400000,
+        "btc": 70660.63961180339,
+        "comparison": 4645.53707934186
+      },
+      {
+        "date": "2026-04-14",
+        "ts": 1776124800000,
+        "btc": 74481.64142860245,
+        "comparison": 4728.632185619382
+      },
+      {
+        "date": "2026-04-15",
+        "ts": 1776211200000,
+        "btc": 74297.34759499803,
+        "comparison": 4810.230998448057
+      },
+      {
+        "date": "2026-04-16",
+        "ts": 1776297600000,
+        "btc": 74826.31308825641,
+        "comparison": 4808.65796433629
+      },
+      {
+        "date": "2026-04-17",
+        "ts": 1776384000000,
+        "btc": 75111.95674547968,
+        "comparison": 4770.010733436964
+      },
+      {
+        "date": "2026-04-18",
+        "ts": 1776470400000,
+        "btc": 77125.73357198425,
+        "comparison": 4815.026492869182
+      },
+      {
+        "date": "2026-04-19",
+        "ts": 1776556800000,
+        "btc": 75716.15083727139,
+        "comparison": 4777.602562446021
+      },
+      {
+        "date": "2026-04-20",
+        "ts": 1776643200000,
+        "btc": 73841.02173808741,
+        "comparison": 4735.211432172386
+      },
+      {
+        "date": "2026-04-21",
+        "ts": 1776729600000,
+        "btc": 75858.03546790924,
+        "comparison": 4802.148355859648
+      },
+      {
+        "date": "2026-04-22",
+        "ts": 1776816000000,
+        "btc": 76326.19170242558,
+        "comparison": 4726.472544796432
+      },
+      {
+        "date": "2026-04-23",
+        "ts": 1776902400000,
+        "btc": 78238.81675008619,
+        "comparison": 4710.908578085105
+      },
+      {
+        "date": "2026-04-24",
+        "ts": 1776988800000,
+        "btc": 78275.32582745969,
+        "comparison": 4686.761061930834
+      },
+      {
+        "date": "2026-04-25",
+        "ts": 1777075200000,
+        "btc": 77447.61757991764,
+        "comparison": 4691.4295974248325
+      },
+      {
+        "date": "2026-04-26",
+        "ts": 1777161600000,
+        "btc": 77634.51592192693,
+        "comparison": 4689.161103329003
+      },
+      {
+        "date": "2026-04-27",
+        "ts": 1777248000000,
+        "btc": 78637.74356150378,
+        "comparison": 4674.872281382019
+      },
+      {
+        "date": "2026-04-28",
+        "ts": 1777334400000,
+        "btc": 77366.78442217235,
+        "comparison": 4685.650924402525
+      },
+      {
+        "date": "2026-04-29",
+        "ts": 1777420800000,
+        "btc": 76331.86443470464,
+        "comparison": 4589.853411634823
+      },
+      {
+        "date": "2026-04-30",
+        "ts": 1777507200000,
+        "btc": 75784.95743624517,
+        "comparison": 4558.414666343783
+      },
+      {
+        "date": "2026-05-01",
+        "ts": 1777593600000,
+        "btc": 76296.7964844269,
+        "comparison": 4613.537748775129
+      },
+      {
+        "date": "2026-05-02",
+        "ts": 1777680000000,
+        "btc": 78207.76425489692,
+        "comparison": 4601.627695061399
+      },
+      {
+        "date": "2026-05-03",
+        "ts": 1777766400000,
+        "btc": 78677.4246327222,
+        "comparison": 4597.395419796645
+      },
+      {
+        "date": "2026-05-04",
+        "ts": 1777852800000,
+        "btc": 78512.09246456268,
+        "comparison": 4603.6922389116235
+      },
+      {
+        "date": "2026-05-05",
+        "ts": 1777939200000,
+        "btc": 79825.8751129579,
+        "comparison": 4517.313604675775
+      },
+      {
+        "date": "2026-05-06",
+        "ts": 1778025600000,
+        "btc": 80913.9613749304,
+        "comparison": 4584.598884855265
+      },
+      {
+        "date": "2026-05-07",
+        "ts": 1778112000000,
+        "btc": 81436.85936825167,
+        "comparison": 4685.466121499453
+      },
+      {
+        "date": "2026-05-08",
+        "ts": 1778198400000,
+        "btc": 80024.90767231231,
+        "comparison": 4695.435849899931
+      },
+      {
+        "date": "2026-05-09",
+        "ts": 1778284800000,
+        "btc": 80197.2669977041,
+        "comparison": 4700.457611085019
+      },
+      {
+        "date": "2026-05-10",
+        "ts": 1778371200000,
+        "btc": 80677.64981723971,
+        "comparison": 4707.760198859885
+      },
+      {
+        "date": "2026-05-11",
+        "ts": 1778457600000,
+        "btc": 82018.3711243874,
+        "comparison": 4687.192466520309
+      },
+      {
+        "date": "2026-05-12",
+        "ts": 1778544000000,
+        "btc": 81627.56604995472,
+        "comparison": 4750.017552679799
+      },
+      {
+        "date": "2026-05-13",
+        "ts": 1778630400000,
+        "btc": 80482.14377829393,
+        "comparison": 4710.353679606091
+      },
+      {
+        "date": "2026-05-14",
+        "ts": 1778716800000,
+        "btc": 79288.8420865621,
+        "comparison": 4687.313776019288
+      },
+      {
+        "date": "2026-05-15",
+        "ts": 1778803200000,
+        "btc": 81059.11595417073,
+        "comparison": 4648.9864586014155
+      },
+      {
+        "date": "2026-05-16",
+        "ts": 1778889600000,
+        "btc": 79068.6684041429,
+        "comparison": 4539.507307897308
+      },
+      {
+        "date": "2026-05-17",
+        "ts": 1778976000000,
+        "btc": 78132.7535126921,
+        "comparison": 4536.618987959709
+      },
+      {
+        "date": "2026-05-18",
+        "ts": 1779062400000,
+        "btc": 77428.51866052429,
+        "comparison": 4531.884586005821
+      },
+      {
+        "date": "2026-05-19",
+        "ts": 1779148800000,
+        "btc": 76959.40571528324,
+        "comparison": 4571.986649288526
+      },
+      {
+        "date": "2026-05-20",
+        "ts": 1779235200000,
+        "btc": 76758.73155866472,
+        "comparison": 4488.463296355019
+      },
+      {
+        "date": "2026-05-21",
+        "ts": 1779321600000,
+        "btc": 77470.39614899461,
+        "comparison": 4535.102118477357
+      },
+      {
+        "date": "2026-05-22",
+        "ts": 1779408000000,
+        "btc": 77550.38308320483,
+        "comparison": 4523.719318900893
+      },
+      {
+        "date": "2026-05-23",
+        "ts": 1779494400000,
+        "btc": 75478.38285862996,
+        "comparison": 4491.882110192652
+      },
+      {
+        "date": "2026-05-24",
+        "ts": 1779580800000,
+        "btc": 76684.37097078416,
+        "comparison": 4509.041515869854
+      },
+      {
+        "date": "2026-05-25",
+        "ts": 1779667200000,
+        "btc": 77016.06581859986,
+        "comparison": 4549.463679806027
+      },
+      {
+        "date": "2026-05-26",
+        "ts": 1779753600000,
+        "btc": 77258.39912360838,
+        "comparison": 4538.241948793882
+      },
+      {
+        "date": "2026-05-27",
+        "ts": 1779840000000,
+        "btc": 75851.10409561773,
+        "comparison": 4507.703082981792
+      },
+      {
+        "date": "2026-05-28",
+        "ts": 1779926400000,
+        "btc": 74339.61694703094,
+        "comparison": 4434.533118207679
+      },
+      {
+        "date": "2026-05-29",
+        "ts": 1780012800000,
+        "btc": 73651.64255141478,
+        "comparison": 4474.501522981117
+      },
+      {
+        "date": "2026-05-30",
+        "ts": 1780099200000,
+        "btc": 73500.91507629369,
+        "comparison": 4517.588668062791
+      },
+      {
+        "date": "2026-05-31",
+        "ts": 1780185600000,
+        "btc": 73820.30385315015,
+        "comparison": 4503.821532218
+      },
+      {
+        "date": "2026-06-01",
+        "ts": 1780272000000,
+        "btc": 73598.6681238158,
+        "comparison": 4518.052606048237
+      },
+      {
+        "date": "2026-06-02",
+        "ts": 1780358400000,
+        "btc": 71320.29306465392,
+        "comparison": 4463.570257431178
+      },
+      {
+        "date": "2026-06-03",
+        "ts": 1780444800000,
+        "btc": 66727.26415497709,
+        "comparison": 4446.467459663225
+      },
+      {
+        "date": "2026-06-04",
+        "ts": 1780531200000,
+        "btc": 64046.61064609333,
+        "comparison": 4429.247769928918
+      },
+      {
+        "date": "2026-06-05",
+        "ts": 1780617600000,
+        "btc": 63810.65923840883,
+        "comparison": 4435.338810088855
+      },
+      {
+        "date": "2026-06-06",
+        "ts": 1780704000000,
+        "btc": 60960.10140035313,
+        "comparison": 4299.716814133366
+      },
+      {
+        "date": "2026-06-07",
+        "ts": 1780790400000,
+        "btc": 60855.25426528331,
+        "comparison": 4289.034285041947
+      },
+      {
+        "date": "2026-06-08",
+        "ts": 1780876800000,
+        "btc": 63273.537430635515,
+        "comparison": 4321.2611326926835
+      },
+      {
+        "date": "2026-06-09",
+        "ts": 1780963200000,
+        "btc": 63069.147792658114,
+        "comparison": 4296.559744102051
+      },
+      {
+        "date": "2026-06-10",
+        "ts": 1781049600000,
+        "btc": 61669.76384194788,
+        "comparison": 4206.020028024484
+      },
+      {
+        "date": "2026-06-11",
+        "ts": 1781136000000,
+        "btc": 61480.144432833426,
+        "comparison": 4043.8828685349104
+      },
+      {
+        "date": "2026-06-12",
+        "ts": 1781222400000,
+        "btc": 63555.66181107698,
+        "comparison": 4199.658001762836
+      },
+      {
+        "date": "2026-06-13",
+        "ts": 1781308800000,
+        "btc": 63532.27782485316,
+        "comparison": 4201.08352516726
+      },
+      {
+        "date": "2026-06-14",
+        "ts": 1781395200000,
+        "btc": 64408.80975375945,
+        "comparison": 4211.6577634169535
+      },
+      {
+        "date": "2026-06-15",
+        "ts": 1781481600000,
+        "btc": 65709.31094599118,
+        "comparison": 4278.325387358004
+      },
+      {
+        "date": "2026-06-16",
+        "ts": 1781568000000,
+        "btc": 66292.50117921834,
+        "comparison": 4296.45385708064
+      },
+      {
+        "date": "2026-06-17",
+        "ts": 1781654400000,
+        "btc": 65619.28080038042,
+        "comparison": 4308.035983422281
+      },
+      {
+        "date": "2026-06-18",
+        "ts": 1781740800000,
+        "btc": 64444.545329668814,
+        "comparison": 4260.096078871699
+      },
+      {
+        "date": "2026-06-19",
+        "ts": 1781827200000,
+        "btc": 62897.23855524796,
+        "comparison": 4173.480631224026
+      },
+      {
+        "date": "2026-06-20",
+        "ts": 1781913600000,
+        "btc": 63489.81094752525,
+        "comparison": 4146.834561705839
+      },
+      {
+        "date": "2026-06-21",
+        "ts": 1782000000000,
+        "btc": 64253.39869532133,
+        "comparison": 4140.925643093787
+      },
+      {
+        "date": "2026-06-22",
+        "ts": 1782086400000,
+        "btc": 63255.48525259375,
+        "comparison": 4127.504307250075
+      },
+      {
+        "date": "2026-06-23",
+        "ts": 1782172800000,
+        "btc": 63937.28526422244,
+        "comparison": 4171.298212503771
+      },
+      {
+        "date": "2026-06-24",
+        "ts": 1782259200000,
+        "btc": 62662.29201921944,
+        "comparison": 4086.638244783154
+      },
+      {
+        "date": "2026-06-25",
+        "ts": 1782345600000,
+        "btc": 60989.57352152134,
+        "comparison": 4006.2881252913317
+      },
+      {
+        "date": "2026-06-26",
+        "ts": 1782432000000,
+        "btc": 59726.73653480851,
+        "comparison": 4004.4179521663555
+      },
+      {
+        "date": "2026-06-27",
+        "ts": 1782518400000,
+        "btc": 60022.32566638378,
+        "comparison": 4070.9998950270915
+      },
+      {
+        "date": "2026-06-28",
+        "ts": 1782604800000,
+        "btc": 59953.443344011124,
+        "comparison": 4065.5651347579005
+      },
+      {
+        "date": "2026-06-29",
+        "ts": 1782691200000,
+        "btc": 59494.606386317784,
+        "comparison": 4050.487135075431
+      },
+      {
+        "date": "2026-06-30",
+        "ts": 1782777600000,
+        "btc": 60152.35872063589,
+        "comparison": 4006.356993026605
+      },
+      {
+        "date": "2026-07-01",
+        "ts": 1782864000000,
+        "btc": 58566.091991843154,
+        "comparison": 3996.623397556353
+      },
+      {
+        "date": "2026-07-02",
+        "ts": 1782950400000,
+        "btc": 59967.685041718134,
+        "comparison": 4027.21934387197
+      },
+      {
+        "date": "2026-07-03",
+        "ts": 1783036800000,
+        "btc": 61490.21448471664,
+        "comparison": 4115.707781206342
+      },
+      {
+        "date": "2026-07-04",
+        "ts": 1783123200000,
+        "btc": 62553.61289177051,
+        "comparison": 4160.439504383813
+      },
+      {
+        "date": "2026-07-05",
+        "ts": 1783209600000,
+        "btc": 63088.406753852214,
+        "comparison": 4161.716945590367
+      },
+      {
+        "date": "2026-07-06",
+        "ts": 1783296000000,
+        "btc": 63586.102141021256,
+        "comparison": 4170.133047560278
+      },
+      {
+        "date": "2026-07-07",
+        "ts": 1783382400000,
+        "btc": 64001.23542391328,
+        "comparison": 4146.750505164463
+      },
+      {
+        "date": "2026-07-08",
+        "ts": 1783468800000,
+        "btc": 63335.30929080668,
+        "comparison": 4090.329425486683
+      },
+      {
+        "date": "2026-07-09",
+        "ts": 1783555200000,
+        "btc": 62247.1304822092,
+        "comparison": 4066.5645086731115
+      },
+      {
+        "date": "2026-07-10",
+        "ts": 1783641600000,
+        "btc": 63192.8789720319,
+        "comparison": 4108.900431635841
+      },
+      {
+        "date": "2026-07-11",
+        "ts": 1783728000000,
+        "btc": 64110.97482196822,
+        "comparison": 4106.977288428922
+      },
+      {
+        "date": "2026-07-12",
+        "ts": 1783814400000,
+        "btc": 63791.35305345348,
+        "comparison": 4097.205287872001
+      },
+      {
+        "date": "2026-07-13",
+        "ts": 1783900800000,
+        "btc": 63746.65595793199,
+        "comparison": 4075.650974246006
+      },
+      {
+        "date": "2026-07-14",
+        "ts": 1783987200000,
+        "btc": 62278.96301585648,
+        "comparison": 3995.7621517045104
+      },
+      {
+        "date": "2026-07-15",
+        "ts": 1784073600000,
+        "btc": 64983.51907427709,
+        "comparison": 4047.120899391055
+      },
+      {
+        "date": "2026-07-16",
+        "ts": 1784160000000,
+        "btc": 64717.168891130066,
+        "comparison": 4050.4507329793
+      },
+      {
+        "date": "2026-07-17",
+        "ts": 1784246400000,
+        "btc": 63792.28742743447,
+        "comparison": 3985.546271186289
+      },
+      {
+        "date": "2026-07-18",
+        "ts": 1784332800000,
+        "btc": 63904.954014943025,
+        "comparison": 4005.354380415488
+      },
+      {
+        "date": "2026-07-19",
+        "ts": 1784419200000,
+        "btc": 64795.70382303786,
+        "comparison": 4010.0009303841803
+      },
+      {
+        "date": "2026-07-20",
+        "ts": 1784505600000,
+        "btc": 64670.40117470696,
+        "comparison": 3992.70878086259
+      },
+      {
+        "date": "2026-07-21",
+        "ts": 1784592000000,
+        "btc": 65184.92144270268,
+        "comparison": 4007.6299054548017
+      },
+      {
+        "date": "2026-07-22",
+        "ts": 1784678400000,
+        "btc": 66520.98164575922,
+        "comparison": 4073.569979029569
+      },
+      {
+        "date": "2026-07-23",
+        "ts": 1784764800000,
+        "btc": 66077.05646514206,
+        "comparison": 4124.826598118523
+      },
+      {
+        "date": "2026-07-24",
+        "ts": 1784851200000,
+        "btc": 65052.47667067735,
+        "comparison": 4045.0835417716276
+      },
+      {
+        "date": "2026-07-25",
+        "ts": 1784937600000,
+        "btc": 64092.64739795451,
+        "comparison": 4051.1680720866725
+      },
+      {
+        "date": "2026-07-26",
+        "ts": 1785024000000,
+        "btc": 64318.24520120312,
+        "comparison": 4052.7045888903076
+      },
+      {
+        "date": "2026-07-27",
+        "ts": 1785110400000,
+        "btc": 65343.824510845894,
+        "comparison": 4082.980439055529
+      },
+      {
+        "date": "2026-07-28",
+        "ts": 1785196800000,
+        "btc": 63701.35288114535,
+        "comparison": 4060.07916129805
+      },
+      {
+        "date": "2026-07-29",
+        "ts": 1785283200000,
+        "btc": 63881.94327943538,
+        "comparison": 4015.0087033123627
+      },
+      {
+        "date": "2026-07-30",
+        "ts": 1785369600000,
+        "btc": 63916.59794922001,
+        "comparison": 4071.2123911137505
+      },
+      {
+        "date": "2026-07-31",
+        "ts": 1785456000000,
+        "btc": 64743.33714554026,
+        "comparison": 4093.541839242975
+      },
+      {
+        "date": "2026-08-01",
+        "ts": 1785542400000,
+        "btc": 62820.08613814001,
+        "comparison": 4038.107891411404
+      },
+      {
+        "date": "2026-08-02",
+        "ts": 1785628800000,
+        "btc": 62772.57726413174,
+        "comparison": 4040.6789778707143
+      },
+      {
+        "date": "2026-08-03",
+        "ts": 1785715200000,
+        "btc": 63504.41559755184,
+        "comparison": 4058.063385172026
+      },
+      {
+        "date": "2026-08-04",
+        "ts": 1785801600000,
+        "btc": 63465.19968911304,
+        "comparison": 4040.271654009323
+      },
+      {
+        "date": "2026-08-05",
+        "ts": 1785888000000,
+        "btc": 64062.173729779366,
+        "comparison": 4058.0653336561163
+      },
+      {
+        "date": "2026-08-06",
+        "ts": 1785974400000,
+        "btc": 64608.705388357404,
+        "comparison": 4255.001642462049
+      },
+      {
+        "date": "2026-08-07",
+        "ts": 1786060800000,
+        "btc": 64262.74830979173,
+        "comparison": 4232.950142102185
+      },
+      {
+        "date": "2026-08-08",
+        "ts": 1786147200000,
+        "btc": 64879.7560855934,
+        "comparison": 4329.414550701748
+      },
+      {
+        "date": "2026-08-09",
+        "ts": 1786233600000,
+        "btc": 64917.23929330571,
+        "comparison": 4329.695950622492
+      },
+      {
+        "date": "2026-08-10",
+        "ts": 1786320000000,
+        "btc": 64856.097825382276,
+        "comparison": 4313.876028573939
+      },
+      {
+        "date": "2026-08-11",
+        "ts": 1786406400000,
+        "btc": 63915.71213556821,
+        "comparison": 4374.742299855741
+      },
+      {
+        "date": "2026-08-12",
+        "ts": 1786492800000,
+        "btc": 63537.55988964766,
+        "comparison": 4349.584052547217
+      },
+      {
+        "date": "2026-08-13",
+        "ts": 1786579200000,
+        "btc": 63408.625697113624,
+        "comparison": 4388.784497071296
+      },
+      {
+        "date": "2026-08-14",
+        "ts": 1786665600000,
+        "btc": 63429.17906286841,
+        "comparison": 4336.53693798182
+      },
+      {
+        "date": "2026-08-15",
+        "ts": 1786752000000,
+        "btc": 62984.28959582886,
+        "comparison": 4360.614330146336
+      },
+      {
+        "date": "2026-08-16",
+        "ts": 1786838400000,
+        "btc": 63031.04825975698,
+        "comparison": 4357.479882044981
+      },
+      {
+        "date": "2026-08-17",
+        "ts": 1786924800000,
+        "btc": 62843.70368466329,
+        "comparison": 4349.444620535209
+      },
+      {
+        "date": "2026-08-18",
+        "ts": 1787011200000,
+        "btc": 64491.345282946255,
+        "comparison": 4402.005910955786
+      },
+      {
+        "date": "2026-08-19",
+        "ts": 1787097600000,
+        "btc": 64686.25782561655,
+        "comparison": 4323.814436247514
+      },
+      {
+        "date": "2026-08-20",
+        "ts": 1787184000000,
+        "btc": 69291.0104297816,
+        "comparison": 4485.665523414722
+      },
+      {
+        "date": "2026-08-21",
+        "ts": 1787270400000,
+        "btc": 73020.94563440893,
+        "comparison": 4503.707244656238
+      },
+      {
+        "date": "2026-08-22",
+        "ts": 1787356800000,
+        "btc": 78317.77716345884,
+        "comparison": 4586.126136114755
+      },
+      {
+        "date": "2026-08-23",
+        "ts": 1787443200000,
+        "btc": 77081.02299000922,
+        "comparison": 4580.20907347219
+      },
+      {
+        "date": "2026-08-24",
+        "ts": 1787529600000,
+        "btc": 77712.3200924702,
+        "comparison": 4604.29100414638
+      },
+      {
+        "date": "2026-08-25",
+        "ts": 1787616000000,
+        "btc": 78973.88693602335,
+        "comparison": 4662.510537821146
+      },
+      {
+        "date": "2026-08-26",
+        "ts": 1787702400000,
+        "btc": 78511.2331116067,
+        "comparison": 4638.718079265434
+      },
+      {
+        "date": "2026-08-27",
+        "ts": 1787788800000,
+        "btc": 79018.03405750773,
+        "comparison": 4610.158511909315
+      },
+      {
+        "date": "2026-08-28",
+        "ts": 1787875200000,
+        "btc": 80268.37474707834,
+        "comparison": 4585.227431812942
+      },
+      {
+        "date": "2026-08-29",
+        "ts": 1787961600000,
+        "btc": 77820.76428719184,
+        "comparison": 4458.882274461991
+      },
+      {
+        "date": "2026-08-30",
+        "ts": 1788048000000,
+        "btc": 78225.13950818499,
+        "comparison": 4457.7370538183495
+      },
+      {
+        "date": "2026-08-31",
+        "ts": 1788134400000,
+        "btc": 77658.23133225394,
+        "comparison": 4443.787495995633
+      },
+      {
+        "date": "2026-09-01",
+        "ts": 1788220800000,
+        "btc": 78552.77932895812,
+        "comparison": 4442.416882967172
+      },
+      {
+        "date": "2026-09-02",
+        "ts": 1788307200000,
+        "btc": 77416.44110979848,
+        "comparison": 4328.760975693109
+      },
+      {
+        "date": "2026-09-03",
+        "ts": 1788393600000,
+        "btc": 77297.13347191992,
+        "comparison": 4383.537205877035
+      },
+      {
+        "date": "2026-09-04",
+        "ts": 1788480000000,
+        "btc": 81264.70153038795,
+        "comparison": 4471.8292141679
+      },
+      {
+        "date": "2026-09-05",
+        "ts": 1788566400000,
+        "btc": 79671.25767420157,
+        "comparison": 4427.540663476712
+      },
+      {
+        "date": "2026-09-06",
+        "ts": 1788652800000,
+        "btc": 79821.69873179746,
+        "comparison": 4426.516277980868
+      },
+      {
+        "date": "2026-09-07",
+        "ts": 1788739200000,
+        "btc": 80329.3478460037,
+        "comparison": 4417.896684728273
+      },
+      {
+        "date": "2026-09-08",
+        "ts": 1788825600000,
+        "btc": 79093.4641898418,
+        "comparison": 4419.933018335651
+      },
+      {
+        "date": "2026-09-09",
+        "ts": 1788912000000,
+        "btc": 78450.75303870205,
+        "comparison": 4350.020637590218
+      },
+      {
+        "date": "2026-09-10",
+        "ts": 1788998400000,
+        "btc": 78283.06047169256,
+        "comparison": 4391.309655877491
+      },
+      {
+        "date": "2026-09-11",
+        "ts": 1789084800000,
+        "btc": 76554.98664973286,
+        "comparison": 4314.5584711704705
+      },
+      {
+        "date": "2026-09-12",
+        "ts": 1789171200000,
+        "btc": 77203.53444805603,
+        "comparison": 4350.340069643005
+      },
+      {
+        "date": "2026-09-13",
+        "ts": 1789257600000,
+        "btc": 77261.62722069985,
+        "comparison": 4349.991330786685
+      },
+      {
+        "date": "2026-09-14",
+        "ts": 1789344000000,
+        "btc": 76819.04496746542,
+        "comparison": 4331.690979714924
+      },
+      {
+        "date": "2026-09-15",
+        "ts": 1789430400000,
+        "btc": 78173.35158344489,
+        "comparison": 4289.718494392626
+      },
+      {
+        "date": "2026-09-16",
+        "ts": 1789516800000,
+        "btc": 75590.24471973324,
+        "comparison": 4280.025009589792
+      },
+      {
+        "date": "2026-09-17",
+        "ts": 1789603200000,
+        "btc": 76146.81236783884,
+        "comparison": 4273.477062736937
+      },
+      {
+        "date": "2026-09-18",
+        "ts": 1789689600000,
+        "btc": 76371.3617203135,
+        "comparison": 4344.087750147418
+      },
+      {
+        "date": "2026-09-19",
+        "ts": 1789776000000,
+        "btc": 80873.58287659245,
+        "comparison": 4375.379500345792
+      },
+      {
+        "date": "2026-09-20",
+        "ts": 1789862400000,
+        "btc": 81236.41383660372,
+        "comparison": 4374.427513156158
+      },
+      {
+        "date": "2026-09-21",
+        "ts": 1789948800000,
+        "btc": 81169.03511950027,
+        "comparison": 4371.995001028179
+      },
+      {
+        "date": "2026-09-22",
+        "ts": 1790035200000,
+        "btc": 86596.74004249526,
+        "comparison": 4367.908781694114
+      },
+      {
+        "date": "2026-09-23",
+        "ts": 1790121600000,
+        "btc": 86183.29442787907,
+        "comparison": 4360.462788894133
+      },
+      {
+        "date": "2026-09-24",
+        "ts": 1790208000000,
+        "btc": 84382.39990356649,
+        "comparison": 4289.690933836673
+      },
+      {
+        "date": "2026-09-25",
+        "ts": 1790294400000,
+        "btc": 84377.96508359577,
+        "comparison": 4260.890345855225
+      },
+      {
+        "date": "2026-09-26",
+        "ts": 1790380800000,
+        "btc": 84075.71659039952,
+        "comparison": 4284.630363248624
+      },
+      {
+        "date": "2026-09-27",
+        "ts": 1790467200000,
+        "btc": 84416.7149816521,
+        "comparison": 4279.460582214151
+      },
+      {
+        "date": "2026-09-28",
+        "ts": 1790553600000,
+        "btc": 84448.75015162026,
+        "comparison": 4260.393885281655
+      },
+      {
+        "date": "2026-09-29",
+        "ts": 1790640000000,
+        "btc": 83479.2543356063,
+        "comparison": 4131.336782215656
+      },
+      {
+        "date": "2026-09-30",
+        "ts": 1790726400000,
+        "btc": 83640.10160067653,
+        "comparison": 4183.781737407467
+      },
+      {
+        "date": "2026-10-01",
+        "ts": 1790812800000,
+        "btc": 83576.13460018387,
+        "comparison": 4156.6781850234765
+      },
+      {
+        "date": "2026-10-02",
+        "ts": 1790899200000,
+        "btc": 84841.66634358242,
+        "comparison": 4182.303240510127
+      },
+      {
+        "date": "2026-10-03",
+        "ts": 1790985600000,
+        "btc": 84506.46895963937,
+        "comparison": 4142.141495832628
+      },
+      {
+        "date": "2026-10-04",
+        "ts": 1791072000000,
+        "btc": 84742.78638478836,
+        "comparison": 4141.223236178021
+      },
+      {
+        "date": "2026-10-05",
+        "ts": 1791158400000,
+        "btc": 86489.73482686514,
+        "comparison": 4144.557099834084
+      },
+      {
+        "date": "2026-10-06",
+        "ts": 1791244800000,
+        "btc": 85770.87224573967,
+        "comparison": 4136.043211322594
+      },
+      {
+        "date": "2026-10-07",
+        "ts": 1791331200000,
+        "btc": 85540.08713738805,
+        "comparison": 4165.833505367676
+      },
+      {
+        "date": "2026-10-08",
+        "ts": 1791417600000,
+        "btc": 83282.04538340426,
+        "comparison": 4109.621569728661
+      },
+      {
+        "date": "2026-10-09",
+        "ts": 1791504000000,
+        "btc": 81685.88692243936,
+        "comparison": 4137.758854161059
+      },
+      {
+        "date": "2026-10-10",
+        "ts": 1791590400000,
+        "btc": 82564.29409505568,
+        "comparison": 4182.440412043629
+      },
+      {
+        "date": "2026-10-11",
+        "ts": 1791676800000,
+        "btc": 82917.90341169997,
+        "comparison": 4180.135360640632
+      },
+      {
+        "date": "2026-10-12",
+        "ts": 1791763200000,
+        "btc": 83690.86923174463,
+        "comparison": 4184.191704904152
+      },
+      {
+        "date": "2026-10-13",
+        "ts": 1791849600000,
+        "btc": 81794.84881711744,
+        "comparison": 4165.961055716592
+      },
+      {
+        "date": "2026-10-14",
+        "ts": 1791936000000,
+        "btc": 83115.10159603784,
+        "comparison": 4154.093763377457
+      },
+      {
+        "date": "2026-10-15",
+        "ts": 1792022400000,
+        "btc": 81603.65464601685,
+        "comparison": 4108.881290867135
+      }
+    ],
+    "btc_sox": [
+      {
+        "date": "2025-10-15",
+        "ts": 1760558400000,
+        "btc": 111318.21,
+        "comparison": 6767.06005859375
+      },
+      {
+        "date": "2025-10-16",
+        "ts": 1760644800000,
+        "btc": 108246.33,
+        "comparison": 6800.02001953125
+      },
+      {
+        "date": "2025-10-17",
+        "ts": 1760731200000,
+        "btc": 106484.0,
+        "comparison": 6777.97998046875
+      },
+      {
+        "date": "2025-10-20",
+        "ts": 1760990400000,
+        "btc": 110840.0,
+        "comparison": 6885.02978515625
+      },
+      {
+        "date": "2025-10-21",
+        "ts": 1761076800000,
+        "btc": 111841.0,
+        "comparison": 6839.27001953125
+      },
+      {
+        "date": "2025-10-22",
+        "ts": 1761163200000,
+        "btc": 107846.83,
+        "comparison": 6677.56982421875
+      },
+      {
+        "date": "2025-10-23",
+        "ts": 1761249600000,
+        "btc": 110247.6,
+        "comparison": 6847.39013671875
+      },
+      {
+        "date": "2025-10-24",
+        "ts": 1761336000000,
+        "btc": 110624.14,
+        "comparison": 6976.93994140625
+      },
+      {
+        "date": "2025-10-27",
+        "ts": 1761595200000,
+        "btc": 114950.0,
+        "comparison": 7167.97998046875
+      },
+      {
+        "date": "2025-10-28",
+        "ts": 1761681600000,
+        "btc": 113687.51,
+        "comparison": 7194.7099609375
+      },
+      {
+        "date": "2025-10-29",
+        "ts": 1761768000000,
+        "btc": 110644.31,
+        "comparison": 7327.93017578125
+      },
+      {
+        "date": "2025-10-30",
+        "ts": 1761854400000,
+        "btc": 106491.99,
+        "comparison": 7216.0
+      },
+      {
+        "date": "2025-10-31",
+        "ts": 1761940800000,
+        "btc": 109756.29,
+        "comparison": 7228.66015625
+      },
+      {
+        "date": "2025-11-03",
+        "ts": 1762203600000,
+        "btc": 106632.31,
+        "comparison": 7270.97021484375
+      },
+      {
+        "date": "2025-11-04",
+        "ts": 1762290000000,
+        "btc": 100680.87,
+        "comparison": 6979.56982421875
+      },
+      {
+        "date": "2025-11-05",
+        "ts": 1762376400000,
+        "btc": 103841.98,
+        "comparison": 7190.27001953125
+      },
+      {
+        "date": "2025-11-06",
+        "ts": 1762462800000,
+        "btc": 100860.0,
+        "comparison": 7018.39013671875
+      },
+      {
+        "date": "2025-11-07",
+        "ts": 1762549200000,
+        "btc": 103749.09,
+        "comparison": 6947.35986328125
+      },
+      {
+        "date": "2025-11-10",
+        "ts": 1762808400000,
+        "btc": 105985.94,
+        "comparison": 7156.9501953125
+      },
+      {
+        "date": "2025-11-11",
+        "ts": 1762894800000,
+        "btc": 102771.54,
+        "comparison": 6979.7001953125
+      },
+      {
+        "date": "2025-11-12",
+        "ts": 1762981200000,
+        "btc": 101519.99,
+        "comparison": 7082.1298828125
+      },
+      {
+        "date": "2025-11-13",
+        "ts": 1763067600000,
+        "btc": 98090.0,
+        "comparison": 6818.740234375
+      },
+      {
+        "date": "2025-11-14",
+        "ts": 1763154000000,
+        "btc": 94287.01,
+        "comparison": 6811.2001953125
+      },
+      {
+        "date": "2025-11-17",
+        "ts": 1763413200000,
+        "btc": 91787.28,
+        "comparison": 6705.740234375
+      },
+      {
+        "date": "2025-11-18",
+        "ts": 1763499600000,
+        "btc": 92748.97,
+        "comparison": 6551.02978515625
+      },
+      {
+        "date": "2025-11-19",
+        "ts": 1763586000000,
+        "btc": 89413.61,
+        "comparison": 6670.02978515625
+      },
+      {
+        "date": "2025-11-20",
+        "ts": 1763672400000,
+        "btc": 86333.83,
+        "comparison": 6352.06982421875
+      },
+      {
+        "date": "2025-11-21",
+        "ts": 1763758800000,
+        "btc": 84487.2,
+        "comparison": 6406.43017578125
+      },
+      {
+        "date": "2025-11-24",
+        "ts": 1764018000000,
+        "btc": 89072.01,
+        "comparison": 6703.2001953125
+      },
+      {
+        "date": "2025-11-25",
+        "ts": 1764104400000,
+        "btc": 87343.65,
+        "comparison": 6714.18017578125
+      },
+      {
+        "date": "2025-11-26",
+        "ts": 1764190800000,
+        "btc": 89856.06,
+        "comparison": 6899.4599609375
+      },
+      {
+        "date": "2025-11-28",
+        "ts": 1764352800000,
+        "btc": 90673.19,
+        "comparison": 7025.14990234375
+      },
+      {
+        "date": "2025-12-01",
+        "ts": 1764622800000,
+        "btc": 85511.18,
+        "comparison": 7020.52978515625
+      },
+      {
+        "date": "2025-12-02",
+        "ts": 1764709200000,
+        "btc": 91070.79,
+        "comparison": 7149.47021484375
+      },
+      {
+        "date": "2025-12-03",
+        "ts": 1764795600000,
+        "btc": 92991.75,
+        "comparison": 7280.509765625
+      },
+      {
+        "date": "2025-12-04",
+        "ts": 1764882000000,
+        "btc": 92523.07,
+        "comparison": 7215.97021484375
+      },
+      {
+        "date": "2025-12-05",
+        "ts": 1764968400000,
+        "btc": 89321.7,
+        "comparison": 7294.83984375
+      },
+      {
+        "date": "2025-12-08",
+        "ts": 1765227600000,
+        "btc": 90813.85,
+        "comparison": 7375.22021484375
+      },
+      {
+        "date": "2025-12-09",
+        "ts": 1765314000000,
+        "btc": 93136.46,
+        "comparison": 7372.509765625
+      },
+      {
+        "date": "2025-12-10",
+        "ts": 1765400400000,
+        "btc": 92498.32,
+        "comparison": 7467.490234375
+      },
+      {
+        "date": "2025-12-11",
+        "ts": 1765486800000,
+        "btc": 91808.02,
+        "comparison": 7411.47998046875
+      },
+      {
+        "date": "2025-12-12",
+        "ts": 1765573200000,
+        "btc": 90220.0,
+        "comparison": 7033.56982421875
+      },
+      {
+        "date": "2025-12-15",
+        "ts": 1765832400000,
+        "btc": 85757.01,
+        "comparison": 6990.41015625
+      },
+      {
+        "date": "2025-12-16",
+        "ts": 1765918800000,
+        "btc": 87552.02,
+        "comparison": 6958.43994140625
+      },
+      {
+        "date": "2025-12-17",
+        "ts": 1766005200000,
+        "btc": 85857.38,
+        "comparison": 6695.31005859375
+      },
+      {
+        "date": "2025-12-18",
+        "ts": 1766091600000,
+        "btc": 84558.65,
+        "comparison": 6863.6298828125
+      },
+      {
+        "date": "2025-12-19",
+        "ts": 1766178000000,
+        "btc": 88021.73,
+        "comparison": 7067.8701171875
+      },
+      {
+        "date": "2025-12-22",
+        "ts": 1766437200000,
+        "btc": 88294.02,
+        "comparison": 7145.56982421875
+      },
+      {
+        "date": "2025-12-23",
+        "ts": 1766523600000,
+        "btc": 87613.32,
+        "comparison": 7184.5400390625
+      },
+      {
+        "date": "2025-12-24",
+        "ts": 1766599200000,
+        "btc": 87257.34,
+        "comparison": 7204.3701171875
+      },
+      {
+        "date": "2025-12-26",
+        "ts": 1766782800000,
+        "btc": 87507.92,
+        "comparison": 7207.64013671875
+      },
+      {
+        "date": "2025-12-29",
+        "ts": 1767042000000,
+        "btc": 87076.36,
+        "comparison": 7178.27001953125
+      },
+      {
+        "date": "2025-12-30",
+        "ts": 1767128400000,
+        "btc": 87836.94,
+        "comparison": 7169.10009765625
+      },
+      {
+        "date": "2025-12-31",
+        "ts": 1767214800000,
+        "btc": 87523.98,
+        "comparison": 7083.1298828125
+      },
+      {
+        "date": "2026-01-02",
+        "ts": 1767387600000,
+        "btc": 89693.1,
+        "comparison": 7367.47021484375
+      },
+      {
+        "date": "2026-01-05",
+        "ts": 1767646800000,
+        "btc": 94194.02,
+        "comparison": 7446.4501953125
+      },
+      {
+        "date": "2026-01-06",
+        "ts": 1767733200000,
+        "btc": 92447.52,
+        "comparison": 7650.93017578125
+      },
+      {
+        "date": "2026-01-07",
+        "ts": 1767819600000,
+        "btc": 90930.07,
+        "comparison": 7574.8701171875
+      },
+      {
+        "date": "2026-01-08",
+        "ts": 1767906000000,
+        "btc": 90847.09,
+        "comparison": 7436.10009765625
+      },
+      {
+        "date": "2026-01-09",
+        "ts": 1767992400000,
+        "btc": 90195.99,
+        "comparison": 7638.77978515625
+      },
+      {
+        "date": "2026-01-12",
+        "ts": 1768251600000,
+        "btc": 91409.51,
+        "comparison": 7674.83984375
+      },
+      {
+        "date": "2026-01-13",
+        "ts": 1768338000000,
+        "btc": 94411.91,
+        "comparison": 7747.990234375
+      },
+      {
+        "date": "2026-01-14",
+        "ts": 1768424400000,
+        "btc": 97676.01,
+        "comparison": 7701.47021484375
+      },
+      {
+        "date": "2026-01-15",
+        "ts": 1768510800000,
+        "btc": 95225.99,
+        "comparison": 7837.2998046875
+      },
+      {
+        "date": "2026-01-16",
+        "ts": 1768597200000,
+        "btc": 95536.0,
+        "comparison": 7927.41015625
+      },
+      {
+        "date": "2026-01-20",
+        "ts": 1768942800000,
+        "btc": 89592.06,
+        "comparison": 7794.18994140625
+      },
+      {
+        "date": "2026-01-21",
+        "ts": 1769029200000,
+        "btc": 90136.01,
+        "comparison": 8042.06982421875
+      },
+      {
+        "date": "2026-01-22",
+        "ts": 1769115600000,
+        "btc": 89312.0,
+        "comparison": 8055.169921875
+      },
+      {
+        "date": "2026-01-23",
+        "ts": 1769202000000,
+        "btc": 89395.04,
+        "comparison": 7957.93017578125
+      },
+      {
+        "date": "2026-01-26",
+        "ts": 1769461200000,
+        "btc": 87528.0,
+        "comparison": 7927.0400390625
+      },
+      {
+        "date": "2026-01-27",
+        "ts": 1769547600000,
+        "btc": 89297.98,
+        "comparison": 8117.18017578125
+      },
+      {
+        "date": "2026-01-28",
+        "ts": 1769634000000,
+        "btc": 88997.89,
+        "comparison": 8306.740234375
+      },
+      {
+        "date": "2026-01-29",
+        "ts": 1769720400000,
+        "btc": 84043.29,
+        "comparison": 8320.3896484375
+      },
+      {
+        "date": "2026-01-30",
+        "ts": 1769806800000,
+        "btc": 83738.0,
+        "comparison": 7998.47021484375
+      },
+      {
+        "date": "2026-02-02",
+        "ts": 1770066000000,
+        "btc": 77941.95,
+        "comparison": 8134.490234375
+      },
+      {
+        "date": "2026-02-03",
+        "ts": 1770152400000,
+        "btc": 76370.3,
+        "comparison": 7966.330078125
+      },
+      {
+        "date": "2026-02-04",
+        "ts": 1770238800000,
+        "btc": 73337.99,
+        "comparison": 7619.16015625
+      },
+      {
+        "date": "2026-02-05",
+        "ts": 1770325200000,
+        "btc": 63620.01,
+        "comparison": 7614.64013671875
+      },
+      {
+        "date": "2026-02-06",
+        "ts": 1770411600000,
+        "btc": 69963.99,
+        "comparison": 8048.6201171875
+      },
+      {
+        "date": "2026-02-09",
+        "ts": 1770670800000,
+        "btc": 70707.99,
+        "comparison": 8162.580078125
+      },
+      {
+        "date": "2026-02-10",
+        "ts": 1770757200000,
+        "btc": 68708.94,
+        "comparison": 8107.1298828125
+      },
+      {
+        "date": "2026-02-11",
+        "ts": 1770843600000,
+        "btc": 67517.41,
+        "comparison": 8291.8603515625
+      },
+      {
+        "date": "2026-02-12",
+        "ts": 1770930000000,
+        "btc": 65362.5,
+        "comparison": 8084.7001953125
+      },
+      {
+        "date": "2026-02-13",
+        "ts": 1771016400000,
+        "btc": 68729.57,
+        "comparison": 8137.85986328125
+      },
+      {
+        "date": "2026-02-17",
+        "ts": 1771362000000,
+        "btc": 67712.49,
+        "comparison": 8136.0498046875
+      },
+      {
+        "date": "2026-02-18",
+        "ts": 1771448400000,
+        "btc": 66221.41,
+        "comparison": 8214.349609375
+      },
+      {
+        "date": "2026-02-19",
+        "ts": 1771534800000,
+        "btc": 67125.14,
+        "comparison": 8173.2998046875
+      },
+      {
+        "date": "2026-02-20",
+        "ts": 1771621200000,
+        "btc": 67733.36,
+        "comparison": 8260.419921875
+      },
+      {
+        "date": "2026-02-23",
+        "ts": 1771880400000,
+        "btc": 64463.59,
+        "comparison": 8213.4599609375
+      },
+      {
+        "date": "2026-02-24",
+        "ts": 1771966800000,
+        "btc": 64474.97,
+        "comparison": 8332.33984375
+      },
+      {
+        "date": "2026-02-25",
+        "ts": 1772053200000,
+        "btc": 69177.78,
+        "comparison": 8467.4296875
+      },
+      {
+        "date": "2026-02-26",
+        "ts": 1772139600000,
+        "btc": 67434.87,
+        "comparison": 8197.259765625
+      },
+      {
+        "date": "2026-02-27",
+        "ts": 1772226000000,
+        "btc": 65590.47,
+        "comparison": 8098.3701171875
+      },
+      {
+        "date": "2026-03-02",
+        "ts": 1772485200000,
+        "btc": 69128.01,
+        "comparison": 8137.35986328125
+      },
+      {
+        "date": "2026-03-03",
+        "ts": 1772571600000,
+        "btc": 68264.6,
+        "comparison": 7764.8798828125
+      },
+      {
+        "date": "2026-03-04",
+        "ts": 1772658000000,
+        "btc": 73077.92,
+        "comparison": 7914.47998046875
+      },
+      {
+        "date": "2026-03-05",
+        "ts": 1772744400000,
+        "btc": 71233.32,
+        "comparison": 7821.759765625
+      },
+      {
+        "date": "2026-03-06",
+        "ts": 1772830800000,
+        "btc": 68102.86,
+        "comparison": 7514.740234375
+      },
+      {
+        "date": "2026-03-09",
+        "ts": 1773086400000,
+        "btc": 69012.12,
+        "comparison": 7810.39990234375
+      },
+      {
+        "date": "2026-03-10",
+        "ts": 1773172800000,
+        "btc": 70055.27,
+        "comparison": 7865.1201171875
+      },
+      {
+        "date": "2026-03-11",
+        "ts": 1773259200000,
+        "btc": 70670.11,
+        "comparison": 7914.56982421875
+      },
+      {
+        "date": "2026-03-12",
+        "ts": 1773345600000,
+        "btc": 70462.0,
+        "comparison": 7643.169921875
+      },
+      {
+        "date": "2026-03-13",
+        "ts": 1773432000000,
+        "btc": 71190.64,
+        "comparison": 7646.64013671875
+      },
+      {
+        "date": "2026-03-16",
+        "ts": 1773691200000,
+        "btc": 73969.53,
+        "comparison": 7796.240234375
+      },
+      {
+        "date": "2026-03-17",
+        "ts": 1773777600000,
+        "btc": 74542.28,
+        "comparison": 7836.830078125
+      },
+      {
+        "date": "2026-03-18",
+        "ts": 1773864000000,
+        "btc": 71065.73,
+        "comparison": 7795.1298828125
+      },
+      {
+        "date": "2026-03-19",
+        "ts": 1773950400000,
+        "btc": 70265.41,
+        "comparison": 7863.2998046875
+      },
+      {
+        "date": "2026-03-20",
+        "ts": 1774036800000,
+        "btc": 70169.39,
+        "comparison": 7670.60986328125
+      },
+      {
+        "date": "2026-03-23",
+        "ts": 1774296000000,
+        "btc": 70660.88,
+        "comparison": 7773.1298828125
+      },
+      {
+        "date": "2026-03-24",
+        "ts": 1774382400000,
+        "btc": 69334.0,
+        "comparison": 7872.7099609375
+      },
+      {
+        "date": "2026-03-25",
+        "ts": 1774468800000,
+        "btc": 70859.88,
+        "comparison": 7967.75
+      },
+      {
+        "date": "2026-03-26",
+        "ts": 1774555200000,
+        "btc": 68479.59,
+        "comparison": 7585.8701171875
+      },
+      {
+        "date": "2026-03-27",
+        "ts": 1774641600000,
+        "btc": 65975.02,
+        "comparison": 7457.669921875
+      },
+      {
+        "date": "2026-03-30",
+        "ts": 1774900800000,
+        "btc": 66488.0,
+        "comparison": 7142.330078125
+      },
+      {
+        "date": "2026-03-31",
+        "ts": 1774987200000,
+        "btc": 67772.92,
+        "comparison": 7588.2001953125
+      },
+      {
+        "date": "2026-04-01",
+        "ts": 1775073600000,
+        "btc": 68162.03,
+        "comparison": 7802.31005859375
+      },
+      {
+        "date": "2026-04-02",
+        "ts": 1775160000000,
+        "btc": 66976.06,
+        "comparison": 7833.39013671875
+      },
+      {
+        "date": "2026-04-06",
+        "ts": 1775505600000,
+        "btc": 69732.99,
+        "comparison": 7916.10986328125
+      },
+      {
+        "date": "2026-04-07",
+        "ts": 1775592000000,
+        "btc": 68993.62,
+        "comparison": 8003.8701171875
+      },
+      {
+        "date": "2026-04-08",
+        "ts": 1775678400000,
+        "btc": 71331.51,
+        "comparison": 8510.919921875
+      },
+      {
+        "date": "2026-04-09",
+        "ts": 1775764800000,
+        "btc": 72136.37,
+        "comparison": 8689.5302734375
+      },
+      {
+        "date": "2026-04-10",
+        "ts": 1775851200000,
+        "btc": 73286.01,
+        "comparison": 8889.830078125
+      },
+      {
+        "date": "2026-04-13",
+        "ts": 1776110400000,
+        "btc": 73373.2,
+        "comparison": 9039.51953125
+      },
+      {
+        "date": "2026-04-14",
+        "ts": 1776196800000,
+        "btc": 74299.83,
+        "comparison": 9224.1201171875
+      },
+      {
+        "date": "2026-04-15",
+        "ts": 1776283200000,
+        "btc": 75048.06,
+        "comparison": 9239.2900390625
+      },
+      {
+        "date": "2026-04-16",
+        "ts": 1776369600000,
+        "btc": 75378.0,
+        "comparison": 9329.349609375
+      },
+      {
+        "date": "2026-04-17",
+        "ts": 1776456000000,
+        "btc": 77453.07,
+        "comparison": 9555.8798828125
+      },
+      {
+        "date": "2026-04-20",
+        "ts": 1776715200000,
+        "btc": 76337.42,
+        "comparison": 9599.2099609375
+      },
+      {
+        "date": "2026-04-21",
+        "ts": 1776801600000,
+        "btc": 75030.96,
+        "comparison": 9647.2099609375
+      },
+      {
+        "date": "2026-04-22",
+        "ts": 1776888000000,
+        "btc": 78878.3,
+        "comparison": 9909.26953125
+      },
+      {
+        "date": "2026-04-23",
+        "ts": 1776974400000,
+        "btc": 77743.16,
+        "comparison": 10078.5703125
+      },
+      {
+        "date": "2026-04-24",
+        "ts": 1777060800000,
+        "btc": 77659.72,
+        "comparison": 10513.66015625
+      },
+      {
+        "date": "2026-04-27",
+        "ts": 1777320000000,
+        "btc": 76886.0,
+        "comparison": 10408.0400390625
+      },
+      {
+        "date": "2026-04-28",
+        "ts": 1777406400000,
+        "btc": 76308.13,
+        "comparison": 10035.580078125
+      },
+      {
+        "date": "2026-04-29",
+        "ts": 1777492800000,
+        "btc": 75526.0,
+        "comparison": 10271.2998046875
+      },
+      {
+        "date": "2026-04-30",
+        "ts": 1777579200000,
+        "btc": 76375.39,
+        "comparison": 10503.7001953125
+      },
+      {
+        "date": "2026-05-01",
+        "ts": 1777665600000,
+        "btc": 78374.85,
+        "comparison": 10595.33984375
+      },
+      {
+        "date": "2026-05-04",
+        "ts": 1777924800000,
+        "btc": 80052.2,
+        "comparison": 10534.66015625
+      },
+      {
+        "date": "2026-05-05",
+        "ts": 1778011200000,
+        "btc": 81611.95,
+        "comparison": 10980.580078125
+      },
+      {
+        "date": "2026-05-06",
+        "ts": 1778097600000,
+        "btc": 81457.38,
+        "comparison": 11472.75
+      },
+      {
+        "date": "2026-05-07",
+        "ts": 1778184000000,
+        "btc": 80142.85,
+        "comparison": 11160.990234375
+      },
+      {
+        "date": "2026-05-08",
+        "ts": 1778270400000,
+        "btc": 80149.99,
+        "comparison": 11775.5
+      },
+      {
+        "date": "2026-05-11",
+        "ts": 1778529600000,
+        "btc": 81956.0,
+        "comparison": 12081.0400390625
+      },
+      {
+        "date": "2026-05-12",
+        "ts": 1778616000000,
+        "btc": 80820.63,
+        "comparison": 11717.259765625
+      },
+      {
+        "date": "2026-05-13",
+        "ts": 1778702400000,
+        "btc": 79612.0,
+        "comparison": 12017.98046875
+      },
+      {
+        "date": "2026-05-14",
+        "ts": 1778788800000,
+        "btc": 81439.17,
+        "comparison": 12073.7802734375
+      },
+      {
+        "date": "2026-05-15",
+        "ts": 1778875200000,
+        "btc": 79089.14,
+        "comparison": 11588.4599609375
+      },
+      {
+        "date": "2026-05-18",
+        "ts": 1779134400000,
+        "btc": 76859.05,
+        "comparison": 11302.51953125
+      },
+      {
+        "date": "2026-05-19",
+        "ts": 1779220800000,
+        "btc": 76758.13,
+        "comparison": 11305.5
+      },
+      {
+        "date": "2026-05-20",
+        "ts": 1779307200000,
+        "btc": 77598.0,
+        "comparison": 11813.2900390625
+      },
+      {
+        "date": "2026-05-21",
+        "ts": 1779393600000,
+        "btc": 77613.34,
+        "comparison": 11964.080078125
+      },
+      {
+        "date": "2026-05-22",
+        "ts": 1779480000000,
+        "btc": 75769.44,
+        "comparison": 12202.5400390625
+      },
+      {
+        "date": "2026-05-26",
+        "ts": 1779825600000,
+        "btc": 75919.93,
+        "comparison": 12876.91015625
+      },
+      {
+        "date": "2026-05-27",
+        "ts": 1779912000000,
+        "btc": 74920.54,
+        "comparison": 12702.1904296875
+      },
+      {
+        "date": "2026-05-28",
+        "ts": 1779998400000,
+        "btc": 73318.39,
+        "comparison": 12829.1396484375
+      },
+      {
+        "date": "2026-05-29",
+        "ts": 1780084800000,
+        "btc": 73404.1,
+        "comparison": 12829.3798828125
+      },
+      {
+        "date": "2026-06-01",
+        "ts": 1780344000000,
+        "btc": 71488.84,
+        "comparison": 12965.650390625
+      },
+      {
+        "date": "2026-06-02",
+        "ts": 1780430400000,
+        "btc": 67213.59,
+        "comparison": 13726.26953125
+      },
+      {
+        "date": "2026-06-03",
+        "ts": 1780516800000,
+        "btc": 65356.01,
+        "comparison": 13916.9599609375
+      },
+      {
+        "date": "2026-06-04",
+        "ts": 1780603200000,
+        "btc": 63541.28,
+        "comparison": 13617.5
+      },
+      {
+        "date": "2026-06-05",
+        "ts": 1780689600000,
+        "btc": 60264.11,
+        "comparison": 12220.759765625
+      },
+      {
+        "date": "2026-06-08",
+        "ts": 1780948800000,
+        "btc": 63352.53,
+        "comparison": 12906.6904296875
+      },
+      {
+        "date": "2026-06-09",
+        "ts": 1781035200000,
+        "btc": 62044.83,
+        "comparison": 12657.8095703125
+      },
+      {
+        "date": "2026-06-10",
+        "ts": 1781121600000,
+        "btc": 61882.0,
+        "comparison": 12206.4599609375
+      },
+      {
+        "date": "2026-06-11",
+        "ts": 1781208000000,
+        "btc": 63548.0,
+        "comparison": 13171.4404296875
+      },
+      {
+        "date": "2026-06-12",
+        "ts": 1781294400000,
+        "btc": 63552.05,
+        "comparison": 13371.4697265625
+      },
+      {
+        "date": "2026-06-15",
+        "ts": 1781553600000,
+        "btc": 66577.42,
+        "comparison": 14099.6201171875
+      },
+      {
+        "date": "2026-06-16",
+        "ts": 1781640000000,
+        "btc": 65622.49,
+        "comparison": 13294.2197265625
+      },
+      {
+        "date": "2026-06-17",
+        "ts": 1781726400000,
+        "btc": 64241.65,
+        "comparison": 13477.0703125
+      },
+      {
+        "date": "2026-06-18",
+        "ts": 1781812800000,
+        "btc": 62872.8,
+        "comparison": 14341.7802734375
+      },
+      {
+        "date": "2026-06-22",
+        "ts": 1782158400000,
+        "btc": 64408.02,
+        "comparison": 14634.7197265625
+      },
+      {
+        "date": "2026-06-23",
+        "ts": 1782244800000,
+        "btc": 62310.83,
+        "comparison": 13482.509765625
+      },
+      {
+        "date": "2026-06-24",
+        "ts": 1782331200000,
+        "btc": 59858.28,
+        "comparison": 13458.2001953125
+      },
+      {
+        "date": "2026-06-25",
+        "ts": 1782417600000,
+        "btc": 59220.01,
+        "comparison": 13940.8701171875
+      },
+      {
+        "date": "2026-06-26",
+        "ts": 1782504000000,
+        "btc": 59655.5,
+        "comparison": 13203.5703125
+      },
+      {
+        "date": "2026-06-29",
+        "ts": 1782763200000,
+        "btc": 60332.0,
+        "comparison": 13709.66015625
+      },
+      {
+        "date": "2026-06-30",
+        "ts": 1782849600000,
+        "btc": 58716.53,
+        "comparison": 14246.9599609375
+      },
+      {
+        "date": "2026-07-01",
+        "ts": 1782936000000,
+        "btc": 59971.68,
+        "comparison": 13353.2802734375
+      },
+      {
+        "date": "2026-07-02",
+        "ts": 1783022400000,
+        "btc": 61424.29,
+        "comparison": 12626.2197265625
+      },
+      {
+        "date": "2026-07-06",
+        "ts": 1783368000000,
+        "btc": 63692.7,
+        "comparison": 12900.1396484375
+      },
+      {
+        "date": "2026-07-07",
+        "ts": 1783454400000,
+        "btc": 63776.81,
+        "comparison": 12300.51953125
+      },
+      {
+        "date": "2026-07-08",
+        "ts": 1783540800000,
+        "btc": 62223.7,
+        "comparison": 12574.9697265625
+      },
+      {
+        "date": "2026-07-09",
+        "ts": 1783627200000,
+        "btc": 63193.84,
+        "comparison": 12960.0
+      },
+      {
+        "date": "2026-07-10",
+        "ts": 1783713600000,
+        "btc": 63878.41,
+        "comparison": 12967.16015625
+      },
+      {
+        "date": "2026-07-13",
+        "ts": 1783972800000,
+        "btc": 62210.67,
+        "comparison": 12347.7802734375
+      },
+      {
+        "date": "2026-07-14",
+        "ts": 1784059200000,
+        "btc": 64542.41,
+        "comparison": 12661.9296875
+      },
+      {
+        "date": "2026-07-15",
+        "ts": 1784145600000,
+        "btc": 64941.86,
+        "comparison": 12398.8896484375
+      },
+      {
+        "date": "2026-07-16",
+        "ts": 1784232000000,
+        "btc": 64217.54,
+        "comparison": 11867.5
+      },
+      {
+        "date": "2026-07-17",
+        "ts": 1784318400000,
+        "btc": 64113.2,
+        "comparison": 11673.8896484375
+      },
+      {
+        "date": "2026-07-20",
+        "ts": 1784577600000,
+        "btc": 65099.39,
+        "comparison": 11743.849609375
+      },
+      {
+        "date": "2026-07-21",
+        "ts": 1784664000000,
+        "btc": 66424.0,
+        "comparison": 12356.16015625
+      },
+      {
+        "date": "2026-07-22",
+        "ts": 1784750400000,
+        "btc": 65894.99,
+        "comparison": 12410.669921875
+      },
+      {
+        "date": "2026-07-23",
+        "ts": 1784836800000,
+        "btc": 64778.48,
+        "comparison": 12343.83984375
+      },
+      {
+        "date": "2026-07-24",
+        "ts": 1784923200000,
+        "btc": 64163.76,
+        "comparison": 11818.8798828125
+      },
+      {
+        "date": "2026-07-27",
+        "ts": 1785182400000,
+        "btc": 64915.15,
+        "comparison": 11554.8798828125
+      },
+      {
+        "date": "2026-07-28",
+        "ts": 1785268800000,
+        "btc": 63825.78,
+        "comparison": 11035.6796875
+      },
+      {
+        "date": "2026-07-29",
+        "ts": 1785355200000,
+        "btc": 63515.6,
+        "comparison": 10447.490234375
+      },
+      {
+        "date": "2026-07-30",
+        "ts": 1785441600000,
+        "btc": 64741.54,
+        "comparison": 11302.990234375
+      },
+      {
+        "date": "2026-07-31",
+        "ts": 1785528000000,
+        "btc": 62903.64,
+        "comparison": 11311.080078125
+      },
+      {
+        "date": "2026-08-03",
+        "ts": 1785787200000,
+        "btc": 63813.48,
+        "comparison": 11430.349609375
+      },
+      {
+        "date": "2026-08-04",
+        "ts": 1785873600000,
+        "btc": 64197.18,
+        "comparison": 12179.259765625
+      },
+      {
+        "date": "2026-08-05",
+        "ts": 1785960000000,
+        "btc": 64794.63,
+        "comparison": 12008.8798828125
+      },
+      {
+        "date": "2026-08-06",
+        "ts": 1786046400000,
+        "btc": 64390.13,
+        "comparison": 12048.6904296875
+      },
+      {
+        "date": "2026-08-07",
+        "ts": 1786132800000,
+        "btc": 64914.79,
+        "comparison": 12356.7900390625
+      },
+      {
+        "date": "2026-08-10",
+        "ts": 1786392000000,
+        "btc": 63977.9,
+        "comparison": 11993.8603515625
+      },
+      {
+        "date": "2026-08-11",
+        "ts": 1786478400000,
+        "btc": 63468.75,
+        "comparison": 12098.4697265625
+      },
+      {
+        "date": "2026-08-12",
+        "ts": 1786564800000,
+        "btc": 63344.07,
+        "comparison": 12399.3798828125
+      },
+      {
+        "date": "2026-08-13",
+        "ts": 1786651200000,
+        "btc": 63339.67,
+        "comparison": 12456.0
+      },
+      {
+        "date": "2026-08-14",
+        "ts": 1786737600000,
+        "btc": 62892.03,
+        "comparison": 12417.0498046875
+      },
+      {
+        "date": "2026-08-17",
+        "ts": 1786996800000,
+        "btc": 64262.0,
+        "comparison": 12621.0
+      },
+      {
+        "date": "2026-08-18",
+        "ts": 1787083200000,
+        "btc": 64610.51,
+        "comparison": 11992.4599609375
+      },
+      {
+        "date": "2026-08-19",
+        "ts": 1787169600000,
+        "btc": 68418.55,
+        "comparison": 11738.23046875
+      },
+      {
+        "date": "2026-08-20",
+        "ts": 1787256000000,
+        "btc": 72669.36,
+        "comparison": 11800.01953125
+      },
+      {
+        "date": "2026-08-21",
+        "ts": 1787342400000,
+        "btc": 77003.92,
+        "comparison": 11740.3701171875
+      },
+      {
+        "date": "2026-08-24",
+        "ts": 1787601600000,
+        "btc": 78746.35,
+        "comparison": 11423.169921875
+      },
+      {
+        "date": "2026-08-25",
+        "ts": 1787688000000,
+        "btc": 78928.78,
+        "comparison": 11588.0400390625
+      },
+      {
+        "date": "2026-08-26",
+        "ts": 1787774400000,
+        "btc": 78475.06,
+        "comparison": 11611.240234375
+      },
+      {
+        "date": "2026-08-27",
+        "ts": 1787860800000,
+        "btc": 79910.05,
+        "comparison": 11882.169921875
+      },
+      {
+        "date": "2026-08-28",
+        "ts": 1787947200000,
+        "btc": 77559.99,
+        "comparison": 11469.66015625
+      },
+      {
+        "date": "2026-08-31",
+        "ts": 1788206400000,
+        "btc": 78893.63,
+        "comparison": 11535.0498046875
+      },
+      {
+        "date": "2026-09-01",
+        "ts": 1788292800000,
+        "btc": 77277.15,
+        "comparison": 11288.6103515625
+      },
+      {
+        "date": "2026-09-02",
+        "ts": 1788379200000,
+        "btc": 77316.03,
+        "comparison": 11339.25
+      },
+      {
+        "date": "2026-09-03",
+        "ts": 1788465600000,
+        "btc": 81768.48,
+        "comparison": 11352.1298828125
+      },
+      {
+        "date": "2026-09-04",
+        "ts": 1788552000000,
+        "btc": 79807.37,
+        "comparison": 11735.259765625
+      },
+      {
+        "date": "2026-09-08",
+        "ts": 1788897600000,
+        "btc": 78434.47,
+        "comparison": 11887.8701171875
+      },
+      {
+        "date": "2026-09-09",
+        "ts": 1788984000000,
+        "btc": 78212.95,
+        "comparison": 11931.3203125
+      },
+      {
+        "date": "2026-09-10",
+        "ts": 1789070400000,
+        "btc": 77123.6,
+        "comparison": 11614.169921875
+      },
+      {
+        "date": "2026-09-11",
+        "ts": 1789156800000,
+        "btc": 77257.36,
+        "comparison": 11824.0
+      },
+      {
+        "date": "2026-09-14",
+        "ts": 1789416000000,
+        "btc": 78982.77,
+        "comparison": 11131.2802734375
+      },
+      {
+        "date": "2026-09-15",
+        "ts": 1789502400000,
+        "btc": 76126.33,
+        "comparison": 11175.5498046875
+      },
+      {
+        "date": "2026-09-16",
+        "ts": 1789588800000,
+        "btc": 76000.0,
+        "comparison": 11246.1103515625
+      },
+      {
+        "date": "2026-09-17",
+        "ts": 1789675200000,
+        "btc": 76524.57,
+        "comparison": 11599.490234375
+      },
+      {
+        "date": "2026-09-18",
+        "ts": 1789761600000,
+        "btc": 81193.47,
+        "comparison": 11921.6904296875
+      },
+      {
+        "date": "2026-09-21",
+        "ts": 1790020800000,
+        "btc": 86494.97,
+        "comparison": 12433.169921875
+      },
+      {
+        "date": "2026-09-22",
+        "ts": 1790107200000,
+        "btc": 86211.14,
+        "comparison": 12689.8203125
+      },
+      {
+        "date": "2026-09-23",
+        "ts": 1790193600000,
+        "btc": 84515.87,
+        "comparison": 12534.2802734375
+      },
+      {
+        "date": "2026-09-24",
+        "ts": 1790280000000,
+        "btc": 84395.47,
+        "comparison": 12492.5400390625
+      },
+      {
+        "date": "2026-09-25",
+        "ts": 1790366400000,
+        "btc": 84003.55,
+        "comparison": 12668.9296875
+      },
+      {
+        "date": "2026-09-28",
+        "ts": 1790625600000,
+        "btc": 83355.13,
+        "comparison": 12465.240234375
+      },
+      {
+        "date": "2026-09-29",
+        "ts": 1790712000000,
+        "btc": 83571.71,
+        "comparison": 12629.16015625
+      },
+      {
+        "date": "2026-09-30",
+        "ts": 1790798400000,
+        "btc": 83556.83,
+        "comparison": 12628.6201171875
+      },
+      {
+        "date": "2026-10-01",
+        "ts": 1790884800000,
+        "btc": 84644.92,
+        "comparison": 12829.0
+      },
+      {
+        "date": "2026-10-02",
+        "ts": 1790971200000,
+        "btc": 84292.32,
+        "comparison": 13136.669921875
+      },
+      {
+        "date": "2026-10-05",
+        "ts": 1791230400000,
+        "btc": 85732.25,
+        "comparison": 13172.740234375
+      },
+      {
+        "date": "2026-10-06",
+        "ts": 1791316800000,
+        "btc": 85610.01,
+        "comparison": 13217.8203125
+      },
+      {
+        "date": "2026-10-07",
+        "ts": 1791403200000,
+        "btc": 83392.04,
+        "comparison": 13066.150390625
+      },
+      {
+        "date": "2026-10-08",
+        "ts": 1791489600000,
+        "btc": 81710.68,
+        "comparison": 12623.7099609375
+      },
+      {
+        "date": "2026-10-09",
+        "ts": 1791576000000,
+        "btc": 82252.59,
+        "comparison": 12572.419921875
+      },
+      {
+        "date": "2026-10-12",
+        "ts": 1791835200000,
+        "btc": 82762.91,
+        "comparison": 12236.7900390625
+      },
+      {
+        "date": "2026-10-13",
+        "ts": 1791921600000,
+        "btc": 83206.49,
+        "comparison": 12208.7900390625
+      },
+      {
+        "date": "2026-10-14",
+        "ts": 1792008000000,
+        "btc": 81721.33,
+        "comparison": 11684.3798828125
+      },
+      {
+        "date": "2026-10-15",
+        "ts": 1792094400000,
+        "btc": 82299.26,
+        "comparison": 11581.2099609375
+      }
+    ]
+  },
+  "correlations_as_of": "2026-10-15",
+  "correlation_config_hash": "bba5212d1965b94acf3a653312c473250482735f740fa7f9478415a1cc6f4aa0",
   "funding": {
     "source": "Hyperliquid",
-    "current_rate_pct": 0.01,
+    "current_rate_pct": 0.0075,
     "current_rate_pct_hourly_snapshot": 0.00125,
-    "current_oi_usd": 3450523986.8096004,
-    "mark_price": 82240.0,
-    "percentile_90d": 95.2,
-    "percentile_730d": 83.0,
+    "current_oi_usd": 3452814262.52878,
+    "mark_price": 81863.0,
+    "percentile_90d": 35.9,
+    "percentile_730d": 33.3,
     "history_8h": [
       {
         "ts": 1728057600000,
@@ -17359,6 +22876,12 @@
         "date": "2026-10-16 00:00",
         "rate_8h": 0.01,
         "n_hours": 8
+      },
+      {
+        "ts": 1792137600000,
+        "date": "2026-10-16 08:00",
+        "rate_8h": 0.0075,
+        "n_hours": 6
       }
     ],
     "negative_streak": [
@@ -17510,9 +23033,9 @@
     ]
   },
   "stablecoins": {
-    "usdt_mcap": 183484475062.1658,
-    "usdc_mcap": 72607539005.12634,
-    "total_mcap": 256092014067.29214,
+    "usdt_mcap": 183482645739.06915,
+    "usdc_mcap": 72600813925.24411,
+    "total_mcap": 256083459664.31326,
     "change_7d": -0.29,
     "change_30d": -0.28,
     "change_1y": -0.24,
@@ -20074,5 +25597,5 @@
       }
     ]
   },
-  "generated_at": "2026-10-16T12:44:15.072530"
+  "generated_at": "2026-10-16T13:38:38.832277"
 }
