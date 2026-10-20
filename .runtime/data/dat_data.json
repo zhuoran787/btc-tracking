@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-19",
+  "fetched_at": "2026-10-20",
   "aggregate_source": "https://api.coingecko.com/api/v3/companies/public_treasury/bitcoin",
   "featured_source": "https://bitcointreasuries.net/public-companies/",
   "featured_companies": [
@@ -9,26 +9,26 @@
     "MARA Holdings",
     "Strive"
   ],
-  "total_holdings": 1302063.2192943657,
-  "total_value_usd": 107316521186.40462,
-  "market_cap_dominance_pct": 6.2,
+  "total_holdings": 1303553.2192943657,
+  "total_value_usd": 106485303876.24641,
+  "market_cap_dominance_pct": 6.21,
   "company_count": 180,
   "cost_basis_summary": [
     {
       "name": "Strategy",
       "symbol": "MSTR.US",
       "country": "USA",
-      "holdings": 848250.0,
-      "holdings_as_of": "2026-10-12",
-      "total_cost_basis_usd": 64000000000.0,
-      "avg_cost_basis_usd": 75449.45475979958,
+      "holdings": 848517.0,
+      "holdings_as_of": "2026-10-19",
+      "total_cost_basis_usd": 64020000000.0,
+      "avg_cost_basis_usd": 75449.28386820771,
       "holdings_source": "https://bitcointreasuries.net/public-companies/strategy",
       "cost_source": "https://bitcointreasuries.net/public-companies/strategy",
       "cost_currency": "USD",
-      "avg_cost_basis_native": 75449.45475979958,
-      "total_cost_basis_native": 64000000000.0,
-      "avg_current_price_usd": 82420.36146644497,
-      "pnl_pct": 9.239174396737425
+      "avg_cost_basis_native": 75449.28386820771,
+      "total_cost_basis_native": 64020000000.0,
+      "avg_current_price_usd": 81688.49748527231,
+      "pnl_pct": 8.269413965496408
     },
     {
       "name": "Twenty One Capital",
@@ -43,8 +43,8 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 84864.98738337087,
       "total_cost_basis_native": 3692815061.0,
-      "avg_current_price_usd": 82420.36146644497,
-      "pnl_pct": -2.880605998186858
+      "avg_current_price_usd": 81688.49748527231,
+      "pnl_pct": -3.7429922469074506
     },
     {
       "name": "Metaplanet",
@@ -61,7 +61,7 @@
       "cost_currency": "JPY",
       "cost_as_of": "September 30, 2026",
       "disclosure_date": "2026-10-05",
-      "avg_current_price_usd": 82420.36146644497,
+      "avg_current_price_usd": 81688.49748527231,
       "pnl_pct": null
     },
     {
@@ -77,33 +77,33 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 54662.19748714057,
       "total_cost_basis_native": 1944717000.0,
-      "avg_current_price_usd": 82420.36146644497,
-      "pnl_pct": 50.781280766904004
+      "avg_current_price_usd": 81688.49748527231,
+      "pnl_pct": 49.44239573333975
     },
     {
       "name": "Strive",
       "symbol": "ASST.US",
       "country": "USA",
-      "holdings": 35595.0,
-      "holdings_as_of": "2026-10-14",
-      "total_cost_basis_usd": 3166139655.0,
-      "avg_cost_basis_usd": 88949.0,
+      "holdings": 36818.0,
+      "holdings_as_of": "2026-10-19",
+      "total_cost_basis_usd": 3266124781.0,
+      "avg_cost_basis_usd": 88710.00002716063,
       "holdings_source": "https://bitcointreasuries.net/public-companies/strive",
       "cost_source": "https://bitcointreasuries.net/public-companies/strive",
       "cost_currency": "USD",
-      "avg_cost_basis_native": 88949.0,
-      "total_cost_basis_native": 3166139655.0,
-      "avg_current_price_usd": 82420.36146644497,
-      "pnl_pct": -7.339754841038159
+      "avg_cost_basis_native": 88710.00002716063,
+      "total_cost_basis_native": 3266124781.0,
+      "avg_current_price_usd": 81688.49748527231,
+      "pnl_pct": -7.9151195352705646
     }
   ],
   "total_cost_summary": {
     "scope": "tracked companies; USD-comparable rows only",
-    "total_entry_value_usd": 72803671716.0,
-    "covered_holdings": 962936.0,
-    "tracked_holdings": 1006936.0,
-    "coverage_pct": 95.63030818244656,
-    "weighted_avg_cost_usd": 75605.92990188341
+    "total_entry_value_usd": 72923656842.0,
+    "covered_holdings": 964426.0,
+    "tracked_holdings": 1008426.0,
+    "coverage_pct": 95.63676462130091,
+    "weighted_avg_cost_usd": 75613.53265258299
   },
-  "history_days_accumulated": 90
+  "history_days_accumulated": 91
 }
