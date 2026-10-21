@@ -258,7 +258,7 @@ def make_page(config, results, bootstrap=False):
     banner += '<strong>每日云端数据更新 · '+escape(config['schedule']['label'])+'</strong><br>'
     display_time = datetime.now(ZoneInfo('Asia/Shanghai')).strftime('%Y-%m-%d %H:%M 北京时间')
     banner += ('初始化展示；尚未完成一次云端数据刷新。' if bootstrap else '本次数据检查：'+display_time+'。')
-    banner += ' 新闻和多空观点沿用 '+escape(editorial['as_of'])+' 的已核材料，各条保留原日期；五项个人判断沿用原文及确认日期。'
+    banner += ' 新闻和多空观点沿用 '+escape(editorial['as_of'])+' 的已核材料，各条保留原日期；用户确认内容沿用原文及确认日期。'
     banner += ' 数据相关总结按本次可用数据计算；旧观点不代表当前判断。<br>各源状态和原始截止日期如下。'
     banner += '<details><summary>查看数据源更新状态</summary><table><tr><th>数据源</th><th>状态</th><th>原始日期</th></tr>'+table+'</table></details></div>'
     soup.body.insert(0, BeautifulSoup(banner, 'html.parser'))

@@ -195,6 +195,12 @@ def load_data():
     return data
 
 
+def user_input_fields(cache):
+    """The saved user-input entries define the field roster for load and save."""
+    return tuple(key for key, entry in cache.items()
+                 if not key.startswith("_") and isinstance(entry, dict) and "value" in entry)
+
+
 def load_extra_input():
     """读 stdin extra JSON，并自动合并 data/opinions_input.json（KOL SSOT）。
 
@@ -233,7 +239,7 @@ def load_extra_input():
         except Exception as e:
             print(f"WARN: SSOT load failed: {e}", file=sys.stderr)
 
-    # User-inputs cache merge：5 个 SECTION A 用户填字段 fallback to cache + freshness tagging
+    # User-input fields come from the cache; explicit null means the user skipped it.
     # 跑报告前 Claude 应逐项问用户'要改吗'，改了写入 extra.user_inputs.X 触发 fresh 标记。
     ui_cache_path = DATA_DIR / "user_inputs_cache.json"
     extra.setdefault("user_inputs", {})
@@ -243,8 +249,8 @@ def load_extra_input():
             with open(ui_cache_path) as f:
                 ui_cache = json.load(f)
             today = datetime.now().strftime("%Y-%m-%d")
-            for key in ("macro_summary", "cycle_summary", "dat_outflow_bullish", "trump_clearance_bullish", "miner_selloff_note"):
-                if extra["user_inputs"].get(key):
+            for key in user_input_fields(ui_cache):
+                if key in extra["user_inputs"]:
                     extra["_user_inputs_freshness"][key] = {"status": "fresh", "date": today}
                 else:
                     entry = ui_cache.get(key) or {}
@@ -303,7 +309,7 @@ def load_extra_input():
 
 
 def save_user_inputs_cache(extra):
-    """跑过 fresh 用户输入的 4 项写回 cache，覆盖 seed/上一版。"""
+    """Save explicitly confirmed inputs, including empty/null skips."""
     cache_path = DATA_DIR / "user_inputs_cache.json"
     if not cache_path.exists():
         return
@@ -314,8 +320,8 @@ def save_user_inputs_cache(extra):
         freshness = extra.get("_user_inputs_freshness", {})
         user_inputs = extra.get("user_inputs", {})
         updated = []
-        for key in ("macro_summary", "cycle_summary", "dat_outflow_bullish", "trump_clearance_bullish"):
-            if freshness.get(key, {}).get("status") == "fresh" and user_inputs.get(key):
+        for key in user_input_fields(cache):
+            if freshness.get(key, {}).get("status") == "fresh" and key in user_inputs:
                 cache.setdefault(key, {})["value"] = user_inputs[key]
                 cache[key]["_last_updated"] = today
                 cache[key]["_status"] = "fresh"
@@ -1706,10 +1712,11 @@ def prepare_opinions(extra):
             tw_url = f"https://x.com/{handle}" if handle else None
             home_url = person.get("website") or tw_url or person.get("rss")
             if ep and ep.get("collection_status") == "pending":
+                pending_label = ep.get("status_label") or "待首次采集"
                 merged.append({
                     "name": name, "org": person["org"], "date": "—",
-                    "source_url": home_url, "summary": "待首次采集",
-                    "has_update": False, "status_label": "待首次采集",
+                    "source_url": home_url, "summary": ep.get("summary") or pending_label,
+                    "has_update": False, "status_label": pending_label,
                 })
                 continue
             if ep:
@@ -1845,7 +1852,7 @@ def build_summary_rows(data, extra):
 
     # 行 1 宏观环境 — PPT 1.1+1.2+1.3:
     #   一句话总结当前状态 = 用户填(part1) + AI 相关性 helper(part2)
-    #   后续关注点 = 空
+    #   后续关注点 = 用户确认的 macro_watch_next
     #   数据变化 = AI 按 PPT 范例格式（相关系数）
     macro_pieces = []
     if user.get("macro_summary"):
@@ -1856,10 +1863,10 @@ def build_summary_rows(data, extra):
     rows.append({
         "label": "宏观环境",
         "user_input_required": True,  # PPT 1.1 明确"只能用户来更新"
-        # 仅 part1（user_inputs.macro_summary）走 user-fill cache + badge；part2 是 AI 自动
-        "user_input_cells": {"one_liner": "macro_summary"},
+        # Both user-written cells retain their own confirmation date.
+        "user_input_cells": {"one_liner": "macro_summary", "watch_next": "macro_watch_next"},
         "one_liner": macro_one_default,
-        "watch_next": "",
+        "watch_next": user.get("macro_watch_next") or "",
         # PPT 1.3 数据变化按范例格式
         "data_change": _macro_correlation_data_change(api),
     })

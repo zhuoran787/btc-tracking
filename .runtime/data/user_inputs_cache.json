@@ -1,12 +1,17 @@
 {
   "_meta": {
-    "doc": "用户填的 5 项 SECTION A cell 上一版内容。当 generate_report stdin 的 extra.user_inputs 缺该字段时，从这里读取并标 '未本期更新 · 上次 _last_updated 结果'。Phase 3 跑报告前 Claude 应逐项问用户'要改吗' — 改了写回此 JSON + extra.user_inputs.X，不改沿用本 cache。",
+    "doc": "本文件非下划线开头、含value的条目定义用户确认字段全集。手动完整运行逐项询问；确认的新原文及日期写回本文件；云端数据刷新仅沿用，不代答、不刷新确认日期。",
     "version": 1,
     "seed_source": "首版默认值（PPT slide 1 隐含逻辑）",
     "seed_date": "2026-05-19"
   },
   "macro_summary": {
     "value": "当前：美国金融条件已经明显收紧。目前美国短端利率隐含的加息预期已经充分，长端利率的迅速上涨也已结束，未来油价的回落或者对经济预期的向下修正，均有可能提振宏观环境。",
+    "_last_updated": "2026-10-21",
+    "_status": "fresh"
+  },
+  "macro_watch_next": {
+    "value": "10月29日早晨fomc是否会下调未来加息次数；油价方面，11月3日中选后伊朗问题能否得到解决；11月19日apec峰会上中美俄会面能否缓和俄乌对对方能源设施的打击。",
     "_last_updated": "2026-10-21",
     "_status": "fresh"
   },
@@ -21,8 +26,8 @@
     "_status": "fresh"
   },
   "trump_clearance_bullish": {
-    "value": "此前我们担忧，trump等人在数字货币行业的内幕交易和政策支持可能在中选后面临来自民主党的负面挑战，随着中选愈发接近，该担忧已经逐步被计入价格。",
-    "_last_updated": "2026-10-16",
+    "value": "此前我们担忧，trump等人在数字货币行业的内幕交易和政策支持可能在中选后面临来自民主党的负面挑战。随着11月3日中选愈发接近，该担忧已经逐步被计入价格，预计中选前后是利空出尽。",
+    "_last_updated": "2026-10-21",
     "_status": "fresh"
   },
   "miner_selloff_note": {

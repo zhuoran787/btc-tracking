@@ -169,24 +169,19 @@
         "name": "币圈老鸟，一般倾向看多",
         "badge_class": "bullish",
         "color": "#22c55e",
-        "count": 9,
+        "count": 8,
         "total": 12,
         "people": [
           {
             "name": "CZ",
             "org": "Binance",
-            "date": "2026-10-16",
+            "date": "—",
             "source": "https://x.com/cz_binance",
-            "source_url": "https://x.com/cz_binance/status/2110949227283329244",
-            "sources": [
-              {
-                "date": "2026-10-16",
-                "title": "cz 原文核查",
-                "url": "https://x.com/cz_binance/status/2110949227283329244"
-              }
-            ],
-            "summary": "针对Solana上海活动暂停的转帖，质疑主办方是否了解当地政策，并称类似情况不到一年前发生过。相较上期海外采用话题，本期强调本地监管约束；这是本人评论，事件细节来自转帖，未作独立事实认定",
-            "has_update": true
+            "source_url": "https://x.com/cz_binance",
+            "sources": [],
+            "summary": "已移除此前活动短评；有效观点待补核。",
+            "has_update": false,
+            "status_label": "有效观点待补核"
           },
           {
             "name": "Star Xu",
@@ -1118,13 +1113,18 @@
         "seed": false
       },
       "trump_clearance_bullish": {
-        "status": "cached",
-        "date": "2026-10-16",
+        "status": "fresh",
+        "date": "2026-10-21",
         "seed": false
       },
       "miner_selloff_note": {
         "status": "cached",
         "date": "2026-09-17",
+        "seed": false
+      },
+      "macro_watch_next": {
+        "status": "fresh",
+        "date": "2026-10-21",
         "seed": false
       }
     },

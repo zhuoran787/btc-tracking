@@ -9,7 +9,7 @@
           "name": "CZ",
           "org": "Binance",
           "handle": "@cz_binance",
-          "has_update": true,
+          "has_update": false,
           "stance": "中性",
           "raw_search_results": [
             {
@@ -71,16 +71,12 @@
             }
           ],
           "checked_at": "2026-10-21",
-          "date": "2026-10-16",
-          "source_url": "https://x.com/cz_binance/status/2110949227283329244",
-          "summary": "针对Solana上海活动暂停的转帖，质疑主办方是否了解当地政策，并称类似情况不到一年前发生过。相较上期海外采用话题，本期强调本地监管约束；这是本人评论，事件细节来自转帖，未作独立事实认定",
-          "sources": [
-            {
-              "date": "2026-10-16",
-              "title": "cz 原文核查",
-              "url": "https://x.com/cz_binance/status/2110949227283329244"
-            }
-          ]
+          "date": "—",
+          "source_url": "https://x.com/cz_binance",
+          "summary": "已移除此前活动短评；有效观点待补核。",
+          "sources": [],
+          "collection_status": "pending",
+          "status_label": "有效观点待补核"
         },
         {
           "name": "Star Xu",
