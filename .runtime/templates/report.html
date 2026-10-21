@@ -1343,6 +1343,7 @@ new Chart(document.getElementById('chartStable'), {
 
 // ── BRK Whale Supply (>=1k BTC) 365d ──────────────────
 {% if chart_brk_dates and chart_brk_dates != '[]' %}
+if (document.getElementById('chartBrkWhale')) {
 new Chart(document.getElementById('chartBrkWhale'), {
   type: 'line',
   data: {
@@ -1363,6 +1364,7 @@ new Chart(document.getElementById('chartBrkWhale'), {
     }
   }
 });
+}
 {% endif %}
 
 // ── OKX OI 100d history ───────────────────────────────
