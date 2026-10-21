@@ -999,7 +999,7 @@ def _dat_one_liner(data, extra):
         "买" in a.get("text", "") or "bought" in a.get("text", "").lower() or "added" in a.get("text", "").lower()
     )]
     if len(recent_buys) >= 5:
-        flow_desc = "较高水平（近 30d 多笔大额买入）"
+        flow_desc = "多家公司持续披露买入（公告频次不等于板块净买入量）"
     elif len(recent_buys) >= 2:
         flow_desc = "中等水平"
     else:
@@ -1073,7 +1073,7 @@ def _dat_data_change(data, extra):
                     week_direction = "稳定"
         else:
             week_direction = "待算"
-        weekly_str = f"DAT 公司每周买入量在历史 {pct:.0f}% 分位，环比 {week_direction}"
+        weekly_str = f"DAT 板块周度净买入历史分位暂缺；本地总持仓周快照净变化环比{week_direction}（含未完结周，非成交买入量）"
     else:
         weekly_str = "DAT 公司每周买入量历史分位与环比待算"
 
@@ -2462,6 +2462,7 @@ def build_context(data, extra):
         "dat_total_cost": dat.get("total_cost_summary", {}),
         "tether_holdings": (tether.get("current_holdings") or {}),
         "coinshares_paras": coinshares.get("summary_paragraphs", []),
+        "coinshares_supplementary_sources": coinshares.get("supplementary_sources", []),
         "coinshares_title": coinshares.get("title"),
         "coinshares_url": coinshares.get("url"),
         "coinshares_report_date": coinshares.get("report_date"),

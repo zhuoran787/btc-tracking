@@ -8,6 +8,18 @@
   "dat_announcements": {
     "items": [
       {
+        "date": "2026-10-19",
+        "company": "Strive",
+        "text": "10/14–16新增1,223 BTC；全周4,045枚已含此前2,822枚，10/16持仓36,818枚",
+        "url": "https://www.sec.gov/Archives/edgar/data/1920406/000162828026066222/0001628280-26-066222.txt"
+      },
+      {
+        "date": "2026-10-19",
+        "company": "Strategy",
+        "text": "上周买入267 BTC、均价82,900美元；截至10/18持仓848,517枚",
+        "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526424688/0001193125-26-424688.txt"
+      },
+      {
         "date": "2026-10-14",
         "company": "Strive",
         "text": "10/12–13买入2,822 BTC，均价83,266美元；与此前32,773枚衔接为35,595枚",
@@ -29,7 +41,8 @@
         "date": "2026-10-05",
         "company": "Metaplanet",
         "text": "披露Q3卖出10,000、买入11,000 BTC，净增1,000；9/30总持仓44,000枚",
-        "url": "https://contents.xj-storage.jp/xcontents/33500/4b5f0c2e/ab52/4d40/9d89/e2aa6e3f3524/140120261005546274.pdf"
+        "url": "https://contents.xj-storage.jp/xcontents/33500/4b5f0c2e/ab52/4d40/9d89/e2aa6e3f3524/140120261005546274.pdf",
+        "action": "quarterly_disclosure"
       },
       {
         "date": "2026-09-25",
@@ -38,60 +51,63 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926111003/riot-20260921x8k.htm"
       }
     ],
-    "_last_search_date": "2026-10-16",
+    "_last_search_date": "2026-10-21",
     "_status": "fresh"
   },
   "whale_buysell_news": {
     "items": [],
-    "_last_search_date": "2026-10-16",
-    "_status": "fresh"
+    "_last_search_date": "2026-10-21",
+    "_status": "fresh",
+    "coverage_note": "四条独立14日检索已完成；未将具名公司公告重复列作鲸鱼消息，匿名杠杆仓位及钱包转账不视为具名现货成交"
   },
   "coinshares_weekly": {
     "paragraphs": [
-      "⚠️ 已核对 2026-10-13 官方双周报，本期未包含 Digital Asset Fund Flows 专页；本期全球数字资产产品资金流及历史分位暂缺。"
+      "2026-10-16 CoinShares市场更新披露：截至发文时当周全球数字资产投资产品净流出4.34亿美元。该数是周内累计，不能当作完整周度资金流。",
+      "CoinShares认为，通胀与消费韧性推动利率预期偏鹰，短期环境承压；其表述是宏观驱动的区间市，而非长期基本面转空。10/13双周报仍缺资金流专页，历史图与分位继续留空。"
     ],
-    "source_url": "https://coinshares.com/insights/research-data/digital-asset-bi-weekly-digest-13-10-2026/",
-    "report_date": "2026-10-13",
-    "_last_search_date": "2026-10-16",
+    "source_url": "https://coinshares.com/us/insights/research-data/market-update-16-10-2026/",
+    "report_date": "2026-10-16",
+    "scope": "week-to-date as of publication, global digital asset investment products",
+    "_last_search_date": "2026-10-21",
     "_status": "fresh"
   },
   "verify_1_strategic_reserve": {
-    "text": "本次独立检索未核到政府新增市场买币或改变战略储备地位的明确原始证据。重新打开众议院金融服务委员会9/16公告，H.R.8957以28–21获委员会推进；这是此前进展，不能刷新成10月立法完成。Congress逐项进度页本次未成功读取，故不声称已穷尽所有后续程序。来源：https://financialservices.house.gov/calendar/eventsingle.aspx?EventID=411219",
-    "tldr": "未核到新增政府买币或储备地位改变；9/16委员会推进是既有进展，Congress完整后续进度本次未核",
-    "_last_search_date": "2026-10-16",
+    "text": "本次独立检索未核到政府新增市场买入BTC或改变战略储备地位的明确原始证据。重新核对众议院金融服务委员会9/16公告，H.R.8957以28–21获委员会推进；这是既有委员会进展，非10月新增成法。Congress完整后续程序本次未核，不把搜索未命中解释为已证明没有任何变化。来源：https://financialservices.house.gov/calendar/eventsingle.aspx?EventID=411219",
+    "tldr": "未核到新增政府买币或储备地位改变；9/16委员会28–21推进是既有进展，尚不能写作成法或新增购买",
+    "_last_search_date": "2026-10-21",
     "_status": "fresh"
   },
   "verify_2_trump_clearance": {
-    "text": "本次未取得Trump家族或相关交易者本月已大举清仓BTC的原始证据。Riot解除抵押没有披露等额出售；Lookonchain的匿名杠杆仓位与Whale Alert的USDC往返转账也不能作为具名现货清仓证据。已核Metaplanet的Q3卖出10,000并买入11,000 BTC，是净增1,000，不能误写成净清仓。来源：https://www.sec.gov/Archives/edgar/data/1167419/000110465926111003/riot-20260921x8k.htm；https://contents.xj-storage.jp/xcontents/33500/4b5f0c2e/ab52/4d40/9d89/e2aa6e3f3524/140120261005546274.pdf",
-    "tldr": "未核实Trump相关方实际清仓；公司净增持、解除抵押、匿名转账或杠杆持仓均不能直接视作内幕交易者出清",
-    "_last_search_date": "2026-10-16",
+    "text": "本次未取得Trump家族或相关交易者过去一个月已大举清仓BTC的原始证据。政治调查预期与实际售币是两项不同证据。已核Metaplanet的Q3卖出10,000并买入11,000 BTC，净增1,000；Riot终止2亿美元授信未披露因此售币的数量；匿名杠杆仓位、USDC转账亦不能视作内幕交易者出清。来源：https://contents.xj-storage.jp/xcontents/33500/4b5f0c2e/ab52/4d40/9d89/e2aa6e3f3524/140120261005546274.pdf；https://www.sec.gov/Archives/edgar/data/1167419/000110465926111003/riot-20260921x8k.htm",
+    "tldr": "未核实Trump相关方实际清仓；Metaplanet季度买卖后净增1,000 BTC，解除抵押、匿名转账和杠杆仓位均不能直接视作出清",
+    "_last_search_date": "2026-10-21",
     "_status": "fresh"
   },
   "verify_3_institutional_entry": {
-    "text": "BNY10/8宣布把数字资产托管扩展至欧盟部分机构，依据MiCA框架，覆盖BTC、ETH等资产；渣打同日宣布拟为新加坡机构与合格企业客户提供加密资产、稳定币及代币化资产托管，仍须满足监管要求。前者是服务扩展，后者是带条件计划，两者均未披露可计量的新增BTC现货购买。来源：https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/bny-expands-digital-asset-custody-platform-in-europe.html；https://www.sc.com/en/press-release/standard-chartered-advances-into-digital-asset-custody-offering-in-singapore/",
-    "tldr": "BNY已扩展欧盟机构托管，渣打新加坡仍为有监管前提的计划；服务采用增强，但不能直接计作BTC新增买盘",
-    "_last_search_date": "2026-10-16",
+    "text": "J.P. Morgan10/19公告，美元存款代币JPM Coin（JPMD）已上线Ethereum，供其机构客户使用；这是银行存款代币应用，不是面向公众发行的稳定币，也未披露BTC购买。BNY10/8扩展欧盟部分机构数字资产托管；渣打新加坡托管仍是有监管前提的计划。采用渠道拓宽，但不能直接折算BTC现货净买盘。来源：https://www.jpmorgan.com/payments/newsroom/jpm-coin-live-on-ethereum；https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/bny-expands-digital-asset-custody-platform-in-europe.html；https://www.sc.com/en/press-release/standard-chartered-advances-into-digital-asset-custody-offering-in-singapore/",
+    "tldr": "JPMD10/19上线Ethereum供机构客户使用，BNY扩展欧盟托管，渣打新加坡仍有监管前提；采用扩大，不等于新增BTC买盘",
+    "_last_search_date": "2026-10-21",
     "_status": "fresh"
   },
   "verify_4_clarity_passage_probability": {
-    "text": "本次重新读取参议院cloture列表，页面自身截止日期仍为10/1，记载9/15推进Clarity审议的程序票49–50失败，非最终法案否决。10/15 Witt宣布离任，Sacks确认其此前推动委员会与议程工作的贡献；未取得新通过票或可靠量化通过概率。行政监管提案不能替代国会成法，且10/1之后完整议程仍未验证。来源：https://www.senate.gov/legislative/cloture/119.htm；https://x.com/patrickjwitt/status/2110579591073104355",
-    "tldr": "Clarity Act立法预期仍不明朗：已核列表截至10/1，9/15程序票49–50失败；Witt10/15离任，后续完整议程及新通过概率未核",
-    "_last_search_date": "2026-10-16",
+    "text": "本次重新核对参议院cloture官方列表，页首覆盖更新至10/19，仍列9/15对Clarity Act启动审议的程序票49–50未通过；这不是最终法案否决。10/15 Witt宣布离任，Sacks称赞其此前推动议程的贡献。未核到新的通过票或可靠的量化通过概率，行政监管提案亦不能代替国会成法。该列表是程序投票记录，不覆盖全部谈判与议程。来源：https://www.senate.gov/legislative/cloture/119.htm；https://x.com/patrickjwitt/status/2110579591073104355",
+    "tldr": "Clarity Act立法预期仍不明朗：参议院程序票列表更新至10/19，9/15的49–50失败记录未变；Witt离任，新通过票及量化概率未核",
+    "_last_search_date": "2026-10-21",
     "_status": "fresh"
   },
   "factor_9_reserve": {
     "text": null,
-    "_last_search_date": "2026-10-16",
+    "_last_search_date": "2026-10-21",
     "_status": "fresh"
   },
   "factor_10_institution": {
-    "text": "BNY10/8扩展欧盟数字资产托管；渣打新加坡托管仍为带监管前提的计划。",
-    "_last_search_date": "2026-10-16",
+    "text": "JPMD10/19已上线Ethereum供机构客户使用；BNY扩大欧盟托管，渣打新加坡托管仍为有监管前提的计划",
+    "_last_search_date": "2026-10-21",
     "_status": "fresh"
   },
   "factor_11_clarity": {
-    "text": "Witt10/15宣布离任；未核到新的Clarity通过表决，已读参议院列表自身仍截至10/1。",
-    "_last_search_date": "2026-10-16",
+    "text": "Witt10/15宣布离任；参议院程序票列表覆盖至10/19，未核到新的Clarity通过票",
+    "_last_search_date": "2026-10-21",
     "_status": "fresh"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-19T01:22:39.488863+00:00",
+  "fetched_at": "2026-10-21T12:26:47.043882+00:00",
   "source": "verified Strategy official ledger baseline + SEC EDGAR 8-K reconciliation",
   "errors": [],
   "warnings": [],
@@ -1115,6 +1115,16 @@
       "shares_basic": null,
       "shares_diluted": null,
       "sec_accession": "0001193125-26-419726"
+    },
+    {
+      "date": "2026-10-19",
+      "btc_delta": 267,
+      "btc_holdings": 848517,
+      "avg_price": 75446,
+      "total_cost": 64020.0,
+      "shares_basic": null,
+      "shares_diluted": null,
+      "sec_accession": "0001193125-26-424688"
     }
   ],
   "weekly_net_buys": {
@@ -1208,7 +1218,8 @@
       "2026-09-21",
       "2026-09-28",
       "2026-10-05",
-      "2026-10-12"
+      "2026-10-12",
+      "2026-10-19"
     ],
     "net_btc": [
       850.0,
@@ -1300,29 +1311,39 @@
       950.0,
       1665.0,
       334.0,
-      250.0
+      250.0,
+      267.0
     ]
   },
   "sec_reconciliation": {
     "source": "SEC EDGAR submissions API + official complete-submission text",
     "parser_version": "split_tables_exhibits_v1",
     "cik": "0001050446",
-    "filings_checked": 0,
-    "btc_updates_found": 0,
-    "latest_filing_date": "2026-10-13",
-    "latest_as_of": "2026-10-11",
-    "latest_holdings": 848250,
-    "latest_accession": "0001193125-26-419726",
+    "filings_checked": 1,
+    "btc_updates_found": 1,
+    "latest_filing_date": "2026-10-19",
+    "latest_as_of": "2026-10-18",
+    "latest_holdings": 848517,
+    "latest_accession": "0001193125-26-424688",
     "checked_accessions": [
       "0001193125-26-413164",
       "0001193125-26-419726",
-      "0001193125-26-423400"
+      "0001193125-26-423400",
+      "0001193125-26-424688"
     ],
-    "verified_at": "2026-10-19T01:22:39.486271+00:00"
+    "verified_at": "2026-10-21T11:05:40.056547+00:00"
   },
-  "refresh_status": "checked_no_new",
+  "refresh_status": "updated",
   "mnav": {
     "deprecated": true,
     "reason": "Use fetch_mnav.py EV mNAV; legacy equity/gross-BTC method is not comparable."
+  },
+  "manual_reconciliation": {
+    "checked_at": "2026-10-21T12:26:47.043882+00:00",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526424688/0001193125-26-424688.txt",
+    "raw_sha256": "d73fe1840a714eb8b4aed2c089f692e6af4afdbe243fa1a90bce804a82b38c06",
+    "method": "parse official SEC 8-K and append one bridged event; historical cloud rows preserved",
+    "previous_ledger_sha256": "3efd47317739df8b61b963f3b7d6ab32b8e396ed2a45168056d0ee9d5d327aec",
+    "new_rows": 1
   }
 }

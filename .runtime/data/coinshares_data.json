@@ -2,11 +2,20 @@
   "url": "https://coinshares.com/insights/research-data/digital-asset-bi-weekly-digest-13-10-2026/",
   "title": "CoinShares Bi-Weekly Digest 2026-10-13",
   "report_date": "2026-10-13",
-  "fetched_at": "2026-10-16",
+  "fetched_at": "2026-10-21",
   "flow_page_missing": true,
   "images": [],
   "summary_paragraphs": [
-    "⚠️ 已核对 2026-10-13 官方双周报，本期未包含 Digital Asset Fund Flows 专页；本期全球数字资产产品资金流及历史分位暂缺。"
+    "⚠️ 已核对 2026-10-13 官方双周报，本期未包含 Digital Asset Fund Flows 专页；本期全球数字资产产品资金流及历史分位暂缺。",
+    "2026-10-16 CoinShares市场更新披露：截至发文时当周全球数字资产投资产品净流出4.34亿美元。该数是周内累计，不能当作完整周度资金流。",
+    "CoinShares认为，通胀与消费韧性推动利率预期偏鹰，短期环境承压；其表述是宏观驱动的区间市，而非长期基本面转空。10/13双周报仍缺资金流专页，历史图与分位继续留空。"
   ],
-  "source_note": "Current official PDF inspected; fund-flow section not disclosed"
+  "source_note": "Current official PDF inspected; fund-flow section not disclosed",
+  "supplementary_sources": [
+    {
+      "date": "2026-10-16",
+      "title": "Market update — week-to-date flows, not final weekly total",
+      "url": "https://coinshares.com/us/insights/research-data/market-update-16-10-2026/"
+    }
+  ]
 }

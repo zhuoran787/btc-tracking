@@ -670,6 +670,9 @@ a:hover { text-decoration: underline; }
     {% for paragraph in coinshares_paras %}
     <p style="font-size:13px;line-height:1.65;">{{ paragraph }}</p>
     {% endfor %}
+    {% for source in coinshares_supplementary_sources %}
+    <p style="font-size:12px;"><a href="{{ source.url }}" target="_blank">补充来源：{{ source.title }}（{{ source.date }}）</a></p>
+    {% endfor %}
     {% if coinshares_images %}
     {% set img = coinshares_images[0] %}
     <div style="margin-top:8px;">

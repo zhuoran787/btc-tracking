@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-16",
+  "fetched_at": "2026-10-21",
   "lookback_days": 30,
   "factor_9_strategic_reserve": [],
   "factor_10_institution": [
@@ -59,24 +59,6 @@
     },
     {
       "factor": 10,
-      "title": "Bitwise NEAR ETF  (CIK 0002067111) — S-1/A",
-      "date": "2026-09-16",
-      "form": "S-1/A",
-      "company": "Bitwise NEAR ETF  (CIK 0002067111)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002067111&type=S-1/A",
-      "adsh": "0001193125-26-393240"
-    },
-    {
-      "factor": 10,
-      "title": "21Shares Injective ETF  (CIK 0002061622) — S-1/A",
-      "date": "2026-09-18",
-      "form": "S-1/A",
-      "company": "21Shares Injective ETF  (CIK 0002061622)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002061622&type=S-1/A",
-      "adsh": "0001213900-26-101489"
-    },
-    {
-      "factor": 10,
       "title": "Zcash ETF  (ZCSH)  (CIK 0001720265) — 8-K",
       "date": "2026-10-05",
       "form": "8-K",
@@ -104,6 +86,15 @@
     },
     {
       "factor": 10,
+      "title": "Grayscale Chainlink Trust ETF  (GLNK)  (CIK 0001852025) — 8-K",
+      "date": "2026-10-05",
+      "form": "8-K",
+      "company": "Grayscale Chainlink Trust ETF  (GLNK)  (CIK 0001852025)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001852025&type=8-K",
+      "adsh": "0001193125-26-414291"
+    },
+    {
+      "factor": 10,
       "title": "Grayscale Avalanche Staking ETF  (GAVA)  (CIK 0002035053) — 8-K",
       "date": "2026-10-05",
       "form": "8-K",
@@ -119,15 +110,6 @@
       "company": "Grayscale Sui Staking ETF  (GSUI)  (CIK 0002034012)",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002034012&type=8-K",
       "adsh": "0001193125-26-414297"
-    },
-    {
-      "factor": 10,
-      "title": "Grayscale Chainlink Trust ETF  (GLNK)  (CIK 0001852025) — 8-K",
-      "date": "2026-10-05",
-      "form": "8-K",
-      "company": "Grayscale Chainlink Trust ETF  (GLNK)  (CIK 0001852025)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001852025&type=8-K",
-      "adsh": "0001193125-26-414291"
     },
     {
       "factor": 10,
@@ -230,15 +212,6 @@
     },
     {
       "factor": 10,
-      "title": "UPEXI, INC.  (UPXI)  (CIK 0001775194) — 8-K",
-      "date": "2026-09-17",
-      "form": "8-K",
-      "company": "UPEXI, INC.  (UPXI)  (CIK 0001775194)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001775194&type=8-K",
-      "adsh": "0001477932-26-005669"
-    },
-    {
-      "factor": 10,
       "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
       "date": "2026-10-05",
       "form": "8-K",
@@ -248,12 +221,12 @@
     },
     {
       "factor": 10,
-      "title": "HeartSciences Inc.  (HSCS, HSCSW)  (CIK 0001468492) — 8-K",
-      "date": "2026-09-17",
+      "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
+      "date": "2026-10-19",
       "form": "8-K",
-      "company": "HeartSciences Inc.  (HSCS, HSCSW)  (CIK 0001468492)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001468492&type=8-K",
-      "adsh": "0001213900-26-100752"
+      "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
+      "adsh": "0001493152-26-047517"
     },
     {
       "factor": 10,
@@ -272,6 +245,33 @@
       "company": "Datacentrex, Inc.  (DTCX)  (CIK 0001853825)",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001853825&type=8-K",
       "adsh": "0001493152-26-046935"
+    },
+    {
+      "factor": 10,
+      "title": "CSLM Digital Asset Acquisition Corp III, Ltd  (KOYN, KOYNU, KOYNW)  (CIK 0002068454) — 8-K",
+      "date": "2026-10-07",
+      "form": "8-K",
+      "company": "CSLM Digital Asset Acquisition Corp III, Ltd  (KOYN, KOYNU, KOYNW)  (CIK 0002068454)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002068454&type=8-K",
+      "adsh": "0001829126-26-010827"
+    },
+    {
+      "factor": 10,
+      "title": "VanEck BNB ETF  (VBNB)  (CIK 0002066824) — 8-K",
+      "date": "2026-09-29",
+      "form": "8-K",
+      "company": "VanEck BNB ETF  (VBNB)  (CIK 0002066824)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002066824&type=8-K",
+      "adsh": "0002066824-26-000020"
+    },
+    {
+      "factor": 10,
+      "title": "CaliberCos Inc.  (CWD)  (CIK 0001627282) — 8-K",
+      "date": "2026-10-19",
+      "form": "8-K",
+      "company": "CaliberCos Inc.  (CWD)  (CIK 0001627282)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001627282&type=8-K",
+      "adsh": "0001627282-26-000074"
     }
   ],
   "factor_11_clarity_act": {
