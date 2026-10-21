@@ -35,6 +35,9 @@ def nested(d, path):
 
 
 def validate(name, d, rules):
+    if name == 'ahr999.json':
+        from fetch_ahr999 import validate_snapshot
+        validate_snapshot(d, rules=rules)
     if name == 'api_data.json':
         from correlations import validate_correlations, latest_completed_session
         validate_correlations(d)

@@ -547,7 +547,7 @@ a:hover { text-decoration: underline; }
     <div style="margin-top:14px;">
       <div style="font-size:13px;font-weight:600;margin-bottom:6px;">US BTC 现货 ETF 累计持有 BTC 数量 vs BTC 价格（2024-01-11 起 daily · 双轴）</div>
       <div class="chart-container" style="height:320px"><canvas id="chartEtfBtc"></canvas></div>
-      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：Farside 日度 USD flow / 当日 BTC 价格 累加得到 BTC 数量；价格序列来自 blockchain.com（含 ahr999.json）</div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：Farside 日度 USD flow / 当日 BTC 价格 累加得到 BTC 数量；价格序列来自 {{ ahr999_source_label }}</div>
     </div>
     {% endif %}
   </div>
@@ -597,7 +597,7 @@ a:hover { text-decoration: underline; }
       <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 1：鲸鱼地址（≥1k BTC）持有占总供应量比例 vs BTC 价格（BRK 自合成 · 5.5 年周度实时）</div>
       {% if chart_whales_pct_values and chart_whales_pct_values != '[]' %}
       <div class="chart-container" style="height:260px;"><canvas id="chartWhalesPct"></canvas></div>
-      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：<a href="https://bitview.space" target="_blank">bitview.space</a>（Bitcoin Research Kit）<code>addrs_over_1k_btc_supply / supply × 100</code> 自合成，2000 天周度降采样；BTC 价格按日期配对自 ahr999 数据（blockchain.com）。样式参考 CoinShares Exhibit 35。</div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：<a href="https://bitview.space" target="_blank">bitview.space</a>（Bitcoin Research Kit）<code>addrs_over_1k_btc_supply / supply × 100</code> 自合成，2000 天周度降采样；BTC 价格按日期配对自 {{ ahr999_source_label }}。样式参考 CoinShares Exhibit 35。</div>
       {% elif ppt_img_whales_pct %}
       <div style="padding:8px;background:var(--bg2);border-radius:6px;border:1px solid var(--border);max-width:820px;">
         <img src="{{ ppt_img_whales_pct }}" style="width:100%;border-radius:4px;display:block;" alt="Whales ownership relative to BTC price (CoinShares Exhibit 35)">
@@ -774,7 +774,7 @@ a:hover { text-decoration: underline; }
         </div>
       </div>
       <div class="chart-container" style="height:240px;"><canvas id="chartAhr999"></canvas></div>
-      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：blockchain.com 历史日价（3451 天，2016-12 起）+ ahr999 公式 10^[5.84·log10(coin_age) − 17.01] 自合成。<strong>Coinglass 原 API 数据 AES 加密反爬</strong>，但本图与 Coinglass /pro/i/ahr999 同公式 raw data。<a href="https://www.coinglass.com/pro/i/ahr999" target="_blank">参照 Coinglass 实时页 ↗</a>{% if shot_coinglass_ahr999 %} · <a href="#" onclick="document.getElementById('coinglassAhrCollapse').style.display = document.getElementById('coinglassAhrCollapse').style.display==='none'?'block':'none'; return false;">展开 Coinglass 截图对比</a>{% endif %}</div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：{% if ahr999_source_url %}<a href="{{ ahr999_source_url }}" target="_blank">{{ ahr999_source_label }}</a>{% else %}{{ ahr999_source_label }}{% endif %}；{{ ahr999_rows }} 个指标日，{{ ahr999_history_start }} 起。价格观测截至 {{ ahr999_current_date or '未披露' }}{% if ahr999_source_period_date %} 00:00 UTC（对应 {{ ahr999_source_period_date }} 日收盘）{% endif %}。ahr999 公式 10^[5.84·log10(coin_age) − 17.01] 自合成。<a href="https://www.coinglass.com/pro/i/ahr999" target="_blank">参照 Coinglass 实时页 ↗</a>{% if shot_coinglass_ahr999 %} · <a href="#" onclick="document.getElementById('coinglassAhrCollapse').style.display = document.getElementById('coinglassAhrCollapse').style.display==='none'?'block':'none'; return false;">展开 Coinglass 截图对比</a>{% endif %}</div>
       {% if shot_coinglass_ahr999 %}
       <div id="coinglassAhrCollapse" style="display:none;margin-top:10px;padding:8px;background:var(--bg2);border-radius:6px;border:1px solid var(--border);max-width:1100px;">
         <img src="{{ shot_coinglass_ahr999 }}" style="width:100%;border-radius:4px;display:block;" alt="Coinglass Bitcoin Ahr999 Index (screenshot)">
@@ -1022,7 +1022,7 @@ a:hover { text-decoration: underline; }
 
   <!-- ═══════════════════ FOOTER ═══════════════════ -->
   <div class="footer">
-    BTC 多因素追踪报告 · 生成于 {{ report_date }} · 数据源：CoinGecko · Hyperliquid · DefiLlama · Farside Investors · BitcoinTreasuries.net · BRK · alternative.me · blockchain.com
+    BTC 多因素追踪报告 · 生成于 {{ report_date }} · 数据源：CoinGecko · Hyperliquid · DefiLlama · Farside Investors · BitcoinTreasuries.net · BRK · alternative.me · {{ ahr999_source_label }}
   </div>
 
 </div>

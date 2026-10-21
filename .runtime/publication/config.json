@@ -202,6 +202,15 @@
         "positive": [
           "current"
         ],
+        "required": [
+          "source_url",
+          "source_metric",
+          "source_clock",
+          "source_period_date",
+          "methodology_id",
+          "raw_sha256",
+          "validation_config_hash"
+        ],
         "max_age_days": {
           "current_date": 3
         }

@@ -8,46 +8,96 @@
 
 阈值参考：≤ 0.45 = "buy the dip"；≥ 1.0 = "over-value"。
 
-数据来源：blockchain.com 历史日价（10 年免费 API），CoinGecko free tier
-只回 365 天不够算 200d 均线 + 多年回溯，故弃用。
+数据来源：Coin Metrics Community PriceUSD，免费完整日价历史。
+PriceUSD 的日期 D 表示 D 日末价格；按 D+1 的 UTC 零点标记，
+与原 Blockchain.com 的零点价格时刻对齐。整段重算，不拼接旧源。
 
 Output: data/ahr999.json
 """
 import json
+import hashlib
 import math
+import os
 import sys
-from datetime import date, datetime, timedelta
+import tempfile
+from urllib.parse import urlparse
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
 
 ROOT = Path(__file__).parent.parent
 OUT = ROOT / "data" / "ahr999.json"
+CONFIG = ROOT / "publication" / "config.json"
 
 GENESIS = date(2009, 1, 3)
-API = "https://api.blockchain.info/charts/market-price?timespan=10years&format=json&sampled=false"
+API = "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
+METRIC = "PriceUSD"
+SOURCE_LABEL = "Coin Metrics Community PriceUSD（UTC 日终价，按次日零点标记）"
+METHOD_ID = "ahr999_coinmetrics_priceusd_utc_midnight_v1"
+PRICE_CLOCK = "00:00 UTC; PriceUSD period date + 1 calendar day"
+WARMUP_DAYS = 200
+HISTORY_YEARS = 10
 
 
-def fetch_btc_history():
-    """Return list of (date_iso, price_usd) ascending."""
-    r = requests.get(API, timeout=30)
-    r.raise_for_status()
-    j = r.json()
-    pts = []
-    for v in j.get("values", []):
-        ts = v.get("x")
-        px = v.get("y")
-        if ts is None or px is None or px <= 0:
-            continue
-        d = date.fromtimestamp(ts)
-        pts.append((d.isoformat(), float(px)))
-    # 按日期升序
-    pts.sort(key=lambda x: x[0])
-    # 去重（同日多条取最后）
-    dedup = {}
-    for d, p in pts:
-        dedup[d] = p
-    return sorted(dedup.items(), key=lambda x: x[0])
+def validation_rules():
+    config = json.loads(CONFIG.read_text())
+    return next(s["validation"] for s in config["fetchers"]
+                if s["output"] == OUT.name)
+
+
+def rules_hash(rules):
+    return hashlib.sha256(json.dumps(rules, sort_keys=True,
+                                    separators=(",", ":")).encode()).hexdigest()
+
+
+def parse_history(payload, today):
+    """Normalize completed daily periods to their actual UTC fixing date."""
+    if payload.get("next_page_url") or payload.get("next_page_token"):
+        raise ValueError("Price history is paginated; refusing a truncated series")
+    points = {}
+    for row in payload.get("data", []):
+        if row.get("asset") != "btc":
+            raise ValueError("Unexpected asset in price history")
+        stamp = datetime.fromisoformat(row["time"].replace("Z", "+00:00"))
+        if stamp.utcoffset() != timedelta(0) or stamp.time().isoformat() != "00:00:00":
+            raise ValueError("Expected a UTC daily period label")
+        period = stamp.date()
+        if period >= today:
+            continue  # today's end-of-day fixing has not completed
+        price = row.get(METRIC)
+        if price is None:
+            raise ValueError(f"Missing completed daily price: {period}")
+        price = float(price)
+        if not math.isfinite(price) or price <= 0:
+            raise ValueError(f"Invalid price: {period}")
+        observed = (period + timedelta(days=1)).isoformat()
+        if observed in points and points[observed] != price:
+            raise ValueError(f"Conflicting duplicate price: {observed}")
+        points[observed] = price
+    history = sorted(points.items())
+    for (left, _), (right, _) in zip(history, history[1:]):
+        if date.fromisoformat(right) - date.fromisoformat(left) != timedelta(days=1):
+            raise ValueError(f"Missing daily price between {left} and {right}")
+    return history
+
+
+def fetch_btc_history(now=None):
+    now = now or datetime.now(timezone.utc)
+    today = now.astimezone(timezone.utc).date()
+    try:
+        start = today.replace(year=today.year - HISTORY_YEARS)
+    except ValueError:
+        start = today.replace(year=today.year - HISTORY_YEARS, day=28)
+    response = requests.get(API, params={
+        "assets": "btc", "metrics": METRIC, "frequency": "1d",
+        "start_time": (start - timedelta(days=1)).isoformat(),
+        "page_size": 10000,
+    }, timeout=90)
+    response.raise_for_status()
+    history = parse_history(response.json(), today)
+    return history, {"source_url": response.url,
+                     "raw_sha256": hashlib.sha256(response.content).hexdigest()}
 
 
 def geometric_mean_200d(window):
@@ -75,8 +125,8 @@ def compute_ahr999(history):
     out = []
     prices = [p for _, p in history]
     dates = [d for d, _ in history]
-    for i in range(200, len(history)):
-        window = prices[i - 200:i]
+    for i in range(WARMUP_DAYS, len(history)):
+        window = prices[i - WARMUP_DAYS:i]
         gm = geometric_mean_200d(window)
         cur_price = prices[i]
         cur_date = dates[i]
@@ -91,45 +141,106 @@ def compute_ahr999(history):
     return out
 
 
-def main() -> int:
-    OUT.parent.mkdir(exist_ok=True)
-    try:
-        hist = fetch_btc_history()
-    except Exception as e:
-        print(f"FAIL fetch_ahr999 (blockchain.com): {e}", file=sys.stderr)
-        return 1
-
-    if len(hist) < 250:
-        print(f"FAIL fetch_ahr999: history too short ({len(hist)} days)", file=sys.stderr)
-        return 1
-
+def build_snapshot(hist, provenance, now=None):
+    from generate_report import AHR999_BOTTOM, AHR999_TOP
+    now = now or datetime.now(timezone.utc)
     series = compute_ahr999(hist)
     if not series:
-        print("FAIL fetch_ahr999: no rows after 200d warmup", file=sys.stderr)
-        return 1
-
+        raise ValueError("No rows after price-history warmup")
     cur = series[-1]
-    out = {
+    return {
         "current": cur["ahr999"],
         "current_date": cur["date"],
         "current_price": cur["price"],
         "fair_price": cur["fair"],
-        "threshold_low": 0.45,
-        "threshold_high": 1.0,
+        "threshold_low": AHR999_BOTTOM,
+        "threshold_high": AHR999_TOP,
         "dates": [r["date"] for r in series],
         "values": [round(r["ahr999"], 4) for r in series],
-        "btc_prices": [round(r["price"], 2) for r in series],
-        "source": "blockchain.com 历史日价 + 自合成公式 (CRSHK compiled)",
-        "fetched_at": datetime.now().isoformat(),
+        "btc_prices": [r["price"] for r in series],
+        "source": SOURCE_LABEL,
+        "source_metric": METRIC,
+        "source_clock": PRICE_CLOCK,
+        "source_period_date": (date.fromisoformat(cur["date"]) - timedelta(days=1)).isoformat(),
+        "methodology_id": METHOD_ID,
+        "validation_config_hash": rules_hash(validation_rules()),
+        "price_history_start": hist[0][0],
+        "fetched_at": now.astimezone(timezone.utc).isoformat(),
+        **provenance,
     }
 
-    with open(OUT, "w") as f:
-        json.dump(out, f, ensure_ascii=False, indent=2)
 
-    label = "buy-the-dip" if cur["ahr999"] <= 0.45 else ("over-value" if cur["ahr999"] >= 1.0 else "中性区")
+def validate_snapshot(snapshot, rules=None, now=None):
+    rules = rules if rules is not None else validation_rules()
+    now = now or datetime.now(timezone.utc)
+    if snapshot.get("methodology_id") != METHOD_ID or snapshot.get("source_metric") != METRIC:
+        raise ValueError("ahr999 source or methodology is not Coin Metrics")
+    if snapshot.get("source_clock") != PRICE_CLOCK:
+        raise ValueError("ahr999 UTC price clock changed")
+    source = urlparse(snapshot.get("source_url", ""))
+    expected_source = urlparse(API)
+    if source.scheme != expected_source.scheme or source.netloc != expected_source.netloc or source.path != expected_source.path:
+        raise ValueError("ahr999 source URL does not match Coin Metrics")
+    raw_hash = snapshot.get("raw_sha256", "")
+    if len(raw_hash) != 64 or any(char not in "0123456789abcdef" for char in raw_hash):
+        raise ValueError("ahr999 raw response hash is invalid")
+    if snapshot.get("validation_config_hash") != rules_hash(rules):
+        raise ValueError("ahr999 validation config changed; refetch data")
+    dates = snapshot.get("dates", [])
+    prices, values = snapshot.get("btc_prices", []), snapshot.get("values", [])
+    if len(dates) < rules["lengths"]["dates"] or not len(dates) == len(prices) == len(values):
+        raise ValueError("Insufficient or unaligned ahr999 history")
+    if dates != sorted(set(dates)):
+        raise ValueError("Duplicate or unsorted ahr999 dates")
+    if any(date.fromisoformat(b) - date.fromisoformat(a) != timedelta(days=1)
+           for a, b in zip(dates, dates[1:])):
+        raise ValueError("ahr999 history contains missing days")
+    if any(not math.isfinite(v) or v <= 0 for v in prices + values):
+        raise ValueError("Invalid ahr999 value or price")
+    if snapshot.get("current_date") != dates[-1] or snapshot.get("current_price") != prices[-1]:
+        raise ValueError("ahr999 latest observation disagrees with history")
+    observed = datetime.fromisoformat(dates[-1]).replace(tzinfo=timezone.utc)
+    age = (now.astimezone(timezone.utc) - observed).total_seconds() / 86400
+    if age < 0 or age > rules["max_age_days"]["current_date"]:
+        raise ValueError("Stale or future ahr999 price observation")
+    if snapshot.get("source_period_date") != (observed.date() - timedelta(days=1)).isoformat():
+        raise ValueError("Price period and UTC observation date do not align")
+    for key in rules.get("required", []):
+        if not snapshot.get(key):
+            raise ValueError(f"Missing ahr999 provenance: {key}")
+    if not math.isclose(snapshot["current"], values[-1], abs_tol=0.00005):
+        raise ValueError("ahr999 latest value disagrees with chart")
+    # Rebuild the last value from the preceding price window, independently of dates/values metadata.
+    current = prices[-1] / geometric_mean_200d(prices[-WARMUP_DAYS-1:-1])
+    current *= prices[-1] / fair_price_by_age(coin_age_days(dates[-1]))
+    if not math.isclose(snapshot["current"], current, rel_tol=1e-12):
+        raise ValueError("ahr999 formula validation failed")
+
+
+def main() -> int:
+    temporary = None
+    try:
+        hist, provenance = fetch_btc_history()
+        out = build_snapshot(hist, provenance)
+        validate_snapshot(out)
+        OUT.parent.mkdir(exist_ok=True)
+        with tempfile.NamedTemporaryFile(mode="w", dir=OUT.parent, prefix=".ahr999-",
+                                         suffix=".json", delete=False) as stream:
+            temporary = Path(stream.name)
+            json.dump(out, stream, ensure_ascii=False, indent=2, allow_nan=False)
+            stream.write("\n")
+        os.replace(temporary, OUT)
+    except Exception as exc:
+        if temporary is not None and temporary.exists():
+            temporary.unlink()  # only our own incomplete temporary output
+        print(f"FAIL fetch_ahr999: {exc}; previous snapshot preserved", file=sys.stderr)
+        return 1
+    label = "buy-the-dip" if out["current"] <= out["threshold_low"] else (
+        "over-value" if out["current"] >= out["threshold_high"] else "中性区")
     print(
-        f"OK fetch_ahr999: {cur['ahr999']:.3f} ({label}) · BTC ${cur['price']:,.0f} "
-        f"vs fair ${cur['fair']:,.0f} · 共 {len(series)} 天历史 -> {OUT}"
+        f"OK fetch_ahr999: {out['current']:.3f} ({label}) · BTC ${out['current_price']:,.0f} "
+        f"· {len(out['dates'])} days through {out['current_date']} 00:00 UTC "
+        f"· {SOURCE_LABEL} -> {OUT}"
     )
     return 0
 
