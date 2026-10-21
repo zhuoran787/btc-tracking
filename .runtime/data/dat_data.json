@@ -10,7 +10,7 @@
     "Strive"
   ],
   "total_holdings": 1303553.2192943657,
-  "total_value_usd": 107995370286.67319,
+  "total_value_usd": 108752703161.93481,
   "market_cap_dominance_pct": 6.21,
   "company_count": 180,
   "cost_basis_summary": [
@@ -27,8 +27,8 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 75449.28386820771,
       "total_cost_basis_native": 64020000000.0,
-      "avg_current_price_usd": 82846.92077637828,
-      "pnl_pct": 9.804780812886849
+      "avg_current_price_usd": 83427.8965770223,
+      "pnl_pct": 10.574802436496755
     },
     {
       "name": "Twenty One Capital",
@@ -43,8 +43,8 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 84864.98738337087,
       "total_cost_basis_native": 3692815061.0,
-      "avg_current_price_usd": 82846.92077637828,
-      "pnl_pct": -2.377973142064038
+      "avg_current_price_usd": 83427.8965770223,
+      "pnl_pct": -1.6933848111667316
     },
     {
       "name": "Metaplanet",
@@ -61,7 +61,7 @@
       "cost_currency": "JPY",
       "cost_as_of": "September 30, 2026",
       "disclosure_date": "2026-10-05",
-      "avg_current_price_usd": 82846.92077637828,
+      "avg_current_price_usd": 83427.8965770223,
       "pnl_pct": null
     },
     {
@@ -77,8 +77,8 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 54662.19748714057,
       "total_cost_basis_native": 1944717000.0,
-      "avg_current_price_usd": 82846.92077637828,
-      "pnl_pct": 51.561635984115426
+      "avg_current_price_usd": 83427.8965770223,
+      "pnl_pct": 52.624483486323314
     },
     {
       "name": "Strive",
@@ -93,8 +93,8 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 88710.00002716063,
       "total_cost_basis_native": 3266124781.0,
-      "avg_current_price_usd": 82846.92077637828,
-      "pnl_pct": -6.609265301529965
+      "avg_current_price_usd": 83427.8965770223,
+      "pnl_pct": -5.954349507971013
     }
   ],
   "total_cost_summary": {
