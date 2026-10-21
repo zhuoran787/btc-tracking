@@ -251,6 +251,7 @@ a:hover { text-decoration: underline; }
   <div class="header">
     <div>
       <h1>BTC Tracking Report</h1>
+      <div class="trade-subtitle" style="font-size:14px;line-height:1.65;margin:8px 0;color:var(--text);">BTC 买入价格：79000-82500。卖出价格：第一目标89000，第二目标105000。<br>ETH 买入价格：2300-2450。卖出价格：3600。</div>
       <div class="subtitle">{{ report_date }} · Data from CoinGecko, Hyperliquid, DefiLlama, Farside, BitcoinTreasuries</div>
     </div>
     <div style="text-align:right">
@@ -634,7 +635,7 @@ a:hover { text-decoration: underline; }
     {# 链上分析师卡片（合并：鲸鱼动向解读 + 区块链生态 / BTC/ETH 交易策略 / 市场观察）#}
     {% if analyst_funding_cards %}
     <div style="margin-top:18px;padding-top:14px;border-top:1px dashed var(--border);">
-      <div style="font-size:13px;font-weight:600;margin-bottom:10px;">链上分析师本期观点（策略组 6 人，14 天内有更新才显示）</div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:10px;">链上分析师本期观点（策略组 {{ analyst_funding_cards | length }} 人，14 天内有更新才显示）</div>
       <div style="font-size:11px;color:var(--text-muted);margin-bottom:10px;">每张卡片含两段：① 鲸鱼链上动向解读；② 区块链生态 / BTC·ETH 交易策略 / 市场观察。</div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:12px;">
         {% for c in analyst_funding_cards %}
@@ -650,6 +651,8 @@ a:hover { text-decoration: underline; }
             <div style="color:var(--text-dim);">{{ c.market_summary or c.summary or c.text or '本期无更新' }}</div>
           </div>
           {% if c.source_url %}<div style="margin-top:8px;"><a href="{{ c.source_url }}" target="_blank" style="font-size:11px;">原始来源 ↗</a></div>{% endif %}
+          {% if c.source_note %}<div style="font-size:11px;color:var(--text-muted);margin-top:6px;">{{ c.source_note }}</div>{% endif %}
+          {% for s in c.sources or [] %}{% if s.url and s.url != c.source_url %}<div style="font-size:11px;margin-top:4px;">{{ s.date }} · <a href="{{ s.url }}" target="_blank">{{ s.title or '补充来源' }} ↗</a></div>{% endif %}{% endfor %}
         </div>
         {% endfor %}
       </div>

@@ -885,7 +885,7 @@
           "name": "Matt Hougan",
           "org": "Bitwise CIO",
           "handle": "@Matt_Hougan",
-          "has_update": false,
+          "has_update": true,
           "stance": "看多",
           "raw_search_results": [
             {
@@ -978,11 +978,39 @@
               "title": "Bitcoin vs. Stocks and Gold: JPMorgan Reveals Its 10-Year Outlook - The Market Periodical",
               "snippet": "RSS候选线索；需回到原始发布日期及正文核查",
               "candidate_only": true
+            },
+            {
+              "date": "2026-10-20",
+              "url": "https://x.com/Matt_Hougan/status/2112387154923983105",
+              "title": "Matt Hougan：BTC被纳入LTCMA",
+              "snippet": "First they ignore you…add you to their Long-Term Capital Markets Assumptions…best-performing asset of the next decade. Reply acknowledges caveats and still maturing.",
+              "verification": "本机浏览器原帖及本人附注正文已核"
+            },
+            {
+              "date": "2026-10-19",
+              "url": "https://am.jpmorgan.com/content/dam/jpm-am-aem/global/en/insights/portfolio-insights/ltcma/noindex/ltcma-2027-report.pdf#page=47",
+              "title": "JPMorgan官方报告第47页",
+              "snippet": "Exhibit A10-year base10.0%; Exhibit B BTC compound10.0/arithmetic20.9/vol55.0; U.S.large cap7.5; Gold5.5; U.S.REITs8.2; excluded from main covariance matrices",
+              "verification": "官方PDF正文提取已核"
             }
           ],
-          "checked_at": "2026-10-21",
-          "summary": "本期未找到可核实的新观点；10/15本人仅称赞同一则受保护帖文，原帖正文现不可读；不再沿用此前无法重新核实的具体交易条件",
-          "status_label": "本次未核到新观点"
+          "checked_at": "2026-10-21T13:27:53+00:00",
+          "summary": "10/19摩根大通资产管理发布《2027年长期资本市场假设》，首次单列BTC长期回报情景。整体展望框架为10–15年，其中BTC表格具体采用十年预测：基准复合年化收益10.0%，高于同表美国大型股7.5%、黄金5.5%及美国REITs 8.2%；BTC算术平均年收益20.9%，年化波动率55.0%（官方报告第47页）。Hougan在10/20（UTC）点评：从被忽视、被嘲笑、被对抗，到被纳入主流长期资本市场预测，并被列为同表未来十年预期表现最佳的资产，这一变化令人惊叹；他同时承认报告附带许多限制条件、资产仍在成熟。纳入收益预测不等于摩根大通已经买入或将BTC纳入核心资产配置；官方仍未把BTC放入主要协方差矩阵",
+          "status_label": "",
+          "date": "2026-10-20",
+          "source_url": "https://x.com/Matt_Hougan/status/2112387154923983105",
+          "sources": [
+            {
+              "date": "2026-10-20",
+              "title": "Matt Hougan原帖及附注（UTC日期）",
+              "url": "https://x.com/Matt_Hougan/status/2112387154923983105"
+            },
+            {
+              "date": "2026-10-19",
+              "title": "摩根大通官方2027 LTCMA，第46–47页，Exhibit A/B",
+              "url": "https://am.jpmorgan.com/content/dam/jpm-am-aem/global/en/insights/portfolio-insights/ltcma/noindex/ltcma-2027-report.pdf#page=47"
+            }
+          ]
         },
         {
           "name": "VanEck",
@@ -2004,22 +2032,46 @@
               "title": "本期独立RSS检索",
               "snippet": "Lookonchain ethereum BTC tracking commentary；窗口14天；0条候选，候选不自动成为事实依据",
               "checked_at": "2026-10-21T11:46:54.816992+00:00"
+            },
+            {
+              "date": "2026-10-20",
+              "url": "https://x.com/lookonchain/status/2112552957803897339",
+              "title": "Lookonchain本人原帖",
+              "snippet": "Clifton Collins相关沉睡钱包向Coinbase Prime存入500 BTC，$41.52M，超过10年未动；关联总量6000BTC",
+              "verification": "本机浏览器原帖正文已核"
+            },
+            {
+              "date": "2026-07-02",
+              "url": "https://www.cab.ie/cab-btc-seizure/",
+              "title": "CAB – BTC Seizure",
+              "snippet": "supported by Europol; a further500 BTC; total1500 BTC seized in2026",
+              "verification": "官方正文已核，仅历史背景"
             }
           ],
-          "checked_at": "2026-10-21",
+          "checked_at": "2026-10-21T13:27:53+00:00",
           "stance": "中性",
-          "date": "2026-10-16",
-          "source_url": "https://x.com/lookonchain/status/2110946446090629474",
-          "summary": "记录匿名账户约1.867亿美元杠杆多仓：1,822 BTC与15,270 ETH，所报清算价分别80,637.87和2,406.08美元。属于观察时点衍生品敞口，不是现货增持，也不保证随后持仓不变",
+          "date": "2026-10-20",
+          "source_url": "https://x.com/lookonchain/status/2112552957803897339",
+          "summary": "10/20，Lookonchain监测到与爱尔兰毒贩Clifton Collins关联的沉睡逾10年钱包向Coinbase Prime转入500枚BTC，转账时估值约4,152万美元。关联资产原规模约6,000枚BTC，不代表本次6,000枚全部转移；链上转账本身不能确认已经卖出。此前10/16另监测到匿名账户约1.867亿美元杠杆多仓（1,822 BTC及15,270 ETH），这是衍生品敞口，不能视为现货买入",
           "sources": [
             {
+              "date": "2026-10-20",
+              "title": "Lookonchain：Clifton Collins相关钱包转入500 BTC",
+              "url": "https://x.com/lookonchain/status/2112552957803897339"
+            },
+            {
+              "date": "2026-07-02",
+              "title": "CAB官方公告：2026年累计扣押1,500 BTC（历史背景）",
+              "url": "https://www.cab.ie/cab-btc-seizure/"
+            },
+            {
               "date": "2026-10-16",
-              "title": "look 原文核查",
+              "title": "Lookonchain：匿名账户杠杆仓位（保留原观察）",
               "url": "https://x.com/lookonchain/status/2110946446090629474"
             }
           ],
-          "whale_summary": "记录匿名账户约1.867亿美元杠杆多仓：1,822 BTC与15,270 ETH，所报清算价分别80,637.87和2,406.08美元。属于观察时点衍生品敞口，不是现货增持，也不保证随后持仓不变",
-          "market_summary": "这条材料是账户杠杆仓位监测；本次未核到该条原文另给宏观判断、趋势目标价或具名现货交易策略"
+          "whale_summary": "10/20，Lookonchain监测到与爱尔兰毒贩Clifton Collins关联的沉睡逾10年钱包向Coinbase Prime转入500枚BTC，转账时估值约4,152万美元。关联资产原规模约6,000枚BTC，不代表本次6,000枚全部转移；链上转账本身不能确认已经卖出。此前10/16另监测到匿名账户约1.867亿美元杠杆多仓（1,822 BTC及15,270 ETH），这是衍生品敞口，不能视为现货买入",
+          "market_summary": "案件背景：据相关报道，Collins于2011–2012年买入约6,000枚BTC，将私钥藏于钓鱼竿盒中，后据称遗失。爱尔兰犯罪资产局（CAB）7/2官方公告确认，在Europol欧洲网络犯罪中心协助下，2026年累计扣押已达1,500枚BTC；这是3–7月的历史处置背景，不把10/20这笔500枚转账重复计入已证实扣押总额。此次转账的实际控制者及是否成交尚未确认"
         },
         {
           "name": "Whale Alert",
@@ -2202,6 +2254,60 @@
           ],
           "whale_summary": "10/15晚与10/16先后记录相同数量133,912,869 USDC从Aave转出、再转入Aave。两笔方向相反，不应相加算净流入；地址标签及转账不证明新增BTC/ETH买卖",
           "market_summary": "该账号此条仅提供转账预警与地址标签；本次未核到附带的BTC/ETH方向性判断或交易建议"
+        },
+        {
+          "name": "Murphy",
+          "org": "链上数据分析 · @Murphychen888",
+          "handle": "@Murphychen888",
+          "date": "2026-10-15",
+          "has_update": true,
+          "stance": "谨慎乐观",
+          "source_url": "https://x.com/Murphychen888/status/2109456518102094176",
+          "summary": "30日积累结构分化，市场处于高位消化期：既没有4–5月的全面派发，也没有6月的共振吸筹。100–1,000 BTC群体是约8.1万美元附近最直接的承接力量：6月抄底、8月追突破、9月高位停手、10月回调再买；Murphy推测其主要画像为加密基金、自营交易团队及主动交易的高净值投资者。1–10 BTC中小散户近期持续卖出，可能是在兑现8月6.1万–6.5万美元买入的利润；其他群体多处于中性、轻度减持或温和增持，体现宏观不确定下的谨慎。另据其LTH分析，10/7–8累计约3.2万枚BTC转入交易所，作者称这是2/5大跌后第二大的LTH单日转入规模（3.2万为两日累计口径）。若非币本位合约保证金用途、且OI并未相应增加，则可能有卖出意图；但同期美国政府相关钱包转入Coinbase Prime约1.72万枚（币龄1–2年）。Coinbase Prime为美国法警署指定托管及交易服务商，转账可能涉及托管整合或案件处置，不必然卖出。按他的剔除口径，剩余约1.48万枚才是重点潜在抛压，主要为币龄6–12个月及3–5年筹码；这不是已经成交的卖出数量。三次回踩约8万美元时，实体口径实现亏损呈“第3次大于第2次、但小于第1次”（10/9、10/12、10/15）的关系。按用户提供的两日观察更新，10/15宏观利空带来的亏损仍未超过10/9，说明对价格敏感、愿意亏损离场的“摇摆筹码”在减少。Murphy强调：尚不能确认这里就是阶段性底部，但摇摆筹码一次比一次少，就离底部一次比一次近；在整体不乐观的环境中，BTC独有的筹码结构可能带来不同于其他风险资产的表现。消化期需要时间磨合，他相信方向明确的那一天不会太远",
+          "whale_summary": "30日积累结构分化，市场处于高位消化期：既没有4–5月的全面派发，也没有6月的共振吸筹。100–1,000 BTC群体是约8.1万美元附近最直接的承接力量：6月抄底、8月追突破、9月高位停手、10月回调再买；Murphy推测其主要画像为加密基金、自营交易团队及主动交易的高净值投资者。1–10 BTC中小散户近期持续卖出，可能是在兑现8月6.1万–6.5万美元买入的利润；其他群体多处于中性、轻度减持或温和增持，体现宏观不确定下的谨慎。另据其LTH分析，10/7–8累计约3.2万枚BTC转入交易所，作者称这是2/5大跌后第二大的LTH单日转入规模（3.2万为两日累计口径）。若非币本位合约保证金用途、且OI并未相应增加，则可能有卖出意图；但同期美国政府相关钱包转入Coinbase Prime约1.72万枚（币龄1–2年）。Coinbase Prime为美国法警署指定托管及交易服务商，转账可能涉及托管整合或案件处置，不必然卖出。按他的剔除口径，剩余约1.48万枚才是重点潜在抛压，主要为币龄6–12个月及3–5年筹码；这不是已经成交的卖出数量",
+          "market_summary": "三次回踩约8万美元时，实体口径实现亏损呈“第3次大于第2次、但小于第1次”（10/9、10/12、10/15）的关系。按用户提供的两日观察更新，10/15宏观利空带来的亏损仍未超过10/9，说明对价格敏感、愿意亏损离场的“摇摆筹码”在减少。Murphy强调：尚不能确认这里就是阶段性底部，但摇摆筹码一次比一次少，就离底部一次比一次近；在整体不乐观的环境中，BTC独有的筹码结构可能带来不同于其他风险资产的表现。消化期需要时间磨合，他相信方向明确的那一天不会太远",
+          "source_note": "三段由用户提供；前两段日期由用户确认为10/15，未独立定位这两条原帖。LTH原帖及此前实现亏损分析已核；账户身份画像和潜在抛压属于作者推断，未独立重算底层链上数据。",
+          "sources": [
+            {
+              "date": "2026-10-12",
+              "title": "Murphy：LTH转账及剔除政府钱包（原帖UTC日期）",
+              "url": "https://x.com/Murphychen888/status/2109456518102094176"
+            },
+            {
+              "date": "2026-10-15",
+              "title": "Murphy：此前三次下跌的实体实现亏损（相关原帖，非用户提供的两日后更新）",
+              "url": "https://x.com/Murphychen888/status/2110574482641531354"
+            },
+            {
+              "date": "2026-10-15",
+              "title": "用户提供的积累趋势及两日观察原文，日期经用户确认",
+              "url": "https://x.com/Murphychen888"
+            }
+          ],
+          "raw_search_results": [
+            {
+              "date": "2026-10-15",
+              "url": "https://x.com/Murphychen888",
+              "title": "用户提供三段原文及日期确认",
+              "snippet": "30日积累结构分化，市场处于高位消化期：既没有4–5月的全面派发，也没有6月的共振吸筹。100–1,000 BTC群体是约8.1万美元附近最直接的承接力量：6月抄底、8月追突破、9月高位停手、10月回调再买；Murphy推测其主要画像为加密基金、自营交易团队及主动交易的高净值投资者。1–10 BTC中小散户近期持续卖出，可能是在兑现8月6.1万–6.5万美元买入的利润；其他群体多处于中性、轻度减持或温和增持，体现宏观不确定下的谨慎。另据其LTH分析，10/7–8累计约3.2万枚BTC转入交易所；同期美国政府相关钱包转入Coinbase Prime约1.72万枚，可能涉及托管整合或案件处置，不必然卖出。按他的剔除口径，剩余约1.48万枚才是重点潜在抛压，主要为币龄6–12个月及3–5年筹码；这不是已经成交的卖出数量。三次回踩约8万美元时，实体口径实现亏损呈“第3次大于第2次、但小于第1次”（10/9、10/12、10/15）的关系。按用户提供的两日观察更新，10/15宏观利空带来的亏损仍未超过10/9，说明对价格敏感、愿意亏损离场的“摇摆筹码”在减少。Murphy强调：尚不能确认这里就是阶段性底部，但摇摆筹码一次比一次少，就离底部一次比一次近；在整体不乐观的环境中，BTC独有的筹码结构可能带来不同于其他风险资产的表现。消化期需要时间磨合，他相信方向明确的那一天不会太远",
+              "verification": "用户提供原文，前两段日期用户确认；并非独立抓取这两条原帖"
+            },
+            {
+              "date": "2026-10-12",
+              "url": "https://x.com/Murphychen888/status/2109456518102094176",
+              "title": "Murphy原帖：LTH转账",
+              "snippet": "10/7-8 LTH32000BTC;政府17200BTC;剔除后14800BTC，潜在抛压非已卖出",
+              "verification": "原帖已找到；与用户提供文字对应"
+            },
+            {
+              "date": "2026-10-15",
+              "url": "https://x.com/Murphychen888/status/2110574482641531354",
+              "title": "Murphy原帖：实现亏损3>2但<1",
+              "snippet": "10/9、12、15三次下跌的实体实现亏损相对规模；摇摆筹码递减",
+              "verification": "本机浏览器正文已核；为相关前序帖"
+            }
+          ],
+          "checked_at": "2026-10-21T13:27:53+00:00"
         }
       ]
     }
