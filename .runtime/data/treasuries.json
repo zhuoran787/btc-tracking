@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-21T11:36:57.368485",
+  "fetched_at": "2026-10-21T11:41:59.723800",
   "public_companies": [
     {
       "raw": {
@@ -7,8 +7,8 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "StrategyMSTRBuy",
         "in usd": "\u00e2\u0082\u00bf848,517",
-        "market cap": "$70,754M",
-        "enterprise value": "$61,543M",
+        "market cap": "$70,707M",
+        "enterprise value": "$61,569M",
         "btc/share": "$**,***M",
         "cost basis": "*.********",
         "ngu": "$**,***M",
@@ -18,8 +18,8 @@
       },
       "name": "Strategy",
       "btc_holdings": 848517.0,
-      "market_cap_usd": 70754000000.0,
-      "enterprise_value_usd": 61543000000.0
+      "market_cap_usd": 70707000000.0,
+      "enterprise_value_usd": 61569000000.0
     },
     {
       "raw": {
@@ -27,7 +27,7 @@
         "name": "\u00f0\u009f\u0087\u00af\u00f0\u009f\u0087\u00b5",
         "bitcoin": "Metaplanet Inc.MPJPY",
         "in usd": "\u00e2\u0082\u00bf44,000",
-        "market cap": "$3,669M",
+        "market cap": "$3,667M",
         "enterprise value": "$1,860M",
         "btc/share": "$*,***M",
         "cost basis": "*.********",
@@ -38,7 +38,7 @@
       },
       "name": "Metaplanet Inc",
       "btc_holdings": 44000.0,
-      "market_cap_usd": 3669000000.0,
+      "market_cap_usd": 3667000000.0,
       "enterprise_value_usd": 1860000000.0
     },
     {
@@ -47,8 +47,8 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "Twenty One CapitalXXIBuy",
         "in usd": "\u00e2\u0082\u00bf43,514",
-        "market cap": "$3,628M",
-        "enterprise value": "$2,010M",
+        "market cap": "$3,626M",
+        "enterprise value": "$2,027M",
         "btc/share": "$*,***M",
         "cost basis": "*.********",
         "ngu": "$*,***M",
@@ -58,8 +58,8 @@
       },
       "name": "Twenty One Capital",
       "btc_holdings": 43514.0,
-      "market_cap_usd": 3628000000.0,
-      "enterprise_value_usd": 2010000000.0
+      "market_cap_usd": 3626000000.0,
+      "enterprise_value_usd": 2027000000.0
     },
     {
       "raw": {
@@ -67,8 +67,8 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "StriveASSTBuy",
         "in usd": "\u00e2\u0082\u00bf36,818",
-        "market cap": "$3,070M",
-        "enterprise value": "$2,698M",
+        "market cap": "$3,068M",
+        "enterprise value": "$2,696M",
         "btc/share": "$*,***M",
         "cost basis": "*.********",
         "ngu": "$*,***M",
@@ -78,8 +78,8 @@
       },
       "name": "Strive",
       "btc_holdings": 36818.0,
-      "market_cap_usd": 3070000000.0,
-      "enterprise_value_usd": 2698000000.0
+      "market_cap_usd": 3068000000.0,
+      "enterprise_value_usd": 2696000000.0
     },
     {
       "raw": {
@@ -87,8 +87,8 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "MARA Holdings, Inc.MARABuy",
         "in usd": "\u00e2\u0082\u00bf35,577",
-        "market cap": "$2,967M",
-        "enterprise value": "$2,913M",
+        "market cap": "$2,965M",
+        "enterprise value": "$2,906M",
         "btc/share": "$*,***M",
         "cost basis": "*.********",
         "ngu": "$*,***M",
@@ -98,8 +98,8 @@
       },
       "name": "MARA Holdings, Inc",
       "btc_holdings": 35577.0,
-      "market_cap_usd": 2967000000.0,
-      "enterprise_value_usd": 2913000000.0
+      "market_cap_usd": 2965000000.0,
+      "enterprise_value_usd": 2906000000.0
     },
     {
       "raw": {
@@ -107,7 +107,7 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "Bitcoin Standard Treasury CompanyBSTR",
         "in usd": "\u00e2\u0082\u00bf30,021",
-        "market cap": "$2,503M",
+        "market cap": "$2,502M",
         "enterprise value": "\u00e2\u0080\u0094",
         "btc/share": "\u00e2\u0080\u0094",
         "cost basis": "\u00e2\u0080\u0094",
@@ -118,7 +118,7 @@
       },
       "name": "Bitcoin Standard Treasury Company",
       "btc_holdings": 30021.0,
-      "market_cap_usd": 2503000000.0
+      "market_cap_usd": 2502000000.0
     },
     {
       "raw": {
@@ -126,7 +126,7 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "BullishBLSH",
         "in usd": "\u00e2\u0082\u00bf22,000",
-        "market cap": "$1,834M",
+        "market cap": "$1,833M",
         "enterprise value": "$3,295M",
         "btc/share": "$*,***M",
         "cost basis": "*.********",
@@ -137,7 +137,7 @@
       },
       "name": "Bullish",
       "btc_holdings": 22000.0,
-      "market_cap_usd": 1834000000.0,
+      "market_cap_usd": 1833000000.0,
       "enterprise_value_usd": 3295000000.0
     },
     {
@@ -146,7 +146,7 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "SpaceXSPCXBuy",
         "in usd": "\u00e2\u0082\u00bf18,712",
-        "market cap": "$1,560M",
+        "market cap": "$1,559M",
         "enterprise value": "\u00e2\u0080\u0094",
         "btc/share": "\u00e2\u0080\u0094",
         "cost basis": "\u00e2\u0080\u0094",
@@ -157,7 +157,7 @@
       },
       "name": "Space",
       "btc_holdings": 18712.0,
-      "market_cap_usd": 1560000000.0
+      "market_cap_usd": 1559000000.0
     },
     {
       "raw": {
@@ -166,7 +166,7 @@
         "bitcoin": "Coinbase Global, Inc.COINBuy",
         "in usd": "\u00e2\u0082\u00bf17,311",
         "market cap": "$1,443M",
-        "enterprise value": "$46,755M",
+        "enterprise value": "$46,653M",
         "btc/share": "$**,***M",
         "cost basis": "*.********",
         "ngu": "$*,***M",
@@ -177,7 +177,7 @@
       "name": "Coinbase Global, Inc",
       "btc_holdings": 17311.0,
       "market_cap_usd": 1443000000.0,
-      "enterprise_value_usd": 46755000000.0
+      "enterprise_value_usd": 46653000000.0
     },
     {
       "raw": {
@@ -185,7 +185,7 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "CleanSpark, Inc.CLSK",
         "in usd": "\u00e2\u0082\u00bf13,530",
-        "market cap": "$1,128M",
+        "market cap": "$1,127M",
         "enterprise value": "$2,443M",
         "btc/share": "$*,***M",
         "cost basis": "*.********",
@@ -196,7 +196,7 @@
       },
       "name": "CleanSpark, Inc",
       "btc_holdings": 13530.0,
-      "market_cap_usd": 1128000000.0,
+      "market_cap_usd": 1127000000.0,
       "enterprise_value_usd": 2443000000.0
     },
     {
@@ -205,7 +205,7 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "Trump Media & Technology Group Corp.DJTBuy",
         "in usd": "\u00e2\u0082\u00bf12,062",
-        "market cap": "$1,006M",
+        "market cap": "$1,005M",
         "enterprise value": "$1,833M",
         "btc/share": "$*,***M",
         "cost basis": "*.********",
@@ -216,7 +216,7 @@
       },
       "name": "Trump Media & Technology Group Corp",
       "btc_holdings": 12062.0,
-      "market_cap_usd": 1006000000.0,
+      "market_cap_usd": 1005000000.0,
       "enterprise_value_usd": 1833000000.0
     },
     {
@@ -225,8 +225,8 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "Tesla, Inc.TSLABuy",
         "in usd": "\u00e2\u0082\u00bf11,509",
-        "market cap": "$960M",
-        "enterprise value": "$1,261,067M",
+        "market cap": "$959M",
+        "enterprise value": "$1,258,074M",
         "btc/share": "$*,***,***M",
         "cost basis": "*.********",
         "ngu": "$***M",
@@ -236,8 +236,8 @@
       },
       "name": "Tesla, Inc",
       "btc_holdings": 11509.0,
-      "market_cap_usd": 960000000.0,
-      "enterprise_value_usd": 1261067000000.0
+      "market_cap_usd": 959000000.0,
+      "enterprise_value_usd": 1258074000000.0
     },
     {
       "raw": {
@@ -245,8 +245,8 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "Riot Platforms, Inc.RIOTBuy",
         "in usd": "\u00e2\u0082\u00bf11,380",
-        "market cap": "$949M",
-        "enterprise value": "$5,300M",
+        "market cap": "$948M",
+        "enterprise value": "$5,301M",
         "btc/share": "$*,***M",
         "cost basis": "*.********",
         "ngu": "\u00e2\u0080\u0094",
@@ -256,8 +256,8 @@
       },
       "name": "Riot Platforms, Inc",
       "btc_holdings": 11380.0,
-      "market_cap_usd": 949000000.0,
-      "enterprise_value_usd": 5300000000.0
+      "market_cap_usd": 948000000.0,
+      "enterprise_value_usd": 5301000000.0
     },
     {
       "raw": {
@@ -265,8 +265,8 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "Hut 8 Mining CorpHUT",
         "in usd": "\u00e2\u0082\u00bf10,278",
-        "market cap": "$857M",
-        "enterprise value": "$7,734M",
+        "market cap": "$856M",
+        "enterprise value": "$7,737M",
         "btc/share": "$*,***M",
         "cost basis": "*.********",
         "ngu": "\u00e2\u0080\u0094",
@@ -276,8 +276,8 @@
       },
       "name": "Hut 8 Mining Corp",
       "btc_holdings": 10278.0,
-      "market_cap_usd": 857000000.0,
-      "enterprise_value_usd": 7734000000.0
+      "market_cap_usd": 856000000.0,
+      "enterprise_value_usd": 7737000000.0
     },
     {
       "raw": {
@@ -345,8 +345,8 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "Galaxy Digital Holdings LtdGLXYBuy",
         "in usd": "\u00e2\u0082\u00bf6,894",
-        "market cap": "$575M",
-        "enterprise value": "$6,359M",
+        "market cap": "$574M",
+        "enterprise value": "$6,345M",
         "btc/share": "$*,***M",
         "cost basis": "*.********",
         "ngu": "\u00e2\u0080\u0094",
@@ -356,8 +356,8 @@
       },
       "name": "Galaxy Digital Holdings Ltd",
       "btc_holdings": 6894.0,
-      "market_cap_usd": 575000000.0,
-      "enterprise_value_usd": 6359000000.0
+      "market_cap_usd": 574000000.0,
+      "enterprise_value_usd": 6345000000.0
     },
     {
       "raw": {
@@ -405,7 +405,7 @@
         "bitcoin": "Silvia, Inc.SVIA",
         "in usd": "\u00e2\u0082\u00bf4,965",
         "market cap": "$414M",
-        "enterprise value": "$134M",
+        "enterprise value": "$131M",
         "btc/share": "\u00e2\u0080\u0094",
         "cost basis": "\u00e2\u0080\u0094",
         "ngu": "\u00e2\u0080\u0094",
@@ -416,7 +416,7 @@
       "name": "Silvia, Inc",
       "btc_holdings": 4965.0,
       "market_cap_usd": 414000000.0,
-      "enterprise_value_usd": 134000000.0
+      "enterprise_value_usd": 131000000.0
     },
     {
       "raw": {
@@ -424,7 +424,7 @@
         "name": "\u00f0\u009f\u0087\u00ad\u00f0\u009f\u0087\u00b0",
         "bitcoin": "Boyaa Interactive International Limited0434.HK",
         "in usd": "\u00e2\u0082\u00bf4,468",
-        "market cap": "$373M",
+        "market cap": "$372M",
         "enterprise value": "$282M",
         "btc/share": "$***M",
         "cost basis": "*.********",
@@ -435,7 +435,7 @@
       },
       "name": "Boyaa Interactive International Limited0434",
       "btc_holdings": 4468.0,
-      "market_cap_usd": 373000000.0,
+      "market_cap_usd": 372000000.0,
       "enterprise_value_usd": 282000000.0
     },
     {
@@ -484,7 +484,7 @@
         "name": "\u00f0\u009f\u0087\u00a9\u00f0\u009f\u0087\u00aa",
         "bitcoin": "Bitcoin Group SEADE.DE",
         "in usd": "\u00e2\u0082\u00bf3,605",
-        "market cap": "$301M",
+        "market cap": "$300M",
         "enterprise value": "$145M",
         "btc/share": "$***M",
         "cost basis": "*.********",
@@ -495,7 +495,7 @@
       },
       "name": "Bitcoin Group SEADE",
       "btc_holdings": 3605.0,
-      "market_cap_usd": 301000000.0,
+      "market_cap_usd": 300000000.0,
       "enterprise_value_usd": 145000000.0
     },
     {
@@ -505,7 +505,7 @@
         "bitcoin": "Capital BALCPB.PA",
         "in usd": "\u00e2\u0082\u00bf3,538",
         "market cap": "$295M",
-        "enterprise value": "$252M",
+        "enterprise value": "$251M",
         "btc/share": "$***M",
         "cost basis": "*.********",
         "ngu": "$***M",
@@ -516,7 +516,7 @@
       "name": "Capital BALCPB",
       "btc_holdings": 3538.0,
       "market_cap_usd": 295000000.0,
-      "enterprise_value_usd": 252000000.0
+      "enterprise_value_usd": 251000000.0
     },
     {
       "raw": {
@@ -602,7 +602,7 @@
         "name": "\u00f0\u009f\u0087\u00a8\u00f0\u009f\u0087\u00a6",
         "bitcoin": "DeFi TechnologiesDEFI.NE",
         "in usd": "\u00e2\u0082\u00bf2,597",
-        "market cap": "$217M",
+        "market cap": "$216M",
         "enterprise value": "$138M",
         "btc/share": "$***M",
         "cost basis": "*.********",
@@ -613,7 +613,7 @@
       },
       "name": "DeFi TechnologiesDEFI",
       "btc_holdings": 2597.0,
-      "market_cap_usd": 217000000.0,
+      "market_cap_usd": 216000000.0,
       "enterprise_value_usd": 138000000.0
     },
     {
@@ -701,7 +701,7 @@
         "bitcoin": "Canaan Inc.CAN",
         "in usd": "\u00e2\u0082\u00bf1,917",
         "market cap": "$160M",
-        "enterprise value": "$1,283M",
+        "enterprise value": "$1,271M",
         "btc/share": "$*,***M",
         "cost basis": "*.********",
         "ngu": "\u00e2\u0080\u0094",
@@ -712,7 +712,7 @@
       "name": "Canaan Inc",
       "btc_holdings": 1917.0,
       "market_cap_usd": 160000000.0,
-      "enterprise_value_usd": 1283000000.0
+      "enterprise_value_usd": 1271000000.0
     },
     {
       "raw": {
@@ -721,7 +721,7 @@
         "bitcoin": "NEXON Co., Ltd.3659.T",
         "in usd": "\u00e2\u0082\u00bf1,717",
         "market cap": "$143M",
-        "enterprise value": "$14,097M",
+        "enterprise value": "$14,095M",
         "btc/share": "$**,***M",
         "cost basis": "*.********",
         "ngu": "$***M",
@@ -732,7 +732,7 @@
       "name": "NEXON Co., Ltd.3659.T",
       "btc_holdings": 1717.0,
       "market_cap_usd": 143000000.0,
-      "enterprise_value_usd": 14097000000.0
+      "enterprise_value_usd": 14095000000.0
     },
     {
       "raw": {
@@ -1077,7 +1077,7 @@
         "bitcoin": "Aker ASAAKER.OL",
         "in usd": "\u00e2\u0082\u00bf754",
         "market cap": "$63M",
-        "enterprise value": "$9,513M",
+        "enterprise value": "$9,491M",
         "btc/share": "$**,***M",
         "cost basis": "\u00e2\u0080\u0094",
         "ngu": "$**M",
@@ -1088,7 +1088,7 @@
       "name": "Aker ASAAKER",
       "btc_holdings": 754.0,
       "market_cap_usd": 63000000.0,
-      "enterprise_value_usd": 9513000000.0
+      "enterprise_value_usd": 9491000000.0
     },
     {
       "raw": {
@@ -1117,7 +1117,7 @@
         "bitcoin": "Cipher DigitalCIFR",
         "in usd": "\u00e2\u0082\u00bf646",
         "market cap": "$54M",
-        "enterprise value": "$3,441M",
+        "enterprise value": "$3,443M",
         "btc/share": "$*,***M",
         "cost basis": "*.********",
         "ngu": "\u00e2\u0080\u0094",
@@ -1128,7 +1128,7 @@
       "name": "Cipher Digital",
       "btc_holdings": 646.0,
       "market_cap_usd": 54000000.0,
-      "enterprise_value_usd": 3441000000.0
+      "enterprise_value_usd": 3443000000.0
     },
     {
       "raw": {
@@ -1136,7 +1136,7 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "Alliance Resource Partners, L.P.ARLP",
         "in usd": "\u00e2\u0082\u00bf618",
-        "market cap": "$52M",
+        "market cap": "$51M",
         "enterprise value": "\u00e2\u0080\u0094",
         "btc/share": "\u00e2\u0080\u0094",
         "cost basis": "\u00e2\u0080\u0094",
@@ -1147,7 +1147,7 @@
       },
       "name": "Alliance Resource Partners, L.P",
       "btc_holdings": 618.0,
-      "market_cap_usd": 52000000.0
+      "market_cap_usd": 51000000.0
     },
     {
       "raw": {
@@ -1314,7 +1314,7 @@
         "bitcoin": "Virtu Financial, Inc.VIRT",
         "in usd": "\u00e2\u0082\u00bf410",
         "market cap": "$34M",
-        "enterprise value": "$8,874M",
+        "enterprise value": "$8,716M",
         "btc/share": "$**,***M",
         "cost basis": "\u00e2\u0080\u0094",
         "ngu": "$**M",
@@ -1325,7 +1325,7 @@
       "name": "Virtu Financial, Inc",
       "btc_holdings": 410.0,
       "market_cap_usd": 34000000.0,
-      "enterprise_value_usd": 8874000000.0
+      "enterprise_value_usd": 8716000000.0
     },
     {
       "raw": {
@@ -1353,7 +1353,7 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "Consensus Mining & SeigniorageCMSG",
         "in usd": "\u00e2\u0082\u00bf354",
-        "market cap": "$30M",
+        "market cap": "$29M",
         "enterprise value": "$65M",
         "btc/share": "$*M",
         "cost basis": "*.********",
@@ -1364,7 +1364,7 @@
       },
       "name": "Consensus Mining & Seigniorage",
       "btc_holdings": 354.0,
-      "market_cap_usd": 30000000.0,
+      "market_cap_usd": 29000000.0,
       "enterprise_value_usd": 65000000.0
     },
     {
@@ -1471,7 +1471,7 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "Robinhood Markets IncHOODBuy",
         "in usd": "\u00e2\u0082\u00bf294",
-        "market cap": "$25M",
+        "market cap": "$24M",
         "enterprise value": "\u00e2\u0080\u0094",
         "btc/share": "\u00e2\u0080\u0094",
         "cost basis": "\u00e2\u0080\u0094",
@@ -1482,7 +1482,7 @@
       },
       "name": "Robinhood Markets Inc",
       "btc_holdings": 294.0,
-      "market_cap_usd": 25000000.0
+      "market_cap_usd": 24000000.0
     },
     {
       "raw": {
@@ -1491,7 +1491,7 @@
         "bitcoin": "Rumble Inc.RUM",
         "in usd": "\u00e2\u0082\u00bf293",
         "market cap": "$24M",
-        "enterprise value": "$1,270M",
+        "enterprise value": "$1,274M",
         "btc/share": "$***M",
         "cost basis": "\u00e2\u0080\u0094",
         "ngu": "\u00e2\u0080\u0094",
@@ -1502,7 +1502,7 @@
       "name": "Rumble Inc",
       "btc_holdings": 293.0,
       "market_cap_usd": 24000000.0,
-      "enterprise_value_usd": 1270000000.0
+      "enterprise_value_usd": 1274000000.0
     },
     {
       "raw": {
@@ -1649,7 +1649,7 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "BitMine Immersion Technologies, Inc.BMNRBuy",
         "in usd": "\u00e2\u0082\u00bf210",
-        "market cap": "$18M",
+        "market cap": "$17M",
         "enterprise value": "\u00e2\u0080\u0094",
         "btc/share": "\u00e2\u0080\u0094",
         "cost basis": "\u00e2\u0080\u0094",
@@ -1660,7 +1660,7 @@
       },
       "name": "BitMine Immersion Technologies, Inc",
       "btc_holdings": 210.0,
-      "market_cap_usd": 18000000.0
+      "market_cap_usd": 17000000.0
     },
     {
       "raw": {
@@ -1766,7 +1766,7 @@
         "name": "\u00f0\u009f\u0087\u00b8\u00f0\u009f\u0087\u00aa",
         "bitcoin": "Bitcoin Treasury CapitalBTCB.SE",
         "in usd": "\u00e2\u0082\u00bf174",
-        "market cap": "$15M",
+        "market cap": "$14M",
         "enterprise value": "\u00e2\u0080\u0094",
         "btc/share": "\u00e2\u0080\u0094",
         "cost basis": "\u00e2\u0080\u0094",
@@ -1777,7 +1777,7 @@
       },
       "name": "Bitcoin Treasury CapitalBTCB",
       "btc_holdings": 174.0,
-      "market_cap_usd": 15000000.0
+      "market_cap_usd": 14000000.0
     },
     {
       "raw": {
@@ -1786,7 +1786,7 @@
         "bitcoin": "K33 ABK33.ST",
         "in usd": "\u00e2\u0082\u00bf168",
         "market cap": "$14M",
-        "enterprise value": "$25M",
+        "enterprise value": "$26M",
         "btc/share": "$**M",
         "cost basis": "*.********",
         "ngu": "\u00e2\u0080\u0094",
@@ -1797,7 +1797,7 @@
       "name": "K33 ABK33",
       "btc_holdings": 168.0,
       "market_cap_usd": 14000000.0,
-      "enterprise_value_usd": 25000000.0
+      "enterprise_value_usd": 26000000.0
     },
     {
       "raw": {
@@ -1865,7 +1865,7 @@
         "name": "\u00f0\u009f\u0087\u00a8\u00f0\u009f\u0087\u00a6",
         "bitcoin": "HIVE Digital TechnologiesHIVE",
         "in usd": "\u00e2\u0082\u00bf150",
-        "market cap": "$13M",
+        "market cap": "$12M",
         "enterprise value": "$474M",
         "btc/share": "$***M",
         "cost basis": "*.********",
@@ -1876,7 +1876,7 @@
       },
       "name": "HIVE Digital Technologies",
       "btc_holdings": 150.0,
-      "market_cap_usd": 13000000.0,
+      "market_cap_usd": 12000000.0,
       "enterprise_value_usd": 474000000.0
     },
     {
@@ -2252,7 +2252,7 @@
         "name": "\u00f0\u009f\u0087\u00af\u00f0\u009f\u0087\u00b5",
         "bitcoin": "SBC Medical Group Holdings IncSBC",
         "in usd": "\u00e2\u0082\u00bf66",
-        "market cap": "$6M",
+        "market cap": "$5M",
         "enterprise value": "\u00e2\u0080\u0094",
         "btc/share": "\u00e2\u0080\u0094",
         "cost basis": "\u00e2\u0080\u0094",
@@ -2263,7 +2263,7 @@
       },
       "name": "SBC Medical Group Holdings Inc",
       "btc_holdings": 66.0,
-      "market_cap_usd": 6000000.0
+      "market_cap_usd": 5000000.0
     },
     {
       "raw": {
@@ -2443,7 +2443,7 @@
         "name": "\u00f0\u009f\u0087\u00ad\u00f0\u009f\u0087\u00b0",
         "bitcoin": "Moon Inc1723.HK",
         "in usd": "\u00e2\u0082\u00bf42",
-        "market cap": "$4M",
+        "market cap": "$3M",
         "enterprise value": "\u00e2\u0080\u0094",
         "btc/share": "\u00e2\u0080\u0094",
         "cost basis": "\u00e2\u0080\u0094",
@@ -2454,7 +2454,7 @@
       },
       "name": "Moon Inc1723",
       "btc_holdings": 42.0,
-      "market_cap_usd": 4000000.0
+      "market_cap_usd": 3000000.0
     },
     {
       "raw": {
@@ -2576,7 +2576,7 @@
         "name": "\u00f0\u009f\u0087\u00ad\u00f0\u009f\u0087\u00b0",
         "bitcoin": "AsiaStrategySORA",
         "in usd": "\u00e2\u0082\u00bf30",
-        "market cap": "$3M",
+        "market cap": "$2M",
         "enterprise value": "\u00e2\u0080\u0094",
         "btc/share": "\u00e2\u0080\u0094",
         "cost basis": "\u00e2\u0080\u0094",
@@ -2587,7 +2587,7 @@
       },
       "name": "AsiaStrategy",
       "btc_holdings": 30.0,
-      "market_cap_usd": 3000000.0
+      "market_cap_usd": 2000000.0
     },
     {
       "raw": {
@@ -3397,7 +3397,7 @@
         "bitcoin": "Bit Digital, Inc.BTBT",
         "in usd": "\u00e2\u0082\u00bf6",
         "market cap": "$1M",
-        "enterprise value": "$301M",
+        "enterprise value": "$299M",
         "btc/share": "$***M",
         "cost basis": "\u00e2\u0080\u0094",
         "ngu": "\u00e2\u0080\u0094",
@@ -3408,7 +3408,7 @@
       "name": "Bit Digital, Inc",
       "btc_holdings": 6.0,
       "market_cap_usd": 1000000.0,
-      "enterprise_value_usd": 301000000.0
+      "enterprise_value_usd": 299000000.0
     },
     {
       "raw": {
@@ -3759,7 +3759,7 @@
         "bitcoin": "GameStop Corp.GMEBuy",
         "in usd": "\u00e2\u0082\u00bf1",
         "market cap": "$0M",
-        "enterprise value": "$11,755M",
+        "enterprise value": "$11,740M",
         "btc/share": "$*,***M",
         "cost basis": "*.********",
         "ngu": "\u00e2\u0080\u0094",
@@ -3770,7 +3770,7 @@
       "name": "GameStop Corp",
       "btc_holdings": 1.0,
       "market_cap_usd": 0.0,
-      "enterprise_value_usd": 11755000000.0
+      "enterprise_value_usd": 11740000000.0
     },
     {
       "raw": {
@@ -3969,7 +3969,7 @@
         "bitcoin": "MercadoLibre, Inc.MELIBuy",
         "in usd": "\u00e2\u0082\u00bf0",
         "market cap": "$0M",
-        "enterprise value": "$94,759M",
+        "enterprise value": "$94,735M",
         "btc/share": "$**,***M",
         "cost basis": "\u00e2\u0080\u0094",
         "ngu": "\u00e2\u0080\u0094",
@@ -3980,7 +3980,7 @@
       "name": "MercadoLibre, Inc",
       "btc_holdings": 0.0,
       "market_cap_usd": 0.0,
-      "enterprise_value_usd": 94759000000.0
+      "enterprise_value_usd": 94735000000.0
     },
     {
       "raw": {
@@ -4185,7 +4185,7 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "Block.one",
         "in usd": "\u00e2\u0082\u00bf164,000",
-        "/21m": "$13,673M"
+        "/21m": "$13,666M"
       },
       "name": "Block.one",
       "btc_holdings": 164000.0
@@ -4196,7 +4196,7 @@
         "name": "\u00f0\u009f\u0087\u00bb\u00f0\u009f\u0087\u00ac",
         "bitcoin": "Tether Holdings Limited",
         "in usd": "\u00e2\u0082\u00bf100,000",
-        "/21m": "$8,337M"
+        "/21m": "$8,333M"
       },
       "name": "Tether Holdings Limited",
       "btc_holdings": 100000.0
@@ -4207,7 +4207,7 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "Stone Ridge Holdings Group",
         "in usd": "\u00e2\u0082\u00bf10,000",
-        "/21m": "$834M"
+        "/21m": "$833M"
       },
       "name": "Stone Ridge Holdings Group",
       "btc_holdings": 10000.0
@@ -4339,7 +4339,7 @@
         "name": "\u00f0\u009f\u0087\u00a8\u00f0\u009f\u0087\u00ad",
         "bitcoin": "Relai",
         "in usd": "\u00e2\u0082\u00bf30",
-        "/21m": "$3M"
+        "/21m": "$2M"
       },
       "name": "Relai",
       "btc_holdings": 30.0
@@ -5001,8 +5001,8 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "StrategyMSTRBuy",
         "in usd": "\u00e2\u0082\u00bf848,517",
-        "market cap": "$70,754M",
-        "enterprise value": "$61,543M",
+        "market cap": "$70,707M",
+        "enterprise value": "$61,569M",
         "btc/share": "$**,***M",
         "cost basis": "*.********",
         "ngu": "$**,***M",
@@ -5012,8 +5012,8 @@
       },
       "name": "Strategy",
       "btc_holdings": 848517.0,
-      "market_cap_usd": 70754000000.0,
-      "enterprise_value_usd": 61543000000.0
+      "market_cap_usd": 70707000000.0,
+      "enterprise_value_usd": 61569000000.0
     },
     "Metaplanet Inc": {
       "raw": {
@@ -5021,7 +5021,7 @@
         "name": "\u00f0\u009f\u0087\u00af\u00f0\u009f\u0087\u00b5",
         "bitcoin": "Metaplanet Inc.MPJPY",
         "in usd": "\u00e2\u0082\u00bf44,000",
-        "market cap": "$3,669M",
+        "market cap": "$3,667M",
         "enterprise value": "$1,860M",
         "btc/share": "$*,***M",
         "cost basis": "*.********",
@@ -5032,7 +5032,7 @@
       },
       "name": "Metaplanet Inc",
       "btc_holdings": 44000.0,
-      "market_cap_usd": 3669000000.0,
+      "market_cap_usd": 3667000000.0,
       "enterprise_value_usd": 1860000000.0
     },
     "Twenty One Capital": {
@@ -5041,8 +5041,8 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "Twenty One CapitalXXIBuy",
         "in usd": "\u00e2\u0082\u00bf43,514",
-        "market cap": "$3,628M",
-        "enterprise value": "$2,010M",
+        "market cap": "$3,626M",
+        "enterprise value": "$2,027M",
         "btc/share": "$*,***M",
         "cost basis": "*.********",
         "ngu": "$*,***M",
@@ -5052,8 +5052,8 @@
       },
       "name": "Twenty One Capital",
       "btc_holdings": 43514.0,
-      "market_cap_usd": 3628000000.0,
-      "enterprise_value_usd": 2010000000.0
+      "market_cap_usd": 3626000000.0,
+      "enterprise_value_usd": 2027000000.0
     },
     "Strive": {
       "raw": {
@@ -5061,8 +5061,8 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "StriveASSTBuy",
         "in usd": "\u00e2\u0082\u00bf36,818",
-        "market cap": "$3,070M",
-        "enterprise value": "$2,698M",
+        "market cap": "$3,068M",
+        "enterprise value": "$2,696M",
         "btc/share": "$*,***M",
         "cost basis": "*.********",
         "ngu": "$*,***M",
@@ -5072,8 +5072,8 @@
       },
       "name": "Strive",
       "btc_holdings": 36818.0,
-      "market_cap_usd": 3070000000.0,
-      "enterprise_value_usd": 2698000000.0
+      "market_cap_usd": 3068000000.0,
+      "enterprise_value_usd": 2696000000.0
     },
     "MARA Holdings, Inc": {
       "raw": {
@@ -5081,8 +5081,8 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "MARA Holdings, Inc.MARABuy",
         "in usd": "\u00e2\u0082\u00bf35,577",
-        "market cap": "$2,967M",
-        "enterprise value": "$2,913M",
+        "market cap": "$2,965M",
+        "enterprise value": "$2,906M",
         "btc/share": "$*,***M",
         "cost basis": "*.********",
         "ngu": "$*,***M",
@@ -5092,8 +5092,8 @@
       },
       "name": "MARA Holdings, Inc",
       "btc_holdings": 35577.0,
-      "market_cap_usd": 2967000000.0,
-      "enterprise_value_usd": 2913000000.0
+      "market_cap_usd": 2965000000.0,
+      "enterprise_value_usd": 2906000000.0
     },
     "Coinbase Global, Inc": {
       "raw": {
@@ -5102,7 +5102,7 @@
         "bitcoin": "Coinbase Global, Inc.COINBuy",
         "in usd": "\u00e2\u0082\u00bf17,311",
         "market cap": "$1,443M",
-        "enterprise value": "$46,755M",
+        "enterprise value": "$46,653M",
         "btc/share": "$**,***M",
         "cost basis": "*.********",
         "ngu": "$*,***M",
@@ -5113,7 +5113,7 @@
       "name": "Coinbase Global, Inc",
       "btc_holdings": 17311.0,
       "market_cap_usd": 1443000000.0,
-      "enterprise_value_usd": 46755000000.0
+      "enterprise_value_usd": 46653000000.0
     },
     "Tesla, Inc": {
       "raw": {
@@ -5121,8 +5121,8 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "Tesla, Inc.TSLABuy",
         "in usd": "\u00e2\u0082\u00bf11,509",
-        "market cap": "$960M",
-        "enterprise value": "$1,261,067M",
+        "market cap": "$959M",
+        "enterprise value": "$1,258,074M",
         "btc/share": "$*,***,***M",
         "cost basis": "*.********",
         "ngu": "$***M",
@@ -5132,8 +5132,8 @@
       },
       "name": "Tesla, Inc",
       "btc_holdings": 11509.0,
-      "market_cap_usd": 960000000.0,
-      "enterprise_value_usd": 1261067000000.0
+      "market_cap_usd": 959000000.0,
+      "enterprise_value_usd": 1258074000000.0
     },
     "Block, Inc": {
       "raw": {
@@ -5220,7 +5220,7 @@
         "name": "\u00f0\u009f\u0087\u00ad\u00f0\u009f\u0087\u00b0",
         "bitcoin": "AsiaStrategySORA",
         "in usd": "\u00e2\u0082\u00bf30",
-        "market cap": "$3M",
+        "market cap": "$2M",
         "enterprise value": "\u00e2\u0080\u0094",
         "btc/share": "\u00e2\u0080\u0094",
         "cost basis": "\u00e2\u0080\u0094",
@@ -5231,7 +5231,7 @@
       },
       "name": "AsiaStrategy",
       "btc_holdings": 30.0,
-      "market_cap_usd": 3000000.0
+      "market_cap_usd": 2000000.0
     },
     "Norwegian Block ExchangeNBX": {
       "raw": {
@@ -5296,7 +5296,7 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "Block.one",
         "in usd": "\u00e2\u0082\u00bf164,000",
-        "/21m": "$13,673M"
+        "/21m": "$13,666M"
       },
       "name": "Block.one",
       "btc_holdings": 164000.0
@@ -5307,7 +5307,7 @@
         "name": "\u00f0\u009f\u0087\u00bb\u00f0\u009f\u0087\u00ac",
         "bitcoin": "Tether Holdings Limited",
         "in usd": "\u00e2\u0082\u00bf100,000",
-        "/21m": "$8,337M"
+        "/21m": "$8,333M"
       },
       "name": "Tether Holdings Limited",
       "btc_holdings": 100000.0
