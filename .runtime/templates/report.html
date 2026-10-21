@@ -342,7 +342,12 @@ a:hover { text-decoration: underline; }
         <div style="font-size:12px;color:var(--text-dim);margin-top:6px;line-height:1.55;">{{ macro_sox_caption_ai }}</div>
       </div>
     </div>
-    <div style="margin-top:10px;font-size:11px;color:var(--text-dim);line-height:1.6;">图为价格走势；下方系数衡量各期涨跌幅的同步程度。窗口按日历月回退，两组分别按上述时刻取样。XAUT 为黄金代币；BTC—SOX 使用 Coinbase BTC-USD 与 Yahoo Finance SOX 收盘价。</div>
+    <details class="correlation-method" style="margin-top:10px;font-size:11px;color:var(--text-dim);line-height:1.6;">
+      <summary>计算口径与数据来源</summary>
+      <div>{{ macro_gold_method_details }}</div>
+      <div>{{ macro_sox_method_details }}</div>
+      <div>图为价格走势；下方系数衡量各期涨跌幅的同步程度。窗口按日历月回退，两组分别按上述时刻取样。XAUT 为黄金代币；BTC—SOX 使用 Coinbase BTC-USD 与 Yahoo Finance SOX 收盘价。</div>
+    </details>
     <!-- PPT 2.1：永远保留不变 -->
     <div style="margin-top:14px;padding:10px 12px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:4px;font-size:12px;color:var(--text-dim);line-height:1.55;">
       <strong>注：相关性原因——</strong>23 年机构资金开始流入比特币后，比特币与全球其他风险资产类别联动加大。

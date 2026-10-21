@@ -406,16 +406,21 @@ a:hover { text-decoration: underline; }
 <div style="font-size:12px;color:var(--text-muted);margin-bottom:6px;">BTC vs 黄金代币 XAUT（约 1 年，UTC 零点）</div>
 <div class="chart-container"><canvas id="chartBtcGold"></canvas></div>
 <!-- PPT 2.2：AI 根据左上图数据更新 -->
-<div style="font-size:12px;color:var(--text-dim);margin-top:6px;line-height:1.55;">BTC 与黄金代币 XAUT的简单收益率 Pearson 相关性：近 3 个月 +0.51（2026-07-20—2026-10-20，92 条收益率）；近 6 个月 +0.53（2026-04-20—2026-10-20，183 条收益率）。双方均取 UTC 零点价格，包含周末。</div>
+<div style="font-size:12px;color:var(--text-dim);margin-top:6px;line-height:1.55;">比特币与黄金近 3 个月日收益率相关性 +0.51，6 个月 +0.53。</div>
 </div>
 <div>
 <div style="font-size:12px;color:var(--text-muted);margin-bottom:6px;">BTC vs SOX 半导体指数（约 1 年，美股收盘）</div>
 <div class="chart-container"><canvas id="chartBtcSox"></canvas></div>
 <!-- PPT 2.3：AI 根据右上图数据更新 -->
-<div style="font-size:12px;color:var(--text-dim);margin-top:6px;line-height:1.55;">BTC 与SOX 半导体指数的简单收益率 Pearson 相关性：近 3 个月 +0.26（2026-07-20—2026-10-20，65 条收益率）；近 6 个月 +0.27（2026-04-20—2026-10-20，127 条收益率）。双方均取美股交易日收盘价格，BTC 周末变化并入相邻交易日区间。</div>
+<div style="font-size:12px;color:var(--text-dim);margin-top:6px;line-height:1.55;">比特币与 AI 资产近 3 个月日收益率相关性 +0.26，6 个月 +0.27。</div>
 </div>
 </div>
-<div style="margin-top:10px;font-size:11px;color:var(--text-dim);line-height:1.6;">图为价格走势；下方系数衡量各期涨跌幅的同步程度。窗口按日历月回退，两组分别按上述时刻取样。XAUT 为黄金代币；BTC—SOX 使用 Coinbase BTC-USD 与 Yahoo Finance SOX 收盘价。</div>
+    <details class="correlation-method" style="margin-top:10px;font-size:11px;color:var(--text-dim);line-height:1.6;">
+      <summary>计算口径与数据来源</summary>
+      <div>BTC 与黄金代币 XAUT的简单收益率 Pearson 相关性：近 3 个月 +0.51（2026-07-20—2026-10-20，92 条收益率）；近 6 个月 +0.53（2026-04-20—2026-10-20，183 条收益率）。双方均取 UTC 零点价格，包含周末。</div>
+      <div>BTC 与SOX 半导体指数的简单收益率 Pearson 相关性：近 3 个月 +0.26（2026-07-20—2026-10-20，65 条收益率）；近 6 个月 +0.27（2026-04-20—2026-10-20，127 条收益率）。双方均取美股交易日收盘价格，BTC 周末变化并入相邻交易日区间。</div>
+      <div>图为价格走势；下方系数衡量各期涨跌幅的同步程度。窗口按日历月回退，两组分别按上述时刻取样。XAUT 为黄金代币；BTC—SOX 使用 Coinbase BTC-USD 与 Yahoo Finance SOX 收盘价。</div>
+    </details>
 <!-- PPT 2.1：永远保留不变 -->
 <div style="margin-top:14px;padding:10px 12px;background:var(--bg2);border-left:3px solid var(--accent);border-radius:4px;font-size:12px;color:var(--text-dim);line-height:1.55;">
 <strong>注：相关性原因——</strong>23 年机构资金开始流入比特币后，比特币与全球其他风险资产类别联动加大。

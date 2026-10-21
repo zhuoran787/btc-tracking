@@ -931,6 +931,16 @@ def _macro_correlation_one_liner_ai(api):
 
 
 def _correlation_caption(api, pair):
+    label = {'btc_gold': '黄金', 'btc_sox': ' AI 资产'}[pair]
+    parts = []
+    for i, months in enumerate(CORRELATION_POLICY['horizons_months']):
+        prefix = '近 ' if i == 0 else ''
+        metric = '日收益率相关性' if i == 0 else ''
+        parts.append(f"{prefix}{months} 个月{metric} {api['correlations'][f'{pair}_{months}m']:+.2f}")
+    return f"比特币与{label}" + '，'.join(parts) + '。'
+
+
+def _correlation_details(api, pair):
     definition = CORRELATION_POLICY['pairs'][pair]
     parts = []
     for months in CORRELATION_POLICY['horizons_months']:
@@ -2389,6 +2399,8 @@ def build_context(data, extra):
         # PPT 2.2+2.3 — slide 2 黄金 / AI 资产 双图 caption（AI 根据各图数据）
         "macro_gold_caption_ai": _correlation_caption(api, 'btc_gold'),
         "macro_sox_caption_ai": _correlation_caption(api, 'btc_sox'),
+        "macro_gold_method_details": _correlation_details(api, 'btc_gold'),
+        "macro_sox_method_details": _correlation_details(api, 'btc_sox'),
 
         # Funding
         "funding_source": funding.get("source", "Hyperliquid"),
