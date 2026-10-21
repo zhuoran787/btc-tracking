@@ -1103,8 +1103,8 @@
     "coinshares_report_date": "2026-10-13",
     "user_inputs_freshness": {
       "macro_summary": {
-        "status": "cached",
-        "date": "2026-10-16",
+        "status": "fresh",
+        "date": "2026-10-21",
         "seed": false
       },
       "cycle_summary": {
