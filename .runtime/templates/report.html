@@ -398,14 +398,14 @@ a:hover { text-decoration: underline; }
       {% endif %}
     </div>
 
-    <!-- 图 1：所有 DAT 公司买卖 BTC 合计 flow（月度，更新截图 = Exhibit 9）-->
+    <!-- 图 1：数字资产财库资金流入（DefiLlama 用户提供静态截图）-->
     <div style="margin-bottom:18px;">
-      <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 1：DAT 公司 vs Spot ETF 月度净流入（Exhibit 9 · May-24 → Jul-26）</div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 1：数字资产财库资金流入（按币种 · DefiLlama）</div>
       {% if ppt_img_dat_flow %}
-      <div style="padding:6px 10px;background:#fef3c7;border-left:3px solid #d4a017;border-radius:4px;font-size:11px;color:#8b6914;margin-bottom:6px;">📌 <strong>TODO #1</strong> · 静态截图已更新至 Exhibit 9（数据 May-24 → Jul-26）。目标：换成实时 174 家 DAT 公司月/周度合计 flow 时序。候选路径：(a) CoinGecko Analyst plan $35+/月 + holding_chart API；(b) scrape CoinGecko 174 家公司页 Transaction History（中等工作量 + CloudFlare 反爬风险）。</div>
-      <div style="padding:8px;background:var(--bg2);border-radius:6px;border:1px solid var(--border);max-width:760px;">
-        <img src="{{ ppt_img_dat_flow }}" style="width:100%;border-radius:4px;display:block;" alt="DAT companies vs Spot ETF monthly flow (Exhibit 9, May-24 to Jul-26)">
-        <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">来源：图片原注：Bitcoin Treasuries、The Block、Bloomberg；CRSHK calculated。深红柱 = DAT 月度净流入（流出）；浅红柱 = 现货 ETF 月度净流入（流出）。每周可手动替换 <code>data/ppt_assets/dat_flow.png</code>。</div>
+      <div style="padding:6px 10px;background:#fef3c7;border-left:3px solid #d4a017;border-radius:4px;font-size:11px;color:#8b6914;margin-bottom:6px;">📌 <strong>TODO #1</strong> · 已替换为用户提供的 DefiLlama 静态截图（2026-10-21 提供）。来源：<a href="https://defillama.com/digital-asset-treasuries" target="_blank" rel="noopener noreferrer">DefiLlama Digital Asset Treasuries ↗</a>。后续评估自动取数及月/周度汇总口径，当前保留静态截图。</div>
+      <div style="padding:8px;background:var(--bg2);border-radius:6px;border:1px solid var(--border);max-width:100%;">
+        <img src="{{ ppt_img_dat_flow }}" style="width:100%;border-radius:4px;display:block;" alt="Digital asset treasury inflows by asset — DefiLlama (user-provided screenshot)">
+        <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">来源：<a href="https://defillama.com/digital-asset-treasuries" target="_blank" rel="noopener noreferrer">DefiLlama Digital Asset Treasuries ↗</a>（用户提供截图）。橙色为 Bitcoin，紫色为 Solana，蓝色为 Ethereum，灰色为其他资产；纵轴为美元金额。该图展示财库资金流入，不含 Spot ETF 对比。</div>
       </div>
       {% endif %}
     </div>
@@ -1399,7 +1399,7 @@ if (document.getElementById('chartOi')) {
 {% endif %}
 
 // ── 全 DAT 持仓历史 (Item 1) ──────────────────────────
-// ⚠️ canvas 已被 TODO #1 静态截图替代（Exhibit 9），init 仅当 canvas 存在时执行
+// ⚠️ canvas 已被 TODO #1 静态截图替代（DefiLlama），init 仅当 canvas 存在时执行
 {% if chart_dat_labels and chart_dat_labels != '[]' %}
 if (document.getElementById('chartDat')) {
   new Chart(document.getElementById('chartDat'), {
