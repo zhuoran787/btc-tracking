@@ -1,6 +1,6 @@
 {
   "btc_price": {
-    "current": 83482.78503511568,
+    "current": 83642.17875131255,
     "history": [
       {
         "ts": 1761091200000,
@@ -1463,16 +1463,16 @@
         "price": 82943.83149973174
       },
       {
-        "ts": 1792585640000,
-        "price": 83482.78503511568
+        "ts": 1792588140000,
+        "price": 83642.17875131255
       }
     ],
-    "change_7d": 1.615527378397134,
-    "change_30d": -3.1334487857426456,
-    "change_90d": 30.25329491660224
+    "change_7d": 1.8095419470933505,
+    "change_30d": -2.9485014392122233,
+    "change_90d": 30.50198758677263
   },
   "gold_price": {
-    "current": 4127.157910382044,
+    "current": 4133.284706067825,
     "history": [
       {
         "ts": 1761091200000,
@@ -2935,8 +2935,8 @@
         "price": 4113.86338826286
       },
       {
-        "ts": 1792585660000,
-        "price": 4127.157910382044
+        "ts": 1792588170000,
+        "price": 4133.284706067825
       }
     ],
     "source": "CoinGecko tether-gold/USD"
@@ -9516,12 +9516,12 @@
   "correlation_config_hash": "bba5212d1965b94acf3a653312c473250482735f740fa7f9478415a1cc6f4aa0",
   "funding": {
     "source": "Hyperliquid",
-    "current_rate_pct": 0.01,
+    "current_rate_pct": 0.0075,
     "current_rate_pct_hourly_snapshot": 0.00125,
-    "current_oi_usd": 3463140906.9019,
-    "mark_price": 83615.0,
-    "percentile_90d": 95.2,
-    "percentile_730d": 83.2,
+    "current_oi_usd": 3452300855.2497597,
+    "mark_price": 83736.0,
+    "percentile_90d": 35.2,
+    "percentile_730d": 33.5,
     "history_8h": [
       {
         "ts": 1728489600000,
@@ -22872,6 +22872,12 @@
         "date": "2026-10-21 00:00",
         "rate_8h": 0.01,
         "n_hours": 8
+      },
+      {
+        "ts": 1792569600000,
+        "date": "2026-10-21 08:00",
+        "rate_8h": 0.0075,
+        "n_hours": 6
       }
     ],
     "negative_streak": [
@@ -25587,5 +25593,5 @@
       }
     ]
   },
-  "generated_at": "2026-10-21T12:29:36.739453"
+  "generated_at": "2026-10-21T13:11:27.227066"
 }

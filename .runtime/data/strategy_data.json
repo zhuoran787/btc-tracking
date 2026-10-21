@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-21T12:29:10.013429+00:00",
+  "fetched_at": "2026-10-21T13:11:01.965364+00:00",
   "source": "verified Strategy official ledger baseline + SEC EDGAR 8-K reconciliation",
   "errors": [],
   "warnings": [],
@@ -1331,7 +1331,7 @@
       "0001193125-26-423400",
       "0001193125-26-424688"
     ],
-    "verified_at": "2026-10-21T12:29:10.012642+00:00"
+    "verified_at": "2026-10-21T13:11:01.964390+00:00"
   },
   "refresh_status": "checked_no_new",
   "mnav": {
