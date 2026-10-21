@@ -14,6 +14,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from fetch_dat_history import FEATURED_SOURCES
+from fetch_ahr999 import AHR999_BOTTOM, AHR999_TOP
 from correlations import POLICY as CORRELATION_POLICY, validate_correlations
 
 from jinja2 import Environment, FileSystemLoader
@@ -42,9 +43,7 @@ WORK_ROOT = PROJECT_DIR.parent.parent  # ~/Desktop/claude trial 1/
 OUTPUT_BASE = WORK_ROOT / "ai-work" / "btc-tracking"
 
 # ── ahr999 阈值常量（九神 2018 年提出社区惯例）────────
-# 改这两个数字 = 全报告同步生效（染色 / 信号 / 模板"阈值参考"格 / 数据变化文字）
-AHR999_BOTTOM = 0.45  # ≤ 此值 = buy-the-dip 大周期底
-AHR999_TOP = 1.0      # ≥ 此值 = over-value 大周期顶（九神原版用 1.2，本项目用 1.0）
+# 阈值统一从 fetch_ahr999 导入，取数与全报告同步；本项目顶部仍为 1.0。
 
 # ── 四年周期见底预测日 ────────
 # 2026-07-05 /skill-harden B3：用户填的 cycle_summary 文本是唯一权威源——

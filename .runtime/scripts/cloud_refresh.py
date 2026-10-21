@@ -155,6 +155,8 @@ def fetch_one(spec, config):
         candidate = Path(temp)
         shutil.copytree(ROOT / 'scripts', candidate / 'scripts')
         shutil.copytree(ROOT / 'data', candidate / 'data')
+        (candidate / 'publication').mkdir()
+        shutil.copy2(CONFIG, candidate / 'publication/config.json')
         (candidate / 'cache').mkdir()
         key = os.environ.get('COINALYZE_API_KEY')
         if key and spec['script'] == 'fetch_derivatives.py':

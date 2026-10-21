@@ -38,6 +38,8 @@ METHOD_ID = "ahr999_coinmetrics_priceusd_utc_midnight_v1"
 PRICE_CLOCK = "00:00 UTC; PriceUSD period date + 1 calendar day"
 WARMUP_DAYS = 200
 HISTORY_YEARS = 10
+AHR999_BOTTOM = 0.45
+AHR999_TOP = 1.0
 
 
 def validation_rules():
@@ -142,7 +144,6 @@ def compute_ahr999(history):
 
 
 def build_snapshot(hist, provenance, now=None):
-    from generate_report import AHR999_BOTTOM, AHR999_TOP
     now = now or datetime.now(timezone.utc)
     series = compute_ahr999(hist)
     if not series:
