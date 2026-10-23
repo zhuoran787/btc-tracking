@@ -1,12 +1,11 @@
 {
-  "current": 0.54214948182676,
-  "current_date": "2026-10-22",
-  "current_price": 84176.0796455874,
-  "fair_price": 181052.3514513163,
+  "current": 0.5041819346997679,
+  "current_date": "2026-10-23",
+  "current_price": 81257.0175825248,
+  "fair_price": 181215.0555595103,
   "threshold_low": 0.45,
   "threshold_high": 1.0,
   "dates": [
-    "2017-05-10",
     "2017-05-11",
     "2017-05-12",
     "2017-05-13",
@@ -3458,10 +3457,10 @@
     "2026-10-19",
     "2026-10-20",
     "2026-10-21",
-    "2026-10-22"
+    "2026-10-22",
+    "2026-10-23"
   ],
   "values": [
-    1.4164,
     1.5121,
     1.5923,
     1.3637,
@@ -6913,10 +6912,10 @@
     0.5166,
     0.5155,
     0.5269,
-    0.5421
+    0.5421,
+    0.5042
   ],
   "btc_prices": [
-    1719.22801355932,
     1782.499,
     1835.48754821742,
     1704.66164108708,
@@ -10368,16 +10367,17 @@
     81935.1692647925,
     81918.1984864816,
     82898.9101560549,
-    84176.0796455874
+    84176.0796455874,
+    81257.0175825248
   ],
   "source": "Coin Metrics Community PriceUSD（UTC 日终价，按次日零点标记）",
   "source_metric": "PriceUSD",
   "source_clock": "00:00 UTC; PriceUSD period date + 1 calendar day",
-  "source_period_date": "2026-10-21",
+  "source_period_date": "2026-10-22",
   "methodology_id": "ahr999_coinmetrics_priceusd_utc_midnight_v1",
   "validation_config_hash": "aed73ddbc1acbeee8c10fe42aa3863dd92d7d4552cdfbdd2424ed4d3f2439cb8",
-  "price_history_start": "2016-10-22",
-  "fetched_at": "2026-10-22T01:37:23.634835+00:00",
-  "source_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=PriceUSD&frequency=1d&start_time=2016-10-21&page_size=10000",
-  "raw_sha256": "4989b7088a18504e75e83d93deb8b4311b80edb1caeb01820f1e7eaab8b92b79"
+  "price_history_start": "2016-10-23",
+  "fetched_at": "2026-10-23T01:38:06.754836+00:00",
+  "source_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=PriceUSD&frequency=1d&start_time=2016-10-22&page_size=10000",
+  "raw_sha256": "055883bb551c91de6da104d1ff492a5e19267296d14a79c8092505b6cafabde2"
 }

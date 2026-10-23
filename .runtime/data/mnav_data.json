@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-22",
+  "fetched_at": "2026-10-23",
   "source": "https://bitcointreasuries.net/",
   "count": 11,
   "snapshot": [
@@ -36,7 +36,7 @@
       "country": "ðºð¸",
       "ticker": "ASST",
       "btc_holdings": 36818.0,
-      "mnav": 1.23,
+      "mnav": 1.24,
       "mnav_method": "enterprise_value"
     },
     {
@@ -45,7 +45,7 @@
       "country": "ðºð¸",
       "ticker": "NAKA",
       "btc_holdings": 4467.0,
-      "mnav": 0.86,
+      "mnav": 0.85,
       "mnav_method": "enterprise_value"
     },
     {
@@ -63,38 +63,38 @@
       "country": "ð«ð·",
       "ticker": "ALCPB.PA",
       "btc_holdings": 3538.0,
-      "mnav": 1.24,
+      "mnav": 1.26,
       "mnav_method": "enterprise_value"
     },
     {
-      "rank": 27,
+      "rank": 28,
       "name": "DDC Enterprise Limited",
       "country": "ðºð¸",
       "ticker": "DDC",
       "btc_holdings": 2899.0,
-      "mnav": 0.3,
+      "mnav": 0.31,
       "mnav_method": "enterprise_value"
     },
     {
-      "rank": 29,
+      "rank": 30,
       "name": "The Smarter Web Company PLC",
       "country": "ð¬ð§",
       "ticker": "SWC.L",
       "btc_holdings": 2830.0,
-      "mnav": 1.08,
+      "mnav": 1.15,
       "mnav_method": "enterprise_value"
     },
     {
-      "rank": 43,
+      "rank": 44,
       "name": "ZOOZ Power",
       "country": "ð®ð±",
       "ticker": "ZOOZ",
       "btc_holdings": 1046.0,
-      "mnav": 0.85,
+      "mnav": 0.86,
       "mnav_method": "enterprise_value"
     },
     {
-      "rank": 46,
+      "rank": 47,
       "name": "USBC, Inc.",
       "country": "ðºð¸",
       "ticker": "USBC",

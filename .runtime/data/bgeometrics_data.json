@@ -1,12 +1,14 @@
 {
-  "fetched_at": "2026-10-22T01:37:23.954690",
+  "fetched_at": "2026-10-23T01:38:07.282893",
   "source": "woocharts.com (CVDD, Willy Woo official) + BRK raw capitalizations / local MVRV Z calculation",
   "thresholds": {
     "cvdd_bottom_band": 1.03,
     "mvrv_z_bottom": 0.0,
     "mvrv_z_top": 4.0
   },
-  "errors": [],
+  "errors": [
+    "mvrv_zscore: BRK bulk components are not one aligned snapshot"
+  ],
   "cvdd": {
     "dates": [
       "2009-10-06",
@@ -6231,7 +6233,8 @@
       "2026-10-16",
       "2026-10-17",
       "2026-10-18",
-      "2026-10-19"
+      "2026-10-19",
+      "2026-10-20"
     ],
     "values": [
       0.0,
@@ -12456,10 +12459,11 @@
       48362.3509,
       48370.2618,
       48376.1399,
-      48393.8698
+      48393.8698,
+      48415.9332
     ],
-    "current": 48393.8698,
-    "current_date": "2026-10-19",
+    "current": 48415.9332,
+    "current_date": "2026-10-20",
     "source_note": "woocharts.com chart.json (Willy Woo official, CVDD inventor)"
   },
   "mvrv_zscore": {
@@ -24302,10 +24306,11 @@
     "day_policy": "completed UTC days only",
     "source_stamp": "2026-10-22T01:35:04Z",
     "raw_sha256": "f2ff9e59892dacc611cb40c2c3d27ead3046a907318bb1904899a639d769d588",
-    "delayed": false
+    "delayed": false,
+    "stale": true
   },
   "summary": {
-    "cvdd_current": 48393.8698,
+    "cvdd_current": 48415.9332,
     "mvrv_z_current": 1.011791
   },
   "signals": {
