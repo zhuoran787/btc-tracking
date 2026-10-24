@@ -1,14 +1,12 @@
 {
-  "fetched_at": "2026-10-23T01:38:07.282893",
+  "fetched_at": "2026-10-24T01:42:12.704861",
   "source": "woocharts.com (CVDD, Willy Woo official) + BRK raw capitalizations / local MVRV Z calculation",
   "thresholds": {
     "cvdd_bottom_band": 1.03,
     "mvrv_z_bottom": 0.0,
     "mvrv_z_top": 4.0
   },
-  "errors": [
-    "mvrv_zscore: BRK bulk components are not one aligned snapshot"
-  ],
+  "errors": [],
   "cvdd": {
     "dates": [
       "2009-10-06",
@@ -6234,7 +6232,8 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-19",
-      "2026-10-20"
+      "2026-10-20",
+      "2026-10-21"
     ],
     "values": [
       0.0,
@@ -12460,10 +12459,11 @@
       48370.2618,
       48376.1399,
       48393.8698,
-      48415.9332
+      48415.9332,
+      48440.5912
     ],
-    "current": 48415.9332,
-    "current_date": "2026-10-20",
+    "current": 48440.5912,
+    "current_date": "2026-10-21",
     "source_note": "woocharts.com chart.json (Willy Woo official, CVDD inventor)"
   },
   "mvrv_zscore": {
@@ -18378,7 +18378,9 @@
       "2026-10-18",
       "2026-10-19",
       "2026-10-20",
-      "2026-10-21"
+      "2026-10-21",
+      "2026-10-22",
+      "2026-10-23"
     ],
     "values": [
       23.90667911,
@@ -24291,27 +24293,28 @@
       0.93287694,
       0.94083917,
       0.96897506,
-      1.011791
+      1.011791,
+      0.90727896,
+      0.88860605
     ],
-    "current": 1.011791,
-    "current_date": "2026-10-21",
+    "current": 0.88860605,
+    "current_date": "2026-10-23",
     "chart_start": "2022-09-25",
     "source_url": "https://bitview.space/api/series/bulk?series=date,market_cap,realized_cap&index=day1&start=0",
     "source_label": "BRK / Bitview 原始数据自算",
     "methodology_id": "brk_expanding_population_v1",
     "methodology": "(market_cap - realized_cap) / expanding population std(market_cap), ddof=0; no future observations",
     "history_origin": "2009-01-01",
-    "denominator_observations": 6496,
+    "denominator_observations": 6498,
     "early_history": "skip null days; include non-null zero market caps",
     "day_policy": "completed UTC days only",
-    "source_stamp": "2026-10-22T01:35:04Z",
-    "raw_sha256": "f2ff9e59892dacc611cb40c2c3d27ead3046a907318bb1904899a639d769d588",
-    "delayed": false,
-    "stale": true
+    "source_stamp": "2026-10-24T01:16:22Z",
+    "raw_sha256": "e311c1f18bd233599e8276875cc8e574efd1f0bb2b148a0f9102286532da1ff1",
+    "delayed": false
   },
   "summary": {
-    "cvdd_current": 48415.9332,
-    "mvrv_z_current": 1.011791
+    "cvdd_current": 48440.5912,
+    "mvrv_z_current": 0.88860605
   },
   "signals": {
     "cvdd_signal": null,
