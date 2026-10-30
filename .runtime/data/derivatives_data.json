@@ -1,113 +1,113 @@
 {
-  "fetched_at": "2026-10-29",
+  "fetched_at": "2026-10-30",
   "coingecko_aggregate": {
-    "total_oi_usd": 66365965761.29005,
-    "oi_weighted_funding_pct": 0.003549968824916209,
-    "num_exchanges": 227,
+    "total_oi_usd": 67084676980.42998,
+    "oi_weighted_funding_pct": 0.004031567262448311,
+    "num_exchanges": 229,
     "top_exchanges": [
       {
         "exchange": "Binance (Futures)",
         "symbol": "BTCUSDT",
-        "oi_usd": 7687191337.75,
-        "funding_rate_pct": 0.002489,
+        "oi_usd": 7416449194.34,
+        "funding_rate_pct": 0.000407,
         "volume_24h": null
       },
       {
         "exchange": "Bybit (Futures)",
         "symbol": "BTCUSDT",
-        "oi_usd": 4918055223.4,
-        "funding_rate_pct": 0.004347,
+        "oi_usd": 5203818582.98,
+        "funding_rate_pct": 0.01,
         "volume_24h": null
       },
       {
         "exchange": "Gate (Futures)",
         "symbol": "BTC_USDT",
-        "oi_usd": 4375563110.09,
-        "funding_rate_pct": 0.0058,
+        "oi_usd": 4538727801.86,
+        "funding_rate_pct": 0.0097,
         "volume_24h": null
       },
       {
         "exchange": "MEXC (Futures)",
         "symbol": "BTC_USDT",
-        "oi_usd": 4204749867.72,
-        "funding_rate_pct": 0.0024000000000000002,
-        "volume_24h": null
-      },
-      {
-        "exchange": "Tapbit (Futures)",
-        "symbol": "BTC-PERPUSDT",
-        "oi_usd": 4006658287.77,
-        "funding_rate_pct": 0.0025,
+        "oi_usd": 4218340510.65,
+        "funding_rate_pct": 0.00039999999999999996,
         "volume_24h": null
       },
       {
         "exchange": "WEEX (Futures)",
         "symbol": "BTC-USDT",
-        "oi_usd": 3711150172.82,
-        "funding_rate_pct": 7.941e-05,
+        "oi_usd": 3573421013.61,
+        "funding_rate_pct": 0.0001,
+        "volume_24h": null
+      },
+      {
+        "exchange": "Tapbit (Futures)",
+        "symbol": "BTC-PERPUSDT",
+        "oi_usd": 3470218634.88,
+        "funding_rate_pct": 0.0005,
+        "volume_24h": null
+      },
+      {
+        "exchange": "Toobit Futures",
+        "symbol": "BTC-SWAP-USDT",
+        "oi_usd": 3359019906.52,
+        "funding_rate_pct": 0.000407,
         "volume_24h": null
       },
       {
         "exchange": "Hyperliquid (Futures)",
         "symbol": "BTC-USD",
-        "oi_usd": 3467305439.47,
+        "oi_usd": 3282288985.93,
         "funding_rate_pct": 0.00125,
         "volume_24h": null
       },
       {
         "exchange": "Bitget Futures",
         "symbol": "BTCUSDT_UMCBL",
-        "oi_usd": 2884261514.07,
-        "funding_rate_pct": 0.0028,
+        "oi_usd": 2844584251.2,
+        "funding_rate_pct": 0.01,
         "volume_24h": null
       },
       {
         "exchange": "OKX (Futures)",
         "symbol": "BTC-USDT-SWAP",
-        "oi_usd": 2469608562.76,
-        "funding_rate_pct": 0.00764700586723,
+        "oi_usd": 2702426444.84,
+        "funding_rate_pct": 0.01,
         "volume_24h": null
       },
       {
-        "exchange": "Toobit Futures",
-        "symbol": "BTC-SWAP-USDT",
-        "oi_usd": 2425675687.74,
-        "funding_rate_pct": 0.002489,
-        "volume_24h": null
-      },
-      {
-        "exchange": "CoinW (Futures)",
-        "symbol": "BTC/USDT",
-        "oi_usd": 2372824090.76,
-        "funding_rate_pct": 0.002489,
+        "exchange": "XT.COM (Derivatives)",
+        "symbol": "BTC_USDT",
+        "oi_usd": 1773894069.0,
+        "funding_rate_pct": 0.00041799999999999997,
         "volume_24h": null
       },
       {
         "exchange": "Binance (Futures)",
         "symbol": "BTCUSDC",
-        "oi_usd": 1743628173.52,
-        "funding_rate_pct": 0.002378,
+        "oi_usd": 1720271435.96,
+        "funding_rate_pct": 0.008233,
+        "volume_24h": null
+      },
+      {
+        "exchange": "CoinW (Futures)",
+        "symbol": "BTC/USDT",
+        "oi_usd": 1677106488.38,
+        "funding_rate_pct": 0.000449,
         "volume_24h": null
       },
       {
         "exchange": "WhiteBIT Futures",
         "symbol": "BTC_PERP",
-        "oi_usd": 1578630552.81,
-        "funding_rate_pct": 0.01,
-        "volume_24h": null
-      },
-      {
-        "exchange": "HTX Futures",
-        "symbol": "BTC-USDT",
-        "oi_usd": 1468650740.51,
+        "oi_usd": 1524794247.29,
         "funding_rate_pct": 0.01,
         "volume_24h": null
       },
       {
         "exchange": "Binance (Futures)",
         "symbol": "BTCUSD_PERP",
-        "oi_usd": 1463117800.0,
-        "funding_rate_pct": 0.004617,
+        "oi_usd": 1478224800.0,
+        "funding_rate_pct": 0.01,
         "volume_24h": null
       }
     ]
@@ -116,7 +116,6 @@
     "instrument": "BTC-USDT-SWAP @ OKX",
     "days": 730,
     "dates": [
-      "2024-10-29",
       "2024-10-30",
       "2024-10-31",
       "2024-11-01",
@@ -845,10 +844,10 @@
       "2026-10-25",
       "2026-10-26",
       "2026-10-27",
-      "2026-10-28"
+      "2026-10-28",
+      "2026-10-29"
     ],
     "oi_btc": [
-      33001.847999999925,
       31481.97899999989,
       30424.612999999932,
       27571.46799999998,
@@ -1577,10 +1576,10 @@
       31777.63100000012,
       31970.283900000115,
       31390.762000000108,
-      30929.091600000116
+      31783.099600000092,
+      34990.54820000018
     ],
     "oi_usd": [
-      2386937861.035195,
       2268509553.594592,
       2147512181.221095,
       1912467306.3519986,
@@ -2309,15 +2308,15 @@
       2554257379.91211,
       2574429490.246239,
       2527348725.5250087,
-      2474846936.738889
+      2597705831.4370875,
+      2701851164.140134
     ],
-    "latest_oi_usd": 2474846936.738889
+    "latest_oi_usd": 2701851164.140134
   },
   "coinalyze_oi_agg": {
     "source": "coinalyze.net (top-6 exchanges, 9 BTC perp contracts)",
     "days": 1503,
     "dates": [
-      "2022-09-18",
       "2022-09-19",
       "2022-09-20",
       "2022-09-21",
@@ -3819,10 +3818,10 @@
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
-      "2026-10-29"
+      "2026-10-29",
+      "2026-10-30"
     ],
     "oi_usd": [
-      5533919979.0,
       5254628960.0,
       5183199261.0,
       5047722772.0,
@@ -5324,9 +5323,10 @@
       22883606238.0,
       23126156775.0,
       23176552449.0,
-      22781945063.0
+      22941522195.0,
+      23052245610.0
     ],
-    "latest_oi_usd": 22781945063.0,
+    "latest_oi_usd": 23052245610.0,
     "n_symbols": 9
   },
   "market_aggregate_history": [
@@ -5965,7 +5965,13 @@
       "total_oi_usd": 66365965761.29005,
       "funding_pct": 0.003549968824916209,
       "num_exchanges": 227
+    },
+    {
+      "date": "2026-10-30",
+      "total_oi_usd": 67084676980.42998,
+      "funding_pct": 0.004031567262448311,
+      "num_exchanges": 229
     }
   ],
-  "market_history_days": 106
+  "market_history_days": 107
 }
