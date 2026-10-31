@@ -1,33 +1,33 @@
 {
-  "fetched_at": "2026-10-30",
+  "fetched_at": "2026-10-31",
   "current_holdings": {
     "name": "Tether Holdings Limited",
     "country": "🇻🇬",
     "btc_holdings": 100000.0,
-    "usd_value_m": 7735.0,
+    "usd_value_m": 7721.0,
     "pct_of_supply": "0.476%",
     "source": "https://bitcointreasuries.net/private-companies"
   },
   "quarterly_reserves": {
-    "quarter": "2026 Q2",
-    "as_of": "2026-06-30",
-    "btc_usd": 5801630681,
-    "btc_count": 98932.77584467827,
-    "btc_valuation_price_usd": 58642.15,
+    "quarter": "2026 Q3",
+    "as_of": "2026-09-30",
+    "btc_usd": 8367170264,
+    "btc_count": 100060.35864337323,
+    "btc_valuation_price_usd": 83621.23,
     "btc_count_method": "btc_usd / attestation BTC valuation price",
-    "gold_usd": 18838357171,
-    "gold_tons": 146.19148722974583,
-    "gold_added_tons": 14.0,
-    "xau_valuation_price_usd_per_oz": 4008.02,
-    "treasury_bills_usd": 114960963604,
-    "overnight_repo_usd": 18625552412,
-    "term_repo_usd": 6993428950,
-    "treasury_and_repo_usd": 140579944966,
-    "net_operating_profit_usd": 1500000000.0,
-    "excess_reserves_usd": 4109529196,
-    "total_assets_usd": 187751426411,
-    "source_article": "https://tether.io/news/tether-posts-strong-q2-performance-generates-1-5b-net-operating-profit-maintains-4-11b-reserve-buffer-and-expands-gold-holdings-to-more-than-146-tons/",
-    "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/2kYf7r64h3tzwiu6F0CbUB/2997abd2f11ecea74a21528048b50707/Opinion___Report_-_Tether_International_Financial_Figure_30-06-2026.pdf"
+    "gold_usd": 19084651736,
+    "gold_tons": 142.7809674599172,
+    "gold_added_tons": null,
+    "xau_valuation_price_usd_per_oz": 4157.41,
+    "treasury_bills_usd": 122839738995,
+    "overnight_repo_usd": 9518706336,
+    "term_repo_usd": 7177537907,
+    "treasury_and_repo_usd": 139535983238,
+    "net_operating_profit_usd": null,
+    "excess_reserves_usd": 7954630470,
+    "total_assets_usd": 191451091374,
+    "source_article": "https://tether.io/news/tether-generates-1-5-billion-in-q3-net-operating-profit-as-reserve-buffer-doubles-to-almost-8-billion/",
+    "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/7nQYtcoP9GxIUFSyro2dGK/8d0521470b9e99c8c0831019cabea4ee/ISAE_3000R_-_Opinion_Tether_International_Financial_Figure_30-09-2026.pdf"
   },
   "transparency_page": {
     "url": "https://tether.to/en/transparency/",
@@ -134,6 +134,16 @@
       "btc_count_method": "btc_usd / attestation BTC valuation price",
       "source_article": "https://tether.io/news/tether-posts-strong-q2-performance-generates-1-5b-net-operating-profit-maintains-4-11b-reserve-buffer-and-expands-gold-holdings-to-more-than-146-tons/",
       "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/2kYf7r64h3tzwiu6F0CbUB/2997abd2f11ecea74a21528048b50707/Opinion___Report_-_Tether_International_Financial_Figure_30-06-2026.pdf"
+    },
+    {
+      "as_of": "2026-09-30",
+      "quarter": "2026 Q3",
+      "btc_count": 100060.35864337323,
+      "btc_usd": 8367170264.0,
+      "btc_valuation_price_usd": 83621.23,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-generates-1-5-billion-in-q3-net-operating-profit-as-reserve-buffer-doubles-to-almost-8-billion/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/7nQYtcoP9GxIUFSyro2dGK/8d0521470b9e99c8c0831019cabea4ee/ISAE_3000R_-_Opinion_Tether_International_Financial_Figure_30-09-2026.pdf"
     }
   ],
   "history": [
@@ -236,6 +246,16 @@
       "btc_count_method": "btc_usd / attestation BTC valuation price",
       "source_article": "https://tether.io/news/tether-posts-strong-q2-performance-generates-1-5b-net-operating-profit-maintains-4-11b-reserve-buffer-and-expands-gold-holdings-to-more-than-146-tons/",
       "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/2kYf7r64h3tzwiu6F0CbUB/2997abd2f11ecea74a21528048b50707/Opinion___Report_-_Tether_International_Financial_Figure_30-06-2026.pdf"
+    },
+    {
+      "as_of": "2026-09-30",
+      "quarter": "2026 Q3",
+      "btc_count": 100060.35864337323,
+      "btc_usd": 8367170264.0,
+      "btc_valuation_price_usd": 83621.23,
+      "btc_count_method": "btc_usd / attestation BTC valuation price",
+      "source_article": "https://tether.io/news/tether-generates-1-5-billion-in-q3-net-operating-profit-as-reserve-buffer-doubles-to-almost-8-billion/",
+      "source_pdf": "https://assets.ctfassets.net/vyse88cgwfbl/7nQYtcoP9GxIUFSyro2dGK/8d0521470b9e99c8c0831019cabea4ee/ISAE_3000R_-_Opinion_Tether_International_Financial_Figure_30-09-2026.pdf"
     }
   ],
   "context": "Tether quarterly BTC and gold reserve values are parsed from official attestation PDFs. The BTC-unit history includes only quarters whose PDF discloses both BTC USD value and valuation price."
