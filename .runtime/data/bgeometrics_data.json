@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-31T02:30:54.509262",
+  "fetched_at": "2026-11-01T02:20:24.843308",
   "source": "woocharts.com (CVDD, Willy Woo official) + BRK raw capitalizations / local MVRV Z calculation",
   "thresholds": {
     "cvdd_bottom_band": 1.03,
@@ -6242,7 +6242,8 @@
       "2026-10-25",
       "2026-10-26",
       "2026-10-27",
-      "2026-10-28"
+      "2026-10-28",
+      "2026-10-29"
     ],
     "values": [
       0.0,
@@ -12476,10 +12477,11 @@
       48484.9939,
       48506.398,
       48517.965,
-      48529.9312
+      48529.9312,
+      48555.3786
     ],
-    "current": 48529.9312,
-    "current_date": "2026-10-28",
+    "current": 48555.3786,
+    "current_date": "2026-10-29",
     "source_note": "woocharts.com chart.json (Willy Woo official, CVDD inventor)"
   },
   "mvrv_zscore": {
@@ -24342,7 +24344,7 @@
     "stale": true
   },
   "summary": {
-    "cvdd_current": 48529.9312,
+    "cvdd_current": 48555.3786,
     "mvrv_z_current": 0.81947263
   },
   "signals": {
