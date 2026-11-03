@@ -1,6 +1,6 @@
 {
   "mode": "data_only",
-  "built_at": "2026-11-02T02:37:18+00:00",
+  "built_at": "2026-11-03T04:03:13+00:00",
   "bootstrap": false,
   "config_hash": "34144331081b9e2c773040f0c79c2da83c346cb61e958c0ff3e1fdd4d5631e0e",
   "editorial_as_of": "2026-10-21",
@@ -13,23 +13,23 @@
     {
       "source": "api_data.json",
       "status": "updated",
-      "source_date": "2026-11-02T02:34:50+00:00",
+      "source_date": "2026-11-03T03:56:00+00:00",
       "components": null,
-      "sha256": "11dc7b63214d3c64dd191223ddb0443e670a68d6cc0f6277a088d5f67b6a9181"
+      "sha256": "89a3e1fd5b225a2d0a36b6622c3f91b2ca70122e73036da6f69c9790a062d13d"
     },
     {
       "source": "etf_flows.json",
       "status": "updated",
-      "source_date": "2026-10-30",
+      "source_date": "2026-11-02",
       "components": null,
-      "sha256": "7e3be1f5309a507a8a44fb32ecdda6e065bfd7a8a9ce2feb30f99096e9f8cc6f"
+      "sha256": "03afb0c5c6aa00d0a74e8c32874d8ce05e027a72f70ee20c4e2296c353c94793"
     },
     {
       "source": "treasuries.json",
       "status": "updated",
-      "source_date": "2026-11-02T02:36:39.043714",
+      "source_date": "2026-11-03T03:57:39.466780",
       "components": null,
-      "sha256": "4f92c700175f5a35e4081d0a588f105473266e21a515354d8de54d8c4f42f9a8"
+      "sha256": "fb0ccd500209a2f77aecc4d090f3a486702132ab6c96f93fcef2c744a109fbc7"
     },
     {
       "source": "brk_data.json",
@@ -41,16 +41,16 @@
     {
       "source": "derivatives_data.json",
       "status": "updated",
-      "source_date": "2026-11-02",
+      "source_date": "2026-11-03",
       "components": null,
-      "sha256": "840568123e5df50da9878a637aab876f348e2f93ac12dd9ff24e411799cdac1c"
+      "sha256": "86fc918c0f9c3f6cf10bdb2a99160fcf25accb80a60160c2e65e1f1e972a93e4"
     },
     {
       "source": "mnav_data.json",
       "status": "updated",
-      "source_date": "2026-11-02",
+      "source_date": "2026-11-03",
       "components": null,
-      "sha256": "668c0cd6c7f400580dc458cb5a0ee7c065187205f9fbfc1ed6719d6e3602c8e4"
+      "sha256": "4d8c0b545b28e9328d3bd88278d4ae2913aa8486e1f1e97ae4e8b82dfa51a4e4"
     },
     {
       "source": "dat_data.json",
@@ -64,38 +64,38 @@
       "status": "updated",
       "source_date": "2026-09-30",
       "components": null,
-      "sha256": "15c304539077f488e52df1d46821dde1782a680fc4fc6638b98883852e2a3c8d"
+      "sha256": "0c8662f6e622dcfc6a380f0275598d74e0de0f686d960a7b2f397bc10b0d9e06"
     },
     {
       "source": "fear_greed.json",
       "status": "updated",
-      "source_date": "2026-11-02",
+      "source_date": "2026-11-03",
       "components": null,
-      "sha256": "00973873b925167f303ccc76d8d9070265f9e755bfcd0872bd426a3619dcb66c"
+      "sha256": "5c67422d653d5e7d942b5329812b881e76144f1983024e123f9f02a70c0051a6"
     },
     {
       "source": "ahr999.json",
       "status": "updated",
-      "source_date": "2026-11-02",
+      "source_date": "2026-11-03",
       "components": null,
-      "sha256": "6a8961cf4dcb9c9435f1a2ba92bb2adb1b198153c0c719583482b46727b0823d"
+      "sha256": "45df25564f3fa445a2e657d20398fd5ee5b534e89397c8420d57f8b618dcec16"
     },
     {
       "source": "coinmetrics_data.json",
       "status": "updated",
-      "source_date": "2026-10-31",
+      "source_date": "2026-11-02",
       "components": null,
-      "sha256": "719f7b78d287d6413a7c313264cc9e28eebe9a7066d1375964ad748b4ecdfb6f"
+      "sha256": "702f7e5f9f252cde5798cf39f6d9a74fb05ee30a190d05b1ed3024ff7bede8bb"
     },
     {
       "source": "bgeometrics_data.json",
       "status": "partial",
-      "source_date": "2026-11-02T02:36:49.699848",
+      "source_date": "2026-11-03T03:57:51.413554",
       "components": [
         {
           "label": "CVDD（Willy Woo 官方）",
           "status": "updated",
-          "source_date": "2026-10-30",
+          "source_date": "2026-10-31",
           "reason": "",
           "delay_days": null
         },
@@ -107,7 +107,7 @@
           "delay_days": null
         }
       ],
-      "sha256": "774de79ee8aa494a63ddf061e14f7c827c90cfdb30063654295adbc15cb23ca8"
+      "sha256": "6cc5f68d0002d1117c27808a747c15e8de59058bc9402f09154e2643dd5bef33"
     },
     {
       "source": "strategy_data.json",
