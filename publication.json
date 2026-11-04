@@ -1,9 +1,9 @@
 {
   "mode": "data_only",
-  "built_at": "2026-11-04T03:03:42+00:00",
+  "built_at": "2026-11-04T16:23:23+00:00",
   "bootstrap": false,
   "config_hash": "34144331081b9e2c773040f0c79c2da83c346cb61e958c0ff3e1fdd4d5631e0e",
-  "editorial_as_of": "2026-10-21",
+  "editorial_as_of": "2026-11-04",
   "schedule": {
     "cron": "20 7 * * *",
     "timezone": "Asia/Shanghai",
@@ -13,113 +13,113 @@
     {
       "source": "api_data.json",
       "status": "updated",
-      "source_date": "2026-11-04T03:01:30+00:00",
+      "source_date": "2026-11-04T16:20:40+00:00",
       "components": null,
-      "sha256": "aaf84499d7bb2aedd7e62cd2f128d9a4b728f39b67df513aeb81f5fe384b6777"
+      "sha256": "491f18f684b36da81bb91f677cbc8945b669ca8dba358085945660b637f8b2cc"
     },
     {
       "source": "etf_flows.json",
       "status": "updated",
       "source_date": "2026-11-03",
       "components": null,
-      "sha256": "62d0c6d0263badce1a3bcb7acaa4bf525a9fe535b7aab0d8dd71d39502b75c54"
+      "sha256": "5402f487964f39b5b272db276d9d25b0f6b4dd57af2c6bade8361e5619825e6a"
     },
     {
       "source": "treasuries.json",
       "status": "updated",
-      "source_date": "2026-11-04T03:03:08.344213",
+      "source_date": "2026-11-04T16:22:48.216929",
       "components": null,
-      "sha256": "3d5017d2d302fd5938d4b77b2ca1c93353c7030c123a1e31300fd2504f6424dd"
+      "sha256": "4063afb77c4143de44836331e6943fd1fe74af3014449dcf7b147cd62f423b52"
     },
     {
       "source": "brk_data.json",
-      "status": "retained",
-      "source_date": "2026-10-30",
-      "reason": "Source reported an error or fallback",
-      "sha256": "eabb5a1e2e1551edb0b2f8eeccb88409ed3929d09c1ce2d696a666be649d5fa1"
+      "status": "updated",
+      "source_date": "2026-11-03",
+      "components": null,
+      "sha256": "e9dfd06f38ebb66a748f553bc758cf8801be51cbc414166dcf82e6835b81b39f"
     },
     {
       "source": "derivatives_data.json",
       "status": "updated",
       "source_date": "2026-11-04",
       "components": null,
-      "sha256": "0541a28156b71d340d6b382123d25647c176371016440f9cd1c7c16bd6a259b1"
+      "sha256": "a31cdd0e4b0f8699eaa5b6d605d305aade2bde499238d30510e1a0cbf8f14105"
     },
     {
       "source": "mnav_data.json",
       "status": "updated",
       "source_date": "2026-11-04",
       "components": null,
-      "sha256": "87a2c11cff3a32041415580e481118f1ffd07650e14ca04341ea65964490c1ad"
+      "sha256": "d51ce8ae9f71052707f9ae6f2e59fbf41b334dd23e879394c5749cc6328a9e88"
     },
     {
       "source": "dat_data.json",
-      "status": "retained",
-      "source_date": "2026-10-23",
-      "reason": "Fetcher exit 1",
-      "sha256": "de9dfb1c516021d3d9a5900293df678012bdf2adb6a4b06d1bc9c33f947b57e0"
+      "status": "updated",
+      "source_date": "2026-11-04",
+      "components": null,
+      "sha256": "28463e65f01e4399ee58f2de21c9fcb13f0318bc82594c4fd0271d6ce86d1a36"
     },
     {
       "source": "tether_data.json",
       "status": "updated",
       "source_date": "2026-09-30",
       "components": null,
-      "sha256": "9c472218cef3feba119a5c74b7994e7537dc71cd1cfdd422d5a10ca399426319"
+      "sha256": "a9ea9d55e1b0d3f7533aef1cb29ceb0fb10ff5f69accdbf7cb464b2826360573"
     },
     {
       "source": "fear_greed.json",
       "status": "updated",
       "source_date": "2026-11-04",
       "components": null,
-      "sha256": "7a596762f39fccaaa67b7f92f669d6bb29e2710236c5c717d39bd4c1907e8c2d"
+      "sha256": "41827107378681485e9e063951c3d5a3787d80754914e66eb4006690862e08a8"
     },
     {
       "source": "ahr999.json",
       "status": "updated",
       "source_date": "2026-11-04",
       "components": null,
-      "sha256": "67cc154bc18b400d5623e8c334c881027f339a91cdc9234d5eea4a00c2a2b4b5"
+      "sha256": "4385f0f24ab36b52c73489a52f52c00d3290b407410f440c5a08c540ec3678a6"
     },
     {
       "source": "coinmetrics_data.json",
       "status": "updated",
       "source_date": "2026-11-03",
       "components": null,
-      "sha256": "0bc4230792a697896623569496c5d999755586c887de924521d297ca44ea677f"
+      "sha256": "eaed60cd1a13f4ba17e0541e3afb6840e41524540823c8dfd12f6682d88ca769"
     },
     {
       "source": "bgeometrics_data.json",
-      "status": "partial",
-      "source_date": "2026-11-04T03:03:19.104815",
+      "status": "updated",
+      "source_date": "2026-11-04T16:22:58.869665",
       "components": [
         {
           "label": "CVDD（Willy Woo 官方）",
           "status": "updated",
-          "source_date": "2026-11-01",
+          "source_date": "2026-11-02",
           "reason": "",
           "delay_days": null
         },
         {
           "label": "MVRV Z（BRK / Bitview 原始数据自算）",
-          "status": "retained",
-          "source_date": "2026-10-29",
-          "reason": "Source reported an error or fallback",
+          "status": "updated",
+          "source_date": "2026-11-03",
+          "reason": "",
           "delay_days": null
         }
       ],
-      "sha256": "f3471d0fb7c2a99f72d12dfcde38b975023a44b00e18fc126f34e275be5762b4"
+      "sha256": "c50c0498878fa7d1aad851785af5c32fe2d77b34a2ffc1a8ac8482812b6d4830"
     },
     {
       "source": "strategy_data.json",
-      "status": "retained",
-      "source_date": "2026-10-18",
-      "reason": "Fetcher exit 1",
-      "sha256": "d4b9ba4001fb1c8a09fd78660487d7ed14163f5d2e89560570b10cbdcbcf5ab3"
+      "status": "checked_no_new",
+      "source_date": "2026-11-01",
+      "components": null,
+      "sha256": "7d7d2fa26520c8931fe0e33c29d52e0d45b0db62209d911fb6707cf14e79c884"
     }
   ],
   "preserved_inputs": {
-    "opinions_input.json": "b0a6cd51cd87e37eb17c221e509b373978d8ea00eb362001148e84858b15d53d",
-    "websearch_cache.json": "dc408f802c8e892f33ba3703adf5ebfac3e79d2c2d3bbf879a69e63394a494ca",
-    "user_inputs_cache.json": "b2770c59c808df40801be25bf8e9d8778ab548c8b433fa7a7911032853b05e9a"
+    "opinions_input.json": "6ab2c2d356c9c678ddf4520c39a5e8cd78ae9b9fbf6bb4906f2a1dce24661c42",
+    "websearch_cache.json": "9b43c5b20fa17a8cbae98ec10c42ded50e145aa4969f3067e1fe56ab1de9c9c1",
+    "user_inputs_cache.json": "15473f359921a6c61e1b2567cbb22efd07e9060e27456011b7c79087883306e4"
   }
 }

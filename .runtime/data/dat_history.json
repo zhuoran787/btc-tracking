@@ -563,6 +563,12 @@
       "holdings": 848517.0,
       "entry_value_usd": 64020000000.0,
       "current_value_usd": 68993778150.9044
+    },
+    {
+      "date": "2026-11-04",
+      "holdings": 849327.0,
+      "entry_value_usd": 64080000000.0,
+      "current_value_usd": 68396215964.872246
     }
   ],
   "Twenty One Capital": [
@@ -889,6 +895,12 @@
       "holdings": 43514.0,
       "entry_value_usd": 3692815061.0,
       "current_value_usd": 3538167488.050863
+    },
+    {
+      "date": "2026-11-04",
+      "holdings": 43514.0,
+      "entry_value_usd": 3692815061.0,
+      "current_value_usd": 3504177945.002868
     }
   ],
   "Metaplanet": [
@@ -1455,6 +1467,12 @@
       "holdings": 44000.0,
       "entry_value_usd": null,
       "current_value_usd": 3577684641.1324625
+    },
+    {
+      "date": "2026-11-04",
+      "holdings": 44000.0,
+      "entry_value_usd": null,
+      "current_value_usd": 3543315475.022434
     }
   ],
   "MARA Holdings": [
@@ -2021,6 +2039,12 @@
       "holdings": 35577.0,
       "entry_value_usd": 1944717000.0,
       "current_value_usd": 2892801965.399309
+    },
+    {
+      "date": "2026-11-04",
+      "holdings": 35577.0,
+      "entry_value_usd": 1944717000.0,
+      "current_value_usd": 2865012151.247117
     }
   ],
   "Strive": [
@@ -2509,6 +2533,12 @@
       "holdings": 36818.0,
       "entry_value_usd": 3266124781.0,
       "current_value_usd": 2993708934.482159
+    },
+    {
+      "date": "2026-11-04",
+      "holdings": 43124.0,
+      "entry_value_usd": null,
+      "current_value_usd": 3472771285.110624
     }
   ],
   "__aggregate__": [
@@ -3075,6 +3105,12 @@
       "total_holdings": 1303553.2192943657,
       "total_value_usd": 105993234808.36885,
       "company_count": 180
+    },
+    {
+      "date": "2026-11-04",
+      "total_holdings": 1314155.2192943657,
+      "total_value_usd": 105828784661.52788,
+      "company_count": 181
     }
   ]
 }
