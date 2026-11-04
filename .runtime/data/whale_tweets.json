@@ -1,8 +1,8 @@
 {
-  "fetched_at": "2026-10-21T11:07:38.702075Z",
-  "total_handles": 26,
+  "fetched_at": "2026-11-04T15:22:01.889934Z",
+  "total_handles": 27,
   "successful": 4,
-  "failed": 22,
+  "failed": 23,
   "twitter_api_used": false,
   "twitter_exhausted": false,
   "results": [
@@ -28,6 +28,15 @@
       "name": "Arkham",
       "handle": "arkham",
       "role": "链上追踪",
+      "group": "资金面分析",
+      "fetched_via": null,
+      "tweets": [],
+      "error": "all sources failed (nitter mirrors down + no twitter token / exhausted)"
+    },
+    {
+      "name": "Murphy",
+      "handle": "Murphychen888",
+      "role": "链上数据分析",
       "group": "资金面分析",
       "fetched_via": null,
       "tweets": [],

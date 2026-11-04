@@ -6,8 +6,10 @@ on-chain proxies: whale-cohort supply, LTH/STH supply, profit share, MVRV.
 Output: data/brk_data.json
 """
 import json
+import hashlib
+import math
 import sys
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 import requests
 
@@ -15,46 +17,90 @@ API = "https://bitview.space/api"
 ROOT = Path(__file__).parent.parent
 OUT = ROOT / "data" / "brk_data.json"
 
-# (metric_key, output_label)
+# (source series, output label). Address bands are disjoint; summing them
+# preserves the previous >=1k / >=10k BTC address-cohort definitions.
 METRICS = [
-    ("addrs_over_1k_btc_supply",  "whale_supply"),         # >=1k BTC 鲸鱼供应
-    ("addrs_over_10k_btc_supply", "mega_whale_supply"),    # >=10k BTC 巨鲸供应
-    ("lth_supply",                "lth_supply"),           # 长期持有者
-    ("sth_supply",                "sth_supply"),           # 短期持有者
-    ("supply_in_profit_share",    "supply_in_profit_pct"), # 盈利供应比例
-    ("mvrv",                      "mvrv"),                 # MVRV 估值
-    ("nupl",                      "nupl"),                 # NUPL 净未实现盈亏
+    (("balance_1k_to_10k_btc_supply", "balance_10k_to_100k_btc_supply", "balance_over_100k_btc_supply"), "whale_supply"),
+    (("balance_10k_to_100k_btc_supply", "balance_over_100k_btc_supply"), "mega_whale_supply"),
+    (("lth_supply",), "lth_supply"),
+    (("sth_supply",), "sth_supply"),
+    (("supply_in_profit_share",), "supply_in_profit_pct"),
+    (("mvrv",), "mvrv"),
+    (("nupl",), "nupl"),
     # sopr 已删（2026-07-01）：bitview 该 metric 404 且报告全程 0 引用，白报 error 干扰健康检查
-    ("supply",                    "total_supply"),         # BTC 总流通量（用于算 whales%）
+    (("circulating_supply",), "total_supply"),
 ]
 
 DAYS = 365
 # 鲸鱼占比长时序（PPT 因素 4 图 1 要求 ~5 年 vs BTC 价格双轴，替换 CoinShares Exhibit 35 截图）
-# 实测 bitview.space 支持 from=-2000（2026-07-01 验证），必须用 metric 名 `supply`（total_supply 会 404）
+# New API uses start, and returns the server's actual dates in the same batch.
 WHALES_PCT_LONG_DAYS = 2000
+SOURCE_SERIES = list(dict.fromkeys(name for names, _ in METRICS for name in names))
 
 
-def fetch_metric_series(metric: str, days: int) -> list[float]:
-    url = f"{API}/metric/{metric}/day1/data?from=-{days}"
-    r = requests.get(url, timeout=30)
+def parse_snapshot(raw: list, today: date | None = None) -> tuple:
+    today = today or datetime.now(timezone.utc).date()
+    if len(raw) != 1 + len(SOURCE_SERIES):
+        raise ValueError("BRK bulk response has unexpected component count")
+    if len({(x['start'], x['end'], x['index']) for x in raw}) != 1:
+        raise ValueError("BRK bulk components do not share an index range")
+    if raw[0]['index'] != 'day1' or raw[0].get('type') != 'Date':
+        raise ValueError("BRK dates are not daily calendar dates")
+    n = raw[0]['end'] - raw[0]['start']
+    if any(len(x['data']) != n for x in raw):
+        raise ValueError("BRK bulk component length mismatch")
+    dates = [date.fromisoformat(d) for d in raw[0]['data']]
+    if any(b - a != timedelta(days=1) for a, b in zip(dates, dates[1:])):
+        raise ValueError("BRK daily calendar has gaps or duplicates")
+    keep = [i for i, day in enumerate(dates) if day < today][-WHALES_PCT_LONG_DAYS:]
+    if len(keep) < WHALES_PCT_LONG_DAYS or (today - dates[keep[-1]]).days > 4:
+        raise ValueError("BRK complete daily history is too short or stale")
+    values = {}
+    for name, block in zip(SOURCE_SERIES, raw[1:]):
+        expected_type = ('Percent' if name == 'supply_in_profit_share' else
+                         'Multiple' if name == 'mvrv' else
+                         'Ratio' if name == 'nupl' else 'Bitcoin')
+        if block.get('type') != expected_type:
+            raise ValueError(f"BRK unit changed for {name}: {block.get('type')}")
+        selected = [block['data'][i] for i in keep]
+        if any(v is None or not math.isfinite(v) for v in selected):
+            raise ValueError(f"BRK missing or invalid values in {name}")
+        values[name] = selected
+    series = {label: [sum(parts) for parts in zip(*(values[name] for name in names))]
+              for names, label in METRICS}
+    if any(not 0 <= mega <= whale <= total for mega, whale, total in
+           zip(series['mega_whale_supply'], series['whale_supply'], series['total_supply'])):
+        raise ValueError("BRK address cohort supplies exceed total supply")
+    return [dates[i].isoformat() for i in keep], series
+
+
+def fetch_snapshot() -> tuple:
+    r = requests.get(f"{API}/series/bulk", params={
+        'series': ','.join(['date'] + SOURCE_SERIES), 'index': 'day1',
+        'start': -(WHALES_PCT_LONG_DAYS + 1),
+    }, timeout=45)
     r.raise_for_status()
-    return r.json()
+    raw = r.json()
+    dates, series = parse_snapshot(raw)
+    return dates, series, {
+        'url': r.url, 'versions': [x.get('version') for x in raw],
+        'raw_sha256': hashlib.sha256(r.content).hexdigest(),
+        'day_policy': 'completed UTC days; server date series',
+        'source_series': {label: list(names) for names, label in METRICS},
+    }
 
 
 def main() -> int:
     OUT.parent.mkdir(exist_ok=True)
-    today = date.today()
-    dates = [(today - timedelta(days=DAYS - 1 - i)).isoformat() for i in range(DAYS)]
-
-    series: dict[str, list[float]] = {}
+    today = datetime.now(timezone.utc).date()
     errors: list[str] = []
-    for metric, label in METRICS:
-        try:
-            print(f"BRK {metric} -> {label} ...", file=sys.stderr)
-            series[label] = fetch_metric_series(metric, DAYS)
-        except Exception as exc:
-            errors.append(f"{metric}: {exc}")
-            series[label] = []
+    try:
+        long_dates, long_series, provenance = fetch_snapshot()
+    except Exception as exc:
+        print(f"FAIL BRK: {exc}; previous file retained", file=sys.stderr)
+        return 1
+    dates = long_dates[-DAYS:]
+    series = {label: values[-DAYS:] for label, values in long_series.items()}
 
     # Whale Accumulation Score — synthesized to replace Glassnode's paid metric.
     # Method: 30d delta in addrs_over_1k_btc_supply, z-scored over the 365d window.
@@ -118,20 +164,10 @@ def main() -> int:
         whales_pct_30d_change = round(whales_pct_series[-1] - whales_pct_series[-31], 4)
 
     # whales% 长时序（~5.5 年，PPT 因素 4 图 1 用，替换 CoinShares Exhibit 35 截图）
-    whales_pct_long = {"dates": [], "values": []}
-    try:
-        print(f"BRK whales_pct long ({WHALES_PCT_LONG_DAYS}d) ...", file=sys.stderr)
-        ws_long = fetch_metric_series("addrs_over_1k_btc_supply", WHALES_PCT_LONG_DAYS)
-        ts_long = fetch_metric_series("supply", WHALES_PCT_LONG_DAYS)
-        n = min(len(ws_long), len(ts_long))
-        long_dates = [(today - timedelta(days=n - 1 - i)).isoformat() for i in range(n)]
-        long_values = []
-        for i in range(n):
-            t, w = ts_long[i], ws_long[i]
-            long_values.append(round(w / t * 100, 4) if t and t > 0 else None)
-        whales_pct_long = {"dates": long_dates, "values": long_values}
-    except Exception as exc:
-        errors.append(f"whales_pct_long: {exc}")
+    whales_pct_long = {'dates': long_dates, 'values': [
+        round(w / t * 100, 4) for w, t in
+        zip(long_series['whale_supply'], long_series['total_supply'])
+    ]}
 
     output = {
         "fetched_at": today.isoformat(),
@@ -149,8 +185,11 @@ def main() -> int:
         "whales_pct_long": whales_pct_long,
         "errors": errors,
         "source": "bitview.space (Bitcoin Research Kit)",
+        "provenance": provenance,
     }
-    OUT.write_text(json.dumps(output, ensure_ascii=False, indent=2))
+    temporary = OUT.with_suffix('.json.tmp')
+    temporary.write_text(json.dumps(output, ensure_ascii=False, indent=2))
+    temporary.replace(OUT)
     print(f"OK: wrote {OUT} ({len(series)} metrics, {len(errors)} errors)", file=sys.stderr)
     return 0
 

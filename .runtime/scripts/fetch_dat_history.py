@@ -15,6 +15,7 @@ import sqlite3
 import sys
 from datetime import date
 from pathlib import Path
+from urllib.parse import urljoin
 
 import fitz
 import requests
@@ -97,13 +98,14 @@ def fetch_metaplanet_native_cost() -> dict:
     html = _get(METAPLANET_DISCLOSURES_URL).text
     records = re.findall(
         r'\\"date\\":\\"([0-9-]+)\\",\\"title\\":\\"Notice of Additional Purchase of Bitcoin[^\"]*\\",'
-        r'\\"filePath\\":\\"(https:[^\"]+?\.pdf)\\",\\"isEnglish\\":true',
+        r'\\"filePath\\":\\"([^\"]+?\.pdf)\\",\\"isEnglish\\":true',
         html,
         re.I,
     )
     if not records:
         raise RuntimeError("Metaplanet disclosures schema changed or no English purchase PDF found")
     disclosure_date, pdf_url = sorted(records, key=lambda item: item[0], reverse=True)[0]
+    pdf_url = urljoin(METAPLANET_DISCLOSURES_URL, pdf_url)
     pdf = _get(pdf_url, timeout=45).content
     document = fitz.open(stream=pdf, filetype="pdf")
     text = "\n".join(page.get_text() for page in document)

@@ -1,21 +1,21 @@
 {
-  "url": "https://coinshares.com/insights/research-data/digital-asset-bi-weekly-digest-13-10-2026/",
-  "title": "CoinShares Bi-Weekly Digest 2026-10-13",
-  "report_date": "2026-10-13",
-  "fetched_at": "2026-10-21",
+  "url": "https://coinshares.com/insights/research-data/digital-asset-bi-weekly-digest-27-10-2026/",
+  "title": "CoinShares Bi-Weekly Digest 2026-10-27",
+  "report_date": "2026-10-27",
+  "fetched_at": "2026-11-04",
   "flow_page_missing": true,
   "images": [],
   "summary_paragraphs": [
-    "⚠️ 已核对 2026-10-13 官方双周报，本期未包含 Digital Asset Fund Flows 专页；本期全球数字资产产品资金流及历史分位暂缺。",
-    "2026-10-16 CoinShares市场更新披露：截至发文时当周全球数字资产投资产品净流出4.34亿美元。该数是周内累计，不能当作完整周度资金流。",
-    "CoinShares认为，通胀与消费韧性推动利率预期偏鹰，短期环境承压；其表述是宏观驱动的区间市，而非长期基本面转空。10/13双周报仍缺资金流专页，历史图与分位继续留空。"
+    "⚠️ 已核对 2026-10-27 官方双周报，本期未包含 Digital Asset Fund Flows 专页；本期全球数字资产产品资金流及历史分位暂缺。",
+    "10/30 CoinShares官方市场更新认为BTC在美联储暂停加息、选前防御仓位及油价风险下仍表现出相对韧性，但并非风险已经解除。这是当时的定性评论，不代表中选后的最新判断。",
+    "最新10/27官方双周报未含资金流专页，10/30市场更新也未披露可替代的完整全球产品周净流量；历史图和分位继续留缺，不用美国现货ETF流量代算。"
   ],
   "source_note": "Current official PDF inspected; fund-flow section not disclosed",
   "supplementary_sources": [
     {
-      "date": "2026-10-16",
-      "title": "Market update — week-to-date flows, not final weekly total",
-      "url": "https://coinshares.com/us/insights/research-data/market-update-16-10-2026/"
+      "date": "2026-10-30",
+      "title": "定性市场更新，无完整周流量",
+      "url": "https://coinshares.com/insights/research-data/market-update-30-10-2026/"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-21",
+  "fetched_at": "2026-11-04",
   "lookback_days": 30,
   "factor_9_strategic_reserve": [],
   "factor_10_institution": [
@@ -14,12 +14,21 @@
     },
     {
       "factor": 10,
-      "title": "Teucrium Commodity Trust  (BTCK, CANE, CORN, SOYB, TAGS, WEAT)  (CIK 0001471824) — 8-K",
-      "date": "2026-09-24",
-      "form": "8-K",
-      "company": "Teucrium Commodity Trust  (BTCK, CANE, CORN, SOYB, TAGS, WEAT)  (CIK 0001471824)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001471824&type=8-K",
-      "adsh": "0001437749-26-031115"
+      "title": "iPower Inc.  (IPW)  (CIK 0001830072) — S-1/A",
+      "date": "2026-10-30",
+      "form": "S-1/A",
+      "company": "iPower Inc.  (IPW)  (CIK 0001830072)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001830072&type=S-1/A",
+      "adsh": "0001683168-26-008203"
+    },
+    {
+      "factor": 10,
+      "title": "VS Trust  (SVIX, UVIX)  (CIK 0001793497) — S-1/A",
+      "date": "2026-10-30",
+      "form": "S-1/A",
+      "company": "VS Trust  (SVIX, UVIX)  (CIK 0001793497)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001793497&type=S-1/A",
+      "adsh": "0001213900-26-113954"
     },
     {
       "factor": 10,
@@ -33,20 +42,20 @@
     {
       "factor": 10,
       "title": "Canary Staked INJ ETF  (CIK 0002073616) — S-1/A",
-      "date": "2026-09-24",
+      "date": "2026-11-02",
       "form": "S-1/A",
       "company": "Canary Staked INJ ETF  (CIK 0002073616)",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002073616&type=S-1/A",
-      "adsh": "0001999371-26-021228"
+      "adsh": "0001999371-26-024117"
     },
     {
       "factor": 10,
-      "title": "Canary PEPE ETF  (CIK 0002109686) — S-1/A",
-      "date": "2026-10-02",
+      "title": "Canary Staked INJ ETF  (CIK 0002073616) — S-1/A",
+      "date": "2026-10-23",
       "form": "S-1/A",
-      "company": "Canary PEPE ETF  (CIK 0002109686)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002109686&type=S-1/A",
-      "adsh": "0001999371-26-022017"
+      "company": "Canary Staked INJ ETF  (CIK 0002073616)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002073616&type=S-1/A",
+      "adsh": "0001999371-26-023446"
     },
     {
       "factor": 10,
@@ -56,6 +65,15 @@
       "company": "Winklevoss Zcash ETF  (CIK 0002158471)",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002158471&type=S-1",
       "adsh": "0001104659-26-113940"
+    },
+    {
+      "factor": 10,
+      "title": "Grayscale Bittensor Trust (TAO)  (GTAO)  (CIK 0002029297) — S-1/A",
+      "date": "2026-10-23",
+      "form": "S-1/A",
+      "company": "Grayscale Bittensor Trust (TAO)  (GTAO)  (CIK 0002029297)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002029297&type=S-1/A",
+      "adsh": "0001193125-26-430543"
     },
     {
       "factor": 10,
@@ -77,21 +95,21 @@
     },
     {
       "factor": 10,
-      "title": "Stablecoin Development Corp  (SDEV)  (CIK 0001389545) — 8-K",
-      "date": "2026-10-05",
-      "form": "8-K",
-      "company": "Stablecoin Development Corp  (SDEV)  (CIK 0001389545)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001389545&type=8-K",
-      "adsh": "0001437749-26-031972"
-    },
-    {
-      "factor": 10,
       "title": "Grayscale Chainlink Trust ETF  (GLNK)  (CIK 0001852025) — 8-K",
       "date": "2026-10-05",
       "form": "8-K",
       "company": "Grayscale Chainlink Trust ETF  (GLNK)  (CIK 0001852025)",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001852025&type=8-K",
       "adsh": "0001193125-26-414291"
+    },
+    {
+      "factor": 10,
+      "title": "Stablecoin Development Corp  (SDEV)  (CIK 0001389545) — 8-K",
+      "date": "2026-10-05",
+      "form": "8-K",
+      "company": "Stablecoin Development Corp  (SDEV)  (CIK 0001389545)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001389545&type=8-K",
+      "adsh": "0001437749-26-031972"
     },
     {
       "factor": 10,
@@ -113,21 +131,21 @@
     },
     {
       "factor": 10,
-      "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
-      "date": "2026-10-07",
-      "form": "8-K",
-      "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
-      "adsh": "0001493152-26-046088"
-    },
-    {
-      "factor": 10,
       "title": "Grayscale CoinDesk Crypto 5 ETF  (GDLC)  (CIK 0001729997) — 8-K",
       "date": "2026-10-05",
       "form": "8-K",
       "company": "Grayscale CoinDesk Crypto 5 ETF  (GDLC)  (CIK 0001729997)",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001729997&type=8-K",
       "adsh": "0001193125-26-414279"
+    },
+    {
+      "factor": 10,
+      "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
+      "date": "2026-10-07",
+      "form": "8-K",
+      "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
+      "adsh": "0001493152-26-046088"
     },
     {
       "factor": 10,
@@ -149,12 +167,12 @@
     },
     {
       "factor": 10,
-      "title": "BNB PLUS CORP.  (BNBX)  (CIK 0000744452) — 8-K",
-      "date": "2026-10-02",
+      "title": "Galaxy Digital Inc.  (GLXY)  (CIK 0001859392) — 8-K",
+      "date": "2026-10-27",
       "form": "8-K",
-      "company": "BNB PLUS CORP.  (BNBX)  (CIK 0000744452)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000744452&type=8-K",
-      "adsh": "0001104659-26-113043"
+      "company": "Galaxy Digital Inc.  (GLXY)  (CIK 0001859392)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001859392&type=8-K",
+      "adsh": "0001859392-26-000108"
     },
     {
       "factor": 10,
@@ -167,12 +185,12 @@
     },
     {
       "factor": 10,
-      "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
-      "date": "2026-09-28",
-      "form": "8-K",
-      "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
-      "adsh": "0001493152-26-044459"
+      "title": "Cryptex Digital Market Cap ETF  (BAGZ)  (CIK 0002115027) — S-1/A",
+      "date": "2026-10-23",
+      "form": "S-1/A",
+      "company": "Cryptex Digital Market Cap ETF  (BAGZ)  (CIK 0002115027)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002115027&type=S-1/A",
+      "adsh": "0001213900-26-112016"
     },
     {
       "factor": 10,
@@ -185,30 +203,30 @@
     },
     {
       "factor": 10,
-      "title": "Cryptex Digital Market Cap ETF  (BAGZ)  (CIK 0002115027) — S-1/A",
-      "date": "2026-09-30",
-      "form": "S-1/A",
-      "company": "Cryptex Digital Market Cap ETF  (BAGZ)  (CIK 0002115027)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002115027&type=S-1/A",
-      "adsh": "0001213900-26-105231"
+      "title": "Evernorth Holdings Inc.  (XRPN, XRPNW)  (CIK 0002092592) — S-1",
+      "date": "2026-10-23",
+      "form": "S-1",
+      "company": "Evernorth Holdings Inc.  (XRPN, XRPNW)  (CIK 0002092592)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002092592&type=S-1",
+      "adsh": "0001628280-26-067081"
     },
     {
       "factor": 10,
       "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
-      "date": "2026-09-21",
+      "date": "2026-11-02",
       "form": "8-K",
       "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
-      "adsh": "0001493152-26-043486"
+      "adsh": "0001493152-26-049572"
     },
     {
       "factor": 10,
-      "title": "Zcash ETF  (ZCSH)  (CIK 0001720265) — 8-K",
-      "date": "2026-09-30",
+      "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
+      "date": "2026-10-26",
       "form": "8-K",
-      "company": "Zcash ETF  (ZCSH)  (CIK 0001720265)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001720265&type=8-K",
-      "adsh": "0001193125-26-408382"
+      "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
+      "adsh": "0001493152-26-048429"
     },
     {
       "factor": 10,
@@ -230,12 +248,21 @@
     },
     {
       "factor": 10,
-      "title": "ProText Mobility, Inc.  (CIK 0001163573) — 8-K",
-      "date": "2026-09-30",
+      "title": "Evernorth Holdings Inc.  (XRPN, XRPNW)  (CIK 0002092592) — S-1",
+      "date": "2026-10-30",
+      "form": "S-1",
+      "company": "Evernorth Holdings Inc.  (XRPN, XRPNW)  (CIK 0002092592)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002092592&type=S-1",
+      "adsh": "0001628280-26-068609"
+    },
+    {
+      "factor": 10,
+      "title": "Hashdex Nasdaq CME Crypto Index ETF  (NCIQ)  (CIK 0002031069) — 8-K",
+      "date": "2026-10-30",
       "form": "8-K",
-      "company": "ProText Mobility, Inc.  (CIK 0001163573)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001163573&type=8-K",
-      "adsh": "0001140361-26-038066"
+      "company": "Hashdex Nasdaq CME Crypto Index ETF  (NCIQ)  (CIK 0002031069)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002031069&type=8-K",
+      "adsh": "0001213900-26-114174"
     },
     {
       "factor": 10,
@@ -245,33 +272,6 @@
       "company": "Datacentrex, Inc.  (DTCX)  (CIK 0001853825)",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001853825&type=8-K",
       "adsh": "0001493152-26-046935"
-    },
-    {
-      "factor": 10,
-      "title": "CSLM Digital Asset Acquisition Corp III, Ltd  (KOYN, KOYNU, KOYNW)  (CIK 0002068454) — 8-K",
-      "date": "2026-10-07",
-      "form": "8-K",
-      "company": "CSLM Digital Asset Acquisition Corp III, Ltd  (KOYN, KOYNU, KOYNW)  (CIK 0002068454)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002068454&type=8-K",
-      "adsh": "0001829126-26-010827"
-    },
-    {
-      "factor": 10,
-      "title": "VanEck BNB ETF  (VBNB)  (CIK 0002066824) — 8-K",
-      "date": "2026-09-29",
-      "form": "8-K",
-      "company": "VanEck BNB ETF  (VBNB)  (CIK 0002066824)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002066824&type=8-K",
-      "adsh": "0002066824-26-000020"
-    },
-    {
-      "factor": 10,
-      "title": "CaliberCos Inc.  (CWD)  (CIK 0001627282) — 8-K",
-      "date": "2026-10-19",
-      "form": "8-K",
-      "company": "CaliberCos Inc.  (CWD)  (CIK 0001627282)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001627282&type=8-K",
-      "adsh": "0001627282-26-000074"
     }
   ],
   "factor_11_clarity_act": {

@@ -93,8 +93,15 @@ def fetch_cvdd() -> dict:
 def calculate_mvrv_zscore(raw: list, today: date | None = None) -> dict:
     """Expand population variance through time; validate alignment before math."""
     today = today or datetime.now(timezone.utc).date()
-    if len(raw) != 3 or len({(x['start'], x['end'], x['index'], x['stamp']) for x in raw}) != 1:
+    if len(raw) != 3 or len({(x['start'], x['end'], x['index']) for x in raw}) != 1:
         raise ValueError('BRK bulk components are not one aligned snapshot')
+    # Current API exposes per-series versions, not a shared timestamp.
+    # Old stamped fixtures remain supported, with their original strict check.
+    if any('stamp' in x for x in raw):
+        if len({x.get('stamp') for x in raw}) != 1:
+            raise ValueError('BRK bulk components have conflicting timestamps')
+    elif not all(isinstance(x.get('version'), int) for x in raw):
+        raise ValueError('BRK bulk components lack version metadata')
     if raw[0]['start'] != 0 or raw[0]['index'] != 'day1':
         raise ValueError('BRK requires full day1 history from index zero')
     if [x['type'] for x in raw] != ['Date', 'Dollars', 'Dollars']:
@@ -102,6 +109,8 @@ def calculate_mvrv_zscore(raw: list, today: date | None = None) -> dict:
     dates, market, realized = [x['data'] for x in raw]
     if not dates or len({len(dates), len(market), len(realized)}) != 1:
         raise ValueError('BRK dates and capitalizations have different lengths')
+    if len(dates) != raw[0]['end'] - raw[0]['start']:
+        raise ValueError('BRK data length disagrees with the declared index range')
     if dates[0] != '2009-01-01':
         raise ValueError('BRK historical origin changed; review denominator before proceeding')
     parsed = [date.fromisoformat(d) for d in dates]
@@ -140,7 +149,12 @@ def calculate_mvrv_zscore(raw: list, today: date | None = None) -> dict:
         'methodology': '(market_cap - realized_cap) / expanding population std(market_cap), ddof=0; no future observations',
         'history_origin': dates[0], 'denominator_observations': n,
         'early_history': 'skip null days; include non-null zero market caps',
-        'day_policy': 'completed UTC days only', 'source_stamp': raw[0]['stamp'],
+        'day_policy': 'completed UTC days only',
+        'source_stamp': raw[0].get('stamp') or {
+            'kind': 'series_versions_and_date_range',
+            'versions': [x['version'] for x in raw],
+            'last_source_date': dates[-1], 'end_index': raw[0]['end'],
+        },
         'raw_sha256': hashlib.sha256(json.dumps(raw, separators=(',',':')).encode()).hexdigest(),
         'delayed': False,
     }

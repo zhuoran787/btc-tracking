@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-26T01:20:00.714830+00:00",
+  "fetched_at": "2026-11-04T15:19:05.067900+00:00",
   "source": "verified Strategy official ledger baseline + SEC EDGAR 8-K reconciliation",
   "errors": [],
   "warnings": [],
@@ -1125,6 +1125,16 @@
       "shares_basic": null,
       "shares_diluted": null,
       "sec_accession": "0001193125-26-424688"
+    },
+    {
+      "date": "2026-11-02",
+      "btc_delta": 811,
+      "btc_holdings": 849327,
+      "avg_price": 75451,
+      "total_cost": 64080.0,
+      "shares_basic": null,
+      "shares_diluted": null,
+      "sec_accession": "0001193125-26-442707"
     }
   ],
   "weekly_net_buys": {
@@ -1219,7 +1229,8 @@
       "2026-09-28",
       "2026-10-05",
       "2026-10-12",
-      "2026-10-19"
+      "2026-10-19",
+      "2026-11-02"
     ],
     "net_btc": [
       850.0,
@@ -1312,28 +1323,33 @@
       1665.0,
       334.0,
       250.0,
-      267.0
+      267.0,
+      811.0
     ]
   },
   "sec_reconciliation": {
     "source": "SEC EDGAR submissions API + official complete-submission text",
     "parser_version": "split_tables_exhibits_v1",
     "cik": "0001050446",
-    "filings_checked": 0,
-    "btc_updates_found": 0,
-    "latest_filing_date": "2026-10-19",
-    "latest_as_of": "2026-10-18",
-    "latest_holdings": 848517,
-    "latest_accession": "0001193125-26-424688",
+    "filings_checked": 4,
+    "btc_updates_found": 2,
+    "latest_filing_date": "2026-11-02",
+    "latest_as_of": "2026-11-01",
+    "latest_holdings": 849327,
+    "latest_accession": "0001193125-26-442707",
     "checked_accessions": [
+      "0001050446-26-000047",
       "0001193125-26-413164",
       "0001193125-26-419726",
       "0001193125-26-423400",
-      "0001193125-26-424688"
+      "0001193125-26-424688",
+      "0001193125-26-431146",
+      "0001193125-26-437776",
+      "0001193125-26-442707"
     ],
-    "verified_at": "2026-10-26T01:20:00.714048+00:00"
+    "verified_at": "2026-11-04T15:19:05.067403+00:00"
   },
-  "refresh_status": "checked_no_new",
+  "refresh_status": "updated",
   "mnav": {
     "deprecated": true,
     "reason": "Use fetch_mnav.py EV mNAV; legacy equity/gross-BTC method is not comparable."
