@@ -10377,7 +10377,7 @@
   "methodology_id": "ahr999_coinmetrics_priceusd_utc_midnight_v1",
   "validation_config_hash": "aed73ddbc1acbeee8c10fe42aa3863dd92d7d4552cdfbdd2424ed4d3f2439cb8",
   "price_history_start": "2016-11-04",
-  "fetched_at": "2026-11-04T16:22:57.864850+00:00",
+  "fetched_at": "2026-11-04T16:33:51.192179+00:00",
   "source_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=PriceUSD&frequency=1d&start_time=2016-11-03&page_size=10000",
   "raw_sha256": "66b3d92e6220c094a277446a79e6ad14e7628415d55d3f4db9a21bac05d80642"
 }
