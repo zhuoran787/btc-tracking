@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-11-03",
+  "fetched_at": "2026-11-04",
   "current_holdings": {
     "name": "Tether Holdings Limited",
     "country": "🇻🇬",
-    "btc_holdings": 100000.0,
-    "usd_value_m": 7682.0,
-    "pct_of_supply": "0.476%",
+    "btc_holdings": 150000.0,
+    "usd_value_m": 11362.0,
+    "pct_of_supply": "0.714%",
     "source": "https://bitcointreasuries.net/private-companies"
   },
   "quarterly_reserves": {
