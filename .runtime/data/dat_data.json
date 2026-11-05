@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-04",
+  "fetched_at": "2026-11-05",
   "aggregate_source": "https://api.coingecko.com/api/v3/companies/public_treasury/bitcoin",
   "featured_source": "https://bitcointreasuries.net/public-companies/",
   "featured_companies": [
@@ -10,7 +10,7 @@
     "Strive"
   ],
   "total_holdings": 1314155.2192943657,
-  "total_value_usd": 105843000107.71498,
+  "total_value_usd": 105960070336.46562,
   "market_cap_dominance_pct": 6.26,
   "company_count": 181,
   "cost_basis_summary": [
@@ -27,8 +27,8 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 75447.97233574347,
       "total_cost_basis_native": 64080000000.0,
-      "avg_current_price_usd": 80540.71433399417,
-      "pnl_pct": 6.7500051235147795
+      "avg_current_price_usd": 80629.7983531662,
+      "pnl_pct": 6.868078567259039
     },
     {
       "name": "Twenty One Capital",
@@ -43,8 +43,8 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 84864.98738337087,
       "total_cost_basis_native": 3692815061.0,
-      "avg_current_price_usd": 80540.71433399417,
-      "pnl_pct": -5.095473625468349
+      "avg_current_price_usd": 80629.7983531662,
+      "pnl_pct": -4.990502162066591
     },
     {
       "name": "Metaplanet",
@@ -61,7 +61,7 @@
       "cost_currency": "JPY",
       "cost_as_of": "September 30, 2026",
       "disclosure_date": "2026-10-05",
-      "avg_current_price_usd": 80540.71433399417,
+      "avg_current_price_usd": 80629.7983531662,
       "pnl_pct": null
     },
     {
@@ -77,8 +77,8 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 54662.19748714057,
       "total_cost_basis_native": 1944717000.0,
-      "avg_current_price_usd": 80540.71433399417,
-      "pnl_pct": 47.34262074432991
+      "avg_current_price_usd": 80629.7983531662,
+      "pnl_pct": 47.50559263947372
     },
     {
       "name": "Strive",
@@ -93,7 +93,7 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": null,
       "total_cost_basis_native": null,
-      "avg_current_price_usd": 80540.71433399417,
+      "avg_current_price_usd": 80629.7983531662,
       "pnl_pct": null
     }
   ],
@@ -105,5 +105,5 @@
     "coverage_pct": 91.42093581555464,
     "weighted_avg_cost_usd": 75092.82678814931
   },
-  "history_days_accumulated": 95
+  "history_days_accumulated": 96
 }
