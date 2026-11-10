@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-09T02:44:45.090248",
+  "fetched_at": "2026-11-10T04:42:27.250162",
   "source": "woocharts.com (CVDD, Willy Woo official) + BRK raw capitalizations / local MVRV Z calculation",
   "thresholds": {
     "cvdd_bottom_band": 1.03,
@@ -6249,7 +6249,8 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-07"
     ],
     "values": [
       0.0,
@@ -12492,10 +12493,11 @@
       48660.9426,
       48664.258,
       48685.0104,
-      48694.1318
+      48694.1318,
+      48693.3263
     ],
-    "current": 48694.1318,
-    "current_date": "2026-11-06",
+    "current": 48693.3263,
+    "current_date": "2026-11-07",
     "source_note": "woocharts.com chart.json (Willy Woo official, CVDD inventor)"
   },
   "mvrv_zscore": {
@@ -18428,7 +18430,8 @@
       "2026-11-05",
       "2026-11-06",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-09"
     ],
     "values": [
       23.90667803,
@@ -24359,35 +24362,36 @@
       0.72535001,
       0.7270934,
       0.72608508,
-      0.70006086
+      0.70006086,
+      0.69901257
     ],
-    "current": 0.70006086,
-    "current_date": "2026-11-08",
+    "current": 0.69901257,
+    "current_date": "2026-11-09",
     "chart_start": "2022-09-25",
     "source_url": "https://bitview.space/api/series/bulk?series=date,market_cap,realized_cap&index=day1&start=0",
     "source_label": "BRK / Bitview 原始数据自算",
     "methodology_id": "brk_expanding_population_v1",
     "methodology": "(market_cap - realized_cap) / expanding population std(market_cap), ddof=0; no future observations",
     "history_origin": "2009-01-01",
-    "denominator_observations": 6514,
+    "denominator_observations": 6515,
     "early_history": "skip null days; include non-null zero market caps",
     "day_policy": "completed UTC days only",
     "source_stamp": {
       "kind": "series_versions_and_date_range",
       "versions": [
-        63,
-        307889474,
-        1154016262
+        2891682845,
+        1209560338,
+        721409
       ],
-      "last_source_date": "2026-11-09",
-      "end_index": 6522
+      "last_source_date": "2026-11-10",
+      "end_index": 6523
     },
-    "raw_sha256": "85bd3f58290b4a7efb9b348ce6cbfbfd04e91fd38cfbbdf656ce5ade80d712d3",
+    "raw_sha256": "e252670124c4833b8d85677eb3677ffbc2b1e334f8d6d05abae78ee63c5d8b3b",
     "delayed": false
   },
   "summary": {
-    "cvdd_current": 48694.1318,
-    "mvrv_z_current": 0.70006086
+    "cvdd_current": 48693.3263,
+    "mvrv_z_current": 0.69901257
   },
   "signals": {
     "cvdd_signal": null,
