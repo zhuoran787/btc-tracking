@@ -1,10 +1,10 @@
 {
   "source": "community-api.coinmetrics.io/v4 (REST, free tier)",
   "field": "SplyExNtv",
-  "last_updated": "2026-11-09",
+  "last_updated": "2026-11-10",
   "history_start": "2011-04-24",
-  "rows": 5679,
-  "fetched_at": "2026-11-10T04:42:27.722440",
+  "rows": 5680,
+  "fetched_at": "2026-11-11T02:51:54.259549",
   "series": {
     "exchange_reserve_btc": [
       {
@@ -22722,12 +22722,16 @@
       {
         "date": "2026-11-09",
         "value": 2701576.81299482
+      },
+      {
+        "date": "2026-11-10",
+        "value": 2708334.44988788
       }
     ]
   },
   "latest": {
-    "date": "2026-11-09",
-    "exchange_reserve_btc": 2701576.81299482,
-    "exchange_reserve_btc_30d_delta": 27904.0186
+    "date": "2026-11-10",
+    "exchange_reserve_btc": 2708334.44988788,
+    "exchange_reserve_btc_30d_delta": 33505.6077
   }
 }
