@@ -1,6 +1,6 @@
 {
   "mode": "data_only",
-  "built_at": "2026-11-11T02:52:21+00:00",
+  "built_at": "2026-11-12T03:55:26+00:00",
   "bootstrap": false,
   "config_hash": "34144331081b9e2c773040f0c79c2da83c346cb61e958c0ff3e1fdd4d5631e0e",
   "editorial_as_of": "2026-11-04",
@@ -13,101 +13,101 @@
     {
       "source": "api_data.json",
       "status": "updated",
-      "source_date": "2026-11-11T02:50:10+00:00",
+      "source_date": "2026-11-12T03:53:30+00:00",
       "components": null,
-      "sha256": "b4fc9ec824906af992a617b4e52fb7ef07995583d158e55145ac6806aabe545e"
+      "sha256": "3cb8a565e81d5a82e58a7d1009d798051c8a7ce0c9f52965ea3402d7ee00a11c"
     },
     {
       "source": "etf_flows.json",
       "status": "updated",
-      "source_date": "2026-11-10",
+      "source_date": "2026-11-11",
       "components": null,
-      "sha256": "06f611486a78c957ff462dce2ff7a0e6de818380fa24585c8e7e236a3e1cc96e"
+      "sha256": "35fb37e4dc838901817c32ca982fa0fd92d027f879e76cc815f0c67b1e94bd90"
     },
     {
       "source": "treasuries.json",
-      "status": "updated",
+      "status": "retained",
       "source_date": "2026-11-11T02:51:46.746468",
-      "components": null,
+      "reason": "Missing: key_companies",
       "sha256": "0af16f8f77c39ab78e3d0891cbf71da9ff6fd834567a0f90896afcaf484124d2"
     },
     {
       "source": "brk_data.json",
       "status": "updated",
-      "source_date": "2026-11-10",
+      "source_date": "2026-11-11",
       "components": null,
-      "sha256": "95c12fb26ab24b9cc47f614a8ce589cbc67a6b165a2b99314f97ac77b6bc23ae"
+      "sha256": "e44866cb28a6f46097268b77cf282b854b2327efc94db4a253a77e3258ad927a"
     },
     {
       "source": "derivatives_data.json",
       "status": "updated",
-      "source_date": "2026-11-11",
+      "source_date": "2026-11-12",
       "components": null,
-      "sha256": "8cdc45ebafdc56d5e592941fe7e2e460773d43369c67e36e077dd97812bcf19a"
+      "sha256": "db3686d1a89436a89fa707205925668727bee036657d22c693b2a1f3fdf54ec3"
     },
     {
       "source": "mnav_data.json",
       "status": "updated",
-      "source_date": "2026-11-11",
+      "source_date": "2026-11-12",
       "components": null,
-      "sha256": "4f4392cf510dd2e16d2b146c4f37d13217b12d724a984e71afa069e43733a6d7"
+      "sha256": "894b45e2485eea77f09176048fa4df95686b8b90a690a70106029ab9349be26b"
     },
     {
       "source": "dat_data.json",
-      "status": "retained",
-      "source_date": "2026-11-10",
-      "reason": "Fetcher exit 1",
-      "sha256": "b9acc57a2c19fd2fbb24dcc8c7ec69f8647f392e8e2732b9ae40e61f7f974d06"
+      "status": "updated",
+      "source_date": "2026-11-12",
+      "components": null,
+      "sha256": "bfeb0c88d991d91db8c0d3fec09cecfe7452530d912ea8032c2cbba3965c6f23"
     },
     {
       "source": "tether_data.json",
       "status": "updated",
       "source_date": "2026-09-30",
       "components": null,
-      "sha256": "c4b046d83f2cc26d76838c8c3284fb4c4683b2a04839b88a4a67a94bba5284a8"
+      "sha256": "32f36a8d9166dd3c1b3e3007276032d4f52d818a486bf2a3689036e28ec722ab"
     },
     {
       "source": "fear_greed.json",
       "status": "updated",
-      "source_date": "2026-11-11",
+      "source_date": "2026-11-12",
       "components": null,
-      "sha256": "e8dc8f2adf280811ad8b4a5fe3561a47da45d6bd5a13f2c9dc97e3f42aecf15e"
+      "sha256": "c223c29e4d6a536aafdf5f9d74e19dd71eb62b4e1e843f649a6f279f62db6bb0"
     },
     {
       "source": "ahr999.json",
       "status": "updated",
-      "source_date": "2026-11-11",
+      "source_date": "2026-11-12",
       "components": null,
-      "sha256": "98c3d5cdd730cdfa5af808cd3743ab5adf1efceca03108d5c28568528ffd8087"
+      "sha256": "c3ec6830806b6d118cb8f2f6f2eadaf87893f27ee4931856d13ac11e64c356d2"
     },
     {
       "source": "coinmetrics_data.json",
       "status": "updated",
-      "source_date": "2026-11-10",
+      "source_date": "2026-11-11",
       "components": null,
-      "sha256": "16456537ccd80be41a95f05f5667a464cf197e71f2814ba6a45b70df92ee74fd"
+      "sha256": "7564b37acf7376ba75a04b87510e8b234dad547969040e4be68e5e299c725bc9"
     },
     {
       "source": "bgeometrics_data.json",
       "status": "updated",
-      "source_date": "2026-11-11T02:51:54.059401",
+      "source_date": "2026-11-12T03:55:01.894664",
       "components": [
         {
           "label": "CVDD（Willy Woo 官方）",
           "status": "updated",
-          "source_date": "2026-11-08",
+          "source_date": "2026-11-09",
           "reason": "",
           "delay_days": null
         },
         {
           "label": "MVRV Z（BRK / Bitview 原始数据自算）",
           "status": "updated",
-          "source_date": "2026-11-10",
+          "source_date": "2026-11-11",
           "reason": "",
           "delay_days": null
         }
       ],
-      "sha256": "f4fb6a4c21813742077f5d237c9effa26ae78c1b8211df4f2627b0b8b78b57c9"
+      "sha256": "dcc6ae7f13ac5c59006bbb98c1a992685a4f5e7ac07a7767b929b1cf16ebce2a"
     },
     {
       "source": "strategy_data.json",

@@ -2,15 +2,8 @@
   "config_hash": "bba5212d1965b94acf3a653312c473250482735f740fa7f9478415a1cc6f4aa0",
   "source": "Coinbase BTC-USD hourly candle close",
   "source_url": "https://api.exchange.coinbase.com/products/BTC-USD/candles",
-  "as_of_date": "2026-11-10",
+  "as_of_date": "2026-11-11",
   "history": [
-    {
-      "date": "2025-11-10",
-      "ts": 1762808400000,
-      "price": 105985.94,
-      "candle_start_ts": 1762804800000,
-      "closing_hour_volume": 313.18987801
-    },
     {
       "date": "2025-11-11",
       "ts": 1762894800000,
@@ -1767,6 +1760,13 @@
       "price": 73685.73,
       "candle_start_ts": 1794340800000,
       "closing_hour_volume": 638.39319055
+    },
+    {
+      "date": "2026-11-11",
+      "ts": 1794430800000,
+      "price": 74604.19,
+      "candle_start_ts": 1794427200000,
+      "closing_hour_volume": 372.25451173
     }
   ]
 }

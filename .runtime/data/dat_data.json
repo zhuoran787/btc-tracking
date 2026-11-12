@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-10",
+  "fetched_at": "2026-11-12",
   "aggregate_source": "https://api.coingecko.com/api/v3/companies/public_treasury/bitcoin",
   "featured_source": "https://bitcointreasuries.net/public-companies/",
   "featured_companies": [
@@ -9,9 +9,9 @@
     "MARA Holdings",
     "Strive"
   ],
-  "total_holdings": 1300467.2192943657,
-  "total_value_usd": 97033721456.99445,
-  "market_cap_dominance_pct": 6.19,
+  "total_holdings": 1301532.2192943657,
+  "total_value_usd": 95904816250.21135,
+  "market_cap_dominance_pct": 6.2,
   "company_count": 181,
   "cost_basis_summary": [
     {
@@ -27,8 +27,8 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 75450.04257000532,
       "total_cost_basis_native": 64160000000.0,
-      "avg_current_price_usd": 74614.50778409086,
-      "pnl_pct": -1.1074013445906417
+      "avg_current_price_usd": 73686.08692776486,
+      "pnl_pct": -2.337912056979685
     },
     {
       "name": "Twenty One Capital",
@@ -43,8 +43,8 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 84864.98738337087,
       "total_cost_basis_native": 3692815061.0,
-      "avg_current_price_usd": 74614.50778409086,
-      "pnl_pct": -12.078573172908492
+      "avg_current_price_usd": 73686.08692776486,
+      "pnl_pct": -13.172570691734398
     },
     {
       "name": "Metaplanet",
@@ -61,24 +61,24 @@
       "cost_currency": "JPY",
       "cost_as_of": "September 30, 2026",
       "disclosure_date": "2026-10-05",
-      "avg_current_price_usd": 74614.50778409086,
+      "avg_current_price_usd": 73686.08692776486,
       "pnl_pct": null
     },
     {
       "name": "MARA Holdings",
       "symbol": "MARA.US",
       "country": "USA",
-      "holdings": 35577.0,
-      "holdings_as_of": "2026-08-07",
-      "total_cost_basis_usd": 1944717000.0,
-      "avg_cost_basis_usd": 54662.19748714057,
+      "holdings": 20415.0,
+      "holdings_as_of": "2026-11-09",
+      "total_cost_basis_usd": 2703607000.0,
+      "avg_cost_basis_usd": 132432.37815331863,
       "holdings_source": "https://bitcointreasuries.net/public-companies/mara",
       "cost_source": "https://bitcointreasuries.net/public-companies/mara",
       "cost_currency": "USD",
-      "avg_cost_basis_native": 54662.19748714057,
-      "total_cost_basis_native": 1944717000.0,
-      "avg_current_price_usd": 74614.50778409086,
-      "pnl_pct": 36.50111267781382
+      "avg_cost_basis_native": 132432.37815331863,
+      "total_cost_basis_native": 2703607000.0,
+      "avg_current_price_usd": 73686.08692776486,
+      "pnl_pct": -44.359462576094835
     },
     {
       "name": "Strive",
@@ -93,17 +93,17 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": null,
       "total_cost_basis_native": null,
-      "avg_current_price_usd": 74614.50778409086,
+      "avg_current_price_usd": 73686.08692776486,
       "pnl_pct": null
     }
   ],
   "total_cost_summary": {
     "scope": "tracked companies; USD-comparable rows only",
-    "total_entry_value_usd": 69797532061.0,
-    "covered_holdings": 929455.0,
-    "tracked_holdings": 1016608.0,
-    "coverage_pct": 91.42707907079229,
-    "weighted_avg_cost_usd": 75095.1170965781
+    "total_entry_value_usd": 70556422061.0,
+    "covered_holdings": 914293.0,
+    "tracked_holdings": 1001446.0,
+    "coverage_pct": 91.29728412715214,
+    "weighted_avg_cost_usd": 77170.47167702258
   },
-  "history_days_accumulated": 101
+  "history_days_accumulated": 102
 }
