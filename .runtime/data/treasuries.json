@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-15T13:02:36.462711",
+  "fetched_at": "2026-11-15T13:04:43.804578",
   "public_companies": [
     {
       "raw": {
@@ -7,7 +7,7 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "StrategyMSTRBuy",
         "in usd": "\u00e2\u0082\u00bf850,364",
-        "market cap": "$55,702M",
+        "market cap": "$55,703M",
         "enterprise value": "$46,141M",
         "btc/share": "$**,***M",
         "cost basis": "*.********",
@@ -18,7 +18,7 @@
       },
       "name": "Strategy",
       "btc_holdings": 850364.0,
-      "market_cap_usd": 55702000000.0,
+      "market_cap_usd": 55703000000.0,
       "enterprise_value_usd": 46141000000.0
     },
     {
@@ -4187,7 +4187,7 @@
         "name": "\u00f0\u009f\u0087\u00bb\u00f0\u009f\u0087\u00ac",
         "bitcoin": "Tether Holdings Limited",
         "in usd": "\u00e2\u0082\u00bf150,000",
-        "/21m": "$9,823M"
+        "/21m": "$9,824M"
       },
       "name": "Tether Holdings Limited",
       "btc_holdings": 150000.0
@@ -5014,7 +5014,7 @@
         "name": "\u00f0\u009f\u0087\u00ba\u00f0\u009f\u0087\u00b8",
         "bitcoin": "StrategyMSTRBuy",
         "in usd": "\u00e2\u0082\u00bf850,364",
-        "market cap": "$55,702M",
+        "market cap": "$55,703M",
         "enterprise value": "$46,141M",
         "btc/share": "$**,***M",
         "cost basis": "*.********",
@@ -5025,7 +5025,7 @@
       },
       "name": "Strategy",
       "btc_holdings": 850364.0,
-      "market_cap_usd": 55702000000.0,
+      "market_cap_usd": 55703000000.0,
       "enterprise_value_usd": 46141000000.0
     },
     "Metaplanet Inc": {
@@ -5309,7 +5309,7 @@
         "name": "\u00f0\u009f\u0087\u00bb\u00f0\u009f\u0087\u00ac",
         "bitcoin": "Tether Holdings Limited",
         "in usd": "\u00e2\u0082\u00bf150,000",
-        "/21m": "$9,823M"
+        "/21m": "$9,824M"
       },
       "name": "Tether Holdings Limited",
       "btc_holdings": 150000.0
