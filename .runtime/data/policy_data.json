@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-04",
+  "fetched_at": "2026-11-15",
   "lookback_days": 30,
   "factor_9_strategic_reserve": [],
   "factor_10_institution": [
@@ -23,21 +23,21 @@
     },
     {
       "factor": 10,
+      "title": "Invesco Galaxy Bitcoin ETF  (BTCO)  (CIK 0001855781) — 8-K",
+      "date": "2026-11-12",
+      "form": "8-K",
+      "company": "Invesco Galaxy Bitcoin ETF  (BTCO)  (CIK 0001855781)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001855781&type=8-K",
+      "adsh": "0001193125-26-458360"
+    },
+    {
+      "factor": 10,
       "title": "VS Trust  (SVIX, UVIX)  (CIK 0001793497) — S-1/A",
       "date": "2026-10-30",
       "form": "S-1/A",
       "company": "VS Trust  (SVIX, UVIX)  (CIK 0001793497)",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001793497&type=S-1/A",
       "adsh": "0001213900-26-113954"
-    },
-    {
-      "factor": 10,
-      "title": "VS Trust  (SVIX, UVIX)  (CIK 0001793497) — S-1/A",
-      "date": "2026-10-07",
-      "form": "S-1/A",
-      "company": "VS Trust  (SVIX, UVIX)  (CIK 0001793497)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001793497&type=S-1/A",
-      "adsh": "0001213900-26-107622"
     },
     {
       "factor": 10,
@@ -59,12 +59,12 @@
     },
     {
       "factor": 10,
-      "title": "Winklevoss Zcash ETF  (CIK 0002158471) — S-1",
-      "date": "2026-10-06",
-      "form": "S-1",
-      "company": "Winklevoss Zcash ETF  (CIK 0002158471)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002158471&type=S-1",
-      "adsh": "0001104659-26-113940"
+      "title": "Invesco Galaxy Solana ETF  (QSOL)  (CIK 0002074409) — 8-K",
+      "date": "2026-11-12",
+      "form": "8-K",
+      "company": "Invesco Galaxy Solana ETF  (QSOL)  (CIK 0002074409)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002074409&type=8-K",
+      "adsh": "0001193125-26-458409"
     },
     {
       "factor": 10,
@@ -77,93 +77,66 @@
     },
     {
       "factor": 10,
-      "title": "Zcash ETF  (ZCSH)  (CIK 0001720265) — 8-K",
-      "date": "2026-10-05",
+      "title": "Invesco Galaxy Ethereum ETF  (QETH)  (CIK 0001995569) — 8-K",
+      "date": "2026-11-12",
       "form": "8-K",
-      "company": "Zcash ETF  (ZCSH)  (CIK 0001720265)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001720265&type=8-K",
-      "adsh": "0001193125-26-414257"
+      "company": "Invesco Galaxy Ethereum ETF  (QETH)  (CIK 0001995569)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001995569&type=8-K",
+      "adsh": "0001193125-26-458386"
     },
     {
       "factor": 10,
-      "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
-      "date": "2026-10-13",
+      "title": "Invesco Galaxy Bitcoin ETF  (BTCO)  (CIK 0001855781) — 8-K",
+      "date": "2026-11-12",
       "form": "8-K",
-      "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
-      "adsh": "0001493152-26-046744"
+      "company": "Invesco Galaxy Bitcoin ETF  (BTCO)  (CIK 0001855781)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001855781&type=8-K",
+      "adsh": "0001193125-26-458360"
     },
     {
       "factor": 10,
-      "title": "Grayscale Chainlink Trust ETF  (GLNK)  (CIK 0001852025) — 8-K",
-      "date": "2026-10-05",
+      "title": "BITGO HOLDINGS, INC.  (BTGO)  (CIK 0001740604) — 8-K",
+      "date": "2026-11-09",
       "form": "8-K",
-      "company": "Grayscale Chainlink Trust ETF  (GLNK)  (CIK 0001852025)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001852025&type=8-K",
-      "adsh": "0001193125-26-414291"
+      "company": "BITGO HOLDINGS, INC.  (BTGO)  (CIK 0001740604)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001740604&type=8-K",
+      "adsh": "0001740604-26-000068"
     },
     {
       "factor": 10,
-      "title": "Stablecoin Development Corp  (SDEV)  (CIK 0001389545) — 8-K",
-      "date": "2026-10-05",
+      "title": "Invesco Galaxy Solana ETF  (QSOL)  (CIK 0002074409) — 8-K",
+      "date": "2026-11-12",
       "form": "8-K",
-      "company": "Stablecoin Development Corp  (SDEV)  (CIK 0001389545)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001389545&type=8-K",
-      "adsh": "0001437749-26-031972"
+      "company": "Invesco Galaxy Solana ETF  (QSOL)  (CIK 0002074409)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002074409&type=8-K",
+      "adsh": "0001193125-26-458409"
     },
     {
       "factor": 10,
-      "title": "Grayscale Avalanche Staking ETF  (GAVA)  (CIK 0002035053) — 8-K",
-      "date": "2026-10-05",
+      "title": "SUI Group Holdings Ltd.  (SUIG)  (CIK 0001425355) — 8-K",
+      "date": "2026-11-05",
       "form": "8-K",
-      "company": "Grayscale Avalanche Staking ETF  (GAVA)  (CIK 0002035053)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002035053&type=8-K",
-      "adsh": "0001193125-26-414300"
+      "company": "SUI Group Holdings Ltd.  (SUIG)  (CIK 0001425355)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001425355&type=8-K",
+      "adsh": "0001140361-26-042120"
     },
     {
       "factor": 10,
-      "title": "Grayscale Sui Staking ETF  (GSUI)  (CIK 0002034012) — 8-K",
-      "date": "2026-10-05",
+      "title": "Core Scientific, Inc./tx  (CORZ, CORZR, CORZW, CORZZ)  (CIK 0001839341) — 8-K",
+      "date": "2026-11-05",
       "form": "8-K",
-      "company": "Grayscale Sui Staking ETF  (GSUI)  (CIK 0002034012)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002034012&type=8-K",
-      "adsh": "0001193125-26-414297"
+      "company": "Core Scientific, Inc./tx  (CORZ, CORZR, CORZW, CORZZ)  (CIK 0001839341)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001839341&type=8-K",
+      "adsh": "0001839341-26-000028"
     },
     {
       "factor": 10,
-      "title": "Grayscale CoinDesk Crypto 5 ETF  (GDLC)  (CIK 0001729997) — 8-K",
-      "date": "2026-10-05",
-      "form": "8-K",
-      "company": "Grayscale CoinDesk Crypto 5 ETF  (GDLC)  (CIK 0001729997)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001729997&type=8-K",
-      "adsh": "0001193125-26-414279"
-    },
-    {
-      "factor": 10,
-      "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
-      "date": "2026-10-07",
-      "form": "8-K",
-      "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
-      "adsh": "0001493152-26-046088"
-    },
-    {
-      "factor": 10,
-      "title": "Grayscale Dogecoin Trust ETF  (GDOG)  (CIK 0002055510) — 8-K",
-      "date": "2026-10-05",
-      "form": "8-K",
-      "company": "Grayscale Dogecoin Trust ETF  (GDOG)  (CIK 0002055510)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002055510&type=8-K",
-      "adsh": "0001193125-26-414274"
-    },
-    {
-      "factor": 10,
-      "title": "Grayscale XRP Trust ETF  (GXRP)  (CIK 0002037427) — 8-K",
-      "date": "2026-10-05",
-      "form": "8-K",
-      "company": "Grayscale XRP Trust ETF  (GXRP)  (CIK 0002037427)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002037427&type=8-K",
-      "adsh": "0001193125-26-414265"
+      "title": "HeartSciences Inc.  (HSCS, HSCSW)  (CIK 0001468492) — 8-K/A",
+      "date": "2026-11-13",
+      "form": "8-K/A",
+      "company": "HeartSciences Inc.  (HSCS, HSCSW)  (CIK 0001468492)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001468492&type=8-K/A",
+      "adsh": "0001213900-26-119242"
     },
     {
       "factor": 10,
@@ -176,12 +149,12 @@
     },
     {
       "factor": 10,
-      "title": "Grayscale Bittensor Trust (TAO)  (GTAO)  (CIK 0002029297) — 8-K",
-      "date": "2026-10-05",
+      "title": "UPEXI, INC.  (UPXI)  (CIK 0001775194) — 8-K",
+      "date": "2026-11-12",
       "form": "8-K",
-      "company": "Grayscale Bittensor Trust (TAO)  (GTAO)  (CIK 0002029297)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002029297&type=8-K",
-      "adsh": "0001193125-26-414207"
+      "company": "UPEXI, INC.  (UPXI)  (CIK 0001775194)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001775194&type=8-K",
+      "adsh": "0001477932-26-006882"
     },
     {
       "factor": 10,
@@ -194,12 +167,30 @@
     },
     {
       "factor": 10,
-      "title": "Stablecoin Development Corp  (SDEV)  (CIK 0001389545) — 8-K",
-      "date": "2026-10-05",
+      "title": "Cryptex Digital Market Cap ETF  (BAGZ)  (CIK 0002115027) — S-1/A",
+      "date": "2026-11-10",
+      "form": "S-1/A",
+      "company": "Cryptex Digital Market Cap ETF  (BAGZ)  (CIK 0002115027)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002115027&type=S-1/A",
+      "adsh": "0001213900-26-117956"
+    },
+    {
+      "factor": 10,
+      "title": "HeartSciences Inc.  (HSCS, HSCSW)  (CIK 0001468492) — 8-K/A",
+      "date": "2026-11-13",
+      "form": "8-K/A",
+      "company": "HeartSciences Inc.  (HSCS, HSCSW)  (CIK 0001468492)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001468492&type=8-K/A",
+      "adsh": "0001213900-26-119242"
+    },
+    {
+      "factor": 10,
+      "title": "Tron Inc.  (TRON)  (CIK 0001956744) — 8-K",
+      "date": "2026-11-10",
       "form": "8-K",
-      "company": "Stablecoin Development Corp  (SDEV)  (CIK 0001389545)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001389545&type=8-K",
-      "adsh": "0001437749-26-031972"
+      "company": "Tron Inc.  (TRON)  (CIK 0001956744)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001956744&type=8-K",
+      "adsh": "0001493152-26-050984"
     },
     {
       "factor": 10,
@@ -231,15 +222,6 @@
     {
       "factor": 10,
       "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
-      "date": "2026-10-05",
-      "form": "8-K",
-      "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
-      "adsh": "0001493152-26-045699"
-    },
-    {
-      "factor": 10,
-      "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
       "date": "2026-10-19",
       "form": "8-K",
       "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
@@ -257,6 +239,15 @@
     },
     {
       "factor": 10,
+      "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
+      "date": "2026-11-09",
+      "form": "8-K",
+      "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
+      "adsh": "0001493152-26-050647"
+    },
+    {
+      "factor": 10,
       "title": "Hashdex Nasdaq CME Crypto Index ETF  (NCIQ)  (CIK 0002031069) — 8-K",
       "date": "2026-10-30",
       "form": "8-K",
@@ -266,12 +257,21 @@
     },
     {
       "factor": 10,
-      "title": "Datacentrex, Inc.  (DTCX)  (CIK 0001853825) — 8-K",
-      "date": "2026-10-14",
+      "title": "BTCS Inc.  (BTCS)  (CIK 0001436229) — 8-K",
+      "date": "2026-11-12",
       "form": "8-K",
-      "company": "Datacentrex, Inc.  (DTCX)  (CIK 0001853825)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001853825&type=8-K",
-      "adsh": "0001493152-26-046935"
+      "company": "BTCS Inc.  (BTCS)  (CIK 0001436229)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001436229&type=8-K",
+      "adsh": "0001493152-26-051205"
+    },
+    {
+      "factor": 10,
+      "title": "Galaxy Digital Inc.  (GLXY)  (CIK 0001859392) — 8-K",
+      "date": "2026-10-27",
+      "form": "8-K",
+      "company": "Galaxy Digital Inc.  (GLXY)  (CIK 0001859392)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001859392&type=8-K",
+      "adsh": "0001859392-26-000108"
     }
   ],
   "factor_11_clarity_act": {

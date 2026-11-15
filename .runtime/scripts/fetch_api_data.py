@@ -178,14 +178,14 @@ def fetch_stablecoin_supply():
 def fetch_stablecoin_history(coin_id, days=90):
     data = _get_json(f"{DEFILLAMA_BASE}/stablecoincharts/all",
                      {"stablecoin": coin_id})
-    cutoff = int((datetime.now() - timedelta(days=days)).timestamp())
+    cutoff = datetime.now(timezone.utc).date() - timedelta(days=days)
     history = []
     for point in data:
         ts = point.get("date", 0)
         if isinstance(ts, str):
             ts = int(ts)
-        if ts >= cutoff:
-            mcap = point.get("totalCirculating", {}).get("peggedUSD", 0)
+        mcap = point.get("totalCirculating", {}).get("peggedUSD")
+        if ts % 86_400 == 0 and datetime.fromtimestamp(ts, timezone.utc).date() >= cutoff and mcap is not None:
             history.append({"ts": ts * 1000, "mcap": mcap})
     return history
 
@@ -325,18 +325,16 @@ def main():
             hist = fetch_stablecoin_history(stable_current[symbol]["id"], 365)
             stable_history[symbol] = hist
 
-    usdt_mcap = stable_current.get("USDT", {}).get("current_mcap", 0)
-    usdc_mcap = stable_current.get("USDC", {}).get("current_mcap", 0)
-    total_mcap = usdt_mcap + usdc_mcap
-
     combined_history = _combine_stablecoin_history(
-        stable_history.get("USDT", []),
-        stable_history.get("USDC", []))
-
+        stable_history.get("USDT", []), stable_history.get("USDC", []))
+    if not combined_history:
+        raise ValueError("No common USDT and USDC daily observation")
+    latest = combined_history[-1]
     output["stablecoins"] = {
-        "usdt_mcap": usdt_mcap,
-        "usdc_mcap": usdc_mcap,
-        "total_mcap": total_mcap,
+        "usdt_mcap": latest["usdt"],
+        "usdc_mcap": latest["usdc"],
+        "total_mcap": latest["total"],
+        "as_of_utc": latest["date"],
         "change_7d": _stablecoin_change(combined_history, 7),
         "change_30d": _stablecoin_change(combined_history, 30),
         "change_1y": _stablecoin_change(combined_history, 365),
@@ -375,34 +373,22 @@ def _find_negative_streaks(funding_8h):
 
 
 def _combine_stablecoin_history(usdt_hist, usdc_hist):
-    by_date = {}
-    for item in usdt_hist:
-        d = datetime.fromtimestamp(item["ts"] / 1000).strftime("%Y-%m-%d")
-        by_date[d] = {"ts": item["ts"], "usdt": item["mcap"], "usdc": 0}
-    for item in usdc_hist:
-        d = datetime.fromtimestamp(item["ts"] / 1000).strftime("%Y-%m-%d")
-        if d in by_date:
-            by_date[d]["usdc"] = item["mcap"]
-        else:
-            by_date[d] = {"ts": item["ts"], "usdt": 0, "usdc": item["mcap"]}
-    result = []
-    for d in sorted(by_date):
-        entry = by_date[d]
-        entry["total"] = entry["usdt"] + entry["usdc"]
-        entry["date"] = d
-        result.append(entry)
-    return result
+    usdt = {p["ts"]: p["mcap"] for p in usdt_hist}
+    usdc = {p["ts"]: p["mcap"] for p in usdc_hist}
+    return [
+        {"ts": ts, "usdt": usdt[ts], "usdc": usdc[ts], "total": usdt[ts] + usdc[ts],
+         "date": datetime.fromtimestamp(ts / 1000, timezone.utc).date().isoformat()}
+        for ts in sorted(usdt.keys() & usdc.keys())
+    ]
 
 
 def _stablecoin_change(history, days):
-    if len(history) < 2:
+    if not history:
         return None
-    current = history[-1]["total"]
-    idx = max(0, len(history) - days)
-    past = history[idx]["total"]
-    if past == 0:
-        return None
-    return round((current - past) / past * 100, 2)
+    latest = history[-1]
+    baseline_ts = latest["ts"] - days * 86_400_000
+    past = next((row["total"] for row in history if row["ts"] == baseline_ts), None)
+    return round((latest["total"] / past - 1) * 100, 2) if past else None
 
 
 if __name__ == "__main__":

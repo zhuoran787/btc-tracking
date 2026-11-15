@@ -94,6 +94,9 @@ def _parse_table_rows(rows):
         text = th.get_text(strip=True)
         headers.append(text)
 
+    has_total_column = any(header.lower() == "total" for header in headers)
+    fund_count = sum(header.lower() not in ("date", "total", "") for header in headers[1:])
+
     # Parse data rows
     daily_flows = []
     for row in rows[1:]:
@@ -123,7 +126,7 @@ def _parse_table_rows(rows):
 
         # Parse flow values
         entry = {"date": parsed_date}
-        total_flow = 0
+        total_flow = None
         etf_flows = {}
 
         for i, val_text in enumerate(row_data[1:], 1):
@@ -137,9 +140,11 @@ def _parse_table_rows(rows):
                 total_flow = val
 
         # If no "Total" column, sum individual flows
-        if total_flow == 0 and etf_flows:
+        if not has_total_column and fund_count > 0 and len(etf_flows) == fund_count:
             total_flow = sum(etf_flows.values())
 
+        if total_flow is None:
+            continue
         entry["total_flow_m"] = total_flow
         entry["etf_flows"] = etf_flows
         daily_flows.append(entry)
@@ -166,7 +171,7 @@ def _parse_flow_value(text):
     """Parse a flow value like '123.4', '(45.6)', '-', etc. Returns millions."""
     text = text.strip().replace(",", "").replace("$", "").replace(" ", "")
     if not text or text in ("-", "—", "–", "n/a", "N/A", ""):
-        return 0.0
+        return None
 
     negative = False
     if text.startswith("(") and text.endswith(")"):
