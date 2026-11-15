@@ -999,7 +999,11 @@ def _dat_one_liner(data, extra):
     # 矿企抛售结构性观察：2026-07-04 起改为 Phase 3 用户填第 5 项（miner_selloff_note），
     # 值只存 data/user_inputs_cache.json；用户清空/跳过 → 整段不追加。
     miner_note = ((extra.get("user_inputs") or {}).get("miner_selloff_note") or "").strip()
-    miner_suffix = f"{miner_note.rstrip('。')}。" if miner_note else ""
+    miner_suffix = ""
+    if miner_note:
+        note_date = (extra.get("_user_inputs_freshness") or {}).get("miner_selloff_note", {}).get("date")
+        label = f"矿企观察（用户判断，{note_date}）" if note_date else "矿企观察（用户判断）"
+        miner_suffix = f"{label}：{miner_note}"
     # AI override (extra.dat_one_liner) 已删除 2026-05-21——只保留用户 input 通道
     override = (extra.get("user_inputs") or {}).get("dat_summary")
     if override:
