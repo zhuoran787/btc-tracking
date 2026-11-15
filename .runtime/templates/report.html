@@ -398,15 +398,13 @@ a:hover { text-decoration: underline; }
       {% endif %}
     </div>
 
-    <!-- 图 1：数字资产财库资金流入（DefiLlama 用户提供静态截图）-->
     <div style="margin-bottom:18px;">
       <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 1：数字资产财库资金流入（按币种 · DefiLlama）</div>
-      {% if ppt_img_dat_flow %}
-      <div style="padding:6px 10px;background:#fef3c7;border-left:3px solid #d4a017;border-radius:4px;font-size:11px;color:#8b6914;margin-bottom:6px;">📌 <strong>TODO #1</strong> · 已替换为用户提供的 DefiLlama 静态截图（2026-10-21 提供）。来源：<a href="https://defillama.com/digital-asset-treasuries" target="_blank" rel="noopener noreferrer">DefiLlama Digital Asset Treasuries ↗</a>。后续评估自动取数及月/周度汇总口径，当前保留静态截图。</div>
-      <div style="padding:8px;background:var(--bg2);border-radius:6px;border:1px solid var(--border);max-width:100%;">
-        <img src="{{ ppt_img_dat_flow }}" style="width:100%;border-radius:4px;display:block;" alt="Digital asset treasury inflows by asset — DefiLlama (user-provided screenshot)">
-        <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">来源：<a href="https://defillama.com/digital-asset-treasuries" target="_blank" rel="noopener noreferrer">DefiLlama Digital Asset Treasuries ↗</a>（用户提供截图）。橙色为 Bitcoin，紫色为 Solana，蓝色为 Ethereum，灰色为其他资产；纵轴为美元金额。该图展示财库资金流入，不含 Spot ETF 对比。</div>
-      </div>
+      {% if defillama_dat_chart.image %}
+      <figure style="margin:0;padding:8px;background:var(--bg2);border-radius:6px;border:1px solid var(--border);">
+        <img src="{{ defillama_dat_chart.image }}" style="width:100%;border-radius:4px;display:block;" alt="DefiLlama 按币种统计的每周数字资产财库资金流入">
+        <figcaption style="font-size:11px;color:var(--text-muted);margin-top:6px;">每根柱代表一周，纵轴为美元。原图导出于 {{ defillama_dat_chart.export_date }}。<a href="{{ defillama_dat_chart.source }}" target="_blank" rel="noopener noreferrer">DefiLlama 原图 ↗</a></figcaption>
+      </figure>
       {% endif %}
     </div>
 
@@ -603,7 +601,7 @@ a:hover { text-decoration: underline; }
       <div style="font-size:13px;font-weight:600;margin-bottom:8px;">图 1：鲸鱼地址（≥1k BTC）持有占总供应量比例 vs BTC 价格（BRK 自合成 · 5.5 年周度实时）</div>
       {% if chart_whales_pct_values and chart_whales_pct_values != '[]' %}
       <div class="chart-container" style="height:260px;"><canvas id="chartWhalesPct"></canvas></div>
-      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">数据源：<a href="https://bitview.space" target="_blank">bitview.space</a>（Bitcoin Research Kit）<code>addrs_over_1k_btc_supply / supply × 100</code> 自合成，2000 天周度降采样；BTC 价格按日期配对自 {{ ahr999_source_label }}。样式参考 CoinShares Exhibit 35。</div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">BRK 将地址按余额分档。报告合计 1,000–1 万、1 万–10 万及 10 万 BTC 以上三档的日余额，除以流通量得到持有占比。图中按周取点。{% if whale_observations %}近 30 天的变化按日余额计算，{{ whale_observations.start }} 为 {{ '{:,.2f}'.format(whale_observations.opening) }} BTC，{{ whale_observations.end }} 为 {{ '{:,.2f}'.format(whale_observations.closing) }} BTC，相差 {{ '{:+,.0f}'.format(whale_observations.delta) }} BTC。{% if whale_observations.source %}<a href="{{ whale_observations.source | e }}" target="_blank" rel="noopener noreferrer">BRK 原始日序列 ↗</a>{% endif %}{% endif %} BTC 价格来自 {{ ahr999_source_label }}。</div>
       {% elif ppt_img_whales_pct %}
       <div style="padding:8px;background:var(--bg2);border-radius:6px;border:1px solid var(--border);max-width:820px;">
         <img src="{{ ppt_img_whales_pct }}" style="width:100%;border-radius:4px;display:block;" alt="Whales ownership relative to BTC price (CoinShares Exhibit 35)">
@@ -1399,7 +1397,7 @@ if (document.getElementById('chartOi')) {
 {% endif %}
 
 // ── 全 DAT 持仓历史 (Item 1) ──────────────────────────
-// ⚠️ canvas 已被 TODO #1 静态截图替代（DefiLlama），init 仅当 canvas 存在时执行
+// Initialize only when the optional DAT history canvas is present.
 {% if chart_dat_labels and chart_dat_labels != '[]' %}
 if (document.getElementById('chartDat')) {
   new Chart(document.getElementById('chartDat'), {

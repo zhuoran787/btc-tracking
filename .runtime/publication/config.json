@@ -302,6 +302,7 @@
     }
   ],
   "data_files": [
+    "defillama_dat_chart.json",
     "api_data.json",
     "etf_flows.json",
     "treasuries.json",

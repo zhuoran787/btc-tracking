@@ -169,7 +169,7 @@ def load_data():
         # Session 3 additions
         "brk_data", "derivatives_data",
         "mnav_data", "mnav_history",
-        "dat_data", "dat_history",
+        "dat_data", "dat_history", "defillama_dat_chart",
         "tether_data",
         "coinshares_data",
         "policy_data",
@@ -1332,6 +1332,19 @@ def _opinions_one_liner(extra):
     return "。".join(parts)
 
 
+def whale_observations(brk):
+    dates = brk.get("dates") or []
+    balances = (brk.get("series") or {}).get("whale_supply") or []
+    if len(balances) < 31 or len(balances) != len(dates):
+        return None
+    return {
+        "start": dates[-31], "end": dates[-1],
+        "opening": balances[-31], "closing": balances[-1],
+        "delta": balances[-1] - balances[-31],
+        "source": (brk.get("provenance") or {}).get("url"),
+    }
+
+
 def _whale_one_liner_ai(api, brk, whales_pct):
     """Summarize address-group balance changes without inferring executed trades."""
     accum = brk.get("accumulation", {}) or {}
@@ -1348,7 +1361,6 @@ def _whale_one_liner_ai(api, brk, whales_pct):
         parts.append(f"30d 鲸鱼供应 {whale_30d:+,.0f} BTC")
     if pct_30d is not None:
         parts.append(f"持有占比 30d {pct_30d:+.3f} 个百分点")
-    parts.append("地址组余额变化不能直接认定为现货买卖，也不能据此推断成交价")
     return "；".join(parts)
 
 
@@ -2297,7 +2309,8 @@ def build_context(data, extra):
 
         # PPT 图嵌入（base64 data URI，从 data/ppt_assets/ 加载）
         # 用于占位"找不到数据源"的图：DAT 合计 flow / DAT 周度 / Whales% / CoinShares 资金 / F&G / ahr999
-        "ppt_img_dat_flow": _load_ppt_asset("dat_flow"),
+        "defillama_dat_chart": data.get("defillama_dat_chart") or {},
+        "whale_observations": whale_observations(brk),
         "ppt_img_dat_per_company": _load_ppt_asset("dat_per_company"),
         "ppt_img_whales_pct": _load_ppt_asset("whales_pct"),
         "ppt_img_coinshares_flow": _load_ppt_asset("coinshares_flow"),
@@ -2522,6 +2535,16 @@ def render(ctx):
 
 
 def main():
+    import argparse
+    from defillama_dat_chart import URL, refresh_weekly_chart
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--defillama-weekly-png", help="Today's weekly PNG exported from the DefiLlama DAT page")
+    args = parser.parse_args()
+    try:
+        refresh_weekly_chart(DATA_DIR, args.defillama_weekly_png)
+    except Exception as exc:
+        parser.exit(1, f"DefiLlama weekly chart: {exc}\nOpen {URL}, select Weekly, then .png → Download image. "
+                    "Rerun with --defillama-weekly-png <downloaded PNG>.\n")
     data = load_data()
     extra = load_extra_input()
 
