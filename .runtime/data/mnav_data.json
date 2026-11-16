@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-15",
+  "fetched_at": "2026-11-16",
   "source": "https://bitcointreasuries.net/",
   "count": 11,
   "snapshot": [
@@ -36,7 +36,7 @@
       "country": "ðºð¸",
       "ticker": "ASST",
       "btc_holdings": 43153.0,
-      "mnav": 1.03,
+      "mnav": 1.04,
       "mnav_method": "enterprise_value"
     },
     {
@@ -45,7 +45,7 @@
       "country": "ðºð¸",
       "ticker": "NAKA",
       "btc_holdings": 4283.0,
-      "mnav": 0.92,
+      "mnav": 0.93,
       "mnav_method": "enterprise_value"
     },
     {
@@ -54,7 +54,7 @@
       "country": "ð§ð·",
       "ticker": "OBTC3.SA",
       "btc_holdings": 3950.0,
-      "mnav": 0.76,
+      "mnav": 0.77,
       "mnav_method": "enterprise_value"
     },
     {
@@ -63,7 +63,7 @@
       "country": "ð«ð·",
       "ticker": "ALCPB.PA",
       "btc_holdings": 3550.0,
-      "mnav": 1.39,
+      "mnav": 1.4,
       "mnav_method": "enterprise_value"
     },
     {
@@ -81,7 +81,7 @@
       "country": "ð¬ð§",
       "ticker": "SWC.L",
       "btc_holdings": 2850.0,
-      "mnav": 1.05,
+      "mnav": 1.06,
       "mnav_method": "enterprise_value"
     },
     {
@@ -90,7 +90,7 @@
       "country": "ð®ð±",
       "ticker": "ZOOZ",
       "btc_holdings": 1046.0,
-      "mnav": 0.93,
+      "mnav": 0.94,
       "mnav_method": "enterprise_value"
     },
     {

@@ -1,12 +1,11 @@
 {
-  "current": 0.3034619077559093,
-  "current_date": "2026-11-15",
-  "current_price": 63820.7313198889,
-  "fair_price": 184990.8353465529,
+  "current": 0.3166137403964761,
+  "current_date": "2026-11-16",
+  "current_price": 65189.110705488,
+  "fair_price": 185156.467107053,
   "threshold_low": 0.45,
   "threshold_high": 1.0,
   "dates": [
-    "2017-06-03",
     "2017-06-04",
     "2017-06-05",
     "2017-06-06",
@@ -3458,10 +3457,10 @@
     "2026-11-12",
     "2026-11-13",
     "2026-11-14",
-    "2026-11-15"
+    "2026-11-15",
+    "2026-11-16"
   ],
   "values": [
-    2.4766,
     2.5973,
     2.5266,
     2.8348,
@@ -6913,10 +6912,10 @@
     0.4064,
     0.3788,
     0.3456,
-    0.3035
+    0.3035,
+    0.3166
   ],
   "btc_prices": [
-    2479.4238943308,
     2549.55195151958,
     2524.99383354763,
     2685.31891671537,
@@ -10368,16 +10367,17 @@
     73805.5216852425,
     71280.4157896201,
     68096.3125055991,
-    63820.7313198889
+    63820.7313198889,
+    65189.110705488
   ],
   "source": "Coin Metrics Community PriceUSD（UTC 日终价，按次日零点标记）",
   "source_metric": "PriceUSD",
   "source_clock": "00:00 UTC; PriceUSD period date + 1 calendar day",
-  "source_period_date": "2026-11-14",
+  "source_period_date": "2026-11-15",
   "methodology_id": "ahr999_coinmetrics_priceusd_utc_midnight_v1",
   "validation_config_hash": "aed73ddbc1acbeee8c10fe42aa3863dd92d7d4552cdfbdd2424ed4d3f2439cb8",
-  "price_history_start": "2016-11-15",
-  "fetched_at": "2026-11-15T13:28:25.055823+00:00",
-  "source_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=PriceUSD&frequency=1d&start_time=2016-11-14&page_size=10000",
-  "raw_sha256": "8679733287908fd62c809d6822a12845f46362c183e6e8eedc18d53b14730302"
+  "price_history_start": "2016-11-16",
+  "fetched_at": "2026-11-16T02:51:25.036512+00:00",
+  "source_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=PriceUSD&frequency=1d&start_time=2016-11-15&page_size=10000",
+  "raw_sha256": "ae85651fd55c724b5791c4ddd5421acb6450c544122f66b29ea1916d5c1bea4c"
 }
