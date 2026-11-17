@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-16",
+  "fetched_at": "2026-11-17",
   "aggregate_source": "https://api.coingecko.com/api/v3/companies/public_treasury/bitcoin",
   "featured_source": "https://bitcointreasuries.net/public-companies/",
   "featured_companies": [
@@ -9,42 +9,42 @@
     "MARA Holdings",
     "Strive"
   ],
-  "total_holdings": 1301532.2192943657,
-  "total_value_usd": 84803641851.5654,
-  "market_cap_dominance_pct": 6.2,
+  "total_holdings": 1287131.2192943657,
+  "total_value_usd": 83463621884.7937,
+  "market_cap_dominance_pct": 6.13,
   "company_count": 181,
   "cost_basis_summary": [
     {
       "name": "Strategy",
       "symbol": "MSTR.US",
       "country": "USA",
-      "holdings": 850364.0,
-      "holdings_as_of": "2026-11-09",
-      "total_cost_basis_usd": 64160000000.0,
-      "avg_cost_basis_usd": 75450.04257000532,
+      "holdings": 850849.0,
+      "holdings_as_of": "2026-11-16",
+      "total_cost_basis_usd": 64200000000.0,
+      "avg_cost_basis_usd": 75454.04648768465,
       "holdings_source": "https://bitcointreasuries.net/public-companies/strategy",
       "cost_source": "https://bitcointreasuries.net/public-companies/strategy",
       "cost_currency": "USD",
-      "avg_cost_basis_native": 75450.04257000532,
-      "total_cost_basis_native": 64160000000.0,
-      "avg_current_price_usd": 65156.77491068354,
-      "pnl_pct": -13.64249417059149
+      "avg_cost_basis_native": 75454.04648768465,
+      "total_cost_basis_native": 64200000000.0,
+      "avg_current_price_usd": 64844.687653952125,
+      "pnl_pct": -14.060689025424434
     },
     {
       "name": "Twenty One Capital",
       "symbol": "XXI.US",
       "country": "USA",
-      "holdings": 43514.0,
-      "holdings_as_of": "2025-07-30",
-      "total_cost_basis_usd": 3692815061.0,
-      "avg_cost_basis_usd": 84864.98738337087,
+      "holdings": 43668.0,
+      "holdings_as_of": "2026-11-16",
+      "total_cost_basis_usd": null,
+      "avg_cost_basis_usd": null,
       "holdings_source": "https://bitcointreasuries.net/public-companies/twenty-one-capital",
-      "cost_source": "https://bitcointreasuries.net/public-companies/twenty-one-capital",
+      "cost_source": null,
       "cost_currency": "USD",
-      "avg_cost_basis_native": 84864.98738337087,
-      "total_cost_basis_native": 3692815061.0,
-      "avg_current_price_usd": 65156.77491068354,
-      "pnl_pct": -23.223019386849188
+      "avg_cost_basis_native": null,
+      "total_cost_basis_native": null,
+      "avg_current_price_usd": 64844.687653952125,
+      "pnl_pct": null
     },
     {
       "name": "Metaplanet",
@@ -61,7 +61,7 @@
       "cost_currency": "JPY",
       "cost_as_of": "September 30, 2026",
       "disclosure_date": "2026-10-05",
-      "avg_current_price_usd": 65156.77491068354,
+      "avg_current_price_usd": 64844.687653952125,
       "pnl_pct": null
     },
     {
@@ -77,15 +77,15 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 132432.37815331863,
       "total_cost_basis_native": 2703607000.0,
-      "avg_current_price_usd": 65156.77491068354,
-      "pnl_pct": -50.7999661266743
+      "avg_current_price_usd": 64844.687653952125,
+      "pnl_pct": -51.03562394773231
     },
     {
       "name": "Strive",
       "symbol": "ASST.US",
       "country": "USA",
-      "holdings": 43153.0,
-      "holdings_as_of": "2026-11-09",
+      "holdings": 43404.0,
+      "holdings_as_of": "2026-11-16",
       "total_cost_basis_usd": null,
       "avg_cost_basis_usd": null,
       "holdings_source": "https://bitcointreasuries.net/public-companies/strive",
@@ -93,17 +93,17 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": null,
       "total_cost_basis_native": null,
-      "avg_current_price_usd": 65156.77491068354,
+      "avg_current_price_usd": 64844.687653952125,
       "pnl_pct": null
     }
   ],
   "total_cost_summary": {
     "scope": "tracked companies; USD-comparable rows only",
-    "total_entry_value_usd": 70556422061.0,
-    "covered_holdings": 914293.0,
-    "tracked_holdings": 1001446.0,
-    "coverage_pct": 91.29728412715214,
-    "weighted_avg_cost_usd": 77170.47167702258
+    "total_entry_value_usd": 66903607000.0,
+    "covered_holdings": 871264.0,
+    "tracked_holdings": 1002336.0,
+    "coverage_pct": 86.92334706126489,
+    "weighted_avg_cost_usd": 76789.1328001616
   },
-  "history_days_accumulated": 106
+  "history_days_accumulated": 107
 }
