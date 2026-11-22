@@ -6,19 +6,19 @@
     "seed_date": "2026-05-19"
   },
   "macro_summary": {
-    "value": "美国金融条件已经从紧张状态有所放松。如我们预期，油价的回落和对经济预期的向下修正，均提振了btc的宏观环境。",
-    "_last_updated": "2026-11-04",
+    "value": "美国金融条件可能从紧张状态有所放松，油价的回落和对经济预期的向下修正，均提振了btc的宏观环境。",
+    "_last_updated": "2026-11-22",
     "_status": "fresh"
   },
   "macro_watch_next": {
-    "value": "油价方面，11月3日中选后伊朗问题能否得到解决；11月19日apec峰会上中美俄会面能否缓和俄乌对对方能源设施的打击。",
-    "_last_updated": "2026-11-04",
+    "value": null,
+    "_last_updated": "2026-11-22",
     "_status": "fresh"
   },
   "cycle_summary": {
-    "_last_updated": "2026-09-04",
+    "_last_updated": "2026-11-22",
     "_status": "fresh",
-    "value": "四年周期指向 2026-10-15 见底；按当前节奏，可能 2026 年 8 月已经提前见底"
+    "value": "四年周期指向 2026-10-15 见底。鉴于价格在本周创新低，见底时间晚于预期。"
   },
   "dat_outflow_bullish": {
     "value": "DAT 公司彻底出清对币价是大利好，目前最大公司 Strategy 已出风险，最差的时候已过去。",

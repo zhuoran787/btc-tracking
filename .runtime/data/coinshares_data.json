@@ -2,20 +2,11 @@
   "url": "https://coinshares.com/insights/research-data/digital-asset-bi-weekly-digest-27-10-2026/",
   "title": "CoinShares Bi-Weekly Digest 2026-10-27",
   "report_date": "2026-10-27",
-  "fetched_at": "2026-11-15",
+  "fetched_at": "2026-11-22",
   "flow_page_missing": true,
   "images": [],
   "summary_paragraphs": [
-    "⚠️ 已核对 2026-10-27 官方双周报，本期未包含 Digital Asset Fund Flows 专页；本期全球数字资产产品资金流及历史分位暂缺。",
-    "CoinShares 11 月 13 日的市场更新将 BTC 的主要震荡区间估为 6 万至 9 万美元。作者认为，通胀与利率上调预期、鲸鱼重新卖出及科技股风险偏好转弱，一起限制了突破空间。",
-    "作者把货币政策预期转向、机构资金持续改善或鲸鱼重新积累列为可能改变区间判断的条件。本期未核到 CoinShares 全球数字资产产品周净流量及可用于估算历史分位的图。"
+    "⚠️ 已核对 2026-10-27 官方双周报，本期未包含 Digital Asset Fund Flows 专页；本期全球数字资产产品资金流及历史分位暂缺。"
   ],
-  "source_note": "Current official PDF inspected; fund-flow section not disclosed",
-  "supplementary_sources": [
-    {
-      "title": "CoinShares 市场更新 · 通胀与 BTC 震荡区间",
-      "date": "2026-11-13",
-      "url": "https://coinshares.com/fi-en/insights/research-data/market-update-13-11-2026/"
-    }
-  ]
+  "source_note": "Current official PDF inspected; fund-flow section not disclosed"
 }

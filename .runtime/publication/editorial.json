@@ -1,23 +1,27 @@
 {
-  "as_of": "2026-11-15",
+  "as_of": "2026-11-22",
   "context": {
     "whale_news_summary": [
-      "Franklin Bi：本期未核到可归属的新观察。",
-      "Parker Lewis：本期未核到可归属的新观察。",
-      "James Check (Checkmate)：11 月 12 日投资者确认逾 6.8 亿美元链上损失。",
-      "Arkham Intelligence：此次公布的是鲸鱼钱包监测服务。",
-      "Lookonchain：一组钱包四天买入 48,647 ETH，约耗资 9,700 万美元。",
-      "Whale Alert：据 Whale Alert 提示及 The Block 复核，两地址各转出约 50 BTC，共约 100 BTC。",
-      "Murphy：7.3万至8.6 万美元成本区间的短期筹码约 148 万 BTC，当日净减少约 3.4 万枚。"
+      "James Check (Checkmate)：公开节选称 11 月 12 日卖币者确认超过 6.8 亿美元已实现损失；没有将这笔损失全部归为鲸鱼。",
+      "Arkham Intelligence：本期未核到其对具名鲸鱼实际买卖 BTC/ETH 的新判断。",
+      "Lookonchain：⚠️ 待核实：仅核官网列表摘要。",
+      "Whale Alert：两个沉寂逾 16 年的地址各转出约 50 BTC，随后部分余额汇集到一个新地址。",
+      "Murphy：据转述，短期持有者供应中约 73% 处于浮亏；这项指标按持币时间分类，不是大额地址专属统计。"
     ],
-    "policy_one_liner": "Clarity Act 在本届国会余下会期通过的机会偏低，这是前顾问 Witt 回顾的团队判断；参院上次推进审议的程序票为 49 比 50，暂未见新表决；前白宫顾问 Witt 称政府直接买 BTC 的权限仍有疑问，本期未核到新授权或财政部购币公告；World Liberty Financial 收到国会调查函，Trump Media 面临 11 月 30 日债券回售窗口；尚无家族本人已大举减持 BTC 的直接证据；德意志银行获准为欧洲机构及企业托管 BTC、ETH 和三种稳定币；公告尚未披露实际新增资金规模",
-    "opinion_one_liner": "本期观点分化。11 月 12 日，Garrett Jin 将 7.0万至7.1 万美元列为看多判断的风险线，本期取价已跌破该区间。11 月 13 日，James Check 转向衡量卖币者已实现的损失。Schiff 于 11 月 14 日警告 ETH 跌破 1,600 美元可能加速下行；Hougan 则把中选引发的回调视作长期买点。",
-    "verify_1_strategic_reserve": "已卸任的白宫顾问 Patrick Witt 在 11 月 9 日的采访中表示，政府在公开市场买入 BTC 仍有法律授权问题。此前行政令以没收的 BTC 建立储备。本期未核到新的正式购币授权、财政部成交公告或储备地位变更。  来源：https://spoken.md/episode/inside-the-white-houses-plan-to-buy-bitcoin-patrick-witt-1000800810994  https://www.whitehouse.gov/presidential-actions/2025/03/establishment-of-the-strategic-bitcoin-reserve-and-united-states-digital-asset-stockpile/",
-    "verify_2_trump_clearance": "参议员 Blumenthal 在 11 月 5 日的函件中要求 World Liberty Financial 等机构在 2027 年 1 月 4 日前提交资料。另据 Trump Media 三季报，债权人有权要求公司于 11 月 30 日以现金回购可转债。两者分别涉及政治调查与公司流动性；截至本次检查，未取得 Trump 家族本人已大举卖出 BTC 的证据。  来源：https://www.blumenthal.senate.gov/newsroom/press/release/blumenthal-sends-warning-to-targets-of-investigations-into-crypto-corruption-immigration-abuses-big-tech-and-more  https://www.sec.gov/Archives/edgar/data/1849635/000143774926035884/djt20260930_10q.htm",
-    "verify_3_institutional_entry": "德意志银行宣布获德国 BaFin 批准，向欧洲机构和企业客户推出数字资产托管服务。首批支持 BTC、ETH、USDC、EURC 和 EURAU。托管业务为代客保管私钥；公告未披露银行自营购币或客户实际申购规模。  来源：https://corporates.db.com/more/latest-news/deutsche-bank-launches-digital-asset-custody-solution-for-institutional-and-corporate-clients",
+    "policy_one_liner": "Clarity Act立法预期偏谨慎：Witt回顾团队评估称本届国会余下会期通过机会偏低；本期未核到新正式表决；前白宫顾问 Witt 称政府直接买 BTC 的权限仍有疑问，本期未核到新授权或财政部购币公告；World Liberty Financial仍面临国会调查要求；MARA确认季末后大额卖币，但尚无Trump家族本人已大举减持BTC的直接证据；德银推出机构托管；新披露的三季度持仓研究显示机构增持BTC等值ETP，不代表本月新增资金",
+    "opinion_one_liner": "本期观点整体更谨慎。11月19日 Garrett Jin 从偏多转为短期中性，11月17日 Novogratz 下调年底反弹预期；同日 Hougan 将跌势主要归因于利率冲击，并在去杠杆后保持谨慎乐观。",
+    "verify_1_strategic_reserve": "11月9日公开访谈节选中，前白宫顾问 Patrick Witt 称直接在公开市场买入BTC的法律权限仍有疑问。本期已重新搜索，未核到新的正式购币授权、财政部成交公告或储备地位变更。来源：https://spoken.md/episode/inside-the-white-houses-plan-to-buy-bitcoin-patrick-witt-1000800810994",
+    "verify_2_trump_clearance": "参议员Blumenthal 11月5日官方函件要求World Liberty Financial等在2027年1月4日前配合提供调查资料；这属于调查程序。MARA 11月9日股东信确认季末后售出13,597 BTC，但不能归因于Trump家族。未取得Trump家族本人已大举卖出BTC的直接证据。来源：https://www.blumenthal.senate.gov/newsroom/press/release/blumenthal-sends-warning-to-targets-of-investigations-into-crypto-corruption-immigration-abuses-big-tech-and-more https://ir.mara.com/sec-filings/all-sec-filings/content/0001507605-26-000026/q326shareholderletter.htm",
+    "verify_3_institutional_entry": "德意志银行11月官网确认取得BaFin批准并推出机构数字资产托管。Galaxy 11月19日研究显示13F申报者三季度净增49,229 BTC等值美国现货ETP，9月底持有356,491 BTC等值；属于三季度持仓变化，不能当成11月新增资金。来源：https://corporates.db.com/more/latest-news/deutsche-bank-launches-digital-asset-custody-solution-for-institutional-and-corporate-clients https://www.galaxy.com/insights/research/bitcoin-etp-13f-institutional-holdings-q3-2026-wealth-channel-wells-fargo",
     "verify_4_clarity_act": null,
-    "verify_4_clarity_passage_probability": "Congress.gov 的 H.R. 3633 最新程序记录停在 9 月 15 日，参院以 49 比 50 未通过推进审议所需的终结辩论动议。前白宫数字资产顾问 Witt 在 11 月 9 日采访中表示，团队曾评估本届国会余下会期通过的机会偏低。没有新的表决或可独立验证的量化概率。  来源：https://www.congress.gov/bill/119th-congress/house-bill/3633/all-actions  https://spoken.md/episode/inside-the-white-houses-plan-to-buy-bitcoin-patrick-witt-1000800810994",
+    "verify_4_clarity_passage_probability": "前白宫顾问Witt在11月9日公开访谈节选中回顾，离任前团队认为本届国会余下会期通过市场结构法案的机会偏低。本期重新检索未核到新的正式表决；Congress.gov正文直读失败，暂不把历史程序票写作本次已确认的最新状态，也不编造量化通过概率。来源：https://spoken.md/episode/inside-the-white-houses-plan-to-buy-bitcoin-patrick-witt-1000800810994 https://www.congress.gov/bill/119th-congress/house-bill/3633/all-actions",
     "dat_announcements": [
+      {
+        "date": "2026-11-16",
+        "company": "Strategy",
+        "text": "披露上周增持485 BTC；截至11月15日持有850,849枚，官方账本已核至本次检查。",
+        "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526462151/0001193125-26-462151.txt"
+      },
       {
         "date": "2026-11-13",
         "company": "Metaplanet",
@@ -83,49 +87,19 @@
         "company": "Tether",
         "text": "9/30储备BTC价值83.67亿美元，按报告估值折约100,060枚；与集团15万枚口径不同",
         "url": "https://assets.ctfassets.net/vyse88cgwfbl/7nQYtcoP9GxIUFSyro2dGK/8d0521470b9e99c8c0831019cabea4ee/ISAE_3000R_-_Opinion_Tether_International_Financial_Figure_30-09-2026.pdf"
-      },
-      {
-        "date": "2026-10-22",
-        "company": "Tesla",
-        "text": "10-Q 披露 9 月底持有 11,509 BTC，与去年底相同；数字资产账面列示 9.62 亿美元。",
-        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
-      },
-      {
-        "date": "2026-10-19",
-        "company": "Strive",
-        "text": "10/14–16新增1,223 BTC；全周4,045枚已含此前2,822枚，10/16持仓36,818枚",
-        "url": "https://www.sec.gov/Archives/edgar/data/1920406/000162828026066222/0001628280-26-066222.txt"
-      },
-      {
-        "date": "2026-10-19",
-        "company": "Strategy",
-        "text": "上周买入267 BTC、均价82,900美元；截至10/18持仓848,517枚",
-        "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526424688/0001193125-26-424688.txt"
-      },
-      {
-        "date": "2026-10-19",
-        "company": "Metaplanet",
-        "text": "Super League 股东批准拟议交易：交割时 Metaplanet 拟出资 2,100 BTC 及 250 万美元。该公告为批准事项。",
-        "url": "https://www.sec.gov/Archives/edgar/data/1621672/000143774926032881/ex_1027436.htm"
       }
     ],
-    "whale_buysell_news": [],
+    "whale_buysell_news": [
+      {
+        "date": "2026-11-22",
+        "side": "买",
+        "asset": "BTC",
+        "text": "Lookonchain 官网摘要将 Abraxas 从交易所提出的17,597 BTC解读为逢低买入，估值约10.4亿美元；详情页及公司成交确认待核。",
+        "url": "https://www.lookonchain.com/feeds/83499"
+      }
+    ],
     "whale_news": [],
     "news_items": [
-      {
-        "date": "2026-11-11",
-        "factor": 10,
-        "title": "德意志银行推出欧洲机构数字资产托管",
-        "url": "https://corporates.db.com/more/latest-news/deutsche-bank-launches-digital-asset-custody-solution-for-institutional-and-corporate-clients",
-        "summary": "德意志银行获准为欧洲机构及企业托管 BTC、ETH 和三种稳定币；公告尚未披露实际新增资金规模"
-      },
-      {
-        "date": "2026-11-09",
-        "factor": 9,
-        "title": "前白宫顾问谈 BTC 储备权限",
-        "url": "https://spoken.md/episode/inside-the-white-houses-plan-to-buy-bitcoin-patrick-witt-1000800810994",
-        "summary": "前白宫顾问 Witt 称政府直接买 BTC 的权限仍有疑问，本期未核到新授权或财政部购币公告"
-      },
       {
         "factor": 10,
         "title": "iPower Inc.  (IPW)  (CIK 0001830072) — S-1/A",
@@ -161,38 +135,29 @@
     ],
     "legislation_milestones": [
       {
+        "label": "众议院通过",
         "date": "2025-07-17",
-        "label": "众院通过（294 比 134）",
         "state": "done"
       },
       {
+        "label": "参议院收到并转委员会",
         "date": "2025-09-18",
-        "label": "参院收到，转交银行委员会",
         "state": "done"
       },
       {
-        "date": "2026-05-14",
-        "label": "银行委员会同意报告修正案",
-        "state": "done"
-      },
-      {
+        "label": "参院银行委员会有利报告",
         "date": "2026-06-01",
-        "label": "委员会向参院报告",
         "state": "done"
       },
       {
+        "label": "推进议案的终结辩论动议未获通过（历史记录）",
         "date": "2026-09-15",
-        "label": "推进审议的终结辩论动议未通过（49 比 50）",
-        "state": "done"
+        "state": "done",
+        "detail": "历史记录49–50；本期官网正文直读受限，不代表已核实当前最新程序状态。"
       },
       {
+        "label": "参院全院通过及总统签署尚待核实",
         "date": "TBD",
-        "label": "参院后续审议",
-        "state": "active"
-      },
-      {
-        "date": "TBD",
-        "label": "总统签署",
         "state": "pending"
       }
     ],
@@ -202,108 +167,77 @@
         "name": "币圈老鸟，一般倾向看多",
         "badge_class": "bullish",
         "color": "#22c55e",
-        "count": 10,
+        "count": 8,
         "total": 12,
         "people": [
           {
             "name": "CZ",
             "org": "Binance",
-            "date": "2026-11-03",
+            "date": "2026-11-16",
             "source": "https://x.com/cz_binance",
-            "source_url": "https://www.theblock.co/news/regulation/2026-11-03-cz-calls-for-crypto-security-alliance-ai-driven-attacks-accelerate-binance-hack-432458",
-            "sources": [
-              {
-                "date": "2026-11-03",
-                "title": "The Block 对采访的报道",
-                "url": "https://www.theblock.co/news/regulation/2026-11-03-cz-calls-for-crypto-security-alliance-ai-driven-attacks-accelerate-binance-hack-432458"
-              }
-            ],
-            "summary": "在币安遇袭后的采访中，赵长鹏判断 AI 会加快攻击速度，建议交易所投资安全人员、AI 防御工具并加强行业合作。",
+            "source_url": "https://cryptopotato.com/cz-says-bitcoin-crash-is-a-mystery-but-okx-founder-accuses-him-of-evading-responsibility/",
+            "sources": [],
+            "summary": "CZ 表示无法确定本轮下跌的单一原因，列举 ETF 撤资、利率预期、安全事件等可能因素；他否认币安卖币，并自称近日有买入。报道未披露他的成交规模，长期乐观属于其个人判断。",
             "has_update": true
           },
           {
             "name": "Star Xu",
             "org": "OKX",
-            "date": "2026-11-04",
+            "date": "2026-11-16",
             "source": "https://x.com/star_okx",
-            "source_url": "https://www.cryptotimes.io/2026/11/04/okx-ceo-star-xu-slams-cz-over-6-3b-binance-hack-response-and-bank-comparison/",
-            "sources": [
-              {
-                "date": "2026-11-04",
-                "title": "报道引录徐明星的 X 发言",
-                "url": "https://www.cryptotimes.io/2026/11/04/okx-ceo-star-xu-slams-cz-over-6-3b-binance-hack-response-and-bank-comparison/"
-              },
-              {
-                "date": "2026-11-04",
-                "title": "徐明星回应原帖",
-                "url": "https://x.com/star_okx/status/2117796074257830376"
-              }
-            ],
-            "summary": "徐明星批评币安事件后的沟通方式，质疑将交易所安全与银行类比，并要求行业更认真对待事件责任。",
+            "source_url": "https://cryptopotato.com/cz-says-bitcoin-crash-is-a-mystery-but-okx-founder-accuses-him-of-evading-responsibility/",
+            "sources": [],
+            "summary": "徐明星将市场信任受损归咎于币安连续发生的事件，批评其在市场下跌后仍要求客户保持长期信心。这是竞争对手的公开指责，未提供可量化的价格归因证据。",
             "has_update": true
           },
           {
             "name": "Vitalik Buterin",
             "org": "Ethereum",
-            "date": "2026-11-08",
+            "date": "2026-11-16",
             "source": "https://x.com/VitalikButerin",
-            "source_url": "https://crypto.news/vitalik-buterin-ethereum-eth-store-of-value-fee-burn/",
+            "source_url": "https://www.coindesk.com/tech/2026/11/16/vitalik-buterin-flips-to-total-bull-on-a-faster-route-to-quantum-safe-ethereum",
             "sources": [
               {
-                "date": "2026-11-08",
-                "title": "crypto.news 正文引录原帖",
-                "url": "https://crypto.news/vitalik-buterin-ethereum-eth-store-of-value-fee-burn/"
+                "date": "2026-11-16",
+                "title": "报道中的本人发言",
+                "url": "https://www.coindesk.com/tech/2026/11/16/vitalik-buterin-flips-to-total-bull-on-a-faster-route-to-quantum-safe-ethereum"
+              },
+              {
+                "date": "2026-11-22",
+                "title": "EIP-8288 官方草案（本次核查日）",
+                "url": "https://eips.ethereum.org/EIPS/eip-8288"
               }
             ],
-            "summary": "主张保留 EIP-1559，并质疑依靠手续费销毁支撑 ETH 估值的可持续性。他更看重去中心化、安全性和抵抗外部控制的能力。",
+            "summary": "Vitalik 转而支持 leanPCS，认为它可能加快以太坊量子安全方案的推进。其参与提出的 EIP-8288 仍为草案；这次表态讨论技术路线，未给出 ETH 价格目标。",
             "has_update": true
           },
           {
             "name": "Brad Garlinghouse",
-            "org": "Ripple",
-            "date": "2026-11-04",
-            "source": "https://x.com/bgarlinghouse",
-            "source_url": "https://news.bitcoin.com/featured/xrp-is-ripples-north-star-ceo-centers-strategy-on-things-that-are-good-for-xrp/",
-            "sources": [
-              {
-                "date": "2026-11-04",
-                "title": "对采访的报道，11 月 8 日刊发",
-                "url": "https://news.bitcoin.com/featured/xrp-is-ripples-north-star-ceo-centers-strategy-on-things-that-are-good-for-xrp/"
-              }
-            ],
-            "summary": "在 11 月 4 日发布的访谈中，他将 RLUSD 与支付业务视作增加 XRP 使用场景的途径，并称约一半 RLUSD 在 XRP Ledger 上发行。",
-            "has_update": true
+            "org": "Ripple CEO",
+            "date": "—",
+            "source": "—",
+            "source_url": "https://x.com/bgarlinghouse",
+            "summary": "本周无更新",
+            "has_update": false
           },
           {
             "name": "Garrett Jin",
             "org": "前 BitForex CEO / Hyperliquid 大户",
-            "date": "2026-11-12",
+            "date": "2026-11-19",
             "source": "https://x.com/GarrettBullish",
-            "source_url": "https://www.garrettsignal.com/p/weekly-signal-playbook-nov-12-2026",
-            "sources": [
-              {
-                "date": "2026-11-12",
-                "title": "Garrett’s Signal 公开导语",
-                "url": "https://www.garrettsignal.com/p/weekly-signal-playbook-nov-12-2026"
-              }
-            ],
-            "summary": "维持中长期看多，判断当时衍生品正在减仓、现货尚有承接，主张分批且不用杠杆。他将 7.0万至7.1 万美元定为风险线，跌破且无法迅速收复会削弱看多理由。本次取价已低于该区间。",
+            "source_url": "https://www.garrettsignal.com/p/weekly-signal-playbook-nov-19-2026",
+            "sources": [],
+            "summary": "将短期 BTC 信号从偏多降至中性：此前 7.0万至7.1 万美元风险线失守，趋势受损。在重新站上 65,200 美元前等待更清晰的修复，长期仍看多；约 6 万美元的挂单增加尚不足以证明买方重新主导。",
             "has_update": true
           },
           {
             "name": "Tom Lee",
             "org": "Fundstrat / Bitmine",
-            "date": "2026-11-09",
+            "date": "2026-11-16",
             "source": "https://x.com/fundstrat",
-            "source_url": "https://www.sec.gov/Archives/edgar/data/1829311/000149315226050647/ex99-1.htm",
-            "sources": [
-              {
-                "date": "2026-11-09",
-                "title": "Bitmine 向 SEC 提交的新闻稿",
-                "url": "https://www.sec.gov/Archives/edgar/data/1829311/000149315226050647/ex99-1.htm"
-              }
-            ],
-            "summary": "Lee 在 Bitmine 公告中披露上周购入 9,587 ETH，并称公司自 2025 年 6 月启动 ETH 储备策略后每周都有买入。截至 11 月 8 日，公司自报持有 6,070,092 ETH。",
+            "source_url": "https://www.prnewswire.com/news-releases/bitmine-immersion-technologies-bmnr-announces-eth-holdings-reach-6-08-million-tokens-and-total-crypto-and-total-cash--marketable-securities-holdings-of-11-8-billion-302940035.html",
+            "sources": [],
+            "summary": "Lee 认为 ETH 两周跌约 28% 与代币化等基本面进展不一致，将英伟达事件引发的保证金卖出、Anthropic IPO 前筹资列为可能压力。Bitmine 自报上周增持 7,653 ETH，截至 11 月 15 日持有 6,077,745 ETH；前述下跌原因是管理层判断。",
             "has_update": true
           },
           {
@@ -311,15 +245,9 @@
             "org": "SharpLink",
             "date": "2026-11-09",
             "source": "https://x.com/joechalom",
-            "source_url": "https://www.globenewswire.com/fr/news-release/2026/11/09/3398374/0/en/sharplink-reports-third-quarter-2026-financial-and-operating-results.html",
-            "sources": [
-              {
-                "date": "2026-11-09",
-                "title": "Sharplink 三季度业绩公告",
-                "url": "https://www.globenewswire.com/fr/news-release/2026/11/09/3398374/0/en/sharplink-reports-third-quarter-2026-financial-and-operating-results.html"
-              }
-            ],
-            "summary": "Chalom 表示将通过主动管理增加 ETH 持仓收益。Sharplink 自报 9 月底持有约 892,708 ETH，11 月 2 日约 895,117 ETH，三季度通过 Lido 质押价值 2 亿美元的 ETH。",
+            "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398374/0/en/sharplink-reports-third-quarter-2026-financial-and-operating-results.html",
+            "sources": [],
+            "summary": "Chalom 强调提高 ETH 持仓的生产性并保持资本配置纪律。Sharplink 自报 9 月底持有约 892,708 ETH，11 月 2 日约 895,117 ETH；通过 Lido 质押及与 Galaxy 合作的链上收益基金增加收益来源。",
             "has_update": true
           },
           {
@@ -334,39 +262,21 @@
           {
             "name": "Matt Hougan",
             "org": "Bitwise CIO",
-            "date": "2026-11-11",
+            "date": "2026-11-17",
             "source": "https://x.com/Matt_Hougan",
-            "source_url": "https://experts.bitwiseinvestments.com/cio-memos/the-election-doesnt-matter-for-crypto-demographics-do",
-            "sources": [
-              {
-                "date": "2026-11-11",
-                "title": "Bitwise CIO 署名备忘录",
-                "url": "https://experts.bitwiseinvestments.com/cio-memos/the-election-doesnt-matter-for-crypto-demographics-do"
-              }
-            ],
-            "summary": "Hougan 预计中选后的几周里监管担忧会增加波动，长期则更看重新一届国会的年龄结构。他统计新任参议员平均比离任者年轻 14 岁，并把选举因素引发的回调视作买入机会。",
+            "source_url": "https://experts.bitwiseinvestments.com/cio-memos/market-update-whats-behind-the-swoon",
+            "sources": [],
+            "summary": "将本轮跌势的主要解释从选举担忧转向 CPI 后的利率与流动性冲击。他认为激进加息预期已大体计价、杠杆已被清理，因此谨慎乐观，但明确表示这不保证市场立即反弹。",
             "has_update": true
           },
           {
             "name": "VanEck",
             "org": "数字资产研究 · Matthew Sigel；有 BTC 敞口背景",
-            "date": "2026-11-04",
-            "source": "https://x.com/matthew_sigel",
-            "source_url": "https://www.vaneck.com/us/en/blogs/digital-assets/neocloud-sell-off-leaves-bitcoin-miners-oversold/",
-            "sources": [
-              {
-                "date": "2026-11-04",
-                "title": "官网研究 · Neocloud Sell-Off Leaves Bitcoin Miners Oversold",
-                "url": "https://www.vaneck.com/us/en/blogs/digital-assets/neocloud-sell-off-leaves-bitcoin-miners-oversold/"
-              },
-              {
-                "date": "2026-11-04",
-                "title": "Sigel 个人 CNBC 访谈的报道",
-                "url": "https://www.benzinga.com/crypto/cryptocurrency/26/11/62923633/vanecks-matthew-sigel-quite-bullish-on-bitcoin-under-democratic-led-congress"
-              }
-            ],
-            "summary": "VanEck 官网研究称，部分转型 AI 数据中心的矿企所属供电场地运营商在 10 月平均跌约 35%，研究覆盖企业当时没有已签租约被取消。相较 Sigel 对财政扩张利好 BTC 的宏观判断，这篇研究具体讨论矿企估值修复的条件，包括已签租约兑现和融资成本。VanEck 有数字资产敞口。",
-            "has_update": true
+            "date": "—",
+            "source": "—",
+            "source_url": "https://www.vaneck.com/us/en/insights/thought-leaders/matthew-sigel",
+            "summary": "本周无更新",
+            "has_update": false
           },
           {
             "name": "David Sacks",
@@ -383,14 +293,8 @@
             "date": "2026-11-09",
             "source": "WebSearch",
             "source_url": "https://spoken.md/episode/inside-the-white-houses-plan-to-buy-bitcoin-patrick-witt-1000800810994",
-            "sources": [
-              {
-                "date": "2026-11-09",
-                "title": "What Bitcoin Did 访谈公开文字",
-                "url": "https://spoken.md/episode/inside-the-white-houses-plan-to-buy-bitcoin-patrick-witt-1000800810994"
-              }
-            ],
-            "summary": "已卸任的白宫数字资产顾问 Witt 表示，政府直接在公开市场买 BTC 的法律权限仍有疑问。他回顾团队离任前的评估，认为本届国会余下会期通过市场结构法案的机会较低。",
+            "sources": [],
+            "summary": "⚠️ 仅核公开访谈节选、未核付费全文。已卸任的白宫数字资产顾问 Witt 称政府直接在公开市场买 BTC 的法律权限仍有疑问；他回顾离任前的团队评估，认为本届国会余下会期通过市场结构法案的机会偏低。",
             "has_update": true
           }
         ]
@@ -432,17 +336,11 @@
           {
             "name": "Peter Schiff",
             "org": "Euro Pacific",
-            "date": "2026-11-14",
+            "date": "2026-11-20",
             "source": "https://x.com/PeterSchiff",
-            "source_url": "https://finance.yahoo.com/markets/crypto/articles/peter-schiff-warns-black-monday-102605004.html",
-            "sources": [
-              {
-                "date": "2026-11-14",
-                "title": "11 月 15 日报道引录 11 月 14 日发言",
-                "url": "https://finance.yahoo.com/markets/crypto/articles/peter-schiff-warns-black-monday-102605004.html"
-              }
-            ],
-            "summary": "Schiff 将看空判断延伸至 ETH，称若周末跌破约 1,600 美元支撑，周一可能下探 1,000 美元，并波及 Bitmine 和 ETH ETF。两个价位都是其条件预测。",
+            "source_url": "https://news.bitcoin.com/market-updates/peter-schiff-warns-of-weekend-crypto-crash-sending-eth-to-1k/",
+            "sources": [],
+            "summary": "在 ETH 短暂跌破 1,600 美元后继续看空，警告周末若出现进一步抛售，11 月 23 日可能下探 1,000 美元。这是他的短期情景预测，尚非已发生结果。",
             "has_update": true
           },
           {
@@ -475,33 +373,32 @@
           {
             "name": "Galaxy Digital",
             "org": "Galaxy Research",
-            "date": "2026-11-13",
+            "date": "2026-11-20",
             "source": "https://x.com/galaxyhq",
-            "source_url": "https://www.galaxy.com/insights/research/jensen-huang-nvidia-open-weight-ai-aave-offboard-ethereum-foundation-lawsuit",
+            "source_url": "https://www.galaxy.com/insights/research/anthropic-ipo-mev-acquittal-solana-breakpoint",
             "sources": [
               {
-                "date": "2026-11-13",
-                "title": "Galaxy 官方周报 · Zack Pokorny 署名的 Aave 部分",
-                "url": "https://www.galaxy.com/insights/research/jensen-huang-nvidia-open-weight-ai-aave-offboard-ethereum-foundation-lawsuit"
+                "date": "2026-11-20",
+                "title": "官网周报",
+                "url": "https://www.galaxy.com/insights/research/anthropic-ipo-mev-acquittal-solana-breakpoint"
+              },
+              {
+                "date": "2026-11-19",
+                "title": "官网三季度13F研究",
+                "url": "https://www.galaxy.com/insights/research/bitcoin-etp-13f-institutional-holdings-q3-2026-wealth-channel-wells-fargo"
               }
             ],
-            "summary": "Galaxy 的 Zack Pokorny 认为，Aave 收紧 V3 抵押品范围可降低资金出借人承担的共同风险，代价是部分借款需求可能流向竞争对手。留存程度取决于用户是否迁至 V4 或改用继续受支持的抵押品。",
+            "summary": "Alex Thorn 强调通胀、利率预期和政策不确定性令风险资产承压；对“Anthropic IPO 抽走流动性”仅认为直觉上合理，承认缺少直接证据。另据 11 月 19 日机构持仓研究，13F 申报者三季度净增约 49,229 BTC 等值 ETP；这是截至 9 月底的持仓变化。",
             "has_update": true
           },
           {
             "name": "Mike Novogratz",
             "org": "Galaxy Digital",
-            "date": "2026-11-05",
+            "date": "2026-11-17",
             "source": "https://x.com/novogratz",
-            "source_url": "https://finance.yahoo.com/markets/stocks/articles/novogratz-buys-galaxy-shares-citing-212500843.html",
-            "sources": [
-              {
-                "date": "2026-11-05",
-                "title": "对 Novogratz 个人发言的报道",
-                "url": "https://finance.yahoo.com/markets/stocks/articles/novogratz-buys-galaxy-shares-citing-212500843.html"
-              }
-            ],
-            "summary": "Novogratz 认为 Galaxy 股价与公司价值有明显差距，表示开始增持 GLXY。其公开表态没有给出个人买入 BTC 的数量。",
+            "source_url": "https://www.benzinga.com/crypto/cryptocurrency/26/11/63376268/anthony-scaramucci-asks-mike-novogratz-if-bitcoin-can-reclaim-90000-by-year-end-heres-what-galaxy-digital-ceo-said",
+            "sources": [],
+            "summary": "Novogratz 表示 BTC 年底回到 9 万美元的可能性比之前更低，需要环境发生变化；他认为利率上升使资金优先流向美元，也削弱无美元利息收益的 BTC 的吸引力。",
             "has_update": true
           },
           {
@@ -532,27 +429,25 @@
         "handle": "@FranklinBi",
         "raw_search_results": [
           {
-            "date": "2026-11-15",
+            "date": "2026-11-22",
+            "title": "本期独立RSS检索",
             "url": "https://news.google.com/rss/search?q=Franklin+Bi+Pantera+bitcoin+whales+onchain+flows+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-            "title": "本期独立检索",
-            "snippet": "Franklin Bi Pantera bitcoin whales onchain flows"
+            "snippet": "Franklin Bi Pantera bitcoin whales onchain flows",
+            "checked_only": true
           },
           {
-            "date": "2026-11-15",
+            "date": "2026-11-22",
+            "title": "本期独立RSS检索",
             "url": "https://news.google.com/rss/search?q=Franklin+Bi+Pantera+blockchain+BTC+ETH+ecosystem+strategy+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-            "title": "本期独立检索",
-            "snippet": "Franklin Bi Pantera blockchain BTC ETH ecosystem strategy"
+            "snippet": "Franklin Bi Pantera blockchain BTC ETH ecosystem strategy",
+            "checked_only": true
           }
         ],
         "has_update": false,
-        "checked_at": "2026-11-15",
-        "date": "2026-11-15",
-        "stance": "中性",
-        "summary": "本期检索未核到可归属的窗口内新观点。",
-        "status_label": "未核到更新",
-        "source_note": "X 直抓未取得原帖，已独立补充检索。",
-        "whale_summary": "本期未核到可归属的新观察。",
-        "market_summary": "本期未核到窗口内新观点。"
+        "checked_at": "2026-11-22",
+        "date": "2026-11-22",
+        "source_url": null,
+        "summary": "本期检索未核到可归属的14日内新观点；X直读受限，不代表本人没有发言。"
       },
       {
         "name": "Parker Lewis",
@@ -560,27 +455,25 @@
         "handle": "@parkeralewis",
         "raw_search_results": [
           {
-            "date": "2026-11-15",
+            "date": "2026-11-22",
+            "title": "本期独立RSS检索",
             "url": "https://news.google.com/rss/search?q=Parker+Lewis+Unchained+bitcoin+whales+analysis+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-            "title": "本期独立检索",
-            "snippet": "Parker Lewis Unchained bitcoin whales analysis"
+            "snippet": "Parker Lewis Unchained bitcoin whales analysis",
+            "checked_only": true
           },
           {
-            "date": "2026-11-15",
+            "date": "2026-11-22",
+            "title": "本期独立RSS检索",
             "url": "https://news.google.com/rss/search?q=Parker+Lewis+Unchained+bitcoin+ethereum+strategy+market+view+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-            "title": "本期独立检索",
-            "snippet": "Parker Lewis Unchained bitcoin ethereum strategy market view"
+            "snippet": "Parker Lewis Unchained bitcoin ethereum strategy market view",
+            "checked_only": true
           }
         ],
         "has_update": false,
-        "checked_at": "2026-11-15",
-        "date": "2026-11-15",
-        "stance": "中性",
-        "summary": "本期检索未核到可归属的窗口内新观点。",
-        "status_label": "未核到更新",
-        "source_note": "X 直抓未取得原帖，已独立补充检索。",
-        "whale_summary": "本期未核到可归属的新观察。",
-        "market_summary": "本期未核到窗口内新观点。"
+        "checked_at": "2026-11-22",
+        "date": "2026-11-22",
+        "source_url": null,
+        "summary": "本期检索未核到可归属的14日内新观点；X直读受限，不代表本人没有发言。"
       },
       {
         "name": "James Check (Checkmate)",
@@ -588,40 +481,42 @@
         "handle": "@_Checkmatey_",
         "raw_search_results": [
           {
-            "date": "2026-11-13",
-            "title": "Checkonchain 署名通讯公开导语",
-            "url": "https://newsletter.checkonchain.com/p/is-bitcoin-cheap-again",
-            "snippet": "$680M worth of realised loss"
-          },
-          {
-            "date": "2026-11-15",
+            "date": "2026-11-22",
+            "title": "本期独立RSS检索",
             "url": "https://news.google.com/rss/search?q=James+Check+Checkmate+bitcoin+whales+onchain+LTH+STH+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-            "title": "本期独立检索",
-            "snippet": "James Check Checkmate bitcoin whales onchain LTH STH"
+            "snippet": "James Check Checkmate bitcoin whales onchain LTH STH",
+            "checked_only": true
           },
           {
-            "date": "2026-11-15",
+            "date": "2026-11-22",
+            "title": "本期独立RSS检索",
             "url": "https://news.google.com/rss/search?q=James+Check+Checkmate+bitcoin+ethereum+market+analysis+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-            "title": "本期独立检索",
-            "snippet": "James Check Checkmate bitcoin ethereum market analysis"
+            "snippet": "James Check Checkmate bitcoin ethereum market analysis",
+            "checked_only": true
+          },
+          {
+            "date": "2026-11-13",
+            "title": "本期核查的具体来源",
+            "url": "https://newsletter.checkonchain.com/p/is-bitcoin-cheap-again",
+            "snippet": "Yesterday, over $680M worth of realised loss was locked in by investors who are selling in a panic.",
+            "verification": "source text or visible public excerpt",
+            "evidence_file": "ai-work/btc-tracking/run-20261122-0809/source-body-receipts.json",
+            "evidence_files": [
+              "source-body-receipts.json",
+              "source1.json",
+              "source2.json",
+              "source3.json",
+              "source4.json"
+            ]
           }
         ],
         "has_update": true,
-        "checked_at": "2026-11-15",
+        "checked_at": "2026-11-22",
         "date": "2026-11-13",
         "source_url": "https://newsletter.checkonchain.com/p/is-bitcoin-cheap-again",
-        "summary": "Check 观察到价格已经跌穿此前的支撑模型，估计 11 月 12 日卖币者确认超过 6.8 亿美元链上损失。",
-        "stance": "谨慎",
-        "whale_summary": "11 月 12 日投资者确认逾 6.8 亿美元链上损失。该数涵盖多个持币群体。",
-        "market_summary": "在跌穿先前支撑后，Check 转向用均值回归和概率评估 BTC 是否便宜。公开导语未给出确认底部的信号。",
-        "sources": [
-          {
-            "date": "2026-11-13",
-            "title": "Checkonchain 署名通讯公开导语",
-            "url": "https://newsletter.checkonchain.com/p/is-bitcoin-cheap-again"
-          }
-        ],
-        "source_note": "Checkonchain 署名通讯公开导语"
+        "summary": "⚠️ 仅核公开文章节选、未核付费全文。Check 指出价格已跌穿此前支撑模型，11 月 12 日恐慌卖出者确认超过 6.8 亿美元已实现损失。",
+        "whale_summary": "公开节选称 11 月 12 日卖币者确认超过 6.8 亿美元已实现损失；没有将这笔损失全部归为鲸鱼。",
+        "market_summary": "价格跌穿此前支撑模型后，他转向用心理、均值回归和概率评估是否便宜；具体估值结论位于付费部分，本期未核。"
       },
       {
         "name": "Arkham Intelligence",
@@ -629,82 +524,105 @@
         "handle": "@arkham",
         "raw_search_results": [
           {
-            "date": "2026-11-13",
-            "title": "TechFlow 报道",
-            "url": "https://techflowpost.com/en-US/newsletter/144437",
-            "snippet": "Whale Signal"
-          },
-          {
-            "date": "2026-11-15",
+            "date": "2026-11-22",
+            "title": "本期独立RSS检索",
             "url": "https://news.google.com/rss/search?q=Arkham+Intelligence+bitcoin+whale+movements+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-            "title": "本期独立检索",
-            "snippet": "Arkham Intelligence bitcoin whale movements"
+            "snippet": "Arkham Intelligence bitcoin whale movements",
+            "checked_only": true
           },
           {
-            "date": "2026-11-04",
-            "title": "The Top 100 Holders of Crypto - Arkham | Research",
-            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1vM2N1UFYyRk9BSWRsM1FRNWI1MjdwZzljelNab1lDX21aN2o4M1AxWkFLUklpNU1mU1hKcmFhNk5pUk5lLS12QzNfRG5Nelcyb2lnOFVUVHBpNWpYYk53SEtIMjlLLVBvVXc?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "date": "2026-11-16",
+            "title": "Crypto Alerts: How To Track Whale Activity And Big Transfers - Arkham",
+            "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdHI3Tm5RVFN5MXdvYkc1Y1lnbk0zMWxUNFR6Z0NVM1N2SjBhbWxUU1hDeDJ6VV9QbU51Y3Z4U3B5V25mU0UtY3lSZFdMSkhnMk5hRDNHSnJIeG9TVnBoakVYSDJLeUhJdkFRc29nZUFncjBfNFBVWWlCN1htU2ZlRGhkOA?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-12",
+            "title": "Top BTC Holders: Who Owns the Most Bitcoin (2026) - Arkham",
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5MdWllQUNPSVJVR2hxNjZxOG9KeHdscVoyTVBveTF3b2dtNGpqQ0l5Uk5kZkF6YzdBbTh1UjFlQTd4RjFYSlZVbTViNjBBUXFSVW5xd1h2OFZ4NE1vSXFHS0dKWnNyVHVmb1FSX2VpZlExV1V6WHRlZG00Q3U?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-16",
+            "title": "Bitget Hacker Moves Millions in BTC to New Wallets - On-Chain Data - Arkham",
+            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUUc3eWVib1NFVHh5eklhTzhnbExMNjlJZS11QzJBWmhVZ19XUmRnQkdQNzA4VzJwbF9QX2kyc0loZ1YxQ3ZST1g5aFBaZDZWdTZZV05UNFYxVG9UT0dzZVNnaE9NblNQbndJWjB3dGRsckY0NC1Pd2RTM1NhLUFVWXg2MHNhemI1aWI4Ql83VTQzeloy?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-20",
+            "title": "How To Use A Blockchain Intelligence API - Arkham",
+            "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE90OXNLczRzMHRabW1GdnpVNVpzX0QxSjdzTVZqcmFVSFFlQ3lEaHlaZmJHcXZBQkswSWV2RDdhYkpCblVNeng4dmotc2FLN3NkemF2ZUNtam5YRG9YM2hId1hRcw?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
             "date": "2026-11-10",
             "title": "Bitcoin Whale Moves $20M to Exchange, Still Holds 200 BTC - CoinMarketCap",
             "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZGRVWXRIaTJUVEdwMHBrYUl2T01PV2dUYTgyRDgtSHhlUGlfb1NBR25QbWpjU1pNTlVvNXBUaWFOVWFaSzQydDhKMlc3THlZZmo3WnJEWGQ2aDRnbkJkZklUdHpvUVN5QURLM2Z6NUFlRk1uWUF6TFA3Wkhhby05V2gzRklING9LTGhidzVpT05PalBMWTVvSmVaNnhMdkNhbi1xMDhn?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
-            "candidate_only": true
-          },
-          {
-            "date": "2026-11-06",
-            "title": "Bitcoin whale that sold near $89,000 buys back 3,000 BTC at lower prices - TradingView",
-            "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQNnJjbjZtWWxPY2hNSi0yRzBIT241c3ZXVkR3b2dCdUVXRWp0bV9URktoNHgyVmNXYXdHenFoTnhZR1RMd1o4Y09NaTNnWkdOQ3V4Z2lrMGQtQkJoRXRGZUtESkdOdVIzU0RnaFZsWmN4Wk8weGswal9YQWZHTkhNd2dlSHhzSXEtcWZHT0lqbG9lbDd3UjcyNDVvQVZQX1JqNm11RTA4NFcycHBMbHhfamdxdTYyYmhVUHVoS2JIOHZKZVRBZjVZeGR4YjNoalhYVHc?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
             "date": "2026-11-13",
             "title": "Arkham partners with FUTU Holdings to bring Whale Signal to Futu and moomoo - Crypto Briefing",
             "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE53anJ3WWV0NGpZSG96VXJSVWJ6cC1pcTY2ME9Ya1lYX1pJektUZDhTemJ2NkRrQVY4TnRFdmhqekdiNHpXUXRCbUpZSE9QeVBUejlFRkdLSFNzUE1fajFpbkRtVlQ3ei1TR2w3NElHb0ZoZw?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
-            "date": "2026-11-04",
-            "title": "How To Use A Blockchain Intelligence API - Arkham",
-            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1paElsSnNzOXRWLTBIXzR4bm9ZWW53Wmd6WlU3OVdEZ0ZKd1Z2ckJKQlh2VFhDZlp1ZVNZZXo4UGhkX2Rvazc5WUdCUFFabkZVenNFalBHcTVjUWhxcWpqTzA4OUlYZ2lqdkE?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "date": "2026-11-09",
+            "title": "Online Sleuth: How To Be A Blockchain and Crypto Investigator - Arkham",
+            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNREZxRC13X0ozTWR5Szc2S2RTTnNISXJVakVaMXp2WkVYM2h6N2NuY3lSNHdkTk92c2hJMEFtM24wN2NIeVpad2FNTHFVWWZxY3pmaWxHTHZVb194X00tYzJEdFhlUTJQb2I4ejFyd0kyNXBURXgxT05FZkNLSmp0c0pYOE1OaVpvWFNDSVU3Zw?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
-            "date": "2026-11-14",
-            "title": "Bitcoin Whale Wallet Moves $378M in BTC After Six-Year Dormancy - CoinMarketCap",
-            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZjZXRl9OdXc2LS1TWGZmSUtsOExuWTdNZXpNN1NxX0ZjSFJXV3kxV1JudHpYeUZWV2plMlJGb2t3NlVubDEzVlhWelNtcVRyVlljQU1FdnVqbkMwUXAxLWxFNENhdVBuT0RNaWF4RVM4QXJnVWI2cUNGd25pNmFIdUFyS2JVM25ZWjJHeTFMWEtDZHZtUnBsQ0p1TmgxVU1BdHV6VEoxLTR0TV94aHln?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "date": "2026-11-18",
+            "title": "Bitcoin whales move $540M to exchanges as selling pressure mounts - Crypto News",
+            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRmxuVHpDOTZlT2VBRWNJd0cxR0lNR3pDd045eEpCcUZmTHhlcVl5UTY5M0F4b2pyNmdwQWdDQ0RDR3doNGxsNUpOY1ZKamFoamE5NDJNdmtKRjFZM0QwN2ROLWtCdkc4MzB5UkdmbHZRTnEwejVmdHplUGdseERBQTZrNzEySF92bGh2UU5B?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
-            "date": "2026-11-15",
+            "date": "2026-11-13",
+            "title": "$105 million in crypto longs wiped out in one hour - Crypto Briefing",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5fYjJVVEJWN2EwWmNwdWY0U09taXo2VTBUcy1GUnZLUjRuQXpSQk04TnRVaENVNms5Z2o2SU9Qc0I1QUQ2dVI5VmluaDd4d1FaSDN6dW5GclNCOE9VY2xTR0F3MG9CT1VLQjFYU19vYXJHcWVQTzN6WjBtZHhhWFE?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-22",
+            "title": "本期独立RSS检索",
             "url": "https://news.google.com/rss/search?q=Arkham+Intelligence+platform+features+ecosystem+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-            "title": "本期独立检索",
-            "snippet": "Arkham Intelligence platform features ecosystem"
+            "snippet": "Arkham Intelligence platform features ecosystem",
+            "checked_only": true
+          },
+          {
+            "date": "2026-11-13",
+            "title": "本期核查的具体来源",
+            "url": "https://techflowpost.com/en-US/newsletter/144437",
+            "snippet": "Arkham announced a collaboration with Futu Holdings to integrate on-chain data into Futu Niuniu and moomoo via Whale Signal.",
+            "verification": "source text or visible public excerpt",
+            "evidence_file": "ai-work/btc-tracking/run-20261122-0809/source-body-receipts.json",
+            "evidence_files": [
+              "source-body-receipts.json",
+              "source1.json",
+              "source2.json",
+              "source3.json",
+              "source4.json"
+            ]
           }
         ],
         "has_update": true,
-        "checked_at": "2026-11-15",
+        "checked_at": "2026-11-22",
         "date": "2026-11-13",
         "source_url": "https://techflowpost.com/en-US/newsletter/144437",
-        "summary": "据 TechFlow 转述，Arkham 宣布与富途合作，将 Whale Signal 链上监测接入富途牛牛和 moomoo。",
-        "stance": "中性",
-        "whale_summary": "此次公布的是鲸鱼钱包监测服务。公告没有提供可计入具名鲸鱼净买卖的交易。",
-        "market_summary": "与富途的合作把链上动向带入券商应用，涉及富途牛牛与 moomoo。",
-        "sources": [
-          {
-            "date": "2026-11-13",
-            "title": "TechFlow 报道",
-            "url": "https://techflowpost.com/en-US/newsletter/144437"
-          }
-        ],
-        "source_note": "TechFlow 报道"
+        "summary": "TechFlow 报道 Arkham 与富途合作，通过 Whale Signal 将链上数据引入富途牛牛和 moomoo。",
+        "whale_summary": "本期未核到其对具名鲸鱼实际买卖 BTC/ETH 的新判断。",
+        "market_summary": "11月13日报道称 Arkham 与富途合作，将鲸鱼动向、机构资金和交易所活动的链上监测接入富途牛牛及 moomoo。"
       },
       {
         "name": "Lookonchain",
@@ -712,97 +630,140 @@
         "handle": "@lookonchain",
         "raw_search_results": [
           {
-            "date": "2026-11-14",
-            "title": "Lookonchain 原始监测",
-            "url": "https://www.lookonchain.com/feeds/82251",
-            "snippet": "48,647 ETH"
-          },
-          {
-            "date": "2026-11-14",
-            "title": "本人否认归属 · 原帖的可读引文",
-            "url": "https://app.stalkchain.com/blog/ethereum-foundation-linked-wallet-sells-eth-crash",
-            "snippet": "This isn’t me"
-          },
-          {
-            "date": "2026-11-14",
-            "title": "本人回复原帖",
-            "url": "https://x.com/ErikVoorhees/status/2121737974308332014",
-            "snippet": "This isn’t me"
-          },
-          {
-            "date": "2026-11-15",
+            "date": "2026-11-22",
+            "title": "本期独立RSS检索",
             "url": "https://news.google.com/rss/search?q=Lookonchain+bitcoin+BTC+whale+activity+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-            "title": "本期独立检索",
-            "snippet": "Lookonchain bitcoin BTC whale activity"
+            "snippet": "Lookonchain bitcoin BTC whale activity",
+            "checked_only": true
           },
           {
-            "date": "2026-11-06",
-            "title": "Bitcoin whale that sold near $89,000 buys back 3,000 BTC at lower prices - TradingView",
-            "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQNnJjbjZtWWxPY2hNSi0yRzBIT241c3ZXVkR3b2dCdUVXRWp0bV9URktoNHgyVmNXYXdHenFoTnhZR1RMd1o4Y09NaTNnWkdOQ3V4Z2lrMGQtQkJoRXRGZUtESkdOdVIzU0RnaFZsWmN4Wk8weGswal9YQWZHTkhNd2dlSHhzSXEtcWZHT0lqbG9lbDd3UjcyNDVvQVZQX1JqNm11RTA4NFcycHBMbHhfamdxdTYyYmhVUHVoS2JIOHZKZVRBZjVZeGR4YjNoalhYVHc?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "date": "2026-11-18",
+            "title": "Bitcoin whales move $540M to exchanges as selling pressure mounts - Crypto News",
+            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRmxuVHpDOTZlT2VBRWNJd0cxR0lNR3pDd045eEpCcUZmTHhlcVl5UTY5M0F4b2pyNmdwQWdDQ0RDR3doNGxsNUpOY1ZKamFoamE5NDJNdmtKRjFZM0QwN2ROLWtCdkc4MzB5UkdmbHZRTnEwejVmdHplUGdseERBQTZrNzEySF92bGh2UU5B?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
-            "date": "2026-11-14",
-            "title": "Bitcoin Whale Wallet Moves $378M in BTC After Six-Year Dormancy - CoinMarketCap",
-            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZjZXRl9OdXc2LS1TWGZmSUtsOExuWTdNZXpNN1NxX0ZjSFJXV3kxV1JudHpYeUZWV2plMlJGb2t3NlVubDEzVlhWelNtcVRyVlljQU1FdnVqbkMwUXAxLWxFNENhdVBuT0RNaWF4RVM4QXJnVWI2cUNGd25pNmFIdUFyS2JVM25ZWjJHeTFMWEtDZHZtUnBsQ0p1TmgxVU1BdHV6VEoxLTR0TV94aHln?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "date": "2026-11-22",
+            "title": "Abraxas Capital Buys 10,356 BTC Worth About $607 Million - CryptoRank",
+            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQS2t3RDQySm43WGxIT2NwSEg2cUJtVHkxQW1mXy1XbjR3QTR5enNHdXNRb3F6cW9qcGZkMnpSeUxkYzRuNWVFaWZxS2Y5LWNVLTA5VnYtZ0dxd0dVRTRYZEZnQUJTS3hTWDI3ZzhQTTZOVHdoSDBhYnVoaldpSUM5bw?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
-            "date": "2026-11-06",
-            "title": "Dormant Bitcoin Whale Returns as Crypto ETF Outflows Deepen - Blockonomi",
-            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOaUVuTHItejd6Q2ZvRDR6N25VbUNaSWlFcjJ0ODF2VkszVHdsVmhITTI5amdfVmlIRFRzWkNBOWRERDRQWE5ZbG1JMWNSZHVUT1RXUGlUb3Qyb0FWMExkZGpyZjUtVzNWbElqalBWMGMyZzVXZWVfcnkxeWFYZlh3dDRn?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "date": "2026-11-19",
+            "title": "Ethereum Whales Make Their Move: 13,408 ETH Withdrawn - Kriptofoni",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9kdGxmT2lMM20yek5XVEtfXzlwQU5aQ1hZdWtUTld1a2FQbDYzd0JPXzE3N2JXQVlLdzQ3cUFMSWM1dlpJal9Hd0ZINVZ3cWtuTG9ackphVWNDTVNQb0hrZkJ1ZlhjOEo3VDJPZkYyMUhCNzA?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
-            "date": "2026-11-05",
-            "title": "The Cryptocurrency Market Turns Green, Whales Are Moving! Million-Dollar Bitcoin and Altcoin Moves Revealed: Here Are Their Preferred Altcoins! - Bitcoin Sistemi",
-            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMG1fbnJTT21uVkl6azlHNkE0d21HdGpRMDBYcTVuQjFJMzNwajFFM3ZyMWZOWW1rYm5lanlpdk8wYnUwTFFCZUpaTFdWaEdGNk9FM05LUzdSWDVCTFFDa21BMmtNU29PN1hFTUZ3OHJ1RTFDeUZzMWJoLVUxaFZqUW9hR2s2QnI1VDZMYVRBTHJFdnlYZThEc210dG9KUjFYN0ZtSmNsRThscl9kTXFEWnU4QmRwS3hEaDZBN2pmS0ZwVE9ERkoyZTBiTQ?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "date": "2026-11-21",
+            "title": "HYPE Whale Faces Liquidation Risk: Adds $5 Million to Protect $81 Million Position - Kriptofoni",
+            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5BSlB2WUZnbTlUOUNnSk9ta1RkYmNTX2tURnVNRWU4RjdxTUJ2ay1URnlZbzFBTklXQzEzZkVHQU1IQUFDQlNIU3Zqc0lEZHo5OXZ3UHhkMjhyNnRyc0NVWXBmVkFUSk1zdTNrUFBGUjJzM3JjYXZ0aA?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-17",
+            "title": "Crypto Commentator @lookonchain Links $136.8 Million Ether Transfer to Binance Hacker - www.tokenpost.com",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE05eU9kbzJqOFYta25rWEtka2I3UlV2b0Rfa3V0c01HSERHSEx0emRJbDVCSkVHeE0yUmVaRjJBd2tOa0JuMUFHaFBfVTZOUTFQZWlwanhuTlZNX3M?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-21",
+            "title": "Three Newly Created Wallets Take on 20x Longs in Bitcoin - Coinfomania",
+            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWGNTYThhYUtyTkpBT0ZJYXFrWVZLQWd2Wlc1bm83dWNIOGVoUi1IUlFKUDREZTdJQlQ3bzRnbTNyX3k2cDcydlZoa2VVc3JxQngwMU1KNDNfVlM3Uy01bDJxTHdwSU9WLTVKeUlFanlHa19NSlhSeVlOZ29JSDRPdXNOVHFBMUhX?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-17",
+            "title": "Lookonchain Attributes THORChain ETH-to-BTC Conversion to Binance Hacker - www.tokenpost.com",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Zd3RvMGlPTE9Fd2dQWTEzVEx1WlBaem5jbEhwTjJqQUQ2a3lqelUtbU1ET0otNW9zcng5dWlnb2NxbUZsZkZ2aXg4RWpzV2thdVRUaXRGbUdvSEk?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
             "date": "2026-11-15",
+            "title": "Bitcoin Whale Adds 1,000 BTC To $131M Long As BTC Price Eyes Recovery - TronWeekly",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE85YmdDMERiQkR0WFZiTlRNbS00Vk1xNzZwSzc2N19lZlhTUkVXX3RycWlYS19zTGYzTHFhN2oyNjExYjMxYmlnWjEwZGlKRndVWlBDY2x3Mm05LW5ZTjRlVktubm5yZ0hILUNHYmxIWHN4VWV1cVlyOFB6QQ?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-17",
+            "title": "Ethereum Whale Activity Draws Attention As ETH Price Faces $2,000 Resistance - TronWeekly",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8yaFh0V2V3YmdMMWtIVkNGUThpVnVVMlVlZkpta1BQRmVTLVk0MGw0VkdtZkp2NmZybnhrejB5RDViS3FyVVE2WEVHQnBoVmppZmJUalhBZWFsWi1YQTctMjFJQ3E1ZURKN1N2bXN2S19NSlZnbERaMldRcjVfR1E?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-21",
+            "title": "Abraxas Capital Moves $343M In Bitcoin As BTC Price Outlook Draws Attention - TronWeekly",
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0yT1g2MFZzblgwWnhQUEVaUTVJS0ZVWTc4X1FZaEFpQnQ4UDRjRkdIa0JWT3Rjb0dyWUhuWGNQZTd0SXZmYWlRZUxlZFV6QjYtSFFUeWdxNzZpMWpydkd6VmctNXJqZkVsblU5T3had1FTMHBCWFlXRFNvSGc?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-22",
+            "title": "本期独立RSS检索",
             "url": "https://news.google.com/rss/search?q=Lookonchain+ethereum+BTC+tracking+commentary+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-            "title": "本期独立检索",
-            "snippet": "Lookonchain ethereum BTC tracking commentary"
+            "snippet": "Lookonchain ethereum BTC tracking commentary",
+            "checked_only": true
+          },
+          {
+            "date": "2026-11-19",
+            "title": "Bitcoin ETFs shed $975 million in a week as BTC slips 11% - Crypto News",
+            "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1pcW9vZWdKSDd4eFJkSVJQTWl5MW1TQ09qd01DMEwxekZraXZMRmkybkhPSExWbG9haUdjZEYwaTVNX2lTY2xuVEJlUTdsU3RuSTR3QlM1LWFrMTZsSGpiYVN4R0xSQjBlLThNb3BjcFdFTi1ITzVfVHVR?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
           },
           {
             "date": "2026-11-15",
             "title": "Erik Voorhees-Linked Wallets Spend $97M on 48,647 ETH Amid Price Dip - KuCoin",
             "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZmVCUV9wSTZRbENpUWtnWWJEdXF5SGtKZzlWU0xNQmhUQzVvcUVSVlBNbkFPZDlXblh3cGg2Nzc4eXJPYTRtNGp1aEpXRUtUelo3aTZzQ1ZnLWN3TDZHOEtaSnlZNGVXU2k4Ujlzd0I5cXhIWDZ2cFZDOUI0cHpFNDFzNmlrR2N4OTNBbGc4OWdhUDMxNXVjZFlGZE9VOUw1bUJB?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
+          },
+          {
+            "date": "2026-11-17",
+            "title": "Crypto Commentator @lookonchain Links $136.8 Million Ether Transfer to Binance Hacker - www.tokenpost.com",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE05eU9kbzJqOFYta25rWEtka2I3UlV2b0Rfa3V0c01HSERHSEx0emRJbDVCSkVHeE0yUmVaRjJBd2tOa0JuMUFHaFBfVTZOUTFQZWlwanhuTlZNX3M?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-17",
+            "title": "Binance Hackers Move $137M in ETH as Bitcoin Conversion Continues - The Crypto Times",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWGYwR2p0WUotVVZZREVseFR6VHZNUlRScjRzUjlOVVNZWUFMTER6Z2g3a2d1RkVPUWs5MmRJSlk2b04ySFozOC1VWEtLVjQ2Vl9jeXZIbjl0eE9uMy1fYjBIS2Y1TWhTcGlieWxFVjR3bkZrQ0l5VlRvWThvVTIxbG5hYWpOUk95WUZ1MGtUTDVDWW04dGljOHZiNnh6QjEyY0JRS3RB?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-22",
+            "title": "本期核查的具体来源",
+            "url": "https://www.lookonchain.com/feeds/83499",
+            "snippet": "They withdrew a total of 17,597 BTC ($1.04B) from Binance and Kraken at an average price of $59,206.",
+            "verification": "source text or visible public excerpt",
+            "evidence_file": "ai-work/btc-tracking/run-20261122-0809/source-body-receipts.json",
+            "evidence_files": [
+              "source-body-receipts.json",
+              "source1.json",
+              "source2.json",
+              "source3.json",
+              "source4.json"
+            ]
           }
         ],
         "has_update": true,
-        "checked_at": "2026-11-15",
-        "date": "2026-11-14",
-        "source_url": "https://www.lookonchain.com/feeds/82251",
-        "summary": "Lookonchain 估计一组钱包四天买入 48,647 ETH，支出约 9,700 万美元。Erik Voorhees 已否认这些钱包属于他。",
-        "stance": "中性",
-        "whale_summary": "一组钱包四天买入 48,647 ETH，约耗资 9,700 万美元。Voorhees 否认该钱包归属，交易按匿名钱包处理。",
-        "market_summary": "买入均价按 Lookonchain 估算约 1,994 美元。钱包持有人身份存在争议。",
-        "sources": [
-          {
-            "date": "2026-11-14",
-            "title": "Lookonchain 原始监测",
-            "url": "https://www.lookonchain.com/feeds/82251"
-          },
-          {
-            "date": "2026-11-14",
-            "title": "本人否认归属 · 原帖的可读引文",
-            "url": "https://app.stalkchain.com/blog/ethereum-foundation-linked-wallet-sells-eth-crash"
-          },
-          {
-            "date": "2026-11-14",
-            "title": "本人回复原帖",
-            "url": "https://x.com/ErikVoorhees/status/2121737974308332014"
-          }
-        ],
-        "source_note": "Lookonchain 原始监测"
+        "checked_at": "2026-11-22",
+        "date": "2026-11-22",
+        "source_url": "https://www.lookonchain.com/feeds/83499",
+        "summary": "⚠️ 待核实：仅核官网列表摘要，详情页本次无法稳定访问。Lookonchain 将从币安及 Kraken 提出的 17,597 BTC 归属于 Abraxas，估值约 10.4 亿美元，解读为逢低买入。",
+        "whale_summary": "⚠️ 待核实：仅核官网列表摘要。监测到归属于 Abraxas 的钱包从币安和 Kraken 提出合计 17,597 BTC，按监测时价格约 10.4 亿美元；该机构把它解读为低于 6 万美元时买入。",
+        "market_summary": "链上可见的是提币；买入时间和价格为监测方解释，未取得 Abraxas 的成交回执。此前 10,356 BTC 的报道包含在最新累计值内，不重复相加。"
       },
       {
         "name": "Whale Alert",
@@ -810,226 +771,329 @@
         "handle": "@whale_alert",
         "raw_search_results": [
           {
-            "date": "2026-11-13",
-            "title": "The Block 含 Whale Alert 原帖与链上交易链接",
-            "url": "https://www.theblock.co/news/markets/2026-11-13-from-6-to-6-9-million-two-dormant-bitcoin-addresses-wake-up-to-move-100-btc-after-more-than-16-years-439698",
-            "snippet": "both sets of coins came from block rewards"
-          },
-          {
-            "date": "2026-11-13",
-            "title": "Whale Alert 原帖",
-            "url": "https://x.com/whale_alert/status/2121094145133465636",
-            "snippet": "休眠地址转移 BTC"
-          },
-          {
-            "date": "2026-11-15",
+            "date": "2026-11-22",
+            "title": "本期独立RSS检索",
             "url": "https://news.google.com/rss/search?q=Whale+Alert+bitcoin+dormant+whale+transfer+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-            "title": "本期独立检索",
-            "snippet": "Whale Alert bitcoin dormant whale transfer"
+            "snippet": "Whale Alert bitcoin dormant whale transfer",
+            "checked_only": true
           },
           {
             "date": "2026-11-13",
             "title": "Dormant Bitcoin Wallets Wake Up After 16 Years, Moving $6.9 Million - Yahoo Finance",
             "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUGpueU5vU19sZVYxZHV6YXJGdldPaDJRM1ZydThjSC12enFpQ0JpWWtWRHZ2bl9wLXZ5S19GQWVQVERJN0hOQmZ3VVdIMWN2Ry1xOUtsUUdzMGJLRncwdGJxMzBfd3ppUWpvaUlla3kwd2pZODRkU3JEWkVhRU8zZ3lMUDViUUVCVURqSUMwLXZPWWZlMTJzSE5mX0c?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
             "date": "2026-11-13",
             "title": "Two Dormant Bitcoin Addresses Activate With $6.9M After 16 Years - Bitcoin Foundation",
             "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcEFrT195aTVGXzJvVW8wamFiWXNuMzhBTHMzTHhTLXB0UG00RFZQR3kxLWtuZ2kyaWdvamE3RVN3Ymx0c1lOdmx3azFDaHVtYUtLT1Z5ZEpQSi1IRTVNbzdzZ0RDd1J4NFVaRHdIcDVwSTNCREZnT3NBRmtQMF9TUnowNUkzVXVCRjFzYU8zZmNKOFZ3aXVRZGpxWG4taGtBcGhQeXVwZXZXMmM?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
-            "candidate_only": true
-          },
-          {
-            "date": "2026-11-13",
-            "title": "Satoshi-Era Bitcoin Address From 2010 Suddenly Activates With $3.4 Million - TradingView",
-            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUmdNQVdEZnBEeW9uOUQ4RjVfWnBjSXoxRVZuY083bUNmLXZ2TEk3dFdPUUNydlVxTE1iVmlDTVBrMEF4bVJUT2NwdDZvZ3UzbnYtd3hGUjNYMzJSdVlUUl91LV8wRG9scVFVbGctNjBYSUlvSnB3VzRQRFZvcGg0ZWZLcUlIU0g1MTYyeXJPbUQ4QVlXX2FadjNQRUFQcGU1SEsxTjB0RW9rSW9VZ2diZ01naFB1eE8yNlBveWgxZ1FQTmlEWUw0bm9QVQ?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
             "date": "2026-11-13",
             "title": "From $6 to $6.9 million: Two dormant Bitcoin addresses wake up to move 100 BTC after more than 16 years - The Block",
             "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQSnljUkNmNFpyRkVHUWVGa3pOelZBMFozY3Q3NENLY0RQajJ6cnp0ZDVNNGF1ckxOWVFjNXVGUEw4RmVYOGVCdU5rVkQxOF94WEYxc2RBdmZDRDRoLTVZdzUxdlh5WDhZZGNqbDExT3VzaWtidFhmYS02ZFRVRW1uaWpTU21iZXc5Vm9XY2szLTBCSEJMRV9Ub1VNX0YwWFBsRjlXQWhWRVJXNlEtZnhPMHYwQi03dmh2VV9jbkUwUTdCcndwYS11MFBqSWlQYVJfQXd4ZHBDNThSdGxUYmlkRG9UcDVzN3FyY25B?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
             "date": "2026-11-10",
             "title": "An Ethereum Wallet Untouched for 11 Years Just Moved 2,155 Ethereum. How Much Did Its Owner Make? - 24/7 Wall St.",
             "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOTndIME4zcXVMb1pDOVlhQ1JIY0FYODdvcFNadFozWDFTLXc2VWJlZUN6WEN1Sy1PckpxeVlMeURXZWZGcFFUbTUySVljOUdkMU55VFBIZXI0ZmpLWHVJaHRWR2VIdlI3Q2VFVjZLM0N4MXFvdVVXUnE0aGZOQnExaU9NYXNWOFVSWTd5cVNSSEhURVZvYjNLUmJjVk8zSE5WLXFpc3pqM1V4TUllOEs2eEFWZ0NyOGVsUjd0UUxrM1Y2M0wteFlhcGtjR0tDWWV6NHpQamxGcXd5eEVmei0zX2NJRVRwT3pB?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
             "date": "2026-11-14",
             "title": "Two 2010 Bitcoin Wallets Move 100 BTC Worth $6.9M - KuCoin",
             "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQN3otMUcweGwzXzRJVFJFY1dTX0czQU9EWWhBTWtHVFdhYkREM081c0NObmFwM1ItT0pTZGpwSnhsWmQ0VXotcHllZnhKeExCWmxyUUtFV3BGMXpyOW9SZE5PUjJHLTFwZlBCX0J3dUU2eWpvczhaT2g2TnlTT01kR09BOTZ1NEo2S0E?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
-            "candidate_only": true
-          },
-          {
-            "date": "2026-11-02",
-            "title": "Dormant Binance Hack Wallet Wakes Up: 80M XRP Moved as Reports Clash on Scale - BigGo Finance",
-            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1FcjV2ZENkNkNJRjBNc0VFTklIWEhKZERpZkQxbkw2ZXhHcktOY3N0TFFHQ1pfdVVvQWpKQ185aVFzWVREanB0aGV4TlZXWFFvUnRlUGhkRmc5Wlp6ZG5WS2hvUTdGRjBxanJyczU4WWdsWjA0cnc?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
             "date": "2026-11-13",
             "title": "Two Dormant Bitcoin Wallets Move 100 BTC After 16 Years, Turning $6 Into $6.9M - Crypto Economy",
             "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdnUydkhDbnlkVXd3MWo3aW9UTHlLOTRmcWdLSmVYSjRxZmRISWtvRmpUOE9ISHFUWDV6TDVqckpkMUk1bHZMRnFBanVSQlJxSVVKQXBjVUtpV28zU1NqTEQ3NWRjOW5NU2gtdVplclM3Sm92OEFDZjcyOXE3VjM5ZHFiYzFWTmtaelZmaUVzVVhhbmNMVXpVV1JSaE9ueEZaZTRxcGZB?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-10",
+            "title": "Scammers dust a genesis ETH wallet within 3 minutes of its first move - Cryptopolitan",
+            "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBlMEwtSjh5SnBTVGZ1SC1XMXR4aHdjMmZwQTI3OGxZVzZfQ1ZKdzhMU21jSFoxN2RXVVpIV29mR2oxMzlNWEJvNUMtc1BENlllLUY2ME9RcWRQQnFiMGl3OTlrMHZVSEV3NFZrNkU4a3kyQURJS3VvbTFWM01tUQ?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-13",
+            "title": "Satoshi-Era Bitcoin Address From 2010 Suddenly Activates With $3.4 Million - U.Today",
+            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNMENyeDl1VWs1QWdOY1BoUWtUT3F5OVFiSlZQc0ZEaFJOSEpEV3FLbzlLS3JQQlhMakUxY3BNcktoYzgza0Y0N3hkeU14UG5iTzFXNkNmLTdSQVJYUmxZUFRUVWtjRWN5RXM1RWkyWXdYeGx5NmFwWnZUY2hjalZESTMyLVFBR3ZIWks1U01PN25pd9IBlwFBVV95cUxPNklIYU5US0dUZ2syTzR1U2h4QzRBcjVrZEx5QXdUazBGVWR3ZThQN3ZHSlJUcDFrdjA4VFZPSHpEVkl3RlgtbktzM0E4bUJBVUhEWjlGanVhTzJua3UyWHdOb1Q1MU9nUklfX1FnQVpWdG9uM3ZGOUZUeTlpSC1NcUwyUWZZdXFWTmZIMVlRZ0NkT0VfMGlR?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-22",
+            "title": "本期独立RSS检索",
+            "url": "https://news.google.com/rss/search?q=Whale+Alert+ethereum+stablecoin+transfers+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+            "snippet": "Whale Alert ethereum stablecoin transfers",
+            "checked_only": true
+          },
+          {
+            "date": "2026-11-21",
+            "title": "125 Million USDC Transferred to Ethena From Unknown Wallet - Kriptofoni",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBLN2xrMHpZdl9ybmNEdUtTTGZwTS1CdVpSdzVmNGIzTHNLcXJBaC1zUllEUHFBS05jZENSWFNjUHk3dkxqV3VnMkRrb3k4clVBQjM1MnQ2NHU2Mmg3bVJQOWh2eEZYN0ZBeEFfTkx2d1Q?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-21",
+            "title": "Coinbase moves 127,745,921 USDC from institutional arm to its exchange - Crypto Briefing",
+            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSk9LTHJnYzdsYVFrbWViUzhKa0JXOFRmU0FkOUdPa1Z0aXNtRFZwamVfeGFDR1ZyVHk3dzRzNHo4TExmZkxzQ2h4Nzc2eXFwcXYxMEpieVNudUtSRy1zN2daS25US2xkdHZKMll4ZTctQnhnSVR4akpHdVZfYTdaOA?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-17",
+            "title": "Zelle Taps Solana for ZelleUSD Stablecoin and Global Payments - CryptoRank",
+            "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE52SEUzR0hlNzVlMHdHZ2pGOFp2ZWQtZGw1WVJpc3Q5clYxaG5aamRjY0xEcHp2TFZFNmJLTEFWaWN4bnRaa0VZU1VnalVBbVRJbVRwU3lfNkREQXRnSTY5OHJRT3Bod0E5NUlRRWd5Ni1wek93ZXpxbzZ3?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-18",
+            "title": "Binance Attacker Shifts $109 Million in Stolen Ethereum in Five Equal Transfers - BigGo Finance",
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBnUFJyY3djd1FHUW5weHBUcXN5MnhyYjRVMlpwd1dJN1dfbzRqWGRYWXVET1JXby1nNTlRRHloVkJ0anNfbjl5dlJrREE4SVlrV2xVd20wT2Q5OFplbk5SeFhCRmlPbkdLcGdOMjhzSFdaRHA5S0E?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-21",
+            "title": "Coinbase moves $100M in USDC to an unidentified wallet - Crypto Briefing",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9GWFpVSzB1eFZrdkg4TXFoelA1MC1vNzI1TzBhYnNndXl5Q3VRRjhqYmdOLUFsZEVVellKTlNPMWd5REt5bDdDZlI5ZnNTcVczdmdRQS11eGtjMEh1WjA0T3B1a2pBakN5cklUUFZzVFpfRXRlaUczN2lPQQ?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-19",
+            "title": "Ethereum Whales Make Their Move: 13,408 ETH Withdrawn - Kriptofoni",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9kdGxmT2lMM20yek5XVEtfXzlwQU5aQ1hZdWtUTld1a2FQbDYzd0JPXzE3N2JXQVlLdzQ3cUFMSWM1dlpJal9Hd0ZINVZ3cWtuTG9ackphVWNDTVNQb0hrZkJ1ZlhjOEo3VDJPZkYyMUhCNzA?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-17",
+            "title": "Zelle taps Solana for ZelleUSD, demos $1.25 million confidential transfer - CryptoRank",
+            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTWZ5N1VLTDdvajNMNFpPYTRBajFOOUxsSE45TktJZnUzRGFna3pqWGRzOUVra3BJNHpCU3dPTDE5cW1idHpjNmdrNUluQVhMWmZHUHhIZjJNcEdUZG5HREd5QUF2MWNaUXNDWHpBU0FGdTlheWo5WUsxTFJzTVhOblFKVTFsNk9F?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
             "date": "2026-11-15",
-            "url": "https://news.google.com/rss/search?q=Whale+Alert+ethereum+stablecoin+transfers+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-            "title": "本期独立检索",
-            "snippet": "Whale Alert ethereum stablecoin transfers"
-          },
-          {
-            "date": "2026-11-07",
-            "title": "Stablecoins Shrank by $5 Billion in a Week. Can Ethereum Rally While Money Leaves Crypto? - 24/7 Wall St.",
-            "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOc1oxb1VLeUdpVWxHOC1pMzdpMUFVeVZhRDE2a2l3bTRhRnZCYUZfUjM2U0RQLUUyYlM0RV9mYnlsZGVOTGlXUXI3ODJ0SXZ6d0FJR2J6UEFOTVl1d1JxcTFQRm16dUMzZGs3cW9OODJXdWpJMWdwcVRPWDRsRG5qSmVpcDVnUmNEalhUZEYxNmk3aTd4RXZrVDVrWC1SMVp1eHRDakZ0WnVaQlg2OTQ2STNfSmpfVENkZHJYbzYwVXhfOWgyM21GblBGQUZKVTJfMlFKMXJ4NWZja1h2ZHc?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "title": "XRP Tumbles to Two-Year Low Near $0.89 as 240M-Token Whale Move Skirts Exchanges - BigGo Finance",
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8xQ3Z1eXhjT0R6VE1zZFZFeVJrZ210bnpRYXBIOUFNLUZrZk14T0dFNEFXZjRmMGxFb3RUMkJvN2RtMzlNZ2NBMFZsX3BpbEtUWm5RTVNIYmdKdFFQLWZ3enk3bzM0aU5FTTZWTmtrYUVTNDFzanc?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
-            "date": "2026-11-05",
-            "title": "Coinbase moves 271.9 million USDC from its institutional arm to its exchange - Crypto Briefing",
-            "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5JU0xwNGhDUUNnZ3hSZENESkJ4bmlOMjZQeUNfNWpEb0VGXzNxUno4QmFzZlN6OWpoUEhkSzVNVTlHWEp2NTNwNTJ1M3pTb1lCQVFkVUNNVWxtS0RhUExtVElFTEdpS0ZUMUhoOGV5X1hZNFY2a3g0?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
-            "candidate_only": true
-          },
-          {
-            "date": "2026-11-06",
-            "title": "Whale Alert Reports $206M USDT Transfer to Tether Treasury - Cryptonews.net",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1LbmYxcDJtc09WaWdXc2tfcUp5M2djUlo3N096Z1BlYUk2X2s3d2RHRVVIekJudjVIMHdaSWtrekp2VE0xNHB2TEd5elFIYlFoTUJid0hycFhpdw?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
-            "candidate_only": true
-          },
-          {
-            "date": "2026-11-09",
-            "title": "Vitalik Buterin Makes the Case for Ethereum as a Store of Value - CryptoRank",
-            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTXJVQU5wdUI0bWpTSXh1Q3hadWI2bkstcV82Q3h0Y0FfVkN4cXBqRFBUQ1RkdEpmUDNHVTAwOURXM29GelBOaUdfOXc2OUd4dGxGVG4yUFZtOUJIZ3VDekNEb0JUSmVGOTFUbEQzY2wyY2psZHI0UzlWLWI4RXNLOEZfMzUtQmR5V3lLSThRaXFTN1JlN0tPMXFpNkNodFc0QzZz?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
-            "candidate_only": true
-          },
-          {
-            "date": "2026-11-09",
-            "title": "XRP Whales Transfer $900 Million to Binance: Highest Inflows Since 2024 - Kriptofoni",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVEh3OXVJSzM4bUx5dVMxdGxXbElxUkJFYXpZU1NXWFFlV0VTQTRUYWN3Q0pHMk5lbU5mT3dJbDdGbi1jM0ZSNk9qZlR1N0N0RHFOTUZYaEltRkJ2WGNSNEo2aXlSTldOdHMybG94Y2NLSkREVTJNTDhmVFVKTURVS3dzc0o2Y1NuVkpCM0FEQ1JOeXpLRV9vLURGSnFRME9WZFE?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
-            "candidate_only": true
-          },
-          {
-            "date": "2026-11-02",
-            "title": "Binance Hack Wallet Moves $101 Million in XRP Across Two Transactions Just 50 Seconds Apart - Coinpaper",
-            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbUhSUVVxc3RsNjkydlZoMGo4aHliY3Z4MDJ4dWRHc05sanRlWkdkdWNNUWRYQ1ZXZ19PYXZRUTUwR0JwS2Q2ZUNZcmJjakNRdWNVVlBRZjUzdVV2MXNYekV5RlRhSGZwZDUxNDIzdi1qOTVuY2Zia1Q5YURKTFVEVDdQTEM1b3F6cG9hRTQ5OUpaMW9XcmNvd3daRl9FZVpsZEdhZENmMWRsSENvUi1IRXhOQXVvLWJFVVE?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
-            "candidate_only": true
-          },
-          {
-            "date": "2026-11-03",
-            "title": "Hackers Begin Splitting $296 Million in Stolen XRP After 80-Hour Pause, Binance Breach Total Hits $6.36 Billion - BigGo Finance",
-            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1xSVFpbF91ZEtFYXJwNU00bXdlcTJiZnRILTZfTzd4WjNTVk5kOU5iaXV5cjFraHg2QzBxd0hSYzVRcU5NN2w3MHFlUF9rQVpwb3NHRkFmTWR6RzRKTVBLRmtGNHgwa1BsYVdpTGY4aXlHOXhWTUE?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
-            "candidate_only": true
-          },
-          {
-            "date": "2026-11-05",
-            "title": "Coinbase moves 271.9 million USDC from its institutional arm to its exchange - Cryptonews.net",
-            "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE44SWI4RHZVSDhhWkdPSEFjX1c5cHc1QVNTNldrQUI1VnhZQXN2V3A0eGRQTGJaNXJsVzc2eS1taXZJeWE4Vjd0N1cxaGxWaklLQW1aQ2QwRQ?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
-            "candidate_only": true
-          },
-          {
-            "date": "2026-11-14",
-            "title": "PNC Bank Pilots USDC Payments Converted to Dollars for Clients - CryptoRank",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVENxdzE1RWZtSjE3TGtDemVxWnAxNVhScW12WU9sZVRfQl9fbWdNNVZjaHhUcVZnazh4MVBWcnRSV0NTZHNGT0xMbGU2SGQ2WHAweWFtNS1hTkNYVk9iQTFZZEpySHViZzNjTDhMMzVrd25tY2ZJMEwxQ2kxSURhZDZ0TTlCZHdUSWthM0UxSll0S202NG0zNUNNTG5YamppUVE?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
-            "candidate_only": true
-          },
-          {
-            "date": "2026-11-07",
-            "title": "How Low Can BTC, ETH, and XRP Fall if the Crypto Sell-Off Worsens - CryptoRank",
-            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZ2RNZ2E2emNZMmoxdXBkVUg0RHJ2R09HNGJwNzdvMjRpc1dUSXd6ZXN4WWpoQW9RRU9KYTlMTGVBVW5GNjFfOTJjbEFCQ1d1RE1WMm5WMDJTMFdiemNvVjhzc3lKVFVVZTdHdF9OVjVnbk9FWDBPUE9HMVZqb3E1LWpvQ1Y1R0dlM3JxWENUUVFic3ZSNDFhZ01yRnktYkJjZHJB?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
-            "candidate_only": true
-          },
-          {
-            "date": "2026-11-12",
-            "title": "US Bank Targets XRP Off-Ramps as Failed Merger Pushes Crypto Launch Into 2027 - CryptoRank",
-            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZVVZNm1vRlExTWVOZms4Q0lzZVJVWFYzRkE1TjBETkZ1VlJWU0xHckIycllBUlVUSU5sNUpfQi1UNWhfbjFuNlpyVEstR1lxWUNwSlFwc2VHVUg5cXJ0NUtTa0cwVW5TNWV5Z0RLLUNJV0JSUVRrd3hmSmJXaDRBaEdUbmlCclZnRkNIMkk5VWY3TEZQQ1UxS2V6VzMwTGVDUEFvMkVOMDZCenkwVk1TNlROWUZ2UQ?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "date": "2026-11-21",
+            "title": "2,500 Bitcoin worth $147M moves from Kraken to an unknown wallet - Crypto Briefing",
+            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRjVRSC10VXItM0RBZXFSbEtHdjVoeVVWRjM3VU9OV1dIZ01lbGZqSUEzekFjSlM5cXp0NWJ4eldsS0xlWWFkdmVrSG1KY1BDZ3l3dVBXeVpsQ09NOGtIaUFucG12UnhKRnVkanFwUUlvRGJXdHNuNW9qZ3drSUw4U25tQi1reFVkaTN0UzdkT1JNZFNucmpqR1Ftank?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
             "date": "2026-11-10",
-            "title": "Ethereum Price Analysis: $2K Weekly Liquidity Sweep Could Spark a $3.7K Rally - CryptoRank",
-            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSGxvS3BKWXJDOVBvMDRfdXFVSklrVFFPQUhIZU5WUjZ4ZjN0U0trNFhlNHBZWUpkZ196dXZQa1BMVi1McWREMFJKd3RSdEpJOHRIZGwwV1VXdWhYSHhmZlk3a01SWGxuRkx5V0lBeThyUmNxY1h6VFgxREp0cHNiNmt0dEt4ZUdfSzFmTDUtVm1iaFhmeS12Zi1Td09rTlFTRnltbWQzcFJ2NW9pX2w0Yjln?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "title": "Ripple Expands RLUSD With API-Based Minting as Banks Accelerate Stablecoin Adoption - CryptoRank",
+            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNeC1DQkJsQ0dDc1F0cjN0SE9aRW9ubmhDQTRiZV9kTEhJUENGQVl1VXhxUzU2N2dFeVdULWFQOHBaaEU2TUpkRk9aMmpqbms0WDUxMzZkSlphQ2ljYnN6RHdDM0hQbTlHZGxvdFVaSTN6TENUWU1JRjdobWVNSjh0ZXAzVk9IMlhQTUJndFo5X2ZTR2JBUEtmRkxzd2ZQRXVzTlAwYmZMbjVqRDFiMUVlcFpoM0ZBUHFRTnpYQmVn?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-21",
+            "title": "Tether Treasury moves 165.9 million USDT to an unidentified wallet - Crypto Briefing",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPWW5seVEyTFlOR1Y1SGQtcHhrMGhkWnAzdFB6UmFLLTRrU1lGSjFFWkdtelBRWko5cS1NUmQyZ01COW5tVUplbjdBQTNnV1AwakRJME1xTDlEak9aZm5MT2ZvdGtualNvdmpJUUpSc0g0dE5jNHF0dVQ1RjdrNHJzclJteDk?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-16",
+            "title": "TCB Daily Edition: What Happened in Crypto on November 16, 2026 - CryptoRank",
+            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcU5aRVlQR21WTmF5aDJKMnlISFpPbDBtMFBLNk9uZ3Z1N0p0NkRNLWVrUGhaUEVEbWJFbUpRZWpTN2dqcFZ1VEU1MExMV3JXSEh4UXhSRDZLOHd6RWdXMDhrbUx1WlFpN2hZeU5MOGotdGpOWGJzQjV5LVlHZWptVGprNWQ2OWk2bjFEbmpSRmVQSThkZFJMYTRfUlhzclJo?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-21",
+            "title": "Circle mints 500M USDC on Solana in about 20 minutes - Crypto Briefing",
+            "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5HdmpJczdyVjFZc1hjX3ptMXVJOGljaGVEYkNXSEtOblJWV1dHSzBXQjJydW9MRDRGcG9OcHNuV1Ria3hSMFM5YlNRMndZQVBiX1U3RVNUbzR3ZU5XRnFuSGE0VlBXdGhM?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-19",
+            "title": "USDC Treasury mints roughly $146M in USDC on Ethereum mainnet - Crypto Briefing",
+            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55RzZTVkd5bmFjelFySV9QWUdCekt4LU5TWHZkakI0SWsxRHZNenplbU8xUmJWS3BaelhfZjNfdWlmUXE3V1djYlNSWlRMOHhrTkVodlBTM2p6QlZmTmlxcGdScXpDeXRqdmdnNHl3?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-19",
+            "title": "Whale Alert Confirms 320M USDT Shift from Tether Treasury - Coinfomania",
+            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNajNUajEtSWhKUVFhSDkyVWJDa3pzUGdoUlZiUXB4V3FjTVZHZmw0RFhwdmVrMFZ1MGgwUzVINUFMOWgzVFJJOHpxUEVfU3J6RVZIZjBjbW4yY2RaTlJOQWFPX3ZWNWUxOVNrWmp5amVTVEpZZXphVTJTZjUyRXNVR2R2UXpUTVp6bFE?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
             "date": "2026-11-10",
-            "title": "Tom Lee: Ethereum’s Stagnation Reflects Impatience, Not Weak Fundamentals - CryptoRank",
-            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbG5zNEpLZWdoSklpRHNyMngzeDBna1V4cVZMWHdUWjktTzhQUkt5WHA4dXozVXF1cXZMaWU4Y3llMmZDcTA4by1fWkN5RGpkMy1GOVZNemQ5dENXZU5VUTUtbDBsZm16d25qRGdzT2cyRHFBcGhveDJhVXhyQ0RTU2ZreU82NEQtbFVLNUowM0psWXpUZUY0VUhXVWszenFoUGtCOHM0MGVweEdY?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "title": "Scammers dust a genesis ETH wallet within 3 minutes of its first move - Cryptopolitan",
+            "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBlMEwtSjh5SnBTVGZ1SC1XMXR4aHdjMmZwQTI3OGxZVzZfQ1ZKdzhMU21jSFoxN2RXVVpIV29mR2oxMzlNWEJvNUMtc1BENlllLUY2ME9RcWRQQnFiMGl3OTlrMHZVSEV3NFZrNkU4a3kyQURJS3VvbTFWM01tUQ?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
-            "date": "2026-11-08",
-            "title": "数据：ETH 突破 2150 美元 - CryptoRank",
-            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9YVGhPbGVvN2Y5bnJSVUtVamVkY191N2trV1NyazVXem1GM3FULW1vWlhjNUl6a2tNX0Z6SUxralVQeEVnejRBOFFURlRaNHdvVjVhUUQ3LWs?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "date": "2026-11-18",
+            "title": "4,998 BTC Transferred Between Unknown Wallets, Whale Alert - Coinfomania",
+            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQUk4YzBuX0lKX3pCNVZiX0hQc29ORnRsZkVtWEhSdVlBZ1F0bTNUb05rekNDTWV2dTU5XzBZdkZxX1dhRXg2XzRNTjV1bnBvU2RuSlhBUE1yX29ZM2RIemd2ZFhOZTI2UVBpQVNUcWpRSnhET3ZFQ2tlYkxyMHZRenZidlFVSFF4?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
-            "date": "2026-11-12",
-            "title": "Ethereum Whale Transfers vs Hack Attribution: Verification Steps - Coin Gabbar",
-            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSDJ3bGdVcS1wNDM5TnpFTl9uSkEwbWFTbU5rWXQwRXpkblhGd2l0Vmk1Vk1CY01ZMVZ2V2VaOEFjVW94WEtBRktLU2FYSmtpamdpMnYwVFVaZHdzT0NnSHUxaTFrQ2lrMzA4b0VTb0toOUxaZXVNbWRqZ19vTnJENzlwR1NNT3JKdk1TMWZnWVE?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "date": "2026-11-16",
+            "title": "Coinbase Transfers $100 Million USDC to Unknown Wallet - Coinfomania",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSWdBeWVRQ2pBR2cxeEVmOE1BTmtibk9GS1AtTUNtZExpbU1iN0gyZFFUZEFqbTdoNnJpLXhPWFM0Z1o3SktCWFVUeGRvUWNkOGhIU0VqenZjQVVhcHhDYXUyMWVMOFpOWWx6WFRBbEpHMG1YbGVZY0xIZW1nZkhBWWVEelI?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
-            "date": "2026-11-06",
-            "title": "Tether, Bitfinex Exchange 446M USDT as CEO Reacts to Paraguay Crisis - Analytics Insight",
-            "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSXZYU3BpMlMyaGx4cUVQSzc2Q3F0bWwxYVpOQ1hzT2pBREdCd0dISGlGczktOWhsSF9vd3lfLUVMYmQ5d2FrVjl0dTZ3eHdkalNJVnJVYzlmTE1SR2FiYmpCN1BhY1YxNVJyTzdQelY0NjBzYUgwTGV6WkFaZzJSSHpDWV9xbEU3SE5adS1SY0EwRE1LSlJMSWdpM1phcS1pN2hzRkpidnLSAbYBQVVfeXFMTlhRZXhuVWZBZ05ubnJEZUdOcDZMczl0bkxYRmxVd1JRVXFxNURJbnhYdVpwQS0wYUlxQnNfYWRLNU5fVlR0N1NHczRxaVoyZW5PRU9GTlFyYkRjUHBIOF8zZDhrMUdhZWJRVURTd1B5a1Rfd3NtSE9TZHRnQXg3MURXWTN5cUlhTjhoYjd5NUUzOVJXejlDdkhfR2tUN1otY1RTTXpkYzZnWWczMnJJYnEtXzdWT3c?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "date": "2026-11-16",
+            "title": "Binance Receives $416M USDT Transfer from Unknown Wallet - Coinfomania",
+            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZ0doZFVBVEhYSmc2WU9zOVVGSUVBanFfZTdzTVMyX1c1d05UaWd0ekNtVDNiQVZxWmJRc3ptbUpZYzFHZy1xNjE5dEFBTTBoeXBkZjMxNjNmYlJYYUplSHl3TGxXMXRjR1pNMEdUZHBxVlh1WjhySFc1S1R2OENsemRyU19HZjA?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
           },
           {
-            "date": "2026-11-02",
-            "title": "Ethereum Forum Adds Optimism As OP Stack Powers 54 Chains - TronWeekly",
-            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdXQxT01VUlRuM19MbHFCbUFaclVYWk9kamlMREZKVklrVElYOVZQNkYwZUxjNi05dkpCTG9OSDc3MktGRFF3T2Ntc1huUDA3NXdMTEpxSWt1eUpvd19YSnlIODZPZE5xSjdFZnNja2pqVGhNc1ZlYVRxR0d3eGlsVA?oc=5",
-            "snippet": "窗口内检索线索，须核实主体及原始日期。",
+            "date": "2026-11-18",
+            "title": "Binance Transfers $200 Million USDC to Unknown Wallet - Coinfomania",
+            "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPR015UVdGUGlXNWFGcHNUaVd2QXdBNE0wNzA5SDRRN3JGV3NYUnFPMlB5MVhNb3dVQnU2Ynk5T2llZHF2N1Q1X3p1T01VQ2YwNG5aWUpvbHFHZjRjSHVGVnUtaEpjMzBfanFaQ3dma2hfREpGOF9tdkJZemtNeGt5YnhkUQ?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
             "candidate_only": true
+          },
+          {
+            "date": "2026-11-18",
+            "title": "Binance Moves $100 Million USDC to Unknown Wallet - Coinfomania",
+            "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1xQjNlUVl3VVNDMzgwU1hHOGtJVS01QkRjZVluME55LVgtR2NKcTM2c2lfcDA4YU9YLTV1MDdVXzloa0NiVnZjc1AtNTA5Q0NOTDNBM1R6UzdhdmFpSTJUenozNnZtbWRJZmkyaDNKU2hCZ1lLN2JDWGNLN0dpQQ?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-18",
+            "title": "Bitfinex Sees Significant $105.6M USDT Transfer - Coinfomania",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE55WFR3T09EaWpubU5BbTJrU0ttTWs1WjZOQ2g5al9sdmE2OG9nUlR6ZTd0cGVIU1JhSEhkc1ZtLVNuZHE5RFJrbC1XVzlzdGF4TmFVd00xUzJOYmVRSGNfd0dlcHNxeFR6RkdYd0pwbnJZZnIzTjFGelhHWQ?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-18",
+            "title": "Bitfinex Transfers $126.3M USDT to Tether Treasury - Coinfomania",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5NaVJuMWJ2U1lGd3Fic0lVVXNZSDQzcmJYOVltc2NxaEEwcG03dmZQVkl1Z0dhMlU1QTJXeXN1c2xvV1lWNEdBcVk2TGl4WkYydmd0Um1FeFJOdXpXbkhNYlI4N21zWDY2dW1JclV0aXFBc19LeEVJWlpfSEw4Q0U?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-21",
+            "title": "USDC Movement: $175 Million Shifted from Treasury to Kraken - Coinfomania",
+            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTGRMQU12YTRrRGRNc0pMelFBVG1tMW91SGt2ZU5mQ0xyWTI2R2ZURVgwQXN5OTYybDlVbzB5WXl6VnU5NmdHQ2hCdVlneVVNNHFGWmpiNkNzX1ZUXzNwYTMzZXhHMEV4dmNseUg4TnByeE0zRVNDTUNwZHJDTGtRODJLV1lrdjViZkE?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-18",
+            "title": "USDC Treasury Transfers $167 Million to Kraken - Coinfomania",
+            "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5CRVNhaXVrakJ2UE1yMzNQOXprR1RfU2J5aVZrdjlRQ0hQMUs2bjhoelhMVG1NWWJuMmg3ZFhpZkNTX0g0a1Rma0Z0VUlCekdkRkJ1N0kxcVZxNTcyajFyWUE1Zk1DSi1XODVDbjRQNzBpemEtU1NwT2R3?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-21",
+            "title": "Binance Receives $142.5M USDT Transfer from Unknown Wallet - Coinfomania",
+            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNM29xcENEMi04WHpwcEViRE9mcFR0QmhPMHdpVmVqQ2pKem00S3BpMzY2YlpLaENNNUctdjBYdGlOZ1V4Rk93WlpHTll1bjlHN2ZrS0dhdkJ5aGZvcHozV3gzTkg2NU1Ld2gwSHozb0xuSTZZUnk5bHlrWjM4NU1ZVF8ybWVMWmFRcWc?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-19",
+            "title": "Whale Alert Flags 320 Million USDT Transfer From Tether Treasury to Bitfinex - Analytics Insight",
+            "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdHhBLUtkbmtKRGh2SkpIbXJNVWlKdXk5N1BIVWF6aDhSOHBONmNHcDd0dmVQeWo2NUgyVzdTOFUtclRCWGpQeC1FM0YtMWJCOHFXWGhFYjVLU2Vadkc0c0I3TEhIdTU2YlE1b0xrdjlybGsyRmViOHJVYmptTWd1c3NCME1HdWNpcjNsQVJKV2ppdHRCbnhRSy1fbXBUWUltcElmT29UamI3bUJ3S0tBZExwRnluOTBXN2tnWWVha25NZ9IBwgFBVV95cUxNdHhBLUtkbmtKRGh2SkpIbXJNVWlKdXk5N1BIVWF6aDhSOHBONmNHcDd0dmVQeWo2NUgyVzdTOFUtclRCWGpQeC1FM0YtMWJCOHFXWGhFYjVLU2Vadkc0c0I3TEhIdTU2YlE1b0xrdjlybGsyRmViOHJVYmptTWd1c3NCME1HdWNpcjNsQVJKV2ppdHRCbnhRSy1fbXBUWUltcElmT29UamI3bUJ3S0tBZExwRnluOTBXN2tnWWVha25NZw?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-19",
+            "title": "Bitfinex Receives $137 Million USDT Transfer - Coinfomania",
+            "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE00QjhXMWJLWmFuNEdpQ1VWT0dLLWpiVUdmbVVfaHptNXkxaW9fWE9xMENVc3JURW1sZFp0aE94Tm1FT1ZpWjh3d21ndGhjOUpJeDRkUEdJWmJyNXBtdDg2WEgyai1TaWtwbVFMOWlaY1d1UHBYUktz?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-20",
+            "title": "Major USDT Transfer of $199.9M from Binance Sparks Attention - Coinfomania",
+            "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPa3lXMUlVTXc0Q3pVU1hVMmp2X2tNa1VCQ2xEY3FrZklPMU9XeUJqcGs2eS0wRlp5ZkxYZkNaYTBBYjFGQ2J0ZXJhbC1YWTdRYmV1WmhWMm9PVElScEl6VGhmeS1kOEZyU1drQURjT1h0cHpVY2ZncXpER0NQcHl5RUdscnZiLUh3SC1Kdg?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-18",
+            "title": "100 Million PYUSD Transferred Between Unknown Wallets - Coinfomania",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQcHVXcWRqOVE2cTJKUnBMaHItTnBBdjd3VEJCLUZqTTB0eTJBX2dEN1FQS0N2NGNQLWpfdnZKNl8ycWdwVF9wS3VJQlhmTzF5T2hldDJleTZUdWtQa0Vtd3ljNFp5RF9henljdE5NdHpuQm84RTRzczdMaTFjeFFXTVRTbzg?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-18",
+            "title": "Binance Hacker Moves Over $105 Million of Stolen Ethereum - U.Today",
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5KeUw0YnZQcmpjRjVPbWFXa1FidGNqRktNbUlHZkdlT0xhMkpzcnExenpua2JpakZ3dEx1UDBGOEdWQi1rSTlQWDdmUUpQSVlSLUJtNWhEandmZGRNRjdqQnFCREl0ZEZCaWlvRTZObHYxSlIyN3daNkFQcHfSAYIBQVVfeXFMUG9HazRzVlEyTi00RzlJUXBMRVV1OTA5bTJlU1R1SEhPUVpPTlYydDNOeGlKTzBlYVFkZVdyMVFJTnBsaFJ3SUI1QlgxaXg3OEpZMk50Q2RXWERZdGRlRjRDY3B5Q1U3UFB2QWhqSkFsdFVGdm1MalI1N1Q1NWlVYk9JZw?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-22",
+            "title": "Coinbase Transfers 127.7 Million USDC From Institutional Arm to Exchange Wallet - Hokanews",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5vQUtReUtvaXJJczV4T2phd2o5SWRkdDRwMzlQV2g2WkN2aEpicjB5YlNvSXlvMDdWT01QSjN0dklVMWZqb2UyQVFJNzNBWEVRUVNDSExwaFctaHJia1dQTW0yRFRpV3V3M0dGS3J0bkp1QlVXYkRhcDEzbEJwSHc?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-18",
+            "title": "Binance Hacker Moves 60,000 ETH Worth $108.78 Million in Five Transactions - Hokanews",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBJYnFsaVVPUFNmVnhiMndjT2NTWU9YUGdYTUxobE5pTFRSU1ljUC14V0R2eGxROHZaOFBBdng3NlhpeXNTOV9SclNsbzZuTUZYbUFyeU54cDRCTlc3SXpMV2tkc3VQQ0dDUXY5ZklDbGlYeVE4aHlSMHlhUTlJWkk?oc=5",
+            "snippet": "本期检索线索；未经下方正文核实的不用于结论。",
+            "candidate_only": true
+          },
+          {
+            "date": "2026-11-13",
+            "title": "本期核查的具体来源",
+            "url": "https://www.theblock.co/news/markets/2026-11-13-from-6-to-6-9-million-two-dormant-bitcoin-addresses-wake-up-to-move-100-btc-after-more-than-16-years-439698",
+            "snippet": "Two Bitcoin addresses transferred 50 BTC each on Friday for the first time in more than 16 years.",
+            "verification": "source text or visible public excerpt",
+            "evidence_file": "ai-work/btc-tracking/run-20261122-0809/source-body-receipts.json",
+            "evidence_files": [
+              "source-body-receipts.json",
+              "source1.json",
+              "source2.json",
+              "source3.json",
+              "source4.json"
+            ]
           }
         ],
         "has_update": true,
-        "checked_at": "2026-11-15",
+        "checked_at": "2026-11-22",
         "date": "2026-11-13",
         "source_url": "https://www.theblock.co/news/markets/2026-11-13-from-6-to-6-9-million-two-dormant-bitcoin-addresses-wake-up-to-move-100-btc-after-more-than-16-years-439698",
-        "summary": "两个沉寂逾 16 年的地址各转出约 50 BTC，来源可追溯至 2010 年的挖矿奖励。",
-        "stance": "中性",
-        "whale_summary": "据 Whale Alert 提示及 The Block 复核，两地址各转出约 50 BTC，共约 100 BTC。",
-        "market_summary": "链上可核实转账；接收方身份、是否成交及转账动机仍未知。",
-        "sources": [
-          {
-            "date": "2026-11-13",
-            "title": "The Block 含 Whale Alert 原帖与链上交易链接",
-            "url": "https://www.theblock.co/news/markets/2026-11-13-from-6-to-6-9-million-two-dormant-bitcoin-addresses-wake-up-to-move-100-btc-after-more-than-16-years-439698"
-          },
-          {
-            "date": "2026-11-13",
-            "title": "Whale Alert 原帖",
-            "url": "https://x.com/whale_alert/status/2121094145133465636"
-          }
-        ],
-        "source_note": "The Block 含 Whale Alert 原帖与链上交易链接"
+        "summary": "两个沉寂逾 16 年的地址各转出约 50 BTC，来源是 2010 年挖矿奖励。",
+        "whale_summary": "两个沉寂逾 16 年的地址各转出约 50 BTC，随后部分余额汇集到一个新地址。",
+        "market_summary": "原报道未确认地址所有人、转账原因或是否卖出，保留为链上活动记录。"
       },
       {
         "name": "Murphy",
@@ -1037,72 +1101,55 @@
         "handle": "@Murphychen888",
         "raw_search_results": [
           {
-            "date": "2026-11-14",
-            "title": "铅笔网转述，链上分组数字未独立重算",
-            "url": "https://www.chainb.com/lives/18853.html",
-            "snippet": "该区间筹码净减少仅 3.4 万枚"
+            "date": "2026-11-22",
+            "title": "独立检索：Murphy BTC onchain November 2026 November 21",
+            "url": "https://en.coinotag.com/murphy-bitcoin-btc-short-term-supply-underwater-73",
+            "snippet": "73% of short-term supply below acquisition cost; publication November 15, 2026"
           },
           {
             "date": "2026-11-15",
-            "url": "https://news.google.com/rss/search?q=Murphychen888+%E6%AF%94%E7%89%B9%E5%B8%81+%E9%B2%B8%E9%B1%BC+%E9%93%BE%E4%B8%8A+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-            "title": "本期独立检索",
-            "snippet": "Murphychen888 比特币 鲸鱼 链上"
-          },
-          {
-            "date": "2026-11-15",
-            "url": "https://news.google.com/rss/search?q=Murphychen888+%E6%AF%94%E7%89%B9%E5%B8%81+%E5%B8%82%E5%9C%BA+%E7%AD%96%E7%95%A5+when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
-            "title": "本期独立检索",
-            "snippet": "Murphychen888 比特币 市场 策略"
+            "title": "本期核查的具体来源",
+            "url": "https://en.coinotag.com/murphy-bitcoin-btc-short-term-supply-underwater-73",
+            "snippet": "Roughly 73% of the Bitcoin (BTC) supply held by short-term buyers now trades below its acquisition cost.",
+            "verification": "source text or visible public excerpt",
+            "evidence_file": "ai-work/btc-tracking/run-20261122-0809/source-body-receipts.json",
+            "evidence_files": [
+              "source-body-receipts.json",
+              "source1.json",
+              "source2.json",
+              "source3.json",
+              "source4.json"
+            ]
           }
         ],
         "has_update": true,
-        "checked_at": "2026-11-15",
-        "date": "2026-11-14",
-        "source_url": "https://www.chainb.com/lives/18853.html",
-        "summary": "Murphy 认为 11 月 13 日的下跌中，高位短期持有者松动有限。他观察到 6.8 万美元附近筹码增加，6.2万至6.4 万美元处还有较大一组处于盈利状态的短线筹码。",
-        "stance": "中性",
-        "whale_summary": "7.3万至8.6 万美元成本区间的短期筹码约 148 万 BTC，当日净减少约 3.4 万枚。这是短期持有者口径。",
-        "market_summary": "6.8 万美元附近当日新增约 4.22 万枚筹码。Murphy 提醒，若继续下行至 6.2万至6.4 万美元，短线持有者的盈利缓冲将显著收窄。",
-        "sources": [
-          {
-            "date": "2026-11-14",
-            "title": "铅笔网转述，链上分组数字未独立重算",
-            "url": "https://www.chainb.com/lives/18853.html"
-          }
-        ],
-        "source_note": "铅笔网转述，链上分组数字未独立重算"
+        "checked_at": "2026-11-22",
+        "date": "2026-11-15",
+        "source_url": "https://en.coinotag.com/murphy-bitcoin-btc-short-term-supply-underwater-73",
+        "summary": "据媒体转述，Murphy 估计短期持有者供应中约 73% 已低于其成本，提示高位买入者承压。",
+        "whale_summary": "据转述，短期持有者供应中约 73% 处于浮亏；这项指标按持币时间分类，不是大额地址专属统计。",
+        "market_summary": "该读数显示短期持仓压力；尚不足以单独证明触底，本期未取得其原始图表序列。"
       }
     ],
     "coinshares_paras": [
-      "⚠️ 已核对 2026-10-27 官方双周报，本期未包含 Digital Asset Fund Flows 专页；本期全球数字资产产品资金流及历史分位暂缺。",
-      "CoinShares 11 月 13 日的市场更新将 BTC 的主要震荡区间估为 6 万至 9 万美元。作者认为，通胀与利率上调预期、鲸鱼重新卖出及科技股风险偏好转弱，一起限制了突破空间。",
-      "作者把货币政策预期转向、机构资金持续改善或鲸鱼重新积累列为可能改变区间判断的条件。本期未核到 CoinShares 全球数字资产产品周净流量及可用于估算历史分位的图。"
+      "⚠️ 已核对 2026-10-27 官方双周报，本期未包含 Digital Asset Fund Flows 专页；本期全球数字资产产品资金流及历史分位暂缺。"
     ],
-    "coinshares_supplementary_sources": [
-      {
-        "title": "CoinShares 市场更新 · 通胀与 BTC 震荡区间",
-        "date": "2026-11-13",
-        "url": "https://coinshares.com/fi-en/insights/research-data/market-update-13-11-2026/"
-      }
-    ],
+    "coinshares_supplementary_sources": [],
     "coinshares_title": "CoinShares Bi-Weekly Digest 2026-10-27",
     "coinshares_url": "https://coinshares.com/insights/research-data/digital-asset-bi-weekly-digest-27-10-2026/",
     "coinshares_report_date": "2026-10-27",
     "user_inputs_freshness": {
       "macro_summary": {
-        "status": "cached",
-        "date": "2026-11-04",
-        "seed": false
+        "status": "fresh",
+        "date": "2026-11-22"
       },
       "macro_watch_next": {
-        "status": "cached",
-        "date": "2026-11-04",
-        "seed": false
+        "status": "fresh",
+        "date": "2026-11-22"
       },
       "cycle_summary": {
-        "status": "cached",
-        "date": "2026-09-04",
-        "seed": false
+        "status": "fresh",
+        "date": "2026-11-22"
       },
       "dat_outflow_bullish": {
         "status": "cached",
@@ -1110,8 +1157,9 @@
         "seed": false
       },
       "trump_clearance_bullish": {
-        "status": "fresh",
-        "date": "2026-11-15"
+        "status": "cached",
+        "date": "2026-11-15",
+        "seed": false
       },
       "miner_selloff_note": {
         "status": "cached",
@@ -1122,39 +1170,39 @@
     "websearch_freshness": {
       "dat_announcements": {
         "status": "fresh",
-        "date": "2026-11-15"
+        "date": "2026-11-22"
       },
       "verify_1_strategic_reserve": {
         "status": "fresh",
-        "date": "2026-11-15"
+        "date": "2026-11-22"
       },
       "verify_2_trump_clearance": {
         "status": "fresh",
-        "date": "2026-11-15"
+        "date": "2026-11-22"
       },
       "verify_3_institutional_entry": {
         "status": "fresh",
-        "date": "2026-11-15"
+        "date": "2026-11-22"
       },
       "verify_4_clarity_passage_probability": {
         "status": "fresh",
-        "date": "2026-11-15"
+        "date": "2026-11-22"
       },
       "verify_1_strategic_reserve_tldr": {
         "status": "fresh",
-        "date": "2026-11-15"
+        "date": "2026-11-22"
       },
       "verify_2_trump_clearance_tldr": {
         "status": "fresh",
-        "date": "2026-11-15"
+        "date": "2026-11-22"
       },
       "verify_3_institutional_entry_tldr": {
         "status": "fresh",
-        "date": "2026-11-15"
+        "date": "2026-11-22"
       },
       "verify_4_clarity_passage_probability_tldr": {
         "status": "fresh",
-        "date": "2026-11-15"
+        "date": "2026-11-22"
       }
     },
     "onchain_summary_cn": []

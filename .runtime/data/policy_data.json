@@ -1,17 +1,8 @@
 {
-  "fetched_at": "2026-11-15",
+  "fetched_at": "2026-11-22",
   "lookback_days": 30,
   "factor_9_strategic_reserve": [],
   "factor_10_institution": [
-    {
-      "factor": 10,
-      "title": "iPower Inc.  (IPW)  (CIK 0001830072) — S-1",
-      "date": "2026-10-16",
-      "form": "S-1",
-      "company": "iPower Inc.  (IPW)  (CIK 0001830072)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001830072&type=S-1",
-      "adsh": "0001683168-26-007908"
-    },
     {
       "factor": 10,
       "title": "iPower Inc.  (IPW)  (CIK 0001830072) — S-1/A",
@@ -95,21 +86,21 @@
     },
     {
       "factor": 10,
-      "title": "BITGO HOLDINGS, INC.  (BTGO)  (CIK 0001740604) — 8-K",
-      "date": "2026-11-09",
-      "form": "8-K",
-      "company": "BITGO HOLDINGS, INC.  (BTGO)  (CIK 0001740604)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001740604&type=8-K",
-      "adsh": "0001740604-26-000068"
-    },
-    {
-      "factor": 10,
       "title": "Invesco Galaxy Solana ETF  (QSOL)  (CIK 0002074409) — 8-K",
       "date": "2026-11-12",
       "form": "8-K",
       "company": "Invesco Galaxy Solana ETF  (QSOL)  (CIK 0002074409)",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002074409&type=8-K",
       "adsh": "0001193125-26-458409"
+    },
+    {
+      "factor": 10,
+      "title": "BITGO HOLDINGS, INC.  (BTGO)  (CIK 0001740604) — 8-K",
+      "date": "2026-11-09",
+      "form": "8-K",
+      "company": "BITGO HOLDINGS, INC.  (BTGO)  (CIK 0001740604)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001740604&type=8-K",
+      "adsh": "0001740604-26-000068"
     },
     {
       "factor": 10,
@@ -122,12 +113,30 @@
     },
     {
       "factor": 10,
+      "title": "Bitwise Zcash ETF  (CIK 0002152975) — S-1",
+      "date": "2026-11-17",
+      "form": "S-1",
+      "company": "Bitwise Zcash ETF  (CIK 0002152975)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002152975&type=S-1",
+      "adsh": "0001193125-26-465692"
+    },
+    {
+      "factor": 10,
       "title": "Core Scientific, Inc./tx  (CORZ, CORZR, CORZW, CORZZ)  (CIK 0001839341) — 8-K",
       "date": "2026-11-05",
       "form": "8-K",
       "company": "Core Scientific, Inc./tx  (CORZ, CORZR, CORZW, CORZZ)  (CIK 0001839341)",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001839341&type=8-K",
       "adsh": "0001839341-26-000028"
+    },
+    {
+      "factor": 10,
+      "title": "Greenlane Holdings, Inc.  (GNLN)  (CIK 0001743745) — 8-K",
+      "date": "2026-11-16",
+      "form": "8-K",
+      "company": "Greenlane Holdings, Inc.  (GNLN)  (CIK 0001743745)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001743745&type=8-K",
+      "adsh": "0001493152-26-052478"
     },
     {
       "factor": 10,
@@ -204,6 +213,24 @@
     {
       "factor": 10,
       "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
+      "date": "2026-11-16",
+      "form": "8-K",
+      "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
+      "adsh": "0001493152-26-052063"
+    },
+    {
+      "factor": 10,
+      "title": "Bitwise Zcash ETF  (CIK 0002152975) — S-1",
+      "date": "2026-11-17",
+      "form": "S-1",
+      "company": "Bitwise Zcash ETF  (CIK 0002152975)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002152975&type=S-1",
+      "adsh": "0001193125-26-465692"
+    },
+    {
+      "factor": 10,
+      "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
       "date": "2026-11-02",
       "form": "8-K",
       "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
@@ -218,15 +245,6 @@
       "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
       "adsh": "0001493152-26-048429"
-    },
-    {
-      "factor": 10,
-      "title": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311) — 8-K",
-      "date": "2026-10-19",
-      "form": "8-K",
-      "company": "BITMINE IMMERSION TECHNOLOGIES, INC.  (BMNP, BMNR)  (CIK 0001829311)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001829311&type=8-K",
-      "adsh": "0001493152-26-047517"
     },
     {
       "factor": 10,
@@ -254,24 +272,6 @@
       "company": "Hashdex Nasdaq CME Crypto Index ETF  (NCIQ)  (CIK 0002031069)",
       "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002031069&type=8-K",
       "adsh": "0001213900-26-114174"
-    },
-    {
-      "factor": 10,
-      "title": "BTCS Inc.  (BTCS)  (CIK 0001436229) — 8-K",
-      "date": "2026-11-12",
-      "form": "8-K",
-      "company": "BTCS Inc.  (BTCS)  (CIK 0001436229)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001436229&type=8-K",
-      "adsh": "0001493152-26-051205"
-    },
-    {
-      "factor": 10,
-      "title": "Galaxy Digital Inc.  (GLXY)  (CIK 0001859392) — 8-K",
-      "date": "2026-10-27",
-      "form": "8-K",
-      "company": "Galaxy Digital Inc.  (GLXY)  (CIK 0001859392)",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001859392&type=8-K",
-      "adsh": "0001859392-26-000108"
     }
   ],
   "factor_11_clarity_act": {
