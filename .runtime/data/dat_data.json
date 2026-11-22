@@ -10,7 +10,7 @@
     "Strive"
   ],
   "total_holdings": 1287131.2192943657,
-  "total_value_usd": 76914108223.53847,
+  "total_value_usd": 76718750334.8401,
   "market_cap_dominance_pct": 6.13,
   "company_count": 181,
   "cost_basis_summary": [
@@ -27,8 +27,8 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 75454.04648768465,
       "total_cost_basis_native": 64200000000.0,
-      "avg_current_price_usd": 59756.22925664449,
-      "pnl_pct": -20.80447366544127
+      "avg_current_price_usd": 59604.45150021227,
+      "pnl_pct": -21.00562623909017
     },
     {
       "name": "Twenty One Capital",
@@ -43,7 +43,7 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": null,
       "total_cost_basis_native": null,
-      "avg_current_price_usd": 59756.22925664449,
+      "avg_current_price_usd": 59604.45150021227,
       "pnl_pct": null
     },
     {
@@ -61,7 +61,7 @@
       "cost_currency": "JPY",
       "cost_as_of": "September 30, 2026",
       "disclosure_date": "2026-10-05",
-      "avg_current_price_usd": 59756.22925664449,
+      "avg_current_price_usd": 59604.45150021227,
       "pnl_pct": null
     },
     {
@@ -77,8 +77,8 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 132432.37815331863,
       "total_cost_basis_native": 2703607000.0,
-      "avg_current_price_usd": 59756.22925664449,
-      "pnl_pct": -54.87793084296655
+      "avg_current_price_usd": 59604.45150021227,
+      "pnl_pct": -54.99253858357247
     },
     {
       "name": "Strive",
@@ -93,7 +93,7 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": null,
       "total_cost_basis_native": null,
-      "avg_current_price_usd": 59756.22925664449,
+      "avg_current_price_usd": 59604.45150021227,
       "pnl_pct": null
     }
   ],

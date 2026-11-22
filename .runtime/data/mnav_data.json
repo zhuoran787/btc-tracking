@@ -9,7 +9,7 @@
       "country": "ðºð¸",
       "ticker": "MSTR",
       "btc_holdings": 850849.0,
-      "mnav": 0.96,
+      "mnav": 0.95,
       "mnav_method": "enterprise_value"
     },
     {
@@ -90,7 +90,7 @@
       "country": "ð®ð±",
       "ticker": "ZOOZ",
       "btc_holdings": 1046.0,
-      "mnav": 0.86,
+      "mnav": 0.85,
       "mnav_method": "enterprise_value"
     },
     {
