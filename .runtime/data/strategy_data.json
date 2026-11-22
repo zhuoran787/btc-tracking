@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-16T02:51:26.455046+00:00",
+  "fetched_at": "2026-11-22T08:09:36.392638+00:00",
   "source": "verified Strategy official ledger baseline + SEC EDGAR 8-K reconciliation",
   "errors": [],
   "warnings": [],
@@ -1145,6 +1145,16 @@
       "shares_basic": null,
       "shares_diluted": null,
       "sec_accession": "0001193125-26-452693"
+    },
+    {
+      "date": "2026-11-16",
+      "btc_delta": 485,
+      "btc_holdings": 850849,
+      "avg_price": 75452,
+      "total_cost": 64200.0,
+      "shares_basic": null,
+      "shares_diluted": null,
+      "sec_accession": "0001193125-26-462151"
     }
   ],
   "weekly_net_buys": {
@@ -1241,7 +1251,8 @@
       "2026-10-12",
       "2026-10-19",
       "2026-11-02",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-16"
     ],
     "net_btc": [
       850.0,
@@ -1336,7 +1347,8 @@
       250.0,
       267.0,
       811.0,
-      1036.0
+      1036.0,
+      485.0
     ]
   },
   "sec_reconciliation": {
@@ -1345,10 +1357,10 @@
     "cik": "0001050446",
     "filings_checked": 0,
     "btc_updates_found": 0,
-    "latest_filing_date": "2026-11-09",
-    "latest_as_of": "2026-11-08",
-    "latest_holdings": 850364,
-    "latest_accession": "0001193125-26-452693",
+    "latest_filing_date": "2026-11-16",
+    "latest_as_of": "2026-11-15",
+    "latest_holdings": 850849,
+    "latest_accession": "0001193125-26-462151",
     "checked_accessions": [
       "0001050446-26-000047",
       "0001193125-26-413164",
@@ -1358,9 +1370,10 @@
       "0001193125-26-431146",
       "0001193125-26-437776",
       "0001193125-26-442707",
-      "0001193125-26-452693"
+      "0001193125-26-452693",
+      "0001193125-26-462151"
     ],
-    "verified_at": "2026-11-16T02:51:26.454098+00:00"
+    "verified_at": "2026-11-22T08:09:36.392166+00:00"
   },
   "refresh_status": "checked_no_new",
   "mnav": {
