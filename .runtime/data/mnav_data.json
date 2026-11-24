@@ -1,15 +1,15 @@
 {
-  "fetched_at": "2026-11-23",
+  "fetched_at": "2026-11-24",
   "source": "https://bitcointreasuries.net/",
-  "count": 11,
+  "count": 12,
   "snapshot": [
     {
       "rank": 1,
       "name": "Strategy",
       "country": "ðºð¸",
       "ticker": "MSTR",
-      "btc_holdings": 850849.0,
-      "mnav": 0.93,
+      "btc_holdings": 851305.0,
+      "mnav": 0.98,
       "mnav_method": "enterprise_value"
     },
     {
@@ -18,7 +18,7 @@
       "country": "ð¯ðµ",
       "ticker": "MPJPY",
       "btc_holdings": 44000.0,
-      "mnav": 0.7,
+      "mnav": 0.74,
       "mnav_method": "enterprise_value"
     },
     {
@@ -27,7 +27,7 @@
       "country": "ðºð¸",
       "ticker": "XXI",
       "btc_holdings": 43841.0,
-      "mnav": 0.68,
+      "mnav": 0.7,
       "mnav_method": "enterprise_value"
     },
     {
@@ -36,7 +36,7 @@
       "country": "ðºð¸",
       "ticker": "ASST",
       "btc_holdings": 43404.0,
-      "mnav": 0.88,
+      "mnav": 0.92,
       "mnav_method": "enterprise_value"
     },
     {
@@ -45,7 +45,7 @@
       "country": "ðºð¸",
       "ticker": "NAKA",
       "btc_holdings": 4283.0,
-      "mnav": 0.9,
+      "mnav": 0.93,
       "mnav_method": "enterprise_value"
     },
     {
@@ -54,7 +54,7 @@
       "country": "ð§ð·",
       "ticker": "OBTC3.SA",
       "btc_holdings": 3950.0,
-      "mnav": 0.79,
+      "mnav": 0.77,
       "mnav_method": "enterprise_value"
     },
     {
@@ -63,7 +63,16 @@
       "country": "ð«ð·",
       "ticker": "ALCPB.PA",
       "btc_holdings": 3554.0,
-      "mnav": 1.37,
+      "mnav": 1.39,
+      "mnav_method": "enterprise_value"
+    },
+    {
+      "rank": 25,
+      "name": "H100 Group",
+      "country": "ð¸ðª",
+      "ticker": "H100",
+      "btc_holdings": 3477.0,
+      "mnav": 0.9,
       "mnav_method": "enterprise_value"
     },
     {
@@ -72,7 +81,7 @@
       "country": "ð¬ð§",
       "ticker": "SWC.L",
       "btc_holdings": 2905.0,
-      "mnav": 1.02,
+      "mnav": 1.1,
       "mnav_method": "enterprise_value"
     },
     {
@@ -81,7 +90,7 @@
       "country": "ðºð¸",
       "ticker": "DDC",
       "btc_holdings": 2899.0,
-      "mnav": 0.4,
+      "mnav": 0.41,
       "mnav_method": "enterprise_value"
     },
     {
@@ -90,7 +99,7 @@
       "country": "ð®ð±",
       "ticker": "ZOOZ",
       "btc_holdings": 1046.0,
-      "mnav": 0.83,
+      "mnav": 0.84,
       "mnav_method": "enterprise_value"
     },
     {
@@ -99,7 +108,7 @@
       "country": "ðºð¸",
       "ticker": "USBC",
       "btc_holdings": 1000.0,
-      "mnav": 0.09,
+      "mnav": 0.1,
       "mnav_method": "enterprise_value"
     }
   ],
