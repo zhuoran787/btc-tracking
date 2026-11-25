@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-24",
+  "fetched_at": "2026-11-25",
   "source": "https://bitcointreasuries.net/",
   "count": 12,
   "snapshot": [
@@ -9,7 +9,7 @@
       "country": "ðºð¸",
       "ticker": "MSTR",
       "btc_holdings": 851305.0,
-      "mnav": 0.98,
+      "mnav": 0.94,
       "mnav_method": "enterprise_value"
     },
     {
@@ -27,7 +27,7 @@
       "country": "ðºð¸",
       "ticker": "XXI",
       "btc_holdings": 43841.0,
-      "mnav": 0.7,
+      "mnav": 0.71,
       "mnav_method": "enterprise_value"
     },
     {
@@ -36,7 +36,7 @@
       "country": "ðºð¸",
       "ticker": "ASST",
       "btc_holdings": 43404.0,
-      "mnav": 0.92,
+      "mnav": 0.88,
       "mnav_method": "enterprise_value"
     },
     {
@@ -45,7 +45,7 @@
       "country": "ðºð¸",
       "ticker": "NAKA",
       "btc_holdings": 4283.0,
-      "mnav": 0.93,
+      "mnav": 0.92,
       "mnav_method": "enterprise_value"
     },
     {
@@ -54,7 +54,7 @@
       "country": "ð§ð·",
       "ticker": "OBTC3.SA",
       "btc_holdings": 3950.0,
-      "mnav": 0.77,
+      "mnav": 0.76,
       "mnav_method": "enterprise_value"
     },
     {
@@ -63,7 +63,7 @@
       "country": "ð«ð·",
       "ticker": "ALCPB.PA",
       "btc_holdings": 3554.0,
-      "mnav": 1.39,
+      "mnav": 1.38,
       "mnav_method": "enterprise_value"
     },
     {
@@ -72,7 +72,7 @@
       "country": "ð¸ðª",
       "ticker": "H100",
       "btc_holdings": 3477.0,
-      "mnav": 0.9,
+      "mnav": 0.88,
       "mnav_method": "enterprise_value"
     },
     {
@@ -81,7 +81,7 @@
       "country": "ð¬ð§",
       "ticker": "SWC.L",
       "btc_holdings": 2905.0,
-      "mnav": 1.1,
+      "mnav": 1.06,
       "mnav_method": "enterprise_value"
     },
     {
@@ -90,7 +90,7 @@
       "country": "ðºð¸",
       "ticker": "DDC",
       "btc_holdings": 2899.0,
-      "mnav": 0.41,
+      "mnav": 0.42,
       "mnav_method": "enterprise_value"
     },
     {
@@ -99,7 +99,7 @@
       "country": "ð®ð±",
       "ticker": "ZOOZ",
       "btc_holdings": 1046.0,
-      "mnav": 0.84,
+      "mnav": 0.83,
       "mnav_method": "enterprise_value"
     },
     {
