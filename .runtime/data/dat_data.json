@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25",
+  "fetched_at": "2026-11-26",
   "aggregate_source": "https://api.coingecko.com/api/v3/companies/public_treasury/bitcoin",
   "featured_source": "https://bitcointreasuries.net/public-companies/",
   "featured_companies": [
@@ -10,7 +10,7 @@
     "Strive"
   ],
   "total_holdings": 1287588.2192943657,
-  "total_value_usd": 76082887385.95471,
+  "total_value_usd": 78356427919.48462,
   "market_cap_dominance_pct": 6.13,
   "company_count": 181,
   "cost_basis_summary": [
@@ -27,7 +27,7 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": null,
       "total_cost_basis_native": null,
-      "avg_current_price_usd": 59089.45596570483,
+      "avg_current_price_usd": 60855.191702845914,
       "pnl_pct": null
     },
     {
@@ -43,7 +43,7 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": null,
       "total_cost_basis_native": null,
-      "avg_current_price_usd": 59089.45596570483,
+      "avg_current_price_usd": 60855.191702845914,
       "pnl_pct": null
     },
     {
@@ -61,7 +61,7 @@
       "cost_currency": "JPY",
       "cost_as_of": "September 30, 2026",
       "disclosure_date": "2026-10-05",
-      "avg_current_price_usd": 59089.45596570483,
+      "avg_current_price_usd": 60855.191702845914,
       "pnl_pct": null
     },
     {
@@ -77,8 +77,8 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": 132432.37815331863,
       "total_cost_basis_native": 2703607000.0,
-      "avg_current_price_usd": 59089.45596570483,
-      "pnl_pct": -55.381412922075434
+      "avg_current_price_usd": 60855.191702845914,
+      "pnl_pct": -54.04810171694334
     },
     {
       "name": "Strive",
@@ -93,7 +93,7 @@
       "cost_currency": "USD",
       "avg_cost_basis_native": null,
       "total_cost_basis_native": null,
-      "avg_current_price_usd": 59089.45596570483,
+      "avg_current_price_usd": 60855.191702845914,
       "pnl_pct": null
     }
   ],
@@ -105,5 +105,5 @@
     "coverage_pct": 2.035464846729447,
     "weighted_avg_cost_usd": 132432.37815331863
   },
-  "history_days_accumulated": 115
+  "history_days_accumulated": 116
 }

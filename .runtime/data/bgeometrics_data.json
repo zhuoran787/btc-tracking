@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T05:29:43.633750",
+  "fetched_at": "2026-11-26T05:16:48.651363",
   "source": "woocharts.com (CVDD, Willy Woo official) + BRK raw capitalizations / local MVRV Z calculation",
   "thresholds": {
     "cvdd_bottom_band": 1.03,
@@ -18478,7 +18478,8 @@
       "2026-11-21",
       "2026-11-22",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "values": [
       23.91846082,
@@ -24425,17 +24426,18 @@
       0.23341871,
       0.25844849,
       0.26415362,
-      0.21805483
+      0.21805483,
+      0.24010251
     ],
-    "current": 0.21805483,
-    "current_date": "2026-11-24",
+    "current": 0.24010251,
+    "current_date": "2026-11-25",
     "chart_start": "2022-09-25",
     "source_url": "https://bitview.space/api/series/bulk?series=date,market_cap,realized_cap&index=day1&start=0",
     "source_label": "BRK / Bitview 原始数据自算",
     "methodology_id": "brk_expanding_population_v1",
     "methodology": "(market_cap - realized_cap) / expanding population std(market_cap), ddof=0; no future observations",
     "history_origin": "2009-01-01",
-    "denominator_observations": 6530,
+    "denominator_observations": 6531,
     "early_history": "skip null days; include non-null zero market caps",
     "day_policy": "completed UTC days only",
     "source_stamp": {
@@ -24445,15 +24447,15 @@
         1851773447,
         3756535794
       ],
-      "last_source_date": "2026-11-25",
-      "end_index": 6538
+      "last_source_date": "2026-11-26",
+      "end_index": 6539
     },
-    "raw_sha256": "008939e880dcf7a5b748f8f3f7c39d211d0841001296b511b6819be4aec902e8",
+    "raw_sha256": "57cdef5e7740c8850ca12f32cc080196cf43fa79ce4d5ff647f62cc84c397749",
     "delayed": false
   },
   "summary": {
     "cvdd_current": 48930.4615,
-    "mvrv_z_current": 0.21805483
+    "mvrv_z_current": 0.24010251
   },
   "signals": {
     "cvdd_signal": null,
