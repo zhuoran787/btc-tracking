@@ -1738,21 +1738,21 @@
       "ts": 1795122000000,
       "price": 62048.94,
       "candle_start_ts": 1795118400000,
-      "closing_hour_volume": 1669.90049458
+      "closing_hour_volume": 1648.18286822
     },
     {
       "date": "2026-11-20",
       "ts": 1795208400000,
-      "price": 58350.68,
+      "price": 58352.55,
       "candle_start_ts": 1795204800000,
-      "closing_hour_volume": 1451.80989101
+      "closing_hour_volume": 1451.82883696
     },
     {
       "date": "2026-11-23",
       "ts": 1795467600000,
-      "price": 61157.92,
+      "price": 61167.12,
       "candle_start_ts": 1795464000000,
-      "closing_hour_volume": 824.97902665
+      "closing_hour_volume": 806.50760989
     },
     {
       "date": "2026-11-24",
