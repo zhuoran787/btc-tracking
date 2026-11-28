@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27T05:09:13.453265",
+  "fetched_at": "2026-11-28T04:46:48.609405",
   "source": "woocharts.com (CVDD, Willy Woo official) + BRK raw capitalizations / local MVRV Z calculation",
   "thresholds": {
     "cvdd_bottom_band": 1.03,
@@ -6267,7 +6267,8 @@
       "2026-11-21",
       "2026-11-22",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "values": [
       0.0,
@@ -12528,10 +12529,11 @@
       48917.5512,
       48915.8648,
       48930.4615,
-      48949.0341
+      48949.0341,
+      48966.7272
     ],
-    "current": 48949.0341,
-    "current_date": "2026-11-24",
+    "current": 48966.7272,
+    "current_date": "2026-11-25",
     "source_note": "woocharts.com chart.json (Willy Woo official, CVDD inventor)"
   },
   "mvrv_zscore": {
@@ -18482,7 +18484,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "values": [
       23.91846082,
@@ -24431,17 +24434,18 @@
       0.26415362,
       0.21805483,
       0.24010251,
-      0.24158024
+      0.24158024,
+      0.2200627
     ],
-    "current": 0.24158024,
-    "current_date": "2026-11-26",
+    "current": 0.2200627,
+    "current_date": "2026-11-27",
     "chart_start": "2022-09-25",
     "source_url": "https://bitview.space/api/series/bulk?series=date,market_cap,realized_cap&index=day1&start=0",
     "source_label": "BRK / Bitview 原始数据自算",
     "methodology_id": "brk_expanding_population_v1",
     "methodology": "(market_cap - realized_cap) / expanding population std(market_cap), ddof=0; no future observations",
     "history_origin": "2009-01-01",
-    "denominator_observations": 6532,
+    "denominator_observations": 6533,
     "early_history": "skip null days; include non-null zero market caps",
     "day_policy": "completed UTC days only",
     "source_stamp": {
@@ -24451,15 +24455,15 @@
         1851773447,
         3756535794
       ],
-      "last_source_date": "2026-11-27",
-      "end_index": 6540
+      "last_source_date": "2026-11-28",
+      "end_index": 6541
     },
-    "raw_sha256": "4b98abd16dfbe4185b718dc9bb679a1e5b96226a58b5748f579cbf8298d5701d",
+    "raw_sha256": "f4a1c3643629b4cf46a2a21937d52e61a42a0d7e4dc98197eeb56d473b235374",
     "delayed": false
   },
   "summary": {
-    "cvdd_current": 48949.0341,
-    "mvrv_z_current": 0.24158024
+    "cvdd_current": 48966.7272,
+    "mvrv_z_current": 0.2200627
   },
   "signals": {
     "cvdd_signal": null,
